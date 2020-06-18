@@ -90,7 +90,7 @@
           <div class="col-lg-4 box">
             <i class="ion-ios-bookmarks-outline"></i>
             <h4 class="title"><a href="">Lorem Ipsum Delino</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <p class="description"> et quas molestias excepturi sint occaecati cupiditate non provident</p>
           </div>
 
           <div class="col-lg-4 box box-bg">
@@ -274,7 +274,7 @@
     <!--==========================
       Facts Section
     ============================-->
-    <!-- <section id="facts"  class="wow fadeIn">
+    <section id="facts"  class="wow fadeIn">
       <div class="container">
 
         <header class="section-header">
@@ -311,13 +311,13 @@
         </div>
 
       </div>
-    </section> -->
+    </section>
     <!-- #facts -->
 
     <!--==========================
       Portfolio Section
     ============================-->
-    <!-- <section id="portfolio"  class="section-bg" >
+    <section id="portfolio"  class="section-bg" >
       <div class="container">
 
         <header class="section-header">
@@ -340,8 +340,8 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="<?php echo base_url()?>asssets/img/portfolio/app1.jpg" class="img-fluid" alt="">
-                <a href="<?php echo base_url()?>img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <img src="<?php echo base_url()?>assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+                <a href="<?php echo base_url()?>assets/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
                 <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
@@ -355,8 +355,8 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="<?php echo base_url()?>asssets/img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <a href="<?php echo base_url()?>img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <img src="<?php echo base_url()?>assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <a href="<?php echo base_url()?>assets/mg/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
                 <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
@@ -370,7 +370,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="<?php echo base_url()?>asssets/img/portfolio/app2.jpg" class="img-fluid" alt="">
+                <img src="<?php echo base_url()?>assets/img/portfolio/app2.jpg" class="img-fluid" alt="">
                 <a href="<?php echo base_url()?>assets/img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
                 <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
@@ -385,7 +385,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="<?php echo base_url()?>asssets/img/portfolio/card2.jpg" class="img-fluid" alt="">
+                <img src="<?php echo base_url()?>assets/img/portfolio/card2.jpg" class="img-fluid" alt="">
                 <a href="<?php echo base_url()?>assets/img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
                 <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
@@ -475,7 +475,7 @@
         </div>
 
       </div>
-    </section> -->
+    </section>
     <!-- #portfolio -->
 
     <!--==========================
@@ -579,7 +579,7 @@
     <!--==========================
       Team Section
     ============================-->
-    <!-- <section id="team">
+    <section id="team">
       <div class="container">
         <div class="section-header wow fadeInUp">
           <h3>Team</h3>
@@ -663,7 +663,7 @@
         </div>
 
       </div>
-    </section> -->
+    </section>
     <!-- #team -->
 
     <!--==========================
