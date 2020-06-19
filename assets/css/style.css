@@ -109,14 +109,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 a, #header #logo h1 a:hover {
-  color: #fff;
+  /* color: #fff; */
   padding-left: 10px;
-  border-left: 4px solid white;;
+  /* border-left: 4px solid white;; */
 }
 
 #header #logo img {
-  padding: 0;
-  margin: 0;
+  height:52px;
+  margin-top: -12px;
+    height: 52px;
+    padding-left: 20px;
 }
 
 @media (max-width: 768px) {
@@ -361,6 +363,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 30px;
+  margin-top:-5px;
   background-color: #968719;
 }
 
@@ -1461,4 +1464,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+
+.closebtn img{
+  height:40px;
+  padding-right: 30px;
 }

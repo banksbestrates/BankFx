@@ -1,7 +1,7 @@
 <div class="container mt-5 mb-5">
 	<div class="row">
 		<div class="col-md-3 ">
-		     <div class="list-group ">
+		     <div class="list-group" style="background-color:#060606;border-color: #96871a;">
               <a href="#" class="list-group-item list-group-item-action active">Dashboard</a>
               <a href="#" class="list-group-item list-group-item-action">MENU 1</a>
               <a href="#" class="list-group-item list-group-item-action">MENU 2 </a>
@@ -59,7 +59,7 @@
                               </div> 
                               <div class="form-group row mt-5">
                                 <div class="offset-4 col-8">
-                                  <button name="submit" type="submit" class="btn btn-primary">Update My Profile</button>
+                                  <button name="submit" type="submit" class="btn text-white" style="background-color: #96871a;">Update My Profile</button>
                                 </div>
                               </div>
                             </form>

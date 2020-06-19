@@ -13,7 +13,7 @@
 }
 .login-form-2{
     padding: 5%;
-    background: #2b71bd;
+    background: #a59736;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
 }
 .login-form-2 h3{
@@ -34,11 +34,11 @@
 .login-form-1 .btnSubmit{
     font-weight: 600;
     color: #fff;
-    background-color: #2b71bd;
+    background-color: #a59736;
 }
 .login-form-2 .btnSubmit{
     font-weight: 600;
-    color: #2b71bd;
+    color: #a59736;
     background-color: #fff;
 }
 .login-form-2 .ForgetPwd{
@@ -47,7 +47,7 @@
     text-decoration: none;
 }
 .login-form-1 .ForgetPwd{
-    color: #2b71bd;
+    color: #a59736;
     font-weight: 600;
     text-decoration: none;
 }

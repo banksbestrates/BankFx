@@ -55,5 +55,6 @@ $route['default_controller'] = 'Home';
 $route['signup'] = 'Register';
 $route['about_us'] = 'About';
 $route['profile'] = 'Profile';
+$route['mortgage_overview'] = 'Home/over_view';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

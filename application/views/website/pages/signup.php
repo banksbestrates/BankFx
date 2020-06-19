@@ -15,7 +15,7 @@
                         </div>
                         <a href="<?php echo base_url()?>profile">
                             <div class="form-group">                     
-                                <button class="col-md-12 btn btn-primary py-3" >Login</button>                            
+                                <button class="col-md-12 btn py-3 text-white" style="background-color:#a59736" >Login</button>                            
                             </div>
                         </a>
                         <div class="form-group">
