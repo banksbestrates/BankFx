@@ -182,7 +182,7 @@
                       <a href="<?php echo base_url()?>mortgage_overview">Mortgages Overview</a>
                   </li>
                   <li>
-                      <a href="#">Home 2</a>
+                      <a href="<?php echo base_url()?>mortgage_rates"> Mortgages Rates</a>
                   </li>
                   <li>
                       <a href="#">Home 3</a>

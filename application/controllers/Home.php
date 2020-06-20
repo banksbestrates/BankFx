@@ -27,7 +27,13 @@ class Home extends CI_Controller {
 	public function over_view()
 	{
 		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/mortgage_overview');
+		$this->load->view('website/pages/mortgage/mortgage_overview');
+		$this->load->view('website/layout/footer');
+    }
+	public function mortgage_rates()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/mortgage/mortgage_rates');
 		$this->load->view('website/layout/footer');
     }
     
