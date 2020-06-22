@@ -185,7 +185,16 @@
                       <a href="<?php echo base_url()?>mortgage_rates"> Mortgages Rates</a>
                   </li>
                   <li>
-                      <a href="#">Home 3</a>
+                      <a href="<?php echo base_url()?>mortgage_fha">FHA Loan rates</a>
+                  </li>
+                  <li>
+                      <a href="<?php echo base_url()?>mortgage_va_loan">VA Loan rates</a>
+                  </li>
+                  <li>
+                      <a href="<?php echo base_url()?>mortgage_jumbo_loan">Jumbo Loan rates</a>
+                  </li>
+                  <li>
+                      <a href="<?php echo base_url()?>mortgage_arm_loan">ARM Loan rates</a>
                   </li>
                 </ul>
               </li>

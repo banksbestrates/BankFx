@@ -24,7 +24,6 @@ select.form-control:not([size]):not([multiple]) {
 .checked {
   color: orange;
 }
-
 </style>
 <div class="rate_header">
     <header class="text-center">
@@ -77,10 +76,8 @@ select.form-control:not([size]):not([multiple]) {
         </div>
     </div>
 </div>
-
 <div class="container result_div">
     <p class="text-center">Showing results for: Single-family home, 30 year fixed mortgages with all points options. </p>
-    
     <table class="table">
     <thead>
         <tr>
@@ -345,7 +342,6 @@ select.form-control:not([size]):not([multiple]) {
         
     </tbody>  
 </table>       
-
 </div>
 
 <div class="container">

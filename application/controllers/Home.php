@@ -36,6 +36,30 @@ class Home extends CI_Controller {
 		$this->load->view('website/pages/mortgage/mortgage_rates');
 		$this->load->view('website/layout/footer');
     }
+	public function mortgage_fha()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/mortgage/mortgage_fha');
+		$this->load->view('website/layout/footer');
+    }
+	public function mortgage_va_loan()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/mortgage/mortgage_va_loan');
+		$this->load->view('website/layout/footer');
+    }
+	public function mortgage_jumbo_loan()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/mortgage/mortgage_jumbo_loan');
+		$this->load->view('website/layout/footer');
+    }
+	public function mortgage_arm_loan()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/mortgage/mortgage_arm_loan');
+		$this->load->view('website/layout/footer');
+    }
     
     
 }
