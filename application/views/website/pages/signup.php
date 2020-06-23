@@ -13,7 +13,7 @@
                         <div class="form-group">
                             <input type="password" class="form-control py-3" placeholder="Your Password *" value="" />
                         </div>
-                        <a href="<?php echo base_url()?>profile">
+                        <a href="<?php echo base_url()?>index.php/profile">
                             <div class="form-group">                     
                                 <button class="col-md-12 btn py-3 text-white" style="background-color:#a59736" >Login</button>                            
                             </div>
@@ -33,7 +33,7 @@
                         <div class="form-group">
                             <input type="password" class="form-control py-3" placeholder="Your Password *" value="" />
                         </div>
-                        <a href="<?php echo base_url()?>profile">
+                        <a href="<?php echo base_url()?>/index.php/profile">
                             <div class="form-group">                       
                                 <button class="col-md-12 btn  py-3" >Register</button>                                   
                             </div>

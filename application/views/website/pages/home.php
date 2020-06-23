@@ -1,4 +1,67 @@
+<style>
 
+ul.listing {
+    overflow: hidden;
+    margin-left: -3px;
+}
+.listing {
+    width: 102%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.listing li {
+    background-color: #FFF;
+    font-weight: 400;
+    line-height: 30px;
+    float: left;
+    width: 212px;
+    list-style-type: none;
+    margin: 4px;
+    margin-bottom: 12px;
+    padding: 2px;
+    padding-left: 2px;
+    border: 1px solid #D8DFEA;
+    background-color: #4c8c9e38;
+}
+.dbox {
+    margin: 1px;
+    padding: 0 0 1px 1px;
+}
+.blu {
+    background: #7476A3;
+}
+.ab, .abc {
+    float: left;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 8px;
+    margin-left: 3px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 2px rgba(0, 0, 0,.8);
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+}
+.litem, a.litem:link, a.litem:visited, a.litem:active {
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+a:link, a:visited, a:hover, a:active {
+    color: #333;
+    text-decoration: none;
+}
+.service-header .form-contorl{
+  border:1px solid #968719!important;
+}
+
+</style>
 
 
   <!--==========================
@@ -116,13 +179,13 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>About Us</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <h3>CHECK NEARBY BANKS</h3>
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
         </header>
 
-        <div class="row about-cols">
+        <div class="pt-3 col-md-12 mx-auto">
 
-          <div class="col-md-4 wow fadeInUp">
+          <!-- <div class="col-md-4 wow fadeInUp">
             <div class="about-col">
               <div class="img">
                 <img src="<?php echo base_url()?>asssets/img/about-mission.jpg" alt="" class="img-fluid">
@@ -159,7 +222,9 @@
                 Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
               </p>
             </div>
-          </div>
+          </div> -->
+          <iframe src="https://createaclickablemap.com/map.php?&id=93525&maplocation=false&online=true" width="100%" height="525" style="border: none;"></iframe>
+<script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
 
         </div>
 
@@ -172,47 +237,67 @@
     ============================-->
     <section id="services">
       <div class="container">
-
-        <header class="section-header wow fadeInUp">
-          <h3>Services</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+        <header class="section-header  wow fadeInUp">
+          <h3>Search Bank By State</h3>
+          <p class="pb-0">
+          <input type="text" class="col-md-6 py-3 mx-auto form-control" placeholder="Search by state name"/></p>
         </header>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-people-outline"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-          </div>
-
+        <div class="col-md-12">
+        <ul class="listing">
+        <li><div class="dbox"><span class="ab blu">AL</span><a href="" title="Alabama Banks" class="litem">Alabama</a></div><div class="undertitletextlist">149 banks in 291 cities</div></li>
+<li><div class="dbox"><span class="ab blu">AK</span><a href="" title="Alaska Banks" class="litem">Alaska</a></div><div class="undertitletextlist">7 banks in 33 cities</div></li>
+<li><div class="dbox"><span class="ab blu">AZ</span><a href="" title="Arizona Banks" class="litem">Arizona</a></div><div class="undertitletextlist">65 banks in 95 cities</div></li>
+<li><div class="dbox"><span class="ab blu">AR</span><a href="" title="Arkansas Banks" class="litem">Arkansas</a></div><div class="undertitletextlist">117 banks in 255 cities</div></li>
+<li><div class="dbox"><span class="ab blu">CA</span><a href="" title="California Banks" class="litem">California</a></div><div class="undertitletextlist">191 banks in 659 cities</div></li>
+<li><div class="dbox"><span class="ab blu">CO</span><a href="" title="Colorado Banks" class="litem">Colorado</a></div><div class="undertitletextlist">130 banks in 191 cities</div></li>
+<li><div class="dbox"><span class="ab blu">CT</span><a href="" title="Connecticut Banks" class="litem">Connecticut</a></div><div class="undertitletextlist">57 banks in 180 cities</div></li>
+<li><div class="dbox"><span class="ab blu">DE</span><a href="" title="Delaware Banks" class="litem">Delaware</a></div><div class="undertitletextlist">36 banks in 36 cities</div></li>
+<li><div class="dbox"><span class="ab blu">DC</span><a href="" title="DC Banks" class="litem">DC</a></div><div class="undertitletextlist">28 banks in 1 cities</div></li>
+<li><div class="dbox"><span class="ab blu">FL</span><a href="" title="Florida Banks" class="litem">Florida</a></div><div class="undertitletextlist">196 banks in 403 cities</div></li>
+<li><div class="dbox"><span class="ab blu">GA</span><a href="" title="Georgia Banks" class="litem">Georgia</a></div><div class="undertitletextlist">207 banks in 334 cities</div></li>
+<li><div class="dbox"><span class="ab blu">HI</span><a href="" title="Hawaii Banks" class="litem">Hawaii</a></div><div class="undertitletextlist">12 banks in 40 cities</div></li>
+<li><div class="dbox"><span class="ab blu">ID</span><a href="" title="Idaho Banks" class="litem">Idaho</a></div><div class="undertitletextlist">29 banks in 104 cities</div></li>
+<li><div class="dbox"><span class="ab blu">IL</span><a href="" title="Illinois Banks" class="litem">Illinois</a></div><div class="undertitletextlist">477 banks in 878 cities</div></li>
+<li><div class="dbox"><span class="ab blu">IN</span><a href="" title="Indiana Banks" class="litem">Indiana</a></div><div class="undertitletextlist">142 banks in 380 cities</div></li>
+<li><div class="dbox"><span class="ab blu">IA</span><a href="" title="Iowa Banks" class="litem">Iowa</a></div><div class="undertitletextlist">310 banks in 619 cities</div></li>
+<li><div class="dbox"><span class="ab blu">KS</span><a href="" title="Kansas Banks" class="litem">Kansas</a></div><div class="undertitletextlist">276 banks in 408 cities</div></li>
+<li><div class="dbox"><span class="ab blu">KY</span><a href="" title="Kentucky Banks" class="litem">Kentucky</a></div><div class="undertitletextlist">169 banks in 305 cities</div></li>
+<li><div class="dbox"><span class="ab blu">LA</span><a href="" title="Louisiana Banks" class="litem">Louisiana</a></div><div class="undertitletextlist">127 banks in 257 cities</div></li>
+<li><div class="dbox"><span class="ab blu">ME</span><a href="" title="Maine Banks" class="litem">Maine</a></div><div class="undertitletextlist">31 banks in 150 cities</div></li>
+<li><div class="dbox"><span class="ab blu">MD</span><a href="" title="Maryland Banks" class="litem">Maryland</a></div><div class="undertitletextlist">85 banks in 226 cities</div></li>
+<li><div class="dbox"><span class="ab blu">MA</span><a href="" title="Massachusetts Banks" class="litem">Massachusetts</a></div><div class="undertitletextlist">137 banks in 336 cities</div></li>
+<li><div class="dbox"><span class="ab blu">MI</span><a href="" title="Michigan Banks" class="litem">Michigan</a></div><div class="undertitletextlist">113 banks in 566 cities</div></li>
+<li><div class="dbox"><span class="ab blu">MN</span><a href="" title="Minnesota Banks" class="litem">Minnesota</a></div><div class="undertitletextlist">329 banks in 591 cities</div></li>
+<li><div class="dbox"><span class="ab blu">MS</span><a href="" title="Mississippi Banks" class="litem">Mississippi</a></div><div class="undertitletextlist">92 banks in 235 cities</div></li>
+<li><div class="dbox"><span class="ab blu">MO</span><a href="" title="Missouri Banks" class="litem">Missouri</a></div><div class="undertitletextlist">294 banks in 509 cities</div></li>
+<li><div class="dbox"><span class="ab blu">MT</span><a href="" title="Montana Banks" class="litem">Montana</a></div><div class="undertitletextlist">60 banks in 117 cities</div></li>
+<li><div class="dbox"><span class="ab blu">NE</span><a href="" title="Nebraska Banks" class="litem">Nebraska</a></div><div class="undertitletextlist">181 banks in 347 cities</div></li>
+<li><div class="dbox"><span class="ab blu">NV</span><a href="" title="Nevada Banks" class="litem">Nevada</a></div><div class="undertitletextlist">47 banks in 34 cities</div></li>
+<li><div class="dbox"><span class="ab blu">NH</span><a href=""  title="New Hampshire Banks" class="litem">New Hampshire</a></div><div class="undertitletextlist">40 banks in 116 cities</div></li>
+<li><div class="dbox"><span class="ab blu">NJ</span><a href=""  title="New Jersey Banks" class="litem">New Jersey</a></div><div class="undertitletextlist">120 banks in 496 cities</div></li>
+<li><div class="dbox"><span class="ab blu">NM</span><a href=""  title="New Mexico Banks" class="litem">New Mexico</a></div><div class="undertitletextlist">56 banks in 87 cities</div></li>
+<li><div class="dbox"><span class="ab blu">NY</span><a href=""  title="New York Banks" class="litem">New York</a></div><div class="undertitletextlist">207 banks in 809 cities</div></li>
+<li><div class="dbox"><span class="ab blu">NC</span><a href=""  title="North Carolina Banks" class="litem">North Carolina</a></div><div class="undertitletextlist">83 banks in 378 cities</div></li>
+<li><div class="dbox"><span class="ab blu">ND</span><a href=""  title="North Dakota Banks" class="litem">North Dakota</a></div><div class="undertitletextlist">85 banks in 175 cities</div></li>
+<li><div class="dbox"><span class="ab blu">OH</span><a href="" title="Ohio Banks" class="litem">Ohio</a></div><div class="undertitletextlist">211 banks in 640 cities</div></li>
+<li><div class="dbox"><span class="ab blu">OK</span><a href="" title="Oklahoma Banks" class="litem">Oklahoma</a></div><div class="undertitletextlist">222 banks in 305 cities</div></li>
+<li><div class="dbox"><span class="ab blu">OR</span><a href="" title="Oregon Banks" class="litem">Oregon</a></div><div class="undertitletextlist">42 banks in 156 cities</div></li>
+<li><div class="dbox"><span class="ab blu">PA</span><a href="" title="Pennsylvania Banks" class="litem">Pennsylvania</a></div><div class="undertitletextlist">183 banks in 893 cities</div></li>
+<li><div class="dbox"><span class="ab blu">PR</span><a href=""  title="Puerto Rico Banks" class="litem">Puerto Rico</a></div><div class="undertitletextlist">7 banks in 84 cities</div></li>
+<li><div class="dbox"><span class="ab blu">RI</span><a href=""  title="Rhode Island Banks" class="litem">Rhode Island</a></div><div class="undertitletextlist">21 banks in 38 cities</div></li>
+<li><div class="dbox"><span class="ab blu">SC</span><a href=""  title="South Carolina Banks" class="litem">South Carolina</a></div><div class="undertitletextlist">73 banks in 196 cities</div></li>
+<li><div class="dbox"><span class="ab blu">SD</span><a href=""  title="South Dakota Banks" class="litem">South Dakota</a></div><div class="undertitletextlist">77 banks in 196 cities</div></li>
+<li><div class="dbox"><span class="ab blu">TN</span><a href="" title="Tennessee Banks" class="litem">Tennessee</a></div><div class="undertitletextlist">181 banks in 305 cities</div></li>
+<li><div class="dbox"><span class="ab blu">TX</span><a href="" title="Texas Banks" class="litem">Texas</a></div><div class="undertitletextlist">496 banks in 862 cities</div></li>
+<li><div class="dbox"><span class="ab blu">UT</span><a href="" title="Utah Banks" class="litem">Utah</a></div><div class="undertitletextlist">51 banks in 105 cities</div></li>
+<li><div class="dbox"><span class="ab blu">VT</span><a href="" title="Vermont Banks" class="litem">Vermont</a></div><div class="undertitletextlist">22 banks in 86 cities</div></li>
+<li><div class="dbox"><span class="ab blu">VA</span><a href="" title="Virginia Banks" class="litem">Virginia</a></div><div class="undertitletextlist">120 banks in 338 cities</div></li>
+<li><div class="dbox"><span class="ab blu">WA</span><a href="" title="Washington Banks" class="litem">Washington</a></div><div class="undertitletextlist">76 banks in 224 cities</div></li>
+<li><div class="dbox"><span class="ab blu">WV</span><a href=""  title="West Virginia Banks" class="litem">West Virginia</a></div><div class="undertitletextlist">71 banks in 191 cities</div></li>
+<li><div class="dbox"><span class="ab blu">WI</span><a href="" title="Wisconsin Banks" class="litem">Wisconsin</a></div><div class="undertitletextlist">220 banks in 551 cities</div></li>
+<li><div class="dbox"><span class="ab blu">WY</span><a href="" title="Wyoming Banks" class="litem">Wyoming</a></div><div class="undertitletextlist">48 banks in 55 cities</div></li>
+</ul>
         </div>
-
       </div>
     </section>
     <!-- #services -->

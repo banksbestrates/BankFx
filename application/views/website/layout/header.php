@@ -179,22 +179,22 @@
                 Mortgages</a>
                 <ul class="collapse list-unstyled" id="homeSubmenu">
                   <li>
-                      <a href="<?php echo base_url()?>mortgage_overview">Mortgages Overview</a>
+                      <a href="<?php echo base_url()?>index.php/mortgage_overview">Mortgages Overview</a>
                   </li>
                   <li>
-                      <a href="<?php echo base_url()?>mortgage_rates"> Mortgages Rates</a>
+                      <a href="<?php echo base_url()?>index.php/mortgage_rates"> Mortgages Rates</a>
                   </li>
                   <li>
-                      <a href="<?php echo base_url()?>mortgage_fha">FHA Loan rates</a>
+                      <a href="<?php echo base_url()?>index.php/mortgage_fha">FHA Loan rates</a>
                   </li>
                   <li>
-                      <a href="<?php echo base_url()?>mortgage_va_loan">VA Loan rates</a>
+                      <a href="<?php echo base_url()?>index.php/mortgage_va_loan">VA Loan rates</a>
                   </li>
                   <li>
-                      <a href="<?php echo base_url()?>mortgage_jumbo_loan">Jumbo Loan rates</a>
+                      <a href="<?php echo base_url()?>index.php/mortgage_jumbo_loan">Jumbo Loan rates</a>
                   </li>
                   <li>
-                      <a href="<?php echo base_url()?>mortgage_arm_loan">ARM Loan rates</a>
+                      <a href="<?php echo base_url()?>index.php/mortgage_arm_loan">ARM Loan rates</a>
                   </li>
                 </ul>
               </li>
@@ -338,9 +338,9 @@
             </ul>
           </li> -->
           <li><a href="<?php echo base_url()?>">Blog</a></li>
-          <li><a href="<?php echo base_url()?>about_us">About us</a></li>
-          <li><a href="<?php echo base_url()?>profile">Profile</a></li>
-          <li><a href="<?php echo base_url()?>signup">Register/Login</a></li>
+          <li><a href="<?php echo base_url()?>index.php/about_us">About us</a></li>
+          <li><a href="<?php echo base_url()?>index.php/profile">Profile</a></li>
+          <li><a href="<?php echo base_url()?>index.php/signup">Register/Login</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
