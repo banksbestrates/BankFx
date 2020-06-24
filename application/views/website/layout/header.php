@@ -132,16 +132,20 @@
 .sidenav ul li.active > a {
     background: transparent;
     color: #96871a;
+    background-color: white;
 }
 .sidenav ul li {
   border: 1px solid;
 }
 .sidenav ul li ul li a  {
     text-transform:capitalize;
+    /* font-size: 15px;
+    font-weight: lighter; */
    
 }
 .sidenav ul li ul  {
-    padding-left:20px;
+  color:white;
+    /* padding-left:10px; */
 }
 .sidenav ul li ul li {
     border:none;
@@ -174,147 +178,454 @@
               &times;</a><br/><br/>
            
             <ul class="list-unstyled components mb-5 px-4">
+            <li class="" hidden>
+                <a href="#" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                  Main Menu</a>         
+              </li>
+              <!-- menu 1 -->
               <li class="active">
                 <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                Mortgages</a>
+                <i class="fa fa-home fa-2x pr-3"></i> Mortgages</a>
                 <ul class="collapse list-unstyled" id="homeSubmenu">
+                  <li class="pt-3">
+                      <a href="<?php echo base_url()?>mortgage_overview">Mortgages Overview</a>
+                  </li>
+                  <br/>
+                  <h5 class="text-white px-3">Get the best rates</h5>
                   <li>
-                      <a href="<?php echo base_url()?>index.php/mortgage_overview">Mortgages Overview</a>
+                      <a href="#">Mortgage Rates</a>
                   </li>
                   <li>
-                      <a href="<?php echo base_url()?>index.php/mortgage_rates"> Mortgages Rates</a>
+                      <a href="#">30 -years Mortgage rates</a>
                   </li>
                   <li>
-                      <a href="<?php echo base_url()?>index.php/mortgage_fha">FHA Loan rates</a>
+                      <a href="#">20 -years Mortgage rates</a>
                   </li>
                   <li>
-                      <a href="<?php echo base_url()?>index.php/mortgage_va_loan">VA Loan rates</a>
+                      <a href="#">15 -years Mortgage rates</a>
                   </li>
                   <li>
-                      <a href="<?php echo base_url()?>index.php/mortgage_jumbo_loan">Jumbo Loan rates</a>
+                      <a href="#">10 -years Mortgage rates</a>
                   </li>
                   <li>
-                      <a href="<?php echo base_url()?>index.php/mortgage_arm_loan">ARM Loan rates</a>
+                      <a href="#">FHA Loan Rates</a>
                   </li>
+                  <li>
+                      <a href="#">VA Loan Rates</a>
+                  </li>
+                  <li>
+                      <a href="#">Jumbo Loan Rates</a>
+                  </li>
+                  <li>
+                      <a href="#">ARM Loan Rates</a>
+                  </li>                 
+                  <br/>
+                  <h5 class="text-white px-3">Refinance your mortgage</h5>
+                  <li>
+                      <a href="#">Refinance Rates</a>
+                  </li>
+                  <li>
+                      <a href="#">30 -years Refinance rates</a>
+                  </li>
+                  <li>
+                      <a href="#">20 -years Refinance rates</a>
+                  </li>
+                  <li>
+                      <a href="#">15 -years Refinance rates</a>
+                  </li>
+                  <li>
+                      <a href="#">10 -years Refinance rates</a>
+                  </li>
+                  <li>
+                      <a href="#">FHA Refinance Rates</a>
+                  </li>
+                  <li>
+                      <a href="#">VA Refinance Rates</a>
+                  </li>
+                  <li>
+                      <a href="#">Jumbo Refinance Rates</a>
+                  </li>
+                  <br/>
+                  <h5 class="text-white px-3">Use calculators</h5>
+                  <li>
+                      <a href="#">Mortgage Calculator</a>
+                  </li>
+                  <li>
+                      <a href="#">Mortgage Refinance Calculator</a>
+                  </li>
+                  <li>
+                      <a href="#">How much house you can afford?</a>
+                  </li>
+                  <li>
+                      <a href="#">Amortization Calculator</a>
+                  </li>
+                  <li>
+                      <a href="#">Mortgage Payment Calculator</a>
+                  </li>
+                  <li>
+                      <a href="#">Interest only mortgage calculator</a>
+                  </li>
+                  <li>
+                      <a href="#">Mortgage tax deduction calculator</a>
+                  </li>
+                  <li>
+                      <a href="#">Mortgage tax deduction calculator</a>
+                  </li>
+                  <li>
+                      <a href="#">All mortgage calculators</a>
+                  </li>
+                  <br/>
+                  <h5 class="text-white px-3">Learn & get advice</h5>
+                  <li>
+                      <a href="#">Understanding current interest rates</a>
+                  </li>
+                  <li>
+                      <a href="#">Where rates are trending</a>
+                  </li>
+                  <li>
+                      <a href="#">How to get the best mortgage rate</a>
+                  </li>
+                  <li>
+                      <a href="#">APR vs. Interest rat</a>
+                  </li>
+                  <li>
+                      <a href="#">First time homebuyer loans and programs</a>
+                  </li>
+                  <li>
+                      <a href="#">When to pay off your mortgage early</a>
+                  </li>
+                  <li>
+                      <a href="#">Mortgage tax deduction calculator</a>
+                  </li>
+                  <li>
+                      <a href="#">How to refinance your mortgage</a>
+                  </li>
+                  <li>
+                      <a href="#">Mortgage lender review</a>
+                  </li>
+                  <br/>
                 </ul>
               </li>
               <hr/>
+              <!-- Menu 2 -->
               <li>
-                <a href="#aboutSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                Banking</a>
-                <ul class="collapse list-unstyled" id="aboutSubmenu">
+                <a href="#bankingSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-university fa-2x pr-3" aria-hidden="true"></i>Banking</a>
+                <ul class="collapse list-unstyled" id="bankingSubmenu">
+                <li class="pt-3">
+                      <a href="<?php echo base_url()?>mortgage_overview">Banking Overview</a>
+                  </li>
+                  <br/>
+                  <h5 class="text-white px-3">Compare accounts</h5>
                   <li>
-                      <a href="#">Home 1</a>
+                      <a href="#">CD rates</a>
                   </li>
                   <li>
-                      <a href="#">Home 2</a>
+                      <a href="#">Savings accounts</a>
                   </li>
                   <li>
-                      <a href="#">Home 3</a>
+                      <a href="#">Money market accoun</a>
                   </li>
+                  <li>
+                      <a href="#">3-year CD rate</a>
+                  </li>
+                  <li>
+                      <a href="#">5-year CD rate</a>
+                  </li>
+                  <li>
+                      <a href="#">Checking accounts</a>
+                  </li>
+                  <li>
+                      <a href="#">Best bank</a>
+                  </li> 
+                  <br/>
+                  <h5 class="text-white px-3">Use calculators</h5>
+                  <li>
+                      <a href="#">Savings calculator</a>
+                  </li>
+                  <li>
+                      <a href="#">CD calculator</a>
+                  </li>
+                  <li>
+                      <a href="#">Compound savings calculators</a>
+                  </li>
+                  <li>
+                      <a href="#">All banking calculators</a>
+                  </li>
+                  <br>
+                  <h5 class="text-white px-3">Get advice</h3>
+                  <li>
+                      <a href="#">How to save money</a>
+                  </li>
+                  <li>
+                      <a href="#">Federal Reserve news</a>
+                  </li>
+                  <li>
+                      <a href="#">What is a savings accounts ?</a>
+                  </li>
+                  <li>
+                      <a href="#">What is a money market account?</a>
+                  </li>
+                  <li>
+                      <a href="#">Which certificate of deposit account is best?</a>
+                  </li>
+                  <li>
+                      <a href="#">How to open a savings account?</a>
+                  </li>
+                  <li>
+                      <a href="#">Tax advice</a>
+                  </li> 
                 </ul>
               </li>
               <hr/>
+              <!-- menu 3 -->
               <li>
-                <a href="#aboutSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                Credit Card</a>
-                <ul class="collapse list-unstyled" id="aboutSubmenu">
+              <a href="#creditSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+              <i class="fa fa-credit-card fa-2x pr-3" aria-hidden="true"></i>Credit Card</a>
+                <ul class="collapse list-unstyled" id="creditSubmenu">
+                  <li class="pt-3">
+                      <a href="<?php echo base_url()?>mortgage_overview">Credit Card Overview</a>
+                  </li>
+                  <br/>
+                  <h5 class="text-white px-3">Compare by category</h5>
                   <li>
-                      <a href="#">Home 1</a>
+                      <a href="#">Best credit cards of 2020</a>
                   </li>
                   <li>
-                      <a href="#">Home 2</a>
+                      <a href="#">Rewards</a>
                   </li>
                   <li>
-                      <a href="#">Home 3</a>
-                  </li>
-                </ul>
-              </li>
-              <hr/>
-              <li>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                  Loans</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                  <li>
-                      <a href="#">Page 1</a>
+                      <a href="#">Travel</a>
                   </li>
                   <li>
-                      <a href="#">Page 2</a>
+                      <a href="#">Airline</a>
                   </li>
                   <li>
-                      <a href="#">Page 3</a>
-                  </li>
-                </ul>
-              </li>
-              <hr/>
-              <li>
-                <a href="#investSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                  Investing</a>
-                <ul class="collapse list-unstyled" id="investSubmenu">
-                  <li>
-                      <a href="#">Page 1</a>
+                      <a href="#">Cash back</a>
                   </li>
                   <li>
-                      <a href="#">Page 2</a>
+                      <a href="#">No annual fee</a>
                   </li>
                   <li>
-                      <a href="#">Page 3</a>
+                      <a href="#">Balance transfer</a>
+                  </li> 
+                  <li>
+                      <a href="#">0% APR</a>
+                  </li> 
+                  <li>
+                      <a href="#">Student</a>
+                  </li> 
+                  <br/>
+                  <h5 class="text-white px-3">Compare by credit needed</h5>
+                  <li>
+                      <a href="#">Excellent credit</a>
                   </li>
-                </ul>
-              </li>
-              <hr/>         
-              <li>
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                  Home Equity</a>
+                  <li>
+                      <a href="#">Good credit</a>
+                  </li>
+                  <li>
+                      <a href="#">Fair credit</a>
+                  </li>
+                  <li>
+                      <a href="#">Bad credit</a>
+                  </li>
+                  <li>
+                      <a href="#">No credit history</a>
+                  </li>
+                  <li>
+                      <a href="#">Secured credit cards</a>
+                  </li>
+                  <br/>
+                  <h5 class="text-white px-3">Compare by credit needed</h5>
+                  <li>
+                      <a href="#">Credit card reviews</a>
+                  </li>
+                  <li>
+                      <a href="#">Credit card payoff calculator</a>
+                  </li>
+                  <li>
+                      <a href="#">Balance transfer calculator</a>
+                  </li>
+                  <li>
+                      <a href="#">All credit card calculators</a>
+                  </li>
+                  <li>
+                      <a href="#">Improving your credit</a>
+                  </li>
+                  <li>
+                      <a href="#">Secured credit cards</a>
+                  </li>
+                  <br/>
 
-                  <ul class="collapse list-unstyled" id="homeSubmenu">
-                  <li>
-                      <a href="#">Page 1</a>
-                  </li>
-                  <li>
-                      <a href="#">Page 2</a>
-                  </li>
-                  <li>
-                      <a href="#">Page 3</a>
-                  </li>
-                </ul>
-              </li>
-              <hr/>         
-              <li>
-                <a href="#insuSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                  Insurance</a>
 
-                  <ul class="collapse list-unstyled" id="insuSubmenu">
-                  <li>
-                      <a href="#">Page 1</a>
-                  </li>
-                  <li>
-                      <a href="#">Page 2</a>
-                  </li>
-                  <li>
-                      <a href="#">Page 3</a>
-                  </li>
-                </ul>
-              </li>
-              <hr/>         
-              <li>
-                <a href="#retirementSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                  Retirement</a>
 
-                  <ul class="collapse list-unstyled" id="retirementSubmenu">
-                  <li>
-                      <a href="#">Page 1</a>
+                  <hr/>
+              
+	              </ul>
+              </li>
+              <hr/>
+              <!-- menu 4 -->
+              <li>
+                <a href="#loanSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-money fa-2x pr-3" aria-hidden="true"></i> LOANS</a>
+                <ul class="collapse list-unstyled" id="loanSubmenu">
+                  <li class="pt-3"><a href="<?php echo base_url()?>mortgage_overview">Loan Overview</a>
                   </li>
-                  <li>
-                      <a href="#">Page 2</a>
-                  </li>
-                  <li>
-                      <a href="#">Page 3</a>
-                  </li>
+                  <br/>
+                  <h5 class="text-white px-3">Get the best rates</h5>
+                  <li><a href="#">Best personal loan rates</a></li>
+                  <li><a href="#">Low-interest personal loans</a></li>
+                  <li><a href="#">Personal loans for bad credit</a></li>
+                  <li><a href="#">Personal loans for good credit</a></li>
+                  <li><a href="#">Personal loans for excellent credit</a></li>
+                  <li><a href="#">Best home improvement loan rates</a></li>
+                  <li><a href="#">Best debt consolidation loan rates</a></li>
+                  <li><a href="#">Student loan rates</a></li>
+                  <li><a href="#">Student loan refinance rates</a></li>
+                  <li><a href="#">Student loan interest rates</a></li>
+                  <li><a href="#">Auto loan rates</a></li>
+                  <br/>
+                  <h5 class="text-white px-3">Use Calculators</h5>
+                  <li><a href="#">Loan calculator</a></li>
+                  <li><a href="#">Personal loan calculator</a></li>
+                  <li><a href="#">Loan payment calculator</a></li>
+                  <li><a href="#">Student loan calculator</a></li>
+                  <li><a href="#">Auto loan calculator</a></li>
+                  <li><a href="#">Auto refinance calculator</a></li>
+                  <li><a href="#">All calculators</a></li>
+                  <br/>
+                  <h5 class="text-white px-3">Use calculators</h5>
+                  <li><a href="#">Personal loans</a></li>
+                  <li><a href="#">Student loans</a></li>
+                  <li><a href="#">Debt consolidation loans</a></li>
+                  <li><a href="#">Home improvement loans</a></li>
+                  <li><a href="#">Medical loans</a></li>
+                  <li><a href="#">Debt management</a></li>
+                  <li><a href="#">Auto loans</a></li>
                 </ul>
               </li>
-	          </ul>
-             
+              <hr/>
+              <!-- menu 5 -->
+              <li>
+                <a href="#investmentSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-money fa-2x pr-3" aria-hidden="true"></i>Investments</a>
+                <ul class="collapse list-unstyled" id="investmentSubmenu">
+                  <li class="pt-3"><a href="<?php echo base_url()?>mortgage_overview">Invertment Overview</a>
+                  </li>
+                  <br/>
+                  <h5 class="text-white px-3">Best Of</h5>
+                  <li><a href="#">Best investments</a></li>
+                  <li><a href="#">Best online brokers for stocks</a></li>
+                  <li><a href="#">Best online brokers for beginners</a></li>
+                  <li><a href="#">Best online brokers for mutual funds</a></li>
+                  <br/>
+                  <h5 class="text-white px-3">Use Calculators</h5>
+                  <li><a href="#">Investment earnings calculator</a></li>
+                  <li><a href="#">Annuity calculator</a></li>
+                  <li><a href="#">All investing & CD calculators</a></li>
+                  <br/>
+                  <h5 class="text-white px-3">Get advice</h5>
+                  <li><a href="#">What is the long-term capital gains tax?</a></li>
+                  <li><a href="#">Passive income: What it is and 5 ideas for 2019</a></li>
+                  <li><a href="#">How to buy stocks</a></li>
+                </ul>
+              </li>
+              <hr/>
+              <!-- menu 6 -->
+              <li>
+                <a href="#home_Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-home fa-2x pr-3" aria-hidden="true"></i>Home Equity</a>
+                <ul class="collapse list-unstyled" id="home_Submenu">
+                  <li class="pt-3"><a href="<?php echo base_url()?>mortgage_overview">Home Equity Overview</a></li>
+                  <br/>
+                  <h5 class="text-white px-3">Use calculators</h5>
+                  <li><a href="#">Home equity calculator</a></li>
+                  <li><a href="#">Loan vs. line of credit calculator</a></li>
+                  <li><a href="#">Debt consolidation calculator</a></li>
+                  <li><a href="#">HELOC payoff calculator</a></li>
+                  <li><a href="#">All home equity calculators</a></li>
+                  <br/>
+                  <h5 class="text-white px-3">Compare lenders</h5>
+                  <li><a href="#">Home equity loan rates</a></li>
+                  <li><a href="#">Home equity line of credit rates</a></li>
+                  <li><a href="#">Home equity lender reviews</a></li>   
+                  <br/>
+                  <h5 class="text-white px-3">Get advice</h5>
+                  <li><a href="#">What is a home equity loan?</a></li>
+                  <li><a href="#">HELOC vs. Home equity loan</a></li>
+                  <li><a href="#">Consolidate your debt using home equity</a></li>
+                  <li><a href="#">Home equity loans with bad credit</a></li>                 
+                </ul>
+              </li>
+              <hr/>
+              <!-- menu 7 -->
+              <li>
+                <a href="#insuranceSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-file fa-2x pr-3" aria-hidden="true"></i> Insurance</a>
+                <ul class="collapse list-unstyled" id="insuranceSubmenu">
+                  <li class="pt-3"><a href="<?php echo base_url()?>mortgage_overview">Insurance Overview</a></li>
+                  <br/>
+                  <h5 class="text-white px-3">Insurance types</h5>
+                  <li><a href="#">Car insurance</a></li>
+                  <li><a href="#">Homeowner's insurance</a></li>
+                  <li><a href="#">Health insurance</a></li>
+                  <li><a href="#">Life insurance</a></li>
+                  <br/>
+                  <h5 class="text-white px-3">Best Of</h5>
+                  <li><a href="#">Best car insurance companies</a></li>
+                  <li><a href="#">Best home insurance companies</a></li>
+                  <li><a href="#">Best life insurance companies</a></li>
+                  <li><a href="#">Best cheap car insurance</a></li>
+                  <li><a href="#">Top car insurance comparison</a></li>
+                  <br/>
+                  <h5 class="text-white px-3">Get advice</h5>
+                  <li><a href="#">Best Roth IRA accounts</a></li>
+                  <li><a href="#">Best retirement plans</a></li>
+                  <li><a href="#">How to open a Roth IRA</a></li>
+                  <li><a href="#">401(k) rollover guide</a></li>
+                  <li><a href="#">Roth IRA vs. Roth 401(k)</a></li>
+                  <br/>
+                  <h5 class="text-white px-3">Use calculators</h5>
+                  <li><a href="#">401(k) retirement calculator</a></li>
+                  <li><a href="#">Retirement savings calculator</a></li>
+                  <li><a href="#">Roth IRA calculator</a></li>
+                  <li><a href="#">IRA minimum distribution calculator</a></li>
+                  <li><a href="#">Social security benefits calculator</a></li>
+                  <li><a href="#">All retirement calculators</a></li>
+                  <br/>
+                  <h5 class="text-white px-3">More information</h5>
+                  <li><a href="#">What is an IRA?</a></li>
+                  <li><a href="#">What is a Roth 401(k)?</a></li>
+                  <li><a href="#">401(k) contribution limits</a></li>
+                  <li><a href="#">Contributing to IRA during retirement</a></li>
+                  <li><a href="#">Best age for Social Security retirement benefits</a></li>
+                  <li><a href="#">Roth IRA 5 year rule</a></li>
+                  <br/>               
+                </ul>
+              </li>
+              <hr/>
+              <!-- menu 8 -->
+              <li>
+                <a href="#checkingSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-home fa-2x pr-3" aria-hidden="true"></i>Checking</a>
+                <ul class="collapse list-unstyled" id="checkingSubmenu">
+                  <!-- <li class="pt-3"><a href="<?php echo base_url()?>mortgage_overview">Insurance Overview</a></li> -->
+                  <br/>
+                  <h5 class="text-white px-3">Best Products</h5>
+                  <li><a href="#">Best Checking Accounts</a></li>
+                  <li><a href="#">Best Free Checking  Accounts</a></li>
+                  <li><a href="#">Best High-Yield Checking Accounts</a></li>
+                  <li><a href="#">Best Student Checking Accounts</a></li>
+                  <li><a href="#">Best Business Checking Accounts</a></li>
+                  <br/>
+                  <h5 class="text-white px-3">Compare and Calculate</h5>
+                  <li><a href="#">Compare Checking Accounts</a></li>
+                  <li><a href="#">Checking Interest Calculator</a></li>
+                  <br/>
+                </ul>
+              </li>
+              <hr/>
+
           </div>
        
         <i class="fa fa-bars fa-2x" aria-hidden="true" id="icon_bar" onclick="openNav()" style="color:#96871a;cursor:pointer;"></i>
@@ -349,7 +660,7 @@
   <script>
  
 function openNav() {
-  document.getElementById("mySidenav").style.width = "290px";
+  document.getElementById("mySidenav").style.width = "360px";
 
 }
 
