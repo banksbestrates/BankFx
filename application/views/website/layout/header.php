@@ -6,9 +6,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
-  <link href="<?php echo base_url()?>assets/img/favicon.png" rel="icon">
+  <link href="<?php echo base_url()?>assets/img/logo/main_logo_image.png" rel="icon">
   <link href="<?php echo base_url()?>asssets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
@@ -188,12 +188,12 @@
                 <i class="fa fa-home fa-2x pr-3"></i> Mortgages</a>
                 <ul class="collapse list-unstyled" id="homeSubmenu">
                   <li class="pt-3">
-                      <a href="<?php echo base_url()?>mortgage_overview">Mortgages Overview</a>
+                      <a href="<?php echo base_url()?>index.php/mortgage_overview">Mortgages Overview</a>
                   </li>
                   <br/>
                   <h5 class="text-white px-3">Get the best rates</h5>
                   <li>
-                      <a href="#">Mortgage Rates</a>
+                      <a href="<?php echo base_url()?>index.php/mortgage_rates">Mortgage Rates</a>
                   </li>
                   <li>
                       <a href="#">30 -years Mortgage rates</a>
@@ -208,13 +208,13 @@
                       <a href="#">10 -years Mortgage rates</a>
                   </li>
                   <li>
-                      <a href="#">FHA Loan Rates</a>
+                      <a href="<?php echo base_url()?>index.php/mortgage_fha">FHA Loan Rates</a>
                   </li>
                   <li>
-                      <a href="#">VA Loan Rates</a>
+                      <a href="<?php echo base_url() ?>index.php/mortgage_va_loan">VA Loan Rates</a>
                   </li>
                   <li>
-                      <a href="#">Jumbo Loan Rates</a>
+                      <a href="<?php echo base_url() ?>index.php/mortgage_jumbo_loan">Jumbo Loan Rates</a>
                   </li>
                   <li>
                       <a href="#">ARM Loan Rates</a>
@@ -313,7 +313,7 @@
                 <i class="fa fa-university fa-2x pr-3" aria-hidden="true"></i>Banking</a>
                 <ul class="collapse list-unstyled" id="bankingSubmenu">
                 <li class="pt-3">
-                      <a href="<?php echo base_url()?>mortgage_overview">Banking Overview</a>
+                      <a href="<?php echo base_url()?>index.php/mortgage_overview">Banking Overview</a>
                   </li>
                   <br/>
                   <h5 class="text-white px-3">Compare accounts</h5>
@@ -384,7 +384,7 @@
               <i class="fa fa-credit-card fa-2x pr-3" aria-hidden="true"></i>Credit Card</a>
                 <ul class="collapse list-unstyled" id="creditSubmenu">
                   <li class="pt-3">
-                      <a href="<?php echo base_url()?>mortgage_overview">Credit Card Overview</a>
+                      <a href="<?php echo base_url()?>index.php/mortgage_overview">Credit Card Overview</a>
                   </li>
                   <br/>
                   <h5 class="text-white px-3">Compare by category</h5>
@@ -469,7 +469,7 @@
                 <a href="#loanSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                 <i class="fa fa-money fa-2x pr-3" aria-hidden="true"></i> LOANS</a>
                 <ul class="collapse list-unstyled" id="loanSubmenu">
-                  <li class="pt-3"><a href="<?php echo base_url()?>mortgage_overview">Loan Overview</a>
+                  <li class="pt-3"><a href="<?php echo base_url()?>index.php/mortgage_overview">Loan Overview</a>
                   </li>
                   <br/>
                   <h5 class="text-white px-3">Get the best rates</h5>
@@ -486,7 +486,7 @@
                   <li><a href="#">Auto loan rates</a></li>
                   <br/>
                   <h5 class="text-white px-3">Use Calculators</h5>
-                  <li><a href="#">Loan calculator</a></li>
+                  <li><a href="<?php echo base_url()?>index.php/loan_calculator">Loan calculator</a></li>
                   <li><a href="#">Personal loan calculator</a></li>
                   <li><a href="#">Loan payment calculator</a></li>
                   <li><a href="#">Student loan calculator</a></li>
@@ -510,7 +510,7 @@
                 <a href="#investmentSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                 <i class="fa fa-money fa-2x pr-3" aria-hidden="true"></i>Investments</a>
                 <ul class="collapse list-unstyled" id="investmentSubmenu">
-                  <li class="pt-3"><a href="<?php echo base_url()?>mortgage_overview">Invertment Overview</a>
+                  <li class="pt-3"><a href="<?php echo base_url()?>index.php/mortgage_overview">Invertment Overview</a>
                   </li>
                   <br/>
                   <h5 class="text-white px-3">Best Of</h5>
@@ -536,7 +536,7 @@
                 <a href="#home_Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                 <i class="fa fa-home fa-2x pr-3" aria-hidden="true"></i>Home Equity</a>
                 <ul class="collapse list-unstyled" id="home_Submenu">
-                  <li class="pt-3"><a href="<?php echo base_url()?>mortgage_overview">Home Equity Overview</a></li>
+                  <li class="pt-3"><a href="<?php echo base_url()?>index.php/mortgage_overview">Home Equity Overview</a></li>
                   <br/>
                   <h5 class="text-white px-3">Use calculators</h5>
                   <li><a href="#">Home equity calculator</a></li>
@@ -563,7 +563,7 @@
                 <a href="#insuranceSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                 <i class="fa fa-file fa-2x pr-3" aria-hidden="true"></i> Insurance</a>
                 <ul class="collapse list-unstyled" id="insuranceSubmenu">
-                  <li class="pt-3"><a href="<?php echo base_url()?>mortgage_overview">Insurance Overview</a></li>
+                  <li class="pt-3"><a href="<?php echo base_url()?>index.php/mortgage_overview">Insurance Overview</a></li>
                   <br/>
                   <h5 class="text-white px-3">Insurance types</h5>
                   <li><a href="#">Car insurance</a></li>
@@ -609,7 +609,7 @@
                 <a href="#checkingSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                 <i class="fa fa-home fa-2x pr-3" aria-hidden="true"></i>Checking</a>
                 <ul class="collapse list-unstyled" id="checkingSubmenu">
-                  <!-- <li class="pt-3"><a href="<?php echo base_url()?>mortgage_overview">Insurance Overview</a></li> -->
+                  <!-- <li class="pt-3"><a href="<?php echo base_url()?>index.php/mortgage_overview">Insurance Overview</a></li> -->
                   <br/>
                   <h5 class="text-white px-3">Best Products</h5>
                   <li><a href="#">Best Checking Accounts</a></li>

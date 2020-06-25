@@ -61,5 +61,8 @@ $route['mortgage_fha'] = 'Home/mortgage_fha';
 $route['mortgage_va_loan'] = 'Home/mortgage_va_loan';
 $route['mortgage_jumbo_loan'] = 'Home/mortgage_jumbo_loan';
 $route['mortgage_arm_loan'] = 'Home/mortgage_arm_loan';
+// loan module
+$route['loan_calculator'] = 'Loan/loan_calculator';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
