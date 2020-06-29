@@ -61,6 +61,8 @@ $route['mortgage_fha'] = 'Home/mortgage_fha';
 $route['mortgage_va_loan'] = 'Home/mortgage_va_loan';
 $route['mortgage_jumbo_loan'] = 'Home/mortgage_jumbo_loan';
 $route['mortgage_arm_loan'] = 'Home/mortgage_arm_loan';
+$route['bank_overview'] = 'Bank/bank_overview';
+$route['best_banks'] = 'Bank/best_banks';
 // loan module
 $route['loan_calculator'] = 'Loan/loan_calculator';
 

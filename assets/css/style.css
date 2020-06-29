@@ -26,11 +26,10 @@ a:hover, a:active, a:focus {
 
 p {
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 25px 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  
   font-weight: 600;
   margin: 0 0 20px 0;
   padding: 0;
@@ -1470,4 +1469,149 @@ body.mobile-nav-active #mobile-nav-toggle {
 .closebtn img{
   height:40px;
   padding-right: 30px;
+}
+
+
+/* BANK OVERVIEW  */
+
+.overview_banner{
+  background: 
+  /* linear-gradient(
+  rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)
+  ), */
+  url("../img/plant.jpg");
+background-size: cover;
+width: 100%;
+height: 320px;
+/* margin: 10px 0 0 10px; */
+position: relative;
+float: left;
+}
+.banner_heading{
+margin: 0;
+position: absolute;
+top: 30%;
+left: 10%;
+}
+.banner_heading h1{
+font-weight: 900!important;
+color: black!important;
+}
+
+.best_bank{
+height:130px;
+background: 
+  linear-gradient(
+  rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)
+  ),
+  url("../img/bank_best.jpg");
+background-size: cover;
+width: 130%;
+position: relative;
+float: left;
+}
+.best_bank h4{
+color:white;
+text-align:center;
+position:absolute;
+top:40%;
+left:30%;
+}
+.best_bank h2{
+color:white;
+text-align:center;
+position:absolute;
+top:40%;
+left:30%;
+}
+.bank_review h2{
+color:white;
+text-align:center;
+position:absolute;
+top:40%;
+left:30%;
+}
+
+
+.bank_review{
+height:130px;
+background: 
+  linear-gradient(
+  rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)
+  ),
+  url("../img/bank_best.jpg");
+background-size: cover;
+width: 130%;
+position: relative;
+float: left;
+}
+.card_view .card{
+text-align: center;
+border: 1px solid #ecda53;
+padding: 20px 30px 0px 30px;
+border-radius: 10px;
+}
+
+.card_view .fa{
+font-size:60px;
+color:#ecda53;
+padding-bottom:20px;
+}
+.bank_card_view .card{
+text-align: center;
+border: 1px solid #ecda53;
+padding: 20px 30px 20px 30px;
+border-radius: 10px;
+}
+
+.bank_card_view .fa{
+color:#ecda53;
+padding-bottom:20px;
+}
+.card_row{
+padding-top:80px;
+padding-bottom:80px;
+
+}
+.portfolio img{
+width:100%;
+height:100%!important;
+}
+#portfolio{
+padding:60px 0 0 0;
+}
+.related_image{
+background-image:url('../img/overview/travel2.jpg');
+background-repeat:no-repeat;
+height:280px;
+width:100%;
+background-size:cover;
+
+}
+.related_image2{
+background-image:url('../img/overview/airline.jpg');
+background-repeat:no-repeat;
+height:280px;
+width:100%;
+background-size:cover;
+
+}
+.related_image3{
+background-image:url('../img/overview/money2.jpg');
+background-repeat:no-repeat;
+height:280px;
+width:100%;
+background-size:cover;
+
+}
+.related_content{
+padding:20px 10px 10px 30px;
+text-align:justify;
+}
+.related_content .fa{
+color:#968719;
+font-size:40px;
 }
