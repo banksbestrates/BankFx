@@ -12,10 +12,10 @@
  
   <div class="row bank_top_view">
     <div class="col-md-6 best_bank">
-      <h2>Bank Best Rates</h2>
+    <a href="<?php echo base_url()?>index.php/best_banks"><h2>Bank Best Rates</h2></a>
     </div>
-    <div class="col-md-6 bank_review">
-      <h2>Best Bank Reviews</h2>
+   <div class="col-md-6 bank_review">
+   <a href="<?php echo base_url()?>index.php/best_banks"><h2>Best Bank Reviews</h2></a>
     </div>
   </div>
 
@@ -54,7 +54,7 @@
   </div> 
 
   <!-- TRENDING IN BANKSSS -->
-<section id="portfolio" class="section-bg">
+<section id="portfolio" class="">
     <div class="container">
         <header class="section-header pb-4">
           <h3 class="section-title">WHAT'S TRENDING IN BANKS</h3>

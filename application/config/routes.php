@@ -63,6 +63,7 @@ $route['mortgage_jumbo_loan'] = 'Home/mortgage_jumbo_loan';
 $route['mortgage_arm_loan'] = 'Home/mortgage_arm_loan';
 $route['bank_overview'] = 'Bank/bank_overview';
 $route['best_banks'] = 'Bank/best_banks';
+$route['bank_review'] = 'Bank/bank_review';
 // loan module
 $route['loan_calculator'] = 'Loan/loan_calculator';
 
