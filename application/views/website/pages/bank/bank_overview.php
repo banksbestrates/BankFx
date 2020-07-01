@@ -12,7 +12,7 @@
  
   <div class="row bank_top_view">
     <div class="col-md-6 best_bank">
-    <a href="<?php echo base_url()?>index.php/best_banks"><h2>Bank Best Rates</h2></a>
+    <a href="<?php echo base_url()?>index.php/best_banks"><h2>Bank 100 Banks</h2></a>
     </div>
    <div class="col-md-6 bank_review">
    <a href="<?php echo base_url()?>index.php/best_banks"><h2>Best Bank Reviews</h2></a>

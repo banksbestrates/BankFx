@@ -1550,25 +1550,25 @@ float: left;
 }
 .card_view .card{
 text-align: center;
-border: 1px solid #ecda53;
+border: 1px solid #CB9D24;
 padding: 20px 30px 0px 30px;
 border-radius: 10px;
 }
 
 .card_view .fa{
 font-size:60px;
-color:#ecda53;
+color:#CB9D24;
 padding-bottom:20px;
 }
 .bank_card_view .card{
 text-align: center;
-border: 1px solid #ecda53;
+border: 1px solid #CB9D24;
 padding: 30px 30px 30px 30px;
 border-radius: 10px;
 }
 
 .bank_card_view .fa{
-color:#ecda53;
+color:#CB9D24;
 padding-bottom:20px;
 font-size:20px;
 }

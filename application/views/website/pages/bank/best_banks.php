@@ -43,8 +43,8 @@
 
   <!-- BANK NAMES AND DETAILS  -->
   <div class="col-md-10 mx-auto ">
-        <div class="pt-5 col-md-12 mx-auto">   
-            <h1>ALLIANT</h1>
+        <div class=" col-md-12 mx-auto">   
+           <a href="<?php echo base_url()?>index.php/bank_review"> <h1>ALLIANT</h1></a>
             <h5>CATEGORY &nbsp;&nbsp;<span style="font-weight:400!important;font-size:15px"> # OF STATES | # OF BRANCHES</h5>
             <div class="row">
                 <div class="col-md-8">
@@ -60,7 +60,7 @@
                 </p>
                 </div>
                 <div class="col-md-4 ">
-                    <div class="col-md-10 mx-auto bank_card_view">
+                    <div class="col-md-10 px-0 mx-auto bank_card_view">
                         <div class="card">
                             <div class="text-center">
                                 <span class="fa fa-star checked"></span>
@@ -70,14 +70,14 @@
                                 <span class="fa fa-star checked"></span>
                             </div>
                            
-                        <img src="<?php echo base_url()?>assets/img/overview/bank1.png" style="height:30px">
+                        <img src="<?php echo base_url()?>assets/img/overview/bank1.png" style="height:35px">
                         </div>
                     </div>
                 </div>
             </div>     
         </div>
-        <div class="pt-5 col-md-12 mx-auto">   
-            <h1>ALLY</h1>
+        <div class="pt-4 col-md-12 mx-auto">   
+        <a href="<?php echo base_url()?>index.php/bank_review"><h1>ALLY</h1></a>
             <h5>CATEGORY &nbsp;&nbsp;<span style="font-weight:400!important;font-size:15px"> # OF STATES | # OF BRANCHES</h5>
             <div class="row">
                 <div class="col-md-8">
@@ -93,7 +93,7 @@
                 </p>
                 </div>
                 <div class="col-md-4 ">
-                    <div class="col-md-10 mx-auto bank_card_view">
+                    <div class="col-md-10 px-0 mx-auto bank_card_view">
                         <div class="card">
                         <div class="text-center">
                                 <span class="fa fa-star checked"></span>
@@ -102,14 +102,14 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                             </div>
-                        <img src="<?php echo base_url()?>assets/img/overview/bank1.png" style="height:30px">
+                        <img src="<?php echo base_url()?>assets/img/overview/bank1.png" style="height:35px">
                         </div>
                     </div>
                 </div>
             </div>     
         </div>
-        <div class="pt-5 col-md-12 mx-auto">   
-            <h1>BANK OF AMERICA</h1>
+        <div class="pt-4 col-md-12 mx-auto">   
+        <a href="<?php echo base_url()?>index.php/bank_review"><h1>BANK OF AMERICA</h1></a>
             <h5>CATEGORY &nbsp;&nbsp;<span style="font-weight:400!important;font-size:15px"> # OF STATES | # OF BRANCHES</h5>
             <div class="row">
                 <div class="col-md-8">
@@ -125,7 +125,7 @@
                 </p>
                 </div>
                 <div class="col-md-4 ">
-                    <div class="col-md-10 mx-auto bank_card_view">
+                    <div class="col-md-10 px-0 mx-auto bank_card_view">
                         <div class="card">
                         <div class="text-center">
                                 <span class="fa fa-star checked"></span>
@@ -134,13 +134,13 @@
                                 <span class="fa fa-star "></span>
                                 <span class="fa fa-star "></span>
                             </div>
-                        <img src="<?php echo base_url()?>assets/img/overview/bank1.png" style="height:30px">
+                        <img src="<?php echo base_url()?>assets/img/overview/bank1.png" style="height:35px">
                         </div>
                     </div>
                 </div>
             </div>     
         </div>
-        <div class="pt-5 col-md-12 mx-auto">   
+        <div class="pt-4 col-md-12 mx-auto">   
             <h1>CAPITAL ONE</h1>
             <h5>CATEGORY &nbsp;&nbsp;<span style="font-weight:400!important;font-size:15px"> # OF STATES | # OF BRANCHES</h5>
             <div class="row">
@@ -157,7 +157,7 @@
                 </p>
                 </div>
                 <div class="col-md-4 ">
-                    <div class="col-md-10 mx-auto bank_card_view">
+                    <div class="col-md-10 px-0 mx-auto bank_card_view">
                         <div class="card">
                         <div class="text-center">
                                 <span class="fa fa-star checked"></span>
@@ -166,7 +166,7 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                             </div>
-                        <img src="<?php echo base_url()?>assets/img/overview/bank1.png" style="height:30px">
+                        <img src="<?php echo base_url()?>assets/img/overview/bank1.png" style="height:35px">
                         </div>
                     </div>
                 </div>
