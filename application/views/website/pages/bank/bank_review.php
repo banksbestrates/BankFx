@@ -83,7 +83,7 @@
     text-align:right;
     padding-top:40px;
 }
-.button_compare
+.button_yellow
 {
     color:white;
     background-color:#CB9D24;
@@ -99,7 +99,7 @@
             <p>Published on July 30. Do you want to get more information ?</p>
         </div>
         <div class="col-md-4 text-right pt-3">
-            <button class="btn button_compare">DOWNLOAD OUR APP</button>
+            <button class="btn button_yellow">DOWNLOAD OUR APP</button>
         </div>
     </div>
 </div>
@@ -126,7 +126,7 @@
                     <span>SAVING</span> <span class="float-right"> 4.7</span>
                     </div>
                     <div class="compare_rates pt-3 pl-0">
-                    <button class="btn button_compare">COMPARE BANKS BEST RATES</button>
+                    <button class="btn button_yellow">COMPARE BANKS BEST RATES</button>
                     
                     </div>                                                          
             </div>
@@ -263,7 +263,7 @@
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star "></span>
                     <br/>
-                    <button class="btn mt-4 button_compare">COMPARE CHECKING RATES</button>                   
+                    <button class="btn mt-4 button_yellow">COMPARE CHECKING RATES</button>                   
             </div>
         </div>
 </div>
@@ -289,7 +289,7 @@
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star "></span>
                     <br/>
-                    <button class="btn mt-4 button_compare">COMPARE CHECKING RATES</button>                   
+                    <button class="btn mt-4 button_yellow">COMPARE CHECKING RATES</button>                   
             </div>
         </div>
 </div>
@@ -315,7 +315,7 @@
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <br/>
-                    <button class="btn mt-4 button_compare">COMPARE CHECKING RATES</button>                   
+                    <button class="btn mt-4 button_yellow">COMPARE CHECKING RATES</button>                   
             </div>
         </div>
 </div>

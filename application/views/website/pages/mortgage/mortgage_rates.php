@@ -1,57 +1,84 @@
-<style>
-.rate_header{
-    background-color:rgba(223, 204, 190, 0.36);
-    padding:80px 0px 40px 0px;
 
+<style>
+
+
+
+.mortgag_form_div{
+  background-color:black;
+  border-top:2px solid red;
+  border-bottom:2px solid red;
 }
-.rate_header .btn{
-    background-color:#968719;
-    color:white;
+.mortgag_form_div label{
+  color:white;
 }
-label{
-    color:black;
+.form-control{
+  line-height:1.5;
 }
-.form-control {
+.table td , .table th{
+    border-bottom:1px solid #CB9D24;
+    border-top:none; 
+}
+.table thead th{
+    border-bottom:1px solid #CB9D24;
+}
+
+.table > tbody > tr > td {
+     vertical-align: middle;
     
-    line-height: 2.5!important;
 }
-select.form-control:not([size]):not([multiple]) {
-    height: calc(3.25rem + 0px);
+.table h4 {
+    margin-bottom:0px;
 }
-.result_div{
-    padding:20px 0px 20px 0px;
+.active td{
+    padding-top:30px;
+    padding-bottom:30px;
 }
-.checked {
-  color: orange;
+.button_yellow{
+    color:white;
+    background-color:#CB9D24;
+}
+.button_grey{
+    color:white;
+    background-color:#626262;
 }
 </style>
-<div class="rate_header">
-    <header class="text-center">
-        <h3>Current Mortgage Rates for June 2020</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus voluptate odio <p>
-    </header>
-    <div class="container">
+<!-- TOP NAME DIV -->
+<div class="col-md-10 mx-auto py-5">
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class=" font-weight-bold mb-2">Best Mortgage Rate for July 2020</h1>
+            <p>Published on July 30. Do you want to get more information ?</p>
+        </div>
+        <div class="col-md-4 text-right pt-3">
+            <button class="btn button_compare">DOWNLOAD OUR APP</button>
+        </div>
+    </div>
+</div>
+
+<!-- Calculate form div -->
+<div class="col-md-12 py-4 mortgag_form_div">
+  <div class="col-md-10 mx-auto px-0 ">
         <div class="row">
-            <div class="col-md-2">
+          <div class="col-md-2">
                 <label>Mortgage type</label>
                 <select class="form-control">
                     <option>Refinance</option>
                     <option>Purchase</option>
                 </select>
-            </div>
-            <div class="col-md-2">
+          </div>
+          <div class="col-md-2">
                 <label>ZIP Code</label>
                 <input type="text" class="form-control" value="12345"/>
-            </div>
-            <div class="col-md-2">
+          </div>
+          <div class="col-md-2">
                 <label>Purchase Price</label>
                 <input type="text" class="form-control" value="$410,000"/>
-            </div>
-            <div class="col-md-2">
+          </div>
+          <div class="col-md-2">
                 <label>Down payment</label>
                 <input type="text" class="form-control" value="$82,000">
-            </div>
-            <div class="col-md-2">
+          </div>
+          <div class="col-md-2">
                 <label>Credit score </label>
                 <select class="form-control">
                     <option>740+</option>
@@ -60,8 +87,8 @@ select.form-control:not([size]):not([multiple]) {
                     <option>7420-739</option>
                     <option>720-739</option>
                 </select>
-            </div>
-            <div class="col-md-2">
+          </div>
+          <div class="col-md-2">
                 <label>Loan term</label>
                 <select class="form-control">
                     <option>30 Years</option>
@@ -69,335 +96,260 @@ select.form-control:not([size]):not([multiple]) {
                     <option>15 Years</option>
                     <option>10 Years</option> 
                 </select>
-            </div>
+          </div>
         </div>
-        <div class="text-center pt-4">
-            <button class="col-md-2 form-control btn">Search</button>
-        </div>
-    </div>
-</div>
-<div class="container result_div">
-    <p class="text-center">Showing results for: Single-family home, 30 year fixed mortgages with all points options. </p>
-    <table class="table">
-    <thead>
-        <tr>
-            <th>LENDER</th>
-            <th>RATE/th>
-            <th>APR</th>
-            <th>MO. PAYMENT </th>
-            <th>UPFRONT COSTS </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><img src="<?php echo base_url()?>assets/img/logo/demo_bank.png"/><br/>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </td>
-            <td>
-                <h4>2.875%</h4>
-                <small>30 Year fixed</small>
-            </td>
-            <td>
-                <h4>3.48%</h4>
-            </td>
-            <td>
-                <h4>$1416</h4>
-            </td>
-            <td>
-                <h4>$0</h4>
-                <small>Points:0</small><br/>
-                <small>5 Year cost:$52,575</small>
-            </td>
-            
-        </tr>
-        <tr>
-            <td><img src="<?php echo base_url()?>assets/img/logo/demo_bank.png"/><br/>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </td>
-            <td>
-                <h4>2.875%</h4>
-                <small>30 Year fixed</small>
-            </td>
-            <td>
-                <h4>3.48%</h4>
-            </td>
-            <td>
-                <h4>$1416</h4>
-            </td>
-            <td>
-                <h4>$0</h4>
-                <small>Points:0</small><br/>
-                <small>5 Year cost:$52,575</small>
-            </td>
-            
-        </tr>
-        <tr>
-            <td><img src="<?php echo base_url()?>assets/img/logo/demo_bank.png"/><br/>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </td>
-            <td>
-                <h4>2.875%</h4>
-                <small>30 Year fixed</small>
-            </td>
-            <td>
-                <h4>3.48%</h4>
-            </td>
-            <td>
-                <h4>$1416</h4>
-            </td>
-            <td>
-                <h4>$0</h4>
-                <small>Points:0</small><br/>
-                <small>5 Year cost:$52,575</small>
-            </td>
-            
-        </tr>
-        <tr>
-            <td><img src="<?php echo base_url()?>assets/img/logo/demo_bank.png"/><br/>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </td>
-            <td>
-                <h4>2.875%</h4>
-                <small>30 Year fixed</small>
-            </td>
-            <td>
-                <h4>3.48%</h4>
-            </td>
-            <td>
-                <h4>$1416</h4>
-            </td>
-            <td>
-                <h4>$0</h4>
-                <small>Points:0</small><br/>
-                <small>5 Year cost:$52,575</small>
-            </td>
-            
-        </tr>
-        <tr>
-            <td><img src="<?php echo base_url()?>assets/img/logo/demo_bank.png"/><br/>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </td>
-            <td>
-                <h4>2.875%</h4>
-                <small>30 Year fixed</small>
-            </td>
-            <td>
-                <h4>3.48%</h4>
-            </td>
-            <td>
-                <h4>$1416</h4>
-            </td>
-            <td>
-                <h4>$0</h4>
-                <small>Points:0</small><br/>
-                <small>5 Year cost:$52,575</small>
-            </td>
-            
-        </tr>
-        <tr>
-            <td><img src="<?php echo base_url()?>assets/img/logo/demo_bank.png"/><br/>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </td>
-            <td>
-                <h4>2.875%</h4>
-                <small>30 Year fixed</small>
-            </td>
-            <td>
-                <h4>3.48%</h4>
-            </td>
-            <td>
-                <h4>$1416</h4>
-            </td>
-            <td>
-                <h4>$0</h4>
-                <small>Points:0</small><br/>
-                <small>5 Year cost:$52,575</small>
-            </td>
-            
-        </tr>
-        <tr>
-            <td><img src="<?php echo base_url()?>assets/img/logo/demo_bank.png"/><br/>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </td>
-            <td>
-                <h4>2.875%</h4>
-                <small>30 Year fixed</small>
-            </td>
-            <td>
-                <h4>3.48%</h4>
-            </td>
-            <td>
-                <h4>$1416</h4>
-            </td>
-            <td>
-                <h4>$0</h4>
-                <small>Points:0</small><br/>
-                <small>5 Year cost:$52,575</small>
-            </td>
-            
-        </tr>
-        <tr>
-            <td><img src="<?php echo base_url()?>assets/img/logo/demo_bank.png"/><br/>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </td>
-            <td>
-                <h4>2.875%</h4>
-                <small>30 Year fixed</small>
-            </td>
-            <td>
-                <h4>3.48%</h4>
-            </td>
-            <td>
-                <h4>$1416</h4>
-            </td>
-            <td>
-                <h4>$0</h4>
-                <small>Points:0</small><br/>
-                <small>5 Year cost:$52,575</small>
-            </td>
-            
-        </tr>
-        <tr>
-            <td><img src="<?php echo base_url()?>assets/img/logo/demo_bank.png"/><br/>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </td>
-            <td>
-                <h4>2.875%</h4>
-                <small>30 Year fixed</small>
-            </td>
-            <td>
-                <h4>3.48%</h4>
-            </td>
-            <td>
-                <h4>$1416</h4>
-            </td>
-            <td>
-                <h4>$0</h4>
-                <small>Points:0</small><br/>
-                <small>5 Year cost:$52,575</small>
-            </td>
-            
-        </tr>
-        <tr>
-            <td><img src="<?php echo base_url()?>assets/img/logo/demo_bank.png"/><br/>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </td>
-            <td>
-                <h4>2.875%</h4>
-                <small>30 Year fixed</small>
-            </td>
-            <td>
-                <h4>3.48%</h4>
-            </td>
-            <td>
-                <h4>$1416</h4>
-            </td>
-            <td>
-                <h4>$0</h4>
-                <small>Points:0</small><br/>
-                <small>5 Year cost:$52,575</small>
-            </td>
-            
-        </tr>
-        
-    </tbody>  
-</table>       
-</div>
+      </div>
+</div> 
 
-<div class="container">
-    <header class="text-center">
-        <h1>What are today's mortgage rates?</h1>
-    </header>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur modi adipisci iure. Facilis sint quibusdam reprehenderit illum esse magni eos maxime amet cum aliquam iure, incidunt, a animi aliquid autem?</p>
-    <header class="text-center">
-        <h1>Current Mortgage and Refinance Rates</h1>
-    </header>  
-    <table class="table">
-    <thead>
-      <tr>
-        <th>Product</th>
-        <th>Intrest Rate/th>
-        <th>ARP</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>30-Year Fixed Rate</td>
-        <td>3.400%	</td>
-        <td>3.630%</td>
-      </tr>
-      <tr>
-      <td>20-Year Fixed Rate</td>
-        <td>3.400%	</td>
-        <td>3.630%</td>
-      </tr>
-      <tr>
-      <td>15-Year Fixed Rate</td>
-        <td>3.400%	</td>
-        <td>3.630%</td>
-      </tr>
-      <tr>
-      <td>10-Year Fixed Rate</td>
-        <td>3.400%	</td>
-        <td>3.630%</td>
-      </tr>
-      <tr>
-      <td>10/1 ARM Rate</td>
-        <td>3.400%	</td>
-        <td>3.630%</td>
-      </tr>
-      <tr>
-      <td>7/1 ARM Rate</td>
-        <td>3.400%	</td>
-        <td>3.630%</td>
-      </tr>
-      <tr>
-      <td>5/1 ARM Rate</td>
-        <td>3.400%	</td>
-        <td>3.630%</td>
-      </tr>
-    </tbody>
-  </table>
+<!-- Table div -->
+<div class="col-md-12 py-5 ">
+  <div class="col-md-10 mx-auto px-0 ">
+  <table class="table">
+        <thead>
+            <tr>
+                <th class="">BANK</th>
+                <th class="">APY</th>             
+                <th class="">TERM</th>
+                <th class="">DEPOSIT </th>
+                <th>EARNINGS</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="active">
+                <td>
+                  <img src="<?php echo base_url()?>assets/img/overview/bank1.png"/><br/>
+                </td>
+                <td>
+                    <h4>1.15%</h4>
+                </td>
+                <td>
+                    <h4>1 yr</h4>
+                </td>
+                <td>
+                    <h4>$1000</h4>
+                </td>
+                <td>
+                    <h4>$400</h4>
+                </td>
+                <td>
+                    <h4><button class="btn button_yellow">SEE OFFER DETAILS</button></h4>
+                </td>              
+            </tr>       
+            <tr>
+                <td>
+                  BANK NAME<br/>
+                  MLS 123456<br/>
+                  12345678
+                </td>
+                <td>
+                    1.15%
+                </td>
+                <td>
+                    1 yr
+                </td>
+                <td>
+                    $1000
+                </td>
+                <td>
+                    $400
+                </td>
+                <td>
+                    <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                </td>              
+            </tr>       
+            <tr>
+                <td>
+                  BANK NAME<br/>
+                  MLS 123456<br/>
+                  12345678
+                </td>
+                <td>
+                    1.15%
+                </td>
+                <td>
+                    1 yr
+                </td>
+                <td>
+                    $1000
+                </td>
+                <td>
+                    $400
+                </td>
+                <td>
+                    <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                </td>              
+            </tr>       
+            <tr>
+                <td>
+                  BANK NAME<br/>
+                  MLS 123456<br/>
+                  12345678
+                </td>
+                <td>
+                    1.15%
+                </td>
+                <td>
+                    1 yr
+                </td>
+                <td>
+                    $1000
+                </td>
+                <td>
+                    $400
+                </td>
+                <td>
+                    <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                </td>              
+            </tr>       
+            <tr>
+                <td>
+                  BANK NAME<br/>
+                  MLS 123456<br/>
+                  12345678
+                </td>
+                <td>
+                    1.15%
+                </td>
+                <td>
+                    1 yr
+                </td>
+                <td>
+                    $1000
+                </td>
+                <td>
+                    $400
+                </td>
+                <td>
+                    <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                </td>              
+            </tr>       
+            <tr>
+                <td>
+                  BANK NAME<br/>
+                  MLS 123456<br/>
+                  12345678
+                </td>
+                <td>
+                    1.15%
+                </td>
+                <td>
+                    1 yr
+                </td>
+                <td>
+                    $1000
+                </td>
+                <td>
+                    $400
+                </td>
+                <td>
+                    <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                </td>              
+            </tr>       
+            <tr>
+                <td>
+                  BANK NAME<br/>
+                  MLS 123456<br/>
+                  12345678
+                </td>
+                <td>
+                    1.15%
+                </td>
+                <td>
+                    1 yr
+                </td>
+                <td>
+                    $1000
+                </td>
+                <td>
+                    $400
+                </td>
+                <td>
+                    <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                </td>              
+            </tr>       
+            <tr>
+                <td>
+                  BANK NAME<br/>
+                  MLS 123456<br/>
+                  12345678
+                </td>
+                <td>
+                    1.15%
+                </td>
+                <td>
+                    1 yr
+                </td>
+                <td>
+                    $1000
+                </td>
+                <td>
+                    $400
+                </td>
+                <td>
+                    <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                </td>              
+            </tr>       
+            <tr>
+                <td>
+                  BANK NAME<br/>
+                  MLS 123456<br/>
+                  12345678
+                </td>
+                <td>
+                    1.15%
+                </td>
+                <td>
+                    1 yr
+                </td>
+                <td>
+                    $1000
+                </td>
+                <td>
+                    $400
+                </td>
+                <td>
+                    <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                </td>              
+            </tr>       
+            <tr>
+                <td>
+                  BANK NAME<br/>
+                  MLS 123456<br/>
+                  12345678
+                </td>
+                <td>
+                    1.15%
+                </td>
+                <td>
+                    1 yr
+                </td>
+                <td>
+                    $1000
+                </td>
+                <td>
+                    $400
+                </td>
+                <td>
+                    <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                </td>              
+            </tr>       
+        </tbody>  
+    </table>   
+      </div>
+</div> 
 
-</div>
+
+
+
+
+
+  <!-- Darker Gold #CB9D24
+Lighter Gold #E6C245
+Grey #626262
+Blue #002A75 -->
+
+ 
+
+
 

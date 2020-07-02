@@ -1,167 +1,159 @@
- <!--==========================
-    About section 
+
+  <!--==========================
+    over view banner
   ============================-->
-
-  <style>
-    .heading_main{
-      padding: 100px 80px 100px 80px;
-    }
-    .back_image{
-      background-image:url('<?php echo base_url()?>assets/img/intro-carousel/4.jpg');
-      background-repeat:no-repeat;
-      background-size:cover;
-      background-position:center;
-    }
-    .about_container{
-      padding: 40px 80px 20px 80px;
-      text-align:justify;
-      line-height:2.0rem;
-    }
-    .about-col{
-        box-shadow: 2px 4px 3px #adaca3 !important;
-    }
-    .about-col:hover{
-        box-shadow: 2px 4px 3px #96871a !important;
-    }
-
-  </style>
-  <div class="bg-dark h-100 back_image">
-      <div class="row h-100 align-items-center">
-        <div class="col-lg-12">
-          <h1 class="display-3 text-white font-weight-bold heading_main">Mortgages
-          <p class="text-white font-weight-bold"  style="font-size:20px!important;">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </h1>
-        </div>
-      </div>
+  <div class="overview_banner">
+    <div class="banner_heading">
+    <h1 class="display-4">Mortgage Overview</h1>
+    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem hic<br/>
+    Its just a dummy text to show the design only  dummy textx dummy</h6>
+    </div>
   </div>
-    <!--==========================
-      About Us Section
-    ============================-->
-    <section id="about">
-      <div class="container">
+ 
+  
 
-     
-        <div class="row about-cols">
+  <!-- Card view -->
 
-          <div class="col-md-3 wow fadeInUp">
-            <div class="about-col">
-              <div class="img">
-                <img src="<?php echo base_url()?>asssets/img/about-mission.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-home-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Mortgage Rates</a></h2>
-              <br/>
-              <br/>
-              <p>
-              </p>
+  <div class="col-md-10 mx-auto card_row pb-4">    
+        <div class="pt-5 col-md-12 mx-auto row card_view">
+            <div class="col-md-3">
+                <div class="card pb-3">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <a href="<?php echo base_url()?>index.php/mortgage_rates"><h6> Mortgage Rates</h6></a>
+                </div>
             </div>
-          </div>
-
-    
-          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="about-col">
-              <div class="img">
-                <img src="<?php echo base_url()?>asssets/img/about-vision.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-calculator-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Mortgage Calculator</a></h2>   
-              <br/><br/> 
-              <p>
-              </p>      
+            <div class="col-md-3">
+            <div class="card pb-3">
+                  <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <h6>Refinance Rates</h6>
+                </div>
             </div>
-          </div>
-
-          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="about-col">
-              <div class="img">
-                <img src="<?php echo base_url()?>asssets/img/about-plan.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-list-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Refinance Rate</a></h2>
-              <br/><br/>
-              <p>
-              </p>
+            <div class="col-md-3">
+              <div class="card pb-3">
+              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <h6>Mortgage Calculators</h6>
+                </div>
             </div>
-          </div>
-          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="about-col">
-              <div class="img">
-                <img src="<?php echo base_url()?>asssets/img/about-vision.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-time-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">15 Years Mortgage <br/>
-              Rates</a></h2>
-              <br/>
-              <p>
-              </p>
+            <div class="col-md-3">
+                <div class="card">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <h6>How much house you can afford ?</h6>
+                </div>
             </div>
-          </div>
-
         </div>
+  </div> 
 
-      </div> 
-    </section>
-    
-        <!--==========================
-      Services Section
-    ============================-->
-    <section id="services">
-      <div class="container">
-
-        <header class="section-header wow fadeInUp">
-          <h3>  Mortgage Basics</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+  <!-- TRENDING IN BANKSSS -->
+<section id="portfolio" class="">
+    <div class="container">
+        <header class="section-header pb-4">
+          <h3 class="section-title">WHAT IS TRENDING IN HOUSE BUYING</h3>
         </header>
+        <div class="row portfolio-container" style="position: relative; height: 1080px;">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="position: absolute; left: 0px; top: 0px; visibility: visible; animation-name: fadeInUp;">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<?php echo base_url()?>assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+              </figure>
 
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-people-outline"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              <div class="portfolio-info">
+                <h4>FIRST TIME HOME BUYER</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, 
+                deserunt maxime commodi numquam nobis consequuntur beatae provident 
+                </p>
+              </div>
+            </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s" style="position: absolute; left: 380px; top: 0px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<?php echo base_url()?>assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+                <h4>WHAT'S MY HOME WORTH?</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, 
+                deserunt maxime commodi numquam nobis consequuntur beatae provident 
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s" style="position: absolute; left: 760px; top: 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<?php echo base_url()?>assets/img/portfolio/app2.jpg" class="img-fluid" alt="">
+              </figure>
+
+              <div class="portfolio-info">
+              <h4>FHA</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, 
+                deserunt maxime commodi numquam nobis consequuntur beatae provident 
+                </p>
+              </div>
+            </div>
+            </div>
         </div>
+    </div>
+</section>
+  <!-- TRENDING IN BANKSSS -->
+  <div class="col-md-10 mx-auto card_row">
+        <header class="section-header">
+          <h3>RELATED ARTICLES</h3>
+        </header>
+        <div class="pt-5 col-md-12 mx-auto row">
+            <div class="col-md-6 related_image">
+            </div>
+            <div class="col-md-6 related_content">
+                <p>EDITOR'S PICK </p>
+                <h4>FIRST TIME HOME BUYER TIPS  </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi culpa atque eius qui 
+                ducimus fuga iste necessitatibus voluptate reprehenderit? </p>
+                  <div class="row">
+                        <div class="col-md-1">
+                          <i class="fa fa-arrow-circle-right"  aria-hidden="true"></i>
+                        </div>
+                        <div class="col-md-8 pt-2">6 MIN </div>
+                    </div>
+            </div>
+        </div>
+        <div class="pt-4 col-md-12 mx-auto row">
+            <div class="col-md-6 related_image2">
+            </div>
+            <div class="col-md-6 related_content">
+                <p>EDITOR'S PICK </p>
+                <h4>BEST REFINANCE LENDERS</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi culpa atque eius qui 
+                ducimus fuga iste necessitatibus voluptate reprehenderit? </p>
+                  <div class="row">
+                        <div class="col-md-1">
+                          <i class="fa fa-arrow-circle-right"  aria-hidden="true"></i>
+                        </div>
+                        <div class="col-md-8 pt-2">6 MIN  </div>
+                    </div>
+            </div>
+        </div>
+        <div class="pt-4 col-md-12 mx-auto row">
+            <div class="col-md-6 related_image3">
+            </div>
+            <div class="col-md-6 related_content">
+                <p>EDITOR'S PICK </p>
+                <h4>BEST REFINANCE LENDERS</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi culpa atque eius qui 
+                ducimus fuga iste necessitatibus voluptate reprehenderit? </p>
+                  <div class="row">
+                        <div class="col-md-1">
+                          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-md-8 pt-2">10 MIN  </div>
+                    </div>
+            </div>
+        </div>
+  </div> 
+   
 
-      </div>
-    </section>
-
-    <div class="about_container"> 
-
-    <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-   </p>
-   <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-   </p>
+ 
 
 
-  </div>
+

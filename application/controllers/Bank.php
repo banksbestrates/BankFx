@@ -21,6 +21,4 @@ class Bank extends CI_Controller {
 		$this->load->view('website/pages/bank/bank_review');
 		$this->load->view('website/layout/footer');
     }
-    
-    
 }
