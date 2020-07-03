@@ -102,7 +102,7 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                             </div>
-                        <img src="<?php echo base_url()?>assets/img/overview/bank1.png" style="height:35px">
+                        <img src="<?php echo base_url()?>assets/img/overview/bank2.jpg" style="height:35px">
                         </div>
                     </div>
                 </div>

@@ -57,6 +57,7 @@ $route['about_us'] = 'About';
 $route['profile'] = 'Profile';
 $route['mortgage_overview'] = 'Mortgage/mortgage_overview';
 $route['mortgage_rates'] = 'Mortgage/mortgage_rates';
+$route['refinance_rates'] = 'Mortgage/refinance_rates';
 $route['mortgage_fha'] = 'Home/mortgage_fha';
 $route['mortgage_va_loan'] = 'Home/mortgage_va_loan';
 $route['mortgage_jumbo_loan'] = 'Home/mortgage_jumbo_loan';
