@@ -21,5 +21,17 @@ class Mortgage extends CI_Controller {
 		$this->load->view('website/pages/mortgage/refinance_rate');
 		$this->load->view('website/layout/footer');
     }
+    public function mortgage_calculator()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/mortgage/mortgage_calculator');
+		$this->load->view('website/layout/footer');
+    }
+    public function mortgage_calculator_list()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/mortgage/mortgage_calculator_list');
+		$this->load->view('website/layout/footer');
+    }
 	
 }

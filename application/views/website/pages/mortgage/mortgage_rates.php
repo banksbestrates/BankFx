@@ -14,7 +14,7 @@
 .form-control{
   line-height:1.5;
 }
-.table td , .table th{
+/* .table td , .table th{
     border-bottom:1px solid #CB9D24;
     border-top:none; 
 }
@@ -48,7 +48,7 @@
 .border_bottom_golden{
     border-bottom:2px solid #CB9D24;
     padding-bottom:10px;
-}
+} */
 </style>
 <!-- TOP NAME DIV -->
 <div class="col-md-10 mx-auto pt-5 pb-4">
@@ -407,8 +407,7 @@
                     <td class="w-75">30 -Years Fixed Rates</td>  
                     <th>1.15%</th>             
                     <th>1.15%</th>       
-                </tr>  
-                       
+                </tr>                    
             </tbody>  
         </table>   
 

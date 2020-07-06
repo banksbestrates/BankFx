@@ -25,13 +25,13 @@
             <div class="col-md-3">
             <div class="card pb-3">
                   <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <h6>Refinance Rates</h6>
+                  <a href="<?php echo base_url()?>index.php/refinance_rates"><h6>Refinance Rates</h6></a>
                 </div>
             </div>
             <div class="col-md-3">
               <div class="card pb-3">
               <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <h6>Mortgage Calculators</h6>
+              <a href="<?php echo base_url()?>index.php/mortgage_calculator_list"><h6>Mortgage Calculators</h6></a>
                 </div>
             </div>
             <div class="col-md-3">
@@ -151,9 +151,3 @@
             </div>
         </div>
   </div> 
-   
-
- 
-
-
-
