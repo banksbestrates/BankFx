@@ -2,18 +2,6 @@
 <style>
 
 
-
-.mortgag_form_div{
-  background-color:black;
-  border-top:2px solid #CB9D24;
-  border-bottom:2px solid #CB9D24;
-}
-.mortgag_form_div label{
-  color:white;
-}
-.form-control{
-  line-height:1.5;
-}
 /* .table td , .table th{
     border-bottom:1px solid #CB9D24;
     border-top:none; 
@@ -49,6 +37,10 @@
     border-bottom:2px solid #CB9D24;
     padding-bottom:10px;
 } */
+
+.form-control{
+  line-height:1.5;
+}
 </style>
 <!-- TOP NAME DIV -->
 <div class="col-md-10 mx-auto pt-5 pb-4">

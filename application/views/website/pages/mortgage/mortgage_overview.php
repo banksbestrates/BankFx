@@ -37,7 +37,7 @@
             <div class="col-md-3">
                 <div class="card">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <h6>How much house you can afford ?</h6>
+                <a href="<?php echo base_url()?>index.php/house_afford"><h6>How much house you can afford ?</h6></a>
                 </div>
             </div>
         </div>

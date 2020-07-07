@@ -1652,3 +1652,182 @@ font-size:40px;
   border-bottom:2px solid #CB9D24;
   padding-bottom:10px;
 }
+/* range input type custom csss */
+.range_slidecontainer {
+  width: 100%;
+}
+
+.range_slidecontainer .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 9px;
+  border-radius: 5px;
+  background: #b6b4b4;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.range_slidecontainer .slider:hover {
+  opacity: 1;
+}
+
+.range_slidecontainer .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #c0ce21;
+  cursor: pointer;
+}
+
+.range_slidecontainer .slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #c0ce21;
+  cursor: pointer;
+}
+
+
+.calculator_form_div input{
+  border:none;
+  background-color: transparent;
+  width:95%
+}
+.calculator_form_div input:focus,
+.calculator_form_div select:focus,
+.calculator_form_div textarea:focus,
+.calculator_form_div button:focus {
+    outline: none;
+}
+
+.calculator_form_div select{
+  border:none;
+  background-color: transparent;
+  width:100%
+}
+
+
+
+.calculator_form_div .input-group{
+    border: 2px #626262 solid;
+    padding: 6px 10px 6px 10px;
+    border-radius: 10px;
+}
+ .home_gross_income input{
+  border:none;
+  background-color: transparent;
+ 
+}
+.home_gross_income input:focus,
+.home_gross_income select:focus,
+.home_gross_income textarea:focus,
+.home_gross_income button:focus {
+    outline: none;
+}
+
+.home_gross_income select{
+  border:none;
+  background-color: transparent;
+
+}
+
+.home_gross_income .input-group{
+    border: 2px #626262 solid;
+    padding: 6px 10px 6px 10px;
+    border-radius: 10px;
+}
+
+.mortgage_calculator{
+    border:1px solid #626262;
+}
+.home_gross_income{
+    border-left:1px solid #626262;
+}
+.home_gross_income .heading{
+    color: #CB9D24!important;
+    font-size:20px;
+    padding-bottom:18px;
+} 
+.heading span{
+    position:absolute;
+    padding-top:8px;
+    
+} 
+.gross_border_bottom{
+    border-bottom: 1px solid #626262 ;
+    padding-bottom: 10px;
+}
+.result_dropdown hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(203, 157, 36);
+}
+.result_dropdown span{
+    color: black;
+}
+.no_border {
+    border: none !important;
+}
+
+
+
+.mortgag_form_div{
+  background-color:black;
+  border-top:2px solid #CB9D24;
+  border-bottom:2px solid #CB9D24;
+}
+.mortgag_form_div label{
+  color:white;
+}
+
+
+input{
+  border:none;
+  background-color: transparent;
+  width:95%
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+select{
+  border:none;
+  background-color: transparent;
+  width:100%
+}
+
+
+
+.input-group{
+    border: 2px #626262 solid;
+    padding: 6px 10px 6px 10px;
+    border-radius: 10px;
+}
+
+.mortgage_calculator{
+    border:1px solid #626262;
+}
+.pie_chart_div{
+    border-left:1px solid #626262;
+}
+.pie_chart_div .top_div{
+    border-bottom:1px solid #626262;
+    color: #626262!important;
+    text-align:center;
+    font-size:20px;
+} 
+.pie_chart_div .top_div .active{
+    color: #CB9D24!important;
+   
+} 
+
+
+
+
