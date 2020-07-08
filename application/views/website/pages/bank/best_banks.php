@@ -70,7 +70,10 @@
                                 <span class="fa fa-star checked"></span>
                             </div>
                            
-                        <img src="<?php echo base_url()?>assets/img/overview/bank1.png" style="height:35px">
+                            <div class="text-center">
+                                    <div style="background-image:url(<?php echo base_url()?>assets/img/overview/bank1.png);
+                                    background-size:contain;background-repeat:no-repeat;height:50px"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,7 +105,11 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                             </div>
-                        <img src="<?php echo base_url()?>assets/img/overview/bank2.jpg" style="height:35px">
+                            <div class="text-center ml-5">
+                                    <div style="background-image:url(<?php echo base_url()?>assets/img/overview/bank2.png);
+                                    background-size:contain;background-repeat:no-repeat;height:50px" class="ml-4"></div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -134,7 +141,10 @@
                                 <span class="fa fa-star "></span>
                                 <span class="fa fa-star "></span>
                             </div>
-                        <img src="<?php echo base_url()?>assets/img/overview/bank1.png" style="height:35px">
+                            <div class="text-center">
+                                    <div style="background-image:url(<?php echo base_url()?>assets/img/overview/bank3.png);
+                                    background-size:contain;background-repeat:no-repeat;height:50px"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -166,7 +176,10 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                             </div>
-                        <img src="<?php echo base_url()?>assets/img/overview/bank1.png" style="height:35px">
+                            <div class="text-center ml-5">
+                                    <div style="background-image:url(<?php echo base_url()?>assets/img/overview/bank4.png);
+                                    background-size:contain;background-repeat:no-repeat;height:50px"></div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1648,6 +1648,32 @@ font-size:40px;
   color:white;
   background-color:#c0ce21;
 }
+.button_blue{
+  color:white;
+  background-color:#002A75;
+}
+.button_light_yellow{
+  color:white;
+  background-color:#E6C245;
+}
+.text_ligth_yellow{
+  color:#E6C245;
+
+}
+.text_blue{
+  color:#002A75;
+  
+}
+.text_green{
+ color:#c0ce21!important;
+}
+.text_yellow{
+ color:#CB9D24;
+}
+.text_grey{
+  color:#626262;
+}
+
 .border_bottom_golden{
   border-bottom:2px solid #CB9D24;
   padding-bottom:10px;
@@ -1827,6 +1853,7 @@ select{
     color: #CB9D24!important;
    
 } 
+
 
 
 

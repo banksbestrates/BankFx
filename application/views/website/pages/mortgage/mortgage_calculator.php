@@ -27,7 +27,9 @@
 
 <style>
 
-
+.progress_div p{
+    font-size:18px;
+}
 
 </style>
 <!-- Bank Review -->
@@ -106,10 +108,38 @@
                     <div class="row pb-3 px-0">
                         <div class="col-md-6 active">Payment Breakdown</div>
                         <div class="col-md-6">Payment Over Time</div>
-                    </div>                  
+                    </div>     
                 </div>  
+                <div class="col-md-12 px-0 progress_div">
+                <!-- progress 1  -->
+                        <div class="text-center pt-5 mx-5 ">
+                            <h1 class="display-4 mb-2 font-weight-bold text_green">$1,523</h1>
+                                <p class="font-weight-light text-secondary mb-1">Mortgage Rate</p>
+                            <div class="progress">
+                                <div class="progress-bar button_green" style="width:50%"></div>
+                            </div>
+                        </div>
+                <!-- progress 2  -->
+                        <div class="text-center pt-4 mx-5 ">
+                            <h1 class="mb-2 text_blue">$500</h1>
+                                <p class="font-weight-light text-secondary mb-1">Home Insurance</p>
+                            <div class="progress">
+                                <div class="progress-bar button_blue" style="width:50%"></div>
+                            </div>
+                        </div>
+                <!-- progress 3  -->
+                        <div class="text-center pt-4 mx-5 ">
+                            <h1 class="mb-2  text_ligth_yellow">$500</h1>
+                                <p class="font-weight-light text-secondary mb-1">Taxes & Other Fees</p>
+                            <div class="progress">
+                                <div class="progress-bar button_light_yellow" style="width:50%"></div>
+                            </div>
+                        </div>
 
-                <div id="donutchart" style="width:100%; height: 500px;"></div>
+                        <!-- <button class="btn btn-primary">TEST</button><button class="btn btn-success">TEST12</button> -->
+                </div>  
+                   
+                
             </div>
     </div>
 </div> 
