@@ -384,7 +384,7 @@
               <i class="fa fa-credit-card fa-2x pr-3" aria-hidden="true"></i>Credit Card</a>
                 <ul class="collapse list-unstyled" id="creditSubmenu">
                   <li class="pt-3">
-                      <a href="<?php echo base_url()?>index.php/mortgage_overview">Credit Card Overview</a>
+                      <a href="<?php echo base_url()?>index.php/credit_overview">Credit Card Overview</a>
                   </li>
                   <br/>
                   <h5 class="text-white px-3">Compare by category</h5>

@@ -65,6 +65,8 @@ $route['mortgage_arm_loan'] = 'Home/mortgage_arm_loan';
 $route['mortgage_calculator'] = 'Mortgage/mortgage_calculator';
 $route['mortgage_calculator_list'] = 'Mortgage/mortgage_calculator_list';
 $route['house_afford'] = 'Mortgage/house_afford';
+$route['credit_overview'] = 'Mortgage/credit_overview';
+$route['best_credit_cards'] = 'Mortgage/best_credit_cards';
 
 
 $route['bank_overview'] = 'Bank/bank_overview';

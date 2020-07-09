@@ -108,8 +108,7 @@
                             <div class="text-center ml-5">
                                     <div style="background-image:url(<?php echo base_url()?>assets/img/overview/bank2.png);
                                     background-size:contain;background-repeat:no-repeat;height:50px" class="ml-4"></div>
-                            </div>
-                            
+                            </div>             
                         </div>
                     </div>
                 </div>

@@ -39,5 +39,17 @@ class Mortgage extends CI_Controller {
 		$this->load->view('website/pages/mortgage/house_afford');
 		$this->load->view('website/layout/footer');
     }
+    public function credit_overview()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/credit_card/credit_overview');
+		$this->load->view('website/layout/footer');
+    }
+    public function best_credit_cards()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/credit_card/best_credit_cards');
+		$this->load->view('website/layout/footer');
+    }
 	
 }
