@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://localhost/bank_fx/index.php/best_credit_cards -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>BankFx</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <link href="http://localhost/bank_fx/assets/img/logo/main_logo_image.png" rel="icon">
+  <link href="http://localhost/bank_fx/asssets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+  <!-- Google Fonts -->
+  <link href="./BankFx_files/css" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="./BankFx_files/bootstrap.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="./BankFx_files/font-awesome.min.css" rel="stylesheet">
+  <link href="./BankFx_files/animate.min.css" rel="stylesheet">
+  <link href="./BankFx_files/ionicons.min.css" rel="stylesheet">
+  <link href="./BankFx_files/owl.carousel.min.css" rel="stylesheet">
+  <link href="./BankFx_files/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="./BankFx_files/style.css" rel="stylesheet">
+  <script src="./BankFx_files/jquery.min.js"></script>
+
+</head>
+
+<body><button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
+<style>
+  
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+
+/* Add an active class to the active dropdown button */
+.dropdown-btn .active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 800; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.96);
+  box-shadow: 0px 10px 10px black;
+  overflow-y: auto;
+  transition: 0.4spadding-left:20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+
+    font-size: 13px;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 10px 22px 10px 15px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    outline: none;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* When you mouse over the navigation links, change their color
+.sidenav a:hover {
+  color: #f1f1f1;
+} */
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  /* right: 25px; */
+  font-size: 36px;
+  /* margin-left: 50px; */
+  padding: 20px 0px 30px 0px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/* #main {
+  transition: margin-left .5s;
+  padding: 20px;
+} */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.sidenav ul li.active > a {
+    background: transparent;
+    color: #96871a;
+    background-color: white;
+}
+.sidenav ul li {
+  border: 1px solid;
+}
+.sidenav ul li ul li a  {
+    text-transform:capitalize;
+    /* font-size: 15px;
+    font-weight: lighter; */
+   
+}
+.sidenav ul li ul  {
+  color:white;
+    /* padding-left:10px; */
+}
+.sidenav ul li ul li {
+    border:none;
+}
+.dropdown-toggle::after{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    float: right;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+</style>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+      <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+              <img src="./BankFx_files/main_logo.png">
+              ×</a><br><br>
+           
+            <ul class="list-unstyled components mb-5 px-4">
+            <li class="" hidden="">
+                <a href="http://localhost/bank_fx/index.php/best_credit_cards#" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                  Main Menu</a>         
+              </li>
+              <!-- menu 1 -->
+              <li class="active">
+                <a href="http://localhost/bank_fx/index.php/best_credit_cards#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-home fa-2x pr-3"></i> Mortgages</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                  <li class="pt-3">
+                      <a href="http://localhost/bank_fx/index.php/mortgage_overview">Mortgages Overview</a>
+                  </li>
+                  <br>
+                  <h5 class="text-white px-3">Get the best rates</h5>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/mortgage_rates">Mortgage Rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">30 -years Mortgage rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">20 -years Mortgage rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">15 -years Mortgage rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">10 -years Mortgage rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/mortgage_fha">FHA Loan Rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/mortgage_va_loan">VA Loan Rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/mortgage_jumbo_loan">Jumbo Loan Rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">ARM Loan Rates</a>
+                  </li>                 
+                  <br>
+                  <h5 class="text-white px-3">Refinance your mortgage</h5>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Refinance Rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">30 -years Refinance rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">20 -years Refinance rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">15 -years Refinance rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">10 -years Refinance rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">FHA Refinance Rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">VA Refinance Rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Jumbo Refinance Rates</a>
+                  </li>
+                  <br>
+                  <h5 class="text-white px-3">Use calculators</h5>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Mortgage Calculator</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Mortgage Refinance Calculator</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">How much house you can afford?</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Amortization Calculator</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Mortgage Payment Calculator</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Interest only mortgage calculator</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Mortgage tax deduction calculator</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Mortgage tax deduction calculator</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">All mortgage calculators</a>
+                  </li>
+                  <br>
+                  <h5 class="text-white px-3">Learn &amp; get advice</h5>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Understanding current interest rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Where rates are trending</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">How to get the best mortgage rate</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">APR vs. Interest rat</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">First time homebuyer loans and programs</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">When to pay off your mortgage early</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Mortgage tax deduction calculator</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">How to refinance your mortgage</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Mortgage lender review</a>
+                  </li>
+                  <br>
+                </ul>
+              </li>
+              <hr>
+              <!-- Menu 2 -->
+              <li>
+                <a href="http://localhost/bank_fx/index.php/best_credit_cards#bankingSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-university fa-2x pr-3" aria-hidden="true"></i>Banking</a>
+                <ul class="collapse list-unstyled" id="bankingSubmenu">
+                <li class="pt-3">
+                      <a href="http://localhost/bank_fx/index.php/mortgage_overview">Banking Overview</a>
+                  </li>
+                  <br>
+                  <h5 class="text-white px-3">Compare accounts</h5>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">CD rates</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Savings accounts</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Money market accoun</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">3-year CD rate</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">5-year CD rate</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Checking accounts</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best bank</a>
+                  </li> 
+                  <br>
+                  <h5 class="text-white px-3">Use calculators</h5>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Savings calculator</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">CD calculator</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Compound savings calculators</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">All banking calculators</a>
+                  </li>
+                  <br>
+                  <h5 class="text-white px-3">Get advice</h5>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">How to save money</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Federal Reserve news</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">What is a savings accounts ?</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">What is a money market account?</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Which certificate of deposit account is best?</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">How to open a savings account?</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Tax advice</a>
+                  </li> 
+                </ul>
+              </li>
+              <hr>
+              <!-- menu 3 -->
+              <li>
+              <a href="http://localhost/bank_fx/index.php/best_credit_cards#creditSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+              <i class="fa fa-credit-card fa-2x pr-3" aria-hidden="true"></i>Credit Card</a>
+                <ul class="collapse list-unstyled" id="creditSubmenu">
+                  <li class="pt-3">
+                      <a href="http://localhost/bank_fx/index.php/credit_overview">Credit Card Overview</a>
+                  </li>
+                  <br>
+                  <h5 class="text-white px-3">Compare by category</h5>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best credit cards of 2020</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Rewards</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Travel</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Airline</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Cash back</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">No annual fee</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Balance transfer</a>
+                  </li> 
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">0% APR</a>
+                  </li> 
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Student</a>
+                  </li> 
+                  <br>
+                  <h5 class="text-white px-3">Compare by credit needed</h5>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Excellent credit</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Good credit</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Fair credit</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Bad credit</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">No credit history</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Secured credit cards</a>
+                  </li>
+                  <br>
+                  <h5 class="text-white px-3">Compare by credit needed</h5>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Credit card reviews</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Credit card payoff calculator</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Balance transfer calculator</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">All credit card calculators</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Improving your credit</a>
+                  </li>
+                  <li>
+                      <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Secured credit cards</a>
+                  </li>
+                  <br>
+
+
+
+                  <hr>
+              
+	              </ul>
+              </li>
+              <hr>
+              <!-- menu 4 -->
+              <li>
+                <a href="http://localhost/bank_fx/index.php/best_credit_cards#loanSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-money fa-2x pr-3" aria-hidden="true"></i> LOANS</a>
+                <ul class="collapse list-unstyled" id="loanSubmenu">
+                  <li class="pt-3"><a href="http://localhost/bank_fx/index.php/mortgage_overview">Loan Overview</a>
+                  </li>
+                  <br>
+                  <h5 class="text-white px-3">Get the best rates</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best personal loan rates</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Low-interest personal loans</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Personal loans for bad credit</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Personal loans for good credit</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Personal loans for excellent credit</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best home improvement loan rates</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best debt consolidation loan rates</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Student loan rates</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Student loan refinance rates</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Student loan interest rates</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Auto loan rates</a></li>
+                  <br>
+                  <h5 class="text-white px-3">Use Calculators</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/loan_calculator">Loan calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Personal loan calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Loan payment calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Student loan calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Auto loan calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Auto refinance calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">All calculators</a></li>
+                  <br>
+                  <h5 class="text-white px-3">Use calculators</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Personal loans</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Student loans</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Debt consolidation loans</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Home improvement loans</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Medical loans</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Debt management</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Auto loans</a></li>
+                </ul>
+              </li>
+              <hr>
+              <!-- menu 5 -->
+              <li>
+                <a href="http://localhost/bank_fx/index.php/best_credit_cards#investmentSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-money fa-2x pr-3" aria-hidden="true"></i>Investments</a>
+                <ul class="collapse list-unstyled" id="investmentSubmenu">
+                  <li class="pt-3"><a href="http://localhost/bank_fx/index.php/mortgage_overview">Invertment Overview</a>
+                  </li>
+                  <br>
+                  <h5 class="text-white px-3">Best Of</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best investments</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best online brokers for stocks</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best online brokers for beginners</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best online brokers for mutual funds</a></li>
+                  <br>
+                  <h5 class="text-white px-3">Use Calculators</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Investment earnings calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Annuity calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">All investing &amp; CD calculators</a></li>
+                  <br>
+                  <h5 class="text-white px-3">Get advice</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">What is the long-term capital gains tax?</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Passive income: What it is and 5 ideas for 2019</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">How to buy stocks</a></li>
+                </ul>
+              </li>
+              <hr>
+              <!-- menu 6 -->
+              <li>
+                <a href="http://localhost/bank_fx/index.php/best_credit_cards#home_Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-home fa-2x pr-3" aria-hidden="true"></i>Home Equity</a>
+                <ul class="collapse list-unstyled" id="home_Submenu">
+                  <li class="pt-3"><a href="http://localhost/bank_fx/index.php/mortgage_overview">Home Equity Overview</a></li>
+                  <br>
+                  <h5 class="text-white px-3">Use calculators</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Home equity calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Loan vs. line of credit calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Debt consolidation calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">HELOC payoff calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">All home equity calculators</a></li>
+                  <br>
+                  <h5 class="text-white px-3">Compare lenders</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Home equity loan rates</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Home equity line of credit rates</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Home equity lender reviews</a></li>   
+                  <br>
+                  <h5 class="text-white px-3">Get advice</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">What is a home equity loan?</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">HELOC vs. Home equity loan</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Consolidate your debt using home equity</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Home equity loans with bad credit</a></li>                 
+                </ul>
+              </li>
+              <hr>
+              <!-- menu 7 -->
+              <li>
+                <a href="http://localhost/bank_fx/index.php/best_credit_cards#insuranceSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-file fa-2x pr-3" aria-hidden="true"></i> Insurance</a>
+                <ul class="collapse list-unstyled" id="insuranceSubmenu">
+                  <li class="pt-3"><a href="http://localhost/bank_fx/index.php/mortgage_overview">Insurance Overview</a></li>
+                  <br>
+                  <h5 class="text-white px-3">Insurance types</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Car insurance</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Homeowner's insurance</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Health insurance</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Life insurance</a></li>
+                  <br>
+                  <h5 class="text-white px-3">Best Of</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best car insurance companies</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best home insurance companies</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best life insurance companies</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best cheap car insurance</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Top car insurance comparison</a></li>
+                  <br>
+                  <h5 class="text-white px-3">Get advice</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best Roth IRA accounts</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best retirement plans</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">How to open a Roth IRA</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">401(k) rollover guide</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Roth IRA vs. Roth 401(k)</a></li>
+                  <br>
+                  <h5 class="text-white px-3">Use calculators</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">401(k) retirement calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Retirement savings calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Roth IRA calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">IRA minimum distribution calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Social security benefits calculator</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">All retirement calculators</a></li>
+                  <br>
+                  <h5 class="text-white px-3">More information</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">What is an IRA?</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">What is a Roth 401(k)?</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">401(k) contribution limits</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Contributing to IRA during retirement</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best age for Social Security retirement benefits</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Roth IRA 5 year rule</a></li>
+                  <br>               
+                </ul>
+              </li>
+              <hr>
+              <!-- menu 8 -->
+              <li>
+                <a href="http://localhost/bank_fx/index.php/best_credit_cards#checkingSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-home fa-2x pr-3" aria-hidden="true"></i>Checking</a>
+                <ul class="collapse list-unstyled" id="checkingSubmenu">
+                  <!-- <li class="pt-3"><a href="http://localhost/bank_fx/index.php/mortgage_overview">Insurance Overview</a></li> -->
+                  <br>
+                  <h5 class="text-white px-3">Best Products</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best Checking Accounts</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best Free Checking  Accounts</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best High-Yield Checking Accounts</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best Student Checking Accounts</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Best Business Checking Accounts</a></li>
+                  <br>
+                  <h5 class="text-white px-3">Compare and Calculate</h5>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Compare Checking Accounts</a></li>
+                  <li><a href="http://localhost/bank_fx/index.php/best_credit_cards#">Checking Interest Calculator</a></li>
+                  <br>
+                </ul>
+              </li>
+              <hr>
+
+          </ul></div>
+       
+        <i class="fa fa-bars fa-2x" aria-hidden="true" id="icon_bar" onclick="openNav()" style="color:#96871a;cursor:pointer;"></i>
+        <a href="http://localhost/bank_fx/" class="scrollto">
+          <img src="./BankFx_files/main_logo.png">
+        </a>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="http://localhost/bank_fx/assets/img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+          <li class="menu-active"><a href="http://localhost/bank_fx/">Home</a></li>
+          <li><a href="http://localhost/bank_fx/">Best 100 Banks</a></li>
+          <li><a href="http://localhost/bank_fx/">Ratings</a></li>
+          <!-- <li class="menu-has-children"><a href="">Ratings</a>
+            <ul>
+              <li><a href="#">Banks Star Rating</a></li>
+              <li><a href="#">Start Rating Defination</a></li>
+              <li><a href="#">Drop Down </a></li>
+            </ul>
+          </li> -->
+          <li><a href="http://localhost/bank_fx/">Blog</a></li>
+          <li><a href="http://localhost/bank_fx/index.php/about_us">About us</a></li>
+          <li><a href="http://localhost/bank_fx/index.php/profile">Profile</a></li>
+          <li><a href="http://localhost/bank_fx/index.php/signup">Register/Login</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header>
+  <!-- #header -->
+  <script>
+ 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "360px";
+
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+  
+<style>
+.form-control{
+  line-height:1.5;
+}
+.checked{
+    color:#CB9D24;
+}
+.rating_point{
+    color:black;
+    font-size:30px;
+    padding-right:30px;
+}
+
+</style>
+<!-- TOP NAME DIV -->
+<div class="col-md-10 mx-auto pt-5 pb-4">
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class=" font-weight-bold mb-2">Best Credit Cards of  2020</h1>
+            <p>Published on July 30. Do you want to get more information ?</p>
+        </div>
+        <div class="col-md-4 text-right pt-3">
+            <button class="btn button_green">DOWNLOAD OUR APP</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-10 mx-auto p-3" style="border:2px solid yellow;border-radius:30px;">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="./BankFx_files/credit_card.png" height="180px">
+        </div>
+        <div class="col-md-9 p-4">
+            <h3>Fancy World Card</h3>
+            <div class="">
+                <span class="fa fa-star fa-2x checked pr-2"></span>
+                <span class="fa fa-star fa-2x checked pr-2"></span>
+                <span class="fa fa-star fa-2x checked pr-2"></span>
+                <span class="fa fa-star fa-2x checked pr-2"></span>
+                <span class="fa fa-star fa-2x checked pr-2"></span>
+
+                <!-- span -->
+                <span class="rating_point">5.3</span><span class="best_rating_blue">Banks Best Rating</span>
+            </div>
+            
+            
+
+            
+
+        </div>
+    </div>
+       
+</div>
+
+<!-- Table div -->
+<div class="col-md-12 py-5 ">
+    <div class="col-md-10 mx-auto px-0 py-5">
+    <h3 class="border_bottom_golden mb-0">Other Available Cards</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="w-25"></th>
+                    <th class="w-25">Bes For</th>             
+                    <th class="w-25">Card</th>
+                    <th class="w-25">Annual Fee </th>
+                    <th class="w-25">First Year Reward</th>
+                    <th class="w-25"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td class="w-25">
+                    <img src="./BankFx_files/credit_card.png" class="w-50"><br>
+                    </td>
+                    <td>All Round Rewards</td>
+                    <td>Capital One Venture</td>
+                    <td>1.25%</td>
+                    <td>$500</td>
+                    <td class="text-right">
+                        <h4><button class="btn button_blue px-4">APPLY NOW</button></h4>
+                    </td>              
+                </tr>       
+                <tr class="">
+                    <td class="w-25">
+                    <img src="./BankFx_files/credit_card.png" class="w-50"><br>
+                    </td>
+                    <td>All Round Rewards</td>
+                    <td>Capital One Venture</td>
+                    <td>1.25%</td>
+                    <td>$500</td>
+                    <td class="text-right">
+                        <h4><button class="btn button_blue px-4">APPLY NOW</button></h4>
+                    </td>              
+                </tr>       
+                <tr class="">
+                    <td class="w-25">
+                    <img src="./BankFx_files/credit_card.png" class="w-50"><br>
+                    </td>
+                    <td>All Round Rewards</td>
+                    <td>Capital One Venture</td>
+                    <td>1.25%</td>
+                    <td>$500</td>
+                    <td class="text-right">
+                        <h4><button class="btn button_blue px-4">APPLY NOW</button></h4>
+                    </td>              
+                </tr>       
+                <tr class="">
+                    <td class="w-25">
+                    <img src="./BankFx_files/credit_card.png" class="w-50"><br>
+                    </td>
+                    <td>All Round Rewards</td>
+                    <td>Capital One Venture</td>
+                    <td>1.25%</td>
+                    <td>$500</td>
+                    <td class="text-right">
+                        <h4><button class="btn button_blue px-4">APPLY NOW</button></h4>
+                    </td>              
+                </tr>       
+                <tr class="">
+                    <td class="w-25">
+                    <img src="./BankFx_files/credit_card.png" class="w-50"><br>
+                    </td>
+                    <td>All Round Rewards</td>
+                    <td>Capital One Venture</td>
+                    <td>1.25%</td>
+                    <td>$500</td>
+                    <td class="text-right">
+                        <h4><button class="btn button_blue px-4">APPLY NOW</button></h4>
+                    </td>              
+                </tr>       
+                <tr class="">
+                    <td class="w-25">
+                    <img src="./BankFx_files/credit_card.png" class="w-50"><br>
+                    </td>
+                    <td>All Round Rewards</td>
+                    <td>Capital One Venture</td>
+                    <td>1.25%</td>
+                    <td>$500</td>
+                    <td class="text-right">
+                        <h4><button class="btn button_blue px-4">APPLY NOW</button></h4>
+                    </td>              
+                </tr>       
+                <tr class="">
+                    <td class="w-25">
+                    <img src="./BankFx_files/credit_card.png" class="w-50"><br>
+                    </td>
+                    <td>All Round Rewards</td>
+                    <td>Capital One Venture</td>
+                    <td>1.25%</td>
+                    <td>$500</td>
+                    <td class="text-right">
+                        <h4><button class="btn button_blue px-4">APPLY NOW</button></h4>
+                    </td>              
+                </tr>       
+      
+            </tbody>  
+        </table>   
+        <p class="font-weight-bold">This line can  be used to  as a desclaimer fo the user ,so that user will be upto date dummy data etc </p>
+    </div>
+   
+
+</div> 
+
+
+
+ 
+
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>BankFx</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="http://localhost/bank_fx/index.php/best_credit_cards#">About us</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Services</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Terms of service</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="http://localhost/bank_fx/index.php/best_credit_cards#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="http://localhost/bank_fx/index.php/best_credit_cards#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="http://localhost/bank_fx/index.php/best_credit_cards#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="http://localhost/bank_fx/index.php/best_credit_cards#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="http://localhost/bank_fx/index.php/best_credit_cards#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="http://localhost/bank_fx/index.php/best_credit_cards#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <form action="http://localhost/bank_fx/index.php/best_credit_cards" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        © Copyright <strong>BankFx</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+        <!-- Best <a href="">Bootstrap Templates</a>  -->
+      </div>
+    </div>
+  </footer>
+  <!-- #footer -->
+
+  <a href="http://localhost/bank_fx/index.php/best_credit_cards#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  
+  <script src="./BankFx_files/jquery-migrate.min.js"></script>
+  <script src="./BankFx_files/bootstrap.bundle.min.js"></script>
+  <script src="./BankFx_files/easing.min.js"></script>
+  <script src="./BankFx_files/hoverIntent.js"></script>
+  <script src="./BankFx_files/superfish.min.js"></script>
+  <script src="./BankFx_files/wow.min.js"></script>
+  <script src="./BankFx_files/waypoints.min.js"></script>
+  <script src="./BankFx_files/counterup.min.js"></script>
+  <script src="./BankFx_files/owl.carousel.min.js"></script>
+  <script src="./BankFx_files/isotope.pkgd.min.js"></script>
+  <script src="./BankFx_files/lightbox.min.js"></script>
+  <script src="./BankFx_files/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="./BankFx_files/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="./BankFx_files/main.js"></script>
+
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href="http://localhost/bank_fx/index.php/best_credit_cards"></a><a class="lb-next" href="http://localhost/bank_fx/index.php/best_credit_cards"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div><nav id="mobile-nav">
+        <ul class="" style="touch-action: pan-y;" id="">
+          <li class="menu-active"><a href="http://localhost/bank_fx/">Home</a></li>
+          <li><a href="http://localhost/bank_fx/">Best 100 Banks</a></li>
+          <li><a href="http://localhost/bank_fx/">Ratings</a></li>
+          <!-- <li class="menu-has-children"><a href="">Ratings</a>
+            <ul>
+              <li><a href="#">Banks Star Rating</a></li>
+              <li><a href="#">Start Rating Defination</a></li>
+              <li><a href="#">Drop Down </a></li>
+            </ul>
+          </li> -->
+          <li><a href="http://localhost/bank_fx/">Blog</a></li>
+          <li><a href="http://localhost/bank_fx/index.php/about_us">About us</a></li>
+          <li><a href="http://localhost/bank_fx/index.php/profile">Profile</a></li>
+          <li><a href="http://localhost/bank_fx/index.php/signup">Register/Login</a></li>
+        </ul>
+      </nav><div id="mobile-body-overly"></div></body></html>

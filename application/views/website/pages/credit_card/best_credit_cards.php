@@ -6,6 +6,27 @@
 .checked{
     color:#CB9D24;
 }
+.rating_point{
+    color:black;
+    font-size:35px;
+    padding-right:20px;
+    font-weight:bold;
+}
+.best_rating_blue{
+    font-size:15; 
+    position:absolute;
+    padding-top:14px;
+}
+.credit_list_view h6{
+margin:0px;
+}
+
+.credit_card_image{
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 </style>
 <!-- TOP NAME DIV -->
 <div class="col-md-10 mx-auto pt-5 pb-4">
@@ -23,19 +44,58 @@
 
 <div class="col-md-10 mx-auto p-3" style="border:2px solid yellow;border-radius:30px;">
     <div class="row">
-        <div class="col-md-3" >
-            <img src="<?php echo base_url()?>assets/img/overview/credit_card.png" height="180px">
-        </div>
-        <div class="col-md-9 p-4">
-            <h4>Fancy World Card</h4>
-            <div class="">
-                <span class="fa fa-star fa-2x checked"></span>
-                <span class="fa fa-star fa-2x checked"></span>
-                <span class="fa fa-star fa-2x checked"></span>
-                <span class="fa fa-star fa-2x checked"></span>
-                <span class="fa fa-star fa-2x checked"></span>
+        <div class="col-md-4" >
+            <div class="credit_card_image" style="background-image:url('<?php echo base_url()?>assets/img/overview/credit_card.png')">
             </div>
 
+            <div class="text-center">
+                <a href="<?php echo base_url();?>index.php/compare_card">
+                <button class="btn button_blue w-75">ADD TO COMPARE </button></a><br/><br/>
+                <button class="btn button_blue w-75">APPLY NOW </button>
+            </div>
+           
+        </div>
+        <div class="col-md-8 p-4">
+            <h3>Fancy World Card</h3>
+            <!-- rating div -->
+            <div class="">
+                <span class="fa fa-star fa-2x checked pr-2"></span>
+                <span class="fa fa-star fa-2x checked pr-2"></span>
+                <span class="fa fa-star fa-2x checked pr-2"></span>
+                <span class="fa fa-star fa-2x checked pr-2"></span>
+                <span class="fa fa-star fa-2x checked pr-4"></span>
+
+                <!-- span -->
+                <span class="rating_point">5.3</span><span class="best_rating_blue text_blue">Banks Best Rating</span>
+            </div>
+            <!-- detail div -->
+            <div class="credit_list_view pt-3">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td><h6>Annual Fee:</h6></td>
+                    </tr>
+                    <tr>
+                        <td><h6>Intro Offer:</h6></td>
+                    </tr>
+                    <tr>
+                        <td><h6>Intro APR:</h6></td>
+                    </tr>
+                    <tr>
+                        <td><h6>Regular ARP:</h6></td>
+                    </tr>
+                    <tr>
+                        <td><h6>Balance transfer ARP :</h6></td>
+                    </tr>
+                    <tr>
+                        <td><h6>Reward Rate:</h6></td>
+                    </tr>
+                
+                </tbody>
+                         
+            </table>
+            </div>
+            
         </div>
     </div>
        

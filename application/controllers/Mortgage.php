@@ -51,5 +51,11 @@ class Mortgage extends CI_Controller {
 		$this->load->view('website/pages/credit_card/best_credit_cards');
 		$this->load->view('website/layout/footer');
     }
+    public function compare_card()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/credit_card/compare_card');
+		$this->load->view('website/layout/footer');
+    }
 	
 }

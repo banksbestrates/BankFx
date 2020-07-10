@@ -17,7 +17,7 @@
   ============================-->
   <div class="overview_banner">
     <div class="banner_heading">
-    <h1 class="display-4">Mortgage Overview</h1>
+    <h1 class="display-4">Credit Card Overview</h1>
     <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem hic<br/>
     Its just a dummy text to show the design only  dummy textx dummy</h6>
     </div>
@@ -37,7 +37,7 @@
             <div class="col-md">
                 <div class="card small_card">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <a href="<?php echo base_url()?>index.php/"><span>Balance Transfer</span></a>
+                  <a href="<?php echo base_url()?>index.php/compare_card"><span>Balance Transfer</span></a>
                 </div>
             </div>
             <div class="col-md">
@@ -182,9 +182,8 @@
                     </div>
             </div>
         </div>
-      
     </div>
 
-       
+
         
   
