@@ -68,8 +68,6 @@ $route['house_afford'] = 'Mortgage/house_afford';
 $route['credit_overview'] = 'Mortgage/credit_overview';
 $route['best_credit_cards'] = 'Mortgage/best_credit_cards';
 $route['compare_card'] = 'Mortgage/compare_card';
-
-
 $route['bank_overview'] = 'Bank/bank_overview';
 $route['best_banks'] = 'Bank/best_banks';
 $route['bank_review'] = 'Bank/bank_review';
@@ -77,3 +75,12 @@ $route['bank_review'] = 'Bank/bank_review';
 $route['loan_calculator'] = 'Loan/loan_calculator';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
+/*===============ADMIN VIEW======================*/
+$route['admin/login']       = 'AdminController/login';
+$route['admin/dashboard']   = 'AdminController/dashboard';
+$route['admin/user_list']   = 'AdminController/user_list';
+$route['admin/profile']   = 'AdminController/profile';
+$route['admin/website/about_us']   = 'AdminController/about_us';
+$route['admin/website/terms_conditions']   = 'AdminController/terms_conditions';

@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost/bank_fx/';
-
+//$config['base_url'] = 'http://18.222.250.11/bank_fx/';
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost/bank_fx/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
