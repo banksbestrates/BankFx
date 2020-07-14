@@ -72,15 +72,19 @@ $route['bank_overview'] = 'Bank/bank_overview';
 $route['best_banks'] = 'Bank/best_banks';
 $route['bank_review'] = 'Bank/bank_review';
 // loan module
-$route['loan_calculator'] = 'Loan/loan_calculator';
+$route['loan_calculator']   = 'Loan/loan_calculator';
+$route['loan_overview']     = 'Loan/loan_overview';
+$route['personal_loan']     = 'Loan/personal_loan';
+$route['auto_loan']         = 'Loan/auto_loan';
+$route['student_loan']      = 'Loan/student_loan';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
 /*===============ADMIN VIEW======================*/
-$route['admin/login']       = 'AdminController/login';
-$route['admin/dashboard']   = 'AdminController/dashboard';
-$route['admin/user_list']   = 'AdminController/user_list';
-$route['admin/profile']   = 'AdminController/profile';
-$route['admin/website/about_us']   = 'AdminController/about_us';
-$route['admin/website/terms_conditions']   = 'AdminController/terms_conditions';
+$route['admin/login']                       = 'AdminController/login';
+$route['admin/dashboard']                   = 'AdminController/dashboard';
+$route['admin/user_list']                   = 'AdminController/user_list';
+$route['admin/profile']                     = 'AdminController/profile';
+$route['admin/website/about_us']            = 'AdminController/about_us';
+$route['admin/website/terms_conditions']    = 'AdminController/terms_conditions';

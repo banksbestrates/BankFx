@@ -469,7 +469,7 @@
                 <a href="#loanSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                 <i class="fa fa-money fa-2x pr-3" aria-hidden="true"></i> LOANS</a>
                 <ul class="collapse list-unstyled" id="loanSubmenu">
-                  <li class="pt-3"><a href="<?php echo base_url()?>index.php/mortgage_overview">Loan Overview</a>
+                  <li class="pt-3"><a href="<?php echo base_url()?>index.php/loan_overview">Loan Overview</a>
                   </li>
                   <br/>
                   <h5 class="text-white px-3">Get the best rates</h5>

@@ -112,7 +112,6 @@
 								</span>
 							</a>
 							<div class="clearfix"></div>
-
 							<div class="collapse in" id="collapseExample">
 								<ul class="nav">
 									<li>

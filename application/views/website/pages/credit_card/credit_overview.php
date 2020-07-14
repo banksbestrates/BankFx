@@ -162,7 +162,6 @@
     </div>
 </section>
   <!-- Thinking about creatir cards -->
-     <!-- How rates are calculated -->
      <div class="col-md-10 mx-auto px-0 py-5 ">
        <h2 class="border_bottom_golden">Thinking About Credit Cards</h2>
       
