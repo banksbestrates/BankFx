@@ -2,6 +2,7 @@
 let adminData="";
 function login()
 {
+   
     var email = $("#email").val();
     var password = $("#password").val();
     if(email==""){
@@ -29,7 +30,7 @@ function login()
                 $(".error_message").html(message);   
                 return false;     
              } 
-            window.location = baseUrl+"dashboard";
+            window.location = baseUrl+"admin/dashboard";
            
         }	
 	};
@@ -89,7 +90,7 @@ function update_profile(admin_id)
                 let status= obj.Status;          
                 let message= obj.Message; 
                 if(!status){   
-                    conosle.log(message);
+                  
                     return false;     
                  } 
               

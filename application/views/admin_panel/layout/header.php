@@ -82,9 +82,9 @@
 									</li>
 									<li>
 										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="<?php echo base_url()?>index.php/admin/profile">My Profile</a>
+										<a class="dropdown-item" href="<?php echo base_url()?>admin/profile">My Profile</a>
 										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="<?php echo base_url()?>index.php/admin/login">Logout</a>
+										<a class="dropdown-item" href="<?php echo base_url()?>admin/logout">Logout</a>
 									</li>
 								</div>
 							</ul>

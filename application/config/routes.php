@@ -77,6 +77,8 @@ $route['loan_overview']     = 'Loan/loan_overview';
 $route['personal_loan']     = 'Loan/personal_loan';
 $route['auto_loan']         = 'Loan/auto_loan';
 $route['student_loan']      = 'Loan/student_loan';
+$route['top_lenders']       = 'Loan/top_lenders';
+$route['investment_overview']       = 'Loan/investment_overview';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
@@ -88,3 +90,10 @@ $route['admin/user_list']                   = 'AdminController/user_list';
 $route['admin/profile']                     = 'AdminController/profile';
 $route['admin/website/about_us']            = 'AdminController/about_us';
 $route['admin/website/terms_conditions']    = 'AdminController/terms_conditions';
+
+/*=================================ADMIN API========================================*/
+$route['api/admin/login']                       = 'API/Admin/login';
+$route['admin/logout']                          = 'API/Admin/logout';
+$route['api/admin/get_profile_detail']          = 'API/Admin/get_admin_detail';
+$route['api/admin/update_profile']              = 'API/Admin/update_profile';
+$route['api/admin/reset_password']              = 'API/Admin/reset_password';

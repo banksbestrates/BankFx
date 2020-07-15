@@ -27,6 +27,18 @@ class Loan extends CI_Controller {
 		$this->load->view('website/pages/loan/student_loan');
 		$this->load->view('website/layout/footer');
     }
+	public function top_lenders()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/loan/top_lenders');
+		$this->load->view('website/layout/footer');
+    }
+	public function investment_overview()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/investing/investing_overview');
+		$this->load->view('website/layout/footer');
+    }
 	public function loan_calculator()
 	{
 		$this->load->view('website/layout/header');

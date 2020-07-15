@@ -1480,8 +1480,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   rgba(0, 0, 0, 0.6),
   rgba(0, 0, 0, 0.6)
   ), */
-  url("../img/plant.jpg");
-background-size: cover;
+  url("../img/overview/overview_banner.png");
+background-size: 100% 100%;
 width: 100%;
 height: 320px;
 /* margin: 10px 0 0 10px; */

@@ -48,7 +48,6 @@
         padding:40px 20px 40px 20px;
     }
 	</style>
-
 	<div class="wrapper">
 	<input type="hidden" id="baseUrl" value="<?php echo base_url()?>"/>
         <div class="col-md-5 mx-auto my-auto bg-white" id="mydiv">
@@ -57,30 +56,29 @@
 				<div class="col-md-12 login_form">
                     <div class="form-group email_form">
                         <label for="email2">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email" value="admin@bankfx.com">
 				    </div>
                     <div class="form-group password_form">
 				        <label for="passsword">Password</label>
 				        <input type="password" class="form-control" id="password" placeholder="Enter Passsword">
 				    </div>
                     <div class="form-group">
-					<a href="<?php echo base_url()?>index.php/admin/dashboard"><button class="btn btn-block btn-primary mt-4" >Login</button></a>
+						<button class="btn btn-block btn-primary mt-4" onclick="login()" >Login</button>
 				    </div>
                     <div class="form-group text-center">
 				     <h6 class="error_message text-danger"></h6>
 				    </div>
                 </div>									
 			</div>
-		</div>
-		
+		</div>	
 	</div>
 	<!--   Core JS Files   -->
-	<script src="<?php echo base_url();?>assets/js/core/jquery.3.2.1.min.js"></script>
-	<script src="<?php echo base_url();?>assets/js/core/popper.min.js"></script>
-	<script src="<?php echo base_url();?>assets/js/core/bootstrap.min.js"></script>
-	<script src="<?php echo base_url();?>assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-	<script src="<?php echo base_url();?>assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
-	<script src="<?php echo base_url();?>assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin_panel/js/core/jquery.3.2.1.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin_panel/js/core/popper.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin_panel/js/core/bootstrap.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin_panel/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin_panel/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	<script src="<?php echo base_url();?>assets/admin_panel/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 	<script src="<?php echo base_url();?>assets/admin_panel/js/atlantis.min.js"></script>
 	<script src="<?php echo base_url();?>assets/admin_panel/js/setting-demo2.js"></script>
 	<script src="<?php echo base_url();?>assets/admin_panel/libs/common.js"></script>

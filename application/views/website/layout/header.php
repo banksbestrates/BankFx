@@ -510,7 +510,7 @@
                 <a href="#investmentSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                 <i class="fa fa-money fa-2x pr-3" aria-hidden="true"></i>Investments</a>
                 <ul class="collapse list-unstyled" id="investmentSubmenu">
-                  <li class="pt-3"><a href="<?php echo base_url()?>index.php/mortgage_overview">Invertment Overview</a>
+                  <li class="pt-3"><a href="<?php echo base_url()?>index.php/investment_overview">Investment Overview</a>
                   </li>
                   <br/>
                   <h5 class="text-white px-3">Best Of</h5>

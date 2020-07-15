@@ -23,7 +23,7 @@
 								<div class="card-header">
 								<div class="d-flex align-items-center">
 										<h5 class="card-title">My Profile</h5>
-										<button class="btn btn-primary btn-round ml-auto btn-sm" onclick="resetPasswordModal(1)">
+										<button class="btn btn-primary btn-round ml-auto btn-sm" onclick="resetPasswordModal(<?php echo $admin_data['admin_id']?>)">
 											<i class="fa fa-cogs"></i>
 											&nbsp;Reset Password
 										</button>
@@ -47,7 +47,7 @@
 									</div>
 								</div>
 								<div class="card-action text-center">
-                                    <button class="btn btn-primary btn-round ml-auto " onclick="update_profile()">
+                                    <button class="btn btn-primary btn-round ml-auto " onclick="update_profile(<?php echo $admin_data['admin_id']?>)">
 											<i class="fas fa-paper-plane"></i>
 											&nbsp;Update Profile
 										</button>
