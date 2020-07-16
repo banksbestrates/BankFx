@@ -21,5 +21,7 @@ $config['password_verify_success']      =  'Password Verified successfully';
 $config['password_verify_failure']      =  'Password not verified! Incorrect current Password';
 $config['password_update_success']      =  'Password updated successfully';
 $config['password_update_failure']      =  'Unable to update password';
+$config['data_update_success']          =  'Data Updated successfully';
+$config['data_update_failure']          =  'Unable to update data';
 
 ?>

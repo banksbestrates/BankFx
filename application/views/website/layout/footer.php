@@ -15,10 +15,10 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="<?php echo base_url()?>about_us">About us</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Services</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="<?php echo base_url()?>terms_conditions">Terms of service</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="<?php echo base_url()?>privacy_policy">Privacy policy</a></li>
             </ul>
           </div>
 

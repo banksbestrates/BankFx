@@ -168,6 +168,7 @@
   <!--==========================
     Header
   ============================-->
+  <input type="hidden" id="baseUrl" value="<?php echo base_url()?>"/>
   <header id="header">
     <div class="container-fluid">
 

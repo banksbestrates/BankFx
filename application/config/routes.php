@@ -54,6 +54,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'Home';
 $route['signup'] = 'Register';
 $route['about_us'] = 'About';
+$route['privacy_policy'] = 'About/privacy_policy';
+$route['terms_conditions'] = 'About/terms_conditions';
 $route['profile'] = 'Profile';
 $route['mortgage_overview'] = 'Mortgage/mortgage_overview';
 $route['mortgage_rates'] = 'Mortgage/mortgage_rates';
@@ -88,8 +90,8 @@ $route['admin/login']                       = 'AdminController/login';
 $route['admin/dashboard']                   = 'AdminController/dashboard';
 $route['admin/user_list']                   = 'AdminController/user_list';
 $route['admin/profile']                     = 'AdminController/profile';
-$route['admin/website/about_us']            = 'AdminController/about_us';
-$route['admin/website/terms_conditions']    = 'AdminController/terms_conditions';
+$route['admin/website_page/(:any)']         = 'AdminController/page_content/$1';
+
 
 /*=================================ADMIN API========================================*/
 $route['api/admin/login']                       = 'API/Admin/login';
@@ -97,3 +99,8 @@ $route['admin/logout']                          = 'API/Admin/logout';
 $route['api/admin/get_profile_detail']          = 'API/Admin/get_admin_detail';
 $route['api/admin/update_profile']              = 'API/Admin/update_profile';
 $route['api/admin/reset_password']              = 'API/Admin/reset_password';
+$route['api/admin/page_data']                   = 'API/Pages/get_page_data';
+$route['api/admin/page_data_update']            = 'API/Pages/page_data_update';
+
+/*==============================WEB APIS===========================================*/
+$route['api/get_page_data']            = 'API/Pages/get_page_data';

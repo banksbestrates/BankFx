@@ -46,9 +46,14 @@ class AdminController extends CI_Controller {
         $this->load->view("admin_panel/layout/footer");     
     }
 
-	public function about_us()
+	public function page_content($page_type)
 	{
-		$this->load->view('admin_panel/layout/header');
+        $this->check_admin_logged_in();
+        $data = array(
+            "admin_id"=>$this->admin_id,
+            "page_type"=>$page_type
+        ); 
+        $this->load->view("admin_panel/layout/header",array("admin_data"=>$data)); 
 		$this->load->view('admin_panel/website_content/about_us');
 		$this->load->view('admin_panel/layout/footer');
     }

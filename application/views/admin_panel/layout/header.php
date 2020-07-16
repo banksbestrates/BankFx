@@ -196,13 +196,18 @@
 							<div class="collapse" id="websiteView">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="<?php echo base_url()?>index.php/admin/website/about_us">
+										<a href="<?php echo base_url()?>admin/website_page/about_us">
 											<span class="sub-item">About Us</span>
 										</a>
 									</li>
 									<li>
-										<a href="<?php echo base_url()?>index.phhp/admin/website/terms_conditions">
+										<a href="<?php echo base_url()?>admin/website_page/terms_conditions">
 											<span class="sub-item">Terms and Conditions</span>
+										</a>
+									</li>
+									<li>
+										<a href="<?php echo base_url()?>admin/website_page/privacy_policy">
+											<span class="sub-item">Privacy Policy</span>
 										</a>
 									</li>
 								
@@ -210,12 +215,12 @@
 							</div>
 						</li>
 
-						<li class="nav-item" id="bulk_emails">
+						<!-- <li class="nav-item" id="bulk_emails">
 							<a href="<?php echo base_url();?>bulk_emails">
 								<i class="flaticon-envelope-1"></i>
 								<p>Send Bulk Emails</p>
 							</a>
-						</li>
+						</li> -->
 
 					</ul>
 				</div>
