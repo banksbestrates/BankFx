@@ -210,7 +210,33 @@
 											<span class="sub-item">Privacy Policy</span>
 										</a>
 									</li>
-								
+									<li>
+										<a href="<?php echo base_url()?>admin/contact_us">
+											<span class="sub-item">Contact Details</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="nav-item" id="">
+							<a data-toggle="collapse" href="#mortgage">
+								<i class="flaticon-list"></i>
+								<p>Mortgage</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="mortgage">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="<?php echo base_url()?>admin/mortgage/all_articles">
+											<span class="sub-item">View/Edit Article</span>
+										</a>
+									</li>
+									<li>
+										<a href="<?php echo base_url()?>admin/mortgage/related_articles">
+											<span class="sub-item">Add New Articles</span>
+										</a>
+									</li>
 								</ul>
 							</div>
 						</li>

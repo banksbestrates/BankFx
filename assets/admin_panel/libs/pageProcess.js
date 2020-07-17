@@ -36,6 +36,7 @@ function get_page_data(page_type) {
     };
 }
 
+
 function updatePageData(page_type) {
     var page_data= CKEDITOR.instances.data.getData();
     // console.log(policy);
@@ -69,4 +70,12 @@ function updatePageData(page_type) {
         }
     };
 }
+
+function updateContactUs()
+{
+    alert("helllo");
+}
+
+
+
 

@@ -91,6 +91,8 @@ $route['admin/dashboard']                   = 'AdminController/dashboard';
 $route['admin/user_list']                   = 'AdminController/user_list';
 $route['admin/profile']                     = 'AdminController/profile';
 $route['admin/website_page/(:any)']         = 'AdminController/page_content/$1';
+$route['admin/contact_us']                  = 'AdminController/contact_us';
+$route['admin/mortgage/related_articles']    = 'AdminController/mortgage_articles';
 
 
 /*=================================ADMIN API========================================*/
@@ -101,6 +103,8 @@ $route['api/admin/update_profile']              = 'API/Admin/update_profile';
 $route['api/admin/reset_password']              = 'API/Admin/reset_password';
 $route['api/admin/page_data']                   = 'API/Pages/get_page_data';
 $route['api/admin/page_data_update']            = 'API/Pages/page_data_update';
+$route['api/admin/get_contact_detail']          = 'API/Pages/get_contact_detail';
+$route['api/admin/update_contact_detail']       = 'API/Pages/update_contact_detail';
 
 /*==============================WEB APIS===========================================*/
 $route['api/get_page_data']            = 'API/Pages/get_page_data';

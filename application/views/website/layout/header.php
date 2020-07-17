@@ -636,7 +636,6 @@
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="<?php echo base_url()?>assets/img/logo.png" alt="" title="" /></a>-->
       </div>
-
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="<?php echo base_url()?>">Home</a></li>

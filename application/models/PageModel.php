@@ -5,6 +5,7 @@ class PageModel extends CI_Model
 
     public $response = array();
     public $tbl_pages         = "bankfx_pages";
+    public $tbl_contact_us    = "bankfx_contact_us";
  
     public function __construct()
     {
@@ -54,6 +55,35 @@ class PageModel extends CI_Model
             return $response;
         }
         return $this->send_error_response($this->config->item('data_update_failure'));
+    }
+    public function update_contact_detail($data)
+    {
+        $this->db->where('id',$data['id']);
+        $this->db->update($this->tbl_contact_us,$data);
+        $update = $this->db->affected_rows();
+        if($update)
+        {
+            $response[$this->config->item('status')] = true;
+            $response[$this->config->item('message')] = $this->config->item('data_update_success');
+            return $response;
+        }
+        return $this->send_error_response($this->config->item('data_update_failure'));
+    }
+
+    public function get_contact_detail()
+    {
+        $this->db->select('*');
+        $this->db->from("$this->tbl_contact_us");
+        $exist = $this->db->get();
+        if ($exist->num_rows()) {
+            $responseData = $exist->result();
+            $response[$this->config->item('status')] = true;
+            $response[$this->config->item('message')] = $this->config->item('data_found_success');
+            $response[$this->config->item('baseUrl')] = base_url();
+            $response[$this->config->item('data')] = $responseData[0];
+            return $response;
+        }
+        return $this->send_error_response($this->config->item('data_found_failure'));
     }
 
 

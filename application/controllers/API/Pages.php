@@ -94,6 +94,52 @@ class Pages extends \Restserver\Libraries\REST_Controller
 	}
 
 
+	public function update_contact_detail_post()
+	{
+		$_POST = $this->security->xss_clean($_POST);	
+		$this->form_validation->set_rules('phone','phone', 'trim|required|max_length[100]');	
+		$this->form_validation->set_rules('email','email', 'trim|required');	
+		$this->form_validation->set_rules('address','address', 'trim|required');	
+							
+		if ($this->form_validation->run() == false) {
+			$message = array(
+				$this->config->item('status') => false,
+				$this->config->item('message')=> validation_errors(),
+				$this->config->item('data') => $this->form_validation->error_array(),
+			);
+			return $this->send_error_response(validation_errors(), REST_Controller::HTTP_NOT_FOUND);
+		}
+
+		$phone		    =	$this->input->post('phone',true);
+		$email		    =	$this->input->post('email',true);
+		$address		=	$this->input->post('address',true);
+        
+        $data = array(
+			"id"=>"1",
+			"phone"=>$phone,
+			"address"=>$address,
+			"email"=>$email,
+			"updated_on"=>$this->curr_date
+		);
+	
+		$query = $this->PageModel->update_contact_detail($data);
+		
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+
+	public function get_contact_detail_post()
+	{
+		$query = $this->PageModel->get_contact_detail();
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+
+
   //Error message
   public function send_error_response($Message)
   {
