@@ -81,6 +81,10 @@ $route['auto_loan']         = 'Loan/auto_loan';
 $route['student_loan']      = 'Loan/student_loan';
 $route['top_lenders']       = 'Loan/top_lenders';
 $route['investment_overview']       = 'Loan/investment_overview';
+$route['blog']       = 'Blog/blog_overview';
+$route['retirement_overview']       = 'Retirement/retirement_overview';
+$route['insurance_overview']       = 'Insurance/insurance_overview';
+$route['brokerage_overview']       = 'Brokerage/brokerage_overview';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
