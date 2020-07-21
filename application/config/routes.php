@@ -72,6 +72,7 @@ $route['best_credit_cards'] = 'Mortgage/best_credit_cards';
 $route['compare_card'] = 'Mortgage/compare_card';
 $route['bank_overview'] = 'Bank/bank_overview';
 $route['best_banks'] = 'Bank/best_banks';
+$route['best_bank_reviews'] = 'Bank/best_bank_reviews';
 $route['bank_review'] = 'Bank/bank_review';
 // loan module
 $route['loan_calculator']   = 'Loan/loan_calculator';

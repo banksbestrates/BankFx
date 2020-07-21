@@ -4,14 +4,23 @@
   ============================-->
   <div class="overview_banner">
     <div class="banner_heading">
-    <h1 class="display-4">BEST BANKS</h1>
+    <h1 class="display-4">Best 100 Banks</h1>
     <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem hic<br/>
-    Its just a dummy text to show the design only  dummy textx dummy</h6>
+        Its just a dummy text to show the design only  dummy textx dummy</h6>
     </div>
   </div>
 
-  <!-- Card view -->
+  <div class="row bank_top_view">
+    <div class="col-md-6 best_bank">
+    <a href="<?php echo base_url()?>index.php/best_banks"><h2>Bank 100 Banks</h2></a>
+    </div>
+   <div class="col-md-6 bank_review">
+   <a href="<?php echo base_url()?>best_bank_reviews"><h2>Best Bank Reviews</h2></a>
+    </div>
+  </div>
 
+  
+  <!-- Card view -->
   <div class="col-md-10 pl-0 mx-auto card_row">
         <div class="pt-5 col-md-12 mx-auto row card_view">
             <div class="col-md-3">
@@ -41,8 +50,84 @@
         </div>
   </div> 
 
+    <div class="col-md-12 py-5 ">
+        <div class="col-md-10 mx-auto px-0 ">
+        <h3 class="border_bottom_golden">Best 100 Banks</h3>
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th class="w-25">Bank</th>
+                        <th class="w-25">Rating</th>             
+                        <th class="w-25">FDIC</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                        <img src="http://localhost/bank_fx/assets/img/overview/bank1.png"><br>
+                        </td>
+                        <td>
+                                <span class="fa fa-star  checked"></span>
+                                <span class="fa fa-star  checked"></span>
+                                <span class="fa fa-star  checked"></span>
+                                <span class="fa fa-star  checked"></span>
+                                <span class="fa fa-star  checked"></span>
+                        </td>
+                        <td>
+                            <span>#123456</span>
+                        </td>
+                      
+                        <td>
+                            <h4><button class="btn button_blue px-5">FULL REVIEW</button></h4>
+                        </td>              
+                    </tr>       
+                    <tr>
+                        <td>
+                        <img src="http://localhost/bank_fx/assets/img/overview/bank1.png"><br>
+                        </td>
+                        <td>
+                                <span class="fa fa-star  checked"></span>
+                                <span class="fa fa-star  checked"></span>
+                                <span class="fa fa-star  checked"></span>
+                                <span class="fa fa-star  checked"></span>
+                                <span class="fa fa-star  checked"></span>
+                        </td>
+                        <td>
+                            <span>#123456</span>
+                        </td>
+                      
+                        <td>
+                            <h4><button class="btn button_blue px-5">FULL REVIEW</button></h4>
+                        </td>              
+                    </tr>       
+                    <tr>
+                        <td>
+                        <img src="http://localhost/bank_fx/assets/img/overview/bank1.png"><br>
+                        </td>
+                        <td>
+                                <span class="fa fa-star  checked"></span>
+                                <span class="fa fa-star  checked"></span>
+                                <span class="fa fa-star  checked"></span>
+                                <span class="fa fa-star  checked"></span>
+                                <span class="fa fa-star  checked"></span>
+                        </td>
+                        <td>
+                            <span>#123456</span>
+                        </td>
+                      
+                        <td>
+                            <h4><button class="btn button_blue px-5">FULL REVIEW</button></h4>
+                        </td>              
+                    </tr>       
+
+                </tbody>  
+            </table>   
+            <p>This line can  be used to  as a desclaimer fo the user ,so that user will be upto date dummy data etc </p>
+        </div>
+    </div>
   <!-- BANK NAMES AND DETAILS  -->
-  <div class="col-md-10 mx-auto ">
+  <!-- <div class="col-md-10 mx-auto ">
         <div class=" col-md-12 mx-auto">   
            <a href="<?php echo base_url()?>index.php/bank_review"> <h1>ALLIANT</h1></a>
             <h5>CATEGORY &nbsp;&nbsp;<span style="font-weight:400!important;font-size:15px"> # OF STATES | # OF BRANCHES</h5>
@@ -186,7 +271,8 @@
         </div>
        <div class="pb-5"></div>
 
-  </div> 
+  </div>  -->
+
    
 
  

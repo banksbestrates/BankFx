@@ -564,7 +564,7 @@
                 <a href="#insuranceSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                 <i class="fa fa-file fa-2x pr-3" aria-hidden="true"></i> Insurance</a>
                 <ul class="collapse list-unstyled" id="insuranceSubmenu">
-                  <li class="pt-3"><a href="<?php echo base_url()?>index.php/mortgage_overview">Insurance Overview</a></li>
+                  <li class="pt-3"><a href="<?php echo base_url()?>insurance_overview">Insurance Overview</a></li>
                   <br/>
                   <h5 class="text-white px-3">Insurance types</h5>
                   <li><a href="#">Car insurance</a></li>
@@ -594,22 +594,7 @@
                   <li><a href="#">Social security benefits calculator</a></li>
                   <li><a href="#">All retirement calculators</a></li>
                   <br/>
-                  <h5 class="text-white px-3">More information</h5>
-                  <li><a href="#">What is an IRA?</a></li>
-                  <li><a href="#">What is a Roth 401(k)?</a></li>
-                  <li><a href="#">401(k) contribution limits</a></li>
-                  <li><a href="#">Contributing to IRA during retirement</a></li>
-                  <li><a href="#">Best age for Social Security retirement benefits</a></li>
-                  <li><a href="#">Roth IRA 5 year rule</a></li>
-                  <br/>               
-                </ul>
-              </li>
-              <hr/>
-              <!-- menu 8 -->
-              <li>
-                <a href="#checkingSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                <i class="fa fa-home fa-2x pr-3" aria-hidden="true"></i>Checking</a>
-                <ul class="collapse list-unstyled" id="checkingSubmenu">
+
                   <!-- <li class="pt-3"><a href="<?php echo base_url()?>index.php/mortgage_overview">Insurance Overview</a></li> -->
                   <br/>
                   <h5 class="text-white px-3">Best Products</h5>
@@ -639,8 +624,8 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="<?php echo base_url()?>">Home</a></li>
-          <li><a href="<?php echo base_url()?>">Best 100 Banks</a></li>
-          <li><a href="<?php echo base_url()?>">Ratings</a></li>
+          <li><a href="<?php echo base_url()?>brokerage_overview">Best 100 Banks</a></li>
+          <li><a href="<?php echo base_url()?>retirement_overview">Ratings</a></li>
           <!-- <li class="menu-has-children"><a href="">Ratings</a>
             <ul>
               <li><a href="#">Banks Star Rating</a></li>
@@ -648,10 +633,10 @@
               <li><a href="#">Drop Down </a></li>
             </ul>
           </li> -->
-          <li><a href="<?php echo base_url()?>">Blog</a></li>
-          <li><a href="<?php echo base_url()?>index.php/about_us">About us</a></li>
-          <li><a href="<?php echo base_url()?>index.php/profile">Profile</a></li>
-          <li><a href="<?php echo base_url()?>index.php/signup">Register/Login</a></li>
+          <li><a href="<?php echo base_url()?>blog">Blog</a></li>
+          <li><a href="<?php echo base_url()?>about_us">About us</a></li>
+          <li><a href="<?php echo base_url()?>profile">Profile</a></li>
+          <li><a href="<?php echo base_url()?>signup">Register/Login</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -668,4 +653,4 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-  </script>
+ 

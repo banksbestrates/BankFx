@@ -15,6 +15,12 @@ class Bank extends CI_Controller {
 		$this->load->view('website/pages/bank/best_banks');
 		$this->load->view('website/layout/footer');
 	}
+	public function best_bank_reviews()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/bank/best_bank_reviews');
+		$this->load->view('website/layout/footer');
+    }
 	public function bank_review()
 	{
 		$this->load->view('website/layout/header');

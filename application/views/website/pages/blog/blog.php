@@ -1,10 +1,4 @@
 
-<style>
-.card_image{
-    background-size:100% 100%;
-    background-position:center;
-}
-</style>
   <!--==========================
     over view banner
   ============================-->
@@ -15,6 +9,7 @@
     Its just a dummy text to show the design only  dummy textx dummy</h6>
     </div>
   </div>
+
  
   <!-- Content Related to Loans -->
   <div class="col-md-10 mx-auto px-0 py-5 ">
