@@ -9,7 +9,7 @@
 --------------------------------------------------------------*/
 body {
   background: #fff;
-  color: #666666;
+  color: black;
   font-family: 'Muli', sans-serif;
 }
 
@@ -1524,10 +1524,10 @@ left:30%;
   text-align: center;
   position: absolute;
   top: 30%;
-  left: 30%;
+  left: 25%;
   border: 2px solid white;
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 .bank_review h2{
 color:white;
@@ -1903,8 +1903,166 @@ margin:0px;
 .text-black{
   color:black;
 }
+.table_bank_image img{
+  object-fit:contain;
+  height:40px;
+  width:100%;
+}
 
 
+/* branch review */
+.review_box{
+  border:2px solid #CB9D24; 
+  padding:20px 30px 20px 30px;
+}
+.review_box .review_div .fa{
+  font-size:40px;
+}
+.review_box .rates span{
+  color:black;
+  font-weight:bold;
+}
+.icon_view img{
+  /* height:100px; */
+  width:85px;
+}
+
+.map_box {
+  border:2px solid #CB9D24; 
+  border-top:18px solid #CB9D24;
+}
+.zip_code{
+  background-color:#a7b3deb0
+}
+.zip_code .form-control{
+  border-radius:10px;
+  font-size:20px;
+  height:55px;
+}
+.location_div{
+  color:#002A75;
+  border-right:2px solid #CB9D24;
+}
+.location_div  h5{
+  color:#002A75;
+}
+.border_div h3::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #ddd;
+  /* bottom: 1px; */
+}
+.border_div  h3::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 6px;
+  background: #CB9D24;
+  /* bottom: 0; */
+  left: calc(50% - 20px);
+}
+.what_to_like span{
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 23px;
+  color: black;
+
+}
+.what_to_like .fa{
+  color: #CB9D24;
+}
+.what_to_like p{
+ text-align:justify;
+}
+
+
+.star_button_div .fa
+{
+  font-size:40px;
+  padding-right:10px;
+}
+.star_button_div
+{
+  text-align:right;
+  padding-top:40px;
+}
+.font-weight-900{
+  font-weight:800;
+}
+
+/* branch locator city /state names */
+
+ul .listing {
+  overflow: hidden;
+  margin-left: -3px;
+}
+.listing {
+  width: 102%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.listing li {
+  background-color: #FFF;
+  font-weight: 400;
+  line-height: 30px;
+  float: left;
+  width: 170px;
+  list-style-type: none;
+  margin: 7px;
+  margin-bottom: 12px;
+  padding: 2px;
+  padding-left: 2px;
+  border: 2px solid #CB9D24;
+  border-radius:10px;
+}
+.dbox {
+  margin-left: 10px;
+  margin-top: 10px;
+  
+}
+.blu {
+  background: #0374A1;
+}
+.ab, .abc {
+  float: left;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #FFF;
+  text-align: center;
+
+  box-shadow: 0 0 2px rgba(0, 0, 0,.8);
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+
+a:link, a:visited, a:hover, a:active {
+  /* color: #333; */
+  text-decoration: none;
+}
+.litem {
+    color: black;
+    font-weight: bold;
+    padding-left: 6px;
+}
+.total_cities{
+  margin-left: 10px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.service-header .form-contorl{
+border:1px solid #968719!important;
+}
 
 
 

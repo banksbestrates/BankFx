@@ -10,6 +10,7 @@
     </div>
   </div>
  
+<div class="col-md-12 mx-0">
   <div class="row bank_top_view">
     <div class="col-md-6 best_bank">
     <a href="<?php echo base_url()?>best_banks"><h2>Bank 100 Banks</h2></a>
@@ -18,13 +19,11 @@
    <a href="<?php echo base_url()?>best_bank_reviews"><h2>Best Bank Reviews</h2></a>
     </div>
   </div>
+</div>
 
   <!-- Card view -->
 
   <div class="col-md-10 mx-auto card_row">
-        <!-- <header class="section-header">
-          <h3>BEST BANK ACCOUNT RATES</h3>
-        </header> -->
         <div class="col-md-12 mx-auto row card_view">
             <div class="col-md-3">
                 <div class="card">
@@ -53,8 +52,6 @@
         </div>
   </div> 
 
-
-
     <!--==========================
       About Us Section
     ============================-->
@@ -68,8 +65,6 @@
 
         <div class="pt-3 col-md-12 mx-auto">
 
-
-   
           <iframe src="https://createaclickablemap.com/map.php?&id=93525&maplocation=false&online=true" width="100%" height="525" style="border: none;"></iframe>
             <script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
 
@@ -89,9 +84,9 @@
     <!-- #about -->
 
 <!-- TRENDING IN BANKSSS -->
-<section id="portfolio" class="pb-5">
-      <header class="section-header">
-          <h3 class="section-title pb-2">WHATS TRENDING IN HOUSE BUYING</h3>
+<section id="portfolio">
+      <header class="section-header pb-4">
+          <h3 class="section-title">WHATS TRENDING IN HOUSE BUYING</h3>
       </header>
       <div class="container">    
         <div class="row portfolio-container" style="position: relative; height: 1080px;">

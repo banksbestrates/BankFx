@@ -10,6 +10,7 @@
     </div>
   </div>
 
+<div class="col-md-12">
   <div class="row bank_top_view">
     <div class="col-md-6 best_bank">
     <a href="<?php echo base_url()?>index.php/best_banks"><h2>Bank 100 Banks</h2></a>
@@ -18,10 +19,10 @@
    <a href="<?php echo base_url()?>best_bank_reviews"><h2>Best Bank Reviews</h2></a>
     </div>
   </div>
+</div>
 
-  
   <!-- Card view -->
-  <div class="col-md-10 pl-0 mx-auto card_row">
+  <div class="col-md-10 pl-0 mx-auto">
         <div class="pt-5 col-md-12 mx-auto row card_view">
             <div class="col-md-3">
                 <div class="card">
@@ -64,27 +65,28 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>
-                        <img src="http://localhost/bank_fx/assets/img/overview/bank1.png"><br>
+                        <td class="table_bank_image">
+                        <img src="<?php echo base_url()?>assets/img/bank_images/bank_of_america.png"><br>
                         </td>
                         <td>
-                                <span class="fa fa-star  checked"></span>
-                                <span class="fa fa-star  checked"></span>
-                                <span class="fa fa-star  checked"></span>
-                                <span class="fa fa-star  checked"></span>
-                                <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star  checked"></span>
+                            <span class="fa fa-star  checked"></span>
                         </td>
                         <td>
                             <span>#123456</span>
                         </td>
                       
                         <td>
-                            <h4><button class="btn button_blue px-5">FULL REVIEW</button></h4>
+                            <a href="<?php echo base_url()?>branch_locator">
+                            <h4><button class="btn button_blue px-5">FULL REVIEW</button></h4></a>
                         </td>              
                     </tr>       
                     <tr>
-                        <td>
-                        <img src="http://localhost/bank_fx/assets/img/overview/bank1.png"><br>
+                        <td class="table_bank_image">
+                        <img src="<?php echo base_url()?>assets/img/bank_images/usbank.png"><br>
                         </td>
                         <td>
                                 <span class="fa fa-star  checked"></span>
@@ -98,12 +100,14 @@
                         </td>
                       
                         <td>
+                        <a href="<?php echo base_url()?>branch_locator">
                             <h4><button class="btn button_blue px-5">FULL REVIEW</button></h4>
+                        </a>
                         </td>              
                     </tr>       
                     <tr>
-                        <td>
-                        <img src="http://localhost/bank_fx/assets/img/overview/bank1.png"><br>
+                    <td class="table_bank_image">
+                        <img src="<?php echo base_url()?>assets/img/bank_images/region.png"><br>
                         </td>
                         <td>
                                 <span class="fa fa-star  checked"></span>
@@ -117,7 +121,9 @@
                         </td>
                       
                         <td>
-                            <h4><button class="btn button_blue px-5">FULL REVIEW</button></h4>
+                            <a href="<?php echo base_url()?>branch_locator">
+                                <h4><button class="btn button_blue px-5">FULL REVIEW</button></h4>
+                            </a>
                         </td>              
                     </tr>       
 

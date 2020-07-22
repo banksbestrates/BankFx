@@ -74,6 +74,8 @@ $route['bank_overview'] = 'Bank/bank_overview';
 $route['best_banks'] = 'Bank/best_banks';
 $route['best_bank_reviews'] = 'Bank/best_bank_reviews';
 $route['bank_review'] = 'Bank/bank_review';
+$route['branch_locator'] = 'Bank/branch_locator';
+$route['bank_state'] = 'Bank/bank_state';
 // loan module
 $route['loan_calculator']   = 'Loan/loan_calculator';
 $route['loan_overview']     = 'Loan/loan_overview';

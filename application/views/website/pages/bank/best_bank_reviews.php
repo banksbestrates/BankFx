@@ -4,12 +4,13 @@
   ============================-->
   <div class="overview_banner">
     <div class="banner_heading">
-    <h1 class="display-4">Best 100 Banks</h1>
+    <h1 class="display-4">Best Bank Reviews</h1>
     <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem hic<br/>
         Its just a dummy text to show the design only  dummy textx dummy</h6>
     </div>
   </div>
 
+<div class="col-md-12">
   <div class="row bank_top_view">
     <div class="col-md-6 best_bank">
     <a href="<?php echo base_url()?>index.php/best_banks"><h2>Bank 100 Banks</h2></a>
@@ -18,11 +19,11 @@
    <a href="<?php echo base_url()?>index.php/best_banks"><h2>Best Bank Reviews</h2></a>
     </div>
   </div>
+</div>
 
-  
   <!-- Card view -->
-  <div class="col-md-10 pl-0 mx-auto card_row">
-        <div class="pt-5 col-md-12 mx-auto row card_view">
+  <div class="col-md-10 px-0 mx-auto card_row">
+        <div class="col-md-12 mx-auto row card_view">
             <div class="col-md-3">
                 <div class="card">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
@@ -50,8 +51,8 @@
         </div>
   </div> 
 
-    <div class="col-md-12 py-5 ">
-        <div class="col-md-10 mx-auto px-0 ">
+    <div class="col-md-12">
+        <div class="col-md-10 mx-auto py-4">
         <h3>Best Bank Reviews</h3>
         <div class="col-md-9 bank_review_list">
         <div class="row">
