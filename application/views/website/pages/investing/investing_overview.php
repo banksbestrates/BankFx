@@ -17,7 +17,7 @@
             <div class="col-md col-sm-4">
                 <div class="card pb-2">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6>Best Investments</h6></a>
+                  <a href="<?php echo base_url()?>best_investment"><h6>Best Investments</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">

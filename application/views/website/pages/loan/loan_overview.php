@@ -41,7 +41,7 @@
             <div class="col-md col-sm-4">
                 <div class="card pb-2">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                <a href="<?php echo base_url()?>index.php/student_loan"><h6>Lender Review</h6></a>
+                <a href="<?php echo base_url()?>leander_loan_review"><h6>Lender Review</h6></a>
                 </div>
             </div>
         </div>

@@ -76,6 +76,8 @@ $route['best_bank_reviews'] = 'Bank/best_bank_reviews';
 $route['bank_review'] = 'Bank/bank_review';
 $route['branch_locator'] = 'Bank/branch_locator';
 $route['bank_state'] = 'Bank/bank_state';
+$route['best_money_market'] = 'Bank/best_money_market';
+
 // loan module
 $route['loan_calculator']   = 'Loan/loan_calculator';
 $route['loan_overview']     = 'Loan/loan_overview';
@@ -83,7 +85,9 @@ $route['personal_loan']     = 'Loan/personal_loan';
 $route['auto_loan']         = 'Loan/auto_loan';
 $route['student_loan']      = 'Loan/student_loan';
 $route['top_lenders']       = 'Loan/top_lenders';
+$route['leander_loan_review'] = 'Loan/leander_loan_review';
 $route['investment_overview']       = 'Loan/investment_overview';
+$route['best_investment']       = 'Loan/best_investment';
 $route['blog']       = 'Blog/blog_overview';
 $route['retirement_overview']       = 'Retirement/retirement_overview';
 $route['insurance_overview']       = 'Insurance/insurance_overview';

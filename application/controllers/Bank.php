@@ -32,7 +32,13 @@ class Bank extends CI_Controller {
 		$this->load->view('website/layout/header');
 		$this->load->view('website/pages/bank/bank_state');
 		$this->load->view('website/layout/footer');
-    }
+  }
+	public function best_money_market()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/bank/best_money_market');
+		$this->load->view('website/layout/footer');
+  }
 	public function bank_review()
 	{
 		$this->load->view('website/layout/header');

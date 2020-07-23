@@ -1591,19 +1591,20 @@ height:100%!important;
 padding:60px 0 0 0;
 }
 .related_image{
-background-image:url('../img/overview/travel2.jpg');
-background-repeat:no-repeat;
-height:280px;
-width:100%;
-background-size:cover;
+background-image:url('../img/overview/editor_pick1.png');
+background-repeat: no-repeat;
+height: 270px;
+width: 100%;
+background-size: 100% 100%;
+
 
 }
-.related_image2{
-background-image:url('../img/overview/airline.jpg');
-background-repeat:no-repeat;
-height:280px;
-width:100%;
-background-size:cover;
+.related_image{
+  background-image:url('../img/overview/editor_pick1.png');
+  background-repeat: no-repeat;
+  height: 270px;
+  width: 100%;
+  background-size: 100% 100%;
 
 }
 .related_image3{
@@ -1616,7 +1617,7 @@ background-size:cover;
 }
 .related_content{
 padding:20px 10px 10px 30px;
-text-align:justify;
+/* text-align:justify; */
 }
 .related_content .fa{
 color:#968719;
@@ -1657,6 +1658,11 @@ font-size:40px;
 .button_blue{
   color:white;
   background-color:#0374A1;
+}
+.button_outline_blue{
+  color:#0374A1;
+  background-color: white;
+  border:1px solid #0374A1;
 }
 .button_light_yellow{
   color:white;
@@ -2064,6 +2070,24 @@ a:link, a:visited, a:hover, a:active {
 border:1px solid #968719!important;
 }
 
+.box_round_border{
+  border:2px solid #CB9D24;
+  border-radius:10px;
 
+}
+.best_investment_image{
+  background-image:url('../img/overview/related2.png');
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:100%;
+  border-radius:10px;
+}
+.text_skyblue{
+  color:#0374A1;
+}
+.credit_card_small_row td {
+  padding: 0.3rem;
+}
 
 

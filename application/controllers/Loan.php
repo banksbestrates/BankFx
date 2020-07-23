@@ -39,6 +39,18 @@ class Loan extends CI_Controller {
 		$this->load->view('website/pages/investing/investing_overview');
 		$this->load->view('website/layout/footer');
     }
+	public function best_investment()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/investing/best_investment');
+		$this->load->view('website/layout/footer');
+    }
+	public function leander_loan_review()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/loan/leander_loan_review');
+		$this->load->view('website/layout/footer');
+    }
 	public function loan_calculator()
 	{
 		$this->load->view('website/layout/header');

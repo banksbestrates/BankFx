@@ -40,7 +40,7 @@
             <div class="col-md-3">
               <div class="card">
               <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <h6>Best Money Market <br/>Account Rates</h6>
+                <a href="<?php echo base_url()?>best_money_market">  <h6>Best Money Market <br/>Account Rates</h6></a>
                 </div>
             </div>
             <div class="col-md-3">
