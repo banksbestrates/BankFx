@@ -47,7 +47,7 @@
         </div>
   </div> 
 
-  <!-- TRENDING IN BANKSSS -->
+<!-- TRENDING IN BANKSSS -->
 <section id="portfolio" class="">
     <div class="container">
         <header class="section-header pb-4">
@@ -101,11 +101,9 @@
         </div>
     </div>
 </section>
-
  <!-- Content Related to Loans -->
- <div class="col-md-10 mx-auto px-0 py-5 ">
-       <h2 class="border_bottom_golden">Content Related to Loans</h2>
-      
+  <div class="col-md-10 mx-auto px-0 py-5 ">
+       <h2 class="border_bottom_golden">Content Related to Loans</h2>  
        <div class="col-md-12 mx-auto row px-0">
             <div class="col-md-6 related_image">
             </div>
@@ -122,4 +120,4 @@
                     </div>
             </div>
         </div>
-</div>
+  </div>

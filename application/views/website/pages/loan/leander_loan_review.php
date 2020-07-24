@@ -92,104 +92,102 @@
 
 <div class="col-md-10 mx-auto px-0 pb-5">
     <h4 class="border_bottom_golden font-weight-900">Table to see Lenders</h4>
-        <table class="table text-center text-secondary font-weight-bold">
-                <thead>
-                    <tr>
-                        <th class="w-25"> <small>Lender          </small></th>
-                        <th> <small>Rating          </small></th>             
-                        <th> <small>APR From        </small></th>
-                        <th> <small>Term            </small></th>
-                        <th> <small>Max Loan Amount </small></th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="table_bank_image">
-                        <img src="http://localhost:81/bank_fx/assets/img/bank_images/bank_of_america.png" class="w-75"><br>
-                        </td>
-                        <td>
-                            <span class="fa fa-star  checked"></span>
-                            <span class="fa fa-star  checked"></span>
-                            <span class="fa fa-star  checked"></span>
-                            <span class="fa fa-star  checked"></span>
-                            <span class="fa fa-star  checked"></span>
-                        </td>
-                        <td>
-                            <span>1.25%</span>
-                        </td>
-                        <td>
-                            <span>2-7 years</span>
-                        </td>
-                        <td>
-                            <span>$500</span>
-                        </td>
-                      
-                        <td>
-                            <a href="http://localhost:81/bank_fx/branch_locator">
-                            <h4><button class="btn button_blue btn-sm  px-5">FULL REVIEW</button></h4></a>
-                        </td>              
-                    </tr>       
-                    <tr>
-                        <td class="table_bank_image">
-                        <img src="http://localhost:81/bank_fx/assets/img/bank_images/usbank.png" class="w-75"><br>
-                        </td>
-                        <td>
-                            <span class="fa fa-star  checked"></span>
-                            <span class="fa fa-star  checked"></span>
-                            <span class="fa fa-star  checked"></span>
-                            <span class="fa fa-star  checked"></span>
-                            <span class="fa fa-star  checked"></span>
-                        </td>
-                        <td>
-                            <span>1.25%</span>
-                        </td>
-                        <td>
-                            <span>2-7 years</span>
-                        </td>
-                        <td>
-                            <span>$500</span>
-                        </td>
-                      
-                        <td>
-                            <a href="http://localhost:81/bank_fx/branch_locator">
-                            <h4><button class="btn button_blue btn-sm  px-5">FULL REVIEW</button></h4></a>
-                        </td>              
-                    </tr>       
-                    <tr>
-                        <td class="table_bank_image">
+    <table class="table text-center text-secondary font-weight-bold">
+        <thead>
+            <tr>
+                <th class="w-25"> <small>Lender          </small></th>
+                <th> <small>Rating          </small></th>             
+                <th> <small>APR From        </small></th>
+                <th> <small>Term            </small></th>
+                <th> <small>Max Loan Amount </small></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                 <td class="table_bank_image">
+                 <img src="http://localhost:81/bank_fx/assets/img/bank_images/bank_of_america.png" class="w-75"><br>
+                 </td>
+                 <td>
+                     <span class="fa fa-star  checked"></span>
+                     <span class="fa fa-star  checked"></span>
+                     <span class="fa fa-star  checked"></span>
+                     <span class="fa fa-star  checked"></span>
+                     <span class="fa fa-star  checked"></span>
+                 </td>
+                 <td>
+                     <span>1.25%</span>
+                 </td>
+                 <td>
+                     <span>2-7 years</span>
+                 </td>
+                 <td>
+                     <span>$500</span>
+                 </td>
+                 <td>
+                     <a href="http://localhost:81/bank_fx/branch_locator">
+                     <h4><button class="btn button_blue btn-sm  px-5">FULL REVIEW</button></h4></a>
+                 </td>              
+            </tr>       
+                <tr>
+                    <td class="table_bank_image">
+                    <img src="http://localhost:81/bank_fx/assets/img/bank_images/usbank.png" class="w-75"><br>
+                    </td>
+                    <td>
+                        <span class="fa fa-star  checked"></span>
+                        <span class="fa fa-star  checked"></span>
+                        <span class="fa fa-star  checked"></span>
+                        <span class="fa fa-star  checked"></span>
+                        <span class="fa fa-star  checked"></span>
+                    </td>
+                    <td>
+                        <span>1.25%</span>
+                    </td>
+                    <td>
+                        <span>2-7 years</span>
+                    </td>
+                    <td>
+                        <span>$500</span>
+                    </td>
+                  
+                    <td>
+                        <a href="http://localhost:81/bank_fx/branch_locator">
+                        <h4><button class="btn button_blue btn-sm  px-5">FULL REVIEW</button></h4></a>
+                    </td>              
+                </tr>       
+                <tr>
+                    <td class="table_bank_image">
                         <img src="http://localhost:81/bank_fx/assets/img/bank_images/region.png" class="w-75"><br>
-                        </td>
-                        <td>
+                    </td>
+                    <td>
                             <span class="fa fa-star  checked"></span>
                             <span class="fa fa-star  checked"></span>
                             <span class="fa fa-star  checked"></span>
                             <span class="fa fa-star  checked"></span>
                             <span class="fa fa-star  checked"></span>
-                        </td>
-                        <td>
+                    </td>
+                    <td>
                             <span>1.25%</span>
-                        </td>
-                        <td>
+                    </td>
+                    <td>
                             <span>2-7 years</span>
-                        </td>
-                        <td>
+                    </td>
+                    <td>
                             <span>$500</span>
-                        </td>
-                      
-                        <td>
-                            <a href="http://localhost:81/bank_fx/branch_locator">
-                            <h4><button class="btn button_blue btn-sm  px-5">FULL REVIEW</button></h4></a>
-                        </td>              
-                    </tr>       
+                    </td>                   
+                    <td>
+                        <a href="http://localhost:81/bank_fx/branch_locator">
+                        <h4><button class="btn button_blue btn-sm  px-5">FULL REVIEW</button></h4></a>
+                    </td>              
+                </tr>       
                      
 
-                </tbody>  
-        </table>   
-        <small>
+        </tbody>  
+    </table>   
+    <small>
             This line can be used as a disclaimer for when the information was pulled last. 
             Thus way the end user might feel more confident with up-to-date numbers.
-        </small>
+    </small>
 </div>
 
 

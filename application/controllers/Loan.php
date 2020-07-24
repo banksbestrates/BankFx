@@ -51,6 +51,12 @@ class Loan extends CI_Controller {
 		$this->load->view('website/pages/loan/leander_loan_review');
 		$this->load->view('website/layout/footer');
     }
+	public function personal_loan_rate()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/loan/personal_loan_rate');
+		$this->load->view('website/layout/footer');
+    }
 	public function loan_calculator()
 	{
 		$this->load->view('website/layout/header');

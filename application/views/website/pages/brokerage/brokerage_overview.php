@@ -21,7 +21,7 @@
                         </div>
                     </div>
                 
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6 class="mb-0">Wells Forgo</h6></a>
+                  <a href="<?php echo base_url()?>best_online_brokerage"><h6 class="mb-0">Wells Fargo</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                 
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6 class="mb-0">Wells Forgo</h6></a>
+                  <a href="<?php echo base_url()?>best_online_brokerage"><h6 class="mb-0">Wells Fargo</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                 
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6 class="mb-0">Wells Forgo</h6></a>
+                  <a href="<?php echo base_url()?>best_online_brokerage"><h6 class="mb-0">Wells Fargo</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                 
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6 class="mb-0">Wells Forgo</h6></a>
+                  <a href="<?php echo base_url()?>best_online_brokerage"><h6 class="mb-0">Wells Fargo</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                 
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6 class="mb-0">Wells Forgo</h6></a>
+                  <a href="<?php echo base_url()?>best_online_brokerage"><h6 class="mb-0">Wells Fargo</h6></a>
                 </div>
             </div>
          
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                 
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6 class="mb-0">Wells Forgo</h6></a>
+                  <a href="<?php echo base_url()?>best_online_brokerage"><h6 class="mb-0">Wells Fargo</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                 
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6 class="mb-0">Wells Forgo</h6></a>
+                  <a href="<?php echo base_url()?>best_online_brokerage"><h6 class="mb-0">Wells Fargo</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                 
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6 class="mb-0">Wells Forgo</h6></a>
+                  <a href="<?php echo base_url()?>best_online_brokerage"><h6 class="mb-0">Wells Fargo</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -104,7 +104,7 @@
                         </div>
                     </div>
                 
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6 class="mb-0">Wells Forgo</h6></a>
+                  <a href="<?php echo base_url()?>best_online_brokerage"><h6 class="mb-0">Wells Fargo</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -114,7 +114,7 @@
                         </div>
                     </div>
                 
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6 class="mb-0">Wells Forgo</h6></a>
+                  <a href="<?php echo base_url()?>best_online_brokerage"><h6 class="mb-0">Wells Fargo</h6></a>
                 </div>
             </div>
          

@@ -9,5 +9,11 @@ class Brokerage extends CI_Controller {
 		$this->load->view('website/pages/brokerage/brokerage_overview');
 		$this->load->view('website/layout/footer');
     }
+	public function best_online_brokerage()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/brokerage/best_online_brokerage');
+		$this->load->view('website/layout/footer');
+    }
 
 }

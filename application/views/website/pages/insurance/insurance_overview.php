@@ -17,13 +17,13 @@
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6>Home Insurance</h6></a>
+                  <a href="<?php echo base_url()?>homeowner_insurance"><h6>Home Insurance</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
             <div class="card pb-3">
                   <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6>Auto Insurance</h6></a>
+                  <a href="<?php echo base_url()?>homeowner_insurance"><h6>Auto Insurance</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">

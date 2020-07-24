@@ -79,19 +79,22 @@ $route['bank_state'] = 'Bank/bank_state';
 $route['best_money_market'] = 'Bank/best_money_market';
 
 // loan module
-$route['loan_calculator']   = 'Loan/loan_calculator';
-$route['loan_overview']     = 'Loan/loan_overview';
-$route['personal_loan']     = 'Loan/personal_loan';
-$route['auto_loan']         = 'Loan/auto_loan';
-$route['student_loan']      = 'Loan/student_loan';
-$route['top_lenders']       = 'Loan/top_lenders';
-$route['leander_loan_review'] = 'Loan/leander_loan_review';
-$route['investment_overview']       = 'Loan/investment_overview';
+$route['loan_calculator']       = 'Loan/loan_calculator';
+$route['loan_overview']         = 'Loan/loan_overview';
+$route['personal_loan']         = 'Loan/personal_loan';
+$route['personal_loan_rate']    = 'Loan/personal_loan_rate';
+$route['auto_loan']             = 'Loan/auto_loan';
+$route['student_loan']          = 'Loan/student_loan';
+$route['top_lenders']           = 'Loan/top_lenders';
+$route['leander_loan_review']   = 'Loan/leander_loan_review';
+$route['investment_overview']   = 'Loan/investment_overview';
 $route['best_investment']       = 'Loan/best_investment';
-$route['blog']       = 'Blog/blog_overview';
-$route['retirement_overview']       = 'Retirement/retirement_overview';
-$route['insurance_overview']       = 'Insurance/insurance_overview';
-$route['brokerage_overview']       = 'Brokerage/brokerage_overview';
+$route['blog']                  = 'Blog/blog_overview';
+$route['retirement_overview']   = 'Retirement/retirement_overview';
+$route['insurance_overview']    = 'Insurance/insurance_overview';
+$route['brokerage_overview']    = 'Brokerage/brokerage_overview';
+$route['best_online_brokerage'] = 'Brokerage/best_online_brokerage';
+$route['homeowner_insurance']   = 'Insurance/homeowner_insurance';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
