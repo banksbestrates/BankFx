@@ -100,25 +100,35 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 /*===============ADMIN VIEW======================*/
-$route['admin/login']                       = 'AdminController/login';
-$route['admin/dashboard']                   = 'AdminController/dashboard';
-$route['admin/user_list']                   = 'AdminController/user_list';
-$route['admin/profile']                     = 'AdminController/profile';
-$route['admin/website_page/(:any)']         = 'AdminController/page_content/$1';
-$route['admin/contact_us']                  = 'AdminController/contact_us';
-$route['admin/mortgage/related_articles']    = 'AdminController/mortgage_articles';
+$route['admin/login']                       = 'ADMIN/AdminController/login';
+$route['admin/dashboard']                   = 'ADMIN/AdminController/dashboard';
+$route['admin/user_list']                   = 'ADMIN/AdminController/user_list';
+$route['admin/profile']                     = 'ADMIN/AdminController/profile';
+$route['admin/website_page/(:any)']         = 'ADMIN/AdminController/page_content/$1';
+$route['admin/contact_us']                  = 'ADMIN/AdminController/contact_us';
+$route['admin/mortgage/related_articles']   = 'ADMIN/AdminController/mortgage_articles';
+$route['admin/mortgage/mortgage_overview']  = 'ADMIN/MortgageController/mortgage_overview';
+$route['admin/mortgage/best_mortgage_rates']= 'ADMIN/MortgageController/best_mortgage_rates';
+$route['admin/mortgage/best_refinance_rates']= 'ADMIN/MortgageController/best_refinance_rates';
+$route['admin/mortgage/house_afford']        = 'ADMIN/MortgageController/house_afford';
 
 
 /*=================================ADMIN API========================================*/
-$route['api/admin/login']                       = 'API/Admin/login';
-$route['admin/logout']                          = 'API/Admin/logout';
-$route['api/admin/get_profile_detail']          = 'API/Admin/get_admin_detail';
-$route['api/admin/update_profile']              = 'API/Admin/update_profile';
-$route['api/admin/reset_password']              = 'API/Admin/reset_password';
-$route['api/admin/page_data']                   = 'API/Pages/get_page_data';
-$route['api/admin/page_data_update']            = 'API/Pages/page_data_update';
-$route['api/admin/get_contact_detail']          = 'API/Pages/get_contact_detail';
-$route['api/admin/update_contact_detail']       = 'API/Pages/update_contact_detail';
+$route['api/admin/login']                           = 'API/Admin/login';
+$route['admin/logout']                              = 'API/Admin/logout';
+$route['api/admin/get_profile_detail']              = 'API/Admin/get_admin_detail';
+$route['api/admin/update_profile']                  = 'API/Admin/update_profile';
+$route['api/admin/reset_password']                  = 'API/Admin/reset_password';
+$route['api/admin/page_data']                       = 'API/Pages/get_page_data';
+$route['api/admin/page_data_update']                = 'API/Pages/page_data_update';
+$route['api/admin/get_contact_detail']              = 'API/Pages/get_contact_detail';
+$route['api/admin/update_contact_detail']           = 'API/Pages/update_contact_detail';
+$route['api/admin/get_mortgage_rate_content']       = 'API/Mortgage/get_mortgage_rate_content';
+$route['api/admin/update_mortgage_rate_content']    = 'API/Mortgage/update_mortgage_rate_content';
+$route['api/admin/get_refinance_rate_content']      = 'API/Mortgage/get_refinance_rate_content';
+$route['api/admin/update_refinance_rate_content']   = 'API/Mortgage/update_refinance_rate_content';
+$route['api/admin/get_house_afford_content']        = 'API/Mortgage/get_house_afford_content';
+$route['api/admin/update_house_afford_content']     = 'API/Mortgage/update_house_afford_content';
 
 /*==============================WEB APIS===========================================*/
-$route['api/get_page_data']            = 'API/Pages/get_page_data';
+$route['api/get_page_data']    =    'API/Pages/get_page_data';

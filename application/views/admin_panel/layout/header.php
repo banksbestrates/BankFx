@@ -228,13 +228,23 @@
 							<div class="collapse" id="mortgage">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="<?php echo base_url()?>admin/mortgage/all_articles">
-											<span class="sub-item">View/Edit Article</span>
+										<a href="<?php echo base_url()?>admin/mortgage/mortgage_overview">
+											<span class="sub-item">Mortgage Overview Page</span>
 										</a>
 									</li>
 									<li>
-										<a href="<?php echo base_url()?>admin/mortgage/related_articles">
-											<span class="sub-item">Add New Articles</span>
+										<a href="<?php echo base_url()?>admin/mortgage/best_mortgage_rates">
+											<span class="sub-item">Best Mortgage Rates</span>
+										</a>
+									</li>
+									<li>
+										<a href="<?php echo base_url()?>admin/mortgage/best_refinance_rates">
+											<span class="sub-item">Best Refinance Rates</span>
+										</a>
+									</li>
+									<li>
+										<a href="<?php echo base_url()?>admin/mortgage/house_afford">
+											<span class="sub-item">How Much House Afford</span>
 										</a>
 									</li>
 								</ul>

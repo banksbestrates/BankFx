@@ -1,0 +1,162 @@
+<?php
+
+defined('BASEPATH') or exit('No direct script access allowed');
+use Restserver\Libraries\REST_Controller;
+// This can be removed if you use __autoload() in config.php OR use Modular Extensions
+/** @noinspection PhpIncludeInspection */
+
+require APPPATH . '/libraries/REST_Controller.php';
+
+class Mortgage extends \Restserver\Libraries\REST_Controller
+{
+    public $curr_date 			= "";
+	public $unix_timestamp 		= "";
+	public $timeStamp 			= "";
+	public $responseData 		= array();
+	
+    public function __construct()
+    {
+        parent::__construct();
+		date_default_timezone_set('Asia/Calcutta');
+
+        $date = new DateTime();
+        $this->curr_date = date('Y-m-d H:i:s');
+        $this->unix_timestamp = date('U');
+		$this->timeStamp = $date->getTimestamp();
+		$this->load->model('MortgageModel');	
+    }
+    
+    // Best Mortage content
+	public function get_mortgage_rate_content_post()
+	{  
+        $query = $this->MortgageModel->get_mortgage_rate_content();
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+	public function update_mortgage_rate_content_post()
+	{
+		$_POST = $this->security->xss_clean($_POST);	
+		$this->form_validation->set_rules('heading','heading', 'trim|required|max_length[100]');	
+		$this->form_validation->set_rules('content','content', 'trim|required');	
+							
+		if ($this->form_validation->run() == false) {
+			$message = array(
+				$this->config->item('status') => false,
+				$this->config->item('message')=> validation_errors(),
+				$this->config->item('data') => $this->form_validation->error_array(),
+			);
+			return $this->send_error_response(validation_errors(), REST_Controller::HTTP_NOT_FOUND);
+		}
+
+		$heading		    =	$this->input->post('heading',true);
+		$content		    =	$this->input->post('content',true);
+        
+        $data = array(
+			"id"=>"1",
+			"heading"=>$heading,
+			"content"=>$content,
+			"updated_on"=>$this->curr_date
+		);
+	
+		$query = $this->MortgageModel->update_mortgage_rate_content($data);
+		
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+    }
+    
+    // Best Refinance content
+	public function get_refinance_rate_content_post()
+	{  
+        $query = $this->MortgageModel->get_refinance_rate_content();
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+	public function update_refinance_rate_content_post()
+	{
+		$_POST = $this->security->xss_clean($_POST);	
+		$this->form_validation->set_rules('heading','heading', 'trim|required|max_length[100]');	
+		$this->form_validation->set_rules('content','content', 'trim|required');	
+							
+		if ($this->form_validation->run() == false) {
+			$message = array(
+				$this->config->item('status') => false,
+				$this->config->item('message')=> validation_errors(),
+				$this->config->item('data') => $this->form_validation->error_array(),
+			);
+			return $this->send_error_response(validation_errors(), REST_Controller::HTTP_NOT_FOUND);
+		}
+
+		$heading		    =	$this->input->post('heading',true);
+		$content		    =	$this->input->post('content',true);
+        
+        $data = array(
+			"id"=>"1",
+			"heading"=>$heading,
+			"content"=>$content,
+			"updated_on"=>$this->curr_date
+		);
+	
+		$query = $this->MortgageModel->update_refinance_rate_content($data);
+		
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+    // Best HOw much house you can afford content
+	public function get_house_afford_content_post()
+	{  
+        $query = $this->MortgageModel->get_house_afford_content();
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+	public function update_house_afford_content_post()
+	{
+		$_POST = $this->security->xss_clean($_POST);	
+		$this->form_validation->set_rules('heading','heading', 'trim|required|max_length[100]');	
+		$this->form_validation->set_rules('content','content', 'trim|required');	
+							
+		if ($this->form_validation->run() == false) {
+			$message = array(
+				$this->config->item('status') => false,
+				$this->config->item('message')=> validation_errors(),
+				$this->config->item('data') => $this->form_validation->error_array(),
+			);
+			return $this->send_error_response(validation_errors(), REST_Controller::HTTP_NOT_FOUND);
+		}
+
+		$heading		    =	$this->input->post('heading',true);
+		$content		    =	$this->input->post('content',true);
+        
+        $data = array(
+			"id"=>"1",
+			"heading"=>$heading,
+			"content"=>$content,
+			"updated_on"=>$this->curr_date
+		);
+	
+		$query = $this->MortgageModel->update_house_afford_content($data);
+		
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+
+  //Error message
+  public function send_error_response($Message)
+  {
+      $response[$this->config->item('status')] = false;
+      $response[$this->config->item('message')] = $Message;
+      return $this->set_response($response, REST_Controller::HTTP_OK);
+  }
+  
+}

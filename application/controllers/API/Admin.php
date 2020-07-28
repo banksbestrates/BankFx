@@ -17,7 +17,6 @@ class Admin extends \Restserver\Libraries\REST_Controller
     public function __construct()
     {
         parent::__construct();
-	
 		$this->load->model('AdminModel');	
     }
 
@@ -53,7 +52,6 @@ class Admin extends \Restserver\Libraries\REST_Controller
 
     public function setSession($data)
     {
-
         $sessionData = array(
             "bankfx_admin_login"=>true,
             "admin_id"=>$data->id,
@@ -172,14 +170,12 @@ class Admin extends \Restserver\Libraries\REST_Controller
 		
     }
     
-  //Error message
-  public function send_error_response($Message)
-  {
-      $response[$this->config->item('status')] = false;
-      $response[$this->config->item('message')] = $Message;
-      return $this->set_response($response, REST_Controller::HTTP_OK);
-  }
+    //Error message
+    public function send_error_response($Message)
+    {
+        $response[$this->config->item('status')] = false;
+        $response[$this->config->item('message')] = $Message;
+        return $this->set_response($response, REST_Controller::HTTP_OK);
+    }
   
-
-
 }
