@@ -250,6 +250,70 @@
 								</ul>
 							</div>
 						</li>
+						<li class="nav-item" id="">
+							<a data-toggle="collapse" href="#credit">
+								<i class="flaticon-list"></i>
+								<p>Credit Card</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="credit">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="<?php echo base_url()?>admin/credit/credit_overview">
+											<span class="sub-item">Credit Overview Page</span>
+										</a>
+									</li>					
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item" id="">
+							<a data-toggle="collapse" href="#loan">
+								<i class="flaticon-list"></i>
+								<p>Loan</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="loan">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="<?php echo base_url()?>admin/loan/loan_overview">
+											<span class="sub-item">Loan Overview Page</span>
+										</a>
+									</li>					
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item" id="">
+							<a data-toggle="collapse" href="#insurance">
+								<i class="flaticon-list"></i>
+								<p>Insurance</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="insurance">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="<?php echo base_url()?>admin/insurance/insurance_overview">
+											<span class="sub-item">Insurance Overview Page</span>
+										</a>
+									</li>					
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item" id="">
+							<a data-toggle="collapse" href="#brokerage">
+								<i class="flaticon-list"></i>
+								<p>Brokerage</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="brokerage">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="<?php echo base_url()?>admin/brokerage/brokerage_overview">
+											<span class="sub-item">Best Brokerage Review Page</span>
+										</a>
+									</li>					
+								</ul>
+							</div>
+						</li>
 
 						<!-- <li class="nav-item" id="bulk_emails">
 							<a href="<?php echo base_url();?>bulk_emails">

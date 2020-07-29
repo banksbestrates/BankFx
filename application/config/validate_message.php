@@ -10,6 +10,12 @@ $config['data']         = 'data';
 $config['baseUrl']      = 'base_url';
 
 
+/*=========================MEDIA PATH=============================*/
+$config['mortgage_media_path']          =  'assets/images/website/mortgage/';
+$config['credit_media_path']            =  'assets/images/website/credit/';
+$config['loan_media_path']              =  'assets/images/website/loan/';
+$config['insurance_media_path']              =  'assets/images/website/insurance/';
+$config['brokerage_media_path']              =  'assets/images/website/brokerage/';
 /*=========================ADMIN MODULE=============================*/
 $config['admin_login_success']          =  'Login Successfully';
 $config['admin_login_failure']          =  'Invalid Credentails! Plase Verify email and password';

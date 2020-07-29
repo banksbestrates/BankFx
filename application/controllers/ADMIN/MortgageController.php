@@ -63,7 +63,6 @@ class MortgageController extends CI_Controller {
 		$this->load->view('admin_panel/layout/footer');
     }
 
-    
 
 	public function mortgage_articles()
 	{

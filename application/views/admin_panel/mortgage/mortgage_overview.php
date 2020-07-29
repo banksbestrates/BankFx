@@ -6,20 +6,25 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="d-flex align-items-center">
-                                <h5 class="card-title">MORTGAGE-Related Articles</h5>                              
+                                <h5 class="card-title">MORTGAGE-Mortgage Overview Page</h5>                              
                             </div>
+                            <small>Web Page Link: <a href="<?php echo base_url();?>/mortgage_overview" target="_blank"><?php echo base_url();?>mortgage_overview<a>                                        
                         </div>
+                        
                         <div class="card-body">
+                        <h2 class="text-center text-dark font-weight-bold">WHAT IS TRENDING IN HOUSE BUYING</h2><hr/>
                             <div class="col-md-12 px-5">
-                                <lable>Article Heading</lable>
-                                <input type="text" class="form-control" id="heading" placeholder="Article Heading Here"/><br/>
-                                <lable>Article Introduction</lable>
-                                <textarea class="form-control" id="introduction" rows="5" placeholder="Enter Introduction here"></textarea><br/>
-                                <label>Articel Content</label>
-                                <textarea name="editor" id="data"></textarea><br/>
-                                <label>Article Image</label>
-                                <input type="file" class="form-control" /><br/>
-                                <button class="btn btn-block btn-primary" id="update_button" onclick="addAirtcle()">Add Article</button>
+                                <div class="row" id="trending_articles">
+                                                            
+                                </div>
+                            </div>
+                            <br/>                        
+                        </div><br/><br/>
+                        <h2 class="text-center text-dark font-weight-bold">RELATED ARTICLES</h2><hr/>
+                            <div class="col-md-12 px-5">
+                                <div class="row" id="related_articles">
+                                                            
+                                </div>
                             </div>
                             <br/>                        
                         </div>
@@ -32,27 +37,9 @@
 <!-- Datatables -->
 <script src="<?php echo base_url()?>assets/admin_panel/js/core/jquery.3.2.1.min.js"></script>
 <script src="<?php echo base_url()?>assets/admin_panel/libs/common.js"></script>
-<script src="<?php echo base_url()?>assets/admin_panel/libs/pageProcess.js"></script>
+<script src="<?php echo base_url()?>assets/admin_panel/libs/mortgageProcess.js"></script>
 <script>
- CKEDITOR.replace( 'editor' );
-let formData = new FormData();
-let url = baseUrl + "api/admin/get_contact_detail";
-let xhr = new XMLHttpRequest();
-xhr.open('POST', url);
-xhr.send(formData);
-xhr.onload = function() {
-    if (xhr.status == 200) {
-        let obj = JSON.parse(xhr.responseText);
-        let status = obj.Status;
-        let message = obj.Message;
-        if (!status) {
-        }
-        let data = obj.data;
-        $("#phone").val(data.phone);
-        $("#email").val(data.email);
-        $("#address").text(data.address);  
-    }
-}
+get_mortgage_overview();
 
 function updateContactUs()
 {

@@ -100,17 +100,21 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 /*===============ADMIN VIEW======================*/
-$route['admin/login']                       = 'ADMIN/AdminController/login';
-$route['admin/dashboard']                   = 'ADMIN/AdminController/dashboard';
-$route['admin/user_list']                   = 'ADMIN/AdminController/user_list';
-$route['admin/profile']                     = 'ADMIN/AdminController/profile';
-$route['admin/website_page/(:any)']         = 'ADMIN/AdminController/page_content/$1';
-$route['admin/contact_us']                  = 'ADMIN/AdminController/contact_us';
-$route['admin/mortgage/related_articles']   = 'ADMIN/AdminController/mortgage_articles';
-$route['admin/mortgage/mortgage_overview']  = 'ADMIN/MortgageController/mortgage_overview';
-$route['admin/mortgage/best_mortgage_rates']= 'ADMIN/MortgageController/best_mortgage_rates';
-$route['admin/mortgage/best_refinance_rates']= 'ADMIN/MortgageController/best_refinance_rates';
-$route['admin/mortgage/house_afford']        = 'ADMIN/MortgageController/house_afford';
+$route['admin/login']                           = 'ADMIN/AdminController/login';
+$route['admin/dashboard']                       = 'ADMIN/AdminController/dashboard';
+$route['admin/user_list']                       = 'ADMIN/AdminController/user_list';
+$route['admin/profile']                         = 'ADMIN/AdminController/profile';
+$route['admin/website_page/(:any)']             = 'ADMIN/AdminController/page_content/$1';
+$route['admin/contact_us']                      = 'ADMIN/AdminController/contact_us';
+$route['admin/mortgage/related_articles']       = 'ADMIN/AdminController/mortgage_articles';
+$route['admin/mortgage/mortgage_overview']      = 'ADMIN/MortgageController/mortgage_overview';
+$route['admin/mortgage/best_mortgage_rates']    = 'ADMIN/MortgageController/best_mortgage_rates';
+$route['admin/mortgage/best_refinance_rates']   = 'ADMIN/MortgageController/best_refinance_rates';
+$route['admin/mortgage/house_afford']           = 'ADMIN/MortgageController/house_afford';
+$route['admin/credit/credit_overview']          = 'ADMIN/CreditController/credit_overview';
+$route['admin/loan/loan_overview']              = 'ADMIN/LoanController/loan_overview';
+$route['admin/insurance/insurance_overview']    = 'ADMIN/InsuranceController/insurance_overview';
+$route['admin/brokerage/brokerage_overview']    = 'ADMIN/BrokerageController/brokerage_overview';
 
 
 /*=================================ADMIN API========================================*/
@@ -129,6 +133,16 @@ $route['api/admin/get_refinance_rate_content']      = 'API/Mortgage/get_refinanc
 $route['api/admin/update_refinance_rate_content']   = 'API/Mortgage/update_refinance_rate_content';
 $route['api/admin/get_house_afford_content']        = 'API/Mortgage/get_house_afford_content';
 $route['api/admin/update_house_afford_content']     = 'API/Mortgage/update_house_afford_content';
+$route['api/admin/get_mortgage_overview']           = 'API/Mortgage/get_mortgage_overview';
+$route['api/admin/update_mortgage_overview']        = 'API/Mortgage/update_mortgage_overview';
+$route['api/admin/get_credit_overview']             = 'API/Credit/get_credit_overview';
+$route['api/admin/update_credit_overview']          = 'API/Credit/update_credit_overview';
+$route['api/admin/get_loan_overview']               = 'API/Loan/get_loan_overview';
+$route['api/admin/update_loan_overview']            = 'API/Loan/update_loan_overview';
+$route['api/admin/get_insurance_overview']          = 'API/Insurance/get_insurance_overview';
+$route['api/admin/update_insurance_overview']       = 'API/Insurance/update_insurance_overview';
+$route['api/admin/get_brokerage_overview']          = 'API/Brokerage/get_brokerage_overview';
+$route['api/admin/update_brokerage_overview']       = 'API/Brokerage/update_brokerage_overview';
 
 /*==============================WEB APIS===========================================*/
 $route['api/get_page_data']    =    'API/Pages/get_page_data';
