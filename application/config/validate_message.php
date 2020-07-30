@@ -14,8 +14,10 @@ $config['baseUrl']      = 'base_url';
 $config['mortgage_media_path']          =  'assets/images/website/mortgage/';
 $config['credit_media_path']            =  'assets/images/website/credit/';
 $config['loan_media_path']              =  'assets/images/website/loan/';
-$config['insurance_media_path']              =  'assets/images/website/insurance/';
-$config['brokerage_media_path']              =  'assets/images/website/brokerage/';
+$config['insurance_media_path']         =  'assets/images/website/insurance/';
+$config['brokerage_media_path']         =  'assets/images/website/brokerage/';
+$config['investing_media_path']         =  'assets/images/website/investing/';
+$config['retirement_media_path']         =  'assets/images/website/retirement/';
 /*=========================ADMIN MODULE=============================*/
 $config['admin_login_success']          =  'Login Successfully';
 $config['admin_login_failure']          =  'Invalid Credentails! Plase Verify email and password';

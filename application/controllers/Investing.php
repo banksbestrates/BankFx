@@ -8,7 +8,7 @@ use Restserver\Libraries\REST_Controller;
 
 require APPPATH . '/libraries/REST_Controller.php';
 
-class Retirement extends \Restserver\Libraries\REST_Controller
+class Investing extends \Restserver\Libraries\REST_Controller
 {
     public $curr_date 			= "";
 	public $unix_timestamp 		= "";
@@ -24,20 +24,20 @@ class Retirement extends \Restserver\Libraries\REST_Controller
         $this->curr_date = date('Y-m-d H:i:s');
         $this->unix_timestamp = date('U');
 		$this->timeStamp = $date->getTimestamp();
-		$this->load->model('RetirementModel');	
+		$this->load->model('InvestingModel');	
     }
  
 	//get overview details 
-	public function get_retirement_overview_post()
+	public function get_investing_overview_post()
 	{  
-        $query = $this->RetirementModel->get_retirement_overview();
+        $query = $this->InvestingModel->get_investing_overview();
 		if ($query['Status']) {
 			return $this->set_response($query, REST_Controller::HTTP_OK);
 		}
 		return $this->send_error_response($query[$this->config->item('message')]);
 	}
 
-	public function update_retirement_overview_post()
+	public function update_investing_overview_post()
 	{
 		$_POST = $this->security->xss_clean($_POST);	
 		$this->form_validation->set_rules('heading','heading', 'trim|required|max_length[100]');	
@@ -69,7 +69,7 @@ class Retirement extends \Restserver\Libraries\REST_Controller
                 $file_name = md5($this->unix_timestamp) . "." . substr($_FILES['image']['name'],
                                     strpos($_FILES['image']['name'], ".") + 1);
             
-                $upPath   =    getcwd() .'/'. $this->config->item('retirement_media_path');
+                $upPath   =    getcwd() .'/'. $this->config->item('investing_media_path');
 
                 $config = array(
                     'upload_path'   => $upPath,
@@ -86,13 +86,13 @@ class Retirement extends \Restserver\Libraries\REST_Controller
                 }
                 $img_data   = $img_response[$this->config->item('data')];
                 $file_name  = $img_data['file_name'];
-                $file_path  = $this->config->item('retirement_media_path');
+                $file_path  = $this->config->item('investing_media_path');
 
             $image = $file_path.$file_name;
             $data['image']= $image;
         }
 
-		$query = $this->RetirementModel->update_retirement_overview($data);
+		$query = $this->InvestingModel->update_investing_overview($data);
 		
 		if ($query['Status']) {
 			return $this->set_response($query, REST_Controller::HTTP_OK);
@@ -101,7 +101,7 @@ class Retirement extends \Restserver\Libraries\REST_Controller
     }
     
 
-
+    
   //Error message
   public function send_error_response($Message)
   {

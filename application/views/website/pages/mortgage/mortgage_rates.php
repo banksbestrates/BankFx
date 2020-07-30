@@ -1,7 +1,45 @@
 
 <style>
+
+
+/* .table td , .table th{
+    border-bottom:1px solid #CB9D24;
+    border-top:none; 
+}
+.table thead th{
+    border-bottom:1px solid #CB9D24;
+}
+
+.table > tbody > tr > td {
+     vertical-align: middle;
+    
+}
+.table h4 {
+    margin-bottom:0px;
+}
+.active td{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.button_yellow{
+    color:white;
+    background-color:#CB9D24;
+}
+.button_grey{
+    color:white;
+    background-color:#626262;
+}
+.button_green{
+    color:white;
+    background-color:#c0ce21;
+}
+.border_bottom_golden{
+    border-bottom:2px solid #CB9D24;
+    padding-bottom:10px;
+} */
+
 .form-control{
-  line-height:1.5!important;
+  line-height:1.5;
 }
 </style>
 <!-- TOP NAME DIV -->
@@ -12,7 +50,7 @@
             <p>Published on July 30. Do you want to get more information ?</p>
         </div>
         <div class="col-md-4 text-right pt-3">
-            <button class="btn button_green">DOWNLOAD OUR APP</button>
+            <button class="btn button_blue">DOWNLOAD OUR APP</button>
         </div>
     </div>
 </div>
@@ -59,6 +97,11 @@
                     <option>10 Years</option> 
                 </select>
           </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-md-4 text-center mx-auto">
+                <button class="btn button_yellow">FIND BEST RATES</button>
+            </div>
         </div>
       </div>
 </div> 

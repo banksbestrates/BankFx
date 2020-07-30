@@ -3,10 +3,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Mortgage extends CI_Controller {
 
+
 	public function mortgage_overview()
 	{
+		$this->load->model('MortgageModel');
+		$mortgage_data = $this->MortgageModel->get_mortgage_overview();
+		if($mortgage_data['Status'])
+		{
+			$mortgage_data = $mortgage_data['data'];
+		}else{
+			$mortgage_data="";
+		}
 		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/mortgage/mortgage_overview');
+		$this->load->view('website/pages/mortgage/mortgage_overview',array("page_data"=>$mortgage_data));
 		$this->load->view('website/layout/footer');
     }
     public function mortgage_rates()

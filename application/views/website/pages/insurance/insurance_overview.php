@@ -48,72 +48,50 @@
           <h3 class="section-title">INSURANCE 101</h3>
         </header>
         <div class="row portfolio-container" style="position: relative; height: 1080px;">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="position: absolute; left: 0px; top: 0px; visibility: visible; animation-name: fadeInUp;">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo base_url()?>assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
-              </figure>
-
-              <div class="portfolio-info">
-                <h4>BEST APPS FOR 2020</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, 
-                deserunt maxime commodi numquam nobis consequuntur beatae provident 
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s" style="position: absolute; left: 380px; top: 0px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo base_url()?>assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
-              </figure>
-
-              <div class="portfolio-info">
-                <h4>LOW RISK INVESTING</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, 
-                deserunt maxime commodi numquam nobis consequuntur beatae provident 
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s" style="position: absolute; left: 760px; top: 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="<?php echo base_url()?>assets/img/portfolio/app2.jpg" class="img-fluid" alt="">
-              </figure>
-
-              <div class="portfolio-info">
-              <h4>HOW TO BUY STOCKS</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, 
-                deserunt maxime commodi numquam nobis consequuntur beatae provident 
-                </p>
-              </div>
-            </div>
-            </div>
+          <?php if(count($page_data)>=1){
+              foreach($page_data as $d){
+                if($d->div_type == "trending_article"){?>
+                     <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="position: absolute; left: 0px; top: 0px; visibility: visible; animation-name: fadeInUp;">
+                        <div class="portfolio-wrap">
+                          <figure style="background-image:url('<?php echo base_url() . $d->image ?>');
+                              background-size:100% 100%;background-position:center">
+                          </figure>
+                          <div class="portfolio-info">
+                            <h4><?php echo $d->heading?></h4>
+                            <p><?php echo $d->content?> 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+               <?php }
+              }
+          }?>
         </div>
     </div>
 </section>
 
  <!-- Content Related to Loans -->
  <div class="col-md-10 mx-auto px-0 py-5 ">
-       <h2 class="border_bottom_golden">Content Related to Loans</h2>
-      
-       <div class="col-md-12 mx-auto row px-0">
-            <div class="col-md-6 related_image">
-            </div>
-            <div class="col-md-6 related_content">
-                <p>EDITOR'S PICK </p>
-                <h4>COVID-19 RELIEF TO SMALL BUSINESS</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi culpa atque eius qui 
-                ducimus fuga iste necessitatibus voluptate reprehenderit? </p>
-                  <div class="row">
-                        <div class="col-md-1">
-                          <i class="fa fa-arrow-circle-right"  aria-hidden="true"></i>
-                        </div>
-                        <div class="col-md-8 pt-2">6 MIN </div>
-                    </div>
-            </div>
-        </div>
+       <h3 class="border_bottom_golden font-weight-900">Related Articles</h3>
+       <?php if(count($page_data)>=1){
+        foreach($page_data as $d){
+          if($d->div_type == "related_article"){?>
+              <div class="col-md-12 mx-auto row px-0">
+                <div class="col-md-6 related_image" style="background-image:url('<?php echo base_url() . $d->image ?>')">
+                </div>
+                <div class="col-md-6 related_content">
+                    <p class="mb-2">EDITOR'S PICK </p>
+                    <h4><?php echo $d->heading?></h4>
+                    <p><?php echo $d->content?></p>
+                    <div class="row">
+                          <div class="col-md-1">
+                            <i class="fa fa-arrow-circle-right"  aria-hidden="true"></i>
+                          </div>
+                          <div class="col-md-8 pt-2">6 MIN </div>
+                      </div>
+                </div>
+              </div>
+          <?php }
+        }
+      }?>
 </div>

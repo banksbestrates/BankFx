@@ -314,6 +314,38 @@
 								</ul>
 							</div>
 						</li>
+						<li class="nav-item" id="">
+							<a data-toggle="collapse" href="#investing">
+								<i class="flaticon-list"></i>
+								<p>Investing</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="investing">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="<?php echo base_url()?>admin/investing/investing_overview">
+											<span class="sub-item">Investing Overview</span>
+										</a>
+									</li>					
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item" id="">
+							<a data-toggle="collapse" href="#retirement">
+								<i class="flaticon-list"></i>
+								<p>Retirement</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="retirement">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="<?php echo base_url()?>admin/retirement/retirement_overview">
+											<span class="sub-item">Retirement Overview</span>
+										</a>
+									</li>					
+								</ul>
+							</div>
+						</li>
 
 						<!-- <li class="nav-item" id="bulk_emails">
 							<a href="<?php echo base_url();?>bulk_emails">

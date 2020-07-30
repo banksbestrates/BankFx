@@ -2,12 +2,25 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Loan extends CI_Controller {
+	
+	public function __construct()
+	{
+			parent::__construct();
+			$this->load->model('LoanModel');	
+	}
 
 	public function loan_overview()
 	{
-		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/loan/loan_overview');
-		$this->load->view('website/layout/footer');
+			$loan_data = $this->LoanModel->get_loan_overview();
+			if($loan_data['Status'])
+			{
+				$loan_data = $loan_data['data'];
+			}else{
+				$loan_data="";
+			}
+			$this->load->view('website/layout/header');
+			$this->load->view('website/pages/loan/loan_overview',array("page_data"=>$loan_data));
+			$this->load->view('website/layout/footer');
     }
 	public function personal_loan()
 	{

@@ -68,44 +68,49 @@
     <div class="col-md-12 py-4 mortgag_form_div">
         <div class="col-md-10 mx-auto px-0 ">
             <div class="row">
-            <div class="col-md-2">
-                    <label>Mortgage type</label>
-                    <select class="form-control">
-                        <option>Refinance</option>
-                        <option>Purchase</option>
-                    </select>
+                <div class="col-md-2">
+                        <label>Mortgage type</label>
+                        <select class="form-control">
+                            <option>Refinance</option>
+                            <option>Purchase</option>
+                        </select>
+                </div>
+                <div class="col-md-2">
+                        <label>ZIP Code</label>
+                        <input type="text" class="form-control" value="12345"/>
+                </div>
+                <div class="col-md-2">
+                        <label>Purchase Price</label>
+                        <input type="text" class="form-control" value="$410,000"/>
+                </div>
+                <div class="col-md-2">
+                        <label>Down payment</label>
+                        <input type="text" class="form-control" value="$82,000">
+                </div>
+                <div class="col-md-2">
+                        <label>Credit score </label>
+                        <select class="form-control">
+                            <option>740+</option>
+                            <option>720-739</option>
+                            <option>720-739</option>
+                            <option>7420-739</option>
+                            <option>720-739</option>
+                        </select>
+                </div>
+                <div class="col-md-2">
+                        <label>Loan term</label>
+                        <select class="form-control">
+                            <option>30 Years</option>
+                            <option>20 Years</option>
+                            <option>15 Years</option>
+                            <option>10 Years</option> 
+                        </select>
+                </div>
             </div>
-            <div class="col-md-2">
-                    <label>ZIP Code</label>
-                    <input type="text" class="form-control" value="12345"/>
-            </div>
-            <div class="col-md-2">
-                    <label>Purchase Price</label>
-                    <input type="text" class="form-control" value="$410,000"/>
-            </div>
-            <div class="col-md-2">
-                    <label>Down payment</label>
-                    <input type="text" class="form-control" value="$82,000">
-            </div>
-            <div class="col-md-2">
-                    <label>Credit score </label>
-                    <select class="form-control">
-                        <option>740+</option>
-                        <option>720-739</option>
-                        <option>720-739</option>
-                        <option>7420-739</option>
-                        <option>720-739</option>
-                    </select>
-            </div>
-            <div class="col-md-2">
-                    <label>Loan term</label>
-                    <select class="form-control">
-                        <option>30 Years</option>
-                        <option>20 Years</option>
-                        <option>15 Years</option>
-                        <option>10 Years</option> 
-                    </select>
-            </div>
+            <div class="row pt-4">
+                <div class="col-md-4 text-center mx-auto">
+                    <button class="btn button_yellow">FIND BEST RATES</button>
+                </div>
             </div>
         </div>
     </div> 

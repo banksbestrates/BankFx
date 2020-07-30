@@ -67,9 +67,9 @@ $route['mortgage_arm_loan'] = 'Home/mortgage_arm_loan';
 $route['mortgage_calculator'] = 'Mortgage/mortgage_calculator';
 $route['mortgage_calculator_list'] = 'Mortgage/mortgage_calculator_list';
 $route['house_afford'] = 'Mortgage/house_afford';
-$route['credit_overview'] = 'Mortgage/credit_overview';
-$route['best_credit_cards'] = 'Mortgage/best_credit_cards';
-$route['compare_card'] = 'Mortgage/compare_card';
+$route['credit_overview'] = 'Credit/credit_overview';
+$route['best_credit_cards'] = 'Credit/best_credit_cards';
+$route['compare_card'] = 'Credit/compare_card';
 $route['bank_overview'] = 'Bank/bank_overview';
 $route['best_banks'] = 'Bank/best_banks';
 $route['best_bank_reviews'] = 'Bank/best_bank_reviews';
@@ -87,8 +87,8 @@ $route['auto_loan']             = 'Loan/auto_loan';
 $route['student_loan']          = 'Loan/student_loan';
 $route['top_lenders']           = 'Loan/top_lenders';
 $route['leander_loan_review']   = 'Loan/leander_loan_review';
-$route['investment_overview']   = 'Loan/investment_overview';
-$route['best_investment']       = 'Loan/best_investment';
+$route['investment_overview']   = 'Investment/investment_overview';
+$route['best_investment']       = 'Investment/best_investment';
 $route['blog']                  = 'Blog/blog_overview';
 $route['retirement_overview']   = 'Retirement/retirement_overview';
 $route['insurance_overview']    = 'Insurance/insurance_overview';
@@ -115,6 +115,8 @@ $route['admin/credit/credit_overview']          = 'ADMIN/CreditController/credit
 $route['admin/loan/loan_overview']              = 'ADMIN/LoanController/loan_overview';
 $route['admin/insurance/insurance_overview']    = 'ADMIN/InsuranceController/insurance_overview';
 $route['admin/brokerage/brokerage_overview']    = 'ADMIN/BrokerageController/brokerage_overview';
+$route['admin/investing/investing_overview']    = 'ADMIN/InvestingController/investing_overview';
+$route['admin/retirement/retirement_overview']  = 'ADMIN/RetirementController/retirement_overview';
 
 
 /*=================================ADMIN API========================================*/
@@ -143,6 +145,10 @@ $route['api/admin/get_insurance_overview']          = 'API/Insurance/get_insuran
 $route['api/admin/update_insurance_overview']       = 'API/Insurance/update_insurance_overview';
 $route['api/admin/get_brokerage_overview']          = 'API/Brokerage/get_brokerage_overview';
 $route['api/admin/update_brokerage_overview']       = 'API/Brokerage/update_brokerage_overview';
+$route['api/admin/get_investing_overview']          = 'API/Investing/get_investing_overview';
+$route['api/admin/update_investing_overview']       = 'API/Investing/update_investing_overview';
+$route['api/admin/get_retirement_overview']         = 'API/Retirement/get_retirement_overview';
+$route['api/admin/update_retirement_overview']      = 'API/Retirement/update_retirement_overview';
 
 /*==============================WEB APIS===========================================*/
 $route['api/get_page_data']    =    'API/Pages/get_page_data';

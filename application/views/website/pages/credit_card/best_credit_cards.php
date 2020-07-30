@@ -3,7 +3,29 @@
 .form-control{
   line-height:1.5;
 }
+.checked{
+    color:#CB9D24;
+}
+.rating_point{
+    color:black;
+    font-size:35px;
+    padding-right:20px;
+    font-weight:bold;
+}
+.best_rating_blue{
+    font-size:15; 
+    position:absolute;
+    padding-top:14px;
+}
+.credit_list_view h6{
+margin:0px;
+}
 
+.credit_card_image{
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 </style>
 <!-- TOP NAME DIV -->
