@@ -113,10 +113,14 @@ $route['admin/mortgage/best_refinance_rates']   = 'ADMIN/MortgageController/best
 $route['admin/mortgage/house_afford']           = 'ADMIN/MortgageController/house_afford';
 $route['admin/credit/credit_overview']          = 'ADMIN/CreditController/credit_overview';
 $route['admin/loan/loan_overview']              = 'ADMIN/LoanController/loan_overview';
+$route['admin/loan/personal_loan']              = 'ADMIN/LoanController/personal_loan';
+$route['admin/loan/auto_loan']                  = 'ADMIN/LoanController/auto_loan';
+$route['admin/loan/student_loan']               = 'ADMIN/LoanController/student_loan';
 $route['admin/insurance/insurance_overview']    = 'ADMIN/InsuranceController/insurance_overview';
 $route['admin/brokerage/brokerage_overview']    = 'ADMIN/BrokerageController/brokerage_overview';
 $route['admin/investing/investing_overview']    = 'ADMIN/InvestingController/investing_overview';
 $route['admin/retirement/retirement_overview']  = 'ADMIN/RetirementController/retirement_overview';
+$route['admin/home/homepage']                   = 'ADMIN/HomePageController/homepage';
 
 
 /*=================================ADMIN API========================================*/
@@ -149,6 +153,9 @@ $route['api/admin/get_investing_overview']          = 'API/Investing/get_investi
 $route['api/admin/update_investing_overview']       = 'API/Investing/update_investing_overview';
 $route['api/admin/get_retirement_overview']         = 'API/Retirement/get_retirement_overview';
 $route['api/admin/update_retirement_overview']      = 'API/Retirement/update_retirement_overview';
+$route['api/admin/get_homepage_slider']             = 'API/Homepage/get_homepage_slider';
+$route['api/admin/update_homepage_data']             = 'API/Homepage/update_homepage_data';
+$route['api/admin/update_homepage_testimonial']             = 'API/Homepage/update_homepage_testimonial';
 
 /*==============================WEB APIS===========================================*/
 $route['api/get_page_data']    =    'API/Pages/get_page_data';

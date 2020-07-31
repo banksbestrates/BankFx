@@ -218,6 +218,12 @@
 								</ul>
 							</div>
 						</li>
+						<li class="nav-item " id="users_list">
+							<a href="<?php echo base_url();?>admin/home/homepage">
+								<i class="flaticon-users"></i>
+								<p>Home Page</p>
+							</a>
+						</li>
 
 						<li class="nav-item" id="">
 							<a data-toggle="collapse" href="#mortgage">
@@ -277,6 +283,21 @@
 									<li>
 										<a href="<?php echo base_url()?>admin/loan/loan_overview">
 											<span class="sub-item">Loan Overview Page</span>
+										</a>
+									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/loan/personal_loan">
+											<span class="sub-item">Persoanl Loan</span>
+										</a>
+									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/loan/auto_loan">
+											<span class="sub-item">Auto Loan</span>
+										</a>
+									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/loan/student_loan">
+											<span class="sub-item">Student Loan</span>
 										</a>
 									</li>					
 								</ul>

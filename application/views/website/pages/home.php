@@ -1,67 +1,3 @@
-<style>
-
-ul.listing {
-    overflow: hidden;
-    margin-left: -3px;
-}
-.listing {
-    width: 102%;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.listing li {
-    background-color: #FFF;
-    font-weight: 400;
-    line-height: 30px;
-    float: left;
-    width: 212px;
-    list-style-type: none;
-    margin: 4px;
-    margin-bottom: 12px;
-    padding: 2px;
-    padding-left: 2px;
-    border: 1px solid #D8DFEA;
-    background-color: #4c8c9e38;
-}
-.dbox {
-    margin: 1px;
-    padding: 0 0 1px 1px;
-}
-.blu {
-    background: #7476A3;
-}
-.ab, .abc {
-    float: left;
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    margin-right: 8px;
-    margin-left: 3px;
-    margin-top: 8px;
-    margin-bottom: 5px;
-    font-weight: 700;
-    color: #FFF;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 0 2px rgba(0, 0, 0,.8);
-    opacity: 0.85;
-    filter: alpha(opacity=85);
-}
-.litem, a.litem:link, a.litem:visited, a.litem:active {
-    line-height: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-a:link, a:visited, a:hover, a:active {
-    /* color: #333; */
-    text-decoration: none;
-}
-.service-header .form-contorl{
-  border:1px solid #968719!important;
-}
-
-</style>
 
 
   <!--==========================
@@ -243,7 +179,7 @@ a:link, a:visited, a:hover, a:active {
           <input type="text" class="col-md-6 py-3 mx-auto form-control" placeholder="Search by state name"/></p>
         </header>
         <div class="col-md-12">
-        <ul class="listing">
+        <!-- <ul class="listing">
         <li><div class="dbox"><span class="ab blu">AL</span><a href="" title="Alabama Banks" class="litem">Alabama</a></div><div class="undertitletextlist">149 banks in 291 cities</div></li>
 <li><div class="dbox"><span class="ab blu">AK</span><a href="" title="Alaska Banks" class="litem">Alaska</a></div><div class="undertitletextlist">7 banks in 33 cities</div></li>
 <li><div class="dbox"><span class="ab blu">AZ</span><a href="" title="Arizona Banks" class="litem">Arizona</a></div><div class="undertitletextlist">65 banks in 95 cities</div></li>
@@ -296,7 +232,7 @@ a:link, a:visited, a:hover, a:active {
 <li><div class="dbox"><span class="ab blu">WV</span><a href=""  title="West Virginia Banks" class="litem">West Virginia</a></div><div class="undertitletextlist">71 banks in 191 cities</div></li>
 <li><div class="dbox"><span class="ab blu">WI</span><a href="" title="Wisconsin Banks" class="litem">Wisconsin</a></div><div class="undertitletextlist">220 banks in 551 cities</div></li>
 <li><div class="dbox"><span class="ab blu">WY</span><a href="" title="Wyoming Banks" class="litem">Wyoming</a></div><div class="undertitletextlist">48 banks in 55 cities</div></li>
-</ul>
+</ul> -->
         </div>
       </div>
     </section>
@@ -402,14 +338,14 @@ a:link, a:visited, a:hover, a:active {
     <!--==========================
       Portfolio Section
     ============================-->
-    <section id="portfolio"  class="section-bg" >
+    <section id="portfolio"  class="" >
       <div class="container">
 
         <header class="section-header">
           <h3 class="section-title">Our Portfolio</h3>
         </header>
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -418,7 +354,7 @@ a:link, a:visited, a:hover, a:active {
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
         <div class="row portfolio-container">
 
@@ -664,7 +600,7 @@ a:link, a:visited, a:hover, a:active {
     <!--==========================
       Team Section
     ============================-->
-    <section id="team">
+    <!-- <section id="team">
       <div class="container">
         <div class="section-header wow fadeInUp">
           <h3>Team</h3>
@@ -748,7 +684,7 @@ a:link, a:visited, a:hover, a:active {
         </div>
 
       </div>
-    </section>
+    </section> -->
     <!-- #team -->
 
     <!--==========================

@@ -108,7 +108,6 @@ function editOverviewModel(i)
     var target = document.getElementById("target");
     showImage(src,target);
 }
-
 function updateOverview(id)
 {
     let heading         = $("#edit_heading").val();
@@ -154,5 +153,58 @@ function updateOverview(id)
                 });
                location.reload();
             }	
+    };
+}
+
+//=====================PERSONAL LOAN====================//
+function get_personal_loan() {
+    let formData = new FormData();
+    let url = baseUrl + "api/admin/get_personal_loan";
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.send(formData);
+    xhr.onload = function() {
+        if (xhr.status == 200) {
+            let obj = JSON.parse(xhr.responseText);
+            let status = obj.Status;
+            let message = obj.Message;
+            if (!status) {
+            }
+            loanData = obj.data;
+            let normal_list = "";
+            let related_list = "";
+               for (var i = 0; i < loanData.length; i++) {
+                   if(loanData[i].div_type=="normal_content")
+                   {
+                    normal_list = normal_list+ 
+                    '<div class="col-md-12">'+
+                    '    <h2 class="text-dark font-weight-bold">'+loanData[i].heading+'</h2> '+
+                    '    <span style="float:right"><button class="btn btn-sm btn-primary">EDIT</button></span>  '+
+                    '    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum placeat totam quod, commodi itaque! Inventore nihil iure dolor delectus rerum placeat libero corrupti, exercitationem, molestias eveniet eius tempore laudantium!</p>             '+
+                    '</div>'
+                   }
+                   else if(loanData[i].div_type=="related_article")
+                   {
+                        related_list = related_list+ 
+                        '   <div class="col-md-12">'+
+                        '       <div class="row">'+
+                        '           <div class="col-md-5">'+
+                        '             <img src="'+baseUrl+loanData[i].image+'" alt="" width="100%" >'+
+                        '           </div>'+
+                        '           <div class="col-md-5 py-4">'+
+                        '               <h3 class="text-dark">'+loanData[i].heading+'</h3>'+
+                        '               <p>'+loanData[i].content+'</p>'+
+                        '           </div>'+
+                        '           <div class="col-md-2">'+
+                        '               <button class="btn btn-sm btn-primary" onclick="editOverviewModel('+i+')">Edit</button>'+
+                        '           </div>'+
+                        '       </div>'+
+                        '   </div>'
+                   } 
+             }
+            $("#normal_articles").html(normal_list);	
+            $("#related_articles").html(related_list);	
+
+        }
     };
 }
