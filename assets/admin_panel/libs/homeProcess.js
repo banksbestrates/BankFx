@@ -18,6 +18,7 @@ function get_slider_data() {
             let div3_list = "";
             let portfolio_list = "";
             let testimonial_list = "";
+            let client_list = "";
                for (var i = 0; i < sliderData.length; i++) {
                 if(sliderData[i].div_type=="div_1")
                 {
@@ -85,25 +86,6 @@ function get_slider_data() {
                         '    </div>'+
                         '</div>'
                 }
-                else if(sliderData[i].div_type=="portfolio_div")
-                {
-                        portfolio_list = portfolio_list+ 
-                        '   <div class="col-md-4">'+
-                        '    <div class="card">'+
-                        '        <div class="card-header px-0 py-0">'+
-                        '            <img src="'+baseUrl+sliderData[i].image+'" alt="" width="100%" >'+
-                        '        </div>'+
-                        '        <div class="card-block  text-center px-2 ">'+
-                        '            <h4 class=" font-weight-bold pt-2">'+sliderData[i].heading+'</h4>'+
-                        '            <p class="card-text">'+sliderData[i].content+'</p>'+
-                        '        </div>'+
-                        '        <div class="w-100"></div>'+
-                        '        <div class="card-footer text-center ">'+
-                        '            <button class="btn btn-primary btn-sm" onclick="editOverviewModel('+i+')">Edit </button>'+
-                        '        </div>'+
-                        '    </div>'+
-                        '</div>'
-                }
                 else if(sliderData[i].div_type=="testimonial")
                 {
                         testimonial_list = testimonial_list+ 
@@ -124,12 +106,21 @@ function get_slider_data() {
                         '    </div>'+
                         '</div>'
                 }
+                else if(sliderData[i].div_type=="client_div")
+                {
+                    client_list = client_list+ 
+                        '   <div class="col-md-3  pb-4">'+
+                            '<img src="'+baseUrl+sliderData[i].image+'" alt="" width="100%" >'+
+                        '</div>'
+                }
              }
+
             $("#slider_div").html(slider_list);	
             $("#div2").html(div2_list);	
             $("#div3").html(div3_list);	
             $("#portfolio_div").html(portfolio_list);	
             $("#testimonial_div").html(testimonial_list);	
+            $("#client_div").html(client_list);	
 
         }
     };
@@ -153,7 +144,7 @@ function editOverviewModel(i)
                      '</div>'+
                      '<div class="form-group ">'+
                         '<label for="name">Content</label>'+
-                        '<textarea class="form-control" placeholder="Add Content" id="edit_content">'+home_data.content+'</textarea>'+
+                        '<textarea rows="5" class="form-control" placeholder="Add Content" id="edit_content">'+home_data.content+'</textarea rows="5">'+
                      '</div>'+
                      '<div class="form-group">'+
                         '<label for="image">Image</label>'+
@@ -248,7 +239,7 @@ function editTestimonialModel(i)
                      '</div>'+
                      '<div class="form-group ">'+
                         '<label for="name">Review</label>'+
-                        '<textarea class="form-control" placeholder="Add Review" id="edit_review">'+home_data.review+'</textarea>'+
+                        '<textarea rows="5" class="form-control" placeholder="Add Review" id="edit_review">'+home_data.review+'</textarea rows="5">'+
                      '</div>'+
                      '<div class="form-group">'+
                         '<label for="image">Image</label>'+
@@ -340,7 +331,7 @@ function editContentModel(i)
                      '</div>'+
                      '<div class="form-group ">'+
                         '<label for="name">Content</label>'+
-                        '<textarea class="form-control" placeholder="Add Content" id="edit_content">'+home_data.content+'</textarea>'+
+                        '<textarea rows="5" class="form-control" placeholder="Add Content" id="edit_content">'+home_data.content+'</textarea rows="5">'+
                      '</div>'
                   
                     //  '<div class="form-group">'+

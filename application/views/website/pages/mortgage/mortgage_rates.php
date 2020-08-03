@@ -2,55 +2,19 @@
 <style>
 
 
-/* .table td , .table th{
-    border-bottom:1px solid #CB9D24;
-    border-top:none; 
-}
-.table thead th{
-    border-bottom:1px solid #CB9D24;
-}
-
-.table > tbody > tr > td {
-     vertical-align: middle;
-    
-}
-.table h4 {
-    margin-bottom:0px;
-}
-.active td{
-    padding-top:30px;
-    padding-bottom:30px;
-}
-.button_yellow{
-    color:white;
-    background-color:#CB9D24;
-}
-.button_grey{
-    color:white;
-    background-color:#626262;
-}
-.button_green{
-    color:white;
-    background-color:#c0ce21;
-}
-.border_bottom_golden{
-    border-bottom:2px solid #CB9D24;
-    padding-bottom:10px;
-} */
-
 .form-control{
-  line-height:1.5;
+    line-height: 1.5!important;
 }
 </style>
 <!-- TOP NAME DIV -->
 <div class="col-md-10 mx-auto pt-5 pb-4">
     <div class="row">
-        <div class="col-md-8">
-            <h1 class=" font-weight-bold mb-2">Best Mortgage Rate for July 2020</h1>
+        <div class="col-md-9">
+            <h1 class=" font-weight-900 mb-2">Best Mortgage Rate for July 2020</h1>
             <p>Published on July 30. Do you want to get more information ?</p>
         </div>
-        <div class="col-md-4 text-right pt-3">
-            <button class="btn button_blue">DOWNLOAD OUR APP</button>
+        <div class="col-md-3 text-right pt-3">
+            <button class="btn button_blue btn-sm">DOWNLOAD OUR APP</button>
         </div>
     </div>
 </div>
@@ -100,7 +64,7 @@
         </div>
         <div class="row pt-4">
             <div class="col-md-4 text-center mx-auto">
-                <button class="btn button_yellow">FIND BEST RATES</button>
+                <button class="btn button_yellow px-3 btn-sm">FIND BEST RATES</button>
             </div>
         </div>
       </div>
@@ -138,7 +102,7 @@
                         <h4>$400</h4>
                     </td>
                     <td>
-                        <h4><button class="btn button_yellow">SEE OFFER DETAILS</button></h4>
+                        <h4><button class="btn button_yellow btn-sm">SEE OFFER DETAILS</button></h4>
                     </td>              
                 </tr>       
                 <tr>
@@ -160,7 +124,7 @@
                         $400
                     </td>
                     <td>
-                        <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                        <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
                     </td>              
                 </tr>       
                 <tr>
@@ -182,7 +146,7 @@
                         $400
                     </td>
                     <td>
-                        <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                        <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
                     </td>              
                 </tr>       
                 <tr>
@@ -204,7 +168,7 @@
                         $400
                     </td>
                     <td>
-                        <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                        <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
                     </td>              
                 </tr>       
                 <tr>
@@ -226,7 +190,7 @@
                         $400
                     </td>
                     <td>
-                        <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                        <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
                     </td>              
                 </tr>       
                 <tr>
@@ -248,7 +212,7 @@
                         $400
                     </td>
                     <td>
-                        <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                        <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
                     </td>              
                 </tr>       
                 <tr>
@@ -270,7 +234,7 @@
                         $400
                     </td>
                     <td>
-                        <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                        <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
                     </td>              
                 </tr>       
                 <tr>
@@ -292,7 +256,7 @@
                         $400
                     </td>
                     <td>
-                        <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                        <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
                     </td>              
                 </tr>       
                 <tr>
@@ -314,7 +278,7 @@
                         $400
                     </td>
                     <td>
-                        <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                        <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
                     </td>              
                 </tr>       
                 <tr>
@@ -336,26 +300,23 @@
                         $400
                     </td>
                     <td>
-                        <h4><button class="btn button_grey">SEE OFFER DETAILS</button></h4>
+                        <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
                     </td>              
                 </tr>       
             </tbody>  
         </table>   
-        <p class="font-weight-bold">This line can  be used to  as a desclaimer fo the user ,so that user will be upto date dummy data etc </p>
+        <small class="">This line can  be used to  as a desclaimer fo the user ,so that user will be upto date dummy data etc </small><br/><br/>
     </div>
     <!-- How rates are calculated -->
     <div class="col-md-10 mx-auto px-0 py-3 ">
-       <h3 class="border_bottom_golden">How Rates are Calculated</h3>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis pariatur earum eligendi laudantium cum, 
-       autem at. Cum, dolores rem voluptatem maiores aspernatur consequuntur rerum minima cumque dolor commodi 
-       mollitia hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, accusamus sint tempora 
-       laborum dignissimos iste, nostrum quisquam odit temporibus, 
-       voluptates at delectus alias. Aut, molestiae? Nulla illo a molestiae magnam.
+
+       <h3 class="border_bottom_golden font-weight-900"><?php echo $page_data->heading ?></h3>
+       <p><?php echo $page_data->content?>
        </p>
     </div>
     <!-- current mortgage and refine rates -->
     <div class="col-md-10 mx-auto px-0 py-3 ">
-       <h3>Current Mortgage and Refinance Rates</h3>
+       <h3 class="font-weight-900">Current Mortgage and Refinance Rates</h3>
        <table class="table">
             <thead>
                 <tr>

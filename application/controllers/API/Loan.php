@@ -98,7 +98,19 @@ class Loan extends \Restserver\Libraries\REST_Controller
 			return $this->set_response($query, REST_Controller::HTTP_OK);
 		}
 		return $this->send_error_response($query[$this->config->item('message')]);
-    }
+	}
+	
+	//=================PERSONAL LOAN============
+	/*Get personal loan*/
+	public function get_personal_loan_post()
+	{  
+		$query = $this->LoanModel->get_personal_loan();
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+	 
     
 
     

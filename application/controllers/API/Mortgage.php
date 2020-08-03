@@ -123,6 +123,7 @@ class Mortgage extends \Restserver\Libraries\REST_Controller
 		$_POST = $this->security->xss_clean($_POST);	
 		$this->form_validation->set_rules('heading','heading', 'trim|required|max_length[100]');	
 		$this->form_validation->set_rules('content','content', 'trim|required');	
+		$this->form_validation->set_rules('id','id', 'trim|required');	
 							
 		if ($this->form_validation->run() == false) {
 			$message = array(
@@ -135,9 +136,10 @@ class Mortgage extends \Restserver\Libraries\REST_Controller
 
 		$heading		    =	$this->input->post('heading',true);
 		$content		    =	$this->input->post('content',true);
+		$id		    		=	$this->input->post('id',true);
         
         $data = array(
-			"id"=>"1",
+			"id"=>$id,
 			"heading"=>$heading,
 			"content"=>$content,
 			"updated_on"=>$this->curr_date

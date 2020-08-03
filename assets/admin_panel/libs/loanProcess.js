@@ -179,9 +179,9 @@ function get_personal_loan() {
                     normal_list = normal_list+ 
                     '<div class="col-md-12">'+
                     '    <h2 class="text-dark font-weight-bold">'+loanData[i].heading+'</h2> '+
-                    '    <span style="float:right"><button class="btn btn-sm btn-primary">EDIT</button></span>  '+
-                    '    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum placeat totam quod, commodi itaque! Inventore nihil iure dolor delectus rerum placeat libero corrupti, exercitationem, molestias eveniet eius tempore laudantium!</p>             '+
-                    '</div>'
+                    '    <span style="float:right"><button class="btn btn-sm btn-primary" onclick="loanContentModel('+i+')">EDIT</button></span>  '+
+                    '  <p>'+loanData[i].content+'</p>'+
+                    '</div><hr/>'
                    }
                    else if(loanData[i].div_type=="related_article")
                    {
@@ -205,6 +205,67 @@ function get_personal_loan() {
             $("#normal_articles").html(normal_list);	
             $("#related_articles").html(related_list);	
 
+        }
+    };
+}
+
+function loanContentModel(i)
+{
+    var loan_data = loanData[i];
+    var modal_body= '<div class="form-group">'+
+    '<label for="name">Heading</label>'+
+    '<input type="text" class="form-control" id="edit_heading" placeholder="Enter Heading" value="'+loan_data.heading+'">'+
+     '</div>'+
+     '<div class="form-group ">'+
+        '<label for="name">Content</label>'+
+        '<textarea rows="5" class="form-control" placeholder="Add Content" name="editor" id="data">'+loan_data.content+'</textarea rows="5">'+
+     '</div>'+
+     '<div class="form-group">'+
+        '<small class="error_message text-danger"></small>'+
+    '</div>'
+
+    $(".modal-dialog").addClass("modal-lg");
+    $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
+    $(".modal-body").html(modal_body);
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick=updateLoanData('+loan_data.id+')>Update</button>');
+    $(".modal").modal('show');
+
+    
+    CKEDITOR.replace( 'editor' );
+}
+
+function updateLoanData(id)
+{
+    var content= CKEDITOR.instances.data.getData();
+    if (content == "") {
+        alert("Enter Valid Content");
+    }
+    var heading   = $("#edit_heading").val();
+
+    let formData = new FormData();
+    formData.append('content', content);
+    formData.append('heading', heading);
+    formData.append('id', id);
+    let url = baseUrl + "api/admin/get_personal_loan";
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.send(formData);
+    xhr.onload = function() {
+        if (xhr.status == 200) {
+            let obj = JSON.parse(xhr.responseText);
+            let status = obj.Status;
+            let message = obj.Message;
+            if (!status) {
+                $(".error_message").html(message);
+                return false;
+            } else {
+                console.log(message);
+                swal(message, {
+                    buttons: false,
+                    timer: 2000,
+                });
+                location.reload();
+            }
         }
     };
 }

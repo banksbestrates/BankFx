@@ -92,7 +92,7 @@ class MortgageModel extends CI_Model
             $response[$this->config->item('status')] = true;
             $response[$this->config->item('message')] = $this->config->item('data_found_success');
             $response[$this->config->item('baseUrl')] = base_url();
-            $response[$this->config->item('data')] = $responseData[0];
+            $response[$this->config->item('data')] = $responseData;
             return $response;
         }
         return $this->send_error_response($this->config->item('data_found_failure'));

@@ -74,6 +74,16 @@
                                 </div>
                             </div>
                             <br/>  
+                            <h2 class="text-center text-dark font-weight-bold">OUR CLIENTS</h2><hr/>
+                            Homepage Link :<a href="<?php echo base_url();?>" target="_blank"><?php echo base_url();?><a></p>
+                            <hr/>
+                            <div class="col-md-12 px-2">
+                                <div class="row" id="client_div">
+                                
+
+                                </div>
+                            </div>
+                            <br/>  
 
 
                         </div>

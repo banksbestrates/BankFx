@@ -6,6 +6,7 @@ class LoanModel extends CI_Model
     public $response = array();
     
     public $tbl_loan_overview      = "loan_overview";
+    public $tbl_personal_loan      = "personal_loan";
 
 
     public function __construct()
@@ -43,6 +44,24 @@ class LoanModel extends CI_Model
             return $response;
         }
         return $this->send_error_response($this->config->item('data_update_failure'));
+    }
+   
+
+    //===============PERSONAL LOAN==============
+    public function get_personal_loan()
+    {
+        $this->db->select("*");
+        $this->db->from("$this->tbl_personal_loan");
+        $exist = $this->db->get();
+        if ($exist->num_rows()) {
+            $responseData = $exist->result();
+            $response[$this->config->item('status')] = true;
+            $response[$this->config->item('message')] = $this->config->item('data_found_success');
+            $response[$this->config->item('baseUrl')] = base_url();
+            $response[$this->config->item('data')] = $responseData;
+            return $response;
+        }
+        return $this->send_error_response($this->config->item('data_found_failure'));
     }
    
 

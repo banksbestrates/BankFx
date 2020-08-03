@@ -1,5 +1,6 @@
 //mortgage module 
 let mortgageData="";
+let houseData="";
 function get_mortgage_overview() {
     let formData = new FormData();
     let url = baseUrl + "api/admin/get_mortgage_overview";
@@ -79,7 +80,7 @@ function editOverviewModel(i)
                      '</div>'+
                      '<div class="form-group ">'+
                         '<label for="name">Content</label>'+
-                        '<textarea class="form-control" placeholder="Add Content" id="edit_content">'+mortgage_data.content+'</textarea>'+
+                        '<textarea rows="5" class="form-control" placeholder="Add Content" id="edit_content">'+mortgage_data.content+'</textarea rows="5">'+
                      '</div>'+
 
                      '<div class="form-group">'+
@@ -154,5 +155,99 @@ function updateOverview(id)
                 });
                location.reload();
             }	
+    };
+}
+
+//house afford 
+function get_house_content()
+{
+    let formData = new FormData();
+        let url = baseUrl + "api/admin/get_house_afford_content";
+        let xhr = new XMLHttpRequest();
+        xhr.open('POST', url);
+        xhr.send(formData);
+        xhr.onload = function() {
+            if (xhr.status == 200) {
+                let obj = JSON.parse(xhr.responseText);
+                let status = obj.Status;
+                let message = obj.Message;
+                if (!status) {
+                }
+                houseData= obj.data;
+                let content_list = ""
+                for(var i=0 ;i<houseData.length;i++)
+                {
+                   content_list= content_list+ '<div class="card mx-0 px-4 pt-2">'+
+                   '<button class="btn btn-primary col-md-2 btn-sm ml-auto" onclick="updateHouseAfford('+ i +')">Edit </button>'+
+                   '<h3 class="font-weight-bold pt-4">'+houseData[i].heading+'</h3>'+
+                    '<p>'+houseData[i].content+'</p>'+
+                    '</div>'
+                }
+               
+                $("#house_data").html(content_list);
+            }
+        }
+}
+
+// update house affored
+function updateHouseAfford(i)
+{
+    var home_data = houseData[i];
+    var modal_body= '<div class="form-group">'+
+    '<label for="name">Heading</label>'+
+    '<input type="text" class="form-control" id="edit_heading" placeholder="Enter Heading" value="'+home_data.heading+'">'+
+     '</div>'+
+     '<div class="form-group ">'+
+        '<label for="name">Content</label>'+
+        '<textarea rows="5" class="form-control" placeholder="Add Content" name="editor" id="data">'+home_data.content+'</textarea rows="5">'+
+     '</div>'+
+     '<div class="form-group">'+
+        '<small class="error_message text-danger"></small>'+
+    '</div>'
+
+    $(".modal-dialog").addClass("modal-lg");
+    $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
+    $(".modal-body").html(modal_body);
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick=updateHouseData('+home_data.id+')>Update</button>');
+    $(".modal").modal('show');
+
+    
+    CKEDITOR.replace( 'editor' );
+    
+}
+
+function updateHouseData(id)
+{
+    var content= CKEDITOR.instances.data.getData();
+    if (content == "") {
+        alert("Enter Valid Content");
+    }
+    var heading   = $("#edit_heading").val();
+
+    let formData = new FormData();
+    formData.append('content', content);
+    formData.append('heading', heading);
+    formData.append('id', id);
+    let url = baseUrl + "api/admin/update_house_afford_content";
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.send(formData);
+    xhr.onload = function() {
+        if (xhr.status == 200) {
+            let obj = JSON.parse(xhr.responseText);
+            let status = obj.Status;
+            let message = obj.Message;
+            if (!status) {
+                $(".error_message").html(message);
+                return false;
+            } else {
+                console.log(message);
+                swal(message, {
+                    buttons: false,
+                    timer: 2000,
+                });
+                location.reload();
+            }
+        }
     };
 }

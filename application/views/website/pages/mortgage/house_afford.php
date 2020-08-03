@@ -2,12 +2,12 @@
 <!-- Bank Review -->
 <div class="col-md-10 mx-auto py-5">
     <div class="row">
-        <div class="col-md-8">
-            <h1 class="font-weight-bold mb-2">How Much Home Can I Afford ?</h1>
+        <div class="col-md-9">
+            <h1 class="font-weight-900 mb-2">How Much Home Can I Afford ?</h1>
             <p>Published on July 30. Do you want to get more information ?</p>
         </div>
-        <div class="col-md-4 text-right pt-3">
-            <button class="btn button_green">DOWNLOAD OUR APP</button>
+        <div class="col-md-3 text-right pt-3">
+            <button class="btn button_blue btn-sm">DOWNLOAD OUR APP</button>
         </div>
     </div>
 </div>
@@ -164,27 +164,16 @@
 </div> 
 
 
-<div class="col-md-10 mx-auto pt-5">
-       <h3 class="border_bottom_golden pt-4">Content Related  to This Page  Here</h3>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis pariatur earum eligendi laudantium cum, 
-       autem at. Cum, dolores rem voluptatem maiores aspernatur consequuntur rerum minima cumque dolor commodi 
-       mollitia hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, accusamus sint tempora 
-       laborum dignissimos iste, nostrum quisquam odit temporibus,mollitia hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, accusamus sint tempora 
-       laborum dignissimos iste, nostrum quisquam odit temporibus, 
-       voluptates at delectus alias. Aut, molestiae? Nulla illo a molestiae magnam.
-       </p>
-
-       <h3 class="border_bottom_golden pt-4">Content Related  to This Page  Here</h3>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis pariatur earum eligendi laudantium cum, 
-       autem at. Cum, dolores rem voluptatem maiores aspernatur consequuntur rerum minima cumque dolor commodi 
-       mollitia hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, accusamus sint tempora 
-       laborum dignissimos iste, nostrum quisquam odit temporibus, mollitia hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, accusamus sint tempora 
-       laborum dignissimos iste, nostrum quisquam odit temporibus, 
-       voluptates at delectus alias. Aut, molestiae? Nulla illo a molestiae magnam.
-       </p>
+<div class="col-md-10 mx-auto py-5">
+    <?php if(count($page_data)>=1){
+      foreach($page_data as $d){?>
+            <h3 class="border_bottom_golden pt-4 font-weight-900"><?php echo $d->heading ?></h3>
+            <p><?php echo $d->content ?></p>
+        <?php }
+    }?>
 </div>
 
-  <!-- RELATED ARTICLES -->
+  <!-- RELATED ARTICLES
   <div class="col-md-10 mx-auto card_row pt-5">
         <header class="section-header">
           <h3>RELATED ARTICLES</h3>
@@ -237,7 +226,7 @@
                     </div>
             </div>
         </div>
-  </div> 
+  </div>  -->
 
  
 

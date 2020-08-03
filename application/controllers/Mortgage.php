@@ -2,11 +2,14 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Mortgage extends CI_Controller {
-
+	public function __construct()
+	{
+			parent::__construct();
+			$this->load->model('MortgageModel');	
+	}
 
 	public function mortgage_overview()
 	{
-		$this->load->model('MortgageModel');
 		$mortgage_data = $this->MortgageModel->get_mortgage_overview();
 		if($mortgage_data['Status'])
 		{
@@ -14,23 +17,41 @@ class Mortgage extends CI_Controller {
 		}else{
 			$mortgage_data="";
 		}
-		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/mortgage/mortgage_overview',array("page_data"=>$mortgage_data));
-		$this->load->view('website/layout/footer');
+			$this->load->view('website/layout/header');
+			$this->load->view('website/pages/mortgage/mortgage_overview',array("page_data"=>$mortgage_data));
+			$this->load->view('website/layout/footer');
     }
-    public function mortgage_rates()
-	{
-		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/mortgage/mortgage_rates');
-		$this->load->view('website/layout/footer');
-    }
-    public function refinance_rates()
-	{
-		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/mortgage/refinance_rate');
-		$this->load->view('website/layout/footer');
-    }
-    public function mortgage_calculator()
+		public function mortgage_rates()
+		{
+			$mortgage_rates = $this->MortgageModel->get_mortgage_rate_content();
+			if($mortgage_rates['Status'])
+			{
+				$mortgage_rates = $mortgage_rates['data'];
+			}else{
+				$mortgage_rates="";
+			}
+				$this->load->view('website/layout/header');
+				$this->load->view('website/pages/mortgage/mortgage_rates',array("page_data"=>$mortgage_rates));
+				$this->load->view('website/layout/footer');
+		}
+
+
+		public function refinance_rates()
+		{
+			$refinance_rates = $this->MortgageModel->get_refinance_rate_content();
+			if($refinance_rates['Status'])
+			{
+				$refinance_rates = $refinance_rates['data'];
+			}else{
+				$refinance_rates="";
+			}
+			
+			$this->load->view('website/layout/header');
+			$this->load->view('website/pages/mortgage/refinance_rate',array("page_data"=>$refinance_rates));
+			$this->load->view('website/layout/footer');
+		}
+
+  public function mortgage_calculator()
 	{
 		$this->load->view('website/layout/header');
 		$this->load->view('website/pages/mortgage/mortgage_calculator');
@@ -42,10 +63,18 @@ class Mortgage extends CI_Controller {
 		$this->load->view('website/pages/mortgage/mortgage_calculator_list');
 		$this->load->view('website/layout/footer');
     }
-    public function house_afford()
+  public function house_afford()
 	{
+		$house_data = $this->MortgageModel->get_house_afford_content();
+		if($house_data['Status'])
+		{
+			$house_data = $house_data['data'];
+		}else{
+			$house_data="";
+		}
+		
 		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/mortgage/house_afford');
+		$this->load->view('website/pages/mortgage/house_afford',array("page_data"=>$house_data));
 		$this->load->view('website/layout/footer');
     }
     public function credit_overview()
