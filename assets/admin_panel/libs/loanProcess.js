@@ -70,7 +70,7 @@ function showImage(src,target) {
         fr.readAsDataURL(src.files[0]);
     });
 }	
-function editOverviewModel(i)
+function editOverviewModel(i,loan_type="")
 {
     let loan_data = loanData[i];
     var modal_body= '<div class="form-group">'+
@@ -101,19 +101,32 @@ function editOverviewModel(i)
                                     
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
-    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateOverview('+loan_data.id+')">Update</button>');
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button>'+
+    '<button class="btn btn-sm btn-primary" onclick=updateOverview('+loan_data.id+',"'+loan_type+'")>Update</button>');
     $(".modal").modal('show');
 
     var src = document.getElementById("src");
     var target = document.getElementById("target");
     showImage(src,target);
 }
-function updateOverview(id)
+function updateOverview(id,loan_type="")
 {
     let heading         = $("#edit_heading").val();
     let image_src       = $("#src").val();
-    let content     = $("#edit_content").val();
-  
+    let content         = $("#edit_content").val();
+    let base_url = baseUrl+"api/admin/update_loan_overview";
+    if(loan_type=="personal_loan")
+    {
+        base_url =  baseUrl+"api/admin/update_personal_loan";
+    }
+    else if(loan_type=="auto_loan")
+    {
+        base_url =  baseUrl+"api/admin/update_auto_loan";
+    }
+    else if(loan_type=="debt")
+    {
+        base_url=  baseUrl + "api/admin/update_debt_consolidation";
+    }
     let formData = new FormData();
     if (image_src !== "") {
             var image = document.getElementById('src');
@@ -134,7 +147,7 @@ function updateOverview(id)
     formData.append('heading',heading);
     formData.append('content',content);
     formData.append('id',id);
-    let url = baseUrl+"api/admin/update_loan_overview";
+    let url = base_url
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.send(formData);
@@ -156,10 +169,24 @@ function updateOverview(id)
     };
 }
 
-//=====================PERSONAL LOAN====================//
-function get_personal_loan() {
+//=====================PERSONAL LOAN / AUTO LONA/ STUDENT LOAN====================//
+function get_loan_inner_page(loan_type) {
+
+    let base_url="";
+    if(loan_type=="personal_loan")
+    {
+        base_url = baseUrl + "api/admin/get_personal_loan";
+    }
+    else if(loan_type=="auto_loan")
+    {
+        base_url = baseUrl + "api/admin/get_auto_loan";
+    }
+    else if(loan_type=="student_loan")
+    {
+        base_url = baseUrl + "api/admin/get_student_loan";
+    }
     let formData = new FormData();
-    let url = baseUrl + "api/admin/get_personal_loan";
+    let url = base_url;
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.send(formData);
@@ -179,7 +206,7 @@ function get_personal_loan() {
                     normal_list = normal_list+ 
                     '<div class="col-md-12">'+
                     '    <h2 class="text-dark font-weight-bold">'+loanData[i].heading+'</h2> '+
-                    '    <span style="float:right"><button class="btn btn-sm btn-primary" onclick="loanContentModel('+i+')">EDIT</button></span>  '+
+                    '    <span style="float:right"><button class="btn btn-sm btn-primary" onclick=loanContentModel('+i+',"'+loan_type+'")>EDIT</button></span>  '+
                     '  <p>'+loanData[i].content+'</p>'+
                     '</div><hr/>'
                    }
@@ -196,7 +223,7 @@ function get_personal_loan() {
                         '               <p>'+loanData[i].content+'</p>'+
                         '           </div>'+
                         '           <div class="col-md-2">'+
-                        '               <button class="btn btn-sm btn-primary" onclick="editOverviewModel('+i+')">Edit</button>'+
+                        '               <button class="btn btn-sm btn-primary" onclick=editOverviewModel('+i+',"'+loan_type+'")>Edit</button>'+
                         '           </div>'+
                         '       </div>'+
                         '   </div>'
@@ -209,7 +236,7 @@ function get_personal_loan() {
     };
 }
 
-function loanContentModel(i)
+function loanContentModel(i,loan_type)
 {
     var loan_data = loanData[i];
     var modal_body= '<div class="form-group">'+
@@ -227,15 +254,32 @@ function loanContentModel(i)
     $(".modal-dialog").addClass("modal-lg");
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
-    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick=updateLoanData('+loan_data.id+')>Update</button>');
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick=updateLoanData('+loan_data.id+',"'+loan_type+'")>Update</button>');
     $(".modal").modal('show');
 
     
     CKEDITOR.replace( 'editor' );
 }
 
-function updateLoanData(id)
+function updateLoanData(id,loan_type)
 {
+    let base_url =  "";
+    if(loan_type=="personal_loan")
+    {
+        base_url=  baseUrl + "api/admin/update_personal_loan";
+    }
+    else if(loan_type=="auto_loan")
+    {
+        base_url=  baseUrl + "api/admin/update_auto_loan";
+    }
+    else if(loan_type=="student_loan")
+    {
+        base_url=  baseUrl + "api/admin/update_student_loan";
+    }
+    else if(loan_type=="debt")
+    {
+        base_url=  baseUrl + "api/admin/update_debt_consolidation";
+    }
     var content= CKEDITOR.instances.data.getData();
     if (content == "") {
         alert("Enter Valid Content");
@@ -246,7 +290,7 @@ function updateLoanData(id)
     formData.append('content', content);
     formData.append('heading', heading);
     formData.append('id', id);
-    let url = baseUrl + "api/admin/get_personal_loan";
+    let url = base_url;
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.send(formData);
@@ -259,13 +303,83 @@ function updateLoanData(id)
                 $(".error_message").html(message);
                 return false;
             } else {
-                console.log(message);
                 swal(message, {
                     buttons: false,
                     timer: 2000,
                 });
                 location.reload();
             }
+        }
+    };
+}
+
+//=====================DEBT CONSOLIDATION====================//
+function get_debt_consolidation_data(loan_type) {
+  
+    let formData = new FormData();
+    let url = baseUrl + "api/admin/get_debt_consolidation_data";
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.send(formData);
+    xhr.onload = function() {
+        if (xhr.status == 200) {
+            let obj = JSON.parse(xhr.responseText);
+            let status = obj.Status;
+            let message = obj.Message;
+            if (!status) {
+            }
+            loanData = obj.data;
+            console.log(loanData);
+            let normal_list = "";
+            let related_list = "";
+            let debt_content = "";
+            let debt_image = "";
+               for (var i = 0; i < loanData.length; i++) {
+                   if(loanData[i].div_type=="normal_content")
+                   {
+                    normal_list = normal_list+ 
+                    '<div class="col-md-12">'+
+                    '    <h2 class="text-dark font-weight-bold">'+loanData[i].heading+'</h2> '+
+                    '    <span style="float:right"><button class="btn btn-sm btn-primary" onclick=loanContentModel('+i+',"'+loan_type+'")>EDIT</button></span>  '+
+                    '  <p>'+loanData[i].content+'</p>'+
+                    '</div><hr/>'
+                   }
+                   else if(loanData[i].div_type=="related_article")
+                   {
+                        related_list = related_list+ 
+                        '   <div class="col-md-12">'+
+                        '       <div class="row">'+
+                        '           <div class="col-md-5">'+
+                        '             <img src="'+baseUrl+loanData[i].image+'" alt="" width="100%" >'+
+                        '           </div>'+
+                        '           <div class="col-md-5 py-4">'+
+                        '               <h3 class="text-dark">'+loanData[i].heading+'</h3>'+
+                        '               <p>'+loanData[i].content+'</p>'+
+                        '           </div>'+
+                        '           <div class="col-md-2">'+
+                        '               <button class="btn btn-sm btn-primary" onclick=editOverviewModel('+i+',"'+loan_type+'")>Edit</button>'+
+                        '           </div>'+
+                        '       </div>'+
+                        '   </div>'
+                   } 
+                   else if(loanData[i].div_type=="debt_top_content"){
+                   
+                    debt_content = debt_content +'<h5 class="font-weight-bold">'+loanData[i].heading+'<span style="float:right">'+
+                    '   <button class="btn btn-sm btn-primary" onclick=loanContentModel('+i+',"'+loan_type+'")>EDIT</button></span></h5>'+
+                    '    <p> '+loanData[i].content+'</p>'
+
+                   }
+                   else{
+                    debt_image = '<div style="background-image:url('+baseUrl+loanData[i].image+');height:80%;width:100%;background-size:contain;background-position:center;background-repeat:no-repeat">'+
+                                 '</div><button class="btn-sm btn-block btn-primary text-centers">EDIT IMAGE</button>'
+                   }
+             }
+            $("#normal_articles").html(normal_list);	
+            $("#related_articles").html(related_list);	
+            $("#related_articles").html(related_list);	
+            $("#top_box_content").html(debt_content);	
+            $("#top_box_image").html(debt_image);	
+
         }
     };
 }

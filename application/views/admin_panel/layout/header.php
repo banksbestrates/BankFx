@@ -300,6 +300,47 @@
 											<span class="sub-item">Student Loan</span>
 										</a>
 									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/loan/debt_consolidation">
+											<span class="sub-item">Debt Consolidation Guide</span>
+										</a>
+									</li>					
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item" id="">
+							<a data-toggle="collapse" href="#investing">
+								<i class="flaticon-list"></i>
+								<p>Investing</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="investing">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="<?php echo base_url()?>admin/investing/investing_overview">
+											<span class="sub-item">Investing Overview</span>
+										</a>
+									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/investing/best_investment">
+											<span class="sub-item">Best Investments</span>
+										</a>
+									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/brokerage/brokerage_overview">
+											<span class="sub-item">Best Brokerage Review Page</span>
+										</a>
+									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/brokerage/best_online_brokers">
+											<span class="sub-item">Best Online Brokers</span>
+										</a>
+									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/brokerage/best_beginner_brokers">
+											<span class="sub-item">Best Brokers for Beginners</span>
+										</a>
+									</li>					
 								</ul>
 							</div>
 						</li>
@@ -319,38 +360,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="nav-item" id="">
-							<a data-toggle="collapse" href="#brokerage">
-								<i class="flaticon-list"></i>
-								<p>Brokerage</p>
-								<span class="caret"></span>
-							</a>
-							<div class="collapse" id="brokerage">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="<?php echo base_url()?>admin/brokerage/brokerage_overview">
-											<span class="sub-item">Best Brokerage Review Page</span>
-										</a>
-									</li>					
-								</ul>
-							</div>
-						</li>
-						<li class="nav-item" id="">
-							<a data-toggle="collapse" href="#investing">
-								<i class="flaticon-list"></i>
-								<p>Investing</p>
-								<span class="caret"></span>
-							</a>
-							<div class="collapse" id="investing">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="<?php echo base_url()?>admin/investing/investing_overview">
-											<span class="sub-item">Investing Overview</span>
-										</a>
-									</li>					
-								</ul>
-							</div>
-						</li>
+						
 						<li class="nav-item" id="">
 							<a data-toggle="collapse" href="#retirement">
 								<i class="flaticon-list"></i>

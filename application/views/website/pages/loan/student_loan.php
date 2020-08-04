@@ -48,38 +48,15 @@
 
 
  <!-- Content Related to Loans -->
- <div class="col-md-10 mx-auto py-5 ">
-       <h2 class="border_bottom_golden">Student Loan 101</h2>
-        <p class="text-align-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad natus dolorum distinctio accusantium! Quae amet optio ducimus. Quaerat quo veniam corporis obcaecati, repellat ipsa voluptatibus ad accusantium explicabo reprehenderit vero!
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad natus dolorum distinctio accusantium! Quae amet optio ducimus. Quaerat quo veniam corporis obcaecati, repellat ipsa voluptatibus ad accusantium explicabo reprehenderit vero!
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad natus dolorum distinctio accusantium! Quae amet optio ducimus. Quaerat quo veniam corporis obcaecati, repellat ipsa voluptatibus ad accusantium explicabo reprehenderit vero!
-        </p>
-        <ul class="px-3">
-            <li> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad natus dolorum distinctio accusantium! Quae amet optio ducimus. Quaerat quo veniam corporis obcaecati, repellat ipsa vero! </li>
-            <li> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad natus dolorum distinctio accusantium! Quae amet optio ducimus. Quaerat quo veniam corporis obcaecati, repellat ipsa vero! </li>
-        </ul>
-</div>
-
-
- <!-- CONTENT related to this page -->
- <div class="col-md-10 mx-auto  py-5 ">
-       <h2 class="border_bottom_golden">Content Related to this page</h2>
-      
-       <div class="col-md-12 mx-auto row px-0">
-            <div class="col-md-6 related_image">
-            </div>
-            <div class="col-md-6 related_content">
-                <p>EDITOR'S PICK </p>
-                <h4>COVID-19 RELIEF TO SMALL BUSINESS</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi culpa atque eius qui 
-                ducimus fuga iste necessitatibus voluptate reprehenderit? </p>
-                  <div class="row">
-                        <div class="col-md-1">
-                          <i class="fa fa-arrow-circle-right"  aria-hidden="true"></i>
-                        </div>
-                        <div class="col-md-8 pt-2">6 MIN </div>
-                    </div>
-            </div>
+ <?php if(count($page_data)>=1){
+    foreach($page_data as $d){
+    if($d->div_type == "normal_content"){?>
+        <div class="col-md-10 mx-auto pt-5">
+        <h3 class="border_bottom_golden font-weight-900"><?php echo $d->heading?></h3>
+            <p class="text-align-justify"><?php echo $d->content?></p>
         </div>
-</div>
+    <?php }
+    }
+    }?><br/><br/>
+
+

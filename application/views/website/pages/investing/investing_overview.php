@@ -23,25 +23,25 @@
       <div class="col-md col-sm-4">
       <div class="card pb-2">
                   <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6>Brokerage Reviews</h6></a>
+                  <a href="<?php echo base_url()?>brokerage_overview"><h6>Brokerage Reviews</h6></a>
                 </div>
       </div>
       <div class="col-md col-sm-4">
               <div class="card pb-2">
               <i class="fa fa-bar-chart" aria-hidden="true"></i>
-              <a href="<?php echo base_url()?>index.php/auto_loan"><h6>Annuity Calculator</h6></a>
+              <a href="#"><h6>Annuity Calculator</h6></a>
                 </div>
       </div>
       <div class="col-md col-sm-4">
                 <div class="card pb-2">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                <a href="<?php echo base_url()?>index.php/student_loan"><h6>Best Online Brokers </h6></a>
+                <a href="<?php echo base_url()?>best_online_brokerage"><h6>Best Online Brokers </h6></a>
                 </div>
       </div>
       <div class="col-md col-sm-4">
                 <div class="card">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                <a href="<?php echo base_url()?>index.php/student_loan"><h6 class="mb-2">Best Brokers For Beginners</h6></a>
+                <a href="<?php echo base_url()?>best_beginner_broker"><h6 class="mb-2">Best Brokers For Beginners</h6></a>
                 </div>
       </div>
   </div>

@@ -24,5 +24,15 @@ class InvestingController extends CI_Controller {
 		$this->load->view('admin_panel/investing/investing_overview');
 		$this->load->view('admin_panel/layout/footer');
     }
+    public function best_investment()
+    {     
+        $this->check_admin_logged_in();
+        $data = array(
+            "admin_id"=>$this->admin_id
+        );
+		$this->load->view('admin_panel/layout/header',array("admin_data"=>$data));
+		$this->load->view('admin_panel/investing/best_investment');
+		$this->load->view('admin_panel/layout/footer');
+    }
 
 }

@@ -4,7 +4,7 @@
   ============================-->
   <div class="overview_banner mb-4">
         <div class="banner_heading">
-        <h1 class="display-4">Best Online Brokers </h1>
+        <h1 class="display-4">Best Brokers for Beginners</h1>
         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem hic<br/>
                 Its just a dummy text to show the design only  dummy textx dummy</h6>
         </div>
@@ -14,14 +14,14 @@
     <div class="row">
         <div class="col-md-12">
             <!-- <span>Bank Reviews ></span> <span class="text_yellow">Aliiant Bank</span> -->
-            <h2 class="font-weight-900 pt-2 mb-2">The Best Online Brokers for 2020</h2>
+            <h2 class="font-weight-900 pt-2 mb-2">Best Brokers for Beginners in 2020 </h2>
             <span>Published on July 30. Do you want to get more information ?</span>
         </div>
        
     </div>
-</div>
+  </div>
 
-    <?php if(count($page_data)>=1){
+<?php if(count($page_data)>=1){
       foreach($page_data as $d){
       if($d->div_type == "normal_content"){?>
         <div class="col-md-10 mx-auto pt-5 ">
@@ -30,7 +30,7 @@
         </div>
       <?php }
       }
-    }?>
+}?>
 
 
 <div class="col-md-10 mx-auto pt-4">
@@ -123,7 +123,6 @@
     </small>
 </div>
  
-
  <!-- Content Related to Loans -->
  <div class="col-md-10 mx-auto  py-5 ">
     <h4 class="border_bottom_golden font-weight-900">Related Articles</h4>    

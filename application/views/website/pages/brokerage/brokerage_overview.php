@@ -4,7 +4,7 @@
   ============================-->
   <div class="overview_banner">
     <div class="banner_heading">
-    <h1 class="display-4">Best Brokerage Reviews 2020</h1>
+    <h1 class="display-4">Best Brokerage Reviews</h1>
     <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem hic<br/>
             Its just a dummy text to show the design only  dummy textx dummy</h6>
     </div>

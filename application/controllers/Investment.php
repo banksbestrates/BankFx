@@ -24,8 +24,15 @@ class Investment extends CI_Controller {
     }
 	public function best_investment()
 	{
+		$investment_data = $this->InvestingModel->get_best_investment();
+		if($investment_data['Status'])
+		{
+			$investment_data = $investment_data['data'];
+		}else{
+			$investment_data="";
+		}
 		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/investing/best_investment');
+		$this->load->view('website/pages/investing/best_investment',array("page_data"=>$investment_data));
 		$this->load->view('website/layout/footer');
     }
 

@@ -21,25 +21,48 @@ class Loan extends CI_Controller {
 			$this->load->view('website/layout/header');
 			$this->load->view('website/pages/loan/loan_overview',array("page_data"=>$loan_data));
 			$this->load->view('website/layout/footer');
-    }
+	}
+	
 	public function personal_loan()
 	{
+		$loan_data = $this->LoanModel->get_personal_loan();
+		if($loan_data['Status'])
+		{
+			$loan_data = $loan_data['data'];
+		}else{
+			$loan_data="";
+		}
 		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/loan/personal_loan');
+		$this->load->view('website/pages/loan/personal_loan',array("page_data"=>$loan_data));
 		$this->load->view('website/layout/footer');
     }
 	public function auto_loan()
 	{
-		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/loan/auto_loan');
-		$this->load->view('website/layout/footer');
+			$loan_data = $this->LoanModel->get_auto_loan();
+			if($loan_data['Status'])
+			{
+				$loan_data = $loan_data['data'];
+			}else{
+				$loan_data="";
+			}
+			$this->load->view('website/layout/header');
+			$this->load->view('website/pages/loan/auto_loan',array("page_data"=>$loan_data));
+			$this->load->view('website/layout/footer');
     }
 	public function student_loan()
 	{
-		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/loan/student_loan');
-		$this->load->view('website/layout/footer');
-    }
+			$loan_data = $this->LoanModel->get_student_loan();
+			if($loan_data['Status'])
+			{
+				$loan_data = $loan_data['data'];
+			}else{
+				$loan_data="";
+			}
+			$this->load->view('website/layout/header');
+			$this->load->view('website/pages/loan/student_loan',array("page_data"=>$loan_data));
+			$this->load->view('website/layout/footer');
+	}
+		
 	public function top_lenders()
 	{
 		$this->load->view('website/layout/header');
