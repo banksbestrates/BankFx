@@ -96,6 +96,9 @@ $route['brokerage_overview']    = 'Brokerage/brokerage_overview';
 $route['best_online_brokerage'] = 'Brokerage/best_online_brokerage';
 $route['best_beginner_broker']  = 'Brokerage/best_beginner_broker';
 $route['homeowner_insurance']   = 'Insurance/homeowner_insurance';
+$route['auto_insurance']        = 'Insurance/auto_insurance';
+$route['life_insurance']        = 'Insurance/life_insurance';
+$route['health_insurance']      = 'Insurance/health_insurance';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
@@ -118,7 +121,6 @@ $route['admin/loan/personal_loan']              = 'ADMIN/LoanController/personal
 $route['admin/loan/auto_loan']                  = 'ADMIN/LoanController/auto_loan';
 $route['admin/loan/student_loan']               = 'ADMIN/LoanController/student_loan';
 $route['admin/loan/debt_consolidation']         = 'ADMIN/LoanController/debt_consolidation';
-$route['admin/insurance/insurance_overview']    = 'ADMIN/InsuranceController/insurance_overview';
 $route['admin/brokerage/brokerage_overview']    = 'ADMIN/BrokerageController/brokerage_overview';
 $route['admin/brokerage/best_online_brokers']   = 'ADMIN/BrokerageController/best_online_brokers';
 $route['admin/brokerage/best_beginner_brokers'] = 'ADMIN/BrokerageController/best_beginner_brokers';
@@ -126,7 +128,11 @@ $route['admin/investing/investing_overview']    = 'ADMIN/InvestingController/inv
 $route['admin/investing/best_investment']       = 'ADMIN/InvestingController/best_investment';
 $route['admin/retirement/retirement_overview']  = 'ADMIN/RetirementController/retirement_overview';
 $route['admin/home/homepage']                   = 'ADMIN/HomePageController/homepage';
-
+$route['admin/insurance/insurance_overview']    = 'ADMIN/InsuranceController/insurance_overview';
+$route['admin/insurance/homeowner_insurance']   = 'ADMIN/InsuranceController/homeowner_insurance';
+$route['admin/insurance/auto_insurance']        = 'ADMIN/InsuranceController/auto_insurance';
+$route['admin/insurance/life_insurance']        = 'ADMIN/InsuranceController/life_insurance';
+$route['admin/insurance/health_insurance']      = 'ADMIN/InsuranceController/health_insurance';
 
 /*=================================ADMIN API========================================*/
 $route['api/admin/login']                           = 'API/Admin/login';
@@ -158,8 +164,6 @@ $route['api/admin/get_student_loan']                = 'API/Loan/get_student_loan
 $route['api/admin/update_student_loan']             = 'API/Loan/update_student_loan';
 $route['api/admin/get_debt_consolidation_data']     = 'API/Loan/get_debt_consolidation_data';
 $route['api/admin/update_debt_consolidation']       = 'API/Loan/update_debt_consolidation_data';
-$route['api/admin/get_insurance_overview']          = 'API/Insurance/get_insurance_overview';
-$route['api/admin/update_insurance_overview']       = 'API/Insurance/update_insurance_overview';
 $route['api/admin/get_brokerage_overview']          = 'API/Brokerage/get_brokerage_overview';
 $route['api/admin/update_brokerage_overview']       = 'API/Brokerage/update_brokerage_overview';
 $route['api/admin/get_best_online_broker_data']     = 'API/Brokerage/get_best_online_broker_data';
@@ -175,6 +179,17 @@ $route['api/admin/update_retirement_overview']      = 'API/Retirement/update_ret
 $route['api/admin/get_homepage_slider']             = 'API/Homepage/get_homepage_slider';
 $route['api/admin/update_homepage_data']            = 'API/Homepage/update_homepage_data';
 $route['api/admin/update_homepage_testimonial']     = 'API/Homepage/update_homepage_testimonial';
+
+$route['api/admin/get_insurance_overview']          = 'API/Insurance/get_insurance_overview';
+$route['api/admin/update_insurance_overview']       = 'API/Insurance/update_insurance_overview';
+$route['api/admin/get_homeowner_insurance']         = 'API/Insurance/get_homeowner_insurance';
+$route['api/admin/update_homeowner_insurance']      = 'API/Insurance/update_homeowner_insurance';
+$route['api/admin/get_auto_insurance']              = 'API/Insurance/get_auto_insurance';
+$route['api/admin/update_auto_insurance']           = 'API/Insurance/update_auto_insurance';
+$route['api/admin/get_life_insurance']              = 'API/Insurance/get_life_insurance';
+$route['api/admin/update_life_insurance']           = 'API/Insurance/update_life_insurance';
+$route['api/admin/get_health_insurance']            = 'API/Insurance/get_health_insurance';
+$route['api/admin/update_health_insurance']         = 'API/Insurance/update_health_insurance';
 
 /*==============================WEB APIS===========================================*/
 $route['api/get_page_data']    =    'API/Pages/get_page_data';

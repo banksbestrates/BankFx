@@ -24,8 +24,58 @@ class Insurance extends CI_Controller {
     }
 	public function homeowner_insurance()
 	{
+		$insurance_data = $this->InsuranceModel->get_homeowner_insurance();
+		if($insurance_data['Status'])
+		{
+			$insurance_data = $insurance_data['data'];
+		}else{
+			$insurance_data="";
+		}
+
 		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/insurance/homeowner_insurance');
+		$this->load->view('website/pages/insurance/homeowner_insurance',array("page_data"=>$insurance_data));
+		$this->load->view('website/layout/footer');
+    }
+	public function auto_insurance()
+	{
+		$insurance_data = $this->InsuranceModel->get_auto_insurance();
+		if($insurance_data['Status'])
+		{
+			$insurance_data = $insurance_data['data'];
+		}else{
+			$insurance_data="";
+		}
+
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/insurance/auto_insurance',array("page_data"=>$insurance_data));
+		$this->load->view('website/layout/footer');
+    }
+	public function life_insurance()
+	{
+		$insurance_data = $this->InsuranceModel->get_life_insurance();
+		if($insurance_data['Status'])
+		{
+			$insurance_data = $insurance_data['data'];
+		}else{
+			$insurance_data="";
+		}
+
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/insurance/life_insurance',array("page_data"=>$insurance_data));
+		$this->load->view('website/layout/footer');
+    }
+	public function health_insurance()
+	{
+		$insurance_data = $this->InsuranceModel->get_health_insurance();
+		if($insurance_data['Status'])
+		{
+			$insurance_data = $insurance_data['data'];
+		}else{
+			$insurance_data="";
+		}
+
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/insurance/health_insurance',array("page_data"=>$insurance_data));
 		$this->load->view('website/layout/footer');
     }
 

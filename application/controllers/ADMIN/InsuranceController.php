@@ -27,5 +27,53 @@ class InsuranceController extends CI_Controller {
 		$this->load->view('admin_panel/insurance/insurance_overview');
 		$this->load->view('admin_panel/layout/footer');
     }
+    
+    public function homeowner_insurance()
+    {     
+        $this->check_admin_logged_in();
+        $data = array(
+            "admin_id"=>$this->admin_id
+        );
+        
+		$this->load->view('admin_panel/layout/header',array("admin_data"=>$data));
+		$this->load->view('admin_panel/insurance/homeowner_insurance');
+		$this->load->view('admin_panel/layout/footer');
+    }
+
+    public function life_insurance()
+    {     
+        $this->check_admin_logged_in();
+        $data = array(
+            "admin_id"=>$this->admin_id
+        );
+        
+		$this->load->view('admin_panel/layout/header',array("admin_data"=>$data));
+		$this->load->view('admin_panel/insurance/life_insurance');
+		$this->load->view('admin_panel/layout/footer');
+    }
+
+    public function auto_insurance()
+    {     
+        $this->check_admin_logged_in();
+        $data = array(
+            "admin_id"=>$this->admin_id
+        );
+        
+		$this->load->view('admin_panel/layout/header',array("admin_data"=>$data));
+		$this->load->view('admin_panel/insurance/auto_insurance');
+		$this->load->view('admin_panel/layout/footer');
+    }
+
+    public function health_insurance()
+    {     
+        $this->check_admin_logged_in();
+        $data = array(
+            "admin_id"=>$this->admin_id
+        );
+        
+		$this->load->view('admin_panel/layout/header',array("admin_data"=>$data));
+		$this->load->view('admin_panel/insurance/health_insurance');
+		$this->load->view('admin_panel/layout/footer');
+    }
 
 }

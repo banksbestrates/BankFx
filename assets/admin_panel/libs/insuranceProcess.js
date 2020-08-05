@@ -70,7 +70,7 @@ function showImage(src,target) {
         fr.readAsDataURL(src.files[0]);
     });
 }	
-function editOverviewModel(i)
+function editOverviewModel(i,type="")
 {
     let mortgage_data = insuranceData[i];
     var modal_body= '<div class="form-group">'+
@@ -101,7 +101,8 @@ function editOverviewModel(i)
                                     
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
-    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateOverview('+mortgage_data.id+')">Update</button>');
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save</button>'+
+    '<button class="btn btn-sm btn-primary" onclick=updateOverview('+mortgage_data.id+',"'+type+'")>Update</button>');
     $(".modal").modal('show');
 
     var src = document.getElementById("src");
@@ -109,12 +110,28 @@ function editOverviewModel(i)
     showImage(src,target);
 }
 
-function updateOverview(id)
+function updateOverview(id, type="")
 {
     let heading         = $("#edit_heading").val();
     let image_src       = $("#src").val();
-    let content     = $("#edit_content").val();
-  
+    let content         = $("#edit_content").val();
+    let base_url = baseUrl+"api/admin/update_insurance_overview";
+    if(type=="homeowner")
+    {
+        base_url=  baseUrl + "api/admin/update_homeowner_insurance";
+    }
+    else if(type=="auto")
+    {
+        base_url=  baseUrl + "api/admin/update_auto_insurance";
+    }
+    else if(type=="life")
+    {
+        base_url=  baseUrl + "api/admin/update_life_insurance";
+    }
+    else if(type=="health")
+    {
+        base_url=  baseUrl + "api/admin/update_health_insurance";
+    }
     let formData = new FormData();
     if (image_src !== "") {
             var image = document.getElementById('src');
@@ -135,7 +152,7 @@ function updateOverview(id)
     formData.append('heading',heading);
     formData.append('content',content);
     formData.append('id',id);
-    let url = baseUrl+"api/admin/update_insurance_overview";
+    let url = base_url ;
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.send(formData);
@@ -154,5 +171,155 @@ function updateOverview(id)
                 });
                location.reload();
             }	
+    };
+}
+
+
+//=======home insurance======//
+function get_insurance(type) {
+    let base_url = "";
+    if(type=="homeowner")
+    {
+        base_url=  baseUrl + "api/admin/get_homeowner_insurance";
+    }
+    else if(type=="auto")
+    {
+        base_url=  baseUrl + "api/admin/get_auto_insurance";
+    }
+    else if(type=="life")
+    {
+        base_url=  baseUrl + "api/admin/get_life_insurance";
+    }
+    else if(type=="health")
+    {
+        base_url=  baseUrl + "api/admin/get_health_insurance";
+    }
+    let formData = new FormData();
+    let url = base_url;
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.send(formData);
+    xhr.onload = function() {
+        if (xhr.status == 200) {
+            let obj = JSON.parse(xhr.responseText);
+            let status = obj.Status;
+            let message = obj.Message;
+            if (!status) {
+            }
+            insuranceData = obj.data;
+            let data_list = "";
+            let related_list = "";
+               for (var i = 0; i < insuranceData.length; i++) {
+                if(insuranceData[i].div_type=="normal_content")
+                {
+                    data_list = data_list+ 
+                        '<div class="col-md-12">'+
+                        '    <h2 class="text-dark font-weight-bold">'+insuranceData[i].heading+'</h2> '+
+                        '    <span style="float:right"><button class="btn btn-sm btn-primary" onclick=insuranceDataModel('+i+',"'+type+'")>EDIT</button></span>  '+
+                        '  <p>'+insuranceData[i].content+'</p>'+
+                        '</div><hr/>'
+                }   
+                else if(insuranceData[i].div_type=="related_article")
+                {
+                     related_list = related_list+ 
+                     '   <div class="col-md-12 pb-3">'+
+                     '       <div class="row">'+
+                     '           <div class="col-md-5">'+
+                     '             <img src="'+baseUrl+insuranceData[i].image+'" alt="" width="100%" >'+
+                     '           </div>'+
+                     '           <div class="col-md-5 py-4">'+
+                     '               <h3 class="text-dark">'+insuranceData[i].heading+'</h3>'+
+                     '               <p>'+insuranceData[i].content+'</p>'+
+                     '           </div>'+
+                     '           <div class="col-md-2">'+
+                     '               <button class="btn btn-sm btn-primary" onclick=editOverviewModel('+i+',"'+type+'")>Edit</button>'+
+                     '           </div>'+
+                     '       </div>'+
+                     '   </div>'
+                } 
+             }
+            $("#normal_articles").html(data_list);	
+            $("#related_articles").html(related_list);
+
+
+        }
+    };
+}
+
+function insuranceDataModel(i,type)
+{
+    var insurance_data = insuranceData[i];
+    var modal_body= '<div class="form-group">'+
+        '<label for="name">Heading</label>'+
+        '<input type="text" class="form-control" id="edit_heading" placeholder="Enter Heading" value="'+insurance_data.heading+'">'+
+        '</div>'+
+        '<div class="form-group ">'+
+            '<label for="name">Content</label>'+
+            '<textarea rows="5" class="form-control" placeholder="Add Content" name="editor" id="data">'+insurance_data.content+'</textarea rows="5">'+
+        '</div>'+
+        '<div class="form-group">'+
+            '<small class="error_message text-danger"></small>'+
+        '</div>'
+
+    $(".modal-dialog").addClass("modal-lg");
+    $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
+    $(".modal-body").html(modal_body);
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save</button>'+
+    '<button class="btn btn-sm btn-primary" onclick=updateInsuranceData('+insurance_data.id+',"'+type+'")>Update</button>');
+    $(".modal").modal('show');
+
+    
+    CKEDITOR.replace( 'editor' );
+}
+
+function updateInsuranceData(id,type)
+{
+    let base_url =  "";
+    if(type=="homeowner")
+    {
+        base_url=  baseUrl + "api/admin/update_homeowner_insurance";
+    }
+    else if(type=="auto")
+    {
+        base_url=  baseUrl + "api/admin/update_auto_insurance";
+    }
+    else if(type=="life")
+    {
+        base_url=  baseUrl + "api/admin/update_life_insurance";
+    }
+    else if(type=="health")
+    {
+        base_url=  baseUrl + "api/admin/update_health_insurance";
+    }
+    var content= CKEDITOR.instances.data.getData();
+    if (content == "") {
+        alert("Enter Valid Content");
+    }
+
+    var heading   = $("#edit_heading").val();
+    let formData = new FormData();
+    formData.append('content', content);
+    formData.append('heading', heading);
+    formData.append('id', id);
+    let url = base_url;
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.send(formData);
+    xhr.onload = function() {
+        if (xhr.status == 200) {
+            let obj = JSON.parse(xhr.responseText);
+            let status = obj.Status;
+            let message = obj.Message;
+            if (!status) {
+                $(".error_message").html(message);
+                return false;
+            } else {
+                swal(message, {
+                    buttons: false,
+                    timer: 2000,
+                });
+                location.reload();
+            }
+        }
     };
 }

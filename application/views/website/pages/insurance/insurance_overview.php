@@ -23,19 +23,19 @@
             <div class="col-md col-sm-4">
             <div class="card pb-3">
                   <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <a href="<?php echo base_url()?>homeowner_insurance"><h6>Auto Insurance</h6></a>
+                  <a href="<?php echo base_url()?>auto_insurance"><h6>Auto Insurance</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
               <div class="card pb-3">
               <i class="fa fa-bar-chart" aria-hidden="true"></i>
-              <a href="<?php echo base_url()?>index.php/auto_loan"><h6>Life Insurance</h6></a>
+              <a href="<?php echo base_url()?>life_insurance"><h6>Life Insurance</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
               <div class="card pb-3">
               <i class="fa fa-bar-chart" aria-hidden="true"></i>
-              <a href="<?php echo base_url()?>index.php/auto_loan"><h6>Health Insurance</h6></a>
+              <a href="<?php echo base_url()?>health_insurance"><h6>Health Insurance</h6></a>
                 </div>
             </div>
         </div>

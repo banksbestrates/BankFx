@@ -13,7 +13,7 @@
   <div class="col-md-10 mx-auto pt-5">
     <div class="row">
         <div class="col-md-12">
-            <span>Bank Reviews ></span> <span class="text_yellow">Aliiant Bank</span>
+            <!-- <span>Bank Reviews ></span> <span class="text_yellow">Aliiant Bank</span> -->
             <h2 class="font-weight-900 pt-2 mb-2">Best Homeowners Insurance Companies</h2>
             <span>Published on July 30. Do you want to get more information ?</span>
         </div>
@@ -21,21 +21,18 @@
     </div>
 </div>
 
-<div class="col-md-10 mx-auto  pt-5 ">
-       <h4 class="border_bottom_golden font-weight-900">Content for this page will keep populating depending on the amount</h4>
-       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus dictum nisl ac ultricies.
-        Proin viverra velit rhoncus dignissim luctus. Sed mattis, velit non elementum malesuada,
-        urna turpis mattis libero, semper semper leo tortor vel ex. Vestibulum gravida faucibus vulputate. 
-        Suspendisse placerat mi eget ipsum egestas, vitae consectetur ipsum tincidunt. Lorem ipsum dolor sit amet,
-        nsectetur adipiscing elit. Sed luctus dictum nisl ac ultricies. Proin viverra velit rhoncus dignissim luctus.
-        Sed mattis, velit non elementum malesuada, urna turpis mattis libero, semper semper leo tortor vel ex.
-        Vestibulum gravida faucibus vulputate. Suspendisse placerat mi eget ipsum egestas, 
-        vitae consectetur ipsum tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus
-       
-       </p>
-</div>
-<div class="col-md-10 mx-auto  pt-4 ">
+<?php if(count($page_data)>=1){
+        foreach($page_data as $d){
+          if($d->div_type == "normal_content"){?>
+            <div class="col-md-10 mx-auto  pt-5 ">
+                <h4 class="border_bottom_golden font-weight-900"><?php echo $d->heading?></h4>
+                <p><?php echo $d->content?> </p>
+                </div>
+          <?php }
+        }
+    }?>
+
+<!-- <div class="col-md-10 mx-auto  pt-4 ">
        <h4 class="border_bottom_golden font-weight-900">We can have multiple educational tips before the table below</h4>
        <p>
        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus dictum nisl ac ultricies. 
@@ -47,7 +44,7 @@
          turpis mattis libero, semper semper leo tortor vel ex. Vestibulum gravida faucibus vulputate. 
        Suspendisse placerat mi eget ipsum egestas, vitae consectetur ipsum tincidunt.
        </p>
-</div>
+</div> -->
 
 <div class="col-md-10 mx-auto pt-4">
     <h4 class="border_bottom_golden font-weight-900">Best Homeowners Insurance Companies</h4>
@@ -140,21 +137,28 @@
 
  <!-- Content Related to Loans -->
  <div class="col-md-10 mx-auto  py-5 ">
-       <h4 class="border_bottom_golden font-weight-900">Content Related to Loans</h4>    
-       <div class="col-md-12 mx-auto row px-0">
-            <div class="col-md-6 related_image">
-            </div>
-            <div class="col-md-6 related_content">
-                <p class="mb-1">EDITOR'S PICK </p>
-                <h4>COVID-19 RELIEF TO SMALL BUSINESS</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi culpa atque eius qui 
-                ducimus fuga iste necessitatibus voluptate reprehenderit? </p>
-                  <div class="row">
-                        <div class="col-md-1">
-                          <i class="fa fa-arrow-circle-right"  aria-hidden="true"></i>
-                        </div>
-                        <div class="col-md-8 pt-2">6 MIN </div>
+       <h4 class="border_bottom_golden font-weight-900">Related Articles</h4>    
+        <?php if(count($page_data)>=1){
+            foreach($page_data as $d){
+            if($d->div_type == "realted_article"){?>
+                <div class="col-md-12 mx-auto row px-0">
+                    <div class="col-md-6 related_image" style="background-image:url('<?php echo base_url() . $d->image ?>')">
                     </div>
-            </div>
-        </div>
+                    <div class="col-md-6 related_content">
+                        <p class="mb-2">EDITOR'S PICK </p>
+                        <h4><?php echo $d->heading?></h4>
+                        <p><?php echo $d->content?></p>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <i class="fa fa-arrow-circle-right"  aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-8 pt-2">6 MIN </div>
+                        </div>
+                    </div>
+                </div>
+            <?php }
+            }
+        }?>
+        
+      
 </div>

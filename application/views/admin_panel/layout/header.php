@@ -357,6 +357,26 @@
 											<span class="sub-item">Insurance Overview Page</span>
 										</a>
 									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/insurance/homeowner_insurance">
+											<span class="sub-item">Homeowner Insurance</span>
+										</a>
+									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/insurance/auto_insurance">
+											<span class="sub-item">Auto Insurance</span>
+										</a>
+									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/insurance/life_insurance">
+											<span class="sub-item">Life Insurance</span>
+										</a>
+									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/insurance/health_insurance">
+											<span class="sub-item">Health Insurance</span>
+										</a>
+									</li>					
 								</ul>
 							</div>
 						</li>
