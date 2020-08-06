@@ -979,14 +979,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 #portfolio .portfolio-item .portfolio-info {
   background: #fff;
   text-align: center;
-  padding: 30px 0px;
+  padding: 20px 0px;
   /* height: 90px; */
   /* border-radius: 0 0 3px 3px; */
 }
 
 #portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
-  line-height: 1px;
+  /* line-height: 1px; */
   font-weight: 700;
   margin-bottom: 18px;
   padding-bottom: 0;
@@ -1876,14 +1876,15 @@ select{
 
 .rating_point{
   color:black;
-  font-size:35px;
+  font-size:26px;
   padding-right:20px;
-  font-weight:bold;
+  font-weight:900;
 }
 .best_rating_blue{
-  font-size:15; 
+  font-size:15px; 
   position:absolute;
-  padding-top:14px;
+  padding-top:12px;
+  color:#0374A1;
 }
 .credit_list_view h6{
 margin:0px;
@@ -1984,6 +1985,21 @@ margin:0px;
   color: #CB9D24;
 }
 .what_to_like p{
+ text-align:justify;
+}
+.pros span{
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  padding-top: 4px;
+  padding-left: 15px;
+  color: black;
+
+}
+.pros .fa{
+  color: #CB9D24;
+}
+.pros p{
  text-align:justify;
 }
 
@@ -2089,5 +2105,7 @@ border:1px solid #968719!important;
 .credit_card_small_row td {
   padding: 0.3rem;
 }
-
+.table-bordered{
+  border: 1px solid #CB9D24;
+}
 

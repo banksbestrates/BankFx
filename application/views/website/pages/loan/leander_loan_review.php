@@ -3,30 +3,30 @@
 <div class="col-md-10 mx-auto pt-5">
     <div class="row">
         <div class="col-md-8">
-            <span>Bank Reviews ></span> <span class="text_yellow">Aliiant Bank</span>
+            <!-- <span>Bank Reviews ></span> <span class="text_yellow">Aliiant Bank</span> -->
             <h2 class="font-weight-900 pt-2 mb-2">LENDER NAME LOAN REVIEW</h2>
             <span>Published on July 30. Do you want to get more information ?</span>
         </div>
         <div class="col-md-4 text-right pt-4">
-            <button class="btn button_blue">DOWNLOAD OUR APP</button>
+            <button class="btn button_blue btn-sm">DOWNLOAD OUR APP</button>
         </div>
     </div>
 </div>
 
 <!-- credit card box view -->
-<div class="col-md-10 mx-auto">    
-    <div class="col-md-10">
-            <div class="row box_round_border my-5">
-                <div class="col-md-3 px-4 text-center">
-                    <img src="<?php echo base_url()?>assets/img/bank_images/allay_large.png" class="w-100 pt-4" /> 
-                    <div class="py-5"></div>
-                    <button class="btn button_outline_blue btn-sm w-100">ADD TO COMPARE </button>   
-                    <button class="btn button_blue btn-sm w-100 mt-2"> APPLY NOW </button>   
-                </div>
-                <div class="col-md-9 pt-3">
-                    <h4 class="font-weight-900 mb-2">LENDER NAME ALLY</h4>
-                    <!-- rating div -->
-                    <div class="">
+<div class="col-md-12 py-5">  
+    <div class="col-md-10 mx-auto">  
+        <div class="row">
+            <div class="col-md-9 px-0 box_round_border">
+                <div class="row px-4">
+                    <div class="col-md-3 px-4 text-center">
+                        <img src="<?php echo base_url()?>assets/img/bank_images/allay_large.png" class="w-100 pt-4" /> 
+                        <div class="py-5"></div>
+                        <button class="btn button_outline_blue btn-sm w-100">ADD TO COMPARE </button>   
+                        <button class="btn button_blue btn-sm w-100 mt-2"> APPLY NOW </button>   
+                    </div>
+                    <div class="col-md-9 pt-3">
+                        <h4 class="font-weight-900 mb-2">LENDER NAME ALLY</h4>
                         <span class="fa fa-star checked pr-2" style="font-size:24px"></span>
                         <span class="fa fa-star checked pr-2" style="font-size:24px"></span>
                         <span class="fa fa-star checked pr-2" style="font-size:24px"></span>
@@ -34,36 +34,71 @@
                         <span class="fa fa-star checked pr-2" style="font-size:24px"></span>
                         <span style="font-size:20px" class="font-weight-900">5.0</span>
                         <small class="pl-2 text_skyblue font-weight-bold">Banks Best Rating</small>
-                    </div>
-            <!-- detail div -->
-                    <div class="pt-2">
-                    <table class="table credit_card_small_row">
-                        <tbody>
-                            <tr>
-                                <td><small class="font-weight-bold">Minimum Credit Score:</small></td>
-                            </tr>
-                            <tr>
-                                <td><small class="font-weight-bold">Est. APR:</small></td>
-                            </tr>
-                            <tr>
-                            <td><small class="font-weight-bold">Loan Amount:</small></td>
-                            </tr>
-                            <tr>
-                            <td style="border-bottom:none"><small class="font-weight-bold">The bottom line:</small>
-                            <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus dictum nisl ac ultricies. 
-                                Proin viverra velit rhoncus dignissim luctus. Sed mattis, velit non elementum malesuada, urna turpis mattis
-                                ibero, semper semper leo tortor vel ex. Vestibulum gravida faucibus vulputate. 
-                                Suspendisse placerat mi eget ipsum egestas, vitae consectetur ipsum tincidunt.</small></td>
-                            </tr>
-                         
-                        
-                        </tbody>
+                        <div class="pt-2">
+                            <table class="table credit_card_small_row">
+                                <tbody>
+                                    <tr>
+                                        <td><small class="font-weight-bold">Minimum Credit Score:</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td><small class="font-weight-bold">Est. APR:</small></td>
+                                    </tr>
+                                    <tr>
+                                    <td><small class="font-weight-bold">Loan Amount:</small></td>
+                                    </tr>
+                                    <tr>
+                                    <td style="border-bottom:none"><small class="font-weight-bold">The bottom line:</small>
+                                    <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus dictum nisl ac ultricies. 
+                                        Proin viverra velit rhoncus dignissim luctus. Sed mattis, velit non elementum malesuada, urna turpis mattis
+                                        ibero, semper semper leo tortor vel ex. Vestibulum gravida faucibus vulputate. 
+                                        Suspendisse placerat mi eget ipsum egestas, vitae consectetur ipsum tincidunt.</small></td>
+                                    </tr>
                                 
-                    </table>
+                                
+                                </tbody>
+                                        
+                            </table>
+                        </div>
+                    </div> 
                 </div>
-            
-        </div> 
+                <div style="border-top:1px solid #CB9D24">
+                    <div class="px-4 pt-2">
+                        <span class="font-weight-bold">Product Details</span>
+                        <span style="float:right;"><i class="fa fa-chevron-down" style="color:#CB9D24" data-toggle="collapse" data-target="#demo"></i></span><br/>
+                        <span id="demo" class="collapse text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus dictum nisl ac ultricies.
+                        Proin viverra velit rhoncus dignissim luctus. Sed mattis, velit non elementum malesuada, 
+                        urna turpis mattis libero, semper semper leo tortor vel ex. Vestibulum gravida faucibus vulputate.
+                        Suspendisse placerat mi eget ipsum egestas, vitae consectetur ipsum tincidunt. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus dictum nisl ac ultricies. 
+                        Proin viverra velit rhoncus dignissim luctus. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Sed luctus dictum nisl ac ultricies. Proin viverra velit rhoncus dignissim luctus.
+                        Sed mattis, velit non elementum malesuada, urna turpis mattis libero, semper semper 
+                        leo tortor vel ex. Vestibulum gravida faucibus vulputate. Suspendisse placerat mi eget 
+                        ipsum egestas, vitae consectetur ipsum tincidunt. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Sed luctus dictum nisl ac ultricies. Proin viverra velit 
+                        rhoncus dignissim luctus. Sed mattis, velit non elementum malesuada, urna turpis mattis
+                        libero, semper semper leo tortor vel ex. Vestibulum gravida faucibus vulputate.
+                         Suspendisse placerat mi eget ipsum egestas, vitae consectetur ipsum tincidunt.
+                        </span>
+                        <br/>
+                    </div>     
                 </div>
+                <div style="border-top:1px solid #CB9D24">
+                    <div class="px-4 pt-2">
+                        <span class="font-weight-bold">Our Assessment</span>
+                        <span style="float:right"> <i class="fa fa-chevron-down" style="color:#CB9D24" data-toggle="collapse" data-target="#demo1"></i></span><br/>
+                        <span id="demo1" class="collapse text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </span>
+                        <br/>
+                    </div>     
+                </div>
+            </div>
+            <div class="col-md-3">
+               
             </div>
         </div>
     </div>
