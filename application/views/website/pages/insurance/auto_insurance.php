@@ -2,7 +2,7 @@
   
   <style>
   .table-bordered {
-    border: 1px solid #CB9D24 !important;
+    border: 1px solid #D79F01 !important;
   }
   </style>
   <!--==========================

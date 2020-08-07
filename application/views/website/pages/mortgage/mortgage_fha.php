@@ -9,7 +9,7 @@
     padding:40px 0px 40px 0px;
 }
 .rate_header .btn{
-    background-color:#968719;
+    background-color:#D79F01;
     color:white;
 }
 label{
@@ -35,7 +35,7 @@ select.form-control:not([size]):not([multiple]) {
     color:red;
 }
  .project-tab .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-    background-color:#968719;
+    background-color:#D79F01;
     color:white;
 }
 </style>

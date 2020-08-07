@@ -81,7 +81,7 @@
                     <br/><span>HOURS</span>
                 </div>  
                 <!-- address 2  -->
-                <div class=" py-4 px-4" style="border-top:2px solid #CB9D24">
+                <div class=" py-4 px-4" style="border-top:2px solid #D79F01">
                     <h5 class="mb-2">BANK BRANCH</h5>
                     <span > 123456 Street Name Drive<br/>
                         Town Name, ST 1234578</span><br/>
@@ -229,7 +229,7 @@
 </div>
 
 
-  <!-- Darker Gold #CB9D24
+  <!-- Darker Gold #D79F01
 Lighter Gold #E6C245
 Grey #626262
 Blue #002A75 -->

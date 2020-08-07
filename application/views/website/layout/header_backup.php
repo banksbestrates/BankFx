@@ -131,7 +131,7 @@
 }
 .sidenav ul li.active > a {
     background: transparent;
-    color: #96871a;
+    color: #D79F01;
 }
 .sidenav ul li {
   border: 1px solid;
@@ -321,7 +321,7 @@
              
           </div>
        
-        <i class="fa fa-bars fa-2x" aria-hidden="true" id="icon_bar" onclick="openNav()" style="color:#96871a;cursor:pointer;"></i>
+        <i class="fa fa-bars fa-2x" aria-hidden="true" id="icon_bar" onclick="openNav()" style="color:#D79F01;cursor:pointer;"></i>
         <a href="<?php echo base_url()?>" class="scrollto">
           <img src="<?php echo base_url()?>assets/img/logo/main_logo.png">
         </a>

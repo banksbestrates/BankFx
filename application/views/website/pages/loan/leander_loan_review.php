@@ -61,10 +61,10 @@
                         </div>
                     </div> 
                 </div>
-                <div style="border-top:1px solid #CB9D24">
+                <div style="border-top:1px solid #D79F01">
                     <div class="px-4 pt-2">
                         <span class="font-weight-bold">Product Details</span>
-                        <span style="float:right;"><i class="fa fa-chevron-down" style="color:#CB9D24" data-toggle="collapse" data-target="#demo"></i></span><br/>
+                        <span style="float:right;"><i class="fa fa-chevron-down" style="color:#D79F01" data-toggle="collapse" data-target="#demo"></i></span><br/>
                         <span id="demo" class="collapse text-justify">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus dictum nisl ac ultricies.
                         Proin viverra velit rhoncus dignissim luctus. Sed mattis, velit non elementum malesuada, 
@@ -84,10 +84,10 @@
                         <br/>
                     </div>     
                 </div>
-                <div style="border-top:1px solid #CB9D24">
+                <div style="border-top:1px solid #D79F01">
                     <div class="px-4 pt-2">
                         <span class="font-weight-bold">Our Assessment</span>
-                        <span style="float:right"> <i class="fa fa-chevron-down" style="color:#CB9D24" data-toggle="collapse" data-target="#demo1"></i></span><br/>
+                        <span style="float:right"> <i class="fa fa-chevron-down" style="color:#D79F01" data-toggle="collapse" data-target="#demo1"></i></span><br/>
                         <span id="demo1" class="collapse text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

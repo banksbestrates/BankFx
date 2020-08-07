@@ -18,7 +18,7 @@
       line-height:2.0rem;
     }
     .bank_best_rates{
-      color:#968719;
+      color:#D79F01;
       font-weight:bold;
     }
     

@@ -28,6 +28,12 @@ class Credit extends CI_Controller {
 		$this->load->view('website/pages/credit_card/best_credit_cards');
 		$this->load->view('website/layout/footer');
     }
+    public function card_review()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/credit_card/card_review');
+		$this->load->view('website/layout/footer');
+    }
     public function compare_card()
 	{
 		$this->load->view('website/layout/header');

@@ -70,12 +70,14 @@ $route['house_afford'] = 'Mortgage/house_afford';
 $route['credit_overview'] = 'Credit/credit_overview';
 $route['best_credit_cards'] = 'Credit/best_credit_cards';
 $route['compare_card'] = 'Credit/compare_card';
+$route['card_review'] = 'Credit/card_review';
 $route['bank_overview'] = 'Bank/bank_overview';
 $route['best_banks'] = 'Bank/best_banks';
 $route['best_bank_reviews'] = 'Bank/best_bank_reviews';
 $route['bank_review'] = 'Bank/bank_review';
 $route['branch_locator'] = 'Bank/branch_locator';
 $route['bank_state'] = 'Bank/bank_state';
+$route['bank_city'] = 'Bank/bank_city';
 $route['best_money_market'] = 'Bank/best_money_market';
 
 // loan module
@@ -179,7 +181,6 @@ $route['api/admin/update_retirement_overview']      = 'API/Retirement/update_ret
 $route['api/admin/get_homepage_slider']             = 'API/Homepage/get_homepage_slider';
 $route['api/admin/update_homepage_data']            = 'API/Homepage/update_homepage_data';
 $route['api/admin/update_homepage_testimonial']     = 'API/Homepage/update_homepage_testimonial';
-
 $route['api/admin/get_insurance_overview']          = 'API/Insurance/get_insurance_overview';
 $route['api/admin/update_insurance_overview']       = 'API/Insurance/update_insurance_overview';
 $route['api/admin/get_homeowner_insurance']         = 'API/Insurance/get_homeowner_insurance';

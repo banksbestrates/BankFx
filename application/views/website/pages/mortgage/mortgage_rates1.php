@@ -5,7 +5,7 @@
 
 }
 .rate_header .btn{
-    background-color:#968719;
+    background-color:#D79F01;
     color:white;
 }
 label{

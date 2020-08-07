@@ -379,7 +379,7 @@
 
 
 
-  <!-- Darker Gold #CB9D24
+  <!-- Darker Gold #D79F01
 Lighter Gold #E6C245
 Grey #626262
 Blue #002A75 -->

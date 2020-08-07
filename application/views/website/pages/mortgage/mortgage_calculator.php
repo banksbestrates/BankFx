@@ -13,7 +13,7 @@
 
         var options = {       
           pieHole: 0.5,
-          colors: ['#e0440e', '#e6693e', '#CB9D24'],
+          colors: ['#e0440e', '#e6693e', '#D79F01'],
           pieSliceTextStyle: {
             color: 'black',
           },
@@ -150,7 +150,7 @@
 
 
 
-  <!-- Darker Gold #CB9D24
+  <!-- Darker Gold #D79F01
 Lighter Gold #E6C245
 Grey #top_div
 Blue #002A75 -->

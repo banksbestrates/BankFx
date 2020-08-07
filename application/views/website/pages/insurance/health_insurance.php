@@ -2,7 +2,7 @@
   
   <style>
   .table-bordered {
-    border: 1px solid #CB9D24 !important;
+    border: 1px solid #D79F01 !important;
   }
   </style>
   <!--==========================
@@ -43,7 +43,7 @@
     <br/><br/>
 
 
-<div class="col-md-10 mx-auto">
+<!-- <div class="col-md-10 mx-auto">
     <h4 class="border_bottom_golden font-weight-900">Life Insurance Rates</h4><br/>
     <table class="table table-bordered  text-secondary font-weight-bold">
         <thead>
@@ -79,7 +79,7 @@
             </tr>                                      
         </tbody>  
     </table>   
-</div>
+</div> -->
 
 
  
@@ -88,7 +88,7 @@
        <h4 class="border_bottom_golden font-weight-900">Related Articles</h4>    
         <?php if(count($page_data)>=1){
             foreach($page_data as $d){
-            if($d->div_type == "realted_article"){?>
+            if($d->div_type == "related_article"){?>
                 <div class="col-md-12 mx-auto row px-0">
                     <div class="col-md-6 related_image" style="background-image:url('<?php echo base_url() . $d->image ?>')">
                     </div>

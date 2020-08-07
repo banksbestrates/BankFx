@@ -131,7 +131,7 @@
 }
 .sidenav ul li.active > a {
     background: transparent;
-    color: #96871a;
+    color: #D79F01;
     background-color: white;
 }
 .sidenav ul li {
@@ -594,7 +594,22 @@
                   <li><a href="#">Social security benefits calculator</a></li>
                   <li><a href="#">All retirement calculators</a></li>
                   <br/>
-
+                  <h5 class="text-white px-3">More information</h5>
+                  <li><a href="#">What is an IRA?</a></li>
+                  <li><a href="#">What is a Roth 401(k)?</a></li>
+                  <li><a href="#">401(k) contribution limits</a></li>
+                  <li><a href="#">Contributing to IRA during retirement</a></li>
+                  <li><a href="#">Best age for Social Security retirement benefits</a></li>
+                  <li><a href="#">Roth IRA 5 year rule</a></li>
+                  <br/>               
+                </ul>
+              </li>
+              <hr/>
+              <!-- menu 8 -->
+              <li>
+                <a href="#checkingSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-home fa-2x pr-3" aria-hidden="true"></i>Checking</a>
+                <ul class="collapse list-unstyled" id="checkingSubmenu">
                   <!-- <li class="pt-3"><a href="<?php echo base_url()?>index.php/mortgage_overview">Insurance Overview</a></li> -->
                   <br/>
                   <h5 class="text-white px-3">Best Products</h5>
@@ -614,7 +629,7 @@
 
           </div>
        
-        <i class="fa fa-bars fa-2x" aria-hidden="true" id="icon_bar" onclick="openNav()" style="color:#96871a;cursor:pointer;"></i>
+        <i class="fa fa-bars fa-2x" aria-hidden="true" id="icon_bar" onclick="openNav()" style="color:#D79F01;cursor:pointer;"></i>
         <a href="<?php echo base_url()?>" class="scrollto">
           <img src="<?php echo base_url()?>assets/img/logo/main_logo.png">
         </a>
@@ -653,4 +668,4 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
- 
+  </script>

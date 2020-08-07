@@ -14,8 +14,8 @@
 
   <!-- Card view -->
 
-  <div class="col-md-10 mx-auto card_row pb-4">    
-        <div class="pt-5 col-md-12 mx-auto row card_view">
+<div class="container card_row pb-4">    
+        <div class="pt-5  row card_view">
             <div class="col-md-3">
                 <div class="card pb-3">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-  </div> 
+</div> 
 
   <!-- TRENDING IN BANKSSS -->
 <section id="portfolio" class="">
@@ -72,11 +72,11 @@
     </div>
 </section>
   <!-- TRENDING IN BANKSSS -->
-  <div class="col-md-10 mx-auto card_row">
+  <div class="container card_row">
         <header class="section-header">
           <h3>RELATED ARTICLES</h3>
         </header>
-        <?php if(count($page_data)>=1){
+          <?php if(count($page_data)>=1){
               foreach($page_data as $d){
                 if($d->div_type == "related_article"){?>
                     <div class="pt-4 col-md-12 mx-auto row">

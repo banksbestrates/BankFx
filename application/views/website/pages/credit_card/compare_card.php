@@ -4,7 +4,7 @@
   line-height:1.5;
 }
 .checked{
-    color:#CB9D24;
+    color:#D79F01;
 }
 .rating_point{
     color:black;
@@ -20,7 +20,6 @@
 .credit_list_view h6{
 margin:0px;
 }
-
 .credit_card_image{
 
     height: 200px;
@@ -28,186 +27,250 @@ margin:0px;
     background-repeat: no-repeat;
     background-position: center;
 }
-
+.table-bordered {
+    border: 1px solid #D79F01!important;
+}
 </style>
 <!-- TOP NAME DIV -->
-<div class="col-md-10 mx-auto pt-5 pb-4">
+<div class="container mx-auto pt-5 pb-4">
     <div class="row">
         <div class="col-md-8">
-            <h1 class=" font-weight-bold mb-2">Compare Cards Side By Side</h1>
+            <h1 class=" font-weight-900 mb-2">Compare Cards Side By Side</h1>
             <p>Published on July 30. Do you want to get more information ?</p>
         </div>
         <div class="col-md-4 text-right pt-3">
-            <button class="btn button_green">DOWNLOAD OUR APP</button>
+            <button class="btn button_blue btn-sm">DOWNLOAD OUR APP</button>
         </div>
     </div>
 </div>
 
-<div class="col-md-10 mx-auto p-3" style="border:2px solid yellow;border-radius:30px;">
-    <div class="row pb-5" style="border-bottom:2px solid red">
-        <div class="col-md-4">
-            <div class="credit_card_image" style="background-image:url('<?php echo base_url()?>assets/img/overview/credit_card.png')">
-            </div>
+<div class="container px-0 ">
+<table class="table text-center table-bordered">
+            <tbody>
+                <tr class="text-center">
+                    <td class="">
+                        <img src="http://localhost:81/bank_fx/assets/img/overview/credit_card.png" class="w-75">
+                        <h6 class="font-weight-900 pt-2 mb-2">Fancy World Card</h6>
+                        <div class="credit_starts">
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="credit_top_rating">5.0</span><br/>
+                            <small class="pl-2 text_skyblue font-weight-bold">Banks Best Rating</small>
+                        </div>
+                        <button class="btn button_blue btn-sm  mt-3  px-5"> APPLY NOW </button>   
+                    </td>
+                    <td class="">
+                        <img src="http://localhost:81/bank_fx/assets/img/overview/credit_card.png" class="w-75">
+                        <h6 class="font-weight-900 pt-2 mb-2">Fancy World Card</h6>
+                        <div class="credit_starts">
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="credit_top_rating">5.0</span><br/>
+                            <small class="pl-2 text_skyblue font-weight-bold">Banks Best Rating</small>
+                        </div>
+                        <button class="btn button_blue btn-sm  mt-3  px-5"> APPLY NOW </button>   
+                    </td>
+                    <td class="">
+                        <img src="http://localhost:81/bank_fx/assets/img/overview/credit_card.png" class="w-75">
+                        <h6 class="font-weight-900 pt-2 mb-2">Fancy World Card</h6>
+                        <div class="credit_starts">
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="fa fa-star checked pr-2" ></span>
+                            <span class="credit_top_rating">5.0</span><br/>
+                            <small class="pl-2 text_skyblue font-weight-bold">Banks Best Rating</small>
+                        </div>
+                        <button class="btn button_blue btn-sm  mt-3  px-5"> APPLY NOW </button>   
+                    </td>
+                             
+                </tr>       
+                <tr>
+                <td colspan="3">
+                    <div class="px-4 py-2">
+                        <span class="font-weight-bold" style="float:left">Great For</span>
+                        <span style="float:right;"><i class="fa fa-chevron-down" style="color:#D79F01" data-toggle="collapse" data-target="#demo"></i></span><br/>      
+                        </span>
+                    </div>
+                </td>
+                <tr id="demo" class="collapse  text-left">
+                    <td>   
+                        <ul>
+                            <li>Airline</li>
+                            <li>Balance Transfer</li>
+                            <li>Bonus Offers</li>
+                            <li>Business</li>
+                            <li>Cash Back</li>
+                            <li>Business</li>
+                            <li>Gas</li>
+                            <li>Low Interest</li>
+                            <li>Rewards</li>
+                            <li>Travel</li>
+                            <li>Zero Percent</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Airline</li>
+                            <li>Balance Transfer</li>
+                            <li>Bonus Offers</li>
+                            <li>Business</li>
+                            <li>Cash Back</li>
+                            <li>Business</li>
+                            <li>Gas</li>
+                            <li>Low Interest</li>
+                            <li>Rewards</li>
+                            <li>Travel</li>
+                            <li>Zero Percent</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Airline</li>
+                            <li>Balance Transfer</li>
+                            <li>Bonus Offers</li>
+                            <li>Business</li>
+                            <li>Cash Back</li>
+                            <li>Business</li>
+                            <li>Gas</li>
+                            <li>Low Interest</li>
+                            <li>Rewards</li>
+                            <li>Travel</li>
+                            <li>Zero Percent</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                <td colspan="3">
+                    <div class="px-4 py-2">
+                        <span class="font-weight-bold" style="float:left">Annual Fee</span>
+                        <span style="float:right;"><i class="fa fa-chevron-down" style="color:#D79F01" data-toggle="collapse" data-target="#demo1"></i></span><br/>      
+                        </span>
+                    </div>
+                </td>
+                </tr>
+                <tr id="demo1" class="collapse text-left">
+                    <td class="px-5"> $95</td>
+                    <td class="px-5">$0</td>
+                    <td class="px-5">$0</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="px-4 py-2">
+                            <span class="font-weight-bold" style="float:left">Intro APR</span>
+                            <span style="float:right;"><i class="fa fa-chevron-down" style="color:#D79F01" data-toggle="collapse" data-target="#demo2"></i></span><br/>      
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="demo2" class="collapse text-left">
+                    <td class="px-5"> $95</td>
+                    <td class="px-5">$0</td>
+                    <td class="px-5">$0</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="px-4 py-2">
+                            <span class="font-weight-bold" style="float:left">Regular APR</span>
+                            <span style="float:right;"><i class="fa fa-chevron-down" style="color:#D79F01" data-toggle="collapse" data-target="#demo3"></i></span><br/>      
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="demo3" class="collapse text-left">
+                    <td class="px-5"> $95</td>
+                    <td class="px-5">$0</td>
+                    <td class="px-5">$0</td>
+                </tr>
 
-            <div class="text-center">
-                <h5 class="mb-0">Fancy World Card</h5>
-                <div class="">
-                <span class="fa fa-star fa-2x checked "></span>
-                <span class="fa fa-star fa-2x checked"></span>
-                <span class="fa fa-star fa-2x checked "></span>
-                <span class="fa fa-star fa-2x checked "></span>
-                <span class="fa fa-star fa-2x checked"></span>
+                <tr>
+                 <td colspan="3">
+                    <div class="px-4 py-2">
+                        <span class="font-weight-bold" style="float:left">Cons</span>
+                        <span style="float:right;"><i class="fa fa-chevron-down" style="color:#D79F01" data-toggle="collapse" data-target="#demo6"></i></span><br/>      
+                        </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr id="demo6" class="collapse  text-left">
+                    <td>  
+                        <ul>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                          
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                 <td colspan="3">
+                    <div class="px-4 py-2">
+                        <span class="font-weight-bold" style="float:left">Pros</span>
+                        <span style="float:right;"><i class="fa fa-chevron-down" style="color:#D79F01" data-toggle="collapse" data-target="#demo5"></i></span><br/>      
+                        </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr id="demo5" class="collapse  text-left">
+                    <td>  
+                        <ul>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                          
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                            <li>Bulleted list of something we like about this credit card.</li>
+                        </ul>
+                    </td>
+                </tr>
 
-                <!-- span -->
-                <span class="rating_point px-3">5.0</span><br/>
-                <span class=" text_blue">Banks Best Rating</span><br/>
-            </div>
-                <button class="btn button_blue w-75 mt-3 ">APPLY NOW </button>
-            </div>
-           
-        </div>
-        <div class="col-md-4">
-            <div class="credit_card_image" style="background-image:url('<?php echo base_url()?>assets/img/overview/credit_card.png')">
-            </div>
-
-            <div class="text-center">
-                <h5 class="mb-0">Fancy World Card</h5>
-                <div class="">
-                <span class="fa fa-star fa-2x checked "></span>
-                <span class="fa fa-star fa-2x checked"></span>
-                <span class="fa fa-star fa-2x checked "></span>
-                <span class="fa fa-star fa-2x checked "></span>
-                <span class="fa fa-star fa-2x checked"></span>
-
-                <!-- span -->
-                <span class="rating_point px-3">5.0</span><br/>
-                <span class=" text_blue">Banks Best Rating</span><br/>
-            </div>
-                <button class="btn button_blue w-75 mt-3 ">APPLY NOW </button>
-            </div>
-           
-        </div>
-        <div class="col-md-4">
-            <div class="credit_card_image" style="background-image:url('<?php echo base_url()?>assets/img/overview/credit_card.png')">
-            </div>
-
-            <div class="text-center">
-                <h5 class="mb-0">Fancy World Card</h5>
-                <div class="">
-                <span class="fa fa-star fa-2x checked "></span>
-                <span class="fa fa-star fa-2x checked"></span>
-                <span class="fa fa-star fa-2x checked "></span>
-                <span class="fa fa-star fa-2x checked "></span>
-                <span class="fa fa-star fa-2x checked"></span>
-
-                <!-- span -->
-                <span class="rating_point px-3">5.0</span><br/>
-                <span class=" text_blue">Banks Best Rating</span><br/>
-            </div>
-              
-                <button class="btn button_blue w-75 mt-3 ">APPLY NOW </button>
-            </div>
-           
-        </div>
+                </div> 
+                </td>    
+                </tr>
+                </tr>
+            </tbody>  
+        </table>
     </div>
-
-    <!-- collapsable part -->
-    <div id="accordion" class="w-100 pt-4">
-        <div class="px-3">
-            <div class="" id="headingOne">
-                <p class="mb-2 px-5">
-                    <span>Great for </span>
-                    <button style="float:right" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        >
-                    </button>
-                </p>
-            </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="row" style="font-size:18px">
-                    <div class="col-md-4 px-5" >
-                        <span>Balance Transfer</span><br/>
-                        <span>Bonus Offer</span><br/>
-                        <span>Business</span><br/>
-                        <span>Cash Back</span><br/>
-                        <span>Gas</span><br/>
-                        <span>Low Intrest</span><br/>
-                        <span>Rewards </span><br/>
-                        <span>Travel</span><br/>
-                        <span>Zero Percent</span><br/>
-                    </div>
-                    <div class="col-md-4 px-5" >
-                        <span>Balance Transfer</span><br/>
-                        <span>Bonus Offer</span><br/>
-                        <span>Business</span><br/>
-                        <span>Cash Back</span><br/>
-                        <span>Gas</span><br/>
-                        <span>Low Intrest</span><br/>
-                        <span>Rewards </span><br/>
-                        <span>Travel</span><br/>
-                        <span>Zero Percent</span><br/>
-                    </div> 
-                    <div class="col-md-4 px-5" >
-                        <span>Balance Transfer</span><br/>
-                        <span>Bonus Offer</span><br/>
-                        <span>Business</span><br/>
-                        <span>Cash Back</span><br/>
-                        <span>Gas</span><br/>
-                        <span>Low Intrest</span><br/>
-                        <span>Rewards </span><br/>
-                        <span>Travel</span><br/>
-                        <span>Zero Percent</span><br/>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="px-3">
-            <div class="" id="headingTwo">
-                <p class="mb-2 px-5">
-                    <span>Great for </span>
-                    <button style="float:right" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        >
-                    </button>
-                </p>
-            </div>
-            <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="row" style="font-size:18px">
-                    <div class="col-md-4 px-5" >
-                        <span>Balance Transfer</span><br/>
-                        <span>Bonus Offer</span><br/>
-                        <span>Business</span><br/>
-                        <span>Cash Back</span><br/>
-                        <span>Gas</span><br/>
-                        <span>Low Intrest</span><br/>
-                        <span>Rewards </span><br/>
-                        <span>Travel</span><br/>
-                        <span>Zero Percent</span><br/>
-                    </div>
-                    <div class="col-md-4 px-5" >
-                        <span>Balance Transfer</span><br/>
-                        <span>Bonus Offer</span><br/>
-                        <span>Business</span><br/>
-                        <span>Cash Back</span><br/>
-                        <span>Gas</span><br/>
-                        <span>Low Intrest</span><br/>
-                        <span>Rewards </span><br/>
-                        <span>Travel</span><br/>
-                        <span>Zero Percent</span><br/>
-                    </div> 
-                    <div class="col-md-4 px-5" >
-                        <span>Balance Transfer</span><br/>
-                        <span>Bonus Offer</span><br/>
-                        <span>Business</span><br/>
-                        <span>Cash Back</span><br/>
-                        <span>Gas</span><br/>
-                        <span>Low Intrest</span><br/>
-                        <span>Rewards </span><br/>
-                        <span>Travel</span><br/>
-                        <span>Zero Percent</span><br/>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>     
+    <br/>
 </div>
 
 

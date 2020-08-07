@@ -2,7 +2,7 @@
 <style>
   .small_card{
     text-align: center;
-    border: 1px solid #CB9D24;
+    border: 1px solid #D79F01;
     padding: 10px 10px 10px 10px!important;
     border-radius: 10px;
   }
@@ -25,13 +25,13 @@
  
   <!-- Card view -->
 
-  <div class="col-md-11 mx-auto card_row pb-4">   
+  <div class="container card_row pb-4">   
         <!-- row 1  -->
         <div class="pt-5 col-md-12 mx-auto row card_view">
             <div class="col-md">
                 <div class="card small_card">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <a href="<?php echo base_url()?>index.php/best_credit_cards"><span>The Best Credit Cards</span></a>
+                  <a href="<?php echo base_url()?>index.php/best_credit_cards"><span>Best Credit Cards</span></a>
                 </div>
             </div>
             <div class="col-md">
@@ -136,7 +136,7 @@
     </div>
 </section>
   <!-- Thinking about creatir cards -->
-<div class="col-md-10 mx-auto px-0 py-5 ">
+<div class="container  px-0 py-5 ">
       <h3 class="border_bottom_golden font-weight-900">Thinking About Credit Cards</h3>
       <?php if(count($page_data)>=1){
         foreach($page_data as $d){

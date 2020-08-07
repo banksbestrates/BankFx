@@ -2,8 +2,8 @@
 
 .mortgag_form_div{
   background-color:black;
-  border-top:2px solid #CB9D24;
-  border-bottom:2px solid #CB9D24;
+  border-top:2px solid #D79F01;
+  border-bottom:2px solid #D79F01;
 }
 .mortgag_form_div label{
   color:white;
@@ -13,7 +13,7 @@
 }
 .button_yellow{
     color:white;
-    background-color:#CB9D24;
+    background-color:#D79F01;
 }
 .button_grey{
     color:white;
@@ -24,7 +24,7 @@
     background-color:#c0ce21;
 }
 .border_bottom_golden{
-    border-bottom:2px solid #CB9D24;
+    border-bottom:2px solid #D79F01;
     padding-bottom:10px;
 }
 
@@ -144,7 +144,7 @@
 
 
 
-  <!-- Darker Gold #CB9D24
+  <!-- Darker Gold #D79F01
 Lighter Gold #E6C245
 Grey #626262
 Blue #002A75 -->

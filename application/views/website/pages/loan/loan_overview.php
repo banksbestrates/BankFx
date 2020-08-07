@@ -12,8 +12,8 @@
  
   <!-- Card view -->
 
-  <div class="col-md-10 mx-auto card_row pb-4">    
-        <div class="pt-5 col-md-12 mx-auto row card_view">
+  <div class="container card_row pb-4">    
+        <div class="pt-5  row card_view">
             <div class="col-md col-sm-4">
                 <div class="card pb-2">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
@@ -76,7 +76,7 @@
     </div>
 </section>
  <!-- Content Related to Loans -->
-  <div class="col-md-10 mx-auto px-0 py-5 ">
+  <div class="container px-0 py-5 ">
       <h3 class="border_bottom_golden font-weight-900">Related Articles</h3>  
       <?php if(count($page_data)>=1){
         foreach($page_data as $d){
