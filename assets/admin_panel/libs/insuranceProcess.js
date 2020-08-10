@@ -16,6 +16,7 @@ function get_insurance_overview() {
             insuranceData = obj.data;
             let trending_list = "";
             let related_list = "";
+            let overview_data = "";
                for (var i = 0; i < insuranceData.length; i++) {
                 if(insuranceData[i].div_type=="trending_article")
                 {
@@ -54,10 +55,20 @@ function get_insurance_overview() {
                         '       </div>'+
                         '   </div>'
                 } 
+                else if(insuranceData[i].div_type=="overview_heading")
+                {
+                    overview_data = '<div class="col-md-10">'+
+                    '<h1>'+insuranceData[i].heading+'</h1>'+
+                    '<p>'+insuranceData[i].content+'</p>'+
+                    '</div>'+
+                    '<div class="col-md-2">'+
+                    '   <button class="btn btn-primary btn-sm" onclick=contentModel('+i+')>Edit </button>'+
+                    '</div>'
+                } 
              }
             $("#trending_articles").html(trending_list);	
             $("#related_articles").html(related_list);	
-
+            $("#top_banner_text").html(overview_data);		
         }
     };
 }

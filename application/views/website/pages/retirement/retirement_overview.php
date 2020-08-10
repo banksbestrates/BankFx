@@ -13,7 +13,7 @@
   <!-- Card view -->
 
   <div class="container mx-auto card_row pb-4">    
-        <div class="pt-5 row card_view">
+        <div class="pt-5 col-md-12 row card_view">
             <div class="col-md col-sm-4">
                 <div class="card">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>

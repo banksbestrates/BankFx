@@ -17,6 +17,7 @@ function get_mortgage_overview() {
             mortgageData = obj.data;
             let trending_list = "";
             let related_list = "";
+            let overview_data = "";
                for (var i = 0; i < mortgageData.length; i++) {
                    if(mortgageData[i].div_type=="trending_article")
                    {
@@ -55,9 +56,20 @@ function get_mortgage_overview() {
                         '       </div>'+
                         '   </div>'
                    } 
+                   else if(mortgageData[i].div_type=="overview_heading")
+                   {
+                    overview_data = '<div class="col-md-10">'+
+                    '<h1>'+mortgageData[i].heading+'</h1>'+
+                    '<p>'+mortgageData[i].content+'</p>'+
+                    '</div>'+
+                    '<div class="col-md-2">'+
+                    '   <button class="btn btn-primary btn-sm" onclick="contentModel('+i+')">Edit </button>'+
+                    '</div>'
+                   } 
              }
             $("#trending_articles").html(trending_list);	
             $("#related_articles").html(related_list);	
+            $("#top_banner_text").html(overview_data);	
 
         }
     };
@@ -242,6 +254,61 @@ function updateHouseData(id)
                 return false;
             } else {
                 console.log(message);
+                swal(message, {
+                    buttons: false,
+                    timer: 2000,
+                });
+                location.reload();
+            }
+        }
+    };
+}
+
+//function content 
+function contentModel(i)
+{
+    let mortgage_data = mortgageData[i];
+    var modal_body= '<div class="form-group">'+
+                        '<label for="name">Heading</label>'+
+                        '<input type="text" class="form-control" id="edit_heading" placeholder="Enter Heading" value="'+mortgage_data.heading+'">'+
+                     '</div>'+
+                     '<div class="form-group ">'+
+                        '<label for="name">Content</label>'+
+                        '<textarea rows="5" class="form-control" placeholder="Add Content" id="edit_content">'+mortgage_data.content+'</textarea rows="5">'+
+                     '</div>'+
+                     '<div class="form-group">'+
+                        '<small class="error_message text-danger"></small>'+
+                    '</div>'
+                                    
+    $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
+    $(".modal-body").html(modal_body);
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateContent('+mortgage_data.id+')">Update</button>');
+    $(".modal").modal('show');
+    
+    // CKEDITOR.replace( 'editor' );
+}
+
+function updateContent(id)
+{
+    var heading   = $("#edit_heading").val();
+    var content   = $("#edit_content").val();
+    let formData = new FormData();
+    formData.append('content', content);
+    formData.append('heading', heading);
+    formData.append('id', id);
+    let url = baseUrl + "api/admin/update_mortgage_overview";
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.send(formData);
+    xhr.onload = function() {
+        if (xhr.status == 200) {
+            let obj = JSON.parse(xhr.responseText);
+            let status = obj.Status;
+            let message = obj.Message;
+            if (!status) {
+                $(".error_message").html(message);
+                return false;
+            } else {
                 swal(message, {
                     buttons: false,
                     timer: 2000,

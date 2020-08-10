@@ -10,41 +10,38 @@
     </div>
   </div>
  
-  
-
   <!-- Card view -->
-
-<div class="container card_row pb-4">    
-        <div class="pt-5  row card_view">
-            <div class="col-md-3">
+  <div class="container card_row pb-4">   
+        <div class="pt-5 col-md-12  row card_view ">
+              <div class="col-md-3">
+                  <div class="card pb-3">
+                  <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <a href="<?php echo base_url()?>index.php/mortgage_rates"><h6> Mortgage Rates</h6></a>
+                  </div>
+              </div>
+              <div class="col-md-3">
+              <div class="card pb-3">
+                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <a href="<?php echo base_url()?>index.php/refinance_rates"><h6>Refinance Rates</h6></a>
+                  </div>
+              </div>
+              <div class="col-md-3">
                 <div class="card pb-3">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <a href="<?php echo base_url()?>index.php/mortgage_rates"><h6> Mortgage Rates</h6></a>
-                </div>
-            </div>
-            <div class="col-md-3">
-            <div class="card pb-3">
+                <a href="<?php echo base_url()?>index.php/mortgage_calculator_list"><h6>Mortgage Calculators</h6></a>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
                   <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <a href="<?php echo base_url()?>index.php/refinance_rates"><h6>Refinance Rates</h6></a>
-                </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card pb-3">
-              <i class="fa fa-bar-chart" aria-hidden="true"></i>
-              <a href="<?php echo base_url()?>index.php/mortgage_calculator_list"><h6>Mortgage Calculators</h6></a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                <a href="<?php echo base_url()?>index.php/house_afford"><h6>How much house you can afford ?</h6></a>
-                </div>
-            </div>
+                  <a href="<?php echo base_url()?>index.php/house_afford"><h6>How much house you can afford ?</h6></a>
+                  </div>
+              </div>
         </div>
-</div> 
-
+      </div>
+  </div> 
   <!-- TRENDING IN BANKSSS -->
-<section id="portfolio" class="">
+  <section id="portfolio" class="">
     <div class="container">
         <header class="section-header pb-4">
           <h3 class="section-title">WHAT IS TRENDING IN HOUSE BUYING</h3>
@@ -70,7 +67,7 @@
           }?>
         </div>
     </div>
-</section>
+  </section>
   <!-- TRENDING IN BANKSSS -->
   <div class="container card_row">
         <header class="section-header">

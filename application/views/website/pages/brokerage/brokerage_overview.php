@@ -13,7 +13,7 @@
   <!-- Card view -->
 
   <div class="container card_row pb-4">    
-        <div class="pt-5 row card_view">
+        <div class=" col-md-12 pt-5 row card_view">
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
                     <div class="card-body px-5 pt-0">
