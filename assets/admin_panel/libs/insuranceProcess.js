@@ -266,7 +266,7 @@ function insuranceDataModel(i,type)
         '</div>'+
         '<div class="form-group ">'+
             '<label for="name">Content</label>'+
-            '<textarea rows="5" class="form-control" placeholder="Add Content" name="editor" id="data">'+insurance_data.content+'</textarea rows="5">'+
+            '<textarea rows="5" class="form-control" placeholder="Add Content" name="editor" id="data">'+insurance_data.content+'</textarea>'+
         '</div>'+
         '<div class="form-group">'+
             '<small class="error_message text-danger"></small>'+
@@ -313,6 +313,69 @@ function updateInsuranceData(id,type)
     formData.append('heading', heading);
     formData.append('id', id);
     let url = base_url;
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.send(formData);
+    xhr.onload = function() {
+        if (xhr.status == 200) {
+            let obj = JSON.parse(xhr.responseText);
+            let status = obj.Status;
+            let message = obj.Message;
+            if (!status) {
+                $(".error_message").html(message);
+                return false;
+            } else {
+                swal(message, {
+                    buttons: false,
+                    timer: 2000,
+                });
+                location.reload();
+            }
+        }
+    };
+}
+
+
+
+//=====================CONENT TOP BANNER====================//
+function contentModel(i)
+{
+    let insurance_data = insuranceData[i];
+    var modal_body= '<div class="form-group">'+
+                        '<label for="name">Heading</label>'+
+                        '<input type="text" class="form-control" id="edit_heading" placeholder="Enter Heading" value="'+insurance_data.heading+'">'+
+                     '</div>'+
+                     '<div class="form-group ">'+
+                        '<label for="name">Content</label>'+
+                        '<textarea rows="5" class="form-control" placeholder="Add Content" name="editor" id="data">'+insurance_data.content+'</textarea>'+
+                     '</div>'+
+                     '<div class="form-group">'+
+                        '<small class="error_message text-danger"></small>'+
+                    '</div>'
+                                    
+    $(".modal-dialog").addClass("modal-lg");                                   
+    $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
+    $(".modal-body").html(modal_body);
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button>'+
+    '<button class="btn btn-sm btn-primary" onclick="updateContent('+insurance_data.id+')">Update</button>');
+    $(".modal").modal('show');
+    
+    CKEDITOR.replace( 'editor' );
+   
+}
+
+function updateContent(id)
+{
+    var content= CKEDITOR.instances.data.getData();
+    if (content == "") {
+        alert("Enter Valid Content");
+    }
+    var heading   = $("#edit_heading").val();
+    let formData = new FormData();
+    formData.append('content', content);
+    formData.append('heading', heading);
+    formData.append('id', id);
+    let url = baseUrl + "api/admin/update_insurance_overview";
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.send(formData);

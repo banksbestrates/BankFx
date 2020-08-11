@@ -1,12 +1,16 @@
-
-  <!--==========================
+ <!--==========================
     over view banner
   ============================-->
   <div class="overview_banner">
-    <div class="banner_heading">
-    <h1 class="display-4">Loans Overview</h1>
-    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem hic<br/>
-    Its just a dummy text to show the design only  dummy textx dummy</h6>
+    <div class="banner_heading w-75 text-justify">
+        <?php if(count($page_data)>=1){
+              foreach($page_data as $d){
+                if($d->div_type == "overview_heading"){?>
+                  <h1 class="display-4"><?php echo $d->heading ?></h1>
+                  <p><?php echo $d->content ?></p>
+          <?php } 
+          }
+        }?>
     </div>
   </div>
  
@@ -16,31 +20,46 @@
         <div class="pt-5 col-md-12 row card_view">
             <div class="col-md col-sm-4">
                 <div class="card pb-2">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <div style="width:100%; text-align:center">
+                    <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/personal_loan.png" style="width:100px; height:100px;">
+                  </div>
+                <!-- <i class="fa fa-bar-chart" aria-hidden="true"></i> -->
                   <a href="<?php echo base_url()?>index.php/personal_loan"><h6>Personal Loans </h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
             <div class="card pb-2">
-                  <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <div style="width:100%; text-align:center">
+                    <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/home_equity.png" style="width:100px; height:100px;">
+                  </div>
+                  <!-- <i class="fa fa-bar-chart" aria-hidden="true"></i> -->
                   <a href="<?php echo base_url()?>index.php/personal_loan"><h6>Home Equity Loans</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
               <div class="card pb-2">
-              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <div style="width:100%; text-align:center">
+                    <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/auto_loan.png" style="width:100px; height:100px;">
+                  </div>
+              <!-- <i class="fa fa-bar-chart" aria-hidden="true"></i> -->
               <a href="<?php echo base_url()?>index.php/auto_loan"><h6>Auto Loans </h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-2">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <div style="width:100%; text-align:center">
+                    <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/student_loan.png" style="width:100px; height:100px;">
+                  </div>
+                <!-- <i class="fa fa-bar-chart" aria-hidden="true"></i> -->
                 <a href="<?php echo base_url()?>index.php/student_loan"><h6>Student Loan</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-2">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <div style="width:100%; text-align:center">
+                    <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/lender_review.png" style="width:100px; height:100px;">
+                  </div>
+                <!-- <i class="fa fa-bar-chart" aria-hidden="true"></i> -->
                 <a href="<?php echo base_url()?>leander_loan_review"><h6>Lender Review</h6></a>
                 </div>
             </div>
@@ -59,8 +78,7 @@
                   if($d->div_type == "trending_article"){?>
                       <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="position: absolute; left: 0px; top: 0px; visibility: visible; animation-name: fadeInUp;">
                           <div class="portfolio-wrap">
-                            <figure style="background-image:url('<?php echo base_url() . $d->image ?>');
-                                background-size:100% 100%;background-position:center">
+                            <figure style="background-image:url('<?php echo base_url() . $d->image ?>');" class="figure_image">
                             </figure>
                             <div class="portfolio-info">
                               <h4><?php echo $d->heading?></h4>

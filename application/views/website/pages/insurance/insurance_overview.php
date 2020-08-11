@@ -3,17 +3,22 @@
     over view banner
   ============================-->
   <div class="overview_banner">
-    <div class="banner_heading">
-    <h1 class="display-4">Insurance Overview</h1>
-    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem hic<br/>
-            Its just a dummy text to show the design only  dummy textx dummy</h6>
+    <div class="banner_heading w-75 text-justify">
+        <?php if(count($page_data)>=1){
+              foreach($page_data as $d){
+                if($d->div_type == "overview_heading"){?>
+                  <h1 class="display-4"><?php echo $d->heading ?></h1>
+                  <p><?php echo $d->content ?></p>
+          <?php } 
+          }
+        }?>
     </div>
   </div>
  
   <!-- Card view -->
 
   <div class="container  card_row pb-4">    
-        <div class="pt-5  row card_view">
+        <div class="pt-5 col-md-12  row card_view">
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
@@ -54,7 +59,7 @@
                      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="position: absolute; left: 0px; top: 0px; visibility: visible; animation-name: fadeInUp;">
                         <div class="portfolio-wrap">
                           <figure style="background-image:url('<?php echo base_url() . $d->image ?>');
-                              background-size:100% 100%;background-position:center">
+                             " class="figure_image">
                           </figure>
                           <div class="portfolio-info">
                             <h4><?php echo $d->heading?></h4>

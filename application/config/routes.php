@@ -130,6 +130,7 @@ $route['admin/investing/investing_overview']    = 'ADMIN/InvestingController/inv
 $route['admin/investing/best_investment']       = 'ADMIN/InvestingController/best_investment';
 $route['admin/retirement/retirement_overview']  = 'ADMIN/RetirementController/retirement_overview';
 $route['admin/home/homepage']                   = 'ADMIN/HomePageController/homepage';
+$route['admin/bank/bank_overview']              = 'ADMIN/BankController/bank_overview';
 $route['admin/insurance/insurance_overview']    = 'ADMIN/InsuranceController/insurance_overview';
 $route['admin/insurance/homeowner_insurance']   = 'ADMIN/InsuranceController/homeowner_insurance';
 $route['admin/insurance/auto_insurance']        = 'ADMIN/InsuranceController/auto_insurance';
@@ -191,6 +192,8 @@ $route['api/admin/get_life_insurance']              = 'API/Insurance/get_life_in
 $route['api/admin/update_life_insurance']           = 'API/Insurance/update_life_insurance';
 $route['api/admin/get_health_insurance']            = 'API/Insurance/get_health_insurance';
 $route['api/admin/update_health_insurance']         = 'API/Insurance/update_health_insurance';
+$route['api/admin/get_bank_overview']               = 'API/Bank/get_bank_overview';
+$route['api/admin/update_bank_overview']            = 'API/Bank/update_bank_overview';
 
 /*==============================WEB APIS===========================================*/
 $route['api/get_page_data']    =    'API/Pages/get_page_data';

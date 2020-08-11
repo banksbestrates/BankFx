@@ -2,11 +2,23 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Bank extends CI_Controller {
+	public function __construct()
+	{
+			parent::__construct();
+	$this->load->model('BankModel');	
+	}
 
 	public function bank_overview()
 	{
+		$bank_data = $this->BankModel->get_bank_overview();
+		if($bank_data['Status'])
+		{
+			$bank_data = $bank_data['data'];
+		}else{
+			$bank_data="";
+		}
 		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/bank/bank_overview');
+		$this->load->view('website/pages/bank/bank_overview',array("page_data"=>$bank_data));
 		$this->load->view('website/layout/footer');
     }
 	public function best_banks()

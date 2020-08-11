@@ -12,14 +12,20 @@
     font-weight:bold;
   }
   </style>
-  <!--==========================
+  
+   <!--==========================
     over view banner
   ============================-->
   <div class="overview_banner">
-    <div class="banner_heading">
-    <h1 class="display-4">Credit Card Overview</h1>
-    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem hic<br/>
-    Its just a dummy text to show the design only  dummy textx dummy</h6>
+    <div class="banner_heading w-75 text-justify">
+        <?php if(count($page_data)>=1){
+              foreach($page_data as $d){
+                if($d->div_type == "overview_heading"){?>
+                  <h1 class="display-4"><?php echo $d->heading ?></h1>
+                  <p><?php echo $d->content ?></p>
+          <?php } 
+          }
+        }?>
     </div>
   </div>
  

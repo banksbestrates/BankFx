@@ -194,28 +194,28 @@
                   <br/>
                   <h5 class="text-white px-3">Get the best rates</h5>
                   <li>
-                      <a href="<?php echo base_url()?>index.php/mortgage_rates">Mortgage Rates</a>
+                      <a href="<?php echo base_url()?>mortgage_rates">Mortgage Rates</a>
                   </li>
                   <li>
-                      <a href="#">30 -years Mortgage rates</a>
+                      <a href="<?php echo base_url()?>mortgage_rates">30 -years Mortgage rates</a>
                   </li>
                   <li>
-                      <a href="#">20 -years Mortgage rates</a>
+                      <a href="<?php echo base_url()?>mortgage_rates">20 -years Mortgage rates</a>
                   </li>
                   <li>
-                      <a href="#">15 -years Mortgage rates</a>
+                      <a href="<?php echo base_url()?>mortgage_rates">15 -years Mortgage rates</a>
                   </li>
                   <li>
-                      <a href="#">10 -years Mortgage rates</a>
+                      <a href="<?php echo base_url()?>mortgage_rates">10 -years Mortgage rates</a>
                   </li>
                   <li>
-                      <a href="<?php echo base_url()?>index.php/mortgage_fha">FHA Loan Rates</a>
+                      <a href="<?php echo base_url()?>mortgage_fha">FHA Loan Rates</a>
                   </li>
                   <li>
-                      <a href="<?php echo base_url() ?>index.php/mortgage_va_loan">VA Loan Rates</a>
+                      <a href="<?php echo base_url() ?>mortgage_va_loan">VA Loan Rates</a>
                   </li>
                   <li>
-                      <a href="<?php echo base_url() ?>index.php/mortgage_jumbo_loan">Jumbo Loan Rates</a>
+                      <a href="<?php echo base_url() ?>mortgage_jumbo_loan">Jumbo Loan Rates</a>
                   </li>
                   <li>
                       <a href="#">ARM Loan Rates</a>
@@ -223,39 +223,39 @@
                   <br/>
                   <h5 class="text-white px-3">Refinance your mortgage</h5>
                   <li>
-                      <a href="#">Refinance Rates</a>
+                      <a href="<?php echo base_url() ?>refinance_rates">Refinance Rates</a>
                   </li>
                   <li>
-                      <a href="#">30 -years Refinance rates</a>
+                      <a href="<?php echo base_url() ?>refinance_rates">30 -years Refinance rates</a>
                   </li>
                   <li>
-                      <a href="#">20 -years Refinance rates</a>
+                      <a href="<?php echo base_url() ?>refinance_rates">20 -years Refinance rates</a>
                   </li>
                   <li>
-                      <a href="#">15 -years Refinance rates</a>
+                      <a href="<?php echo base_url() ?>refinance_rates">15 -years Refinance rates</a>
                   </li>
                   <li>
-                      <a href="#">10 -years Refinance rates</a>
+                      <a href="<?php echo base_url() ?>refinance_rates">10 -years Refinance rates</a>
                   </li>
                   <li>
-                      <a href="#">FHA Refinance Rates</a>
+                      <a href="<?php echo base_url() ?>refinance_rates">FHA Refinance Rates</a>
                   </li>
                   <li>
-                      <a href="#">VA Refinance Rates</a>
+                      <a href="<?php echo base_url() ?>refinance_rates">VA Refinance Rates</a>
                   </li>
                   <li>
-                      <a href="#">Jumbo Refinance Rates</a>
+                      <a href="<?php echo base_url() ?>refinance_rates">Jumbo Refinance Rates</a>
                   </li>
                   <br/>
                   <h5 class="text-white px-3">Use calculators</h5>
                   <li>
-                      <a href="#">Mortgage Calculator</a>
+                      <a href="<?php echo base_url() ?>mortgage_calculator_list">Mortgage Calculator</a>
                   </li>
                   <li>
-                      <a href="#">Mortgage Refinance Calculator</a>
+                      <a href="<?php echo base_url() ?>mortgage_calculator">Mortgage Refinance Calculator</a>
                   </li>
                   <li>
-                      <a href="#">How much house you can afford?</a>
+                      <a href="<?php echo base_url() ?>house_afford">How much house you can afford?</a>
                   </li>
                   <li>
                       <a href="#">Amortization Calculator</a>
@@ -314,7 +314,7 @@
                 <i class="fa fa-university fa-2x pr-3" aria-hidden="true"></i>Banking</a>
                 <ul class="collapse list-unstyled" id="bankingSubmenu">
                 <li class="pt-3">
-                      <a href="<?php echo base_url()?>index.php/mortgage_overview">Banking Overview</a>
+                      <a href="<?php echo base_url()?>bank_overview">Banking Overview</a>
                   </li>
                   <br/>
                   <h5 class="text-white px-3">Compare accounts</h5>

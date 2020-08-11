@@ -1,8 +1,8 @@
-//mortgage module 
-let retirementData="";
-function get_retirement_overview() {
+//bank module 
+let bankData="";
+function get_bank_overview() {
     let formData = new FormData();
-    let url = baseUrl + "api/admin/get_retirement_overview";
+    let url = baseUrl + "api/admin/get_bank_overview";
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.send(formData);
@@ -13,22 +13,22 @@ function get_retirement_overview() {
             let message = obj.Message;
             if (!status) {
             }
-            retirementData = obj.data;
+            bankData = obj.data;
             let trending_list = "";
             let related_list = "";
             let overview_data = "";
-               for (var i = 0; i < retirementData.length; i++) {
-                if(retirementData[i].div_type=="trending_article")
+               for (var i = 0; i < bankData.length; i++) {
+                if(bankData[i].div_type=="trending_article")
                 {
                         trending_list = trending_list+ 
                         '   <div class="col-md-4">'+
                         '    <div class="card">'+
                         '        <div class="card-header px-0 py-0">'+
-                        '            <img src="'+baseUrl+retirementData[i].image+'" alt="" width="100%" >'+
+                        '            <img src="'+baseUrl+bankData[i].image+'" alt="" width="100%" >'+
                         '        </div>'+
                         '        <div class="card-block  text-center px-2 ">'+
-                        '            <h4 class=" font-weight-bold pt-2">'+retirementData[i].heading+'</h4>'+
-                        '            <p class="card-text">'+retirementData[i].content+'</p>'+
+                        '            <h4 class=" font-weight-bold pt-2">'+bankData[i].heading+'</h4>'+
+                        '            <p class="card-text">'+bankData[i].content+'</p>'+
                         '        </div>'+
                         '        <div class="w-100"></div>'+
                         '        <div class="card-footer text-center ">'+
@@ -37,17 +37,17 @@ function get_retirement_overview() {
                         '    </div>'+
                         '</div>'
                 }
-                else if(retirementData[i].div_type=="related_article")
+                else if(bankData[i].div_type=="related_article")
                 {
                         related_list = related_list+ 
                         '   <div class="col-md-12">'+
                         '       <div class="row">'+
                         '           <div class="col-md-5">'+
-                        '             <img src="'+baseUrl+retirementData[i].image+'" alt="" width="100%" >'+
+                        '             <img src="'+baseUrl+bankData[i].image+'" alt="" width="100%" >'+
                         '           </div>'+
                         '           <div class="col-md-5 py-4">'+
-                        '               <h3 class="text-dark">'+retirementData[i].heading+'</h3>'+
-                        '               <p>'+retirementData[i].content+'</p>'+
+                        '               <h3 class="text-dark">'+bankData[i].heading+'</h3>'+
+                        '               <p>'+bankData[i].content+'</p>'+
                         '           </div>'+
                         '           <div class="col-md-2">'+
                         '               <button class="btn btn-sm btn-primary" onclick="editOverviewModel('+i+')">Edit</button>'+
@@ -55,14 +55,14 @@ function get_retirement_overview() {
                         '       </div>'+
                         '   </div>'
                 } 
-                else if(retirementData[i].div_type=="overview_heading")
+                else if(bankData[i].div_type=="overview_heading")
                 {
                     overview_data = '<div class="col-md-10">'+
-                    '<h1>'+retirementData[i].heading+'</h1>'+
-                    '<p>'+retirementData[i].content+'</p>'+
+                    '<h1>'+bankData[i].heading+'</h1>'+
+                    '<p>'+bankData[i].content+'</p>'+
                     '</div>'+
                     '<div class="col-md-2">'+
-                    '   <button class="btn btn-primary btn-sm" onclick=contentModel('+i+')>Edit </button>'+
+                    '   <button class="btn btn-primary btn-sm" onclick="contentModel('+i+')">Edit </button>'+
                     '</div>'
                 } 
              }
@@ -84,14 +84,14 @@ function showImage(src,target) {
 }	
 function editOverviewModel(i)
 {
-    let retirement_data = retirementData[i];
+    let bank_data = bankData[i];
     var modal_body= '<div class="form-group">'+
                         '<label for="name">Heading</label>'+
-                        '<input type="text" class="form-control" id="edit_heading" placeholder="Enter Heading" value="'+retirement_data.heading+'">'+
+                        '<input type="text" class="form-control" id="edit_heading" placeholder="Enter Heading" value="'+bank_data.heading+'">'+
                      '</div>'+
                      '<div class="form-group ">'+
                         '<label for="name">Content</label>'+
-                        '<textarea class="form-control" placeholder="Add Content" id="edit_content">'+retirement_data.content+'</textarea>'+
+                        '<textarea class="form-control" placeholder="Add Content" id="edit_content">'+bank_data.content+'</textarea>'+
                      '</div>'+
 
                      '<div class="form-group">'+
@@ -101,7 +101,7 @@ function editOverviewModel(i)
                                 '<div class="col-md-6 col-sm-4">'+
                                     '<label class="imagecheck mb-4">'+
                                     '	<figure class="imagecheck-figure">'+
-                                    '		<img src="'+baseUrl+retirement_data.image+'" alt=" Image" class="imagecheck-image" id="target">'+
+                                    '		<img src="'+baseUrl+bank_data.image+'" alt=" Image" class="imagecheck-image" id="target">'+
                                     '	</figure>'+
                                     '</label>'+
                                 '</div>'+
@@ -113,7 +113,7 @@ function editOverviewModel(i)
                                     
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
-    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateOverview('+retirement_data.id+')">Update</button>');
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateOverview('+bank_data.id+')">Update</button>');
     $(".modal").modal('show');
 
     var src = document.getElementById("src");
@@ -147,7 +147,7 @@ function updateOverview(id)
     formData.append('heading',heading);
     formData.append('content',content);
     formData.append('id',id);
-    let url = baseUrl+"api/admin/update_retirement_overview";
+    let url = baseUrl+"api/admin/update_bank_overview";
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.send(formData);
@@ -169,27 +169,27 @@ function updateOverview(id)
     };
 }
 
-//=====================CONENT TOP BANNER====================//
+//function content 
 function contentModel(i)
 {
-    let retirement_data = retirementData[i];
+    let bank_data = bankData[i];
     var modal_body= '<div class="form-group">'+
                         '<label for="name">Heading</label>'+
-                        '<input type="text" class="form-control" id="edit_heading" placeholder="Enter Heading" value="'+retirement_data.heading+'">'+
+                        '<input type="text" class="form-control" id="edit_heading" placeholder="Enter Heading" value="'+bank_data.heading+'">'+
                      '</div>'+
                      '<div class="form-group ">'+
                         '<label for="name">Content</label>'+
-                        '<textarea rows="5" class="form-control" placeholder="Add Content" name="editor" id="data">'+retirement_data.content+'</textarea>'+
+                        '<textarea rows="5" class="form-control" placeholder="Add Content" name="editor" id="data">'+bank_data.content+'</textarea>'+
                      '</div>'+
                      '<div class="form-group">'+
                         '<small class="error_message text-danger"></small>'+
                     '</div>'
-
-    $(".modal-dialog").addClass("modal-lg");                          
+    $(".modal-dialog").addClass("modal-lg");                                       
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
-    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateContent('+retirement_data.id+')">Update</button>');
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateContent('+bank_data.id+')">Update</button>');
     $(".modal").modal('show');
+    
     CKEDITOR.replace( 'editor' );
 }
 
@@ -199,12 +199,12 @@ function updateContent(id)
     if (content == "") {
         alert("Enter Valid Content");
     }
-    var heading   = $("#edit_heading").val();
+    var heading   = $("#edit_heading").val();;
     let formData = new FormData();
     formData.append('content', content);
     formData.append('heading', heading);
     formData.append('id', id);
-    let url = baseUrl + "api/admin/update_retirement_overview";
+    let url = baseUrl + "api/admin/update_bank_overview";
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.send(formData);

@@ -257,6 +257,22 @@
 							</div>
 						</li>
 						<li class="nav-item" id="">
+							<a data-toggle="collapse" href="#bank">
+								<i class="flaticon-list"></i>
+								<p>Banking</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="bank">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="<?php echo base_url()?>admin/bank/bank_overview">
+											<span class="sub-item">Bank Overview Page</span>
+										</a>
+									</li>					
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item" id="">
 							<a data-toggle="collapse" href="#credit">
 								<i class="flaticon-list"></i>
 								<p>Credit Card</p>
@@ -344,6 +360,7 @@
 								</ul>
 							</div>
 						</li>
+
 						<li class="nav-item" id="">
 							<a data-toggle="collapse" href="#insurance">
 								<i class="flaticon-list"></i>
