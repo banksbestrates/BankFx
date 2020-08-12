@@ -123,37 +123,49 @@
             <div class="pt-5 col-md-12 mx-auto row card_view px-0">
                 <div class="col-md-2 px-1">
                     <div class="card px-1">
-                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/mortgage/card_icon/low_upfront.png" style="width:100px; height:100px;">
+                    </div>
                     <p>Low Upfront cart</p>
                     </div>
                 </div>
                 <div class="col-md-2 px-1">
                 <div class="card px-1">
-                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/mortgage/card_icon/first_time_home.png" style="width:100px; height:100px;">
+                    </div>
                     <p>First time homebuyer</p>
                     </div>
                 </div>
                 <div class="col-md-2 px-1">
                 <div class="card px-1">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/mortgage/card_icon/fha_loan.png" style="width:100px; height:100px;">
+                    </div>
                 <p>FHA Loan</p>
                     </div>
                 </div>
                 <div class="col-md-2 px-1">
                     <div class="card px-1">
-                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/mortgage/card_icon/quick_clock.png" style="width:100px; height:100px;">
+                    </div>
                     <p>Quick Clocking</p>
                     </div>
                 </div>
                 <div class="col-md-2 px-1">
                     <div class="card px-1">
-                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        <div style="width:100%; text-align:center">
+                        <img src="<?php echo base_url();?>assets/images/website/mortgage/card_icon/Veteran-Military.png" style="width:100px; height:100px;">
+                        </div>
                     <p>Veteran Military</p>
                     </div>
                 </div>
                 <div class="col-md-2 px-1">
                     <div class="card px-1">
-                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        <div style="width:100%; text-align:center">
+                        <img src="<?php echo base_url();?>assets/images/website/mortgage/card_icon/low_monthly_payment.png" style="width:100px; height:100px;">
+                        </div>
                     <p class="mb-0">Low Monthly Payment</p>
                     </div>
                 </div>

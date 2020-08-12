@@ -36,37 +36,49 @@
         <div class="pt-5 col-md-12 mx-auto row card_view">
             <div class="col-md">
                 <div class="card small_card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <a href="<?php echo base_url()?>index.php/best_credit_cards"><span>Best Credit Cards</span></a>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/best_credit.png" style="width:100px; height:100px;">
+                    </div>
+                    <a href="<?php echo base_url()?>index.php/best_credit_cards"><span>Best Credit Cards</span></a>
                 </div>
             </div>
             <div class="col-md">
                 <div class="card small_card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/balance_transfer.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>index.php/compare_card"><span>Balance Transfer</span></a>
                 </div>
             </div>
             <div class="col-md">
                 <div class="card small_card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/zero.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>index.php/best_credit_cards"><span>Zero ARP</span></a>
                 </div>
             </div>
             <div class="col-md">
                 <div class="card small_card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/no_annual_fee.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>index.php/best_credit_cards"><span>No Annual Fee</span></a>
                 </div>
             </div>
             <div class="col-md">
                 <div class="card small_card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/rewards.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>index.php/best_credit_cards"><span>Rewards</span></a>
                 </div>
             </div>
             <div class="col-md">
                 <div class="card small_card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                   <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/CashBack.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>index.php/best_credit_cards"><span>Cash Back</span></a>
                 </div>
             </div>   
@@ -75,37 +87,49 @@
         <div class="pt-5 col-md-12 mx-auto row card_view">
             <div class="col-md">
                 <div class="card small_card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/Travel.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>index.php/best_credit_cards"><span>Travel</span></a>
                 </div>
             </div>
             <div class="col-md">
                 <div class="card small_card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/Business.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>index.php/best_credit_cards"><span>Business</span></a>
                 </div>
             </div>
             <div class="col-md">
                 <div class="card small_card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/Student.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>index.php/best_credit_cards"><span>Student</span></a>
                 </div>
             </div>
             <div class="col-md">
                 <div class="card small_card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/Low_Interest.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>index.php/best_credit_cards"><span>Low Intrest</span></a>
                 </div>
             </div>
             <div class="col-md">
                 <div class="card small_card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/Secured.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>index.php/best_credit_cards"><span>Secured</span></a>
                 </div>
             </div>
             <div class="col-md">
                 <div class="card small_card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/PoorCredit.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>index.php/best_credit_cards"><span>Bad Credit</span></a>
                 </div>
             </div>

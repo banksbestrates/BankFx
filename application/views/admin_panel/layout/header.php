@@ -269,6 +269,16 @@
 											<span class="sub-item">Bank Overview Page</span>
 										</a>
 									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/bank/best_bank">
+											<span class="sub-item">Bank Banks</span>
+										</a>
+									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/bank/best_bank_review">
+											<span class="sub-item">Bank Bank Reviews</span>
+										</a>
+									</li>					
 								</ul>
 							</div>
 						</li>

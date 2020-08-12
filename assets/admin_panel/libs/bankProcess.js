@@ -1,8 +1,17 @@
 //bank module 
 let bankData="";
-function get_bank_overview() {
+function get_bank_overview(type="") {
+    let base_url = baseUrl + "api/admin/get_bank_overview";
+    if(type=="best_bank")
+    {
+        base_url = baseUrl + "api/admin/get_best_bank_overview";
+    }else if(type=="best_review")
+    {
+        base_url = baseUrl + "api/admin/get_best_bank_review_overview";
+    }
+
     let formData = new FormData();
-    let url = baseUrl + "api/admin/get_bank_overview";
+    let url = base_url;
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.send(formData);
@@ -62,7 +71,7 @@ function get_bank_overview() {
                     '<p>'+bankData[i].content+'</p>'+
                     '</div>'+
                     '<div class="col-md-2">'+
-                    '   <button class="btn btn-primary btn-sm" onclick="contentModel('+i+')">Edit </button>'+
+                    '   <button class="btn btn-primary btn-sm" onclick=contentModel('+i+',"'+type+'")>Edit </button>'+
                     '</div>'
                 } 
              }
@@ -170,7 +179,7 @@ function updateOverview(id)
 }
 
 //function content 
-function contentModel(i)
+function contentModel(i,type)
 {
     let bank_data = bankData[i];
     var modal_body= '<div class="form-group">'+
@@ -187,14 +196,24 @@ function contentModel(i)
     $(".modal-dialog").addClass("modal-lg");                                       
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
-    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateContent('+bank_data.id+')">Update</button>');
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick=updateContent('+bank_data.id+',"'+type+'")>Update</button>');
     $(".modal").modal('show');
     
     CKEDITOR.replace( 'editor' );
 }
 
-function updateContent(id)
+function updateContent(id,type="")
 {
+    let base_url = baseUrl + "api/admin/update_bank_overview";
+
+    if(type=="best_bank")
+    {
+        base_url = baseUrl + "api/admin/update_best_bank_overview";
+    }else if(type=="best_review")
+    {
+        base_url = baseUrl + "api/admin/update_best_bank_review_overview";
+    }
+
     var content= CKEDITOR.instances.data.getData();
     if (content == "") {
         alert("Enter Valid Content");
@@ -204,7 +223,7 @@ function updateContent(id)
     formData.append('content', content);
     formData.append('heading', heading);
     formData.append('id', id);
-    let url = baseUrl + "api/admin/update_bank_overview";
+    let url = base_url;
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.send(formData);
@@ -226,3 +245,4 @@ function updateContent(id)
         }
     };
 }
+

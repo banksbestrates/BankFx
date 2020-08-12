@@ -21,25 +21,33 @@
         <div class="pt-5 col-md-12  row card_view">
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <div style="width:100%; text-align:center">
+                  <img src="<?php echo base_url();?>assets/images/website/insurance/card_icon/Home-Insurance.png" style="width:100px; height:100px;">
+                </div>
                   <a href="<?php echo base_url()?>homeowner_insurance"><h6>Home Insurance</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
             <div class="card pb-3">
-                  <i class="fa fa-bar-chart" aria-hidden="true"></i>
+              <div style="width:100%; text-align:center">
+                  <img src="<?php echo base_url();?>assets/images/website/insurance/card_icon/Auto-Insurance.png" style="width:100px; height:100px;">
+                </div>
                   <a href="<?php echo base_url()?>auto_insurance"><h6>Auto Insurance</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
               <div class="card pb-3">
-              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+              <div style="width:100%; text-align:center">
+                  <img src="<?php echo base_url();?>assets/images/website/insurance/card_icon/Life-Insurance.png" style="width:100px; height:100px;">
+                </div>
               <a href="<?php echo base_url()?>life_insurance"><h6>Life Insurance</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
               <div class="card pb-3">
-              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+              <div style="width:100%; text-align:center">
+                  <img src="<?php echo base_url();?>assets/images/website/insurance/card_icon/Health-Insurance.png" style="width:100px; height:100px;">
+                </div>
               <a href="<?php echo base_url()?>health_insurance"><h6>Health Insurance</h6></a>
                 </div>
             </div>
@@ -58,8 +66,7 @@
                 if($d->div_type == "trending_article"){?>
                      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="position: absolute; left: 0px; top: 0px; visibility: visible; animation-name: fadeInUp;">
                         <div class="portfolio-wrap">
-                          <figure style="background-image:url('<?php echo base_url() . $d->image ?>');
-                             " class="figure_image">
+                          <figure style="background-image:url('<?php echo base_url() . $d->image ?>');" class="figure_image">
                           </figure>
                           <div class="portfolio-info">
                             <h4><?php echo $d->heading?></h4>

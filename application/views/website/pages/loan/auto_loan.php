@@ -15,31 +15,33 @@
         <div class="pt-5 col-md-12 mx-auto row card_view">
             <div class="col-md col-sm-4">
                 <div class="card pb-2">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/Loans-Calculator.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>index.php/mortgage_rates"><h6>Loan Calculator</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
-            <div class="card pb-2">
-                  <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <a href="<?php echo base_url()?>index.php/refinance_rates"><h6>Auto Loan Rates</h6></a>
-                </div>
-            </div>
-            <div class="col-md col-sm-4">
               <div class="card pb-2">
-              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <div style="width:100%; text-align:center">
+                    <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/auto_loan.png" style="width:100px; height:100px;">
+                </div>
               <a href="<?php echo base_url()?>index.php/mortgage_calculator_list"><h6>Auto Loan Rates</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-2">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/refinance_rate.png" style="width:100px; height:100px;">
+                    </div>
                 <a href="<?php echo base_url()?>index.php/house_afford"><h6>Current Intrest Rate</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-2">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/lender_review.png" style="width:100px; height:100px;">
+                    </div>
                 <a href="<?php echo base_url()?>index.php/house_afford"><h6>Lender Review</h6></a>
                 </div>
             </div>

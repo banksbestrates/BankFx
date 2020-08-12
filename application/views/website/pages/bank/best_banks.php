@@ -1,19 +1,23 @@
-
   <!--==========================
     over view banner
   ============================-->
   <div class="overview_banner">
-    <div class="banner_heading">
-    <h1 class="display-4">Best 100 Banks</h1>
-    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem hic<br/>
-        Its just a dummy text to show the design only  dummy textx dummy</h6>
+    <div class="banner_heading w-75 text-justify">
+        <?php if(count($page_data)>=1){
+              foreach($page_data as $d){
+                if($d->div_type == "overview_heading"){?>
+                  <h1 class="display-4"><?php echo $d->heading ?></h1>
+                  <p><?php echo $d->content ?></p>
+          <?php } 
+          }
+        }?>
     </div>
   </div>
 
 <div class="col-md-12">
   <div class="row bank_top_view">
     <div class="col-md-6 best_bank">
-    <a href="<?php echo base_url()?>index.php/best_banks"><h2>Bank 100 Banks</h2></a>
+    <a href="<?php echo base_url()?>index.php/best_banks"><h2>Best 100 Banks</h2></a>
     </div>
    <div class="col-md-6 bank_review">
    <a href="<?php echo base_url()?>best_bank_reviews"><h2>Best Bank Reviews</h2></a>
@@ -26,25 +30,33 @@
         <div class="pt-5 col-md-12 mx-auto row card_view">
             <div class="col-md-3">
                 <div class="card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/banking/card_icon/Best-Large-Banks.png" style="width:100px; height:100px;">
+                  </div>
                   <h6>Best Larg Banks</h6>
                 </div>
             </div>
             <div class="col-md-3">
             <div class="card">
-                  <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/banking/card_icon/Best-Online_Banks.png" style="width:100px; height:100px;">
+                  </div>
                   <h6>Best Online Bnaks</h6>
                 </div>
             </div>
             <div class="col-md-3">
               <div class="card">
-              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+              <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/banking/card_icon/Best-Credit_Unions.png" style="width:100px; height:100px;">
+                  </div>
                   <h6>Best Credit Unions</h6>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/banking/card_icon/Best-Regional-Banks.png" style="width:100px; height:100px;">
+                  </div>
                   <h6>Best Regional Banks</h6>
                 </div>
             </div>

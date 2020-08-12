@@ -20,25 +20,33 @@
         <div class="pt-5 col-md-12  row card_view ">
               <div class="col-md-3">
                   <div class="card pb-3">
-                  <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/mortgage/card_icon/mortgage_rates.png" style="width:100px; height:100px;">
+                    </div>
                     <a href="<?php echo base_url()?>index.php/mortgage_rates"><h6> Mortgage Rates</h6></a>
                   </div>
               </div>
               <div class="col-md-3">
-              <div class="card pb-3">
-                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <div class="card pb-3">
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/mortgage/card_icon/refinance_rate.png" style="width:100px; height:100px;">
+                    </div>
                     <a href="<?php echo base_url()?>index.php/refinance_rates"><h6>Refinance Rates</h6></a>
                   </div>
               </div>
               <div class="col-md-3">
                 <div class="card pb-3">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                <a href="<?php echo base_url()?>index.php/mortgage_calculator_list"><h6>Mortgage Calculators</h6></a>
+                  <div style="width:100%; text-align:center">
+                    <img src="<?php echo base_url();?>assets/images/website/mortgage/card_icon/mortgage_calculator.png" style="width:100px; height:100px;">
+                  </div>
+                  <a href="<?php echo base_url()?>index.php/mortgage_calculator_list"><h6>Mortgage Calculators</h6></a>
                   </div>
               </div>
               <div class="col-md-3">
                   <div class="card">
-                  <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/mortgage/card_icon/house_afford.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>index.php/house_afford"><h6>How much house you can afford ?</h6></a>
                   </div>
               </div>

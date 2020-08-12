@@ -131,6 +131,8 @@ $route['admin/investing/best_investment']       = 'ADMIN/InvestingController/bes
 $route['admin/retirement/retirement_overview']  = 'ADMIN/RetirementController/retirement_overview';
 $route['admin/home/homepage']                   = 'ADMIN/HomePageController/homepage';
 $route['admin/bank/bank_overview']              = 'ADMIN/BankController/bank_overview';
+$route['admin/bank/best_bank']                  = 'ADMIN/BankController/best_bank';
+$route['admin/bank/best_bank_review']           = 'ADMIN/BankController/best_bank_review';
 $route['admin/insurance/insurance_overview']    = 'ADMIN/InsuranceController/insurance_overview';
 $route['admin/insurance/homeowner_insurance']   = 'ADMIN/InsuranceController/homeowner_insurance';
 $route['admin/insurance/auto_insurance']        = 'ADMIN/InsuranceController/auto_insurance';
@@ -194,6 +196,10 @@ $route['api/admin/get_health_insurance']            = 'API/Insurance/get_health_
 $route['api/admin/update_health_insurance']         = 'API/Insurance/update_health_insurance';
 $route['api/admin/get_bank_overview']               = 'API/Bank/get_bank_overview';
 $route['api/admin/update_bank_overview']            = 'API/Bank/update_bank_overview';
+$route['api/admin/get_best_bank_overview']          = 'API/Bank/get_best_bank_overview';
+$route['api/admin/update_best_bank_overview']            = 'API/Bank/update_best_bank_overview';
+$route['api/admin/get_best_bank_review_overview']               = 'API/Bank/get_best_bank_review_overview';
+$route['api/admin/update_best_bank_review_overview']            = 'API/Bank/update_best_bank_review_overview';
 
 /*==============================WEB APIS===========================================*/
 $route['api/get_page_data']    =    'API/Pages/get_page_data';

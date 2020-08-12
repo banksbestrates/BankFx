@@ -6,6 +6,8 @@ class BankModel extends CI_Model
     public $response = array();
     
     public $tbl_bank_overview      = "bank_overview";
+    public $tbl_best_bank      = "best_bank";
+    public $tbl_best_bank_review      = "best_bank_review";
 
 
     public function __construct()
@@ -49,6 +51,75 @@ class BankModel extends CI_Model
         }
         return $this->send_error_response($this->config->item('data_update_failure'));
     }
+
+
+
+    //best bank get
+    public function get_best_bank_overview()
+    {
+        $this->db->select("*");
+        $this->db->from("$this->tbl_best_bank");
+        $exist = $this->db->get();
+        if ($exist->num_rows()) {
+            $responseData = $exist->result();
+            $response[$this->config->item('status')] = true;
+            $response[$this->config->item('message')] = $this->config->item('data_found_success');
+            $response[$this->config->item('baseUrl')] = base_url();
+            $response[$this->config->item('data')] = $responseData;
+            return $response;
+        }
+        return $this->send_error_response($this->config->item('data_found_failure'));
+    }
+      //update bank overview
+      public function update_best_bank($data)
+      {
+          $this->db->where('id',$data['id']);
+          $this->db->update($this->tbl_best_bank,$data);
+          $update = $this->db->affected_rows();
+          if($update)
+          {
+              $response[$this->config->item('status')] = true;
+              $response[$this->config->item('message')] = $this->config->item('data_update_success');
+              return $response;
+          }
+          return $this->send_error_response($this->config->item('data_update_failure'));
+      }
+
+
+    //bank overview
+    public function get_best_bank_review_overview()
+    {
+        $this->db->select("*");
+        $this->db->from("$this->tbl_best_bank_review");
+        $exist = $this->db->get();
+        if ($exist->num_rows()) {
+            $responseData = $exist->result();
+            $response[$this->config->item('status')] = true;
+            $response[$this->config->item('message')] = $this->config->item('data_found_success');
+            $response[$this->config->item('baseUrl')] = base_url();
+            $response[$this->config->item('data')] = $responseData;
+            return $response;
+        }
+        return $this->send_error_response($this->config->item('data_found_failure'));
+    }
+
+      //update bank overview
+      public function update_best_bank_review($data)
+      {
+          $this->db->where('id',$data['id']);
+          $this->db->update($this->tbl_best_bank_review,$data);
+          $update = $this->db->affected_rows();
+          if($update)
+          {
+              $response[$this->config->item('status')] = true;
+              $response[$this->config->item('message')] = $this->config->item('data_update_success');
+              return $response;
+          }
+          return $this->send_error_response($this->config->item('data_update_failure'));
+      }
+
+
+  
    
 
 //error message

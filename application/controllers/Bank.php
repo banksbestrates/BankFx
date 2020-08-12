@@ -23,14 +23,28 @@ class Bank extends CI_Controller {
     }
 	public function best_banks()
 	{
+		$bank_data = $this->BankModel->get_best_bank_overview();
+		if($bank_data['Status'])
+		{
+			$bank_data = $bank_data['data'];
+		}else{
+			$bank_data="";
+		}
 		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/bank/best_banks');
+		$this->load->view('website/pages/bank/best_banks',array("page_data"=>$bank_data));
 		$this->load->view('website/layout/footer');
 	}
 	public function best_bank_reviews()
 	{
+		$bank_data = $this->BankModel->get_best_bank_review_overview();
+		if($bank_data['Status'])
+		{
+			$bank_data = $bank_data['data'];
+		}else{
+			$bank_data="";
+		}
 		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/bank/best_bank_reviews');
+		$this->load->view('website/pages/bank/best_bank_reviews',array("page_data"=>$bank_data));
 		$this->load->view('website/layout/footer');
     }
 	public function branch_locator()

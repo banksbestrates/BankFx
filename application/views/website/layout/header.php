@@ -639,8 +639,8 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="<?php echo base_url()?>">Home</a></li>
-          <li><a href="<?php echo base_url()?>brokerage_overview">Best 100 Banks</a></li>
-          <li><a href="<?php echo base_url()?>retirement_overview">Ratings</a></li>
+          <li><a href="<?php echo base_url()?>best_banks">Best 100 Banks</a></li>
+          <li><a href="<?php echo base_url()?>best_bank_reviews">Ratings</a></li>
           <!-- <li class="menu-has-children"><a href="">Ratings</a>
             <ul>
               <li><a href="#">Banks Star Rating</a></li>

@@ -15,31 +15,41 @@
         <div class="pt-5 col-md-12 mx-auto row card_view">
             <div class="col-md col-sm-4">
                 <div class="card pb-2">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <a href="<?php echo base_url()?>index.php/mortgage_rates"><h6>Loan Calculator</h6></a>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/Loans-Calculator.png" style="width:100px; height:100px;">
+                    </div>
+                    <a href="<?php echo base_url()?>index.php/mortgage_rates"><h6>Loan Calculator</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
             <div class="card pb-2">
-                  <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/personal_loan.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>personal_loan_rate"><h6>Personal Loan Rates</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
               <div class="card pb-2">
-              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+              <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/Debt-Consolidation.png" style="width:100px; height:100px;">
+                    </div>
               <a href="<?php echo base_url()?>index.php/mortgage_calculator_list"><h6>Debt Consolidation</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-2">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/Poor-Credit.png" style="width:100px; height:100px;">
+                    </div>
                 <a href="<?php echo base_url()?>index.php/house_afford"><h6>Bad Credit</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-2">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/lender_review.png" style="width:100px; height:100px;">
+                    </div>
                 <a href="<?php echo base_url()?>index.php/house_afford"><h6>Lender Review</h6></a>
                 </div>
             </div>

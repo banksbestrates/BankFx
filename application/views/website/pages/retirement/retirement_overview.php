@@ -22,31 +22,41 @@
         <div class="pt-5 col-md-12 row card_view">
             <div class="col-md col-sm-4">
                 <div class="card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/retirement/card_icon/Retirement-Income-Calculator.png" style="width:100px; height:100px;">
+                    </div>
                   <a href="<?php echo base_url()?>index.php/personal_loan"><h6>Retirement Income Calculator</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
             <div class="card">
-                  <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/retirement/card_icon/Best-Savings-Account-Rates.png" style="width:100px; height:100px;">
+                  </div>
                   <a href="<?php echo base_url()?>index.php/personal_loan"><h6>Best Savings Account Rates</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
               <div class="card pb-3">
-              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/retirement/card_icon/401K-Calculator.png" style="width:100px; height:100px;">
+                  </div>
               <a href="<?php echo base_url()?>index.php/auto_loan"><h6>41k Calculator</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
                 <div class="card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/retirement/card_icon/Social-Security-Calculator.png" style="width:100px; height:100px;">
+                    </div>
                 <a href="<?php echo base_url()?>index.php/student_loan"><h6>Social Security Calculator</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/retirement/card_icon/Best-Retirement-Plans.png" style="width:100px; height:100px;">
+                    </div>
                 <a href="<?php echo base_url()?>index.php/student_loan"><h6>Best Retirement Plans</h6></a>
                 </div>
             </div>
