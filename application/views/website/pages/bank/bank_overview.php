@@ -2,7 +2,7 @@
     over view banner
   ============================-->
   <div class="overview_banner">
-    <div class="banner_heading w-75 text-justify">
+    <div class="banner_heading">
         <?php if(count($page_data)>=1){
               foreach($page_data as $d){
                 if($d->div_type == "overview_heading"){?>
@@ -14,42 +14,50 @@
     </div>
   </div>
  
-<div class="col-md-12 mx-0">
-  <div class="row bank_top_view">
-    <div class="col-md-6 best_bank">
-    <a href="<?php echo base_url()?>best_banks"><h2>Bank 100 Banks</h2></a>
-    </div>
-   <div class="col-md-6 bank_review">
-   <a href="<?php echo base_url()?>best_bank_reviews"><h2>Best Bank Reviews</h2></a>
-    </div>
+  <div class="">
+        <div class="col-md-12 row px-0 mx-0">
+            <div class="col-md-6 best_bank">
+              <a href="<?php echo base_url()?>best_banks"><h2>Bank 100 Banks</h2></a>
+            </div>
+            <div class="col-md-6 bank_review">
+              <a href="<?php echo base_url()?>/best_bank_reviews"><h2>Best Bank Reviews</h2></a>
+            </div>
+        </div>
   </div>
-</div>
 
   <!-- Card view -->
 
   <div class="container card_row">
-        <div class="col-md-12 mx-auto row card_view">
+        <div class=" pt-5 col-md-12 mx-auto row card_view">
             <div class="col-md-3">
                 <div class="card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                  <h6>Best CD<br/>Rates</h6>
+                  <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/banking/card_icon/Best-CD-Rates.png" style="width:100px; height:100px;">
+                  </div>
+                  <h6>Best CD<br/> Rates</h6>
                 </div>
             </div>
             <div class="col-md-3">
             <div class="card">
-                  <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/banking/card_icon/Best-Savings-Account-Rates.png" style="width:100px; height:100px;">
+                  </div>
                   <h6>Best Saving<br/>Account Rates</h6>
                 </div>
             </div>
             <div class="col-md-3">
               <div class="card">
-              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/banking/card_icon/Best-Money-Market-Rates.png" style="width:100px; height:100px;">
+                  </div>
                 <a href="<?php echo base_url()?>best_money_market">  <h6>Best Money Market <br/>Account Rates</h6></a>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
-                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <div style="width:100%; text-align:center">
+                      <img src="<?php echo base_url();?>assets/images/website/banking/card_icon/Best-Checking-Rates.png" style="width:100px; height:100px;">
+                  </div>
                   <h6>Best Checking<br/>Account Rates</h6>
                 </div>
             </div>
@@ -143,6 +151,5 @@
         }
       }?>
   </div> 
-   
 
  

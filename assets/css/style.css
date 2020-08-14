@@ -332,12 +332,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1024px) {
-  #nav-menu-container {
+  /* #nav-menu-container {
     padding-right: 60px;
-  }
+  } */
+  
 }
 
 @media (max-width: 768px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+@media (max-width: 911px) {
   #nav-menu-container {
     display: none;
   }
@@ -356,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+/* .nav-menu li:hover > a, .nav-menu > .menu-active > a {
   color: white;
   border: 1px solid #D79F01;
   padding-top: 10px;
@@ -365,6 +371,19 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 30px;
   margin-top:-5px;
   background-color: #D79F01;
+} */
+.nav-menu li:hover> a{
+color:#D79F01
+}
+ .nav-menu > .menu-active > a {
+  color: white;
+  /* border: 1px solid #D79F01; */
+  /* padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 30px;
+  margin-top:-5px; */
+  /* background-color: #D79F01; */
 }
 
 .nav-menu > li {
@@ -420,6 +439,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+@media (max-width: 911px) {
   #mobile-nav-toggle {
     display: inline;
   }
@@ -522,6 +546,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 /* Sections Header
 --------------------------------*/
+.w-35 {
+  width:35%!important;
+}
 .section-header h3 {
   font-size: 32px;
   color: #111;
@@ -1481,7 +1508,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   rgba(0, 0, 0, 0.6)
   ), */
   url("../img/overview/overview_banner.png");
-background-size: 100% 100%;
+background-size: cover;
 width: 100%;
 height: 380px;
 /* margin: 10px 0 0 10px; */
@@ -1494,11 +1521,14 @@ margin: 0;
 position: absolute;
 top: 18%;
 left: 10%;
+width:75%;
+text-align: justify;
 }
 .banner_heading h1{
 font-weight: 900!important;
 color: black!important;
 font-size:2.6rem!important;
+text-align: left!important;
 }
 .banner_heading p{
 text-align:justify;
@@ -1600,7 +1630,8 @@ background-image:url('../img/overview/editor_pick1.png');
 background-repeat: no-repeat;
 height: 270px;
 width: 100%;
-background-size:cover;
+/* background-size:cover; */
+background-size:100% 100%;
 }
 
 .figure_image{
@@ -1635,9 +1666,11 @@ font-size:40px;
 .table td , .table th{
   border-bottom:1px solid #D79F01;
   border-top:none; 
+  color:#626262
 }
 .table thead th{
   border-bottom:1px solid #D79F01;
+  color:#626262!important;
 }
 
 .table > tbody > tr > td {
@@ -1650,18 +1683,6 @@ font-size:40px;
 .active td{
   padding-top:30px;
   padding-bottom:30px;
-}
-.button_yellow{
-  color:white;
-  background-color:#D79F01;
-}
-.button_grey{
-  color:white;
-  background-color:#626262;
-}
-.button_green{
-  color:white;
-  background-color:#c0ce21;
 }
 .button_blue{
   color:white;
@@ -1678,11 +1699,9 @@ font-size:40px;
 }
 .text_ligth_yellow{
   color:#E6C245;
-
 }
 .text_blue{
   color:#002A75;
-  
 }
 .text_green{
  color:#c0ce21!important;
@@ -1819,8 +1838,13 @@ font-size:40px;
 .no_border {
     border: none !important;
 }
-
-
+.clickable_map_dimension{
+  width:"80%";
+  height:"525";
+}
+#message{
+  display:none;
+}
 
 .mortgag_form_div{
   background-color:black;
@@ -2121,7 +2145,6 @@ border:1px solid #D79F01!important;
 .background_light_grey{
   background-color:#6C6C6C0D;
 }
-
 .credit_starts .fa{
   font-size:24px;
 }
@@ -2137,4 +2160,131 @@ border:1px solid #D79F01!important;
 }
 .background_blue{
   background-color:#0374A1;
+}
+
+
+/* About us */
+
+.heading_main{
+  padding: 100px 80px 100px 130px;
+}
+.about_container{
+  padding: 40px 80px 20px 80px;
+  text-align:justify;
+  line-height:2.0rem;
+}
+.bank_best_rates{
+  color:#D79F01;
+  font-weight:bold;
+}
+
+@media (max-width: 768px) {
+  .heading_main{
+    padding: 36px 18px 40px 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .heading_main{
+    padding: 36px 18px 40px 18px;
+  }
+}
+
+
+
+/* media query */
+
+@media only screen and (max-width: 480px) {
+  .related_image{
+      height:145px;
+  }
+  .banner_heading {
+    margin: 0;
+    position: absolute;
+    top: 9%;
+    left: 10%;
+    text-align:left;
+    width:85%;
+  }
+  .banner_heading h1 {
+    font-size: 2.0rem!important;
+  }
+  .best_bank h2 {
+    left: 13%;
+    padding: 1px 20px;
+  }
+  .bank_review h2 {
+    left: 6%;
+    padding: 0px 20px;
+  }
+  .related_content {
+    padding: 8px 10px 10px 10px;
+  }
+  .related_content h4{
+    font-size:18px!important;
+  }
+  .related_content p{
+    font-size:14px!important;
+    margin-bottom:2px!important;
+  }
+  .responsive_inline{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .container iframe{
+    height:auto!important;
+    width:100%!important;
+  }
+  iframe #message, iframe #title{
+    color:white!important;
+  }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  {
+    .banner_heading h1 {
+      font-size: 2.5rem!important;
+    }
+    .related_image {
+      height: 237px;
+      background-size:100% 100%;
+    }
+    .nav-menu a {
+      padding: 0 0px -1px 8px;
+    }
+}
+
+.form-control{
+  line-height:1.5;
+}
+.button_grey{
+    color:white;
+    background-color:#626262;
+}
+.calculator_list ul li{
+    line-height:2.0;
+    font-size:18px;
+}
+
+
+/* screen size 768 */
+
+@media (max-width: 768px) {
+    .best_bank h2 {
+      top: 31%;
+      left: 16%;
+      padding: 1px 10px;
+  }
+  .bank_review h2 {
+    top: 30%;
+    left: 10%;
+    padding: 0px 7px;
+}
 }

@@ -14,16 +14,16 @@
     </div>
   </div>
 
-<div class="col-md-12">
-  <div class="row bank_top_view">
-    <div class="col-md-6 best_bank">
-    <a href="<?php echo base_url()?>best_banks"><h2>Best 100 Banks</h2></a>
-    </div>
-   <div class="col-md-6 bank_review">
-   <a href="<?php echo base_url()?>best_banks"><h2>Best Bank Reviews</h2></a>
-    </div>
+  <div class="">
+        <div class="col-md-12 row px-0 mx-0">
+            <div class="col-md-6 best_bank">
+              <a href="<?php echo base_url()?>best_banks"><h2>Bank 100 Banks</h2></a>
+            </div>
+            <div class="col-md-6 bank_review">
+              <a href="<?php echo base_url()?>/best_bank_reviews"><h2>Best Bank Reviews</h2></a>
+            </div>
+        </div>
   </div>
-</div>
 
 <!-- Card view -->
 <div class="container  card_row">
