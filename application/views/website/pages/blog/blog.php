@@ -27,8 +27,8 @@
 <!-- TRENDING IN BANKSSS -->
 <section id="portfolio" class="pb-5">
     <div class="container">
-        <div class="row portfolio-container" style="position: relative; height: 1080px;">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="position: absolute; left: 0px; top: 0px; visibility: visible; animation-name: fadeInUp;">
+        <div class="row portfolio-container" >
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
             <div class="portfolio-wrap">
               <figure style="background-image:url('<?php echo base_url()?>assets/img/portfolio/app1.jpg');
                 background-size:100% 100%;background-position:center">

@@ -1,46 +1,13 @@
-<!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-<script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],      
-          ['Sleep',    7]
-        ]);
-
-        var options = {       
-          pieHole: 0.5,
-          colors: ['#e0440e', '#e6693e', '#D79F01'],
-          pieSliceTextStyle: {
-            color: 'black',
-          },
-          legend: 'none'
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-        chart.draw(data, options);
-      }
-</script> -->
-
-<style>
-
-.progress_div p{
-    font-size:18px;
-}
-
-</style>
 <!-- Bank Review -->
 <div class="col-md-10 mx-auto py-5">
     <div class="row">
         <div class="col-md-8">
-            <h1 class="font-weight-bold mb-2">Mortgage Calculator</h1>
-            <p>Published on July 30. Do you want to get more information ?</p>
+            <h1 class="font-weight-900 mb-2">Mortgage Calculator</h1>
+            <p>Published on <?php echo date('M d')?>. Do you want to get more information ?</p>
         </div>
         <div class="col-md-4 text-right pt-3">
-            <button class="btn button_green">DOWNLOAD OUR APP</button>
+            <button class="btn button_blue btn-sm">DOWNLOAD OUR APP</button>
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 
 <style>
-.card p {
+/* .card p {
     color:black;
     font-weight:bold;
 }
@@ -49,24 +49,25 @@
 .border_bottom_golden{
     border-bottom:2px solid #D79F01;
     padding-bottom:10px;
-}
+} */
 </style>
-<!-- TOP NAME DIV -->
-<div class="col-md-10 mx-auto pt-5 pb-4">
-    <div class="row">
-        <div class="col-md-9">
-            <h1 class=" font-weight-900 mb-2">Best Refinance Rates for July 2020</h1>
-            <p>Published on July 30. Do you want to get more information ?</p>
-        </div>
-        <div class="col-md-3 text-right pt-3">
-            <button class="btn button_blue btn-sm">DOWNLOAD OUR APP</button>
+
+    <!-- TOP NAME DIV -->
+    <div class="container pt-5 pb-4">
+        <div class="row">
+            <div class="col-md-9">
+                <h1 class=" font-weight-900 mb-2">Best Refinance Rates for <?php echo date('M Y')?></h1>
+                <p>Published on <?php echo date('M d')?>. Do you want to get more information ?</p>
+            </div>
+            <div class="col-md-3 text-right pt-3">
+                <button class="btn button_blue btn-sm">DOWNLOAD OUR APP</button>
+            </div>
         </div>
     </div>
-</div>
 
     <!-- Calculate form div -->
     <div class="col-md-12 py-4 mortgag_form_div">
-        <div class="col-md-10 mx-auto px-0 ">
+        <div class="container px-0 ">
             <div class="row">
                 <div class="col-md-2">
                         <label>Mortgage type</label>
@@ -116,7 +117,7 @@
     </div> 
 
     <!-- card view -->
-    <div class="col-md-10 mx-auto card_row pb-4 pt-5">  
+    <div class="container card_row pb-4 pt-5">  
             <header class="section-header">
                 <h3 class="font-weight-900 mb-0">WHAT’S MOST IMPORTANT TO YOU?</h3>
             </header> 
@@ -172,322 +173,316 @@
             </div>
     </div> 
     <!--  table view  -->
-    <div class="col-md-10 mx-auto px-0 py-5 ">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th class="w-25">BANK</th>
-                        <th class="w-25">APY</th>             
-                        <th class="w-25">TERM</th>
-                        <th class="w-25">DEPOSIT </th>
-                        <th class="w-25">EARNINGS</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="active">
-                        <td>
-                        <img src="<?php echo base_url()?>assets/img/overview/bank1.png"/><br/>
-                        </td>
-                        <td>
-                            <h4>1.15%</h4>
-                        </td>
-                        <td>
-                            <h4>1 yr</h4>
-                        </td>
-                        <td>
-                            <h4>$1000</h4>
-                        </td>
-                        <td>
-                            <h4>$400</h4>
-                        </td>
-                        <td>
-                            <h4><button class="btn button_yellow btn-sm">SEE OFFER DETAILS</button></h4>
-                        </td>              
-                    </tr>       
-                    <tr>
-                        <td>
-                        BANK NAME<br/>
-                        MLS 123456<br/>
-                        12345678
-                        </td>
-                        <td>
-                            1.15%
-                        </td>
-                        <td>
-                            1 yr
-                        </td>
-                        <td>
-                            $1000
-                        </td>
-                        <td>
-                            $400
-                        </td>
-                        <td>
-                            <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
-                        </td>              
-                    </tr>       
-                    <tr>
-                        <td>
-                        BANK NAME<br/>
-                        MLS 123456<br/>
-                        12345678
-                        </td>
-                        <td>
-                            1.15%
-                        </td>
-                        <td>
-                            1 yr
-                        </td>
-                        <td>
-                            $1000
-                        </td>
-                        <td>
-                            $400
-                        </td>
-                        <td>
-                            <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
-                        </td>              
-                    </tr>       
-                    <tr>
-                        <td>
-                        BANK NAME<br/>
-                        MLS 123456<br/>
-                        12345678
-                        </td>
-                        <td>
-                            1.15%
-                        </td>
-                        <td>
-                            1 yr
-                        </td>
-                        <td>
-                            $1000
-                        </td>
-                        <td>
-                            $400
-                        </td>
-                        <td>
-                            <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
-                        </td>              
-                    </tr>       
-                    <tr>
-                        <td>
-                        BANK NAME<br/>
-                        MLS 123456<br/>
-                        12345678
-                        </td>
-                        <td>
-                            1.15%
-                        </td>
-                        <td>
-                            1 yr
-                        </td>
-                        <td>
-                            $1000
-                        </td>
-                        <td>
-                            $400
-                        </td>
-                        <td>
-                            <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
-                        </td>              
-                    </tr>       
-                    <tr>
-                        <td>
-                        BANK NAME<br/>
-                        MLS 123456<br/>
-                        12345678
-                        </td>
-                        <td>
-                            1.15%
-                        </td>
-                        <td>
-                            1 yr
-                        </td>
-                        <td>
-                            $1000
-                        </td>
-                        <td>
-                            $400
-                        </td>
-                        <td>
-                            <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
-                        </td>              
-                    </tr>       
-                    <tr>
-                        <td>
-                        BANK NAME<br/>
-                        MLS 123456<br/>
-                        12345678
-                        </td>
-                        <td>
-                            1.15%
-                        </td>
-                        <td>
-                            1 yr
-                        </td>
-                        <td>
-                            $1000
-                        </td>
-                        <td>
-                            $400
-                        </td>
-                        <td>
-                            <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
-                        </td>              
-                    </tr>       
-                    <tr>
-                        <td>
-                        BANK NAME<br/>
-                        MLS 123456<br/>
-                        12345678
-                        </td>
-                        <td>
-                            1.15%
-                        </td>
-                        <td>
-                            1 yr
-                        </td>
-                        <td>
-                            $1000
-                        </td>
-                        <td>
-                            $400
-                        </td>
-                        <td>
-                            <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
-                        </td>              
-                    </tr>       
-                    <tr>
-                        <td>
-                        BANK NAME<br/>
-                        MLS 123456<br/>
-                        12345678
-                        </td>
-                        <td>
-                            1.15%
-                        </td>
-                        <td>
-                            1 yr
-                        </td>
-                        <td>
-                            $1000
-                        </td>
-                        <td>
-                            $400
-                        </td>
-                        <td>
-                            <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
-                        </td>              
-                    </tr>       
-                    <tr>
-                        <td>
-                        BANK NAME<br/>
-                        MLS 123456<br/>
-                        12345678
-                        </td>
-                        <td>
-                            1.15%
-                        </td>
-                        <td>
-                            1 yr
-                        </td>
-                        <td>
-                            $1000
-                        </td>
-                        <td>
-                            $400
-                        </td>
-                        <td>
-                            <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
-                        </td>              
-                    </tr>       
-                </tbody>  
-            </table>   
-            <small class="pb-4">This line can  be used to  as a desclaimer fo the user ,so that user will be upto date dummy data etc </small>
+    <div class="container py-5 ">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="w-25">BANK</th>
+                                <th class="w-25">APY</th>             
+                                <th class="w-25">TERM</th>
+                                <th class="w-25">DEPOSIT </th>
+                                <th class="w-25">EARNINGS</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="active">
+                                <td>
+                                <img src="<?php echo base_url()?>assets/img/overview/bank1.png"/><br/>
+                                </td>
+                                <td>
+                                    <h4>1.15%</h4>
+                                </td>
+                                <td>
+                                    <h4>1 yr</h4>
+                                </td>
+                                <td>
+                                    <h4>$1000</h4>
+                                </td>
+                                <td>
+                                    <h4>$400</h4>
+                                </td>
+                                <td>
+                                    <h4><button class="btn button_yellow btn-sm">SEE OFFER DETAILS</button></h4>
+                                </td>              
+                            </tr>       
+                            <tr>
+                                <td>
+                                BANK NAME<br/>
+                                MLS 123456<br/>
+                                12345678
+                                </td>
+                                <td>
+                                    1.15%
+                                </td>
+                                <td>
+                                    1 yr
+                                </td>
+                                <td>
+                                    $1000
+                                </td>
+                                <td>
+                                    $400
+                                </td>
+                                <td>
+                                    <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
+                                </td>              
+                            </tr>       
+                            <tr>
+                                <td>
+                                BANK NAME<br/>
+                                MLS 123456<br/>
+                                12345678
+                                </td>
+                                <td>
+                                    1.15%
+                                </td>
+                                <td>
+                                    1 yr
+                                </td>
+                                <td>
+                                    $1000
+                                </td>
+                                <td>
+                                    $400
+                                </td>
+                                <td>
+                                    <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
+                                </td>              
+                            </tr>       
+                            <tr>
+                                <td>
+                                BANK NAME<br/>
+                                MLS 123456<br/>
+                                12345678
+                                </td>
+                                <td>
+                                    1.15%
+                                </td>
+                                <td>
+                                    1 yr
+                                </td>
+                                <td>
+                                    $1000
+                                </td>
+                                <td>
+                                    $400
+                                </td>
+                                <td>
+                                    <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
+                                </td>              
+                            </tr>       
+                            <tr>
+                                <td>
+                                BANK NAME<br/>
+                                MLS 123456<br/>
+                                12345678
+                                </td>
+                                <td>
+                                    1.15%
+                                </td>
+                                <td>
+                                    1 yr
+                                </td>
+                                <td>
+                                    $1000
+                                </td>
+                                <td>
+                                    $400
+                                </td>
+                                <td>
+                                    <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
+                                </td>              
+                            </tr>       
+                            <tr>
+                                <td>
+                                BANK NAME<br/>
+                                MLS 123456<br/>
+                                12345678
+                                </td>
+                                <td>
+                                    1.15%
+                                </td>
+                                <td>
+                                    1 yr
+                                </td>
+                                <td>
+                                    $1000
+                                </td>
+                                <td>
+                                    $400
+                                </td>
+                                <td>
+                                    <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
+                                </td>              
+                            </tr>       
+                            <tr>
+                                <td>
+                                BANK NAME<br/>
+                                MLS 123456<br/>
+                                12345678
+                                </td>
+                                <td>
+                                    1.15%
+                                </td>
+                                <td>
+                                    1 yr
+                                </td>
+                                <td>
+                                    $1000
+                                </td>
+                                <td>
+                                    $400
+                                </td>
+                                <td>
+                                    <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
+                                </td>              
+                            </tr>       
+                            <tr>
+                                <td>
+                                BANK NAME<br/>
+                                MLS 123456<br/>
+                                12345678
+                                </td>
+                                <td>
+                                    1.15%
+                                </td>
+                                <td>
+                                    1 yr
+                                </td>
+                                <td>
+                                    $1000
+                                </td>
+                                <td>
+                                    $400
+                                </td>
+                                <td>
+                                    <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
+                                </td>              
+                            </tr>       
+                            <tr>
+                                <td>
+                                BANK NAME<br/>
+                                MLS 123456<br/>
+                                12345678
+                                </td>
+                                <td>
+                                    1.15%
+                                </td>
+                                <td>
+                                    1 yr
+                                </td>
+                                <td>
+                                    $1000
+                                </td>
+                                <td>
+                                    $400
+                                </td>
+                                <td>
+                                    <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
+                                </td>              
+                            </tr>       
+                            <tr>
+                                <td>
+                                BANK NAME<br/>
+                                MLS 123456<br/>
+                                12345678
+                                </td>
+                                <td>
+                                    1.15%
+                                </td>
+                                <td>
+                                    1 yr
+                                </td>
+                                <td>
+                                    $1000
+                                </td>
+                                <td>
+                                    $400
+                                </td>
+                                <td>
+                                    <h4><button class="btn button_blue btn-sm">SEE OFFER DETAILS</button></h4>
+                                </td>              
+                            </tr>       
+                        </tbody>  
+                    </table>   
+                </div>
+                <small class="pb-4">This line can  be used to  as a desclaimer fo the user ,so that user will be upto date dummy data etc </small> 
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
     </div>
      
-   <!-- How rates are calculated -->
-    <div class="col-md-10 mx-auto px-0 py-3 ">
-       <h3 class="border_bottom_golden font-weight-900"><?php echo $page_data->heading?></h3>
-       <p><?php echo $page_data->content?></p>
-    </div>
-
     <!-- current mortgage and refine rates -->
-    <div class="col-md-10 mx-auto px-0 py-3 ">
-       <h3 class="font-weight-900">Current Mortgage and Refinance Rates</h3>
-       <table class="table">
-            <thead>
-                <tr>
-                    <th class="w-75">PRODUCT</th>
-                    <th>Interest Rate</th>             
-                    <th>ARP</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="w-75">30 -Years Fixed Rates</td>  
-                    <th>1.15%</th>             
-                    <th>1.15%</th>       
-                </tr>  
-                <tr>
-                    <td class="w-75">30 -Years Fixed Rates</td>  
-                    <th>1.15%</th>             
-                    <th>1.15%</th>       
-                </tr>  
-                <tr>
-                    <td class="w-75">30 -Years Fixed Rates</td>  
-                    <th>1.15%</th>             
-                    <th>1.15%</th>       
-                </tr>  
-                <tr>
-                    <td class="w-75">30 -Years Fixed Rates</td>  
-                    <th>1.15%</th>             
-                    <th>1.15%</th>       
-                </tr>  
-                <tr>
-                    <td class="w-75">30 -Years Fixed Rates</td>  
-                    <th>1.15%</th>             
-                    <th>1.15%</th>       
-                </tr>  
-                <tr>
-                    <td class="w-75">30 -Years Fixed Rates</td>  
-                    <th>1.15%</th>             
-                    <th>1.15%</th>       
-                </tr>  
-                <tr>
-                    <td class="w-75">30 -Years Fixed Rates</td>  
-                    <th>1.15%</th>             
-                    <th>1.15%</th>       
-                </tr>  
-                <tr>
-                    <td class="w-75">30 -Years Fixed Rates</td>  
-                    <th>1.15%</th>             
-                    <th>1.15%</th>       
-                </tr>  
-                       
-            </tbody>  
-        </table>   
-        <p>* This line can  be used to  as a desclaimer fo the user ,so that user will be upto date dummy data etc </p>
-     
-       </p>
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-md-10">
+                <h3 class="border_bottom_golden font-weight-900"><?php echo $page_data->heading?></h3>
+                <p><?php echo $page_data->content?></p>
+                <h3 class="font-weight-900">Current Mortgage and Refinance Rates</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="w-75">PRODUCT</th>
+                                <th>Interest Rate</th>             
+                                <th>ARP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="w-75">30 -Years Fixed Rates</td>  
+                                <th>1.15%</th>             
+                                <th>1.15%</th>       
+                            </tr>  
+                            <tr>
+                                <td class="w-75">30 -Years Fixed Rates</td>  
+                                <th>1.15%</th>             
+                                <th>1.15%</th>       
+                            </tr>  
+                            <tr>
+                                <td class="w-75">30 -Years Fixed Rates</td>  
+                                <th>1.15%</th>             
+                                <th>1.15%</th>       
+                            </tr>  
+                            <tr>
+                                <td class="w-75">30 -Years Fixed Rates</td>  
+                                <th>1.15%</th>             
+                                <th>1.15%</th>       
+                            </tr>  
+                            <tr>
+                                <td class="w-75">30 -Years Fixed Rates</td>  
+                                <th>1.15%</th>             
+                                <th>1.15%</th>       
+                            </tr>  
+                            <tr>
+                                <td class="w-75">30 -Years Fixed Rates</td>  
+                                <th>1.15%</th>             
+                                <th>1.15%</th>       
+                            </tr>  
+                            <tr>
+                                <td class="w-75">30 -Years Fixed Rates</td>  
+                                <th>1.15%</th>             
+                                <th>1.15%</th>       
+                            </tr>  
+                            <tr>
+                                <td class="w-75">30 -Years Fixed Rates</td>  
+                                <th>1.15%</th>             
+                                <th>1.15%</th>       
+                            </tr>  
+                                
+                        </tbody>  
+                    </table>   
+                <p>* This line can  be used to  as a desclaimer fo the user ,so that user will be upto date dummy data etc </p>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+        </div>
     </div>
-
-
-
-
-
-
-
- 
- 
-  <!-- Darker Gold #D79F01
-Lighter Gold #E6C245
-Grey #626262
-Blue #002A75 -->
-
- 
 
 
 

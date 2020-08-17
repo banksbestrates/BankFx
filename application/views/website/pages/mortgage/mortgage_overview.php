@@ -54,89 +54,30 @@
       </div>
   </div> 
   <!-- TRENDING IN BANKSSS -->
-  <section id="portfolio" class="">
+  <!-- <section id="portfolio" class="">
     <div class="container">
         <header class="section-header pb-4">
           <h3 class="section-title">WHAT IS TRENDING IN HOUSE BUYING</h3>
         </header>
-        <div class="row portfolio-container" style="position: relative; height: 1080px;">
-          <?php if(count($page_data)>=1){
-              foreach($page_data as $d){
-                if($d->div_type == "trending_article"){?>
-                     <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="position: absolute; left: 0px; top: 0px; visibility: visible; animation-name: fadeInUp;">
-                        <div class="portfolio-wrap">
-                          <figure  style="background-image:url('<?php echo base_url() . $d->image ?>');" class="figure_image" >
-                          </figure>
-                          <div class="portfolio-info">
-                            <h4><?php echo $d->heading?></h4>
-                            <p><?php echo $d->content?> 
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-               <?php }
-              }
-          }?>
+        <div class="row portfolio-container" id="abc">
+         
         </div>
     </div>
-  </section>
+  </section> -->
+
   <!-- TRENDING IN BANKSSS -->
   <div class="container card_row">
         <header class="section-header">
           <h3>RELATED ARTICLES</h3>
         </header>
-          <?php if(count($page_data)>=1){
-              foreach($page_data as $d){
-                if($d->div_type == "related_article"){?>
-                    <div class="pt-4 col-md-12 mx-auto row">
-                        <div class="col-md-6 related_image" style="background-image:url('<?php echo base_url() . $d->image ?>')">
-                        </div>
-                        <div class="col-md-6 related_content">
-                            <p class="mb-2">EDITOR'S PICK </p>
-                            <h4><?php echo $d->heading?> </h4>
-                            <p><?php echo $d->content?></p>
-                              <div class="row">
-                                    <div class="col-md-1">
-                                      <i class="fa fa-arrow-circle-right"  aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-md-8 pt-2"> 6 MIN </div>
-                                </div>
-                        </div>
-                    </div>
-               <?php }
-              }
-          }?>
-       
-        <!-- <div class="pt-4 col-md-12 mx-auto row">
-            <div class="col-md-6 related_image2">
-            </div>
-            <div class="col-md-6 related_content">
-                <p>EDITOR'S PICK </p>
-                <h4>BEST REFINANCE LENDERS</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi culpa atque eius qui 
-                ducimus fuga iste necessitatibus voluptate reprehenderit? </p>
-                  <div class="row">
-                        <div class="col-md-1">
-                          <i class="fa fa-arrow-circle-right"  aria-hidden="true"></i>
-                        </div>
-                        <div class="col-md-8 pt-2">6 MIN  </div>
-                    </div>
-            </div>
-        </div>
-        <div class="pt-4 col-md-12 mx-auto row">
-            <div class="col-md-6 related_image3">
-            </div>
-            <div class="col-md-6 related_content">
-                <p>EDITOR'S PICK </p>
-                <h4>BEST REFINANCE LENDERS</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi culpa atque eius qui 
-                ducimus fuga iste necessitatibus voluptate reprehenderit? </p>
-                  <div class="row">
-                        <div class="col-md-1">
-                          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-md-8 pt-2">10 MIN  </div>
-                    </div>
-            </div>
-        </div> -->
+        <div id="related_articles">
+
+        </div>     
   </div> 
+  
+<script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="<?php echo base_url()?>assets/libs/common.js"></script>
+<script src="<?php echo base_url()?>assets/libs/mortgageProcess.js"></script>
+<script>
+  get_mortgage_posts();
+</script>

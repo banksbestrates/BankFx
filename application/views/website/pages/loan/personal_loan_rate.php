@@ -8,12 +8,12 @@
 <div class="col-md-10 mx-auto pt-5 pb-4">
     <div class="row">
         <div class="col-md-8">
-            <span>Bank Reviews > </span> <span class="text_yellow">Aliiant Bank </span>
-            <h2 class=" font-weight-900 mb-2">Best Personal Loan Rates for July 2020</h2>
-            <p>Published July 2020 by Do we need to have this information?</p>
+            <!-- <span>Bank Reviews > </span> <span class="text_yellow">Aliiant Bank </span> -->
+            <h2 class=" font-weight-900 mb-2">Best Personal Loan Rates for <?php echo date('M y')?></h2>
+            <p>Published by <?php echo date('M y')?>. Do we need to have this information?</p>
         </div>
         <div class="col-md-4 text-right pt-3">
-            <button class="btn button_blue">DOWNLOAD OUR APP</button>
+            <button class="btn button_blue btn-sm">DOWNLOAD OUR APP</button>
         </div>
     </div>
 </div>
@@ -131,7 +131,6 @@
             Thus way the end user might feel more confident with up-to-date numbers.
             </small>
     </div>
-
 </div> 
 
 

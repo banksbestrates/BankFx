@@ -2,7 +2,7 @@
     over view banner
   ============================-->
   <div class="overview_banner">
-    <div class="banner_heading w-75 text-justify">
+    <div class="banner_heading">
         <?php if(count($page_data)>=1){
               foreach($page_data as $d){
                 if($d->div_type == "overview_heading"){?>
@@ -72,11 +72,11 @@
         <header class="section-header pb-4">
           <h3 class="section-title">WHAT'S TRENDING IN LOAN MARKET</h3>
         </header>
-        <div class="row portfolio-container" style="position: relative; height: 1080px;">
+        <div class="row portfolio-container">
           <?php if(count($page_data)>=1){
                 foreach($page_data as $d){
                   if($d->div_type == "trending_article"){?>
-                      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="position: absolute; left: 0px; top: 0px; visibility: visible; animation-name: fadeInUp;">
+                      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
                           <div class="portfolio-wrap">
                             <figure style="background-image:url('<?php echo base_url() . $d->image ?>');" class="figure_image">
                             </figure>
@@ -96,7 +96,8 @@
  <!-- Content Related to Loans -->
   <div class="container px-0 py-5 ">
       <h3 class="border_bottom_golden font-weight-900">Related Articles</h3>  
-      <?php if(count($page_data)>=1){
+        <div id="related_articles"></div>
+      <!-- <?php if(count($page_data)>=1){
         foreach($page_data as $d){
           if($d->div_type == "related_article"){?>
               <div class="col-md-12 mx-auto row px-0">
@@ -116,5 +117,13 @@
               </div>
           <?php }
         }
-      }?>
+      }?> -->
   </div>
+
+
+<script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="<?php echo base_url()?>assets/libs/common.js"></script>
+<script src="<?php echo base_url()?>assets/libs/loanProcess.js"></script>
+<script>
+  get_loan_overview_posts();
+</script>

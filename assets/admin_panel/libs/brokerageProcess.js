@@ -55,6 +55,7 @@ function get_brokerage_overview() {
                         '       </div>'+
                         '   </div>'
                 } 
+
              }
             $("#trending_articles").html(trending_list);	
             $("#related_articles").html(related_list);	
@@ -224,9 +225,20 @@ function get_broker_data(type)
                         '       </div>'+
                         '   </div>'
                    } 
+                   else if(brokerageData[i].div_type=="overview_heading")
+                   {
+                    overview_data = '<div class="col-md-10">'+
+                    '<h1>'+brokerageData[i].heading+'</h1>'+
+                    '<p>'+brokerageData[i].content+'</p>'+
+                    '</div>'+
+                    '<div class="col-md-2">'+
+                    '   <button class="btn btn-primary btn-sm" onclick=brokerContentModel('+i+',"'+type+'")>Edit </button>'+
+                    '</div>'
+                   } 
              }
             $("#normal_articles").html(normal_list);	
             $("#related_articles").html(related_list);	
+            $("#top_banner_text").html(overview_data);	
 
         }
     };
@@ -251,14 +263,14 @@ function brokerContentModel(i,type)
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
     $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save</button>'+
-    '<button class="btn btn-sm btn-primary" onclick=updateBrokerageData('+brokerage_data.id+',"'+type+'")>Update</button>');
+    '<button class="btn btn-sm btn-primary" onclick=updatebrokerageData('+brokerage_data.id+',"'+type+'")>Update</button>');
     $(".modal").modal('show');
 
     
     CKEDITOR.replace( 'editor' );
 }
 
-function updateBrokerageData(id,type)
+function updatebrokerageData(id,type)
 {
     let base_url =  "";
     if(type=="best_online_broker")

@@ -240,9 +240,20 @@ function get_loan_inner_page(loan_type) {
                         '       </div>'+
                         '   </div>'
                    } 
+                   else if(loanData[i].div_type=="overview_heading")
+                   {
+                        overview_data = '<div class="col-md-10">'+
+                        '<h1>'+loanData[i].heading+'</h1>'+
+                        '<p>'+loanData[i].content+'</p>'+
+                        '</div>'+
+                        '<div class="col-md-2">'+
+                        '   <button class="btn btn-primary btn-sm" onclick=contentModel('+i+',"'+loan_type+'")>Edit </button>'+
+                        '</div>'
+                } 
              }
             $("#normal_articles").html(normal_list);	
             $("#related_articles").html(related_list);	
+            $("#top_banner_text").html(overview_data);	
 
         }
     };
@@ -398,7 +409,7 @@ function get_debt_consolidation_data(loan_type) {
 
 
 //=====================CONENT TOP BANNER====================//
-function contentModel(i)
+function contentModel(i,loan_type="")
 {
     let loan_data = loanData[i];
     var modal_body= '<div class="form-group">'+
@@ -416,14 +427,29 @@ function contentModel(i)
     $(".modal-dialog").addClass("modal-lg");                                   
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
-    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateContent('+loan_data.id+')">Update</button>');
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick=updateContent('+loan_data.id+',"'+loan_type+'")>Update</button>');
     $(".modal").modal('show');
     
     CKEDITOR.replace( 'editor' );
 }
 
-function updateContent(id)
+function updateContent(id,loan_type="")
 {
+    let base_url = baseUrl+"api/admin/update_loan_overview";
+
+    if(loan_type=="personal_loan")
+    {
+        base_url=  baseUrl + "api/admin/update_personal_loan";
+    }
+    else if(loan_type=="auto_loan")
+    {
+        base_url=  baseUrl + "api/admin/update_auto_loan";
+    }
+    else if(loan_type=="student_loan")
+    {
+        base_url=  baseUrl + "api/admin/update_student_loan";
+    }
+
     var content= CKEDITOR.instances.data.getData();
     if (content == "") {
         alert("Enter Valid Content");
@@ -433,7 +459,7 @@ function updateContent(id)
     formData.append('content', content);
     formData.append('heading', heading);
     formData.append('id', id);
-    let url = baseUrl + "api/admin/update_loan_overview";
+    let url = base_url;
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.send(formData);

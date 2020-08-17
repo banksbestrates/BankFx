@@ -4,31 +4,36 @@
   ============================-->
   <div class="overview_banner">
     <div class="banner_heading">
-    <h1 class="display-4">Personal Loans</h1>
-    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem hic<br/>
-    Its just a dummy text to show the design only  dummy textx dummy</h6>
+        <?php if(count($page_data)>=1){
+              foreach($page_data as $d){
+                if($d->div_type == "overview_heading"){?>
+                  <h1 class="display-4"><?php echo $d->heading ?></h1>
+                  <p><?php echo $d->content ?></p>
+          <?php } 
+          }
+        }?>
     </div>
   </div>
  
   <!-- Card view -->
-  <div class="col-md-10 mx-auto card_row pb-4">    
+  <div class="container card_row pb-4">    
         <div class="pt-5 col-md-12 mx-auto row card_view">
             <div class="col-md col-sm-4">
                 <div class="card pb-2">
                     <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/Loans-Calculator.png" style="width:100px; height:100px;">
                     </div>
-                    <a href="<?php echo base_url()?>index.php/mortgage_rates"><h6>Loan Calculator</h6></a>
+                    <a href="#"><h6>Loan Calculator</h6></a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
-            <div class="card pb-2">
-                    <div style="width:100%; text-align:center">
-                      <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/personal_loan.png" style="width:100px; height:100px;">
+                <div class="card pb-2">
+                        <div style="width:100%; text-align:center">
+                        <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/personal_loan.png" style="width:100px; height:100px;">
+                        </div>
+                    <a href="<?php echo base_url()?>personal_loan_rate"><h6>Personal Loan Rates</h6></a>
                     </div>
-                  <a href="<?php echo base_url()?>personal_loan_rate"><h6>Personal Loan Rates</h6></a>
                 </div>
-            </div>
             <div class="col-md col-sm-4">
               <div class="card pb-2">
               <div style="width:100%; text-align:center">
@@ -50,7 +55,7 @@
                 <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/lender_review.png" style="width:100px; height:100px;">
                     </div>
-                <a href="<?php echo base_url()?>index.php/house_afford"><h6>Lender Review</h6></a>
+                <a href="<?php echo base_url()?>leander_loan_review"><h6>Lender Review</h6></a>
                 </div>
             </div>
         </div>
@@ -58,19 +63,19 @@
 
 
  <!-- Content Related to Loans -->
-        <?php if(count($page_data)>=1){
+  <?php if(count($page_data)>=1){
             foreach($page_data as $d){
             if($d->div_type == "normal_content"){?>
-             <div class="col-md-10 mx-auto pt-4">
+             <div class="container pt-4">
                 <h3 class="border_bottom_golden font-weight-900"><?php echo $d->heading?></h3>
                 <p><?php echo $d->content?></p>
              </div>
             <?php }
           }
-        }?>
+  }?>
     
  <!-- CONTENT related to this page -->
- <div class="col-md-10 mx-auto  py-5 ">
+ <div class="container py-5 ">
        <h3 class="border_bottom_golden font-weight-900">Related Articles</h3> 
         <?php if(count($page_data)>=1){
             foreach($page_data as $d){

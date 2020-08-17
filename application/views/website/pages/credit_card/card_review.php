@@ -5,7 +5,7 @@
         <div class="col-md-8">
             <!-- <span>Bank Reviews ></span> <span class="text_yellow">Aliiant Bank</span> -->
             <h2 class="font-weight-900 pt-2 mb-2">Fancy World Card Review</h2>
-            <span>Published July 2020 by Do we need to have this information?</span>
+            <span>Published <?php echo date('M y')?>. by Do we need to have this information?</span>
         </div>
         <div class="col-md-4 text-right pt-4">
             <button class="btn button_blue btn-sm">DOWNLOAD OUR APP</button>

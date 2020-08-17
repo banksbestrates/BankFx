@@ -1007,7 +1007,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fff;
   text-align: center;
   padding: 20px 0px;
-  /* height: 90px; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 167px;
   /* border-radius: 0 0 3px 3px; */
 }
 
@@ -1607,7 +1609,10 @@ border: 1px solid #D79F01;
 padding: 30px 30px 30px 30px;
 border-radius: 10px;
 }
-
+.button_yellow{
+  background-color:#D79F01;
+  color:white;
+}
 .bank_card_view .fa{
 color:#D79F01;
 padding-bottom:20px;
@@ -1655,7 +1660,7 @@ background-size:cover;
 
 } */
 .related_content{
-padding:20px 10px 10px 30px;
+padding:9px 10px 10px 30px;
 /* text-align:justify; */
 }
 .related_content .fa{
@@ -1855,6 +1860,9 @@ font-size:40px;
   color:white;
 }
 
+.progress_div p{
+  font-size:18px;
+}
 
 input{
   border:none;
@@ -1904,6 +1912,17 @@ select{
 }
 .checked{
   color:#D79F01;
+}
+.small_card{
+  text-align: center;
+  border: 1px solid #D79F01;
+  padding: 10px 10px 10px 10px!important;
+  border-radius: 10px;
+}
+.small_card span{
+  color:black;
+  font-size:0.9rem;
+  font-weight:bold;
 }
 
 .rating_point{
@@ -2187,6 +2206,7 @@ border:1px solid #D79F01!important;
 @media only screen and (max-width: 480px) {
   .heading_main{
     padding: 36px 18px 40px 18px;
+    font-size:45px;
   }
 }
 
@@ -2287,4 +2307,23 @@ border:1px solid #D79F01!important;
     left: 10%;
     padding: 0px 7px;
 }
+}
+
+/* realted articles conteent for all overview pages */
+#related_articles .content h1 , #related_articles .content h2,
+#related_articles .content h3,#related_articles .content h4,
+#related_articles .content h5 , #related_articles  .content p {
+  font-size:14px!important;
+}
+
+
+.credit_starts .fa{
+  font-size:24px;
+}
+.credit_top_rating{
+  font-size:20px;
+  font-weight:900
+}
+.credit_left_div button{
+  width:85%;
 }

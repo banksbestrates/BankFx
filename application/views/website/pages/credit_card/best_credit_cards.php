@@ -1,22 +1,11 @@
-<style>
-    .credit_starts .fa{
-        font-size:24px;
-    }
-    .credit_top_rating{
-        font-size:20px;
-        font-weight:900
-    }
-    .credit_left_div button{
-        width:85%;
-    }
-</style>
+
 <!-- Bank locator -->
-<div class="col-md-10 mx-auto pt-5">
+<div class="container pt-5">
     <div class="row">
         <div class="col-md-8">
             <!-- <span>Bank Reviews ></span> <span class="text_yellow">Aliiant Bank</span> -->
-            <h2 class="font-weight-900 pt-2 mb-2">Best Credit Cards for 2020</h2>
-            <span>Published July 2020 by Do we need to have this information?</span>
+            <h2 class="font-weight-900 pt-2 mb-2">Best Credit Cards for <?php echo date('Y')?></h2>
+            <span>Published by  <?php echo date('M y')?>. Do we need to have this information?</span>
         </div>
         <div class="col-md-4 text-right pt-4">
             <button class="btn button_blue btn-sm">DOWNLOAD OUR APP</button>
@@ -25,8 +14,8 @@
 </div>
 
 <!-- credit card box view -->
-<div class="col-md-12 py-5">  
-    <div class="col-md-10 mx-auto">  
+<div class="container py-5">  
+    <div class="col-md-12 mx-auto">  
         <div class="row">
             <div class="col-md-9 px-0 box_round_border">
                 <div class="row  px-4 pt-2">
@@ -125,10 +114,11 @@
     </div>
 </div>
 
-<div class="col-md-12">
-    <div class="col-md-10 mx-auto px-0 ">
+<div class="container">
+    <div class="col-md-12 mx-auto px-0 ">
     <h3 class="border_bottom_golden mb-0">Other Available Cards</h3>
-        <table class="table text-center">
+        <div class="table-responsive">
+            <table class="table text-center">
             <thead>
                 <tr class="background_light_grey">
                     <th class=""></th>
@@ -226,10 +216,9 @@
                 </tr>       
       
             </tbody>  
-        </table>   
-        <p class="font-weight-bold">This line can  be used to  as a desclaimer fo the user ,so that user will be upto date dummy data etc </p>
+            </table>   
+            <p class="font-weight-bold">This line can  be used to  as a desclaimer fo the user ,so that user will be upto date dummy data etc </p>
+        </div>
     </div>
-   
-
 </div> 
 
