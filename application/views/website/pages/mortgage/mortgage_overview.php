@@ -54,22 +54,37 @@
       </div>
   </div> 
   <!-- TRENDING IN BANKSSS -->
-  <!-- <section id="portfolio" class="">
+  <section id="portfolio" class="">
     <div class="container">
         <header class="section-header pb-4">
           <h3 class="section-title">WHAT IS TRENDING IN HOUSE BUYING</h3>
         </header>
-        <div class="row portfolio-container" id="abc">
-         
+        <div class="row portfolio-container">
+            <?php if(count($page_data)>=1){
+                foreach($page_data as $d){
+                  if($d->div_type == "trending_article"){?>
+                      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                          <div class="portfolio-wrap">
+                            <figure style="background-image:url('<?php echo base_url() . $d->image ?>');
+                                background-size:cover;background-position:center">
+                            </figure>
+                            <div class="portfolio-info">
+                              <h4><?php echo $d->heading?></h4>
+                              <div class="article_content"><?php echo $d->content?></div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                <?php }
+                }
+            }?>
         </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- TRENDING IN BANKSSS -->
-  <div class="container card_row">
-        <header class="section-header">
-          <h3>RELATED ARTICLES</h3>
-        </header>
+  <div class="container py-5">
+        <h3 class="border_bottom_golden font-weight-900">LATEST FROM BANKS BEST RATES</h3>
         <div id="related_articles">
 
         </div>     

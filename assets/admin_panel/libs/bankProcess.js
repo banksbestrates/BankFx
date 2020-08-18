@@ -46,24 +46,24 @@ function get_bank_overview(type="") {
                         '    </div>'+
                         '</div>'
                 }
-                else if(bankData[i].div_type=="related_article")
-                {
-                        related_list = related_list+ 
-                        '   <div class="col-md-12">'+
-                        '       <div class="row">'+
-                        '           <div class="col-md-5">'+
-                        '             <img src="'+baseUrl+bankData[i].image+'" alt="" width="100%" >'+
-                        '           </div>'+
-                        '           <div class="col-md-5 py-4">'+
-                        '               <h3 class="text-dark">'+bankData[i].heading+'</h3>'+
-                        '               <p>'+bankData[i].content+'</p>'+
-                        '           </div>'+
-                        '           <div class="col-md-2">'+
-                        '               <button class="btn btn-sm btn-primary" onclick="editOverviewModel('+i+')">Edit</button>'+
-                        '           </div>'+
-                        '       </div>'+
-                        '   </div>'
-                } 
+                // else if(bankData[i].div_type=="related_article")
+                // {
+                //         related_list = related_list+ 
+                //         '   <div class="col-md-12">'+
+                //         '       <div class="row">'+
+                //         '           <div class="col-md-5">'+
+                //         '             <img src="'+baseUrl+bankData[i].image+'" alt="" width="100%" >'+
+                //         '           </div>'+
+                //         '           <div class="col-md-5 py-4">'+
+                //         '               <h3 class="text-dark">'+bankData[i].heading+'</h3>'+
+                //         '               <p>'+bankData[i].content+'</p>'+
+                //         '           </div>'+
+                //         '           <div class="col-md-2">'+
+                //         '               <button class="btn btn-sm btn-primary" onclick="editOverviewModel('+i+')">Edit</button>'+
+                //         '           </div>'+
+                //         '       </div>'+
+                //         '   </div>'
+                // } 
                 else if(bankData[i].div_type=="overview_heading")
                 {
                     overview_data = '<div class="col-md-10">'+
@@ -76,7 +76,7 @@ function get_bank_overview(type="") {
                 } 
              }
             $("#trending_articles").html(trending_list);	
-            $("#related_articles").html(related_list);	
+            // $("#related_articles").html(related_list);	
             $("#top_banner_text").html(overview_data);	
 
         }
@@ -100,7 +100,7 @@ function editOverviewModel(i)
                      '</div>'+
                      '<div class="form-group ">'+
                         '<label for="name">Content</label>'+
-                        '<textarea class="form-control" placeholder="Add Content" id="edit_content">'+bank_data.content+'</textarea>'+
+                        '<textarea rows="5" class="form-control" placeholder="Add Content" name="editor" id="data">'+bank_data.content+'</textarea>'+
                      '</div>'+
 
                      '<div class="form-group">'+
@@ -118,13 +118,15 @@ function editOverviewModel(i)
                      '</div>'+
                      '<div class="form-group">'+
                         '<small class="error_message text-danger"></small>'+
-                    '</div>'+
-                                    
+                    '</div>'
+
+    $(".modal-dialog").addClass("modal-lg");                                  
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
     $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateOverview('+bank_data.id+')">Update</button>');
     $(".modal").modal('show');
 
+    CKEDITOR.replace( 'editor' );
     var src = document.getElementById("src");
     var target = document.getElementById("target");
     showImage(src,target);
@@ -132,9 +134,13 @@ function editOverviewModel(i)
 
 function updateOverview(id)
 {
+    var content= CKEDITOR.instances.data.getData();
+    if (content == "") {
+        alert("Enter Valid Content");
+    }
     let heading         = $("#edit_heading").val();
     let image_src       = $("#src").val();
-    let content     = $("#edit_content").val();
+    // let content     = $("#edit_content").val();
   
     let formData = new FormData();
     if (image_src !== "") {

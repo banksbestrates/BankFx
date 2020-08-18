@@ -37,24 +37,24 @@ function get_credit_overview() {
                         '    </div>'+
                         '</div>'
                 }
-                else if(creditData[i].div_type=="related_article")
-                {
-                        related_list = related_list+ 
-                        '   <div class="col-md-12">'+
-                        '       <div class="row">'+
-                        '           <div class="col-md-5">'+
-                        '             <img src="'+baseUrl+creditData[i].image+'" alt="" width="100%" >'+
-                        '           </div>'+
-                        '           <div class="col-md-5 py-4">'+
-                        '               <h3 class="text-dark">'+creditData[i].heading+'</h3>'+
-                        '               <p>'+creditData[i].content+'</p>'+
-                        '           </div>'+
-                        '           <div class="col-md-2">'+
-                        '               <button class="btn btn-sm btn-primary" onclick="editOverviewModel('+i+')">Edit</button>'+
-                        '           </div>'+
-                        '       </div>'+
-                        '   </div>'
-                } 
+                // else if(creditData[i].div_type=="related_article")
+                // {
+                //         related_list = related_list+ 
+                //         '   <div class="col-md-12">'+
+                //         '       <div class="row">'+
+                //         '           <div class="col-md-5">'+
+                //         '             <img src="'+baseUrl+creditData[i].image+'" alt="" width="100%" >'+
+                //         '           </div>'+
+                //         '           <div class="col-md-5 py-4">'+
+                //         '               <h3 class="text-dark">'+creditData[i].heading+'</h3>'+
+                //         '               <p>'+creditData[i].content+'</p>'+
+                //         '           </div>'+
+                //         '           <div class="col-md-2">'+
+                //         '               <button class="btn btn-sm btn-primary" onclick="editOverviewModel('+i+')">Edit</button>'+
+                //         '           </div>'+
+                //         '       </div>'+
+                //         '   </div>'
+                // } 
                 else if(creditData[i].div_type=="overview_heading")
                 {
                     overview_data = '<div class="col-md-10">'+
@@ -67,7 +67,7 @@ function get_credit_overview() {
                 } 
              }
             $("#trending_articles").html(trending_list);	
-            $("#related_articles").html(related_list);	
+            // $("#related_articles").html(related_list);	
             $("#top_banner_text").html(overview_data);	
 
         }
@@ -84,14 +84,14 @@ function showImage(src,target) {
 }	
 function editOverviewModel(i)
 {
-    let mortgage_data = creditData[i];
+    let credit_data = creditData[i];
     var modal_body= '<div class="form-group">'+
                         '<label for="name">Heading</label>'+
-                        '<input type="text" class="form-control" id="edit_heading" placeholder="Enter Heading" value="'+mortgage_data.heading+'">'+
+                        '<input type="text" class="form-control" id="edit_heading" placeholder="Enter Heading" value="'+credit_data.heading+'">'+
                      '</div>'+
                      '<div class="form-group ">'+
                         '<label for="name">Content</label>'+
-                        '<textarea class="form-control" placeholder="Add Content" id="edit_content">'+mortgage_data.content+'</textarea>'+
+                        '<textarea rows="5" class="form-control" placeholder="Add Content" name="editor" id="data">'+credit_data.content+'</textarea>'+
                      '</div>'+
 
                      '<div class="form-group">'+
@@ -101,7 +101,7 @@ function editOverviewModel(i)
                                 '<div class="col-md-6 col-sm-4">'+
                                     '<label class="imagecheck mb-4">'+
                                     '	<figure class="imagecheck-figure">'+
-                                    '		<img src="'+baseUrl+mortgage_data.image+'" alt=" Image" class="imagecheck-image" id="target">'+
+                                    '		<img src="'+baseUrl+credit_data.image+'" alt=" Image" class="imagecheck-image" id="target">'+
                                     '	</figure>'+
                                     '</label>'+
                                 '</div>'+
@@ -109,13 +109,15 @@ function editOverviewModel(i)
                      '</div>'+
                      '<div class="form-group">'+
                         '<small class="error_message text-danger"></small>'+
-                    '</div>'+
-                                    
+                    '</div>'
+
+    $(".modal-dialog").addClass("modal-lg");                              
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
-    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateOverview('+mortgage_data.id+')">Update</button>');
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateOverview('+credit_data.id+')">Update</button>');
     $(".modal").modal('show');
 
+    CKEDITOR.replace( 'editor' );
     var src = document.getElementById("src");
     var target = document.getElementById("target");
     showImage(src,target);
@@ -123,9 +125,13 @@ function editOverviewModel(i)
 
 function updateOverview(id)
 {
+    var content= CKEDITOR.instances.data.getData();
+    if (content == "") {
+        alert("Enter Valid Content");
+    }
     let heading         = $("#edit_heading").val();
     let image_src       = $("#src").val();
-    let content     = $("#edit_content").val();
+    // let content     = $("#edit_content").val();
   
     let formData = new FormData();
     if (image_src !== "") {

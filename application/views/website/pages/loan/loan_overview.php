@@ -82,8 +82,7 @@
                             </figure>
                             <div class="portfolio-info">
                               <h4><?php echo $d->heading?></h4>
-                              <p><?php echo $d->content?> 
-                              </p>
+                              <div class="article_content"><?php echo $d->content?></div>  
                             </div>
                           </div>
                       </div>
@@ -94,31 +93,12 @@
     </div>
 </section>
  <!-- Content Related to Loans -->
-  <div class="container px-0 py-5 ">
-      <h3 class="border_bottom_golden font-weight-900">Related Articles</h3>  
-        <div id="related_articles"></div>
-      <!-- <?php if(count($page_data)>=1){
-        foreach($page_data as $d){
-          if($d->div_type == "related_article"){?>
-              <div class="col-md-12 mx-auto row px-0">
-                  <div class="col-md-6 related_image" style="background-image:url('<?php echo base_url() . $d->image ?>')">
-                  </div>
-                <div class="col-md-6 related_content">
-                    <p class="mb-2">EDITOR'S PICK </p>
-                    <h4><?php echo $d->heading?></h4>
-                    <p><?php echo $d->content?></p>
-                    <div class="row">
-                          <div class="col-md-1">
-                            <i class="fa fa-arrow-circle-right"  aria-hidden="true"></i>
-                          </div>
-                          <div class="col-md-8 pt-2">6 MIN </div>
-                      </div>
-                </div>
-              </div>
-          <?php }
-        }
-      }?> -->
-  </div>
+ <div class="container py-5">
+        <h3 class="border_bottom_golden">LATEST FROM BANKS BEST RATES</h3>
+        <div id="related_articles">
+
+        </div>     
+  </div> 
 
 
 <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>

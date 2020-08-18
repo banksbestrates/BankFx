@@ -12,22 +12,27 @@
                         </div>
                         
                         <div class="card-body">
-                        <h2 class="text-center text-dark font-weight-bold">READING ABOUT CREDIT CARDS</h2><hr/>
+                            <h2 class="text-center text-dark font-weight-bold">TOP BANNER TEXT EDIT</h2><hr/>
                             <div class="col-md-12 px-5">
-                                <div class="row" id="trending_articles">
-                                                            
+                               <div class="row" id="top_banner_text">
+                                   
+                               </div>
+                            </div><br/><hr/>
+                            <h2 class="text-center text-dark font-weight-bold">READING ABOUT CREDIT CARDS</h2><hr/>
+                            <div class="col-md-12 px-5">
+                                <div class="row" id="trending_articles">                                                          
                                 </div>
                             </div>
                             <br/>                        
                         </div><br/><br/>
-                        <h2 class="text-center text-dark font-weight-bold">Thinking About Credit Cards</h2><hr/>
+                        <!-- <h2 class="text-center text-dark font-weight-bold">Thinking About Credit Cards</h2><hr/>
                             <div class="col-md-12 px-5">
                                 <div class="row" id="related_articles">
                                                             
                                 </div>
                             </div>
                             <br/>                        
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

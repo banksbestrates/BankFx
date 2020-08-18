@@ -70,8 +70,7 @@
                           </figure>
                           <div class="portfolio-info">
                             <h4><?php echo $d->heading?></h4>
-                            <p><?php echo $d->content?> 
-                            </p>
+                            <div class="article_content"><?php echo $d->content?></div>
                           </div>
                         </div>
                       </div>
@@ -83,14 +82,12 @@
 </section>
 
  <!-- Content Related to Loans -->
- <div class="container px-0 py-5 ">
-       <h3 class="border_bottom_golden font-weight-900">Related Articles</h3>
-       <div id="related_articles">
+ <div class="container py-5">
+        <h3 class="border_bottom_golden">LATEST FROM BANKS BEST RATES</h3>
+        <div id="related_articles">
+        </div>     
+  </div> 
 
-        </div>
-  
-         
-</div>
 
 <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
 <script src="<?php echo base_url()?>assets/libs/common.js"></script>

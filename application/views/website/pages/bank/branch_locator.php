@@ -1,6 +1,6 @@
 
 <!-- Bank locator -->
-<div class="col-md-10 mx-auto pt-5">
+<div class="container pt-5">
     <div class="row">
         <div class="col-md-8">
             <span>Banking Overview > Bank Branch Locator ></span> <span class="text_yellow">  California Banks</span>
@@ -14,7 +14,7 @@
 </div>
 
 <!-- Map -->
-<div class="col-md-10 mx-auto">
+<div class="container">
     <iframe src="https://createaclickablemap.com/map.php?&id=93525&maplocation=false&online=true" width="80%" height="525" style="border: none;"></iframe>
     <script>
         if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } 
@@ -22,7 +22,7 @@
 </div>
 
 <!-- Bank locator -->
-<div class="col-md-10 mx-auto pt-4">
+<div class="container pt-4">
     <div class="row">
         <div class="col-md-10">
             <h4 class="mb-2">SEARCH BANK BY STATE</h4>
@@ -308,7 +308,7 @@
 
 <!-- top 50 banks in united states -->
 <!-- Bank locator -->
-<div class="col-md-10 mx-auto py-5">
+<div class="container py-5">
     <div class="row">
         <div class="col-md-10">
             <h4 class="mb-2">TOP 50 BANKS IN THE United States</h4>

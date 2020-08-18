@@ -91,7 +91,7 @@ function editOverviewModel(i,loan_type="")
                      '</div>'+
                      '<div class="form-group ">'+
                         '<label for="name">Content</label>'+
-                        '<textarea class="form-control" placeholder="Add Content" id="edit_content">'+loan_data.content+'</textarea>'+
+                        '<textarea rows="5" class="form-control" placeholder="Add Content" name="editor" id="data">'+loan_data.content+'</textarea>'+
                      '</div>'+
 
                      '<div class="form-group">'+
@@ -109,23 +109,29 @@ function editOverviewModel(i,loan_type="")
                      '</div>'+
                      '<div class="form-group">'+
                         '<small class="error_message text-danger"></small>'+
-                    '</div>'+
-                                    
+                    '</div>'
+
+    $(".modal-dialog").addClass("modal-lg");                                 
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
     $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button>'+
     '<button class="btn btn-sm btn-primary" onclick=updateOverview('+loan_data.id+',"'+loan_type+'")>Update</button>');
     $(".modal").modal('show');
 
+    CKEDITOR.replace( 'editor' );
     var src = document.getElementById("src");
     var target = document.getElementById("target");
     showImage(src,target);
 }
 function updateOverview(id,loan_type="")
 {
+    var content= CKEDITOR.instances.data.getData();
+    if (content == "") {
+        alert("Enter Valid Content");
+    }
     let heading         = $("#edit_heading").val();
     let image_src       = $("#src").val();
-    let content         = $("#edit_content").val();
+    // let content         = $("#edit_content").val();
     let base_url = baseUrl+"api/admin/update_loan_overview";
     if(loan_type=="personal_loan")
     {

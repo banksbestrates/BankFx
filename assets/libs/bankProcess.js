@@ -1,7 +1,7 @@
 //Category module 
 function get_banking_posts() {
     let formData = new FormData();
-    let url = "https://bankfax.today/wp-json/wp/v2/posts?categories=3";
+    let url = "https://bankfax.today/wp-json/wp/v2/posts?categories=270";
     let xhr = new XMLHttpRequest();
     xhr.open('GET', url);
     xhr.send(formData);
@@ -14,32 +14,15 @@ function get_banking_posts() {
         
             for(var i=0;i<pageData.length;i++)
             {
-                // post_list=  post_list+ '<div class="col-lg-4 col-md-6 portfolio-item " >'+
-                // '        <div class="portfolio-wrap">'+
-                // '          <figure style=background-image:url("localhost:81/bank_fx/assets/images/website/mortgage/f140fb6eb357e52826eadf17521a3465.png");" class="figure_image">'+
-                // '          </figure>'+
-                // '          <div class="portfolio-info">'+
-                // '            <h4>'+pageData[i].title.rendered+'</h4>'+
-                // '            <p>'+pageData[i].content.rendered+'</p>'+
-                // '          </div>'+
-                // '        </div>'+
-                // '      </div>'
-
-                post_list=  post_list+ '<div class="pt-4 col-md-12 mx-auto row">'+
-                            '<div class="col-md-6 related_image" style="background-image:url();background-color:black">'+
-                            '</div>'+
-                            '<div class="col-md-6 related_content">'+
-                            '    <p class="mb-2">EDITOR`S PICK </p>'+
-                            '    <h4>'+pageData[i].title.rendered+'</h4>'+
-                            '    <div style="height:80px;overflow:hidden" class="content">'+pageData[i].content.rendered+'</div>'+
-                            '      <div class="row mt-2">'+
-                            '            <div class="col-md-1">'+
-                            '              <i class="fa fa-arrow-circle-right"  aria-hidden="true"></i>'+
-                            '            </div>'+
-                            '            <div class="col-md-8 pt-2"> 6 MIN </div>'+
-                            '            </div>'+
-                            '        </div>'+
-                            '</div>'
+                post_list=  post_list+ '<div class="col-md-12row">'+
+                                    '   <div class="col-md-12  px-0 related_content">'+
+                                    // '       <p class="mb-2 pt-2 text_yellow">Latest Credit Tips and Rates</p>'+
+                                    '       <h3 class="font-weight-bolder">'+pageData[i].title.rendered+'</h3>'+
+                                    '       <div class="content">'+pageData[i].content.rendered+'</div>'+
+                                    '         <div class="row mt-2 border_bottom_golden">'+
+                                    '               </div>'+
+                                    '           </div>'+
+                                    '   </div>'
             }
             $("#related_articles").html(post_list);
           

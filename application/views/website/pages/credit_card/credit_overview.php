@@ -134,12 +134,11 @@
                       <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                           <div class="portfolio-wrap">
                             <figure style="background-image:url('<?php echo base_url() . $d->image ?>');
-                                background-size:100% 100%;background-position:center">
+                                background-size:cover;background-position:center">
                             </figure>
                             <div class="portfolio-info">
                               <h4><?php echo $d->heading?></h4>
-                              <p><?php echo $d->content?> 
-                              </p>
+                              <div class="article_content"><?php echo $d->content?></div>   
                             </div>
                           </div>
                         </div>
@@ -150,10 +149,12 @@
       </div>
   </section>
   <!-- Thinking about creatir cards -->
-  <div class="container py-5 ">
-      <h3 class="border_bottom_golden font-weight-900">Related Articles</h3>
-      <div id="related_articles"></div>
-  </div>
+  <div class="container py-5">
+        <h3 class="border_bottom_golden">LATEST FROM BANKS BEST RATES</h3>
+        <div id="related_articles">
+
+        </div>     
+  </div> 
 
 <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
 <script src="<?php echo base_url()?>assets/libs/common.js"></script>

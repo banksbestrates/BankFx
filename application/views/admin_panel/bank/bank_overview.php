@@ -18,20 +18,20 @@
                                    
                                </div>
                             </div><br/><hr/>
-                            <h2 class="text-center text-dark font-weight-bold">WHATS TRENDING IN HOUSE BUYING</h2><hr/>
+                            <h2 class="text-center text-dark font-weight-bold">WHATS TRENDING IN BANKING</h2><hr/>
                             <div class="col-md-12 px-5">
                                 <div class="row" id="trending_articles">                                                          
                                 </div>
                             </div>
                             <br/>                        
                         </div><br/><br/>
-                        <h2 class="text-center text-dark font-weight-bold">RELATED ARTICLES</h2><hr/>
+                        <!-- <h2 class="text-center text-dark font-weight-bold">RELATED ARTICLES</h2><hr/>
                             <div class="col-md-12 px-5">
                                 <div class="row" id="related_articles">
                                                             
                                 </div>
                             </div>
-                            <br/>                        
+                            <br/>                         -->
                         </div>
                     </div>
                 </div>

@@ -89,7 +89,7 @@ select.form-control:not([size]):not([multiple]) {
         </div>
     </div>
 </div>
-<div class="container result_div">
+<div class="container table-responsive result_div">
     <p class="text-center">Showing results for: Single-family home, 30 year fixed mortgages with all points options. </p>
     <table class="table">
     <thead>
@@ -357,7 +357,7 @@ select.form-control:not([size]):not([multiple]) {
 </table>       
 </div>
 
-<div class="container pb-5">
+<div class="container table-responsive pb-5">
     <h2>Today’s FHA Loan Ratess</h2>
     <p>The table below brings together a comprehensive national survey of mortgage lenders to help you know what are the most competitive FHA loan rates. This interest rate table is updated daily to give you the most current rates when choosing an FHA mortgage home loan.</p>
     <section id="tabs" class="project-tab pb-5">
@@ -538,55 +538,4 @@ select.form-control:not([size]):not([multiple]) {
     </ul>
 </div>
 
-<!-- Related stories part -->
-<div class="bottom_calculator">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Loan comparision Calculator</h5>
-                        <p class="card-text">
-                            Estimate the mortgage amount that best fits your budget.
-                        </p>
-                        <a href="#"><i class="fa fa-long-arrow-right fa-2x" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-            <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Loan comparision Calculator</h5>
-                        <p class="card-text">
-                            Estimate the mortgage amount that best fits your budget.
-                        </p>
-                        <a href="#"><i class="fa fa-long-arrow-right fa-2x" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-            <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Mortgage loan calculator</h5>
-                        <p class="card-text">
-                            Calculate what your mortgage payment will be and how much ..
-                        </p>
-                        <a href="#"><i class="fa fa-long-arrow-right fa-2x" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Loan comparision Calculator</h5>
-                        <p class="card-text">
-                            Estimate the mortgage amount that best fits your budget.
-                        </p>
-                        <a href="#"><i class="fa fa-long-arrow-right fa-2x" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    </div>
-</div>

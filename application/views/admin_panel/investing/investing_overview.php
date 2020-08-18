@@ -13,7 +13,13 @@
                         </div>
                         
                         <div class="card-body">
-                        <h2 class="text-center text-dark font-weight-bold">INVESTING</h2><hr/>
+                        <h2 class="text-center text-dark font-weight-bold">TOP BANNER TEXT EDIT</h2><hr/>
+                            <div class="col-md-12 px-5">
+                               <div class="row" id="top_banner_text">
+                                   
+                               </div>
+                            </div><br/><hr/>
+                        <h2 class="text-center text-dark font-weight-bold">WHATS TRENDING IN INVESTING</h2><hr/>
                             <div class="col-md-12 px-5">
                                 <div class="row" id="trending_articles">
                                                             
@@ -21,13 +27,13 @@
                             </div>
                             <br/>                        
                         </div><br/><br/>
-                        <h2 class="text-center text-dark font-weight-bold">Related Articles</h2><hr/>
+                        <!-- <h2 class="text-center text-dark font-weight-bold">Related Articles</h2><hr/>
                             <div class="col-md-12 px-5">
                                 <div class="row" id="related_articles">
                                                             
                                 </div>
                             </div>
-                            <br/>                        
+                            <br/>                         -->
                         </div>
                     </div>
                 </div>
