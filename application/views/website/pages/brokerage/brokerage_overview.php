@@ -15,12 +15,11 @@
   </div>
  
   <!-- Card view -->
-
-  <div class="container card_row pb-4">    
+<div class="container card_row pb-4">    
         <div class=" col-md-12 pt-5 row card_view">
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
-                    <div class="card-body px-5 pt-0">
+                    <div class="card-body px-5 pt-3">
                         <div style="background-image:url('<?php echo base_url()?>assets/img/overview/wells_fargo.png');background-size:contain;height:80px;">
                         </div>
                     </div>
@@ -30,7 +29,7 @@
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
-                    <div class="card-body px-5 pt-0">
+                    <div class="card-body px-5 pt-3">
                         <div style="background-image:url('<?php echo base_url()?>assets/img/overview/wells_fargo.png');background-size:contain;height:80px;">
                         </div>
                     </div>
@@ -40,7 +39,7 @@
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
-                    <div class="card-body px-5 pt-0">
+                    <div class="card-body px-5 pt-3">
                         <div style="background-image:url('<?php echo base_url()?>assets/img/overview/wells_fargo.png');background-size:contain;height:80px;">
                         </div>
                     </div>
@@ -50,7 +49,7 @@
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
-                    <div class="card-body px-5 pt-0">
+                    <div class="card-body px-5 pt-3">
                         <div style="background-image:url('<?php echo base_url()?>assets/img/overview/wells_fargo.png');background-size:contain;height:80px;">
                         </div>
                     </div>
@@ -60,7 +59,7 @@
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
-                    <div class="card-body px-5 pt-0">
+                    <div class="card-body px-5 pt-3">
                         <div style="background-image:url('<?php echo base_url()?>assets/img/overview/wells_fargo.png');background-size:contain;height:80px;">
                         </div>
                     </div>
@@ -70,10 +69,10 @@
             </div>
          
         </div>
-        <div class="pt-5  row card_view">
+        <div class="col-md-12 pt-5  row card_view">
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
-                    <div class="card-body px-5 pt-0">
+                    <div class="card-body px-5 pt-3">
                         <div style="background-image:url('<?php echo base_url()?>assets/img/overview/wells_fargo.png');background-size:contain;height:80px;">
                         </div>
                     </div>
@@ -83,7 +82,7 @@
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
-                    <div class="card-body px-5 pt-0">
+                    <div class="card-body px-5 pt-3">
                         <div style="background-image:url('<?php echo base_url()?>assets/img/overview/wells_fargo.png');background-size:contain;height:80px;">
                         </div>
                     </div>
@@ -93,7 +92,7 @@
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
-                    <div class="card-body px-5 pt-0">
+                    <div class="card-body px-5 pt-3">
                         <div style="background-image:url('<?php echo base_url()?>assets/img/overview/wells_fargo.png');background-size:contain;height:80px;">
                         </div>
                     </div>
@@ -103,7 +102,7 @@
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
-                    <div class="card-body px-5 pt-0">
+                    <div class="card-body px-5 pt-3">
                         <div style="background-image:url('<?php echo base_url()?>assets/img/overview/wells_fargo.png');background-size:contain;height:80px;">
                         </div>
                     </div>
@@ -113,7 +112,7 @@
             </div>
             <div class="col-md col-sm-4">
                 <div class="card pb-3">
-                    <div class="card-body px-5 pt-0">
+                    <div class="card-body px-5 pt-3">
                         <div style="background-image:url('<?php echo base_url()?>assets/img/overview/wells_fargo.png');background-size:contain;height:80px;">
                         </div>
                     </div>
@@ -123,7 +122,7 @@
             </div>
          
         </div>   
-  </div> 
+</div> 
 
   <!-- TRENDING IN BANKSSS -->
 <section id="portfolio" class="">
@@ -131,18 +130,17 @@
         <header class="section-header pb-4">
           <h3 class="section-title">BROKERAGE REVIEWS</h3>
         </header>
-        <div class="row portfolio-container" style="position: relative; height: 1080px;">
+        <div class="row portfolio-container">
             <?php if(count($page_data)>=1){
                 foreach($page_data as $d){
                     if($d->div_type == "trending_article"){?>
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="position: absolute; left: 0px; top: 0px; visibility: visible; animation-name: fadeInUp;">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                             <div class="portfolio-wrap">
                             <figure style="background-image:url('<?php echo base_url() . $d->image ?>');" class="figure_image">
                             </figure>
                             <div class="portfolio-info">
                                 <h4><?php echo $d->heading?></h4>
-                                <p><?php echo $d->content?> 
-                                </p>
+                                 <div class="article_content"><?php echo $d->content?></div> 
                             </div>
                             </div>
                         </div>
@@ -154,7 +152,7 @@
 </section>
 
  <!-- Content Related to Loans -->
- <div class="container px-0 py-5 ">
+ <!-- <div class="container px-0 py-5 ">
         <h3 class="border_bottom_golden font-weight-900">Related Articles</h3>
         <?php if(count($page_data)>=1){
             foreach($page_data as $d){
@@ -177,4 +175,19 @@
             <?php }
             }
         }?>
-</div>
+</div> -->
+
+<div class="container py-5">
+    <h3 class="border_bottom_golden">LATEST FROM BANKS BEST RATES</h3>
+    <div id="related_articles">
+
+    </div>     
+</div> 
+
+
+<script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="<?php echo base_url()?>assets/libs/common.js"></script>
+<script src="<?php echo base_url()?>assets/libs/investingProcess.js"></script>
+<script>
+  get_brokerage_overview_posts();
+</script>

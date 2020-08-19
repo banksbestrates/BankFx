@@ -131,61 +131,13 @@
 							</a>
 						</li>
 						
-						<li class="nav-item " id="users_list">
+						<!-- <li class="nav-item " id="users_list">
 							<a href="<?php echo base_url();?>index.php/admin/user_list">
 								<i class="flaticon-users"></i>
 								<p>Registered Users</p>
 							</a>
-						</li>
-					
-						<!-- / -->
-						
-						<!-- <li class="nav-item" id="">
-							<a data-toggle="collapse" href="#userPolicies">
-								<i class="flaticon-list"></i>
-								<p>User Policies</p>
-								<span class="caret"></span>
-							</a>
-							<div class="collapse" id="userPolicies">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="<?php echo base_url()?>policy/user/terms_conditions">
-											<span class="sub-item">Terms and Conditions</span>
-										</a>
-									</li>
-									<li>
-										<a href="<?php echo base_url()?>policy/user/advert_policy">
-											<span class="sub-item">Advert Policy</span>
-										</a>
-									</li>
-									<li>
-										<a href="<?php echo base_url()?>policy/user/referral_policy">
-											<span class="sub-item">Referral Policy</span>
-										</a>
-									</li>
-									<li>
-										<a href="<?php echo base_url()?>policy/user/refund_policy">
-											<span class="sub-item">Refund Policy</span>
-										</a>
-									</li>
-									<li>
-										<a href="<?php echo base_url()?>policy/user/warranty_policy">
-											<span class="sub-item">Warranty Policy</span>
-										</a>
-									</li>
-									<li>
-										<a href="<?php echo base_url()?>policy/user/privacy_policy">
-											<span class="sub-item">Privacy Policy</span>
-										</a>
-									</li>
-									<li>
-										<a href="<?php echo base_url()?>policy/user/contact_us">
-											<span class="sub-item">Contact Us</span>
-										</a>
-									</li>
-								</ul>
-							</div>
 						</li> -->
+					
 
 						<li class="nav-item" id="">
 							<a data-toggle="collapse" href="#websiteView">
@@ -215,6 +167,11 @@
 											<span class="sub-item">Contact Details</span>
 										</a>
 									</li>
+									<li>
+										<a href="<?php echo base_url()?>admin/footer">
+											<span class="sub-item">Footer</span>
+										</a>
+									</li>
 								</ul>
 							</div>
 						</li>
@@ -224,7 +181,6 @@
 								<p>Home Page</p>
 							</a>
 						</li>
-
 						<li class="nav-item" id="">
 							<a data-toggle="collapse" href="#mortgage">
 								<i class="flaticon-list"></i>
@@ -271,12 +227,12 @@
 									</li>					
 									<li>
 										<a href="<?php echo base_url()?>admin/bank/best_bank">
-											<span class="sub-item">Bank Banks</span>
+											<span class="sub-item">Best Banks</span>
 										</a>
 									</li>					
 									<li>
 										<a href="<?php echo base_url()?>admin/bank/best_bank_review">
-											<span class="sub-item">Bank Bank Reviews</span>
+											<span class="sub-item">Best Bank Reviews</span>
 										</a>
 									</li>					
 								</ul>
@@ -362,15 +318,14 @@
 											<span class="sub-item">Best Online Brokers</span>
 										</a>
 									</li>					
-									<li>
+									<!-- <li>
 										<a href="<?php echo base_url()?>admin/brokerage/best_beginner_brokers">
 											<span class="sub-item">Best Brokers for Beginners</span>
 										</a>
-									</li>					
+									</li>					 -->
 								</ul>
 							</div>
 						</li>
-
 						<li class="nav-item" id="">
 							<a data-toggle="collapse" href="#insurance">
 								<i class="flaticon-list"></i>
@@ -406,8 +361,7 @@
 									</li>					
 								</ul>
 							</div>
-						</li>
-						
+						</li>		
 						<li class="nav-item" id="">
 							<a data-toggle="collapse" href="#retirement">
 								<i class="flaticon-list"></i>
@@ -424,14 +378,12 @@
 								</ul>
 							</div>
 						</li>
-
-						<!-- <li class="nav-item" id="bulk_emails">
-							<a href="<?php echo base_url();?>bulk_emails">
-								<i class="flaticon-envelope-1"></i>
-								<p>Send Bulk Emails</p>
+						<li class="nav-item " id="google_analytics">
+							<a href="<?php echo base_url();?>admin/google_analytics">
+								<i class="flaticon-settings"></i>
+								<p>Google Analytics</p>
 							</a>
-						</li> -->
-
+						</li>
 					</ul>
 				</div>
 			</div>

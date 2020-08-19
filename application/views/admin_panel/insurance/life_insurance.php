@@ -10,7 +10,14 @@
                             </div>
                             <small>Web Page Link:<a href="<?php echo base_url();?>life_insurance" target="_blank"><?php echo base_url();?>life_insurance<a>                                        
                         </div>  
-                        <div class="card-body">             
+                        <div class="card-body">   
+                            <h2 class="text-center text-dark font-weight-bold">TOP BANNER TEXT EDIT</h2><hr/>
+                            <div class="col-md-12 px-5">
+                               <div class="row" id="top_banner_text">
+                                   
+                               </div>
+                            </div>
+                            <br/><hr/>            
                             <div class="col-md-12">
                                 <div class="row" id="normal_articles">
                                                                    
@@ -18,14 +25,7 @@
                             </div>
                             <br/>                        
                         </div>
-                            <!-- <h2 class="px-5 text-dark font-weight-bold">Related Articles</h2><hr/>
-                            <div class="col-md-12 px-5">
-                                <div class="row" id="related_articles">
-                                                            
-                                </div>
-                            </div>
-                            <br/>                        
-                        </div> -->
+   
                     </div>
                 </div>
             </div>

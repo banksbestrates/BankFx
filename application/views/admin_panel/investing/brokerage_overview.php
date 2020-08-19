@@ -12,21 +12,21 @@
                         </div>
                         
                         <div class="card-body">
-                        <h2 class="text-center text-dark font-weight-bold">READING ABOUT BROKERAGE</h2><hr/>
-                            <div class="col-md-12 px-5">
-                                <div class="row" id="trending_articles">
-                                                            
+                                <h2 class="text-center text-dark font-weight-bold">TOP BANNER TEXT EDIT</h2><hr/>
+                                <div class="col-md-12 px-5">
+                                <div class="row" id="top_banner_text">
+                                    
                                 </div>
-                            </div>
-                            <br/>                        
-                        </div><br/><br/>
-                        <h2 class="text-center text-dark font-weight-bold">Related Articels</h2><hr/>
-                            <div class="col-md-12 px-5">
-                                <div class="row" id="related_articles">
-                                                            
+                                </div><br/>
+                                <hr/>
+                                <h2 class="text-center text-dark font-weight-bold">BROKERAGE REVIEWS</h2><hr/>
+                                <div class="col-md-12 px-5">
+                                    <div class="row" id="trending_articles">
+                                                                
+                                    </div>
                                 </div>
-                            </div>
-                            <br/>                        
+                                <br/>   
+                        </div>
                         </div>
                     </div>
                 </div>

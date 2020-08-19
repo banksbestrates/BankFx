@@ -139,6 +139,7 @@ $route['admin/insurance/homeowner_insurance']   = 'ADMIN/InsuranceController/hom
 $route['admin/insurance/auto_insurance']        = 'ADMIN/InsuranceController/auto_insurance';
 $route['admin/insurance/life_insurance']        = 'ADMIN/InsuranceController/life_insurance';
 $route['admin/insurance/health_insurance']      = 'ADMIN/InsuranceController/health_insurance';
+$route['admin/google_analytics']                = 'ADMIN/AdminController/google_analytics';
 
 /*=================================ADMIN API========================================*/
 $route['api/admin/login']                           = 'API/Admin/login';
@@ -198,9 +199,15 @@ $route['api/admin/update_health_insurance']         = 'API/Insurance/update_heal
 $route['api/admin/get_bank_overview']               = 'API/Bank/get_bank_overview';
 $route['api/admin/update_bank_overview']            = 'API/Bank/update_bank_overview';
 $route['api/admin/get_best_bank_overview']          = 'API/Bank/get_best_bank_overview';
-$route['api/admin/update_best_bank_overview']            = 'API/Bank/update_best_bank_overview';
-$route['api/admin/get_best_bank_review_overview']               = 'API/Bank/get_best_bank_review_overview';
-$route['api/admin/update_best_bank_review_overview']            = 'API/Bank/update_best_bank_review_overview';
+$route['api/admin/update_best_bank_overview']       = 'API/Bank/update_best_bank_overview';
+$route['api/admin/get_best_bank_review_overview']   = 'API/Bank/get_best_bank_review_overview';
+$route['api/admin/update_best_bank_review_overview']= 'API/Bank/update_best_bank_review_overview';
+
+$route['api/admin/get_script_data']            = 'API/Analytics/get_script_data';
+$route['api/admin/update_script_data']         = 'API/Analytics/update_script_data';
+$route['api/admin/get_footer_data']            = 'API/Analytics/get_footer_data';
+$route['api/admin/update_footer_data']         = 'API/Analytics/update_footer_data';
+$route['api/admin/update_footer_links']         = 'API/Analytics/update_footer_links';
 
 /*==============================WEB APIS===========================================*/
 $route['api/get_page_data']    =    'API/Pages/get_page_data';

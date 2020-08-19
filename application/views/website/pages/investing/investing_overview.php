@@ -49,13 +49,13 @@
           <a href="<?php echo base_url()?>best_online_brokerage"><h6>Best Online Brokers </h6></a>
         </div>
       </div>
-      <div class="col-md col-sm-4">
+      <!-- <div class="col-md col-sm-4">
           <div class="card">
           <div style="width:100%; text-align:center">
             <img src="<?php echo base_url();?>assets/images/website/investing/card_icon/Brokers-for-Beginners.png" style="width:100px; height:100px;">
           </div>
           <a href="<?php echo base_url()?>best_beginner_broker"><h6 class="mb-2">Best Brokers For Beginners</h6></a>
-      </div>
+      </div> -->
       </div>
   </div>
 </div> 

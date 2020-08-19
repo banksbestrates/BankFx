@@ -228,24 +228,24 @@ function get_loan_inner_page(loan_type) {
                     '  <p>'+loanData[i].content+'</p>'+
                     '</div><hr/>'
                    }
-                   else if(loanData[i].div_type=="related_article")
-                   {
-                        related_list = related_list+ 
-                        '   <div class="col-md-12">'+
-                        '       <div class="row">'+
-                        '           <div class="col-md-5">'+
-                        '             <img src="'+baseUrl+loanData[i].image+'" alt="" width="100%" >'+
-                        '           </div>'+
-                        '           <div class="col-md-5 py-4">'+
-                        '               <h3 class="text-dark">'+loanData[i].heading+'</h3>'+
-                        '               <p>'+loanData[i].content+'</p>'+
-                        '           </div>'+
-                        '           <div class="col-md-2">'+
-                        '               <button class="btn btn-sm btn-primary" onclick=editOverviewModel('+i+',"'+loan_type+'")>Edit</button>'+
-                        '           </div>'+
-                        '       </div>'+
-                        '   </div>'
-                   } 
+                //    else if(loanData[i].div_type=="related_article")
+                //    {
+                //         related_list = related_list+ 
+                //         '   <div class="col-md-12">'+
+                //         '       <div class="row">'+
+                //         '           <div class="col-md-5">'+
+                //         '             <img src="'+baseUrl+loanData[i].image+'" alt="" width="100%" >'+
+                //         '           </div>'+
+                //         '           <div class="col-md-5 py-4">'+
+                //         '               <h3 class="text-dark">'+loanData[i].heading+'</h3>'+
+                //         '               <p>'+loanData[i].content+'</p>'+
+                //         '           </div>'+
+                //         '           <div class="col-md-2">'+
+                //         '               <button class="btn btn-sm btn-primary" onclick=editOverviewModel('+i+',"'+loan_type+'")>Edit</button>'+
+                //         '           </div>'+
+                //         '       </div>'+
+                //         '   </div>'
+                //    } 
                    else if(loanData[i].div_type=="overview_heading")
                    {
                         overview_data = '<div class="col-md-10">'+
@@ -258,7 +258,7 @@ function get_loan_inner_page(loan_type) {
                 } 
              }
             $("#normal_articles").html(normal_list);	
-            $("#related_articles").html(related_list);	
+            // $("#related_articles").html(related_list);	
             $("#top_banner_text").html(overview_data);	
 
         }

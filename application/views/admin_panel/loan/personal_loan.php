@@ -25,13 +25,13 @@
                             </div>
                             <br/>                        
                         </div>
-                        <h2 class="px-5 text-dark font-weight-bold">Related Articles</h2><hr/>
+                            <!-- <h2 class="px-5 text-dark font-weight-bold">Related Articles</h2><hr/>
                             <div class="col-md-12 px-5">
                                 <div class="row" id="related_articles">
                                                             
                                 </div>
                             </div>
-                            <br/>                        
+                            <br/>                         -->
                         </div>
                     </div>
                 </div>

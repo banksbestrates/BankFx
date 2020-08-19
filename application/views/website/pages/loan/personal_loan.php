@@ -75,7 +75,7 @@
   }?>
     
  <!-- CONTENT related to this page -->
- <div class="container py-5 ">
+ <!-- <div class="container py-5 ">
        <h3 class="border_bottom_golden font-weight-900">Related Articles</h3> 
         <?php if(count($page_data)>=1){
             foreach($page_data as $d){
@@ -98,4 +98,17 @@
             <?php }
             }
         }?>
- </div>
+ </div> -->
+ <div class="container py-5">
+        <h3 class="border_bottom_golden">LATEST FROM BANKS BEST RATES</h3>
+        <div id="related_articles">
+
+        </div>     
+  </div> 
+
+<script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="<?php echo base_url()?>assets/libs/common.js"></script>
+<script src="<?php echo base_url()?>assets/libs/loanProcess.js"></script>
+<script>
+  get_personal_loan_posts();
+</script>

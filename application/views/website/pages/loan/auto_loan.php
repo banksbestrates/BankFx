@@ -15,7 +15,7 @@
   </div>
  
   <!-- Card view -->
-  <div class="col-md-10 mx-auto card_row pb-4">    
+  <div class="container card_row pb-4">    
         <div class="pt-5 col-md-12 mx-auto row card_view">
             <div class="col-md col-sm-4">
                 <div class="card pb-2">
@@ -56,16 +56,16 @@
   <?php if(count($page_data)>=1){
     foreach($page_data as $d){
     if($d->div_type == "normal_content"){?>
-        <div class="col-md-10 mx-auto pt-5">
+        <div class="container pt-5">
         <h3 class="border_bottom_golden font-weight-900"><?php echo $d->heading?></h3>
             <p class="text-align-justify"><?php echo $d->content?></p>
         </div>
     <?php }
     }
-    }?>
+  }?>
  
  <!-- related articles-->
- <div class="col-md-10 mx-auto  py-5 ">
+ <!-- <div class="col-md-10 mx-auto  py-5 ">
        <h3 class="border_bottom_golden font-weight-900">Related Articles</h2>
        <?php if(count($page_data)>=1){
         foreach($page_data as $d){
@@ -89,4 +89,17 @@
             }
         }?>
        
-</div>
+</div> -->
+    <div class="container py-5">
+        <h3 class="border_bottom_golden">LATEST FROM BANKS BEST RATES</h3>
+        <div id="related_articles">
+
+        </div>     
+    </div> 
+
+<script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="<?php echo base_url()?>assets/libs/common.js"></script>
+<script src="<?php echo base_url()?>assets/libs/loanProcess.js"></script>
+<script>
+  get_auto_loan_posts();
+</script>

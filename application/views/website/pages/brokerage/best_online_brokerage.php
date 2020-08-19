@@ -40,7 +40,7 @@
 }?>
 
 
-<div class="container pt-4">
+<div class="container py-4">
     <h4 class="border_bottom_golden font-weight-900">Best Online Brokers</h4>
     <table class="table text-center text-secondary font-weight-bold">
         <thead>
@@ -130,36 +130,6 @@
     </small>
 </div>
  
-
- <!-- Content Related to Loans -->
- <div class="container mx-auto  py-5 ">
-    <h4 class="border_bottom_golden font-weight-900">Related Articles</h4>   
-    <div id="realated_articles"></div> 
-
-    <!-- <?php if(count($page_data)>=1){
-      foreach($page_data as $d){
-      if($d->div_type == "related_article"){?>
-        <div class="col-md-12 mx-auto row px-0">
-            <div class="col-md-6 related_image" style="background-image:url(<?php echo base_url().$d->image?>)">
-            </div>
-            <div class="col-md-6 related_content">
-                <p class="mb-1">EDITOR'S PICK </p>
-                <h4><?php echo $d->heading?></h4>
-                <p><?php echo $d->content?></p>
-                  <div class="row">
-                        <div class="col-md-1">
-                          <i class="fa fa-arrow-circle-right"  aria-hidden="true"></i>
-                        </div>
-                        <div class="col-md-8 pt-2">6 MIN </div>
-                    </div>
-            </div>
-        </div>
-      <?php }
-      }
-    }?>
-      -->
-</div>
-
 <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
 <script src="<?php echo base_url()?>assets/libs/common.js"></script>
 <script src="<?php echo base_url()?>assets/libs/investingProcess.js"></script>

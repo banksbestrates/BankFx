@@ -190,7 +190,6 @@ function updateOverview(id, type="")
     };
 }
 
-
 //=======home insurance======//
 function get_insurance(type) {
     let base_url = "";
@@ -235,27 +234,38 @@ function get_insurance(type) {
                         '  <p>'+insuranceData[i].content+'</p>'+
                         '</div><hr/>'
                 }   
-                else if(insuranceData[i].div_type=="related_article")
+                // else if(insuranceData[i].div_type=="related_article")
+                // {
+                //      related_list = related_list+ 
+                //      '   <div class="col-md-12 pb-3">'+
+                //      '       <div class="row">'+
+                //      '           <div class="col-md-5">'+
+                //      '             <img src="'+baseUrl+insuranceData[i].image+'" alt="" width="100%" >'+
+                //      '           </div>'+
+                //      '           <div class="col-md-5 py-4">'+
+                //      '               <h3 class="text-dark">'+insuranceData[i].heading+'</h3>'+
+                //      '               <p>'+insuranceData[i].content+'</p>'+
+                //      '           </div>'+
+                //      '           <div class="col-md-2">'+
+                //      '               <button class="btn btn-sm btn-primary" onclick=editOverviewModel('+i+',"'+type+'")>Edit</button>'+
+                //      '           </div>'+
+                //      '       </div>'+
+                //      '   </div>'
+                // } 
+                else if(insuranceData[i].div_type=="overview_heading")
                 {
-                     related_list = related_list+ 
-                     '   <div class="col-md-12 pb-3">'+
-                     '       <div class="row">'+
-                     '           <div class="col-md-5">'+
-                     '             <img src="'+baseUrl+insuranceData[i].image+'" alt="" width="100%" >'+
-                     '           </div>'+
-                     '           <div class="col-md-5 py-4">'+
-                     '               <h3 class="text-dark">'+insuranceData[i].heading+'</h3>'+
-                     '               <p>'+insuranceData[i].content+'</p>'+
-                     '           </div>'+
-                     '           <div class="col-md-2">'+
-                     '               <button class="btn btn-sm btn-primary" onclick=editOverviewModel('+i+',"'+type+'")>Edit</button>'+
-                     '           </div>'+
-                     '       </div>'+
-                     '   </div>'
+                    overview_data = '<div class="col-md-10">'+
+                    '<h1>'+insuranceData[i].heading+'</h1>'+
+                    '<p>'+insuranceData[i].content+'</p>'+
+                    '</div>'+
+                    '<div class="col-md-2">'+
+                    '   <button class="btn btn-primary btn-sm" onclick=contentModel('+i+',"'+type+'")>Edit </button>'+
+                    '</div>'
                 } 
              }
             $("#normal_articles").html(data_list);	
             $("#related_articles").html(related_list);
+            $("#top_banner_text").html(overview_data);	
 
 
         }
@@ -341,9 +351,8 @@ function updateInsuranceData(id,type)
 }
 
 
-
 //=====================CONENT TOP BANNER====================//
-function contentModel(i)
+function contentModel(i,type="")
 {
     let insurance_data = insuranceData[i];
     var modal_body= '<div class="form-group">'+
@@ -362,15 +371,32 @@ function contentModel(i)
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
     $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button>'+
-    '<button class="btn btn-sm btn-primary" onclick="updateContent('+insurance_data.id+')">Update</button>');
+    '<button class="btn btn-sm btn-primary" onclick=updateContent('+insurance_data.id+',"'+type+'")>Update</button>');
     $(".modal").modal('show');
     
     CKEDITOR.replace( 'editor' );
    
 }
 
-function updateContent(id)
+function updateContent(id,type="")
 {
+     let base_url =  baseUrl + "api/admin/update_insurance_overview";
+    if(type=="homeowner")
+    {
+        base_url=  baseUrl + "api/admin/update_homeowner_insurance";
+    }
+    else if(type=="auto")
+    {
+        base_url=  baseUrl + "api/admin/update_auto_insurance";
+    }
+    else if(type=="life")
+    {
+        base_url=  baseUrl + "api/admin/update_life_insurance";
+    }
+    else if(type=="health")
+    {
+        base_url=  baseUrl + "api/admin/update_health_insurance";
+    }
     var content= CKEDITOR.instances.data.getData();
     if (content == "") {
         alert("Enter Valid Content");
@@ -380,7 +406,7 @@ function updateContent(id)
     formData.append('content', content);
     formData.append('heading', heading);
     formData.append('id', id);
-    let url = baseUrl + "api/admin/update_insurance_overview";
+    let url = base_url;
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.send(formData);

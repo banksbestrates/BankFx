@@ -64,4 +64,20 @@
     }
     }?><br/><br/>
 
+<!-- Data fetched form WP -->
+ <div class="container py-5">
+        <h3 class="border_bottom_golden">LATEST FROM BANKS BEST RATES</h3>
+        <div id="related_articles">
+
+        </div>     
+  </div> 
+
+
+<script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="<?php echo base_url()?>assets/libs/common.js"></script>
+<script src="<?php echo base_url()?>assets/libs/loanProcess.js"></script>
+<script>
+  get_student_loan_posts();
+</script>
+
 

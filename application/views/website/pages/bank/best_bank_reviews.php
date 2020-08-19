@@ -2,7 +2,7 @@
     over view banner
   ============================-->
   <div class="overview_banner">
-    <div class="banner_heading w-75 text-justify">
+    <div class="banner_heading">
         <?php if(count($page_data)>=1){
               foreach($page_data as $d){
                 if($d->div_type == "overview_heading"){?>
@@ -33,7 +33,7 @@
                  <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/banking/card_icon/Best-Large-Banks.png" style="width:100px; height:100px;">
                   </div>
-                  <h6>Best Larg Banks</h6>
+                  <h6>Best Large Banks</h6>
                 </div>
             </div>
             <div class="col-md-3">
