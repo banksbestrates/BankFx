@@ -48,7 +48,7 @@
     <!--==========================
       Featured Services Section
     ============================-->
-    <section id="featured-services">
+    <!-- <section id="featured-services">
       <div class="container">
         <div class="row">
           <?php if(count($page_data)>=1){
@@ -56,7 +56,6 @@
                 if($d->div_type=="div_2")
                 {?>
                   <div class="col-lg-4 box <?php echo $d->default_class?>">
-                      <!-- <i class="ion-ios-bookmarks-outline"></i> -->
                       <h4 class="title text-white"><?php echo $d->heading?></h4>
                       <p class="description"><?php echo $d->content ?></p>
                   </div>
@@ -65,7 +64,7 @@
           }?>
  
       </div>
-    </section>
+    </section> -->
     <!-- #featured-services -->
 
     <!--==========================
@@ -97,7 +96,7 @@
         <header class="section-header  wow fadeInUp">
           <h3>Search Bank By State</h3>
           <p class="pb-0">
-          <input type="text" class="col-md-6 py-3 mx-auto form-control" placeholder="Search by state name"/></p>
+          <input type="text" class="col-md-6 py-2 mx-auto form-control" placeholder="Search by state name"/></p>
         </header>
         <div class="col-md-12">
             
@@ -117,7 +116,7 @@
             {?>    
               <h3><?php echo $d->heading?></h3>
               <p> <?php echo $d->content?></p>
-              <a class="cta-btn" href="#">Call To Action</a>
+              <!-- <a class="cta-btn" href="#">Call To Action</a> -->
           <?php }
             }
         }?>
@@ -130,7 +129,7 @@
     <!--==========================
       Facts Section
     ============================-->
-    <section id="facts"  class="wow fadeIn">
+    <!-- <section id="facts"  class="wow fadeIn">
       <div class="container">
 
         <header class="section-header">
@@ -167,14 +166,14 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
     <!-- #facts -->
 
     <!--==========================
       Portfolio Section
     ============================-->
     <!-- TRENDING IN BANKSSS -->
-    <section id="portfolio" class="">
+    <!-- <section id="portfolio" class="">
         <div class="container">
             <header class="section-header pb-4">
               <h3 class="section-title">OUR PORTFOLIO</h3>
@@ -201,7 +200,7 @@
               }?>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- #portfolio -->
 
     <!--==========================

@@ -59,10 +59,11 @@ function get_loan_overview() {
                    {
                         overview_data = '<div class="col-md-10">'+
                         '<h1>'+loanData[i].heading+'</h1>'+
+                        '<img src="'+baseUrl+loanData[i].image+'" style="height:100px"/>'+
                         '<p>'+loanData[i].content+'</p>'+
                         '</div>'+
                         '<div class="col-md-2">'+
-                        '   <button class="btn btn-primary btn-sm" onclick=contentModel('+i+')>Edit </button>'+
+                        '   <button class="btn btn-primary btn-sm" onclick=editOverviewModel('+i+')>Edit </button>'+
                         '</div>'
                 } 
              }
@@ -250,6 +251,7 @@ function get_loan_inner_page(loan_type) {
                    {
                         overview_data = '<div class="col-md-10">'+
                         '<h1>'+loanData[i].heading+'</h1>'+
+                        '<img src="'+baseUrl+loanData[i].image+'" style="height:100px"/>'+
                         '<p>'+loanData[i].content+'</p>'+
                         '</div>'+
                         '<div class="col-md-2">'+
@@ -427,6 +429,19 @@ function contentModel(i,loan_type="")
                         '<textarea rows="5" class="form-control" placeholder="Add Content" name="editor" id="data">'+loan_data.content+'</textarea>'+
                      '</div>'+
                      '<div class="form-group">'+
+                     '<label for="image">Image</label>'+
+                         '<div class="row">'+
+                             '<input type="file" class="form-control col-md-6 col-sm-4" id="src">'+
+                             '<div class="col-md-6 col-sm-4">'+
+                                 '<label class="imagecheck mb-4">'+
+                                 '	<figure class="imagecheck-figure">'+
+                                 '		<img src="'+baseUrl+loan_data.image+'" alt=" Image" class="imagecheck-image" id="target">'+
+                                 '	</figure>'+
+                                 '</label>'+
+                             '</div>'+
+                         '</div>'
+                  '</div>'+
+                     '<div class="form-group">'+
                         '<small class="error_message text-danger"></small>'+
                     '</div>'
 
@@ -437,6 +452,9 @@ function contentModel(i,loan_type="")
     $(".modal").modal('show');
     
     CKEDITOR.replace( 'editor' );
+    var src = document.getElementById("src");
+    var target = document.getElementById("target");
+    showImage(src,target);
 }
 
 function updateContent(id,loan_type="")
@@ -462,6 +480,22 @@ function updateContent(id,loan_type="")
     }
     var heading   = $("#edit_heading").val();
     let formData = new FormData();
+    if (image_src !== "") {
+        var image = document.getElementById('src');
+        var image_ext = image_src.split(".");
+        image_ext = image_ext[image_ext.length - 1];
+        image_ext = image_ext.toLowerCase();	
+         
+        if(image_ext ==="png" || image_ext ==="jpg" || image_ext==="jpeg" || image_ext==="svg")
+        {
+            formData.append('image', image.files[0]);
+        }
+        else {
+            $(".error_message").html("Image should be png/jpg/jpeg/svg format");
+            return false;
+        }
+}
+
     formData.append('content', content);
     formData.append('heading', heading);
     formData.append('id', id);

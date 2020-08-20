@@ -214,6 +214,8 @@ function updateOverview(id)
                     console.log(message);
                     $(".error_message").html(message);     
                  } 
+                
+    
 				swal(message, {
 					buttons: false,
                     timer: 2000,   

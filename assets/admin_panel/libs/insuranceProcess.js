@@ -59,10 +59,11 @@ function get_insurance_overview() {
                 {
                     overview_data = '<div class="col-md-10">'+
                     '<h1>'+insuranceData[i].heading+'</h1>'+
+                    '<img src="'+baseUrl+insuranceData[i].image+'" style="height:100px"/>'+
                     '<p>'+insuranceData[i].content+'</p>'+
                     '</div>'+
                     '<div class="col-md-2">'+
-                    '   <button class="btn btn-primary btn-sm" onclick=contentModel('+i+')>Edit </button>'+
+                    '   <button class="btn btn-primary btn-sm" onclick=editOverviewModel('+i+')>Edit </button>'+
                     '</div>'
                 } 
              }

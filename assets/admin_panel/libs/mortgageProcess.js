@@ -60,10 +60,11 @@ function get_mortgage_overview() {
                    {
                     overview_data = '<div class="col-md-10">'+
                     '<h1>'+mortgageData[i].heading+'</h1>'+
+                    '<img src="'+baseUrl+mortgageData[i].image+'" style="height:100px"/>'+
                     '<p>'+mortgageData[i].content+'</p>'+
                     '</div>'+
                     '<div class="col-md-2">'+
-                    '   <button class="btn btn-primary btn-sm" onclick="contentModel('+i+')">Edit </button>'+
+                    '   <button class="btn btn-primary btn-sm" onclick="editOverviewModel('+i+')">Edit </button>'+
                     '</div>'
                    } 
              }
@@ -284,8 +285,22 @@ function contentModel(i)
                         '<textarea rows="5" class="form-control" placeholder="Add Content" name="editor" id="data">'+mortgage_data.content+'</textarea>'+
                      '</div>'+
                      '<div class="form-group">'+
+                     '<label for="image">Image</label>'+
+                         '<div class="row">'+
+                             '<input type="file" class="form-control col-md-6 col-sm-4" id="src">'+
+                             '<div class="col-md-6 col-sm-4">'+
+                                 '<label class="imagecheck mb-4">'+
+                                 '	<figure class="imagecheck-figure">'+
+                                 '		<img src="'+baseUrl+mortgage_data.image+'" alt=" Image" class="imagecheck-image" id="target">'+
+                                 '	</figure>'+
+                                 '</label>'+
+                             '</div>'+
+                         '</div>'+
+                    '</div>'+
+                    '<div class="form-group">'+
                         '<small class="error_message text-danger"></small>'+
-                    '</div>'   
+                    '</div>' 
+
     $(".modal-dialog").addClass("modal-lg");                                
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
@@ -293,6 +308,9 @@ function contentModel(i)
     $(".modal").modal('show');
     
     CKEDITOR.replace( 'editor' );
+    var src = document.getElementById("src");
+    var target = document.getElementById("target");
+    showImage(src,target);
 }
 
 function updateContent(id)

@@ -2,18 +2,19 @@
   <!--==========================
     over view banner
   ============================-->
-  <div class="overview_banner">
-    <div class="banner_heading w-75">
-        <?php if(count($page_data)>=1){
-              foreach($page_data as $d){
-                if($d->div_type == "overview_heading"){?>
-                  <h1><?php echo $d->heading ?></h1>
-                  <p><?php echo $d->content ?></p>
-          <?php } 
-          }
-        }?>
-    </div>
-  </div>
+    <?php if(count($page_data)>=1){
+            foreach($page_data as $d){
+              if($d->div_type == "overview_heading"){?>
+                <div class="overview_banner" style="background-image:url('<?php echo base_url().$d->image ?>">
+                  <div class="banner_heading">
+                  <h1 class="display-4"><?php echo $d->heading ?></h1>
+                  <div><?php echo $d->content ?></div>
+                  </div>
+                </div>
+        <?php } 
+        }
+    }?>
+   
  
   <!-- Card view -->
   <div class="container card_row pb-4">   
@@ -84,7 +85,7 @@
 
   <!-- TRENDING IN BANKSSS -->
   <div class="container py-5">
-        <h3 class="border_bottom_golden font-weight-900">LATEST FROM BANKS BEST RATES</h3>
+        <h3 class="border_bottom_golden">LATEST FROM BANKS BEST RATES</h3>
         <div id="related_articles">
 
         </div>     

@@ -2,18 +2,18 @@
 <!--==========================
   over view banner
 ============================-->
-<div class="overview_banner">
-    <div class="banner_heading w-75 text-justify">
-        <?php if(count($page_data)>=1){
-              foreach($page_data as $d){
-                if($d->div_type == "overview_heading"){?>
+<?php if(count($page_data)>=1){
+            foreach($page_data as $d){
+              if($d->div_type == "overview_heading"){?>
+                <div class="overview_banner" style="background-image:url('<?php echo base_url().$d->image ?>">
+                  <div class="banner_heading">
                   <h1 class="display-4"><?php echo $d->heading ?></h1>
-                  <p><?php echo $d->content ?></p>
-          <?php } 
-          }
-        }?>
-    </div>
-</div>
+                  <div><?php echo $d->content ?></div>
+                  </div>
+                </div>
+        <?php } 
+        }
+    }?>
 <!-- Card view -->
 <div class="container card_row pb-4">    
   <div class="pt-5 col-md-12 mx-auto row card_view">
@@ -46,7 +46,7 @@
           <div style="width:100%; text-align:center">
             <img src="<?php echo base_url();?>assets/images/website/investing/card_icon/Best-Online-Brokers.png" style="width:100px; height:100px;">
           </div>
-          <a href="<?php echo base_url()?>best_online_brokerage"><h6>Best Online Brokers </h6></a>
+          <a href="<?php echo base_url()?>best_online_brokerage"><h6>Best Brokers</h6></a>
         </div>
       </div>
       <!-- <div class="col-md col-sm-4">

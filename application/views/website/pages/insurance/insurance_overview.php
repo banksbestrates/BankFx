@@ -2,18 +2,18 @@
   <!--==========================
     over view banner
   ============================-->
-  <div class="overview_banner">
-    <div class="banner_heading">
-        <?php if(count($page_data)>=1){
-              foreach($page_data as $d){
-                if($d->div_type == "overview_heading"){?>
+  <?php if(count($page_data)>=1){
+            foreach($page_data as $d){
+              if($d->div_type == "overview_heading"){?>
+                <div class="overview_banner" style="background-image:url('<?php echo base_url().$d->image ?>">
+                  <div class="banner_heading">
                   <h1 class="display-4"><?php echo $d->heading ?></h1>
-                  <p><?php echo $d->content ?></p>
-          <?php } 
-          }
-        }?>
-    </div>
-  </div>
+                  <div><?php echo $d->content ?></div>
+                  </div>
+                </div>
+        <?php } 
+        }
+    }?>
  
   <!-- Card view -->
 

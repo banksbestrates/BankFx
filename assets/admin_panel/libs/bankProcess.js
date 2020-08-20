@@ -68,10 +68,11 @@ function get_bank_overview(type="") {
                 {
                     overview_data = '<div class="col-md-10">'+
                     '<h1>'+bankData[i].heading+'</h1>'+
+                    '<img src="'+baseUrl+bankData[i].image+'" style="height:100px"/>'+
                     '<p>'+bankData[i].content+'</p>'+
                     '</div>'+
                     '<div class="col-md-2">'+
-                    '   <button class="btn btn-primary btn-sm" onclick=contentModel('+i+',"'+type+'")>Edit </button>'+
+                    '   <button class="btn btn-primary btn-sm" onclick=editOverviewModel('+i+',"'+type+'")>Edit </button>'+
                     '</div>'
                 } 
              }
