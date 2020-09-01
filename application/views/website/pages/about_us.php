@@ -5,7 +5,6 @@
   <style>
 
     .back_image{
-      background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('<?php echo base_url()?>assets/img/about-plan.jpg');
       background-repeat:no-repeat;
       background-size:cover;
       background-position:center;
@@ -15,7 +14,7 @@
   <div class="bg-dark h-100 back_image">
       <div class=" h-100 align-items-center">
         <div class="col-lg-12 col-md-12">
-          <h1 class="display-4 text-white font-weight-bold heading_main">ABOUT US</h1>
+          <h1 class="display-4 text-white font-weight-bold heading_main">About Us</h1>
         </div>
       </div>
   </div>
@@ -24,9 +23,9 @@
   </div>
 
 
-    <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
 <script src="<?php echo base_url()?>assets/libs/common.js"></script>
-<script src="<?php echo base_url()?>assets/libs/privacyProcess.js"></script>
+<script src="<?php echo base_url()?>assets/libs/pageProcess.js"></script>
 <script>
   get_page_data('about_us');
 </script>

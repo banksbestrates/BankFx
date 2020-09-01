@@ -5,10 +5,10 @@
     <?php if(count($page_data)>=1){
             foreach($page_data as $d){
               if($d->div_type == "overview_heading"){?>
-                <div class="overview_banner" style="background-image:url('<?php echo base_url().$d->image ?>">
+                  <div class="overview_banner" style="background-image:linear-gradient(to left, rgba(245, 246, 252, 0.02), rgba(13, 13, 13, 0.73)),url('<?php echo base_url().$d->image ?>">
                   <div class="banner_heading">
                   <h1 class="display-4"><?php echo $d->heading ?></h1>
-                  <div><?php echo $d->content ?></div>
+                  <div class="text-white"><?php echo $d->content ?></div>
                   </div>
                 </div>
         <?php } 
@@ -24,7 +24,9 @@
                     <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/mortgage/card_icon/mortgage_rates.png" style="width:100px; height:100px;">
                     </div>
-                    <a href="<?php echo base_url()?>index.php/mortgage_rates"><h6> Mortgage Rates</h6></a>
+                    <!-- <a href="<?php echo base_url()?>index.php/mortgage_rates"> -->
+                    <h6> Mortgage Rates</h6>
+                  <!-- </a> -->
                   </div>
               </div>
               <div class="col-md-3">
@@ -32,7 +34,9 @@
                     <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/mortgage/card_icon/refinance_rate.png" style="width:100px; height:100px;">
                     </div>
-                    <a href="<?php echo base_url()?>index.php/refinance_rates"><h6>Refinance Rates</h6></a>
+                    <!-- <a href="<?php echo base_url()?>index.php/refinance_rates"> -->
+                    <h6>Refinance Rates</h6>
+                  <!-- </a> -->
                   </div>
               </div>
               <div class="col-md-3">
@@ -40,7 +44,9 @@
                   <div style="width:100%; text-align:center">
                     <img src="<?php echo base_url();?>assets/images/website/mortgage/card_icon/mortgage_calculator.png" style="width:100px; height:100px;">
                   </div>
-                  <a href="<?php echo base_url()?>index.php/mortgage_calculator_list"><h6>Mortgage Calculators</h6></a>
+                  <!-- <a href="<?php echo base_url()?>index.php/mortgage_calculator_list"> -->
+                  <h6>Mortgage Calculators</h6>
+                <!-- </a> -->
                   </div>
               </div>
               <div class="col-md-3">
@@ -48,7 +54,9 @@
                     <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/mortgage/card_icon/house_afford.png" style="width:100px; height:100px;">
                     </div>
-                  <a href="<?php echo base_url()?>index.php/house_afford"><h6>How much house you can afford ?</h6></a>
+                  <!-- <a href="<?php echo base_url()?>index.php/house_afford"> -->
+                  <h6>How much house you can afford ?</h6>
+                <!-- </a> -->
                   </div>
               </div>
         </div>
@@ -64,7 +72,9 @@
             <?php if(count($page_data)>=1){
                 foreach($page_data as $d){
                   if($d->div_type == "trending_article"){?>
-                      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                     
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <a href="<?php echo base_url()?>mortgage/article_detail/<?php echo $d->id?>" >
                           <div class="portfolio-wrap">
                             <figure style="background-image:url('<?php echo base_url() . $d->image ?>');
                                 background-size:cover;background-position:center">
@@ -75,6 +85,7 @@
                               
                             </div>
                           </div>
+                          </a>
                         </div>
                 <?php }
                 }

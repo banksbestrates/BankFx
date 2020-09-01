@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #D79F01;
+  color: #0000ee;
   transition: 0.5s;
 }
 
@@ -1512,7 +1512,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   url("../img/overview/overview_banner.png");
 background-size: cover;
 width: 100%;
-height: 380px;
+/* height: 380px; */
+height: 270px;
 /* margin: 10px 0 0 10px; */
 position: relative;
 float: left;
@@ -1521,15 +1522,15 @@ overflow: hidden;
 .banner_heading{
 margin: 0;
 position: absolute;
-top: 18%;
+top: 20%;
 left: 10%;
 width:75%;
 text-align: justify;
 }
 .banner_heading h1{
 font-weight: 900!important;
-color: black!important;
-font-size:2.6rem!important;
+color: white!important;
+/* font-size:2.6rem!important; */
 text-align: left!important;
 }
 .banner_heading p{
@@ -1585,7 +1586,7 @@ background:
   rgba(0, 0, 0, 0.6),
   rgba(0, 0, 0, 0.6)
   ),
-  url("../img/bank_best.jpg");
+  url("../img/rating.jpg");
 background-size: cover;
 width: 130%;
 position: relative;
@@ -1742,6 +1743,10 @@ font-size:40px;
 .range_slidecontainer .slider:hover {
   opacity: 1;
 }
+/* .side_nav_item:hover {
+  background-color:white;
+  color:#D79F01;
+} */
 
 .range_slidecontainer .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -2243,6 +2248,9 @@ border:1px solid #D79F01!important;
   .related_content h4{
     font-size:18px!important;
   }
+  .blog_heading :hover{
+   color:blue!important;
+  }
   .related_content p{
     font-size:14px!important;
     margin-bottom:2px!important;
@@ -2311,11 +2319,23 @@ border:1px solid #D79F01!important;
 
 /* realted articles conteent for all overview pages */
 #related_articles .content h1 , #related_articles .content h2,
-#related_articles .content h3,#related_articles .content h4,
+#related_articles .content h3,#related_articles .content h4{
+  font-size:18px!important;
+}
 #related_articles .content h5 , #related_articles  .content p {
   font-size:14px!important;
+  text-align:justify!important;
 }
 
+.article_content{
+  text-align:justify!important;
+  height:5rem;
+  /* line-height: 1.5em; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  color:black!important;
+}
 
 .credit_starts .fa{
   font-size:24px;
@@ -2326,4 +2346,13 @@ border:1px solid #D79F01!important;
 }
 .credit_left_div button{
   width:85%;
+}
+.blog_image{
+  background-color: #333;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  /* position: relative; */
+  height:300px;
+  background-size: cover;
+  overflow: hidden;
 }

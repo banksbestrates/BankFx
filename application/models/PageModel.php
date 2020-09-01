@@ -10,7 +10,7 @@ class PageModel extends CI_Model
     public function __construct()
     {
         parent::__construct();
-        date_default_timezone_set('Asia/Calcutta');
+        date_default_timezone_set('America/New_York');
         $date = new DateTime();
         $this->timeStamp = $date->getTimestamp();
         $this->unix_timestamp = date('U');
@@ -22,14 +22,15 @@ class PageModel extends CI_Model
     {
         if($page_type=="about_us")
         {
-            $this->db->select('id,about_us as page_data');
+            $this->db->select('id,about_us as page_data,about_image as image');
         }else if($page_type=="terms_conditions")
         {
-            $this->db->select('id,terms_conditions as page_data');
+            $this->db->select('id,terms_conditions as page_data , term_image as image');
         }else if($page_type=="privacy_policy")
         {
-            $this->db->select('id,privacy_policy as page_data');
+            $this->db->select('id,privacy_policy as page_data, privacy_image as image');
         }
+        
         $this->db->from("$this->tbl_pages");
         $exist = $this->db->get();
         if ($exist->num_rows()) {

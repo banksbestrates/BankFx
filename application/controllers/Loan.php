@@ -99,6 +99,28 @@ class Loan extends CI_Controller {
 		$this->load->view('website/pages/loan/loan_calculator');
 		$this->load->view('website/layout/footer');
     }
+	public function debt_consolidation()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/loan/debt_consolidation');
+		$this->load->view('website/layout/footer');
+	}
+
+	public function article_detail($id)
+	{
+		$article_data = $this->LoanModel->get_article_detail($id);
+		if($article_data['Status'])
+		{
+			
+			$article_data = $article_data['data'];
+		}else{
+			$article_data="";
+		}
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/loan/article_detail',array("article_data"=>$article_data));
+		$this->load->view('website/layout/footer');
+    }
+	
     
     
 }

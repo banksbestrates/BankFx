@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>BankFx- Admin</title>
+	<title>BanksBestRates- Admin</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="<?php echo base_url();?>assets/admin_panel/im" />
 
@@ -382,6 +382,12 @@
 							<a href="<?php echo base_url();?>admin/google_analytics">
 								<i class="flaticon-settings"></i>
 								<p>Google Analytics</p>
+							</a>
+						</li>
+						<li class="nav-item " id="blog_overview">
+							<a href="<?php echo base_url();?>admin/blog_overview">
+								<i class="flaticon-settings"></i>
+								<p>Blog</p>
 							</a>
 						</li>
 					</ul>

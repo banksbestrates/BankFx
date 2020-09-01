@@ -4,10 +4,10 @@
   <?php if(count($page_data)>=1){
             foreach($page_data as $d){
               if($d->div_type == "overview_heading"){?>
-                <div class="overview_banner" style="background-image:url('<?php echo base_url().$d->image ?>">
+                   <div class="overview_banner" style="background-image:linear-gradient(to left, rgba(245, 246, 252, 0.02), rgba(13, 13, 13, 0.73)),url('<?php echo base_url().$d->image ?>">
                   <div class="banner_heading">
                   <h1 class="display-4"><?php echo $d->heading ?></h1>
-                  <div><?php echo $d->content ?></div>
+                  <div class="text-white"><?php echo $d->content ?></div>
                   </div>
                 </div>
         <?php } 
@@ -24,7 +24,9 @@
                     <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/personal_loan.png" style="width:100px; height:100px;">
                   </div>
                 <!-- <i class="fa fa-bar-chart" aria-hidden="true"></i> -->
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6>Personal Loans </h6></a>
+                  <!-- <a href="<?php echo base_url()?>index.php/personal_loan"> -->
+                  <h6>Personal Loans </h6>
+                <!-- </a> -->
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -33,7 +35,9 @@
                     <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/home_equity.png" style="width:100px; height:100px;">
                   </div>
                   <!-- <i class="fa fa-bar-chart" aria-hidden="true"></i> -->
-                  <a href="<?php echo base_url()?>index.php/personal_loan"><h6>Home Equity Loans</h6></a>
+                  <!-- <a href="<?php echo base_url()?>index.php/personal_loan"> -->
+                  <h6>Home Equity Loans</h6>
+                <!-- </a> -->
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -42,7 +46,9 @@
                     <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/auto_loan.png" style="width:100px; height:100px;">
                   </div>
               <!-- <i class="fa fa-bar-chart" aria-hidden="true"></i> -->
-              <a href="<?php echo base_url()?>index.php/auto_loan"><h6>Auto Loans </h6></a>
+              <!-- <a href="<?php echo base_url()?>index.php/auto_loan"> -->
+              <h6>Auto Loans </h6>
+            <!-- </a> -->
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -50,8 +56,10 @@
                   <div style="width:100%; text-align:center">
                     <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/student_loan.png" style="width:100px; height:100px;">
                   </div>
-                <!-- <i class="fa fa-bar-chart" aria-hidden="true"></i> -->
-                <a href="<?php echo base_url()?>index.php/student_loan"><h6>Student Loan</h6></a>
+           
+                <!-- <a href="<?php echo base_url()?>index.php/student_loan"> -->
+                <h6>Student Loan</h6>
+              <!-- </a> -->
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -59,8 +67,10 @@
                   <div style="width:100%; text-align:center">
                     <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/lender_review.png" style="width:100px; height:100px;">
                   </div>
-                <!-- <i class="fa fa-bar-chart" aria-hidden="true"></i> -->
-                <a href="<?php echo base_url()?>leander_loan_review"><h6>Lender Review</h6></a>
+             
+                <!-- <a href="<?php echo base_url()?>leander_loan_review"> -->
+                <h6>Lender Review</h6>
+              <!-- </a> -->
                 </div>
             </div>
         </div>
@@ -77,6 +87,7 @@
                 foreach($page_data as $d){
                   if($d->div_type == "trending_article"){?>
                       <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+                      <a href="<?php echo base_url()?>loan/article_detail/<?php echo $d->id?>" >
                           <div class="portfolio-wrap">
                             <figure style="background-image:url('<?php echo base_url() . $d->image ?>');" class="figure_image">
                             </figure>
@@ -85,6 +96,7 @@
                               <div class="article_content"><?php echo $d->content?></div>  
                             </div>
                           </div>
+                      </a>
                       </div>
                 <?php }
                 }

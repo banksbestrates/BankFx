@@ -37,32 +37,33 @@ function get_retirement_overview() {
                         '    </div>'+
                         '</div>'
                 }
-                else if(retirementData[i].div_type=="related_article")
-                {
-                        related_list = related_list+ 
-                        '   <div class="col-md-12">'+
-                        '       <div class="row">'+
-                        '           <div class="col-md-5">'+
-                        '             <img src="'+baseUrl+retirementData[i].image+'" alt="" width="100%" >'+
-                        '           </div>'+
-                        '           <div class="col-md-5 py-4">'+
-                        '               <h3 class="text-dark">'+retirementData[i].heading+'</h3>'+
-                        '               <p>'+retirementData[i].content+'</p>'+
-                        '           </div>'+
-                        '           <div class="col-md-2">'+
-                        '               <button class="btn btn-sm btn-primary" onclick="editOverviewModel('+i+')">Edit</button>'+
-                        '           </div>'+
-                        '       </div>'+
-                        '   </div>'
-                } 
+                // else if(retirementData[i].div_type=="related_article")
+                // {
+                //         related_list = related_list+ 
+                //         '   <div class="col-md-12">'+
+                //         '       <div class="row">'+
+                //         '           <div class="col-md-5">'+
+                //         '             <img src="'+baseUrl+retirementData[i].image+'" alt="" width="100%" >'+
+                //         '           </div>'+
+                //         '           <div class="col-md-5 py-4">'+
+                //         '               <h3 class="text-dark">'+retirementData[i].heading+'</h3>'+
+                //         '               <p>'+retirementData[i].content+'</p>'+
+                //         '           </div>'+
+                //         '           <div class="col-md-2">'+
+                //         '               <button class="btn btn-sm btn-primary" onclick="editOverviewModel('+i+')">Edit</button>'+
+                //         '           </div>'+
+                //         '       </div>'+
+                //         '   </div>'
+                // } 
                 else if(retirementData[i].div_type=="overview_heading")
                 {
                     overview_data = '<div class="col-md-10">'+
                     '<h1>'+retirementData[i].heading+'</h1>'+
+                    '<img src="'+baseUrl+retirementData[i].image+'" style="height:100px"/>'+
                     '<p>'+retirementData[i].content+'</p>'+
                     '</div>'+
                     '<div class="col-md-2">'+
-                    '   <button class="btn btn-primary btn-sm" onclick=contentModel('+i+')>Edit </button>'+
+                    '   <button class="btn btn-primary btn-sm" onclick=editOverviewModel('+i+')>Edit </button>'+
                     '</div>'
                 } 
              }

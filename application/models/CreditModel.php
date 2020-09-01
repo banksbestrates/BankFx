@@ -11,7 +11,7 @@ class CreditModel extends CI_Model
     public function __construct()
     {
         parent::__construct();
-        date_default_timezone_set('Asia/Calcutta');
+        date_default_timezone_set('America/New_York');
         $date = new DateTime();
         $this->timeStamp = $date->getTimestamp();
         $this->unix_timestamp = date('U');
@@ -48,6 +48,23 @@ class CreditModel extends CI_Model
             return $response;
         }
         return $this->send_error_response($this->config->item('data_update_failure'));
+    }
+
+
+    public function get_article_detail($id)
+    {
+        $this->db->select("*");
+        $this->db->from("$this->tbl_credit_overview")->where("id",$id);
+        $exist = $this->db->get();
+        if ($exist->num_rows()) {
+            $responseData = $exist->result();
+            $response[$this->config->item('status')] = true;
+            $response[$this->config->item('message')] = $this->config->item('data_found_success');
+            $response[$this->config->item('baseUrl')] = base_url();
+            $response[$this->config->item('data')] = $responseData[0];
+            return $response;
+        }
+        return $this->send_error_response($this->config->item('data_found_failure'));
     }
    
 

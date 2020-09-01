@@ -29,7 +29,7 @@
             }?>
         </div>
 
-        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+        <!-- <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
@@ -37,7 +37,7 @@
         <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-        </a>
+        </a> -->
 
       </div>
     </div>
@@ -70,12 +70,11 @@
     <!--==========================
       About Us Section
     ============================-->
-    <section id="about">
+    <!-- <section id="about">
       <div class="container">
 
         <header class="section-header">
           <h3>CHECK NEARBY BANKS</h3>
-          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
         </header>
 
         <div class="pt-3 col-md-12 mx-auto">
@@ -85,13 +84,13 @@
         </div>
 
       </div> 
-    </section>
+    </section> -->
     <!-- #about -->
 
     <!--==========================
       Services Section
     ============================-->
-    <section id="services">
+    <!-- <section id="services">
       <div class="container">
         <header class="section-header  wow fadeInUp">
           <h3>Search Bank By State</h3>
@@ -102,7 +101,7 @@
             
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- #services -->
 
     <!--==========================
@@ -230,7 +229,7 @@
     <!--==========================
       Clients Section
     ============================-->
-    <section id="testimonials" class="section-bg wow fadeInUp">
+    <!-- <section id="testimonials" class="section-bg wow fadeInUp">
       <div class="container">
 
         <header class="section-header">
@@ -257,7 +256,7 @@
           }?>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- #testimonials -->
 
     <!--==========================

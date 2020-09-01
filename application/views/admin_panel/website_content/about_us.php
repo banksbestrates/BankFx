@@ -10,6 +10,10 @@
                             </div>
                         </div>
                         <div class="card-body">
+                            <h4>Banner Image</h4>
+                            <div class="banner_image">
+                                
+                            </div>
                             <div class="">
                                 <textarea name="editor" id="data"></textarea>
                             </div>

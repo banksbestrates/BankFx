@@ -62,7 +62,7 @@ function updateContactUs()
     formData.append('phone', phone);
     formData.append('email', email);
     formData.append('address', address);
-    let url = baseUrl + "api/admin/update_contaact_detail";
+    let url = baseUrl + "api/admin/update_contact_detail";
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.send(formData);

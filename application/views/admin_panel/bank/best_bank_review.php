@@ -8,7 +8,7 @@
                             <div class="d-flex align-items-center">
                                 <h5 class="card-title">BANKING-Best Banks</h5>                              
                             </div>
-                            <small>Web Page Link:<a href="<?php echo base_url();?>/best_bank_review" target="_blank"><?php echo base_url();?>best_bank_review<a>                                        
+                            <small>Web Page Link:<a href="<?php echo base_url();?>/best_bank_reviews" target="_blank"><?php echo base_url();?>best_bank_reviews<a>                                        
                         </div>
                         
                         <div class="card-body">

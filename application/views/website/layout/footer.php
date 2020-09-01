@@ -7,15 +7,17 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3 class="text-white">BankFx</h3>
-            <p id="about_desc">
+            <a href="<?php echo base_url()?>">
+              <img src="<?php echo base_url()?>assets/img/logo/main_logo.png" style="height: 60px;">
+            </a>
+            <p id="about_desc" class="pt-3">
             </p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="<?php echo base_url()?>">Home</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="<?php echo base_url()?>about_us">About us</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="<?php echo base_url()?>terms_conditions">Terms of service</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="<?php echo base_url()?>privacy_policy">Privacy policy</a></li>
@@ -40,9 +42,9 @@
             <h4>Our Newsletter</h4>
             <p id="newsletter">
             </p>
-            <form action="" method="post">
+            <!-- <form action="" method="post">
               <input type="email" name="email"><input type="submit"  value="Subscribe">
-            </form>
+            </form> -->
           </div>
 
         </div>
@@ -51,7 +53,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>BankFx</strong>. All Rights Reserved
+        &copy; Copyright <strong>BanksBestRates</strong>. All Rights Reserved
       </div>
       <div class="credits">
        
@@ -85,9 +87,25 @@
   <script src="<?php echo base_url()?>assets/libs/common.js"></script>
   <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
   <script src="<?php echo base_url()?>assets/libs/footerProcess.js"></script>
-
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171441107-1"></script>
   <script>
-  get_footer_data();
-  get_contact_data();</script>
+    get_footer_data();
+    get_contact_data();
+    window.dataLayer = window.dataLayer || []; 
+    function gtag()
+    {
+      dataLayer.push(arguments);
+    } 
+    gtag('js', new Date());
+    gtag('config', 'UA-171441107-1');
+  
+  	var pageURL = window.location.href;
+		var lastURLSegment = pageURL.substr(pageURL.lastIndexOf('/') + 1);
+		$(".side_nav_item").removeClass("active");
+		$("#"+lastURLSegment).addClass("active");
+
+  
+  
+  </script>
 </body>
 </html>

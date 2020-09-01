@@ -4,17 +4,16 @@
   <?php if(count($page_data)>=1){
             foreach($page_data as $d){
               if($d->div_type == "overview_heading"){?>
-                <div class="overview_banner" style="background-image:url('<?php echo base_url().$d->image ?>">
+                    <div class="overview_banner" style="background-image:linear-gradient(to left, rgba(245, 246, 252, 0.02), rgba(13, 13, 13, 0.73)),url('<?php echo base_url().$d->image ?>">
                   <div class="banner_heading">
                   <h1 class="display-4"><?php echo $d->heading ?></h1>
-                  <div><?php echo $d->content ?></div>
+                  <div class="text-white"><?php echo $d->content ?></div>
                   </div>
                 </div>
         <?php } 
         }
     }?>
-   
- 
+
   <!-- Card view -->
   <div class="container card_row pb-4">   
         <!-- row 1  -->
@@ -24,7 +23,9 @@
                     <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/best_credit.png" style="width:100px; height:100px;">
                     </div>
-                    <a href="<?php echo base_url()?>/best_credit_cards"><span>Best Credit Cards</span></a>
+                    <!-- <a href="<?php echo base_url()?>/best_credit_cards"> -->
+                      <span>Best Credit Cards</span>
+                    <!-- </a> -->
                 </div>
             </div>
             <div class="col-md">
@@ -32,7 +33,9 @@
                     <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/balance_transfer.png" style="width:100px; height:100px;">
                     </div>
-                  <a href="#"><span>Balance Transfer</span></a>
+                  <!-- <a href="#"> -->
+                    <span>Balance Transfer</span>
+                  <!-- </a> -->
                 </div>
             </div>
             <div class="col-md">
@@ -40,7 +43,9 @@
                     <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/zero.png" style="width:100px; height:100px;">
                     </div>
-                  <a href="#"><span>Zero ARP</span></a>
+                  <!-- <a href="#"> -->
+                    <span>Zero ARP</span>
+                  <!-- </a> -->
                 </div>
             </div>
             <div class="col-md">
@@ -48,7 +53,9 @@
                     <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/no_annual_fee.png" style="width:100px; height:100px;">
                     </div>
-                  <a href="#"><span>No Annual Fee</span></a>
+                  <!-- <a href="#"> -->
+                    <span>No Annual Fee</span>
+                  <!-- </a> -->
                 </div>
             </div>
             <div class="col-md">
@@ -56,7 +63,9 @@
                     <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/rewards.png" style="width:100px; height:100px;">
                     </div>
-                  <a href="#"><span>Rewards</span></a>
+                  <!-- <a href="#"> -->
+                    <span>Rewards</span>
+                  <!-- </a> -->
                 </div>
             </div>
             <div class="col-md">
@@ -64,7 +73,9 @@
                    <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/CashBack.png" style="width:100px; height:100px;">
                     </div>
-                  <a href="#"><span>Cash Back</span></a>
+                  <!-- <a href="#"> -->
+                    <span>Cash Back</span>
+                  <!-- </a> -->
                 </div>
             </div>   
         </div>
@@ -75,7 +86,9 @@
                     <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/Travel.png" style="width:100px; height:100px;">
                     </div>
-                  <a href="#"><span>Travel</span></a>
+                  <!-- <a href="#"> -->
+                    <span>Travel</span>
+                  <!-- </a> -->
                 </div>
             </div>
             <div class="col-md">
@@ -83,7 +96,9 @@
                     <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/Business.png" style="width:100px; height:100px;">
                     </div>
-                  <a href="#"><span>Business</span></a>
+                  <!-- <a href="#"> -->
+                    <span>Business</span>
+                  <!-- </a> -->
                 </div>
             </div>
             <div class="col-md">
@@ -91,7 +106,9 @@
                   <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/Student.png" style="width:100px; height:100px;">
                     </div>
-                  <a href="#"><span>Student</span></a>
+                  <!-- <a href="#"> -->
+                    <span>Student</span>
+                  <!-- </a> -->
                 </div>
             </div>
             <div class="col-md">
@@ -99,7 +116,9 @@
                     <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/Low_Interest.png" style="width:100px; height:100px;">
                     </div>
-                  <a href="#"><span>Low Intrest</span></a>
+                  <!-- <a href="#"> -->
+                    <span>Low Intrest</span>
+                  <!-- </a> -->
                 </div>
             </div>
             <div class="col-md">
@@ -107,7 +126,9 @@
                     <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/Secured.png" style="width:100px; height:100px;">
                     </div>
-                  <a href="#"><span>Secured</span></a>
+                  <!-- <a href="#"> -->
+                    <span>Secured</span>
+                  <!-- </a> -->
                 </div>
             </div>
             <div class="col-md">
@@ -115,7 +136,9 @@
                 <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/credit/card_icon/PoorCredit.png" style="width:100px; height:100px;">
                     </div>
-                  <a href="#"><span>Bad Credit</span></a>
+                  <!-- <a href="#"> -->
+                    <span>Bad Credit</span>
+                  <!-- </a> -->
                 </div>
             </div>
                 
@@ -133,6 +156,7 @@
                 foreach($page_data as $d){
                   if($d->div_type == "trending_article"){?>
                       <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <a href="<?php echo base_url()?>credit/article_detail/<?php echo $d->id?>" >
                           <div class="portfolio-wrap">
                             <figure style="background-image:url('<?php echo base_url() . $d->image ?>');
                                 background-size:cover;background-position:center">
@@ -142,6 +166,7 @@
                               <div class="article_content"><?php echo $d->content?></div>   
                             </div>
                           </div>
+                      </a>
                         </div>
                 <?php }
                 }

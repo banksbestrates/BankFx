@@ -19,6 +19,8 @@ $config['brokerage_media_path']         =  'assets/images/website/brokerage/';
 $config['investing_media_path']         =  'assets/images/website/investing/';
 $config['retirement_media_path']        =  'assets/images/website/retirement/';
 $config['homepage_media_path']          =  'assets/images/website/homepage/';
+$config['bank_media_path']              =  'assets/images/website/banking/';
+$config['pages_media_path']             =  'assets/images/website/pages/';
 /*=========================ADMIN MODULE=============================*/
 $config['admin_login_success']          =  'Login Successfully';
 $config['admin_login_failure']          =  'Invalid Credentails! Plase Verify email and password';

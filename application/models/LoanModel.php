@@ -174,6 +174,22 @@ class LoanModel extends CI_Model
         }
         return $this->send_error_response($this->config->item('data_update_failure'));
     }
+
+    public function get_article_detail($id)
+    {
+        $this->db->select("*");
+        $this->db->from("$this->tbl_loan_overview")->where("id",$id);
+        $exist = $this->db->get();
+        if ($exist->num_rows()) {
+            $responseData = $exist->result();
+            $response[$this->config->item('status')] = true;
+            $response[$this->config->item('message')] = $this->config->item('data_found_success');
+            $response[$this->config->item('baseUrl')] = base_url();
+            $response[$this->config->item('data')] = $responseData[0];
+            return $response;
+        }
+        return $this->send_error_response($this->config->item('data_found_failure'));
+    }
        
    
 

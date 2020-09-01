@@ -56,6 +56,7 @@ $route['signup'] = 'Register';
 $route['about_us'] = 'About';
 $route['privacy_policy'] = 'About/privacy_policy';
 $route['terms_conditions'] = 'About/terms_conditions';
+$route['article_detail/(:any)'] = 'About/article_detail/$1';
 $route['profile'] = 'Profile';
 $route['mortgage_overview'] = 'Mortgage/mortgage_overview';
 $route['mortgage_rates'] = 'Mortgage/mortgage_rates';
@@ -77,8 +78,9 @@ $route['best_bank_reviews'] = 'Bank/best_bank_reviews';
 $route['bank_review'] = 'Bank/bank_review';
 $route['branch_locator'] = 'Bank/branch_locator';
 $route['bank_state'] = 'Bank/bank_state';
-$route['bank_city'] = 'Bank/bank_city';
+$route['bank_city/(:any)'] = 'Bank/bank_city/$1';
 $route['best_money_market'] = 'Bank/best_money_market';
+// $route['(:any)'] = 'Bank/all_cities/$1';
 
 // loan module
 $route['loan_calculator']       = 'Loan/loan_calculator';
@@ -86,6 +88,7 @@ $route['loan_overview']         = 'Loan/loan_overview';
 $route['personal_loan']         = 'Loan/personal_loan';
 $route['personal_loan_rate']    = 'Loan/personal_loan_rate';
 $route['auto_loan']             = 'Loan/auto_loan';
+$route['debt_consolidation']    = 'Loan/debt_consolidation';
 $route['student_loan']          = 'Loan/student_loan';
 $route['top_lenders']           = 'Loan/top_lenders';
 $route['leander_loan_review']   = 'Loan/leander_loan_review';
@@ -140,6 +143,7 @@ $route['admin/insurance/auto_insurance']        = 'ADMIN/InsuranceController/aut
 $route['admin/insurance/life_insurance']        = 'ADMIN/InsuranceController/life_insurance';
 $route['admin/insurance/health_insurance']      = 'ADMIN/InsuranceController/health_insurance';
 $route['admin/google_analytics']                = 'ADMIN/AdminController/google_analytics';
+$route['admin/blog_overview']                   = 'ADMIN/BlogController/blog_overview';
 
 /*=================================ADMIN API========================================*/
 $route['api/admin/login']                           = 'API/Admin/login';
@@ -149,6 +153,7 @@ $route['api/admin/update_profile']                  = 'API/Admin/update_profile'
 $route['api/admin/reset_password']                  = 'API/Admin/reset_password';
 $route['api/admin/page_data']                       = 'API/Pages/get_page_data';
 $route['api/admin/page_data_update']                = 'API/Pages/page_data_update';
+$route['api/admin/update_page_banner']              = 'API/Pages/update_page_banner';
 $route['api/admin/get_contact_detail']              = 'API/Pages/get_contact_detail';
 $route['api/admin/update_contact_detail']           = 'API/Pages/update_contact_detail';
 $route['api/admin/get_mortgage_rate_content']       = 'API/Mortgage/get_mortgage_rate_content';
@@ -202,12 +207,21 @@ $route['api/admin/get_best_bank_overview']          = 'API/Bank/get_best_bank_ov
 $route['api/admin/update_best_bank_overview']       = 'API/Bank/update_best_bank_overview';
 $route['api/admin/get_best_bank_review_overview']   = 'API/Bank/get_best_bank_review_overview';
 $route['api/admin/update_best_bank_review_overview']= 'API/Bank/update_best_bank_review_overview';
+$route['api/admin/get_blog_overview']               = 'API/Blog/get_blog_overview';
+$route['api/admin/update_blog_overview']            = 'API/Blog/update_blog_overview';
 
 $route['api/admin/get_script_data']            = 'API/Analytics/get_script_data';
 $route['api/admin/update_script_data']         = 'API/Analytics/update_script_data';
 $route['api/admin/get_footer_data']            = 'API/Analytics/get_footer_data';
 $route['api/admin/update_footer_data']         = 'API/Analytics/update_footer_data';
-$route['api/admin/update_footer_links']         = 'API/Analytics/update_footer_links';
+$route['api/admin/update_footer_links']        = 'API/Analytics/update_footer_links';
+
+$route['api/mortgage/article_detail/(:any)']    = 'Mortgage/article_detail/$1';
+$route['api/retirement/article_detail/(:any)']  = 'Retirement/article_detail/$1';
+$route['api/bank/article_detail/(:any)']  = 'Bank/article_detail/$1';
+$route['api/credit/article_detail/(:any)']  = 'Credit/article_detail/$1';
+$route['investing/article_detail/(:any)']  = 'Investment/article_detail/$1';
+$route['api/loan/article_detail/(:any)']  = 'Loan/article_detail/$1';
 
 /*==============================WEB APIS===========================================*/
 $route['api/get_page_data']    =    'API/Pages/get_page_data';
