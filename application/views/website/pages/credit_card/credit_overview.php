@@ -149,28 +149,10 @@
   <section id="portfolio" class="">
       <div class="container">
           <header class="section-header pb-4">
-            <h3 class="section-title font-weight-900">READING ABOUT CREDIT CARDS</h3>
+            <h3 class="section-title font-weight-900">OUR BEST ADVICE</h3>
           </header>
-          <div class="row portfolio-container">
-            <?php if(count($page_data)>=1){
-                foreach($page_data as $d){
-                  if($d->div_type == "trending_article"){?>
-                      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                        <a href="<?php echo base_url()?>credit/article_detail/<?php echo $d->id?>" >
-                          <div class="portfolio-wrap">
-                            <figure style="background-image:url('<?php echo base_url() . $d->image ?>');
-                                background-size:cover;background-position:center">
-                            </figure>
-                            <div class="portfolio-info">
-                              <h4><?php echo $d->heading?></h4>
-                              <div class="article_content"><?php echo $d->content?></div>   
-                            </div>
-                          </div>
-                      </a>
-                        </div>
-                <?php }
-                }
-            }?>
+          <div class="row" id="advice_data">
+
           </div>
       </div>
   </section>
@@ -186,6 +168,7 @@
 <script src="<?php echo base_url()?>assets/libs/common.js"></script>
 <script src="<?php echo base_url()?>assets/libs/creditProcess.js"></script>
 <script>
+ get_credit_advice_data();
   get_credit_overview_post();
 </script>
 

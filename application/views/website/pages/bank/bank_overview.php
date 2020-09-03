@@ -106,11 +106,11 @@
 <!-- TRENDING IN BANKSSS -->
 <section id="portfolio">
       <header class="section-header pb-4">
-          <h3 class="section-title">WHATS TRENDING IN BANKING</h3>
+          <h3 class="section-title">OUR BEST ADVICE</h3>
       </header>
       <div class="container">    
-        <div class="row portfolio-container">
-        <?php if(count($page_data)>=1){
+        <div class="row" id="advice_data">
+        <!-- <?php if(count($page_data)>=1){
               foreach($page_data as $d){
                 if($d->div_type == "trending_article"){?>
                      <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
@@ -128,7 +128,7 @@
                       </div>
                <?php }
               }
-          }?>
+          }?> -->
 
         </div>
       </div>
@@ -145,6 +145,7 @@
 <script src="<?php echo base_url()?>assets/libs/common.js"></script>
 <script src="<?php echo base_url()?>assets/libs/bankProcess.js"></script>
 <script>
+  get_banking_advice_data();
   get_banking_posts();
 </script>
 

@@ -66,10 +66,10 @@
   <section id="portfolio" class="">
     <div class="container">
         <header class="section-header pb-4">
-          <h3 class="section-title">WHAT IS TRENDING IN HOUSE BUYING</h3>
+          <h3 class="section-title">OUR BEST ADVICE</h3>
         </header>
-        <div class="row portfolio-container">
-            <?php if(count($page_data)>=1){
+        <div class="row" id="advice_data">
+            <!-- <?php if(count($page_data)>=1){
                 foreach($page_data as $d){
                   if($d->div_type == "trending_article"){?>
                      
@@ -89,10 +89,11 @@
                         </div>
                 <?php }
                 }
-            }?>
+            }?> -->
         </div>
     </div>
   </section>
+
 
   <!-- TRENDING IN BANKSSS -->
   <div class="container py-5">
@@ -106,5 +107,6 @@
 <script src="<?php echo base_url()?>assets/libs/common.js"></script>
 <script src="<?php echo base_url()?>assets/libs/mortgageProcess.js"></script>
 <script>
+  get_mortgage_advice_data();
   get_mortgage_posts();
 </script>
