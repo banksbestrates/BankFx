@@ -22,12 +22,12 @@ function get_blog_overview_post() {
                 '    </div>'+
                 '    <div class="col-md-6 related_content">'+
                 // '        <p>EDITOR PICK </p>'+
-                '       <a href='+pageData[i].link+' target="_blank"> <h3 class="blog_heading  border_bottom_golden font-weight-bolder">'+pageData[i].title.rendered+'</h3> </a>'+
+                '   <a href="'+baseUrl+'post_detail/'+pageData[i].id+'/'+pageData[i].slug+'" > <h3 class="blog_heading  border_bottom_golden font-weight-bolder">'+pageData[i].title.rendered+'</h3> </a>'+
                 '          <small></small>'+
                 '        <p class="text-justify">'+pageData[i].excerpt.rendered+'</p>'+
                 '        <div class="row">'+
                 '              <div class="col-md-12">'+
-                '                <a href="'+pageData[i].link+'" target="_blank"><i class="fa fa-arrow-circle-right"  aria-hidden="true"></i></a>'+
+                '   <a href="'+baseUrl+'post_detail/'+pageData[i].id+'/'+pageData[i].slug+'" ><i class="fa fa-arrow-circle-right"  aria-hidden="true"></i></a>'+
                 '              </div>'+
                 // '              <div class="col-md-8 pt-2">6 MIN </div>'+
                 '        </div>'+
@@ -35,10 +35,10 @@ function get_blog_overview_post() {
                 '</div>'
             }
 
-
             $("#blog_data").html(post_list);
           
 
         }
     };
 }
+

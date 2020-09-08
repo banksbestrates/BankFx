@@ -17,12 +17,12 @@ function get_mortgage_posts() {
                 '    <div class="col-md-6 blog_image" style="background-image:url('+pageData[i]._embedded['wp:featuredmedia'][0].source_url+')">'+
                 '    </div>'+
                 '    <div class="col-md-6 related_content">'+
-                '       <a href='+baseUrl+'post_detail/'+pageData[i].id+'> <h3 class="blog_heading font-weight-bolder">'+pageData[i].title.rendered+'</h3> </a>'+
+                '   <a href="'+baseUrl+'post_detail/'+pageData[i].id+'/'+pageData[i].slug+'" ><h3 class="blog_heading font-weight-bolder">'+pageData[i].title.rendered+'</h3> </a>'+
                 '          <small></small>'+
                 '        <p class="text-justify">'+pageData[i].excerpt.rendered+'</p>'+
                 '        <div class="row">'+
                 '              <div class="col-md-12">'+
-                '                <a href='+baseUrl+'post_detail/'+pageData[i].id+'><i class="fa fa-arrow-circle-right"  aria-hidden="true"></i></a>'+
+                '   <a href="'+baseUrl+'post_detail/'+pageData[i].id+'/'+pageData[i].slug+'" ><i class="fa fa-arrow-circle-right"  aria-hidden="true"></i></a>'+
                 '              </div>'+
                 '        </div>'+
                 '    </div>'+
@@ -56,7 +56,7 @@ function get_mortgage_advice_data() {
             {
                 post_list=  post_list+ 
                 '<div class="col-lg-4 col-md-6 portfolio-item">'+
-                '<a href="'+baseUrl+'post_detail/'+pageData[i].id+'" >'+
+                '<a href="'+baseUrl+'post_detail/'+pageData[i].id+'/'+pageData[i].slug+'" >'+
                 '    <div class="portfolio-wrap">'+
                 '      <figure style="background-image:url('+pageData[i]._embedded['wp:featuredmedia'][0].source_url+');" class="figure_image">'+
                 '      </figure>'+
@@ -64,6 +64,7 @@ function get_mortgage_advice_data() {
                 '        <h4>'+pageData[i].title.rendered+'</h4>'+
                 '        <div class="text-dark text-justify">'+pageData[i].excerpt.rendered+'</div>  '+
                 '      </div>'+
+                '      <div class="portfolio_read_more pt-2">More <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></div>  '+
                 '    </div>'+
                 '</a>'+
                 '</div>'

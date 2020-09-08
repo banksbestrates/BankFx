@@ -80,7 +80,8 @@ $route['branch_locator'] = 'Bank/branch_locator';
 $route['bank_state'] = 'Bank/bank_state';
 $route['bank_city/(:any)'] = 'Bank/bank_city/$1';
 $route['best_money_market'] = 'Bank/best_money_market';
-// $route['(:any)'] = 'Bank/all_cities/$1';
+$route['state/(:any)'] = 'Bank/all_cities/$1';
+$route['post_detail/(:any)/(:any)'] = 'Posts/post_detail/$1/$2';
 
 // loan module
 $route['loan_calculator']       = 'Loan/loan_calculator';
