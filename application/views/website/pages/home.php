@@ -1,15 +1,22 @@
 
-
+<style>
+  .card img{
+    height:100px;
+    width:100px;
+  }
+  .border_bottom_golden_thin{
+   border-bottom: 1px solid #CB9D24;
+  }
+</style>
   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro">
+
+<section id="intro">
     <div class="intro-container">
       <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
-        <ol class="carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner" role="listbox">
           <?php if(count($page_data)>=1){
                 foreach($page_data as $d){
                   if($d->div_type=="div_1")
@@ -27,9 +34,8 @@
                 <?php  }
                 }
             }?>
-        </div>
-
-        <!-- <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+      </div>
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
@@ -37,77 +43,130 @@
         <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-        </a> -->
+        </a>
 
       </div>
     </div>
-  </section><!-- #intro -->
 
-  <main id="main">
+    
+</section><!-- #intro -->
 
-    <!--==========================
-      Featured Services Section
-    ============================-->
-    <!-- <section id="featured-services">
-      <div class="container">
-        <div class="row">
-          <?php if(count($page_data)>=1){
-              foreach($page_data as $d){
-                if($d->div_type=="div_2")
-                {?>
-                  <div class="col-lg-4 box <?php echo $d->default_class?>">
-                      <h4 class="title text-white"><?php echo $d->heading?></h4>
-                      <p class="description"><?php echo $d->content ?></p>
+<main id="main">
+  <!-- center boxes view -->
+  <div class="container px-0" style="margin-top:-70px">
+        <div class="col-md-12 px-0 row card_view">
+              <div class="col-md col-sm-4">
+                  <div class="card">
+                      <div style="width:100%; text-align:center">
+                        <img src="<?php echo base_url()?>assets/images/website/loan/card_icon/home_equity.png">
+                      </div>
+                    <a href="<?php echo base_url()?>mortgage_overview">
+                    <h6>Mortgage</h6>
+                  </a>
                   </div>
-            <?php }
-              }
-          }?>
- 
+              </div>
+              <div class="col-md col-sm-4">
+              <div class="card">
+                  <div style="width:100%; text-align:center">
+                        <img src="<?php echo base_url()?>assets/images/website/retirement/card_icon/Best-Savings-Account-Rates.png">
+                    </div>
+                    <a href="<?php echo base_url()?>bank_overview">
+                      <h6>Banking</h6>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-md col-sm-4">
+                <div class="card">
+                    <div style="width:100%; text-align:center">
+                        <img src="<?php echo base_url()?>assets/images/website/credit/card_icon/balance_transfer.png">
+                    </div>
+                    <a href="<?php echo base_url()?>credit_overview">
+                    <h6>Credit Cards</h6>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-md col-sm-4">
+                  <div class="card">
+                    <div style="width:100%; text-align:center">
+                        <img src="<?php echo base_url()?>assets/images/website/loan/card_icon/personal_loan.png" >
+                    </div>
+                    <a href="<?php echo base_url()?>loan_overview">
+                    <h6> Loans</h6>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-md col-sm-4">
+                  <div class="card">
+                    <div style="width:100%; text-align:center">
+                        <img src="<?php echo base_url()?>assets/images/website/investing/card_icon/best_invest.png">
+                    </div>
+                    <a href="<?php echo base_url()?>investment_overview">
+                      <h6>Investments</h6>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-md col-sm-4">
+                  <div class="card">
+                    <div style="width:100%; text-align:center">
+                        <img src="<?php echo base_url()?>/assets/images/website/insurance/card_icon/Life-Insurance.png">
+                      </div>
+                    <h6>Insurance</h6>
+                  </div>
+              </div>
+        </div> 
       </div>
-    </section> -->
-    <!-- #featured-services -->
-
-    <!--==========================
-      About Us Section
-    ============================-->
-    <!-- <section id="about">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>CHECK NEARBY BANKS</h3>
-        </header>
-
-        <div class="pt-3 col-md-12 mx-auto">
-          <iframe src="https://createaclickablemap.com/map.php?&id=93525&maplocation=false&online=true" width="100%" height="525" style="border: none;"></iframe>
-            <script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
-
+ <!-- new form banks best rates -->
+      <div class="container px-0" style="margin-top:70px">
+        <div class="col-md-12 mx-auto">
+            <div class="row">
+                <div class="col-md-6 pl-1">
+                  <h5 class="border_bottom_golden mb-1">LATEST NEWS FROM BANKS BEST RATES</h5>
+                  <div id="latest_top_posts">
+                  </div>
+                </div>
+              <div class="col-md-6 px-4">
+              <?php if(count($page_data)>=1){
+                foreach($page_data as $d){
+                  if($d->div_type=="latest_bbr_image")
+                  {?>             
+                     <div class="col-md-12" style="background-image:url(<?php echo base_url() . $d->image?>);
+                              background-size:cover;background-repeat:no-repeat;height:100%">
+                    </div>
+                <?php  }
+                }
+            }?>
+              
+              </div>
+            </div>
         </div>
+      </div>
 
+   <!-- map view -->
+      <div class="container mt-5">
+          <header class="section-header pt-5">
+            <h3>CHECK NEARBY BANKS</h3>
+          </header>
+          <div class="col-md-12 mx-auto us_map_view">
+          <iframe src="https://createaclickablemap.com/map.php?&id=96221&maplocation=false&online=true" width="100%" height="650" style="border: none;"></iframe>
+          <script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
+          </div>
       </div> 
-    </section> -->
-    <!-- #about -->
 
-    <!--==========================
-      Services Section
-    ============================-->
-    <!-- <section id="services">
-      <div class="container">
-        <header class="section-header  wow fadeInUp">
-          <h3>Search Bank By State</h3>
-          <p class="pb-0">
-          <input type="text" class="col-md-6 py-2 mx-auto form-control" placeholder="Search by state name"/></p>
-        </header>
-        <div class="col-md-12">
-            
-        </div>
-      </div>
-    </section> -->
-    <!-- #services -->
+    
+
+  <!-- start feedwind code --> 
+  <div class="col-md-12">
+    <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="136173/">
+    </script> 
+  </div>
+  <!-- end feedwind code -->
+
+  
 
     <!--==========================
       Call To Action Section
     ============================-->
-    <section id="call-to-action" class="wow fadeIn">
+    <section id="call-to-action" class=" mt-5 wow fadeIn">
       <div class="container text-center">
         <?php if(count($page_data)>=1){
           foreach($page_data as $d){
@@ -205,7 +264,7 @@
     <!--==========================
       Clients Section
     ============================-->
-    <section id="clients" class="wow fadeInUp">
+    <!-- <section id="clients" class="wow fadeInUp">
       <div class="container">
 
         <header class="section-header">
@@ -223,7 +282,7 @@
             }?>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- #clients -->
 
     <!--==========================
@@ -324,7 +383,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="member">
               <img src="<?php echo base_url()?>assets/img/team-4.jpg" class="img-fluid" alt="">
@@ -392,7 +450,7 @@
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+          <form role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -411,14 +469,105 @@
               <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
               <div class="validation"></div>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-center"><button type="submit" >Send Message</button></div>
           </form>
         </div>
 
       </div>
     </section>
     <!-- #contact -->
+</main>
 
-  </main>
+<script src="<?php echo base_url()?>assets/libs/homeProcess.js"></script>
+<script>
+ get_top_posts();
+
+ function saveMessage()
+{
+  $("#name").val();
+  $("#email").val();
+  $("#subject").val();
+  $("#subject").val();
+    let formData = new FormData();
+    formData.append("city_name",city_name);
+    let url = baseUrl + "api/get_all_city_banks";
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.send(formData);
+    xhr.onload = function() {
+        if (xhr.status == 200) {
+           
+            let obj = JSON.parse(xhr.responseText);
+            let d = obj
+            let data = d['Returned'];
+            if(data)
+            {
+                $("#search_bank_data").css("display","none");
+            }else{
+                alert("No Data Available");
+                return false;
+            }
+            
+            let allData = new Array();
+            for(var i=0;i<data.length;i++)
+            {
+               var d1 = data[i];
+                    
+                for(let a in d1)
+                {
+                    for (let b in d1[a])
+                    {
+                        allData.push(d1[a][b])
+                    }
+                    
+                };
+                
+            }
+        var list =""; 
+        var bank_1 ={lat: parseFloat(allData[0].latitude), lng: parseFloat(allData[0].longitude)};
+            var infoWindow = new google.maps.InfoWindow();
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: bank_1
+            });
+          
+         var latlngbounds = new google.maps.LatLngBounds();
+         for(var j=0;j<allData.length;j++)
+         {
+
+           list += '<div class=" py-4 px-4" style="border-top:2px solid">'+
+                   '                         <h6 class="mb-2">'+allData[j].bankName+'</h6>'+
+                   '                         <span>'+allData[j].address+' ,<br>'+ allData[j].stateAbbr + ', '+ allData[j].postalCode+'</span>'+
+                   '                               <br/><br/>'+
+                //    '                         <span class="mt-4">Phone:(123) 456 - 789</span><br>'+
+                   '                       <a href="http://'+allData[j].mainURL+'" target="_blank"><span class="mt-2">'+allData[j].mainURL+'</span></a>'+
+                //    '                           <span style="float:right"><i class="fa fa-map-marker" aria-hidden="true" style="font-size:60px"></i><br>0.82 mi</span><br>'+
+                //    '                         <br><span>HOURS</span>'+
+                   '                     </div>'
+
+      
+                // Locations of landmarks
+            
+                if(allData[j].latitude!="" &&  allData[j].longitude!="")
+                {
+                    var bankLatLong = {lat: parseFloat(allData[j].latitude), lng: parseFloat(allData[j].longitude)};
+                    var mk1 = new google.maps.Marker({position: bankLatLong, map: map,title:allData[j].bankName, description:allData[j].address});   
+                    latlngbounds.extend(bankLatLong);
+                }
+         }
+            var bounds = new google.maps.LatLngBounds();
+            //Center map and adjust Zoom based on the position of all markers.
+            map.setCenter(latlngbounds.getCenter());
+            map.fitBounds(latlngbounds);
+
+
+         $("#bank_data").html(list);
+         $("#bank_data").css("display","block");    
+ 
+        }
+    };
+}
+
+</script>
 
 

@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | and its corresponding controller class/method. The segments in a
 | URL normally follow this pattern:
 |
-|	example.com/class/method/id/
+|example.com/class/method/id/
 |
 | In some instances, however, you may want to remap this relationship
 | so that a different class/function is called than the one
@@ -52,6 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*===============WEBSITE VIEW======================*/
 $route['default_controller'] = 'Home';
+$route['page_not_found'] = 'Home/page_not_found';
+$route['welcome_templet'] = 'Home/welcome_templet';
 $route['signup'] = 'Register';
 $route['about_us'] = 'About';
 $route['privacy_policy'] = 'About/privacy_policy';
@@ -81,7 +83,9 @@ $route['bank_state'] = 'Bank/bank_state';
 $route['bank_city/(:any)'] = 'Bank/bank_city/$1';
 $route['best_money_market'] = 'Bank/best_money_market';
 $route['state/(:any)'] = 'Bank/all_cities/$1';
+$route['top-100-banks'] = 'Bank/top_100_banks';
 $route['post_detail/(:any)/(:any)'] = 'Posts/post_detail/$1/$2';
+$route['calculators'] = 'Home/calculator_view';
 
 // loan module
 $route['loan_calculator']       = 'Loan/loan_calculator';
@@ -109,7 +113,8 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
-/*===============ADMIN VIEW======================*/
+
+/*===============================ADMIN VIEW=======================================*/
 $route['admin/login']                           = 'ADMIN/AdminController/login';
 $route['admin/dashboard']                       = 'ADMIN/AdminController/dashboard';
 $route['admin/user_list']                       = 'ADMIN/AdminController/user_list';
@@ -149,6 +154,7 @@ $route['admin/blog_overview']                   = 'ADMIN/BlogController/blog_ove
 /*=================================ADMIN API========================================*/
 $route['api/admin/login']                           = 'API/Admin/login';
 $route['admin/logout']                              = 'API/Admin/logout';
+$route['api/get_user_list']                         = 'API/Admin/get_user_list';
 $route['api/admin/get_profile_detail']              = 'API/Admin/get_admin_detail';
 $route['api/admin/update_profile']                  = 'API/Admin/update_profile';
 $route['api/admin/reset_password']                  = 'API/Admin/reset_password';
@@ -225,4 +231,7 @@ $route['investing/article_detail/(:any)']  = 'Investment/article_detail/$1';
 $route['api/loan/article_detail/(:any)']  = 'Loan/article_detail/$1';
 
 /*==============================WEB APIS===========================================*/
-$route['api/get_page_data']    =    'API/Pages/get_page_data';
+$route['api/get_page_data']      = 'API/Pages/get_page_data';
+$route['api/search_bank_by_zip'] = 'API/Bank/search_bank_by_zip';
+$route['api/register_user']      = 'API/Register/register_user';
+$route['api/get_all_city_banks'] = 'API/Bank/get_all_city_banks';

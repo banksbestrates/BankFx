@@ -115,7 +115,7 @@
 							<div class="collapse in" id="collapseExample">
 								<ul class="nav">
 									<li>
-										<a href="<?php echo base_url()?>index.php/admin/profile">
+										<a href="<?php echo base_url()?>admin/profile">
 											<span class="link-collapse">My Profile</span>
 										</a>
 									</li>
@@ -131,12 +131,12 @@
 							</a>
 						</li>
 						
-						<!-- <li class="nav-item " id="users_list">
-							<a href="<?php echo base_url();?>index.php/admin/user_list">
+						<li class="nav-item " id="user_list">
+							<a href="<?php echo base_url();?>admin/user_list">
 								<i class="flaticon-users"></i>
 								<p>Registered Users</p>
 							</a>
-						</li> -->
+						</li>
 					
 
 						<li class="nav-item" id="">
@@ -175,7 +175,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="nav-item " id="users_list">
+						<li class="nav-item " id="homepage">
 							<a href="<?php echo base_url();?>admin/home/homepage">
 								<i class="flaticon-users"></i>
 								<p>Home Page</p>
@@ -378,12 +378,12 @@
 								</ul>
 							</div>
 						</li>
-						<li class="nav-item " id="google_analytics">
+						<!-- <li class="nav-item " id="google_analytics">
 							<a href="<?php echo base_url();?>admin/google_analytics">
 								<i class="flaticon-settings"></i>
 								<p>Google Analytics</p>
 							</a>
-						</li>
+						</li> -->
 						<li class="nav-item " id="blog_overview">
 							<a href="<?php echo base_url();?>admin/blog_overview">
 								<i class="flaticon-settings"></i>

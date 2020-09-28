@@ -8,7 +8,7 @@
                 <div class="overview_banner" style="background-image:linear-gradient(to left, rgba(245, 246, 252, 0.02), rgba(153, 153, 153, 0.73)),url('<?php echo base_url().$d->image ?>">
                   <div class="banner_heading">
                   <h1 class="display-4"><?php echo $d->heading ?></h1>
-                  <div class="text-white"><?php echo $d->content ?></div>
+                  <div class="text-white" id="heading_content_text"><?php echo $d->content ?></div>
                   </div>
                 </div>
         <?php } 

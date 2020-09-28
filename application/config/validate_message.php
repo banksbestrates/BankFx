@@ -34,5 +34,14 @@ $config['password_update_success']      =  'Password updated successfully';
 $config['password_update_failure']      =  'Unable to update password';
 $config['data_update_success']          =  'Data Updated successfully';
 $config['data_update_failure']          =  'Unable to update data';
+$config['user_list_found_success']      =  'User list found succesfully';
+$config['user_list_found_failure']      =  'Empty user list';
+
+
+/*============================WEBSITE MODULE===========================*/
+$config['register_succes']          =  'Registered Successfully!';
+$config['register_failure']         =  'Unable to Register!';
+$config['email_already_exist']      =  'This Email address is already Registered!';
+$config['email_doesnt_exist']       =  'Email not registered';
 
 ?>

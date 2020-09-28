@@ -32,6 +32,17 @@ class AdminController extends CI_Controller {
 		$this->load->view('admin_panel/index');
 		$this->load->view('admin_panel/layout/footer');
     }
+    public function user_list()
+    {     
+        $this->check_admin_logged_in();
+        $data = array(
+            "admin_id"=>$this->admin_id
+        );
+    
+		$this->load->view('admin_panel/layout/header',array("admin_data"=>$data));
+		$this->load->view('admin_panel/user/user_list');
+		$this->load->view('admin_panel/layout/footer');
+    }
 
     public function profile()
     {     

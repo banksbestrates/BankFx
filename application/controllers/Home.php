@@ -71,6 +71,18 @@ class Home extends CI_Controller {
 		$this->load->view('website/pages/mortgage/mortgage_arm_loan');
 		$this->load->view('website/layout/footer');
     }
+	public function welcome_templet()
+	{
+		// $this->load->view('website/layout/header');
+		$this->load->view('website/pages/email/welcome_email');
+		// $this->load->view('website/layout/footer');
+    }
+	public function calculator_view()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/calculators/calculator');
+		$this->load->view('website/layout/footer');
+    }
     
     
 }

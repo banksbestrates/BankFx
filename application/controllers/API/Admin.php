@@ -169,6 +169,16 @@ class Admin extends \Restserver\Libraries\REST_Controller
         return $this->send_error_response($query['Message']);  
 		
     }
+
+    //get registed user list 
+    public function get_user_list_post()
+    {
+        $query = $this->AdminModel->get_user_list();
+        if ($query['Status']) {
+            return $this->set_response($query, REST_Controller::HTTP_OK);
+        }
+        return $this->send_error_response($query['Message']); 
+    }
     
     //Error message
     public function send_error_response($Message)

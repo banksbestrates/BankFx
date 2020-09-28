@@ -5,7 +5,7 @@
     <?php if(count($page_data)>=1){
             foreach($page_data as $d){
               if($d->div_type == "overview_heading"){?>
-                  <div class="overview_banner" style="background-image:linear-gradient(to left, rgba(245, 246, 252, 0.02), rgba(13, 13, 13, 0.73)),url('<?php echo base_url().$d->image ?>">
+                   <div class="overview_banner" style="background-image:linear-gradient(to left, rgba(245, 246, 252, 0.02), rgba(13, 13, 13, 0.73)),url('<?php echo base_url().$d->image ?>')">
                   <div class="banner_heading">
                   <h1 class="display-4"><?php echo $d->heading ?></h1>
                   <div class="text-white"><?php echo $d->content ?></div>
@@ -18,7 +18,7 @@
   <div class="">
         <div class="col-md-12 row px-0 mx-0">
             <div class="col-md-6 best_bank">
-              <a href="<?php echo base_url()?>best_banks"><h2>Bank 100 Banks</h2></a>
+              <a href="<?php echo base_url()?>best_banks"><h2>Best 100 Banks</h2></a>
             </div>
             <div class="col-md-6 bank_review">
               <!-- <a href="<?php echo base_url()?>/best_bank_reviews"> -->
@@ -36,7 +36,7 @@
                   <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/banking/card_icon/Best-Large-Banks.png" style="width:100px; height:100px;">
                   </div>
-                  <h6>Best Larg Banks</h6>
+                  <h6>Best Large Banks</h6>
                 </div>
             </div>
             <div class="col-md-3">
@@ -73,6 +73,7 @@
                 <table class="table text-center">
                     <thead>
                             <tr class="background_light_grey">
+                                <th>Bank Image</th>
                                 <th class="text-left">Bank Name</th>
                                 <th>Rating</th>             
                                 <th>AssetSize</th>
@@ -82,7 +83,8 @@
                     <tbody>
                         <?php foreach($data['Returned'] as $list){ ?>
                             <tr>
-                                <td class="text-left"><div><?php echo $list['BankName']?>  <!-- <img src="<?php echo base_url()?>assets/img/bank_images/bank_of_america.png"> --></div></td>
+                                <td class="text-left"><div><img src="<?php echo $list['ImagePath']?>" class="img-thumbnail"></div></td>
+                                <td class="text-left"><div><?php echo $list['BankName']?></div></td>
                                 <td class="w-25">
                                     <div class="responsive_inline">
                                             <span class="fa fa-star  checked"></span>
@@ -104,6 +106,8 @@
             <div class="col-md-2"></div>
         </div>
 </div>
+
+
  
 
    

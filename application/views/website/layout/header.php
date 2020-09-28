@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>BanksBestRates</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link rel="canonical" href="https://www.banksbestrates.com/">
-<meta name="description" itemprop="description" content="Reports and ratings on US banks and credit unions">
-<meta name="keywords" content="[&quot;investing&quot;,&quot;money&quot;,&quot;finance&quot;bank ratings&quot;credit union ratings&quot;]">
+<meta charset="utf-8">
+<title>BanksBestRates for Unbiased Financial Advice</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link rel="canonical" href="https://www.banksbestrates.com/">
+<meta name="description" itemprop="description" content="The only financial technology site that operates without advertiser input to allow us the ability to give unbiased banking, mortgage and credit card information">
+<meta name="keywords" content="Banks Best Rates, Best Bank Ratings, Best Mortgage Calculators, Financial News, Bank & Credit Union Reviews, bank, banks, banking, finance, finances, financial, financial institution, financial planning, personal finance, personal finances, financial management">
 <meta property="og:site_name" content="Banks Best Rates">
-<meta property="og:title" content="Bank ratings">
-<meta property="og:type">
+<meta property="og:title" content="Best CD’s, Mortgages, Credit Cards, Personal Loans, Checking accounts and so much more in real time">
+<meta property="og:type" content="website">
 <meta property="og:url" content="https://www.banksbestrates.com/">
 <meta property="og:image" content="" name="image">
 <meta property="og:image:type">
-<meta property="og:description" content="Bank ratings">
+<meta property="og:description" content="Find the Best CD’s, Mortgages, Credit Cards, Personal Loans, Checking accounts and so much more in real time. Find Out About Your Own Financial Institution and how they compare">
 <meta property="https://www.facebook.com/banksbestrates">
 <meta property="article:publisher">
 <meta name="twitter:card">
@@ -21,8 +21,10 @@
 <meta name="twitter:image" content="">
 <meta name="twitter:title" content="Investing">
 <meta name="twitter:description" content="Investing">
-<meta name="news_keywords" itemprop="keywords" content="[&quot;bank ratings&quot;&quot;investing&quot;,&quot;ratings&quot;,&quot;finance&quot;]">
-  
+<meta name="news_keywords" itemprop="keywords" content="Best CD’s, Mortgages, Credit Cards, Personal Loans, Checking accounts and so much more in real time">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@bank_fax" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://banksbestrates.com/#organization","name":"Banks Best Rates","url":"https://banksbestrates.com/","sameAs":["https://www.facebook.com/bankfaxtoday/","https://www.linkedin.com/company/banksbestrates","https://twitter.com/bank_fax"],"logo":{"@type":"ImageObject","@id":"https://banksbestrates.com/#logo","inLanguage":"en-US","url":"https://banksbestrates.com/wp-content/uploads/2020/07/main_logo_image.png","width":500,"height":590,"caption":"Banks Best Rates"},"image":{"@id":"https://banksbestrates.com/#logo"}},{"@type":"WebSite","@id":"https://banksbestrates.com/#website","url":"https://banksbestrates.com/","name":"banksbestrates.com","description":"Rates and Ratings For Your Bank or Credit Union","publisher":{"@id":"https://banksbestrates.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://banksbestrates.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"CollectionPage","@id":"https://banksbestrates.com/#webpage","url":"https://banksbestrates.com/","name":"banksbestrates.com - Rates and Ratings For Your Bank or Credit Union","isPartOf":{"@id":"https://banksbestrates.com/#website"},"about":{"@id":"https://banksbestrates.com/#organization"},"description":"% Rates and Ratings For Your Bank or Credit Union %","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://banksbestrates.com/"]}]}]}</script>
 <link href="<?php echo base_url()?>assets/img/logo/main_logo_image.png" rel="icon">
 <link href="<?php echo base_url()?>asssets/img/apple-touch-icon.png" rel="apple-touch-icon">
   
@@ -35,9 +37,9 @@
   <!-- Libraries CSS Files -->
   <link href="<?php echo base_url()?>/assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="<?php echo base_url()?>/assets/lib/animate/animate.min.css" rel="stylesheet">
-  <link href="<?php echo base_url()?>/assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <!-- <link href="<?php echo base_url()?>/assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet"> -->
   <link href="<?php echo base_url()?>/assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="<?php echo base_url()?>/assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <!-- <link href="<?php echo base_url()?>/assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
 
   <!-- Main Stylesheet File -->
   <link href="<?php echo base_url()?>/assets/css/style.css" rel="stylesheet">
@@ -267,8 +269,8 @@
           <li><a href="<?php echo base_url()?>blog">Blog</a></li>
           <li><a href="<?php echo base_url()?>about_us">About Us</a></li>
           <!-- <li><a href="<?php echo base_url()?>about_us">About us</a></li>
-          <li><a href="<?php echo base_url()?>profile">Profile</a></li>
-          <li><a href="<?php echo base_url()?>signup">Register/Login</a></li> -->
+          <li><a href="<?php echo base_url()?>profile">Profile</a></li> -->
+          <li><a href="<?php echo base_url()?>signup">Signup</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>

@@ -19,12 +19,12 @@
                                   
                                </div>
                             </div><br/><hr/>
-                            <h2 class="text-center text-dark font-weight-bold">WHAT IS TRENDING IN HOUSE BUYING</h2>
+                            <!-- <h2 class="text-center text-dark font-weight-bold">WHAT IS TRENDING IN HOUSE BUYING</h2>
                             <div class="col-md-12 px-5">
                                 <div class="row" id="trending_articles">                          
                                 </div>
                             </div>
-                            <br/>                        
+                            <br/>                         -->
                             </div>
                             <br/><br/>
                             <!-- <h2 class="text-center text-dark font-weight-bold">RELATED ARTICLES</h2><hr/>
@@ -40,6 +40,8 @@
         </div>
     </div>
 </div>
+
+
 <!-- Datatables -->
 <script src="<?php echo base_url()?>assets/admin_panel/js/core/jquery.3.2.1.min.js"></script>
 <script src="<?php echo base_url()?>assets/admin_panel/libs/common.js"></script>

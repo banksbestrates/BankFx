@@ -5,6 +5,7 @@ class AdminModel extends CI_Model
 
     public $response = array();
     public $tbl_admin        = "bankfx_admin";
+    public $tbl_users        = "users";
 
 
     public function __construct()
@@ -73,7 +74,7 @@ class AdminModel extends CI_Model
         }
         return $this->send_error_response($this->config->item('password_verify_failure'));
     }
-
+ 
     //reset password
     public function reset_password($data)
     {
@@ -86,6 +87,21 @@ class AdminModel extends CI_Model
             return $response;
         }
         return $this->send_error_response($this->config->item('password_update_failure'));
+    }
+
+    // profile
+    public function get_user_list()
+    {
+           $exist = $this->db->select('*')->from($this->tbl_users)->get();
+           if ($exist->num_rows()) {
+               $responseData = $exist->result();
+               $response[$this->config->item('status')] = true;
+               $response[$this->config->item('message')] = $this->config->item('data_found_success');
+               $response[$this->config->item('baseUrl')] = base_url();
+               $response[$this->config->item('data')] = $responseData;
+               return $response;
+           }
+           return $this->send_error_response($this->config->item('data_found_failure'));
     }
 
   

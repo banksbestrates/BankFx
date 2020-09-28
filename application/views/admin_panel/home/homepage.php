@@ -27,13 +27,9 @@
                             </div>
                             <br/>                        
                        
-                            <h2 class="text-center text-dark font-weight-bold">DIV AFTER SLIDER</h2><hr/>
-                            <p>1.The below given divs links boxes after silder in website <br/>
-                            2.Go to "EDIT" and edit the Heading and content.<br/>
-                            3.Clicking on Update will update the new  data on website <br/>
-                            Homepage Link :<a href="<?php echo base_url();?>" target="_blank"><?php echo base_url();?><a></p>
+                            <h2 class="text-center text-dark font-weight-bold">LATEST FROM BBR IMAGE</h2><hr/>
                             <div class="col-md-12 px-5">
-                                <div class="row" id="div2">
+                                <div class="row" id="latest_from_bbr">
                                                             
                                 </div>
                             </div>
@@ -50,7 +46,7 @@
                             </div>
                             <br/>  
                             
-                            <h2 class="text-center text-dark font-weight-bold">OUR PORTFOLIO</h2><hr/>
+                            <!-- <h2 class="text-center text-dark font-weight-bold">OUR PORTFOLIO</h2><hr/>
                             <p>1.The below given content is of Portfolio Part <br/>
                             2.Go to "EDIT" and edit the Images, Heading and Content.<br/>
                             3.Clicking on Update will update the new content on website <br/>
@@ -60,8 +56,8 @@
                                 <div class="row" id="portfolio_div">
                          
                                 </div>
-                            </div>
-                            <br/>  
+                            </div> -->
+                            <!-- <br/>  
                             <h2 class="text-center text-dark font-weight-bold">TESTIMONIAL</h2><hr/>
                             <p>1.The below given content is of Portfolio Part <br/>
                             2.Go to "EDIT" and edit the Images, Heading and Content.<br/>
@@ -73,19 +69,15 @@
                          
                                 </div>
                             </div>
-                            <br/>  
-                            <h2 class="text-center text-dark font-weight-bold">OUR CLIENTS</h2><hr/>
+                            <br/>   -->
+                            <!-- <h2 class="text-center text-dark font-weight-bold">OUR CLIENTS</h2><hr/>
                             Homepage Link :<a href="<?php echo base_url();?>" target="_blank"><?php echo base_url();?><a></p>
                             <hr/>
                             <div class="col-md-12 px-2">
                                 <div class="row" id="client_div">
-                                
-
                                 </div>
-                            </div>
+                            </div> -->
                             <br/>  
-
-
                         </div>
                     </div>
                 </div>

@@ -7,7 +7,7 @@
                     <div class="overview_banner" style="background-image:linear-gradient(to left, rgba(245, 246, 252, 0.02), rgba(13, 13, 13, 0.73)),url('<?php echo base_url().$d->image ?>">
                   <div class="banner_heading">
                   <h1 class="display-4"><?php echo $d->heading ?></h1>
-                  <div class="text-white"><?php echo $d->content ?></div>
+                  <div class="text-white" id="heading_content_text"><?php echo $d->content ?></div>
                   </div>
                 </div>
         <?php } 
@@ -167,9 +167,11 @@
 <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
 <script src="<?php echo base_url()?>assets/libs/common.js"></script>
 <script src="<?php echo base_url()?>assets/libs/creditProcess.js"></script>
+<!-- <script src="<?php echo base_url()?>assets/libs/headerProcess.js"></script> -->
 <script>
+//  get_header_metadata("credit_overview");
  get_credit_advice_data();
-  get_credit_overview_post();
+ get_credit_overview_post();
 </script>
 
 

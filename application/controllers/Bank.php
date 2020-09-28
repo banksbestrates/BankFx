@@ -20,7 +20,8 @@ class Bank extends CI_Controller {
 		$this->load->view('website/layout/header');
 		$this->load->view('website/pages/bank/bank_overview',array("page_data"=>$bank_data));
 		$this->load->view('website/layout/footer');
-    }
+	}
+	
 	public function best_banks()
 	{
 		$bank_data = $this->BankModel->get_best_bank_overview();
@@ -31,10 +32,10 @@ class Bank extends CI_Controller {
 			$bank_data="";
 		}
 
-		$best_bank_list = $this->validator->get_best_banks();
+		$best_bank_list = $this->validator->get_best_banks('100');
 		if($best_bank_list['RowCount'] > 0 )
 		{
-			$this->load->view('website/layout/header');
+			$this->load->view('website/layout/header',array("page_name"=>"best_banks"));
 			$this->load->view('website/pages/bank/best_banks',array("page_data"=>$bank_data , "data"=>$best_bank_list));
 			$this->load->view('website/layout/footer');
 		}
@@ -56,9 +57,22 @@ class Bank extends CI_Controller {
     }
 	public function branch_locator()
 	{
-		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/bank/branch_locator');
-		$this->load->view('website/layout/footer');
+		$all_states = $this->validator->get_all_states();
+		if($all_states['Returning'])
+		{		
+			$top_banks = $this->validator->get_best_banks('50');
+			if($top_banks['RowCount'] > 0 )
+			{
+				$this->load->view('website/layout/header');
+				$this->load->view('website/pages/bank/branch_locator',array("data"=>$top_banks,"all_states"=>$all_states));
+				$this->load->view('website/layout/footer');
+			}
+		}
+		
+		// else{
+		// 	$this->load->view('website/pages/page_not_found');
+		// }
+	
     }
 	public function bank_state()
 	{
@@ -97,36 +111,43 @@ class Bank extends CI_Controller {
 	public function all_cities($state_name)
 	{
 		$city_data = $this->validator->get_all_cities($state_name);
-		$data = $city_data['City'];
-		if($data['RowCount'] > 0 )
-		{
-			$this->load->view('website/layout/header');
-			$this->load->view('website/pages/bank/all_cities',array("city_data"=>$city_data ,"state_code"=>$state_name));
-			$this->load->view('website/layout/footer');
+		if($city_data['Returning']){
+				$this->load->view('website/layout/header',array("page_name"=>"state_banks"));
+				$this->load->view('website/pages/bank/all_cities',array("city_data"=>$city_data ,"state_code"=>$state_name));
+				$this->load->view('website/layout/footer');	
 		}
 		else{
 			$this->load->view('website/pages/page_not_found');
 		}
-	
+		
 	}
 
-	public function bank_city()
+	public function bank_city($city)
 	{
-		// str_replace('%20', ' ', $city_name);
-		// $data = $this->validator->get_city_banks($state_name);
+		$city_name = str_replace('%20', ' ', $city);
+		$data = $this->validator->get_banks_in_city($city_name);
+		if($data)
+		{
+			if($data['RowCount'] > 0 )
+			{
+				$city_name = $data['City']['FullList'][0];	
+
+				$this->load->view('website/layout/header', array("page_name"=>"city_banks"));
+				$this->load->view('website/pages/bank/bank_city',array("data"=>$data,"city_name"=>$city_name));
+				$this->load->view('website/layout/footer');
+			}
+		}
 		
-		// if($exist['RowCount'] > 0 )
-		// {
-		// 	$this->load->view('website/layout/header');
-		// 	$this->load->view('website/pages/bank/all_cities',array("data"=>$data));
-		// 	$this->load->view('website/layout/footer');
-		// }
-		// else{
-		// $this->load->view('website/pages/page_not_found');
-		// }
+		else{
+			$this->load->view('website/pages/page_not_found');
+		}
+  	}
+
+	public function top_100_banks()
+	{
 		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/bank/bank_city');
+		$this->load->view('website/pages/bank/top-100-banks');
 		$this->load->view('website/layout/footer');
-  }
+  	}
 	
 }

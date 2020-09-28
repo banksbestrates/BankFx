@@ -441,7 +441,110 @@ class Validator
         return false;
     }
 
+
+//==============GET ALL STATES IN USA==============================//
+public function get_all_states()
+{
+    $curlRef = curl_init();
+    $curlConfig = array(
+        CURLOPT_URL  => 'http://nemo-soft.com/bbr/LocationCount_API.php',
+        CURLOPT_POST  => true,
+        CURLOPT_RETURNTRANSFER => true,
+                                    
+        CURLOPT_POSTFIELDS     => array(
+                'UserName'  => 'schmid@banksbestrates.com',
+                'Password'  => '12345678',
+                'state'=>'*',
+                )
+            );
+            
+         curl_setopt_array($curlRef, $curlConfig); 
+         $returned_JSON = curl_exec($curlRef);
+         $json = preg_replace('/[[:cntrl:]]/', '', $returned_JSON);
+         $json = json_decode($json, true);          
+         curl_close($curlRef);
+         return $json;
 }
 
+
+//=======================GET ALL CITIES OF STATE ======================//
+
+public function get_all_cities($state_name)
+{
+    $curlRef = curl_init();
+    $curlConfig = array(
+        CURLOPT_URL  => 'http://nemo-soft.com/bbr/LocationCount_API.php',
+        CURLOPT_POST  => true,
+        CURLOPT_RETURNTRANSFER => true,
+                                    
+        CURLOPT_POSTFIELDS     => array(
+              'UserName'  => 'schmid@banksbestrates.com',
+                'Password'  => '12345678',
+                'city'      => '*',
+                'stateCode' => $state_name
+                )
+            );
+            
+         curl_setopt_array($curlRef, $curlConfig); 
+         $returned_JSON = curl_exec($curlRef);
+         $json = preg_replace('/[[:cntrl:]]/', '', $returned_JSON);
+         $json = json_decode($json, true);          
+         curl_close($curlRef);
+         return $json;
+}
+
+//========================GET ALL THE BANKS IN PARTICULAR STATE===========//
+public function get_banks_in_city($city_name)
+{
+    $curlRef = curl_init();
+    $curlConfig = array(
+          CURLOPT_URL  => 'http://nemo-soft.com/bbr/Location_API.php',
+          CURLOPT_POST  => true,
+          CURLOPT_RETURNTRANSFER => true,
+                                      
+          CURLOPT_POSTFIELDS     => array(
+                'UserName'  => 'schmid@banksbestrates.com',
+                'Password'  => '12345678',
+                'City' => $city_name,
+                )
+            );
+            
+            curl_setopt_array($curlRef, $curlConfig); 
+            $returned_JSON = curl_exec($curlRef);
+            $json = preg_replace('/[[:cntrl:]]/', '', $returned_JSON);
+            $json = json_decode($json, true);          
+            curl_close($curlRef);
+
+            return $json;
+}
+
+
+
+public function get_best_banks($limit)
+{
+    $curlRef = curl_init();
+    $curlConfig = array(
+          CURLOPT_URL  => 'http://nemo-soft.com/bbr/Rating_API.php',
+          CURLOPT_POST  => true,
+          CURLOPT_RETURNTRANSFER => true,
+                                      
+          CURLOPT_POSTFIELDS     => array(
+                'UserName'  => 'schmid@banksbestrates.com',
+                'Password'  => '12345678',
+                'Returning' => $limit,
+                )
+            );
+            
+            curl_setopt_array($curlRef, $curlConfig); 
+            $returned_JSON = curl_exec($curlRef);
+            $json = preg_replace('/[[:cntrl:]]/', '', $returned_JSON);
+            $json = json_decode($json, true);          
+            curl_close($curlRef);
+
+            return $json;
+}
+
+
+}
 
 ?>
