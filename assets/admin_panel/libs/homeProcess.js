@@ -39,19 +39,17 @@ function get_slider_data() {
                         '    </div>'+
                         '</div>'
                 }
-                else if(sliderData[i].div_type=="div_2")
+                else if(sliderData[i].div_type=="latest_bbr_image")
                 {
-                    div2_list = div2_list+ 
+                    div2_list =  
                     '   <div class="col-md-4">'+
                     '    <div class="card">'+
-         
-                    '        <div class="card-block  text-center px-2 ">'+
-                    '            <h4 class=" font-weight-bold pt-2">'+sliderData[i].heading+'</h4>'+
-                    '            <p class="card-text">'+sliderData[i].content+'</p>'+
+                    '        <div class="card-header px-0 py-0">'+
+                    '            <img src="'+baseUrl+sliderData[i].image+'" alt="" width="100%" >'+
                     '        </div>'+
                     '        <div class="w-100"></div>'+
                     '        <div class="card-footer text-center ">'+
-                    '            <button class="btn btn-primary btn-sm" onclick="editContentModel('+i+')">Edit </button>'+
+                    '            <button class="btn btn-primary btn-sm" onclick="editOverviewModel('+i+')">Edit </button>'+
                     '        </div>'+
                     '    </div>'+
                     '</div>'
@@ -67,60 +65,60 @@ function get_slider_data() {
                         // '<h3 class="font-weight-bold text-dark text-center">'+sliderData[i].heading+'</h3>'+
                         // '<p>'+sliderData[i].content+'</p>'
                 } 
-                else if(sliderData[i].div_type=="portfolio_div")
-                {
-                        portfolio_list = portfolio_list+ 
-                        '   <div class="col-md-4">'+
-                        '    <div class="card">'+
-                        '        <div class="card-header px-0 py-0">'+
-                        '            <img src="'+baseUrl+sliderData[i].image+'" alt="" width="100%" >'+
-                        '        </div>'+
-                        '        <div class="card-block  text-center px-2 ">'+
-                        '            <h4 class=" font-weight-bold pt-2">'+sliderData[i].heading+'</h4>'+
-                        '            <p class="card-text">'+sliderData[i].content+'</p>'+
-                        '        </div>'+
-                        '        <div class="w-100"></div>'+
-                        '        <div class="card-footer text-center ">'+
-                        '            <button class="btn btn-primary btn-sm" onclick="editOverviewModel('+i+')">Edit </button>'+
-                        '        </div>'+
-                        '    </div>'+
-                        '</div>'
-                }
-                else if(sliderData[i].div_type=="testimonial")
-                {
-                        testimonial_list = testimonial_list+ 
-                        '   <div class="col-md-4">'+
-                        '    <div class="card">'+
-                        '        <div class="card-header px-0 py-0">'+
-                        '            <img src="'+baseUrl+sliderData[i].image+'" alt="" width="100%" >'+
-                        '        </div>'+
-                        '        <div class="card-block  text-center px-2 ">'+
-                        '            <h4 class=" font-weight-bold pt-2">'+sliderData[i].name+'</h4>'+
-                        '            <h6 class=" font-weight-bold pt-2">'+sliderData[i].designation+'</h6>'+
-                        '            <p class="card-text">'+sliderData[i].review+'</p>'+
-                        '        </div>'+
-                        '        <div class="w-100"></div>'+
-                        '        <div class="card-footer text-center ">'+
-                        '            <button class="btn btn-primary btn-sm" onclick="editTestimonialModel('+i+')">Edit </button>'+
-                        '        </div>'+
-                        '    </div>'+
-                        '</div>'
-                }
-                else if(sliderData[i].div_type=="client_div")
-                {
-                    client_list = client_list+ 
-                        '   <div class="col-md-3  pb-4">'+
-                            '<img src="'+baseUrl+sliderData[i].image+'" alt="" width="100%" >'+
-                        '</div>'
-                }
+                // else if(sliderData[i].div_type=="portfolio_div")
+                // {
+                //         portfolio_list = portfolio_list+ 
+                //         '   <div class="col-md-4">'+
+                //         '    <div class="card">'+
+                //         '        <div class="card-header px-0 py-0">'+
+                //         '            <img src="'+baseUrl+sliderData[i].image+'" alt="" width="100%" >'+
+                //         '        </div>'+
+                //         '        <div class="card-block  text-center px-2 ">'+
+                //         '            <h4 class=" font-weight-bold pt-2">'+sliderData[i].heading+'</h4>'+
+                //         '            <p class="card-text">'+sliderData[i].content+'</p>'+
+                //         '        </div>'+
+                //         '        <div class="w-100"></div>'+
+                //         '        <div class="card-footer text-center ">'+
+                //         '            <button class="btn btn-primary btn-sm" onclick="editOverviewModel('+i+')">Edit </button>'+
+                //         '        </div>'+
+                //         '    </div>'+
+                //         '</div>'
+                // }
+                // else if(sliderData[i].div_type=="testimonial")
+                // {
+                //         testimonial_list = testimonial_list+ 
+                //         '   <div class="col-md-4">'+
+                //         '    <div class="card">'+
+                //         '        <div class="card-header px-0 py-0">'+
+                //         '            <img src="'+baseUrl+sliderData[i].image+'" alt="" width="100%" >'+
+                //         '        </div>'+
+                //         '        <div class="card-block  text-center px-2 ">'+
+                //         '            <h4 class=" font-weight-bold pt-2">'+sliderData[i].name+'</h4>'+
+                //         '            <h6 class=" font-weight-bold pt-2">'+sliderData[i].designation+'</h6>'+
+                //         '            <p class="card-text">'+sliderData[i].review+'</p>'+
+                //         '        </div>'+
+                //         '        <div class="w-100"></div>'+
+                //         '        <div class="card-footer text-center ">'+
+                //         '            <button class="btn btn-primary btn-sm" onclick="editTestimonialModel('+i+')">Edit </button>'+
+                //         '        </div>'+
+                //         '    </div>'+
+                //         '</div>'
+                // }
+                // else if(sliderData[i].div_type=="client_div")
+                // {
+                //     client_list = client_list+ 
+                //         '   <div class="col-md-3  pb-4">'+
+                //             '<img src="'+baseUrl+sliderData[i].image+'" alt="" width="100%" >'+
+                //         '</div>'
+                // }
              }
 
             $("#slider_div").html(slider_list);	
-            $("#div2").html(div2_list);	
+            $("#latest_from_bbr").html(div2_list);	
             $("#div3").html(div3_list);	
-            $("#portfolio_div").html(portfolio_list);	
-            $("#testimonial_div").html(testimonial_list);	
-            $("#client_div").html(client_list);	
+            // $("#portfolio_div").html(portfolio_list);	
+            // $("#testimonial_div").html(testimonial_list);	
+            // $("#client_div").html(client_list);	
 
         }
     };
@@ -137,15 +135,21 @@ function showImage(src,target) {
 function editOverviewModel(i)
 {
     let home_data = sliderData[i];
-    
-    var modal_body= '<div class="form-group">'+
+
+    var heading_content = '<div class="form-group">'+
                         '<label for="name">Heading</label>'+
                         '<input type="text" class="form-control" id="edit_heading" placeholder="Enter Heading" value="'+home_data.heading+'">'+
-                     '</div>'+
-                     '<div class="form-group ">'+
+                    '</div>'+
+                    '<div class="form-group ">'+
                         '<label for="name">Content</label>'+
                         '<textarea rows="5" class="form-control" placeholder="Add Content" id="edit_content">'+home_data.content+'</textarea rows="5">'+
-                     '</div>'+
+                    '</div>'
+
+    if(home_data.div_type=='latest_bbr_image')
+    {
+        heading_content ="";
+    }
+    var modal_body= heading_content +
                      '<div class="form-group">'+
                         '<label for="image">Image</label>'+
                             '<div class="row">'+
@@ -197,7 +201,6 @@ function updateOverview(id)
                 }
         }
     
- 
     formData.append('heading',heading);
     formData.append('content',content);
     formData.append('id',id);
@@ -214,8 +217,6 @@ function updateOverview(id)
                     console.log(message);
                     $(".error_message").html(message);     
                  } 
-                
-    
 				swal(message, {
 					buttons: false,
                     timer: 2000,   

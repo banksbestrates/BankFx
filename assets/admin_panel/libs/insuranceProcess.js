@@ -15,7 +15,7 @@ function get_insurance_overview() {
             }
             insuranceData = obj.data;
             let trending_list = "";
-            let related_list = "";
+            let advice_heading = "";
             let overview_data = "";
                for (var i = 0; i < insuranceData.length; i++) {
                 if(insuranceData[i].div_type=="trending_article")
@@ -37,24 +37,17 @@ function get_insurance_overview() {
                         '    </div>'+
                         '</div>'
                 }
-                else if(insuranceData[i].div_type=="related_article")
+                else if(insuranceData[i].div_type=="advice_heading")
                 {
-                        related_list = related_list+ 
-                        '   <div class="col-md-12">'+
-                        '       <div class="row">'+
-                        '           <div class="col-md-5">'+
-                        '             <img src="'+baseUrl+insuranceData[i].image+'" alt="" width="100%" >'+
-                        '           </div>'+
-                        '           <div class="col-md-5 py-4">'+
-                        '               <h3 class="text-dark">'+insuranceData[i].heading+'</h3>'+
-                        '               <p>'+insuranceData[i].content+'</p>'+
-                        '           </div>'+
-                        '           <div class="col-md-2">'+
-                        '               <button class="btn btn-sm btn-primary" onclick="editOverviewModel('+i+')">Edit</button>'+
-                        '           </div>'+
-                        '       </div>'+
-                        '   </div>'
-                } 
+                 advice_heading ='<div class="col-md-12">'+
+                     '       <div class="row">'+
+                     '           <div class="col-md-10"><input type="text"  class="form-control" value="'+ insuranceData[i].heading+'" id="edit_advice_heading"/></h4></div>'+
+                     '           <div class="col-md-2">'+
+                     '               <button class="btn btn-sm btn-primary" onclick="editAdviceHeading('+insuranceData[i].id+')">Update</button>'+
+                     '           </div>'+
+                     '       </div>'+
+                     '   </div>'
+                }  
                 else if(insuranceData[i].div_type=="overview_heading")
                 {
                     overview_data = '<div class="col-md-10">'+
@@ -68,7 +61,7 @@ function get_insurance_overview() {
                 } 
              }
             $("#trending_articles").html(trending_list);	
-            $("#related_articles").html(related_list);	
+            $("#advice_heading").html(advice_heading);	
             $("#top_banner_text").html(overview_data);		
         }
     };
@@ -428,4 +421,35 @@ function updateContent(id,type="")
             }
         }
     };
+}
+
+function editAdviceHeading(id)
+{
+    advice_heading = $("#edit_advice_heading").val();
+    let formData = new FormData();
+    formData.append('content', "nothing");
+    formData.append('heading', advice_heading);
+    formData.append('id', id);
+    let url = baseUrl + "api/admin/update_insurance_overview";
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.send(formData);
+    xhr.onload = function() {
+        if (xhr.status == 200) {
+            let obj = JSON.parse(xhr.responseText);
+            let status = obj.Status;
+            let message = obj.Message;
+            if (!status) {
+                $(".error_message").html(message);
+                return false;
+            } else {
+                swal(message, {
+                    buttons: false,
+                    timer: 2000,
+                });
+                location.reload();
+            }
+        }
+    };
+
 }

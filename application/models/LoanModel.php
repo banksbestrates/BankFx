@@ -10,6 +10,10 @@ class LoanModel extends CI_Model
     public $tbl_auto_loan          = "auto_loan";
     public $tbl_student_loan       = "student_loan";
     public $tbl_debt_consolidation = "debt_consolidation";
+    public $tbl_student_loan_rate  = "student_loan_rates";
+    public $tbl_personal_loan_rate  = "personal_loan_rates";
+    public $tbl_loan_calculator     = "loan_calculator";
+    public $tbl_auto_loan_rate     = "auto_loan_rates";
 
 
     public function __construct()
@@ -80,6 +84,69 @@ class LoanModel extends CI_Model
         }
         return $this->send_error_response($this->config->item('data_update_failure'));
     }
+
+    public function get_personal_loan_rate_content()
+    {
+            $this->db->select("*");
+            $this->db->from("$this->tbl_personal_loan_rate");
+            $exist = $this->db->get();
+            if ($exist->num_rows()) {
+                $responseData = $exist->result();
+                $response[$this->config->item('status')] = true;
+                $response[$this->config->item('message')] = $this->config->item('data_found_success');
+                $response[$this->config->item('baseUrl')] = base_url();
+                $response[$this->config->item('data')] = $responseData;
+                return $response;
+            }
+            return $this->send_error_response($this->config->item('data_found_failure'));
+    }
+    
+    public function update_personal_loan_rate_content($data)
+    {
+            $this->db->where('id',$data['id']);
+            $this->db->update($this->tbl_personal_loan_rate,$data);
+            $update = $this->db->affected_rows();
+            if($update)
+            {
+                $response[$this->config->item('status')] = true;
+                $response[$this->config->item('message')] = $this->config->item('data_update_success');
+                return $response;
+            }
+            return $this->send_error_response($this->config->item('data_update_failure'));
+    }
+
+    //==============LOAN CALCULATOR CONTENT================
+    public function get_loan_calculator_content()
+    {
+            $this->db->select("*");
+            $this->db->from("$this->tbl_loan_calculator");
+            $exist = $this->db->get();
+            if ($exist->num_rows()) {
+                $responseData = $exist->result();
+                $response[$this->config->item('status')] = true;
+                $response[$this->config->item('message')] = $this->config->item('data_found_success');
+                $response[$this->config->item('baseUrl')] = base_url();
+                $response[$this->config->item('data')] = $responseData;
+                return $response;
+            }
+            return $this->send_error_response($this->config->item('data_found_failure'));
+    }
+    
+    public function update_loan_calculator_content($data)
+    {
+            $this->db->where('id',$data['id']);
+            $this->db->update($this->tbl_loan_calculator,$data);
+            $update = $this->db->affected_rows();
+            if($update)
+            {
+                $response[$this->config->item('status')] = true;
+                $response[$this->config->item('message')] = $this->config->item('data_update_success');
+                return $response;
+            }
+            return $this->send_error_response($this->config->item('data_update_failure'));
+    }
+
+
        
     //===============AUTO LOAN==============
     public function get_auto_loan()
@@ -111,6 +178,36 @@ class LoanModel extends CI_Model
         }
         return $this->send_error_response($this->config->item('data_update_failure'));
     }
+
+    public function get_auto_loan_rate_content()
+    {
+        $this->db->select("*");
+        $this->db->from("$this->tbl_auto_loan_rate");
+        $exist = $this->db->get();
+        if ($exist->num_rows()) {
+            $responseData = $exist->result();
+            $response[$this->config->item('status')] = true;
+            $response[$this->config->item('message')] = $this->config->item('data_found_success');
+            $response[$this->config->item('baseUrl')] = base_url();
+            $response[$this->config->item('data')] = $responseData;
+            return $response;
+        }
+        return $this->send_error_response($this->config->item('data_found_failure'));
+    }
+    
+    public function update_auto_loan_rate_content($data)
+    {
+        $this->db->where('id',$data['id']);
+        $this->db->update($this->tbl_auto_loan_rate,$data);
+        $update = $this->db->affected_rows();
+        if($update)
+        {
+            $response[$this->config->item('status')] = true;
+            $response[$this->config->item('message')] = $this->config->item('data_update_success');
+            return $response;
+        }
+        return $this->send_error_response($this->config->item('data_update_failure'));
+    }
        
     //===============STUDENT LOAN==============
     public function get_student_loan()
@@ -133,6 +230,36 @@ class LoanModel extends CI_Model
     {
         $this->db->where('id',$data['id']);
         $this->db->update($this->tbl_student_loan,$data);
+        $update = $this->db->affected_rows();
+        if($update)
+        {
+            $response[$this->config->item('status')] = true;
+            $response[$this->config->item('message')] = $this->config->item('data_update_success');
+            return $response;
+        }
+        return $this->send_error_response($this->config->item('data_update_failure'));
+    }
+
+    public function get_student_loan_rate_content()
+    {
+        $this->db->select("*");
+        $this->db->from("$this->tbl_student_loan_rate");
+        $exist = $this->db->get();
+        if ($exist->num_rows()) {
+            $responseData = $exist->result();
+            $response[$this->config->item('status')] = true;
+            $response[$this->config->item('message')] = $this->config->item('data_found_success');
+            $response[$this->config->item('baseUrl')] = base_url();
+            $response[$this->config->item('data')] = $responseData;
+            return $response;
+        }
+        return $this->send_error_response($this->config->item('data_found_failure'));
+    }
+    
+    public function update_student_loan_rate_content($data)
+    {
+        $this->db->where('id',$data['id']);
+        $this->db->update($this->tbl_student_loan_rate,$data);
         $update = $this->db->affected_rows();
         if($update)
         {

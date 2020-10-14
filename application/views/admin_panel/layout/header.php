@@ -200,6 +200,16 @@
 										</a>
 									</li>
 									<li>
+										<a href="<?php echo base_url()?>admin/mortgage/mortgage_calculator">
+											<span class="sub-item">Mortgage Calculator</span>
+										</a>
+									</li>
+									<li>
+										<a href="<?php echo base_url()?>admin/mortgage/home_equity_rates">
+											<span class="sub-item">Home Equity Rates</span>
+										</a>
+									</li>
+									<li>
 										<a href="<?php echo base_url()?>admin/mortgage/best_refinance_rates">
 											<span class="sub-item">Best Refinance Rates</span>
 										</a>
@@ -266,20 +276,40 @@
 										<a href="<?php echo base_url()?>admin/loan/loan_overview">
 											<span class="sub-item">Loan Overview Page</span>
 										</a>
-									</li>					
+									</li>		
+									<li>
+										<a href="<?php echo base_url()?>admin/loan/loan_calculator">
+											<span class="sub-item">Loan Calculator</span>
+										</a>
+									</li>				
 									<li>
 										<a href="<?php echo base_url()?>admin/loan/personal_loan">
 											<span class="sub-item">Persoanl Loan</span>
 										</a>
-									</li>					
+									</li>	
+									<li>
+										<a href="<?php echo base_url()?>admin/loan/personal_loan_rates">
+											<span class="sub-item">Personal Loan Rates</span>
+										</a>
+									</li>				
 									<li>
 										<a href="<?php echo base_url()?>admin/loan/auto_loan">
 											<span class="sub-item">Auto Loan</span>
+										</a>
+									</li>	
+									<li>
+										<a href="<?php echo base_url()?>admin/loan/auto_loan_rates">
+											<span class="sub-item">Auto Loan Rates</span>
 										</a>
 									</li>					
 									<li>
 										<a href="<?php echo base_url()?>admin/loan/student_loan">
 											<span class="sub-item">Student Loan</span>
+										</a>
+									</li>					
+									<li>
+										<a href="<?php echo base_url()?>admin/loan/student_loan_rates">
+											<span class="sub-item">Student Loan Rates</span>
 										</a>
 									</li>					
 									<li>

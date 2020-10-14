@@ -43,7 +43,7 @@
                       <img src="<?php echo base_url();?>assets/images/website/retirement/card_icon/401K-Calculator.png" style="width:100px; height:100px;">
                   </div>
               <!-- <a href="<?php echo base_url()?>index.php/auto_loan"> -->
-              <h6>41k Calculator</h6>
+              <h6>401k Calculator</h6>
             <!-- </a> -->
                 </div>
             </div>
@@ -75,7 +75,13 @@
 <section id="portfolio" class="">
     <div class="container">
         <header class="section-header pb-4">
-          <h3 class="section-title">OUR BEST ADVICE</h3>
+          <?php if(count($page_data)>=1){
+            foreach($page_data as $d){
+              if($d->div_type == "advice_heading"){?>
+                  <h3 class="section-title"><?php echo $d->heading ?></h3>
+            <?php } 
+            }
+          }?>
         </header>
         <div class="row" id="advice_data">
 
@@ -85,10 +91,20 @@
 
 <!-- Content Related to Loans -->
 <div class="container py-5">
-        <h3 class="border_bottom_golden">LATEST FROM BANKS BEST RATES</h3>
-        <div id="related_articles">
-        </div>     
-</div> 
+        <div class="row">
+          <div class="col-md-10 pr-0">
+            <div class="">
+            <a href="https://track.flexlinkspro.com/a.ashx?foid=1188831.139606676.I3558593&foc=16&fot=9999&fos=1" rel="nofollow" target="_blank" alt="600x120" title="Blue Trust Loans (Seasonal Temp) 600X120" ><img border="0" src="https://content.flexlinks.com/sharedimages/products/139606676/3558593.jpg" style="max-width: 100%;" /></a><img src="https://track.flexlinkspro.com/i.ashx?foid=1188831.139606676&fot=9999&foc=16&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
+            </div>
+            <h3 class="border_bottom_golden pt-5 mb-0">LATEST FROM BANKS BEST RATES</h3>
+            <div id="related_articles">
+            </div> 
+          </div>
+          <div class="col-md-2 px-0">
+          <a href="https://track.flexlinkspro.com/a.ashx?foid=1188831.139608160.I3560077&foc=16&fot=9999&fos=1" rel="nofollow" target="_blank" alt="Medium Rectangle" title="BlueTrust 300x250" ><img border="0" src="https://content.flexlinks.com/sharedimages/products/139608160/3560077.jpg" style="max-width: 100%;" /></a><img src="https://track.flexlinkspro.com/i.ashx?foid=1188831.139608160&fot=9999&foc=16&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
+          </div>       
+        </div>   
+  </div> 
 
 <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
 <script src="<?php echo base_url()?>assets/libs/common.js"></script>

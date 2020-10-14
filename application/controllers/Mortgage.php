@@ -21,8 +21,8 @@ class Mortgage extends CI_Controller {
 			$this->load->view('website/pages/mortgage/mortgage_overview',array("page_data"=>$mortgage_data));
 			$this->load->view('website/layout/footer');
     }
-		public function mortgage_rates()
-		{
+	public function mortgage_rates()
+	{
 			$mortgage_rates = $this->MortgageModel->get_mortgage_rate_content();
 			if($mortgage_rates['Status'])
 			{
@@ -33,11 +33,10 @@ class Mortgage extends CI_Controller {
 				$this->load->view('website/layout/header');
 				$this->load->view('website/pages/mortgage/mortgage_rates',array("page_data"=>$mortgage_rates));
 				$this->load->view('website/layout/footer');
-		}
+	}
 
-
-		public function refinance_rates()
-		{
+	public function refinance_rates()
+	{
 			$refinance_rates = $this->MortgageModel->get_refinance_rate_content();
 			if($refinance_rates['Status'])
 			{
@@ -49,12 +48,40 @@ class Mortgage extends CI_Controller {
 			$this->load->view('website/layout/header');
 			$this->load->view('website/pages/mortgage/refinance_rate',array("page_data"=>$refinance_rates));
 			$this->load->view('website/layout/footer');
+	}
+	public function home_equity_rates()
+	{
+		$home_equity_rate = $this->MortgageModel->get_home_equity_rate_content();
+		if($home_equity_rate['Status'])
+		{
+			$home_equity_rate = $home_equity_rate['data'];
+		}else{
+			$home_equity_rate="";
 		}
+			$this->load->view('website/layout/header');
+			$this->load->view('website/pages/mortgage/home_equity_rates',array("page_data"=>$home_equity_rate));
+			$this->load->view('website/layout/footer');
+	}
 
-  public function mortgage_calculator()
+  	public function mortgage_calculator()
+	{
+		$mortgage_cal = $this->MortgageModel->get_mortgage_calculator_content();
+		if($mortgage_cal['Status'])
+		{
+			$data = $mortgage_cal['data'];
+		}else{
+			$data="";
+		}
+		
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/mortgage/mortgage_calculator',array("page_data"=>$data));
+		$this->load->view('website/layout/footer');
+	}
+	
+  	public function mortgage_amortization()
 	{
 		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/mortgage/mortgage_calculator');
+		$this->load->view('website/pages/mortgage_calculator/AmortizationSchedule');
 		$this->load->view('website/layout/footer');
     }
     public function mortgage_calculator_list()

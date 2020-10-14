@@ -17,7 +17,7 @@ class Mortgage extends \Restserver\Libraries\REST_Controller
     public function __construct()
     {
         parent::__construct();
-		date_default_timezone_set('Asia/Calcutta');
+		date_default_timezone_set('America/New_York');
 
         $date = new DateTime();
         $this->curr_date = date('Y-m-d H:i:s');
@@ -37,25 +37,12 @@ class Mortgage extends \Restserver\Libraries\REST_Controller
 	}
 	public function update_mortgage_rate_content_post()
 	{
-		$_POST = $this->security->xss_clean($_POST);	
-		$this->form_validation->set_rules('heading','heading', 'trim|required|max_length[100]');	
-		$this->form_validation->set_rules('content','content', 'trim|required');	
-							
-		if ($this->form_validation->run() == false) {
-			$message = array(
-				$this->config->item('status') => false,
-				$this->config->item('message')=> validation_errors(),
-				$this->config->item('data') => $this->form_validation->error_array(),
-			);
-			return $this->send_error_response(validation_errors(), REST_Controller::HTTP_NOT_FOUND);
-		}
 
-		$heading		    =	$this->input->post('heading',true);
-		$content		    =	$this->input->post('content',true);
+		$id		   	=	$this->input->post('id',true);
+		$content	=	$this->input->post('content',true);
         
         $data = array(
-			"id"=>"1",
-			"heading"=>$heading,
+			"id"=>$id,
 			"content"=>$content,
 			"updated_on"=>$this->curr_date
 		);
@@ -66,8 +53,63 @@ class Mortgage extends \Restserver\Libraries\REST_Controller
 			return $this->set_response($query, REST_Controller::HTTP_OK);
 		}
 		return $this->send_error_response($query[$this->config->item('message')]);
-    }
-    
+	}
+
+	//Home Equty rate content
+	public function get_home_equity_rate_content_post()
+	{  
+        $query = $this->MortgageModel->get_home_equity_rate_content();
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+	public function update_home_equity_rate_content_post()
+	{
+
+		$id		   	=	$this->input->post('id',true);
+		$content	=	$this->input->post('content',true);
+        
+        $data = array(
+			"id"=>$id,
+			"content"=>$content,
+			"updated_on"=>$this->curr_date
+		);
+	
+		$query = $this->MortgageModel->update_home_equity_rate_content($data);
+		
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+
+	//Home Equty rate content
+	public function get_mortgage_calculator_content_post()
+	{  
+        $query = $this->MortgageModel->get_mortgage_calculator_content();
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+	
+	public function update_mortgage_calculator_content_post()
+	{
+		$id		   	=	$this->input->post('id',true);
+		$content	=	$this->input->post('content',true);
+        $data = array(
+			"id"=>$id,
+			"content"=>$content,
+			"updated_on"=>$this->curr_date
+		);
+		$query = $this->MortgageModel->update_mortgage_calculator_content($data);
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+	
     // Best Refinance content
 	public function get_refinance_rate_content_post()
 	{  
@@ -217,7 +259,6 @@ class Mortgage extends \Restserver\Libraries\REST_Controller
             $image = $file_path.$file_name;
             $data['image']= $image;
         }
-
 		$query = $this->MortgageModel->update_mortgage_overview($data);
 		
 		if ($query['Status']) {
@@ -225,6 +266,8 @@ class Mortgage extends \Restserver\Libraries\REST_Controller
 		}
 		return $this->send_error_response($query[$this->config->item('message')]);
 	}
+
+
   //Error message
   public function send_error_response($Message)
   {

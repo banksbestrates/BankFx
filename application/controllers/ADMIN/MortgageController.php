@@ -39,6 +39,28 @@ class MortgageController extends CI_Controller {
 		$this->load->view('admin_panel/mortgage/best_mortgage_rates');
 		$this->load->view('admin_panel/layout/footer');
     }
+    public function home_equity_rates()
+    {     
+        $this->check_admin_logged_in();
+        $data = array(
+            "admin_id"=>$this->admin_id
+        );
+    
+		$this->load->view('admin_panel/layout/header',array("admin_data"=>$data));
+		$this->load->view('admin_panel/mortgage/home_equity_rates');
+		$this->load->view('admin_panel/layout/footer');
+    }
+    public function mortgage_calculator()
+    {     
+        $this->check_admin_logged_in();
+        $data = array(
+            "admin_id"=>$this->admin_id
+        );
+    
+		$this->load->view('admin_panel/layout/header',array("admin_data"=>$data));
+		$this->load->view('admin_panel/mortgage/mortgage_calculator');
+		$this->load->view('admin_panel/layout/footer');
+    }
 
     public function best_refinance_rates()
     {     

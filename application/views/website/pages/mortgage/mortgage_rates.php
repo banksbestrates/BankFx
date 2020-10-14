@@ -7,18 +7,47 @@
 <!-- TOP NAME DIV -->
     <div class="container pt-5 pb-4">
         <div class="row">
-            <div class="col-md-9">
-                <h1 class=" font-weight-900 mb-2">Best Mortgage Rate for <?php echo date('M Y')?></h1>
-                <p>Published on <?php echo date('M d')?>. Do you want to get more information ?</p>
+            <div class="col-md-12">
+                <h1 class="font-weight-900 mb-2">Best Mortgage Rates for <?php echo date('F Y')?></h1>
+                <!-- <p>Published on <?php echo date('M d')?>. Do you want to get more information ?</p> -->
             </div>
-            <div class="col-md-3 text-right pt-3">
-                <button class="btn button_blue btn-sm">DOWNLOAD OUR APP</button>
-            </div>
+            <!-- <div class="col-md-3 text-right pt-3"> -->
+                <!-- <button class="btn button_blue btn-sm">DOWNLOAD OUR APP</button> -->
+            <!-- </div> -->
         </div>
     </div>
 
+<!-- Mortgage rate top -->
+    <div class="container">
+        <?php if(count($page_data)>=1){
+                foreach($page_data as $d){
+                if($d->div_type == "top"){?>
+                    <h5 class="mb-2"><?php echo $d->heading;?></h5>
+                   <div class="text-justify"><?php echo $d->content;?></div>
+            <?php } 
+            }
+        }?>
+    </div>
+
+<!-- Iframe brown bag -->
+    <div class="container pb-3" >
+        <iframe  id="Ifrmae" style="height:210vh;width:100%;border:2px solid #d79f01" src="https://widgets.icanbuy.com/c/standard/us/en/mortgage/tables/Mortgage.aspx?siteid=6958e75ba6b00b8b&include_text_results=1&redirect_no_results=1&listingbtnbgcolor=D79F01&searchbtnbgcolor=000000"></iframe>
+    </div>
+
+<!-- Mortgage rate bottom  -->
+    <div class="container pb-5">
+        <?php if(count($page_data)>=1){
+                foreach($page_data as $d){
+                if($d->div_type == "top"){?>
+                    <h5 class="mb-2"><?php echo $d->heading;?></h5>
+                   <div class="text-justify"><?php echo $d->content;?></div>
+            <?php } 
+            }
+        }?>
+    </div>
+
     <!-- Calculate form div -->
-    <div class="col-md-12 py-4 mortgag_form_div">
+    <!-- <div class="col-md-12 py-4 mortgag_form_div">
         <div class="container px-0 ">
             <div class="row">
             <div class="col-md-2">
@@ -66,10 +95,10 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>  -->
 
     <!-- card view -->
-    <div class="container  card_row pb-4 pt-5">  
+    <!-- <div class="container  card_row pb-4 pt-5">  
         <header class="section-header">
             <h3 class="font-weight-900 mb-0">WHAT’S MOST IMPORTANT TO YOU?</h3>
         </header> 
@@ -123,9 +152,9 @@
                     </div>
                 </div>
         </div>
-    </div> 
+    </div>  -->
     <!-- Table div -->
-    <div class="container py-5 ">
+    <!-- <div class="container py-5 ">
         <div class="row">
             <div class="col-md-10">
                     <p> <strong>SHOWING RESULTS FOR:</strong> Single Family home, 30 year fixed mortgages with all points.</p>
@@ -369,10 +398,10 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- current mortgage and refine rates -->
-    <div class="container py-3 ">
+    <!-- <div class="container py-3 ">
         <div class="row">
             <div class="col-md-10">
                 <h3 class="border_bottom_golden font-weight-900"><?php echo $page_data->heading ?></h3>
@@ -435,7 +464,18 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
+    
+    <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
+    <script src="<?php echo base_url()?>assets/libs/common.js"></script>
+    <script>
+    // Selecting the iframe element
+    var iframe = document.getElementById("Ifrmae");
+    // Adjusting the iframe height onload event
+    iframe.onload = function(){
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+    </script>
 
 
  

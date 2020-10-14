@@ -18,7 +18,7 @@ class Loan extends \Restserver\Libraries\REST_Controller
     public function __construct()
     {
         parent::__construct();
-		date_default_timezone_set('Asia/Calcutta');
+		date_default_timezone_set('America/New_York');
 
         $date = new DateTime();
         $this->curr_date = date('Y-m-d H:i:s');
@@ -173,6 +173,65 @@ class Loan extends \Restserver\Libraries\REST_Controller
 		}
 		return $this->send_error_response($query[$this->config->item('message')]);
 	}
+	// get student loan rates content
+	public function get_personal_loan_rate_content_post()
+	{  
+		$query = $this->LoanModel->get_personal_loan_rate_content();
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+	/* update personal loan rate contetn*/
+	public function update_personal_loan_rate_content_post()
+	{
+	
+			$id		   	=	$this->input->post('id',true);
+			$content	=	$this->input->post('content',true);
+			
+			$data = array(
+				"id"=>$id,
+				"content"=>$content,
+				"updated_on"=>$this->curr_date
+			);
+		
+			$query = $this->LoanModel->update_personal_loan_rate_content($data);
+			
+			if ($query['Status']) {
+				return $this->set_response($query, REST_Controller::HTTP_OK);
+			}
+			return $this->send_error_response($query[$this->config->item('message')]);
+	}
+
+	//===============LOAN CALCULATOR==============
+	// get loan calculator content
+	public function get_loan_calculator_content_post()
+	{  
+		$query = $this->LoanModel->get_loan_calculator_content();
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+	/* update loan calculator content*/
+	public function update_loan_calculator_content_post()
+	{
+			$id		   	=	$this->input->post('id',true);
+			$content	=	$this->input->post('content',true);
+			
+			$data = array(
+				"id"=>$id,
+				"content"=>$content,
+				"updated_on"=>$this->curr_date
+			);
+		
+			$query = $this->LoanModel->update_loan_calculator_content($data);
+			
+			if ($query['Status']) {
+				return $this->set_response($query, REST_Controller::HTTP_OK);
+			}
+			return $this->send_error_response($query[$this->config->item('message')]);
+	}
 
 
 	//=======================AUTO LOAN=================
@@ -248,6 +307,35 @@ class Loan extends \Restserver\Libraries\REST_Controller
 		}
 		return $this->send_error_response($query[$this->config->item('message')]);
 	}
+		// get auto loan rates content
+		public function get_auto_loan_rate_content_post()
+		{  
+			$query = $this->LoanModel->get_auto_loan_rate_content();
+			if ($query['Status']) {
+				return $this->set_response($query, REST_Controller::HTTP_OK);
+			}
+			return $this->send_error_response($query[$this->config->item('message')]);
+		}
+		/* update auto loan rate contetn*/
+		public function update_auto_loan_rate_content_post()
+		{
+	
+			$id		   	=	$this->input->post('id',true);
+			$content	=	$this->input->post('content',true);
+			
+			$data = array(
+				"id"=>$id,
+				"content"=>$content,
+				"updated_on"=>$this->curr_date
+			);
+		
+			$query = $this->LoanModel->update_auto_loan_rate_content($data);
+			
+			if ($query['Status']) {
+				return $this->set_response($query, REST_Controller::HTTP_OK);
+			}
+			return $this->send_error_response($query[$this->config->item('message')]);
+		}
 
 	//=======================STUDENT LOAN=================
 	/*Get student loan*/
@@ -322,6 +410,37 @@ class Loan extends \Restserver\Libraries\REST_Controller
 		}
 		return $this->send_error_response($query[$this->config->item('message')]);
 	}
+
+	// get student loan rates content
+	public function get_student_loan_rate_content_post()
+	{  
+        $query = $this->LoanModel->get_student_loan_rate_content();
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+	/* update student loan rate contetn*/
+	public function update_student_loan_rate_content_post()
+	{
+
+		$id		   	=	$this->input->post('id',true);
+		$content	=	$this->input->post('content',true);
+        
+        $data = array(
+			"id"=>$id,
+			"content"=>$content,
+			"updated_on"=>$this->curr_date
+		);
+	
+		$query = $this->LoanModel->update_student_loan_rate_content($data);
+		
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
+	
 
 
 	//=======================DEBT CONSOLIDATION=================

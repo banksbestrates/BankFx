@@ -44,7 +44,7 @@
                 <div style="width:100%; text-align:center">
                       <img src="<?php echo base_url();?>assets/images/website/banking/card_icon/Best-Online_Banks.png" style="width:100px; height:100px;">
                   </div>
-                  <h6>Best Online Bnaks</h6>
+                  <h6>Best Online Banks</h6>
                 </div>
             </div>
             <div class="col-md-3">

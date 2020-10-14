@@ -16,22 +16,8 @@
                                <div class="row" id="top_banner_text">
                                    
                                </div>
-                            </div><br/><hr/>    
-                        
-                            <div class="col-md-12">
-                                <div class="row" id="normal_articles">
-                                                                   
-                                </div>
-                            </div>
-                            <br/>                        
+                            </div><br/><hr/>                           
                         </div>
-                            <!-- <h2 class="px-5 text-dark font-weight-bold">Related Articles</h2><hr/>
-                            <div class="col-md-12 px-5">
-                                <div class="row" id="related_articles">
-                                                            
-                                </div>
-                            </div>
-                            <br/>                         -->
                         </div>
                     </div>
                 </div>

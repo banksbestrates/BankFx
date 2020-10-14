@@ -22,6 +22,19 @@ class Loan extends CI_Controller {
 			$this->load->view('website/pages/loan/loan_overview',array("page_data"=>$loan_data));
 			$this->load->view('website/layout/footer');
 	}
+	public function student_loan_rates()
+	{
+			$loan_data = $this->LoanModel->get_student_loan_rate_content();
+			if($loan_data['Status'])
+			{
+				$loan_data = $loan_data['data'];
+			}else{
+				$loan_data="";
+			}
+			$this->load->view('website/layout/header');
+			$this->load->view('website/pages/loan/student_loan_rates', array("page_data"=>$loan_data));
+			$this->load->view('website/layout/footer');
+	}
 	
 	public function personal_loan()
 	{
@@ -35,7 +48,21 @@ class Loan extends CI_Controller {
 		$this->load->view('website/layout/header');
 		$this->load->view('website/pages/loan/personal_loan',array("page_data"=>$loan_data));
 		$this->load->view('website/layout/footer');
-    }
+	}
+	public function personal_loan_rate()
+	{
+		$loan_data = $this->LoanModel->get_personal_loan_rate_content();
+		if($loan_data['Status'])
+		{
+			$loan_data = $loan_data['data'];
+		}else{
+			$loan_data="";
+		}
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/loan/personal_loan_rate', array("page_data"=>$loan_data));
+		$this->load->view('website/layout/footer');
+	}
+	
 	public function auto_loan()
 	{
 			$loan_data = $this->LoanModel->get_auto_loan();
@@ -48,7 +75,22 @@ class Loan extends CI_Controller {
 			$this->load->view('website/layout/header');
 			$this->load->view('website/pages/loan/auto_loan',array("page_data"=>$loan_data));
 			$this->load->view('website/layout/footer');
-    }
+	}
+	
+	public function auto_loan_rates()
+	{
+		$loan_data = $this->LoanModel->get_auto_loan_rate_content();
+		if($loan_data['Status'])
+		{
+			$loan_data = $loan_data['data'];
+		}else{
+			$loan_data="";
+		}
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/loan/auto_loan_rate', array("page_data"=>$loan_data));
+		$this->load->view('website/layout/footer');
+	}
+
 	public function student_loan()
 	{
 			$loan_data = $this->LoanModel->get_student_loan();
@@ -87,16 +129,18 @@ class Loan extends CI_Controller {
 		$this->load->view('website/pages/loan/leander_loan_review');
 		$this->load->view('website/layout/footer');
     }
-	public function personal_loan_rate()
-	{
-		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/loan/personal_loan_rate');
-		$this->load->view('website/layout/footer');
-    }
+	
 	public function loan_calculator()
 	{
+		$loan_data = $this->LoanModel->get_loan_calculator_content();
+		if($loan_data['Status'])
+		{
+			$loan_data = $loan_data['data'];
+		}else{
+			$loan_data="";
+		}
 		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/loan/loan_calculator');
+		$this->load->view('website/pages/loan/loan_calculator', array("page_data"=>$loan_data));
 		$this->load->view('website/layout/footer');
     }
 	public function debt_consolidation()
@@ -120,7 +164,5 @@ class Loan extends CI_Controller {
 		$this->load->view('website/pages/loan/article_detail',array("article_data"=>$article_data));
 		$this->load->view('website/layout/footer');
     }
-	
-    
-    
+	 
 }

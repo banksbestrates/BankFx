@@ -24,9 +24,9 @@
                     <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/personal_loan.png" style="width:100px; height:100px;">
                   </div>
                 <!-- <i class="fa fa-bar-chart" aria-hidden="true"></i> -->
-                  <!-- <a href="<?php echo base_url()?>index.php/personal_loan"> -->
-                  <h6>Personal Loans </h6>
-                <!-- </a> -->
+                  <a href="<?php echo base_url()?>personal_loan">
+                    <h6>Personal Loans </h6>
+                  </a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -46,9 +46,9 @@
                     <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/auto_loan.png" style="width:100px; height:100px;">
                   </div>
               <!-- <i class="fa fa-bar-chart" aria-hidden="true"></i> -->
-              <!-- <a href="<?php echo base_url()?>index.php/auto_loan"> -->
+              <a href="<?php echo base_url()?>auto_loan">
               <h6>Auto Loans </h6>
-            <!-- </a> -->
+            </a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -56,10 +56,9 @@
                   <div style="width:100%; text-align:center">
                     <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/student_loan.png" style="width:100px; height:100px;">
                   </div>
-           
-                <!-- <a href="<?php echo base_url()?>index.php/student_loan"> -->
-                <h6>Student Loan</h6>
-              <!-- </a> -->
+                  <a href="<?php echo base_url()?>student_loan">
+                    <h6>Student Loan</h6>
+                  </a>
                 </div>
             </div>
             <div class="col-md col-sm-4">
@@ -80,19 +79,35 @@
 <section id="portfolio" class="">
     <div class="container">
         <header class="section-header pb-4">
-          <h3 class="section-title">OUR BEST ADVICE</h3>
+          <?php if(count($page_data)>=1){
+            foreach($page_data as $d){
+              if($d->div_type == "advice_heading"){?>
+                  <h3 class="section-title"><?php echo $d->heading ?></h3>
+            <?php } 
+            }
+          }?>
         </header>
         <div class="row" id="advice_data">
 
         </div>
     </div>
 </section>
+
  <!-- Content Related to Loans -->
  <div class="container py-5">
-        <h3 class="border_bottom_golden">LATEST FROM BANKS BEST RATES</h3>
-        <div id="related_articles">
-
-        </div>     
+        <div class="row">
+          <div class="col-md-10 pr-0">
+            <div class="">
+            <a href="https://track.flexlinkspro.com/a.ashx?foid=1188831.139606676.I3558593&foc=16&fot=9999&fos=1" rel="nofollow" target="_blank" alt="600x120" title="Blue Trust Loans (Seasonal Temp) 600X120" ><img border="0" src="https://content.flexlinks.com/sharedimages/products/139606676/3558593.jpg" style="max-width: 100%;" /></a><img src="https://track.flexlinkspro.com/i.ashx?foid=1188831.139606676&fot=9999&foc=16&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
+            </div>
+            <h3 class="border_bottom_golden pt-5 mb-0">LATEST FROM BANKS BEST RATES</h3>
+            <div id="related_articles">
+            </div> 
+          </div>
+          <div class="col-md-2 px-0">
+          <a href="https://track.flexlinkspro.com/a.ashx?foid=1188831.142317341.I4976660&foc=16&fot=9999&fos=1" rel="nofollow" target="_blank" alt="Medium Rectangle" title="SuperMoney - Home Improvement Loans" ><img border="0" src="https://content.flexlinks.com/sharedimages/products/142317341/4976660.jpg" style="max-width: 100%;" /></a><img src="https://track.flexlinkspro.com/i.ashx?foid=1188831.142317341&fot=9999&foc=16&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
+          </div>       
+        </div>   
   </div> 
 
 

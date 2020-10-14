@@ -21,13 +21,12 @@
                 foreach($page_data as $d){
                   if($d->div_type=="div_1")
                   {?>
-                  
                     <div class="carousel-item <?php echo $d->default_class?>" style="background-image: url('<?php echo base_url() . $d->image?>');">
                         <div class="carousel-container">
                           <div class="carousel-content">
                             <h2><?php echo $d->heading?></h2>
                             <p><?php echo $d->content?></p>
-                            <a href="<?php echo base_url()?>bank_overview" class="btn-get-started ">Get Started</a>
+                            <!-- <a href="<?php echo base_url()?>bank_overview" class="btn-get-started ">Get Started</a> -->
                           </div>
                         </div>
                     </div>
@@ -76,6 +75,26 @@
                   </div>
               </div>
               <div class="col-md col-sm-4">
+                  <div class="card">
+                    <div style="width:100%; text-align:center">
+                        <img src="<?php echo base_url()?>assets/images/website/banking/card_icon/Bank-Name.png">
+                    </div>
+                    <a href="<?php echo base_url()?>best_banks">
+                      <h6>Best Banks</h6>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-md col-sm-4">
+                  <div class="card">
+                    <div style="width:100%; text-align:center">
+                        <img src="<?php echo base_url()?>/assets/images/website/banking/card_icon/Address-Location.png">
+                      </div>
+                      <a href="<?php echo base_url()?>branch_locator">
+                        <h6>Branch Locator</h6>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md col-sm-4">
                 <div class="card">
                     <div style="width:100%; text-align:center">
                         <img src="<?php echo base_url()?>assets/images/website/credit/card_icon/balance_transfer.png">
@@ -93,24 +112,6 @@
                     <a href="<?php echo base_url()?>loan_overview">
                     <h6> Loans</h6>
                     </a>
-                  </div>
-              </div>
-              <div class="col-md col-sm-4">
-                  <div class="card">
-                    <div style="width:100%; text-align:center">
-                        <img src="<?php echo base_url()?>assets/images/website/investing/card_icon/best_invest.png">
-                    </div>
-                    <a href="<?php echo base_url()?>investment_overview">
-                      <h6>Investments</h6>
-                    </a>
-                  </div>
-              </div>
-              <div class="col-md col-sm-4">
-                  <div class="card">
-                    <div style="width:100%; text-align:center">
-                        <img src="<?php echo base_url()?>/assets/images/website/insurance/card_icon/Life-Insurance.png">
-                      </div>
-                    <h6>Insurance</h6>
                   </div>
               </div>
         </div> 
@@ -152,16 +153,6 @@
           </div>
       </div> 
 
-    
-
-  <!-- start feedwind code --> 
-  <div class="col-md-12">
-    <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="136173/">
-    </script> 
-  </div>
-  <!-- end feedwind code -->
-
-  
 
     <!--==========================
       Call To Action Section

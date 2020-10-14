@@ -20,14 +20,13 @@
                                </div>
                             </div><br/><hr/>
 
-                            <h2 class="text-center text-dark font-weight-bold">INSURANCE</h2><hr/>
-                            <div class="col-md-12 px-5">
-                                <div class="row" id="trending_articles">
-                                                            
-                                </div>
+                                                 
+                      
+                            <h3 class="text-center">EDIT SUB HEADING</h3>
+                            <div id="advice_heading">
+
                             </div>
-                            <br/>                        
-                        </div><br/><br/>
+                            </div><br/><br/>
                         <!-- <h2 class="text-center text-dark font-weight-bold">Related Content</h2><hr/>
                             <div class="col-md-12 px-5">
                                 <div class="row" id="related_articles">

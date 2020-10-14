@@ -12,11 +12,14 @@
                         </div>
                         <div class="card-body">
                             <div class="col-md-12 px-5">
-                                <lable>Heading</lable>
-                                <input type="text" class="form-control font-weight-bold"  id="heading" placeholder="Article Heading Here"/><br/>
-                                <label>Content</label>
-                                <textarea name="editor" id="data"></textarea><br/>             
-                                <button class="btn btn-block btn-primary" id="update_button" onclick="updateMortgageRate()">UPDATE DATA</button>
+                                <h4 class="text-center text-primary">TOP DIV CONTENT</h4>
+                                <textarea name="top_editor" id="top_content"></textarea><br/> 
+                                <div id="top_button" ></div>
+                                
+                                <hr/>            
+                                <h4 class="text-center text-primary">BOTTOM DIV CONTENT</h4> 
+                                <textarea name="bottom_editor" id="bottom_content"></textarea><br/>             
+                                <div id="bottom_button" ></div>
                             </div>
                             <br/>                        
                         </div>
@@ -31,7 +34,8 @@
 <script src="<?php echo base_url()?>assets/admin_panel/libs/common.js"></script>
 <script src="<?php echo base_url()?>assets/admin_panel/libs/mortgageProcess.js"></script>
 <script>
- CKEDITOR.replace( 'editor' );
+    CKEDITOR.replace( 'top_editor' );
+    CKEDITOR.replace( 'bottom_editor' );
     let formData = new FormData();
     let url = baseUrl + "api/admin/get_mortgage_rate_content";
     let xhr = new XMLHttpRequest();
@@ -45,22 +49,35 @@
             if (!status) {
             }
             let data = obj.data;
-            $("#heading").val(data.heading);
-            $("#data").val(data.content); 
+            for(var i=0;i<data.length;i++)
+            {
+                if(data[i].div_type=="top")
+                {
+                    $("#top_content").val(data[i].content); 
+                    $("#top_button").html('<button class="btn btn-primary" id="update_button" onclick=updateMortgageRate('+data[i].id+',"'+data[i].div_type+'")>SAVE & UPDATE</button><br/>');
+                }
+                if(data[i].div_type=="bottom")
+                {
+                    $("#bottom_content").val(data[i].content); 
+                    $("#bottom_button").html('<button class="btn btn-primary" id="update_button" onclick=updateMortgageRate('+data[i].id+',"'+data[i].div_type+'")>SAVE & UPDATE</button><br/>');
+                }
+            }
+           
         }
     }
 
-    function updateMortgageRate()
+    function updateMortgageRate(id,div_type)
     {
-        var content= CKEDITOR.instances.data.getData();
-        if (content == "") {
-            alert("Enter Valid Content");
+        if(div_type=="top")
+        {
+            var content= CKEDITOR.instances.top_content.getData();
+        }else if(div_type=="bottom")
+        {
+            var content= CKEDITOR.instances.bottom_content.getData();
         }
-        var heading   = $("#heading").val();
-
         let formData = new FormData();
         formData.append('content', content);
-        formData.append('heading', heading);
+        formData.append('id', id);
         let url = baseUrl + "api/admin/update_mortgage_rate_content";
         let xhr = new XMLHttpRequest();
         xhr.open('POST', url);

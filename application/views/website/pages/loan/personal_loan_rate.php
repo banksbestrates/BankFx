@@ -5,21 +5,40 @@
 }
 </style>
 <!-- TOP NAME DIV -->
-<div class="col-md-10 mx-auto pt-5 pb-4">
-    <div class="row">
-        <div class="col-md-8">
-            <!-- <span>Bank Reviews > </span> <span class="text_yellow">Aliiant Bank </span> -->
-            <h2 class=" font-weight-900 mb-2">Best Personal Loan Rates for <?php echo date('M y')?></h2>
-            <p>Published by <?php echo date('M y')?>. Do we need to have this information?</p>
-        </div>
-        <div class="col-md-4 text-right pt-3">
-            <button class="btn button_blue btn-sm">DOWNLOAD OUR APP</button>
+<div class="container pt-5 pb-4">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="font-weight-900 mb-2">Personal Loan Rates for <?php echo date('F Y')?></h1>
+            </div>
         </div>
     </div>
-</div>
+
+    <div class="container">
+        <?php if(count($page_data)>=1){
+                foreach($page_data as $d){
+                if($d->div_type == "top"){?>
+                    <h5 class="mb-2"><?php echo $d->heading;?></h5>
+                   <div class="text-justify"><?php echo $d->content;?></div>
+            <?php } 
+            }
+        }?>
+    </div>
+    <div class="container pb-4" >
+        <iframe  id="Ifrmae" style="height:150vh;width:100%;border:2px solid #d79f01" src="https://widgets.icanbuy.com/c/standard/us/en/personalloan/tables/q/PersonalLoans.aspx?siteid=9e42fea46ee9090e&perpage=1000&disable_paging=1&&listingbtnbgcolor=D79F01&searchbtnbgcolor=000000""></iframe>
+    </div>
+    <div class="container pb-5">
+        <?php if(count($page_data)>=1){
+                foreach($page_data as $d){
+                if($d->div_type == "bottom"){?>
+                    <h5 class="mb-2"><?php echo $d->heading;?></h5>
+                   <div class="text-justify"><?php echo $d->content;?></div>
+            <?php } 
+            }
+        }?>
+    </div>
 
 <!-- Calculate form div -->
-<div class="col-md-12 py-4 mortgag_form_div">
+<!-- <div class="col-md-12 py-4 mortgag_form_div">
   <div class="col-md-10 mx-auto px-0 ">
         <div class="row">
           <div class="col-md-3">
@@ -48,10 +67,10 @@
             </div>
         </div>
       </div>
-</div> 
+</div>  -->
 
 <!-- Table div -->
-<div class="col-md-12 py-5 ">
+<!-- <div class="col-md-12 py-5 ">
     <div class="col-md-10 mx-auto px-0 ">
         <table class="table text-center font-weight-900">
             <thead>
@@ -76,7 +95,6 @@
             </tbody>  
         </table>   
     </div>
-    <!-- How rates are calculated -->
     <div class="col-md-10 mx-auto px-0 pt-5 ">
        <h4 class="border_bottom_golden font-weight-900">Learn More About Personal Loans</h4>
        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus dictum nisl ac ultricies.
@@ -85,7 +103,7 @@
         Suspendisse placerat mi eget ipsum egestas, vitae consectetur ipsum tincidunt.
        </p>
     </div>
-    <!-- current mortgage and refine rates -->
+    
     <div class="col-md-10 mx-auto px-0 py-3 ">
         <h4 class="border_bottom_golden font-weight-900">Summary of Banks Best CD Rates for July 2020</h4>
             <table class="table text-center text-secondary">
@@ -131,7 +149,7 @@
             Thus way the end user might feel more confident with up-to-date numbers.
             </small>
     </div>
-</div> 
+</div>  -->
 
 
  

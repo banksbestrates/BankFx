@@ -59,7 +59,7 @@ a{
                             <li>
                                 <div class="dbox ">
                                     <span class="ab blu"><?php echo $d[0]?></span>
-                                    <a href="<?php echo base_url()?>bank_city/<?php echo $d[1]?>" title="<?php echo $d[1]?>" class="litem"><?php echo $d[1]?></a>
+                                    <a href="<?php echo base_url()?>bank_city/<?php echo $d[0]?>/<?php echo $d[1]?>" title="<?php echo $d[1]?>" class="litem"><?php echo $d[1]?></a>
                                 </div>
                                 <div class="total_cities"><small><?php echo $bank['bankingGroups']?> Banks - <?php echo $bank['branchLocations']?> Offices</small></div>
                             </li>

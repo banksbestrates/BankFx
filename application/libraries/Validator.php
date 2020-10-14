@@ -494,7 +494,7 @@ public function get_all_cities($state_name)
 }
 
 //========================GET ALL THE BANKS IN PARTICULAR STATE===========//
-public function get_banks_in_city($city_name)
+public function get_banks_in_city($state_code,$city_name)
 {
     $curlRef = curl_init();
     $curlConfig = array(
@@ -506,6 +506,7 @@ public function get_banks_in_city($city_name)
                 'UserName'  => 'schmid@banksbestrates.com',
                 'Password'  => '12345678',
                 'City' => $city_name,
+                'StateCode'=>$state_code,
                 )
             );
             

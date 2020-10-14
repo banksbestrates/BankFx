@@ -18,6 +18,10 @@
                                    
                                </div>
                             </div><br/><hr/>
+                            <h3 class="text-center">EDIT SUB HEADING</h3>
+                            <div id="advice_heading">
+
+                            </div>
                             <!-- <h2 class="text-center text-dark font-weight-bold">WHATS TRENDING IN BANKING</h2><hr/>
                             <div class="col-md-12 px-5">
                                 <div class="row" id="trending_articles">                                                          

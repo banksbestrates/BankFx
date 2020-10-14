@@ -17,20 +17,17 @@ function get_mortgage_posts() {
                 '    <div class="col-md-6 blog_image" style="background-image:url('+pageData[i]._embedded['wp:featuredmedia'][0].source_url+')">'+
                 '    </div>'+
                 '    <div class="col-md-6 related_content">'+
-                '   <a href="'+baseUrl+'post_detail/'+pageData[i].id+'/'+pageData[i].slug+'" ><h3 class="blog_heading font-weight-bolder">'+pageData[i].title.rendered+'</h3> </a>'+
-                '          <small></small>'+
-                '        <p class="text-justify">'+pageData[i].excerpt.rendered+'</p>'+
+                '       <a href="'+baseUrl+'post_detail/'+pageData[i].id+'/'+pageData[i].slug+'" ><h4 class="blog_heading font-weight-bolder">'+pageData[i].title.rendered+'</h4> </a>'+
+                '        <div class="text-justify pt-2" style="height: 133px;overflow: hidden;">'+pageData[i].excerpt.rendered+'</div>'+
                 '        <div class="row">'+
-                '              <div class="col-md-12">'+
-                '   <a href="'+baseUrl+'post_detail/'+pageData[i].id+'/'+pageData[i].slug+'" ><i class="fa fa-arrow-circle-right"  aria-hidden="true"></i></a>'+
-                '              </div>'+
+                '             <div class="col-md-12">'+
+                '               <a href="'+baseUrl+'post_detail/'+pageData[i].id+'/'+pageData[i].slug+'" ><i class="fa fa-arrow-circle-right"  aria-hidden="true"></i></a>'+
+                '             </div>'+
                 '        </div>'+
                 '    </div>'+
                 '</div>'
             }
             $("#related_articles").html(post_list);
-          
-
         }
     };
 }

@@ -122,10 +122,10 @@ class Bank extends CI_Controller {
 		
 	}
 
-	public function bank_city($city)
+	public function bank_city($state_code,$city)
 	{
-		$city_name = str_replace('%20', ' ', $city);
-		$data = $this->validator->get_banks_in_city($city_name);
+		$city_name = str_replace('%20', '', $city);
+		$data = $this->validator->get_banks_in_city($state_code,$city_name);
 		if($data)
 		{
 			if($data['RowCount'] > 0 )

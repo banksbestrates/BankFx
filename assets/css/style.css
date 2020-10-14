@@ -137,14 +137,14 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   width: 100%;
   /* height: 100vh; */
-  height: 70vh;
+  height: 40vh;
   background: #000;
 }
 
 #intro .carousel-item {
   width: 100%;
   /* height: 100vh; */
-  height: 70vh;
+  height: 40vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -390,7 +390,7 @@ color:#D79F01
 }
 
 .nav-menu > li {
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .nav-menu ul {
@@ -1785,7 +1785,7 @@ font-size:40px;
 
 
 .calculator_form_div input{
-  border:none;
+  /* border:none; */
   background-color: transparent;
   width:95%
 }
@@ -1906,8 +1906,8 @@ select{
 
 
 .input-group{
-    border: 2px #626262 solid;
-    padding: 6px 10px 6px 10px;
+    /* border: 2px #626262 solid;
+    padding: 6px 10px 6px 10px; */
     border-radius: 10px;
 }
 
@@ -2409,3 +2409,77 @@ object-fit: contain;
   height:75px;
   object-fit:contain;
 }
+.content img {
+  margin-right: 15px;
+  float: left;
+  height:60px;
+  width:60px;
+  object-fit: contain;
+}
+
+.content h6,
+.content small{
+  margin-left: 15px;
+  display: block;
+  margin: 2px 0 0 0;
+  padding-top:5px;
+}
+#map{
+  
+height: 100%;  /* The height is 400 pixels */
+      width: 100%;  /* The width is the width of the web page */
+}
+
+.form-control:focus {
+  outline: 0 !important;
+  border-color: initial;
+  box-shadow: none;
+}
+
+
+/* For ians calculator  */
+.hideMe { display: none;
+}
+
+table.detail tr:nth-child(even) { background-color: #dddddd; }
+   
+table.detail tr:hover { background-color: LightYellow; }
+
+table.detail { white-space: nowrap;
+               border-style: none;
+               border-collapse: collapse;
+             }
+
+/* table.detail th { padding: 5px;
+                  border-width: 2px;
+                  border-style: outset;
+                  border-color: rgb(216, 180, 97);
+                  background-color: rgb(247, 247, 247);
+                } */
+
+/* table.detail td { padding: 5px;
+                  border-width: 2px;
+                  border-style: outset;
+                  border-color: rgb(216, 180, 97);
+                  background-color: transparent;
+                } */
+
+ .scrollable {
+   overflow-y: auto;
+   /* padding-right: 25px; */
+ }
+
+.cellSelected { color: burgundy;
+               font-weight: bold;
+               border-style: inset;
+             }
+
+ .amortizationTable { clear: both;
+  overflow-y: auto;
+  /* padding-top: 6px; */
+}
+
+.savings { color: blue;
+    font-size: small;
+    font-weight: default;
+  }

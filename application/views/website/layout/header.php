@@ -24,8 +24,9 @@
 <meta name="news_keywords" itemprop="keywords" content="Best CD’s, Mortgages, Credit Cards, Personal Loans, Checking accounts and so much more in real time">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@bank_fax" />
+<meta name="fo-verify" content="ef55cca1-6ed5-4b45-8c2c-8cc6f30a03a2">
 <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://banksbestrates.com/#organization","name":"Banks Best Rates","url":"https://banksbestrates.com/","sameAs":["https://www.facebook.com/bankfaxtoday/","https://www.linkedin.com/company/banksbestrates","https://twitter.com/bank_fax"],"logo":{"@type":"ImageObject","@id":"https://banksbestrates.com/#logo","inLanguage":"en-US","url":"https://banksbestrates.com/wp-content/uploads/2020/07/main_logo_image.png","width":500,"height":590,"caption":"Banks Best Rates"},"image":{"@id":"https://banksbestrates.com/#logo"}},{"@type":"WebSite","@id":"https://banksbestrates.com/#website","url":"https://banksbestrates.com/","name":"banksbestrates.com","description":"Rates and Ratings For Your Bank or Credit Union","publisher":{"@id":"https://banksbestrates.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://banksbestrates.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"CollectionPage","@id":"https://banksbestrates.com/#webpage","url":"https://banksbestrates.com/","name":"banksbestrates.com - Rates and Ratings For Your Bank or Credit Union","isPartOf":{"@id":"https://banksbestrates.com/#website"},"about":{"@id":"https://banksbestrates.com/#organization"},"description":"% Rates and Ratings For Your Bank or Credit Union %","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://banksbestrates.com/"]}]}]}</script>
-<link href="<?php echo base_url()?>assets/img/logo/main_logo_image.png" rel="icon">
+<link href="<?php echo base_url()?>assets/img/logo/BBR_Favicon.ico" rel="icon">
 <link href="<?php echo base_url()?>asssets/img/apple-touch-icon.png" rel="apple-touch-icon">
   
   <!-- Google Fonts -->
@@ -265,9 +266,11 @@
           <li><a href="<?php echo base_url()?>credit_overview">Credit Cards</a></li>
           <li><a href="<?php echo base_url()?>loan_overview">Loans</a></li>
           <li><a href="<?php echo base_url()?>investment_overview">Investments</a></li>
+          <li><a href="<?php echo base_url()?>insurance_overview">Insurance</a></li>
           <li><a href="<?php echo base_url()?>retirement_overview">Retirement</a></li>
           <li><a href="<?php echo base_url()?>blog">Blog</a></li>
-          <li><a href="<?php echo base_url()?>about_us">About Us</a></li>
+          <li><a href="<?php echo base_url()?>news">Financial News</a></li>
+          <!-- <li><a href="<?php echo base_url()?>about_us">About Us</a></li> -->
           <!-- <li><a href="<?php echo base_url()?>about_us">About us</a></li>
           <li><a href="<?php echo base_url()?>profile">Profile</a></li> -->
           <li><a href="<?php echo base_url()?>signup">Signup</a></li>
