@@ -191,12 +191,14 @@ class Pages extends \Restserver\Libraries\REST_Controller
 		$phone		    =	$this->input->post('phone',true);
 		$email		    =	$this->input->post('email',true);
 		$address		=	$this->input->post('address',true);
+		$alt_phone		=	$this->input->post('alt_phone',true);
         
         $data = array(
 			"id"=>"1",
 			"phone"=>$phone,
 			"address"=>$address,
 			"email"=>$email,
+			"alt_phone"=>$alt_phone,
 			"updated_on"=>$this->curr_date
 		);
 	

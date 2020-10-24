@@ -1,39 +1,10 @@
 
 <!-- Bank locator -->
-<style>
 
-.content img {
-    margin-right: 15px;
-    float: left;
-    height:60px;
-    width:60px;
-    object-fit: contain;
-}
-
-.content h6,
-.content small{
-    margin-left: 15px;
-    display: block;
-    margin: 2px 0 0 0;
-    padding-top:5px;
-}
-#map{
-    
-height: 100%;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-}
-
-.form-control:focus {
-    outline: 0 !important;
-    border-color: initial;
-    box-shadow: none;
-}
-
-</style>
 <div class="container pt-5">
     <div class="row">
         <div class="col-md-8">
-            <span>  Banking Overview > Bank Branch Locator > </span><span class="text_yellow">  <?php echo $data['City']['FullList'][0]?>,  <?php echo $data['State']['FullList'][0]?></span>
+            <span><a href="<?php echo base_url()?>bank_overview">Banking Overview</a> > <a href="<?php echo base_url()?>branch_locator">Bank Branch Locator</a> > </span><span class="text_yellow">  <?php echo $data['City']['FullList'][0]?>,  <?php echo $data['State']['FullList'][0]?></span>
             <h2 class="font-weight-900 pt-2 mb-2 text-uppercase">BANKS IN <?php echo $data['City']['FullList'][0]?>, <?php echo $data['State']['FullList'][0]?></h2>
             <!-- <span>Published by <?php echo date('M Y')?> Do we need to have this information?</span> -->
         </div>
@@ -48,7 +19,7 @@ height: 100%;  /* The height is 400 pixels */
     <div class="row">
             <div class="col-md-10 box_round_border">
                 <div class="row">
-                    <div class="col-md-5 px-0 location_div" style="height:530px;overflow:auto">   
+                    <div class="col-md-5 px-0 location_div" style="max-height:530px;overflow:auto">   
                         <div class="zip_code py-2 px-4">
                             <div class="input-group" style="border:none">
                                 <input class="form-control py-2 border-right-0 border" type="text" value=""  placeholder="ZIP CODE" id="zipcode">
@@ -127,7 +98,7 @@ height: 100%;  /* The height is 400 pixels */
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLDmvcZpQKHnbkEg76bk9jMd4QB_kZw4c&callback=initMap"></script>
 
 <script>
-get_all_banks_incity('<?php echo $city_name ?>');
+get_all_banks_incity('<?php echo $state_code?>','<?php echo $city_name ?>');
 // initMap();
 // function initMap() {
 
@@ -323,9 +294,10 @@ function search_by_zip()
     };
 }
 
-function get_all_banks_incity(city_name)
+function get_all_banks_incity(state_code,city_name)
 {
     let formData = new FormData();
+    formData.append("state_code",state_code);
     formData.append("city_name",city_name);
     let url = baseUrl + "api/get_all_city_banks";
     let xhr = new XMLHttpRequest();

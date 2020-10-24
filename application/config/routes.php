@@ -78,7 +78,7 @@ $route['card_review'] = 'Credit/card_review';
 $route['bank_overview'] = 'Bank/bank_overview';
 $route['best_banks'] = 'Bank/best_banks';
 $route['best_bank_reviews'] = 'Bank/best_bank_reviews';
-$route['bank_review'] = 'Bank/bank_review';
+$route['bank_details'] = 'Bank/bank_details';
 $route['branch_locator'] = 'Bank/branch_locator';
 $route['bank_state'] = 'Bank/bank_state';
 $route['bank_city/(:any)/(:any)'] = 'Bank/bank_city/$1/$2';
@@ -88,7 +88,6 @@ $route['top-100-banks'] = 'Bank/top_100_banks';
 $route['post_detail/(:any)/(:any)'] = 'Posts/post_detail/$1/$2';
 $route['calculators'] = 'Home/calculator_view';
 $route['AmortizationSchedule'] = 'Mortgage/mortgage_amortization';
-
 
 
 // loan module
@@ -162,6 +161,7 @@ $route['admin/insurance/life_insurance']        = 'ADMIN/InsuranceController/lif
 $route['admin/insurance/health_insurance']      = 'ADMIN/InsuranceController/health_insurance';
 $route['admin/google_analytics']                = 'ADMIN/AdminController/google_analytics';
 $route['admin/blog_overview']                   = 'ADMIN/BlogController/blog_overview';
+$route['admin/bank_reviews']                    = 'ADMIN/ReviewController/bank_reviews';
 
 /*=================================ADMIN API========================================*/
 $route['api/admin/login']                           = 'API/Admin/login';
@@ -255,8 +255,12 @@ $route['api/credit/article_detail/(:any)']  = 'Credit/article_detail/$1';
 $route['investing/article_detail/(:any)']  = 'Investment/article_detail/$1';
 $route['api/loan/article_detail/(:any)']  = 'Loan/article_detail/$1';
 
+$route['api/admin/get_review_list']  = 'API/Review/get_review_list';
+$route['api/admin/update_review_status']  = 'API/Review/update_review_status';
+
 /*==============================WEB APIS===========================================*/
-$route['api/get_page_data']      = 'API/Pages/get_page_data';
-$route['api/search_bank_by_zip'] = 'API/Bank/search_bank_by_zip';
-$route['api/register_user']      = 'API/Register/register_user';
-$route['api/get_all_city_banks'] = 'API/Bank/get_all_city_banks';
+$route['api/get_page_data']            = 'API/Pages/get_page_data';
+$route['api/search_bank_by_zip']       = 'API/Bank/search_bank_by_zip';
+$route['api/register_user']            = 'API/Register/register_user';
+$route['api/get_all_city_banks']       = 'API/Bank/get_all_city_banks';
+$route['api/save_user_bank_comment']   = 'API/Bank/save_user_bank_comment';

@@ -43,5 +43,6 @@ $config['register_succes']          =  'Registered Successfully!';
 $config['register_failure']         =  'Unable to Register!';
 $config['email_already_exist']      =  'This Email address is already Registered!';
 $config['email_doesnt_exist']       =  'Email not registered';
-
+$config['review_added_success']     =  'Review Submitted Successfuly!';
+$config['review_added_failure']     =  'Something went wrong .Try Again'
 ?>

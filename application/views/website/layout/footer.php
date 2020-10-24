@@ -8,7 +8,7 @@
 
           <div class="col-lg-3 col-md-6 footer-info">
             <a href="<?php echo base_url()?>">
-              <img src="<?php echo base_url()?>assets/img/logo/main_logo.png" style="height: 60px;">
+              <img src="<?php echo base_url()?>assets/img/logo/footer_logo.png" style="height: 60px;">
             </a>
             <p id="about_desc" class="pt-3">
             </p>
@@ -28,8 +28,10 @@
             <h4>Contact Us</h4>
             <p>
               <span id="contact_address"></span><br/>
-              <strong>Phone:</strong> <span id="contact_phone">  </span><br>
-              <strong>Email:</strong><span id="contact_email">  </span><br>
+              <strong>Phone:</strong><span id="contact_phone"></span><br>
+              <strong class="text-white">Phone</strong> <span id="alt_phone"></span><br>
+              <strong>Email:</strong><span id="contact_email"></span><br>
+             
             </p>
 
             <div class="social-links" id="social_link">

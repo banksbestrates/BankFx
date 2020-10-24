@@ -8,6 +8,7 @@ class BankModel extends CI_Model
     public $tbl_bank_overview      = "bank_overview";
     public $tbl_best_bank      = "best_bank";
     public $tbl_best_bank_review      = "best_bank_review";
+    public $tbl_user_bank_reviews      = "user_bank_reviews";
 
 
     public function __construct()
@@ -132,6 +133,20 @@ class BankModel extends CI_Model
               return $response;
           }
           return $this->send_error_response($this->config->item('data_found_failure'));
+      }
+
+
+      public function save_user_bank_comment($data)
+      {
+          $insert = $this->db->insert("$this->tbl_user_bank_reviews",$data);
+          if($insert)
+          {
+            $response[$this->config->item('status')] = true;
+            $response[$this->config->item('message')] = $this->config->item('review_added_success');
+            return $response;
+          }
+          return $this->send_error_response($this->config->item('review_added_failure'));
+
       }
 
 

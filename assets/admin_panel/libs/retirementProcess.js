@@ -84,7 +84,7 @@ function editOverviewModel(i)
                      '</div>'+
                      '<div class="form-group ">'+
                         '<label for="name">Content</label>'+
-                        '<textarea class="form-control" placeholder="Add Content" id="edit_content">'+retirement_data.content+'</textarea>'+
+                        '<textarea class="form-control" placeholder="Add Content" name="editor" id="data">'+retirement_data.content+'</textarea>'+
                      '</div>'+
 
                      '<div class="form-group">'+
@@ -108,7 +108,7 @@ function editOverviewModel(i)
     $(".modal-body").html(modal_body);
     $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateOverview('+retirement_data.id+')">Update</button>');
     $(".modal").modal('show');
-
+    CKEDITOR.replace( 'editor' );
     var src = document.getElementById("src");
     var target = document.getElementById("target");
     showImage(src,target);
@@ -116,9 +116,13 @@ function editOverviewModel(i)
 
 function updateOverview(id)
 {
+    var content= CKEDITOR.instances.data.getData();
+    if (content == "") {
+        alert("Enter Valid Content");
+    }
     let heading         = $("#edit_heading").val();
     let image_src       = $("#src").val();
-    let content     = $("#edit_content").val();
+    // let content     = $("#edit_content").val();
   
     let formData = new FormData();
     if (image_src !== "") {

@@ -1,14 +1,40 @@
   <!--==========================
     over view banner
   ============================-->
+  <style>
+  .stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+}
+
+.stars-outer::before {
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: #f8ce0b;
+}
+  </style>
   <!-- <?php print_r($data['Returned']);?> -->
-    <?php if(count($page_data)>=1){
+  <?php if(count($page_data)>=1){
             foreach($page_data as $d){
               if($d->div_type == "overview_heading"){?>
-                   <div class="overview_banner" style="background-image:linear-gradient(to left, rgba(245, 246, 252, 0.02), rgba(13, 13, 13, 0.73)),url('<?php echo base_url().$d->image ?>')">
+                  <!-- <div class="overview_banner" style="background-image:linear-gradient(to left, rgba(245, 246, 252, 0.02), rgba(13, 13, 13, 0.73)),url('<?php echo base_url().$d->image ?>"> -->
+                  <div class="overview_banner" style="background-image:url('<?php echo base_url().$d->image ?>')">
                   <div class="banner_heading">
-                  <h1 class="display-4"><?php echo $d->heading ?></h1>
-                  <div class="text-white"><?php echo $d->content ?></div>
+                    <h1 class="display-4"><?php echo $d->heading ?></h1>
+                    <div id="heading_content_text"><?php echo $d->content?></div>
                   </div>
                 </div>
         <?php } 
@@ -68,35 +94,95 @@
 
 <div class="container py-5 ">
         <div class="row mx-2">
-            <div class="col-md-10 table-responsive">
+            <div class="col-md-12 table-responsive">
                 <h3 class="border_bottom_golden mb-0">Best 100 Banks</h3>
-                <table class="table text-center">
+                <table class="table text-center" style="font-size:14px">
                     <thead>
                             <tr class="background_light_grey">
-                                <th>Bank Image</th>
-                                <th class="text-left">Bank Name</th>
+                                <th>Image</th>
+                                <th class="text-left"> Financial Institutions</th>
                                 <th>Rating</th>             
-                                <th>AssetSize</th>
-                                <!-- <th></th> -->
+                                <th>Website</th>             
+                                <th>Branches</th>
+                                <th>States Served</th>
+                                <th>Institution Class</th>
+                                <th></th>
+                                <th></th>
                             </tr>
                     </thead>
                     <tbody>
-                        <?php foreach($data['Returned'] as $list){ ?>
+                        <?php foreach($data['Returned'] as $index=> $list){ ?>
                             <tr>
                                 <td class="text-left"><div><img src="<?php echo $list['ImagePath']?>" class="img-thumbnail"></div></td>
                                 <td class="text-left"><div><?php echo $list['BankName']?></div></td>
-                                <td class="w-25">
-                                    <div class="responsive_inline">
+                                <td class="px-0" style="width:14%">
+                                    <div >                        
+                                        <?php if($list['RatingNum'] == 1){?>
+                                            <span class="fa fa-star  checked"></span>
+                                            <span class="fa fa-star "></span>
+                                            <span class="fa fa-star "></span>
+                                            <span class="fa fa-star "></span>
+                                            <span class="fa fa-star "></span>
+                                            <span class="fa fa-star "></span>
+                                        <?php } else if($list['RatingNum'] == 2){?>
+                                            <span class="fa fa-star  checked"></span>
+                                            <span class="fa fa-star  checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        <?php } else if($list['RatingNum'] == 3){?>
                                             <span class="fa fa-star  checked"></span>
                                             <span class="fa fa-star  checked"></span>
                                             <span class="fa fa-star  checked"></span>
-                                            <span class="fa fa-star  checked"></span>
-                                            <span class="fa fa-star  checked"></span>
-                                            <span class="fa fa-star  checked"></span>
-                                        </div>
+                                            <span class="fa fa-star "></span>
+                                            <span class="fa fa-star "></span>
+                                            <span class="fa fa-star "></span>
+                                        <?php } else if($list['RatingNum'] == 4){?>
+                                                <span class="fa fa-star  checked"></span>
+                                                <span class="fa fa-star  checked"></span>
+                                                <span class="fa fa-star  checked"></span>
+                                                <span class="fa fa-star  checked"></span>
+                                                <span class="fa fa-star "></span>
+                                                <span class="fa fa-star "></span>
+                                        <?php } else if($list['RatingNum'] == 5){?>     
+                                                <span class="fa fa-star  checked"></span>
+                                                <span class="fa fa-star  checked"></span>
+                                                <span class="fa fa-star  checked"></span>
+                                                <span class="fa fa-star  checked"></span>
+                                                <span class="fa fa-star  checked"></span>
+                                                <span class="fa fa-star "></span>
+                                        <?php } else if($list['RatingNum'] == 6){?> 
+                                                <span class="fa fa-star  checked"></span>
+                                                <span class="fa fa-star  checked"></span>
+                                                <span class="fa fa-star  checked"></span>
+                                                <span class="fa fa-star  checked"></span>
+                                                <span class="fa fa-star  checked"></span>       
+                                                <span class="fa fa-star  checked"></span>
+                                        <?php }?>       
+                                    </div>
                                 </td>
-                                <td class="w-25"><span><?php echo $list['AssetSize']?></span></td>
-                                <!-- <td><h4><button class="btn button_blue btn-sm px-3">FULL REVIEW</button></h4></td>  -->
+                                <td><span><?php echo $list['mainURL']?></span></td>
+                                <td><span><?php echo $list['OfficeCount']?></span></td>
+                                <td><span><?php echo $list['StatesServed']?></span></td>
+                                <td>
+                                    <span id="single_credit_union<?php echo $index?>"><?php echo $list['ClassArray'][0]?></span>                               
+                                    <div id="more_credit_union<?php echo $index?>" style="display:none">
+                                        <?php foreach($list['ClassArray'] as $credit_union){?>
+                                            <span><?php echo $credit_union?></span><hr/>
+                                        <?php }?>
+                                    </div>
+                                </td>
+                                <td>
+                                    <?php if(count($list['ClassArray']) > 1){?>
+                                        <span style="float:right;cursor:pointer" class="pr-0" id="add_button<?php echo $index?>"><i class="fa fa-plus text_yellow" aria-hidden="true" 
+                                            onclick="show_all_credit_union(<?php echo $index?>)"></i></span>
+                                        <span style="float:right;display:none;cursor:pointer" class="pr-0" id="del_button<?php echo $index?>"><i class="fa fa-minus text_yellow" aria-hidden="true" 
+                                            onclick="close_all_credit_union(<?php echo $index?>)"></i></span>
+                                    <?php }?>
+                                </td>
+                                
+                                <td><a href="https://<?php echo $list['mainURL']?>" target="_blank"><button class="btn button_blue btn-sm"><small>Visit Site</small></button></a></td> 
                             </tr>   
                         <?php  } ?>
                     </tbody>  
@@ -106,6 +192,24 @@
             <div class="col-md-2"></div>
         </div>
 </div>
+<script>
+
+    function show_all_credit_union(id)
+    {   
+        $("#single_credit_union"+id).css('display','none');
+        $("#more_credit_union"+id).css('display','block');
+        $("#add_button"+id).css('display','none');
+        $("#del_button"+id).css('display','block');
+    }
+    function close_all_credit_union(id)
+    {   
+        $("#single_credit_union"+id).css('display','block');
+        $("#more_credit_union"+id).css('display','none');
+        $("#add_button"+id).css('display','block');
+        $("#del_button"+id).css('display','none');
+    }
+</script>
+
 
 
  

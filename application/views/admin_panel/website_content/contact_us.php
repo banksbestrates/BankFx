@@ -13,6 +13,8 @@
                             <div class="col-md-6 px-5">
                                 <lable>Edit Contact Number</lable>
                                 <input type="text" class="form-control" id="phone" placeholder="Enter contact number"/><br/>
+                                <lable>Edit Alternate Contact Number</lable>
+                                <input type="text" class="form-control" id="alt_phone" placeholder="Enter contact number"/><br/>
                                 <lable>Edit Contact Number</lable>
                                 <input type="email" class="form-control" id="email" placeholder="Enter email here"/><br/>
                                 <lable>Edit Contact Address</lable>
@@ -48,20 +50,23 @@ xhr.onload = function() {
         let data = obj.data;
         $("#phone").val(data.phone);
         $("#email").val(data.email);
+        $("#alt_phone").val(data.alt_phone);
         $("#address").text(data.address);  
     }
 }
 
 function updateContactUs()
 {
-    var phone   = $("#phone").val();
-    var email   = $("#email").val();
-    var address = $("#address").val();
+    var phone       = $("#phone").val();
+    var alt_phone   = $("#alt_phone").val();
+    var email       = $("#email").val();
+    var address     = $("#address").val();
 
     let formData = new FormData();
     formData.append('phone', phone);
     formData.append('email', email);
     formData.append('address', address);
+    formData.append('alt_phone', alt_phone);
     let url = baseUrl + "api/admin/update_contact_detail";
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);

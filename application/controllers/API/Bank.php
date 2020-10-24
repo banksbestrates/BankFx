@@ -246,7 +246,37 @@ class Bank extends \Restserver\Libraries\REST_Controller
 		}
 		return $this->send_error_response($query[$this->config->item('message')]);
 	}
+
+	//save user bank comment 	
+	public function save_user_bank_comment_post()
+	{
+		$_POST = $this->security->xss_clean($_POST);	
+		$this->form_validation->set_rules('comment','comment', 'trim|required');					
+		if ($this->form_validation->run() == false) {
+			$message = array(
+				$this->config->item('status') => false,
+				$this->config->item('message')=> validation_errors(),
+				$this->config->item('data') => $this->form_validation->error_array(),
+			);
+			return $this->send_error_response(validation_errors(), REST_Controller::HTTP_NOT_FOUND);
+		}
+		$comment		    =	$this->input->post('comment',true);
+        
+        $data = array(
+			"review"=>$comment,
+			"review_status"=>"pending",
+			"created_on"=>$this->curr_date
+		);
+
+		$query = $this->BankModel->save_user_bank_comment($data);
+		
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+	}
 	
+
 	//search bank by zip 
 	public function search_bank_by_zip_post()
 	{
@@ -297,6 +327,7 @@ class Bank extends \Restserver\Libraries\REST_Controller
 	{
 		$_POST = $this->security->xss_clean($_POST);	
 		$this->form_validation->set_rules('city_name','city_name', 'trim|required');	
+		$this->form_validation->set_rules('state_code','state_code', 'trim|required');	
 		
 							
 		if ($this->form_validation->run() == false) {
@@ -309,6 +340,7 @@ class Bank extends \Restserver\Libraries\REST_Controller
 		}
 
 		$city_name		    =	$this->input->post('city_name',true);
+		$state_code		    =	$this->input->post('state_code',true);
 	
 
 		$curlRef = curl_init();
@@ -321,6 +353,7 @@ class Bank extends \Restserver\Libraries\REST_Controller
 					'UserName'  => 'schmid@banksbestrates.com',
 					'Password'  => '12345678',
 					'City' => $city_name,
+					'StateCode'=>$state_code,
 					)
 				);
 				

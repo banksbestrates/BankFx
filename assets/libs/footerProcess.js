@@ -35,6 +35,7 @@ function get_contact_data(){
             $("#contact_address").html(contactData.address);
             $("#contact_phone").html(contactData.phone);
             $("#contact_email").html(contactData.email);
+            $("#alt_phone").html(contactData.alt_phone);
         }     
     };
 }

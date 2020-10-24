@@ -87,10 +87,10 @@ class Bank extends CI_Controller {
 		$this->load->view('website/pages/bank/best_money_market');
 		$this->load->view('website/layout/footer');
   }
-	public function bank_review()
+	public function bank_details()
 	{
 		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/bank/bank_review');
+		$this->load->view('website/pages/bank/bank_details');
 		$this->load->view('website/layout/footer');
     }
 	public function article_detail($id)
@@ -124,7 +124,7 @@ class Bank extends CI_Controller {
 
 	public function bank_city($state_code,$city)
 	{
-		$city_name = str_replace('%20', '', $city);
+		$city_name = str_replace('%20', ' ', $city);
 		$data = $this->validator->get_banks_in_city($state_code,$city_name);
 		if($data)
 		{
@@ -133,7 +133,7 @@ class Bank extends CI_Controller {
 				$city_name = $data['City']['FullList'][0];	
 
 				$this->load->view('website/layout/header', array("page_name"=>"city_banks"));
-				$this->load->view('website/pages/bank/bank_city',array("data"=>$data,"city_name"=>$city_name));
+				$this->load->view('website/pages/bank/bank_city',array("data"=>$data,"city_name"=>$city_name,"state_code"=>$state_code));
 				$this->load->view('website/layout/footer');
 			}
 		}

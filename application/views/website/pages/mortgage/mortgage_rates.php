@@ -38,7 +38,7 @@
     <div class="container pb-5">
         <?php if(count($page_data)>=1){
                 foreach($page_data as $d){
-                if($d->div_type == "top"){?>
+                if($d->div_type == "bottom"){?>
                     <h5 class="mb-2"><?php echo $d->heading;?></h5>
                    <div class="text-justify"><?php echo $d->content;?></div>
             <?php } 

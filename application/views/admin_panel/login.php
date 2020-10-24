@@ -22,11 +22,9 @@
 	<link rel="stylesheet" href="<?php echo base_url()?>assets/admin_panel/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo base_url()?>assets/admin_panel/css/atlantis.css">
 	<link rel="stylesheet" href="<?php echo base_url()?>assets/admin_panel/css/demo.css">
-</head>
-<body>
-    <style>
-    body{
-        background-color:#1269DB;
+	<style>
+    .blue_background{
+        background-color:#0374A1;
     }
     .bg-logo{
         background: url('assets/img/login/Logo.png');
@@ -35,25 +33,24 @@
 		background-repeat:no-repeat;
     }
     #mydiv {
-    top: 18%;
-	background-color:#e9ffff;
-	box-shadow:2px 3px 5px #1a1818;
-
+		top: 10%;
+		background-color:#e9ffff;
+		box-shadow:2px 3px 5px #1a1818;
     }  
-    .login_row{
-        padding: 40px 20px 40px 20px;
-        height:30em;
-    } 
     .login_form{
         padding:40px 20px 40px 20px;
     }
 	</style>
+</head>
+<body class="blue_background">
 	<div class="wrapper">
-	<input type="hidden" id="baseUrl" value="<?php echo base_url()?>"/>
+		<input type="hidden" id="baseUrl" value="<?php echo base_url()?>"/>
         <div class="col-md-5 mx-auto my-auto bg-white" id="mydiv">
-			<div class=" login_row">
-				
+			<div class=" login_row">		
 				<div class="col-md-12 login_form">
+					<div class="form-group">
+						<img src="<?php echo base_url()?>assets/img/logo/main_logo.png" class="w-100">
+					</div>	
                     <div class="form-group email_form">
                         <label for="email2">Email Address</label>
                         <input type="email" class="form-control" id="email" placeholder="Enter Email" value="admin@bankfx.com">
@@ -63,10 +60,10 @@
 				        <input type="password" class="form-control" id="password" placeholder="Enter Passsword">
 				    </div>
                     <div class="form-group">
-						<button class="btn btn-block btn-primary mt-4" onclick="login()" >Login</button>
+						<button class="btn btn-block blue_background mt-4 text-white" onclick="login()" >Login</button>
 				    </div>
                     <div class="form-group text-center">
-				     <h6 class="error_message text-danger"></h6>
+				     	<h6 class="error_message text-danger"></h6>
 				    </div>
                 </div>									
 			</div>

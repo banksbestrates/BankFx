@@ -1,7 +1,7 @@
 // get blog data
 function get_blog_overview_post() {
     let formData = new FormData();
-    let url = "https://bankfax.today/wp-json/wp/v2/posts?_embed";
+    let url = "https://www.banksbestrates.com/news/wp-json/wp/v2/posts?_embed";
     let xhr = new XMLHttpRequest();
     xhr.open('GET', url);
     xhr.send(formData);
@@ -22,15 +22,15 @@ function get_blog_overview_post() {
                 '    <div class="col-md-6 blog_image" style="background-image:url('+pageData[i]._embedded['wp:featuredmedia'][0].source_url+')">'+
                 '    </div>'+
                 '    <div class="col-md-6 related_content pt-0">'+
-                '           <a href="'+baseUrl+'post_detail/'+pageData[i].id+'/'+pageData[i].slug+'" > <h3 class="blog_heading  border_bottom_golden font-weight-bolder mb-2">'+pageData[i].title.rendered+'</h3> </a>'+
+                '           <a href="'+baseUrl+'news/'+pageData[i].slug+'" > <h3 class="blog_heading  border_bottom_golden font-weight-bolder mb-2">'+pageData[i].title.rendered+'</h3> </a>'+
                 '          <small> <i class="fa fa-clock-o pr-2" aria-hidden="true" style="font-size:15px"></i>'+date+' </small>'+ 
                 '          <small class="pl-5"><i class="fa fa-user-circle-o pr-2" aria-hidden="true" style="font-size:15px"></i>'+pageData[i]._embedded.author[0].name+'</small>'+
-                '        <div class="text-justify pt-2" style="height: 133px;overflow: hidden;">'+pageData[i].excerpt.rendered+'</div>'+
-                '        <div class="row">'+
-                '          <div class="col-md-12">'+
-                '               <a href="'+baseUrl+'post_detail/'+pageData[i].id+'/'+pageData[i].slug+'" ><i class="fa fa-arrow-circle-right"  aria-hidden="true"></i></a>'+
-                '          </div>'+
-                '        </div>'+
+                '        <div class="text-justify pt-2">'+pageData[i].excerpt.rendered+'</div>'+
+                // '        <div class="row">'+
+                // '          <div class="col-md-12">'+
+                // '               <a href="'+baseUrl+'news/'+pageData[i].slug+'" ><i class="fa fa-arrow-circle-right"  aria-hidden="true"></i></a>'+
+                // '          </div>'+
+                // '        </div>'+
                 '    </div>'+
                 '</div>'
             }

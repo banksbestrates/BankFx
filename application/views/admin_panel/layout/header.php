@@ -137,6 +137,12 @@
 								<p>Registered Users</p>
 							</a>
 						</li>
+						<li class="nav-item " id="user_list">
+							<a href="<?php echo base_url();?>admin/bank_reviews">
+								<i class="flaticon-users"></i>
+								<p>User's Bank Reviews</p>
+							</a>
+						</li>
 					
 
 						<li class="nav-item" id="">

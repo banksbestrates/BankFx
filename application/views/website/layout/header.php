@@ -78,7 +78,7 @@
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
+  color: #000;
 }
 
 
@@ -112,7 +112,8 @@
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   bottom: 0;
-  background: rgba(0, 0, 0, 0.96);
+  /* background: rgba(0, 0, 0, 0.96); */
+  background: rgba(236, 238, 242, 0.96);
   box-shadow: 0px 10px 10px black;
   overflow-y: auto;
   transition: 0.4spadding-left:20px;
@@ -131,7 +132,7 @@
     display: block;
     outline: none;
     font-weight: 700;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
 }
 
 /* When you mouse over the navigation links, change their color
@@ -206,7 +207,7 @@
       <div id="logo" class="pull-left">
       <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-              <img src="<?php echo base_url()?>assets/img/logo/main_logo.png">
+              <img src="<?php echo base_url()?>assets/img/logo/main_logo.png" style="height:30px">
               &times;</a><br/><br/>
            
             <ul class="list-unstyled components mb-5 px-4">
@@ -249,7 +250,7 @@
               <hr/>
           </div>
        
-        <i class="fa fa-bars fa-2x" aria-hidden="true" id="icon_bar" onclick="openNav()" style="color:#D79F01;cursor:pointer;"></i>
+        <i class="fa fa-bars fa-2x" aria-hidden="true" id="icon_bar" onclick="openNav()" style="color:#FECE48;cursor:pointer;"></i>
         <a href="<?php echo base_url()?>" class="scrollto">
           <img src="<?php echo base_url()?>assets/img/logo/main_logo.png">
         </a>
