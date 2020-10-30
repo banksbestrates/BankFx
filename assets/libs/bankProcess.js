@@ -136,9 +136,32 @@ function get_best_bank_posts()
                 '</div>'
             }
             $("#related_articles").html(post_list);
-          
-
         }
     };
 }
+
+function get_bank_full_review(bank_name)
+{
+    let formData = new FormData();
+    formData.append("bank_name", bank_name)
+    let url = baseUrl + "api/get_bank_full_review";
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.send(formData);
+    xhr.onload = function() {
+        if (xhr.status == 200) {
+            let obj = JSON.parse(xhr.responseText);
+            let status = obj.Status;
+            if(status)
+            {
+                let bankReview = obj.data;
+                $("#what_to_like").html(bankReview['what_to_like']);
+                $("#what_to_caution").html(bankReview['what_to_caution']);
+                $("#full_review").html(bankReview['full_review']);
+            }
+          
+        }
+    };
+}
+
 

@@ -369,6 +369,66 @@ class Bank extends \Restserver\Libraries\REST_Controller
 		return $this->send_error_response("No Bank Available");
 	}
 
+
+	public function get_bank_full_review_post()
+	{
+		$_POST = $this->security->xss_clean($_POST);	
+		$this->form_validation->set_rules('bank_name','bank_name', 'trim|required');		
+		if ($this->form_validation->run() == false) {
+			$message = array(
+				$this->config->item('status') => false,
+				$this->config->item('message')=> validation_errors(),
+				$this->config->item('data') => $this->form_validation->error_array(),
+			);
+			return $this->send_error_response(validation_errors(), REST_Controller::HTTP_NOT_FOUND);
+		}
+		$bank_name		    =	$this->input->post('bank_name',true);
+		
+		$query = $this->BankModel->get_bank_full_review($bank_name);
+		
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+
+	}
+	public function update_bank_full_review_post()
+	{
+		$_POST = $this->security->xss_clean($_POST);	
+		$this->form_validation->set_rules('id','id', 'trim|required');		
+		$this->form_validation->set_rules('what_to_like','what_to_like', 'trim|required');		
+		$this->form_validation->set_rules('what_to_caution','what_to_caution', 'trim|required');		
+		$this->form_validation->set_rules('full_review','full_review', 'trim|required');		
+		if ($this->form_validation->run() == false) {
+			$message = array(
+				$this->config->item('status') => false,
+				$this->config->item('message')=> validation_errors(),
+				$this->config->item('data') => $this->form_validation->error_array(),
+			);
+			return $this->send_error_response(validation_errors(), REST_Controller::HTTP_NOT_FOUND);
+		}
+		$id		    		    =	$this->input->post('id',true);
+		$what_to_like		    =	$this->input->post('what_to_like',true);
+		$what_to_caution		=	$this->input->post('what_to_caution',true);
+		$full_review		    =	$this->input->post('full_review',true);
+
+		$data  = array(
+			"id"=>$id,
+			"what_to_like"=>$what_to_like,
+			"what_to_caution"=>$what_to_caution,
+			"full_review"=>$full_review,
+			"updated_on"=>$this->curr_date,
+		);
+		
+		$query = $this->BankModel->update_bank_full_review($data);
+		
+		if ($query['Status']) {
+			return $this->set_response($query, REST_Controller::HTTP_OK);
+		}
+		return $this->send_error_response($query[$this->config->item('message')]);
+
+	}
+
     
   //Error message
   public function send_error_response($Message)

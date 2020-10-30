@@ -51,10 +51,22 @@ class Bank extends CI_Controller {
 		}else{
 			$bank_data="";
 		}
+	
+		$best_bank_review = $this->validator->get_best_banks('10');
+		if($best_bank_review['RowCount'] > 0 )
+		{
 		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/bank/best_bank_reviews',array("page_data"=>$bank_data));
+		$this->load->view('website/pages/bank/best_bank_reviews',array("page_data"=>$bank_data,"data"=>$best_bank_review));
 		$this->load->view('website/layout/footer');
-    }
+		}
+	}
+	public function bank_full_review()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/bank/bank_review');
+		$this->load->view('website/layout/footer');
+	}
+	
 	public function branch_locator()
 	{
 		$all_states = $this->validator->get_all_states();

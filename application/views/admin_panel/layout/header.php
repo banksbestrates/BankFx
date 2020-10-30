@@ -426,6 +426,12 @@
 								<p>Blog</p>
 							</a>
 						</li>
+						<li class="nav-item " id="blog_overview">
+							<a href="<?php echo base_url();?>admin/bank_full_review">
+								<i class="flaticon-settings"></i>
+								<p>Bank Full Review</p>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>

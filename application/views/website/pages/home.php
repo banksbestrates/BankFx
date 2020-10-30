@@ -58,64 +58,64 @@
      <div class="container homecard_top_margin">
         <div class="col-md-12 px-0 row card_view">
               <div class="col-md col-sm-4">
+                <a href="<?php echo base_url()?>mortgage_overview">
                   <div class="card">
                       <div style="width:100%; text-align:center">
                         <img src="<?php echo base_url()?>assets/images/website/loan/card_icon/home_equity.png">
                       </div>
-                    <a href="<?php echo base_url()?>mortgage_overview">
                     <h6>Mortgage</h6>
-                  </a>
                   </div>
+                </a>
               </div>
               <div class="col-md col-sm-4">
-              <div class="card">
-                  <div style="width:100%; text-align:center">
+                <a href="<?php echo base_url()?>bank_overview">
+                  <div class="card">
+                    <div style="width:100%; text-align:center">
                         <img src="<?php echo base_url()?>assets/images/website/retirement/card_icon/Best-Savings-Account-Rates.png">
                     </div>
-                    <a href="<?php echo base_url()?>bank_overview">
                       <h6>Banking</h6>
-                    </a>
                   </div>
+                </a>
               </div>
               <div class="col-md col-sm-4">
+                <a href="<?php echo base_url()?>best_banks">
                   <div class="card">
                     <div style="width:100%; text-align:center">
                         <img src="<?php echo base_url()?>assets/images/website/banking/card_icon/Bank-Name.png">
                     </div>
-                    <a href="<?php echo base_url()?>best_banks">
                       <h6>Best Banks</h6>
-                    </a>
                   </div>
+                </a>
               </div>
               <div class="col-md col-sm-4">
+                <a href="<?php echo base_url()?>branch_locator">
                   <div class="card">
                     <div style="width:100%; text-align:center">
                         <img src="<?php echo base_url()?>/assets/images/website/banking/card_icon/Address-Location.png">
                       </div>
-                      <a href="<?php echo base_url()?>branch_locator">
                         <h6>Branch Locator</h6>
-                      </a>
                   </div>
+                </a>
               </div>
               <div class="col-md col-sm-4">
-                <div class="card">
+                <a href="<?php echo base_url()?>credit_overview">
+                  <div class="card">
                     <div style="width:100%; text-align:center">
                         <img src="<?php echo base_url()?>assets/images/website/credit/card_icon/balance_transfer.png">
                     </div>
-                    <a href="<?php echo base_url()?>credit_overview">
                     <h6>Credit Cards</h6>
-                    </a>
                   </div>
+                </a>
               </div>
               <div class="col-md col-sm-4">
+                <a href="<?php echo base_url()?>loan_overview">
                   <div class="card">
                     <div style="width:100%; text-align:center">
                         <img src="<?php echo base_url()?>assets/images/website/loan/card_icon/personal_loan.png" >
                     </div>
-                    <a href="<?php echo base_url()?>loan_overview">
                     <h6> Loans</h6>
-                    </a>
                   </div>
+                </a>
               </div>
         </div> 
       </div>
@@ -150,7 +150,7 @@
         </div>
       </div>
 
-   <!-- map view -->
+      <!-- map view -->
       <div class="container mt-5">
           <!-- <header class="section-header pt-5">
             <h3>CHECK NEARBY BANKS</h3>

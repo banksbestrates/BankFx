@@ -1,7 +1,8 @@
 //bank module 
 let bankData="";
+let bankFullData="";
 function get_bank_overview(type="") {
-    let base_url = baseUrl + "api/admin/get_bank_overview";
+    var base_url = baseUrl + "api/admin/get_bank_overview";
     if(type=="best_bank")
     {
         base_url = baseUrl + "api/admin/get_best_bank_overview";
@@ -85,7 +86,7 @@ function showImage(src,target) {
         fr.readAsDataURL(src.files[0]);
     });
 }	
-function editOverviewModel(i)
+function editOverviewModel(i, type="")
 {
     let bank_data = bankData[i];
     var modal_body= '<div class="form-group">'+
@@ -117,7 +118,7 @@ function editOverviewModel(i)
     $(".modal-dialog").addClass("modal-lg");                                  
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
-    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateOverview('+bank_data.id+')">Update</button>');
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick=updateOverview('+bank_data.id+',"'+type+'")>Update</button>');
     $(".modal").modal('show');
 
     CKEDITOR.replace( 'editor' );
@@ -126,7 +127,7 @@ function editOverviewModel(i)
     showImage(src,target);
 }
 
-function updateOverview(id)
+function updateOverview(id, type="")
 {
     var content= CKEDITOR.instances.data.getData();
     if (content == "") {
@@ -156,7 +157,15 @@ function updateOverview(id)
     formData.append('heading',heading);
     formData.append('content',content);
     formData.append('id',id);
-    let url = baseUrl+"api/admin/update_bank_overview";
+    let base_url = baseUrl +"api/admin/update_bank_overview";
+    if(type=="best_bank")
+    {
+        base_url = baseUrl + "api/admin/update_best_bank_overview";
+    }else if(type=="best_review")
+    {
+        base_url = baseUrl + "api/admin/update_best_bank_review_overview";
+    }
+    let url = base_url;
     let xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     xhr.send(formData);
@@ -202,7 +211,7 @@ function contentModel(i,type)
     CKEDITOR.replace( 'editor' );
 }
 
-function updateContent(id,type="")
+function updateContent(id,type)
 {
     let base_url = baseUrl + "api/admin/update_bank_overview";
 
@@ -275,5 +284,98 @@ function editAdviceHeading(id)
         }
     };
 
+}
+
+//bank full review 
+function search_bank_review()
+{
+    $("#what_to_like").html('');
+    $("#what_to_caution").html('');
+    $("#full_review").html('');
+    var bank_name = $("#bank_name").val();
+    let formData = new FormData();
+    formData.append("bank_name",bank_name);
+    let url = baseUrl+"api/get_bank_full_review";
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.send(formData);
+    xhr.onload = function() {
+        if (xhr.status == 200) {
+            let obj = JSON.parse(xhr.responseText);
+            let status = obj.Status;
+            let message = obj.Message;
+            if (!status) {
+            }
+            bankFullData = obj.data;
+            $("#bank_full_detail").css('display','block');		
+            $("#what_to_like").html(bankFullData['what_to_like']);	
+            $("#what_to_caution").html(bankFullData['what_to_caution']);	
+            $("#full_review").html(bankFullData['full_review']);
+            $("#edit_button").html('<button class="btn btn-primary btn-sm" onclick=editFullReviewModel('+bankFullData['id']+')> Edit </button>');
+        }
+    };
+}
+
+function editFullReviewModel(id)
+{
+    let bank_data = bankFullData;
+    var modal_body= '<div class="form-group">'+
+                        '<label for="name">WHAT TO LIKE</label>'+
+                        '<textarea rows="5" class="form-control" placeholder="Add Content" name="what_to_like" id="editor_what_to_like">'+bank_data.what_to_like+'</textarea>'+
+                     '</div>'+
+                     '<div class="form-group ">'+
+                        '<label for="name">WHAT TO CAUTION</label>'+
+                        '<textarea rows="5" class="form-control" placeholder="Add Content" name="what_to_caution" id="editor_what_to_caution">'+bank_data.what_to_caution+'</textarea>'+
+                     '</div>'+
+                     '<div class="form-group ">'+
+                        '<label for="name">FULL REVIEW</label>'+
+                        '<textarea rows="5" class="form-control" placeholder="Add Content" name="full_review" id="editor_full_review">'+bank_data.full_review+'</textarea>'+
+                     '</div>'+
+                     '<div class="form-group">'+
+                        '<small class="error_message text-danger"></small>'+
+                    '</div>'
+    $(".modal-dialog").addClass("modal-lg");                                       
+    $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
+    $(".modal-body").html(modal_body);
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick=updateFulllReview('+bank_data.id+')>Update</button>');
+    $(".modal").modal('show');
+    
+    CKEDITOR.replace( 'editor_what_to_like' );
+    CKEDITOR.replace( 'editor_what_to_caution' );
+    CKEDITOR.replace( 'editor_full_review' );
+}
+
+function updateFulllReview(id)
+{
+    var what_to_like= CKEDITOR.instances.editor_what_to_like.getData();
+    var what_to_caution = CKEDITOR.instances.editor_what_to_caution.getData();
+    var full_review = CKEDITOR.instances.editor_full_review.getData();
+
+    let formData = new FormData();
+    formData.append('what_to_like', what_to_like);
+    formData.append('what_to_caution', what_to_caution);
+    formData.append('full_review', full_review);
+    formData.append('id', id);
+    let url = baseUrl +"api/admin/update_bank_full_review";
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    xhr.send(formData);
+    xhr.onload = function() {
+        if (xhr.status == 200) {
+            let obj = JSON.parse(xhr.responseText);
+            let status = obj.Status;
+            let message = obj.Message;
+            if (!status) {
+                $(".error_message").html(message);
+                return false;
+            } else {
+                swal(message, {
+                    buttons: false,
+                    timer: 2000,
+                });
+                location.reload();
+            }
+        }
+    };
 }
 

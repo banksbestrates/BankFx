@@ -2073,16 +2073,17 @@ margin:0px;
   left: calc(50% - 20px);
 }
 .what_to_like span{
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   position: absolute;
   padding-top: 10px;
-  padding-left: 23px;
+  padding-left: 13px;
   color: black;
 
 }
 .what_to_like .fa{
   color: #D79F01;
+  font-size:58px;
 }
 .what_to_like p{
  text-align:justify;

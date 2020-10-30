@@ -78,6 +78,7 @@ $route['card_review'] = 'Credit/card_review';
 $route['bank_overview'] = 'Bank/bank_overview';
 $route['best_banks'] = 'Bank/best_banks';
 $route['best_bank_reviews'] = 'Bank/best_bank_reviews';
+$route['bank_full_review'] = 'Bank/bank_full_review';
 $route['bank_details'] = 'Bank/bank_details';
 $route['branch_locator'] = 'Bank/branch_locator';
 $route['bank_state'] = 'Bank/bank_state';
@@ -162,6 +163,7 @@ $route['admin/insurance/health_insurance']      = 'ADMIN/InsuranceController/hea
 $route['admin/google_analytics']                = 'ADMIN/AdminController/google_analytics';
 $route['admin/blog_overview']                   = 'ADMIN/BlogController/blog_overview';
 $route['admin/bank_reviews']                    = 'ADMIN/ReviewController/bank_reviews';
+$route['admin/bank_full_review']                = 'ADMIN/BankController/bank_full_review';
 
 /*=================================ADMIN API========================================*/
 $route['api/admin/login']                           = 'API/Admin/login';
@@ -257,6 +259,9 @@ $route['api/loan/article_detail/(:any)']  = 'Loan/article_detail/$1';
 
 $route['api/admin/get_review_list']  = 'API/Review/get_review_list';
 $route['api/admin/update_review_status']  = 'API/Review/update_review_status';
+
+$route['api/get_bank_full_review']  = 'API/Bank/get_bank_full_review';
+$route['api/admin/update_bank_full_review']  = 'API/Bank/update_bank_full_review';
 
 /*==============================WEB APIS===========================================*/
 $route['api/get_page_data']            = 'API/Pages/get_page_data';

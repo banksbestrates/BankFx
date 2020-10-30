@@ -113,7 +113,7 @@
                     <tbody>
                         <?php foreach($data['Returned'] as $index=> $list){ ?>
                             <tr>
-                                <td class="text-left"><div><img src="<?php echo $list['ImagePath']?>" class="img-thumbnail"></div></td>
+                                <td class="text-left"><div><img src="<?php echo $list['ImagePath']?>" class=""></div></td>
                                 <td class="text-left"><div><?php echo $list['BankName']?></div></td>
                                 <td class="px-0" style="width:14%">
                                     <div >                        

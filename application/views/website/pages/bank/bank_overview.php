@@ -26,9 +26,9 @@
               </a>
             </div>
             <div class="col-md-6 bank_review">
-              <!-- <a href="<?php echo base_url()?>/best_bank_reviews"> -->
-              <h2>Best Bank Reviews</h2>
-            <!-- </a> -->
+              <a href="<?php echo base_url()?>/best_bank_reviews">
+                <h2>Best Bank Reviews</h2>
+              </a>
             </div>
         </div>
   </div>

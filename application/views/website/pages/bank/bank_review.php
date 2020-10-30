@@ -1,238 +1,101 @@
 
-<!-- Bank Review -->
-<div class="col-md-10 mx-auto py-5">
+<!-- Bank detail  -->
+<div class="container py-4">
     <div class="row">
         <div class="col-md-8">
-            <h1 class="display-4 font-weight-bold mb-2">ALLIANT BANK REVIEW</h1>
-            <p>Published on July 30. Do you want to get more information ?</p>
+            <span> Banking > Top 5 Financial Centers ></span><span class="text_yellow">Bank of America</span>
+            <h2 class="font-weight-900 pt-2 mb-2">Bank of America Review</h2>
         </div>
-        <div class="col-md-4 text-right pt-3">
-            <button class="btn button_yellow">DOWNLOAD OUR APP</button>
+        <div class="col-md-4 text-right pt-4">
         </div>
     </div>
 </div>
-
-<!-- map view -->
-<div class="col-md-10 mx-auto  review_box">
-    <!-- 1st div starts here -->
+<div class="container pb-5">  
     <div class="row">
-            <div class="col-md-5 review_div">        
-                    <span class="fa fa-star checked pr-4"></span>
-                    <span class="fa fa-star checked pr-4"></span>
-                    <span class="fa fa-star checked pr-4"></span>
-                    <span class="fa fa-star checked pr-4"></span>
-                    <span class="fa fa-star checked pr-4"></span>   
-                    <br/><br/>                   
-                    <h4><span style="font-weight:300">BANKS BEST RATES</span> RATING</h4>
-                    <div class="col-md-9 rates px-0 pb-1">
-                    <span>CD's</span> <span class="float-right"> 4.2</span>
-                    </div>
-                    <div class="col-md-9 rates px-0 pb-1">
-                    <span>CHECKING</span> <span class="float-right">5.0</span>
-                    </div>
-                    <div class="col-md-9 rates px-0 pb-1">
-                    <span>SAVING</span> <span class="float-right"> 4.7</span>
-                    </div>
-                    <div class="compare_rates pt-3 pl-0">
-                    <button class="btn button_yellow">COMPARE BANKS BEST RATES</button>
-                    
-                    </div>                                                          
-            </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-5 image_div  pt-4">
-                    <img src="<?php echo base_url();?>assets/img/overview/bank1.png" style="width:100%">
-                    <div class="icon_view col-md-12 px-0 pt-5">
-                        <div class="row">
-                            <div class="col-md-3">
-                            <img src="<?php echo base_url();?>assets/img/icons/best_cd.png" class="pb-3">
-                                <h6>SERVICE</h6>
+        <div class="col-md-10 box_round_border">
+                <div class="row">
+                    <div class="col-md-12 px-0 pt-2">
+                        <div class="row px-4">
+                            <div class="col-md-4 px-4 text-center">
+                                <img src="<?php echo base_url()?>assets/img/bank_images/allay_large.png" class="w-100 pt-4" />                                 
                             </div>
-                            <div class="col-md-3">
-                            <img src="<?php echo base_url();?>assets/img/icons/best_cd.png" class="pb-3">
-                                <h6>SERVICE</h6>
-                            </div>
-                            <div class="col-md-3">
-                            <img src="<?php echo base_url();?>assets/img/icons/best_cd.png" class="pb-3">
-                                <h6>SERVICE</h6>
-                            </div>
-                            <div class="col-md-3">
-                            <img src="<?php echo base_url();?>assets/img/icons/best_cd.png" class="pb-3">
-                                <h6>SERVICE</h6>
-                            </div>  
+                            <div class="col-md-8 pt-2">
+                                <span class="fa fa-star checked pr-2" style="font-size:20px"></span>
+                                <span class="fa fa-star checked pr-2" style="font-size:20px"></span>
+                                <span class="fa fa-star checked pr-2" style="font-size:20px"></span>
+                                <span class="fa fa-star checked pr-2" style="font-size:20px"></span>
+                                <span class="fa fa-star checked pr-2" style="font-size:20px"></span>
+                                <span class="fa fa-star checked pr-2" style="font-size:20px"></span>
+                                <span style="font-size:24px" class="font-weight-900 pl-3">5.0</span>
+                                <small class="pl-2 text_skyblue font-weight-bold" style="font-size: 14px;">Banks Best Rating</small>
+                                <div class="pt-2">
+                                    <table class="table credit_card_small_row">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                <img src="<?php echo base_url()?>assets/images/website/banking/card_icon/Bank-Name.png" height="40px"/>
+                                                <small class="font-weight-bold">Branch Name: </small><small>Bank of America</small>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <img src="<?php echo base_url()?>assets/images/website/banking/card_icon/Branch-Count.png" height="40px"/>
+                                                <small class="font-weight-bold">Bank Class: </small><small> National</small>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <img src="<?php echo base_url()?>assets/images/website/banking/card_icon/Branch-Count.png" height="40px"/>
+                                                <small class="font-weight-bold">Branch Count: </small><small>707-556-5936</small>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border-bottom:none">
+                                                <img src="<?php echo base_url()?>assets/images/website/banking/card_icon/Online-Banking.png" height="40px"/>
+                                                <small class="font-weight-bold">Website:</small><small> Full Service Office</small>
+                                                </td>
+                                            </tr>
+                                        </tbody>     
+                                    </table>
+                                </div>
+                            </div> 
                         </div>
-                    </div>
-            </div>
-    </div>
-</div> 
-<div class="col-md-10 mx-auto map_box">
-    <!-- 1st div starts here -->
-    <div class="row">
-            <div class="col-md-5 px-0 location_div">   
-                <div class="zip_code py-2 px-4" >
-                    <input type="text" class="form-control" placeholder="ZIP CODE">
-                </div>    
-                <!-- address 1 -->
-                <div class=" py-4 px-4" >
-                    <h5 class="mb-2">BANK BRANCH</h5>
-                    <span > 123456 Street Name Drive<br/>
-                        Town Name, ST 1234578</span><br/>
-                    <span class="mt-4">Phone:(123) 456 - 789</span><br/>
-                    <span>www.branchwebsite.com</span><span style="float:right"><i class="fa fa-map-marker" aria-hidden="true" style="font-size:60px"></i><br/>0.82 mi</span><br/>
-                    <br/><span>HOURS</span>
-                </div>  
-                <!-- address 2  -->
-                <div class=" py-4 px-4" style="border-top:2px solid #D79F01">
-                    <h5 class="mb-2">BANK BRANCH</h5>
-                    <span > 123456 Street Name Drive<br/>
-                        Town Name, ST 1234578</span><br/>
-                    <span class="mt-4">Phone:(123) 456 - 789</span><br/>
-                    <span>www.branchwebsite.com</span><span style="float:right"><i class="fa fa-map-marker" aria-hidden="true" style="font-size:60px"></i><br/>0.82 mi</span><br/>
-                    <br/><span>HOURS</span>
-                </div>                                                          
-            </div>
-            <div class="col-md-7 image_div">  
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d787940.2404064332!2d-92.69448908827884!3d39.516936997260665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87dd3cb0e14b6c91%3A0xafbb5066cf09af0e!2sAlliant%20Bank!5e0!3m2!1sen!2sus!4v1593620227899!5m2!1sen!2sus"
-            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>   
-            </div>
-    </div>
-</div> 
-  
-<div class="col-md-10 mx-auto py-5">
-                <div class="row text-center">
-                    <div class="col-md">
-                            <img src="<?php echo base_url();?>assets/img/icons/best_cd.png" class="pb-3">
-                            <h6>MOBILE BANKING</h6>
-                    </div>
-                    <div class="col-md">
-                            <img src="<?php echo base_url();?>assets/img/icons/best_cd.png" class="pb-3">
-                            <h6>FREE CHECKING</h6>
-                    </div>
-                    <div class="col-md">
-                            <img src="<?php echo base_url();?>assets/img/icons/best_cd.png" class="pb-3">
-                            <h6>NO MINIMUM BALANCE</h6>
-                    </div>
-                    <div class="col-md">
-                            <img src="<?php echo base_url();?>assets/img/icons/best_cd.png" class="pb-3">
-                            <h6>HIGH APY'S</h6>
-                    </div>
-                    <div class="col-md">
-                            <img src="<?php echo base_url();?>assets/img/icons/best_cd.png" class="pb-3">
-                            <h6>NO MONTHLY FEES</h6>
-                    </div>
-                   
-                
+                    </div> 
                 </div>
-       
-</div> 
-<!-- row 1 -->
-<div class="col-md-10 mx-auto pb-5">
-    <div class="border_div">  
-        <h3></h3>  
+            </div>
+        <div class="col-md-2">   
+        </div>
     </div>   
-</div> 
-<div class="col-md-10  mx-auto">
+</div>
+
+<!-- row 1 -->
+<div class="container pb-5">
     <div class="row">
             <div class="col-md-6 what_to_like">
-                <i class="fa fa-check-circle fa-4x"></i> <span >WHAT TO LIKE </span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur eveniet 
-                deserunt debitis corrupti quis expedita, architecto, ducimus vero dolorem
-                deserunt debitis corrupti quis expedita, architecto, ducimus vero dolorem
-                temporibus amet perferendis voluptates reprehenderit assumenda impedit ea soluta. Quas.</p>
+                <i class="fa fa-check-circle"></i> <span >WHAT TO LIKE </span>
+                <div class="pt-3" id="what_to_like"></div>
             </div>
             <div class="col-md-6 what_to_like ">
-            <i class="fa fa-times-circle fa-4x"></i> <span >WHAT TO BE CAUTION ABOUT </span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur eveniet 
-                deserunt debitis corrupti quis expedita, architecto, ducimus vero dolorem
-                deserunt debitis corrupti quis expedita, architecto, ducimus vero dolorem
-                temporibus amet perferendis voluptates reprehenderit assumenda impedit ea soluta. Quas.</p>
-            
-            </div>
-        </div>
-</div>
-<!-- row 1 -->
-<div class="col-md-10 mx-auto pb-5">
-    <div class="border_div">  
-        <h3></h3>  
-    </div>   
-</div> 
-<div class="col-md-10  mx-auto">
-    <div class="row">
-            <div class="col-md-6" style="text-align:justify">
-                <h3>CD RATES</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur eveniet 
-                deserunt debitis corrupti quis expedita, architecto, ducimus vero dolorem
-                deserunt debitis corrupti quis expedita, architecto, ducimus vero dolorem
-                temporibus amet perferendis voluptates reprehenderit assumenda impedit ea soluta. Quas.</p>
-            </div>
-            <div class="col-md-6 star_button_div">
-                    <span class="fa fa-star checked "></span>
-                    <span class="fa fa-star checked "></span>
-                    <span class="fa fa-star checked "></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star "></span>
-                    <br/>
-                    <button class="btn mt-4 button_yellow">COMPARE CHECKING RATES</button>                   
-            </div>
-        </div>
-</div>
-<!-- row 2 -->
-<div class="col-md-10 mx-auto pb-5">
-    <div class="border_div">  
-        <h3></h3>  
-    </div>   
-</div> 
-<div class="col-md-10  mx-auto">
-    <div class="row">
-            <div class="col-md-6" style="text-align:justify">
-                <h3>CHECKING ACCOOUNT RATES</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur eveniet 
-                deserunt debitis corrupti quis expedita, architecto, ducimus vero dolorem
-                deserunt debitis corrupti quis expedita, architecto, ducimus vero dolorem
-                temporibus amet perferendis voluptates reprehenderit assumenda impedit ea soluta. Quas.</p>
-            </div>
-            <div class="col-md-6 star_button_div">
-                    <span class="fa fa-star checked "></span>
-                    <span class="fa fa-star checked "></span>
-                    <span class="fa fa-star checked "></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star "></span>
-                    <br/>
-                    <button class="btn mt-4 button_yellow">COMPARE CHECKING RATES</button>                   
-            </div>
-        </div>
-</div>
-<!-- row 3 -->
-<div class="col-md-10 mx-auto pb-5">
-    <div class="border_div">  
-        <h3></h3>  
-    </div>   
-</div> 
-<div class="col-md-10  pb-5 mx-auto">
-    <div class="row">
-            <div class="col-md-6" style="text-align:justify">
-                <h3>SAVING ACCOUNT RATES</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequuntur eveniet 
-                deserunt debitis corrupti quis expedita, architecto, ducimus vero dolorem
-                deserunt debitis corrupti quis expedita, architecto, ducimus vero dolorem
-                temporibus amet perferendis voluptates reprehenderit assumenda impedit ea soluta. Quas.</p>
-            </div>
-            <div class="col-md-6 star_button_div">
-                    <span class="fa fa-star checked "></span>
-                    <span class="fa fa-star checked "></span>
-                    <span class="fa fa-star checked "></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <br/>
-                    <button class="btn mt-4 button_yellow">COMPARE CHECKING RATES</button>                   
+            <i class="fa fa-times-circle"></i> <span >WHAT TO BE CAUTION ABOUT </span>
+                <div class="pt-3" id="what_to_caution"></div>
             </div>
         </div>
 </div>
 
+<div class="container pb-5">
+        <h5 class="text-uppercase pl-2 font-weight-900 border_bottom_golden">FULL REVIEW</h5> 
+        <div id="full_review">
+        </div>
+</div>
 
-  <!-- Darker Gold #D79F01
-Lighter Gold #E6C245
-Grey #626262
-Blue #002A75 -->
+<script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="<?php echo base_url()?>assets/libs/common.js"></script>
+<script src="<?php echo base_url()?>assets/libs/bankProcess.js"></script>
+<script>
+  get_bank_full_review("bank of america");
+</script>
+
+
 
  
 
