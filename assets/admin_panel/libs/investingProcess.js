@@ -76,7 +76,7 @@ function showImage(src,target) {
         fr.readAsDataURL(src.files[0]);
     });
 }	
-function editOverviewModel(i)
+function editOverviewModel(i, type="")
 {
     let mortgage_data = investingData[i];
     var modal_body= '<div class="form-group">'+
@@ -108,7 +108,8 @@ function editOverviewModel(i)
     $(".modal-dialog").addClass("modal-lg");                               
     $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
     $(".modal-body").html(modal_body);
-    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button><button class="btn btn-sm btn-primary" onclick="updateOverview('+mortgage_data.id+')">Update</button>');
+    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save	</button>'+
+    '<button class="btn btn-sm btn-primary" onclick=updateOverview('+mortgage_data.id+',"'+type+'")>Update</button>');
     $(".modal").modal('show');
 
     CKEDITOR.replace( 'editor' );
@@ -117,7 +118,7 @@ function editOverviewModel(i)
     showImage(src,target);
 }
 
-function updateOverview(id)
+function updateOverview(id,type)
 {
     var content= CKEDITOR.instances.data.getData();
     if (content == "") {
@@ -147,8 +148,13 @@ function updateOverview(id)
     formData.append('heading',heading);
     formData.append('content',content);
     formData.append('id',id);
-    let url = baseUrl+"api/admin/update_investing_overview";
+    let base_url = baseUrl+"api/admin/update_investing_overview";
+    if(type=="best_investment")
+    {
+        base_url = baseUrl+ "api/admin/update_best_investment";
+    }
     let xhr = new XMLHttpRequest();
+    let url = base_url;
     xhr.open('POST', url);
     xhr.send(formData);
     xhr.onload = function() {
@@ -169,7 +175,7 @@ function updateOverview(id)
     };
 }
 
-//=======get best investment==========
+//=======get best investment==========//
 function get_best_investment() {
     let formData = new FormData();
     let url = baseUrl + "api/admin/get_best_investment";
@@ -184,81 +190,25 @@ function get_best_investment() {
             if (!status) {
             }
             investingData = obj.data;
+           console.log(investingData);
             let data_list = "";
-               for (var i = 0; i < investingData.length; i++) {
-                if(investingData[i].div_type=="normal_content")
+        
+            for (var i = 0; i < investingData.length; i++) {
+               if(investingData[i].div_type=="overview_heading")
                 {
-                    data_list = data_list+ 
-                        '<div class="col-md-12">'+
-                        '    <h2 class="text-dark font-weight-bold">'+investingData[i].heading+'</h2> '+
-                        '    <span style="float:right"><button class="btn btn-sm btn-primary" onclick=bestInvestmentModel('+i+')>EDIT</button></span>  '+
-                        '  <p>'+investingData[i].content+'</p>'+
-                        '</div><hr/>'
-                }   
+                    overview_data = '<div class="col-md-10">'+
+                    '<h1>'+investingData[i].heading+'</h1>'+
+                    '<img src="'+baseUrl+investingData[i].image+'" style="height:100px"/>'+
+                    '<p>'+investingData[i].content+'</p>'+
+                    '</div>'+
+                    '<div class="col-md-2">'+
+                    '   <button class="btn btn-primary btn-sm" onclick=editOverviewModel('+i+',"best_investment")>Edit </button>'+
+                    '</div>'
+                } 
              }
-            $("#normal_articles").html(data_list);	
+         
+            $("#top_banner_text").html(overview_data);	
 
-        }
-    };
-}
-
-function bestInvestmentModel(i)
-{
-    var invest_data =investingData[i];
-    var modal_body= '<div class="form-group">'+
-    '<label for="name">Heading</label>'+
-    '<input type="text" class="form-control" id="edit_heading" placeholder="Enter Heading" value="'+invest_data.heading+'">'+
-     '</div>'+
-     '<div class="form-group ">'+
-        '<label for="name">Content</label>'+
-        '<textarea rows="5" class="form-control" placeholder="Add Content" name="editor" id="data">'+invest_data.content+'</textarea rows="5">'+
-     '</div>'+
-     '<div class="form-group">'+
-        '<small class="error_message text-danger"></small>'+
-    '</div>'
-
-    $(".modal-dialog").addClass("modal-lg");
-    $(".modal-header").html('<h5 class="text-primary text-bold">Edit</h5>');
-    $(".modal-body").html(modal_body);
-    $(".modal-footer").html('<button class="btn btn-sm btn-danger"  data-dismiss="modal">Cancel! Dont save</button>'+
-    '<button class="btn btn-sm btn-primary" onclick=updateInvestingData('+invest_data.id+')>Update</button>');
-    $(".modal").modal('show');
-
-    
-    CKEDITOR.replace( 'editor' );
-}
-
-function updateInvestingData(id,type)
-{
-    var content= CKEDITOR.instances.data.getData();
-    if (content == "") {
-        alert("Enter Valid Content");
-    }
-    var heading   = $("#edit_heading").val();
-
-    let formData = new FormData();
-    formData.append('content', content);
-    formData.append('heading', heading);
-    formData.append('id', id);
-    let url = baseUrl + "api/admin/update_best_investment";;
-    let xhr = new XMLHttpRequest();
-    xhr.open('POST', url);
-    xhr.send(formData);
-    xhr.onload = function() {
-        if (xhr.status == 200) {
-            let obj = JSON.parse(xhr.responseText);
-            let status = obj.Status;
-            let message = obj.Message;
-            if (!status) {
-                $(".error_message").html(message);
-                return false;
-            } else {
-                swal(message, {
-                    buttons: false,
-                    timer: 2000,
-                });
-                location.reload();
-            }
         }
     };
 }

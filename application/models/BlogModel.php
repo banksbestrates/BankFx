@@ -5,7 +5,7 @@ class BlogModel extends CI_Model
 
     public $response = array();
     
-    public $tbl_blog_overview      = "blog_overview";
+    public $tbl_cal_overview      = "calculator_overview";
 
 
     public function __construct()
@@ -22,7 +22,7 @@ class BlogModel extends CI_Model
     public function get_blog_overview()
     {
         $this->db->select("*");
-        $this->db->from("$this->tbl_blog_overview");
+        $this->db->from("$this->tbl_cal_overview");
         $exist = $this->db->get();
         if ($exist->num_rows()) {
             $responseData = $exist->result();
@@ -39,7 +39,7 @@ class BlogModel extends CI_Model
     public function update_blog_overview($data)
     {
         $this->db->where('id',$data['id']);
-        $this->db->update($this->tbl_blog_overview,$data);
+        $this->db->update($this->tbl_cal_overview,$data);
         $update = $this->db->affected_rows();
         if($update)
         {

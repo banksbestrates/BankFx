@@ -1,0 +1,158 @@
+body {
+  background-color: #111216; }
+
+a:hover, a:focus, a:active {
+  color: #fff; }
+
+body.theme-dark-skin #page {
+  background-color: #111216; }
+
+.top-header-bar {
+  background-color: #111216;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+
+.top-header-bar .top-header-container {
+  background-color: transparent; }
+
+.container {
+  background-color: #111216; }
+
+.theme-sticky-menu .main-header-nav-bar {
+  background-color: #111216; }
+
+.main-navigation ul ul {
+  background-color: #111216;
+  border: 1px solid rgba(255, 255, 255, 0.08); }
+
+.site-title a {
+  color: #fff; }
+
+body, button, input, select, optgroup, textarea {
+  color: #73737D; }
+
+.widget a {
+  color: rgba(255, 255, 255, 0.75); }
+
+.top-header-bar {
+  color: #73737D; }
+
+.top-header-bar .mb-latest-posts .mb-latest-posts-label {
+  color: #73737D; }
+
+.top-header-bar .mb-latest-posts a {
+  color: #73737D; }
+  .top-header-bar .mb-latest-posts a:hover {
+    color: #fff; }
+
+.site-header .main-header-bar, .main-header-nav-bar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+
+.main-navigation li a {
+  color: #fff; }
+
+input[type="text"], input[type="email"], input[type="password"], input[type="url"], input[type="search"], textarea {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.02);
+  color: #73737D; }
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus {
+  color: #73737D; }
+
+.entry-title a {
+  color: #fff; }
+
+.widget .widget-title, .widget .widgettitle {
+  border-top: 2px solid #fff;
+  color: #fff; }
+
+.theme-content-top-area .widget-title, .theme-content-middle-area .widget-title {
+  border-top-width: 0; }
+
+.entry-meta, .entry-meta a {
+  color: #73737D; }
+
+.widget.widget_recent_entries .post-date {
+  color: #73737D; }
+
+.theme-breadcrumb-bar {
+  color: #73737D;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03); }
+
+.theme-breadcrumb-bar .container {
+  background: transparent; }
+
+.theme-breadcrumb-bar a {
+  color: rgba(255, 255, 255, 0.75); }
+
+.page-header .page-title {
+  color: #fff; }
+
+.mb-recent-posts-style-1 .mb-recent-article .entry-title a {
+  color: rgba(255, 255, 255, 0.75); }
+  .mb-recent-posts-style-1 .mb-recent-article .entry-title a:hover {
+    color: #fff; }
+
+.entry-title {
+  color: #fff; }
+
+.comments-title, .comment-reply-title {
+  color: #fff; }
+
+.comment-content {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.75; }
+
+.comment-list .comment-metadata a {
+  color: #73737D; }
+
+#respond form label {
+  color: #fff; }
+
+.site-footer {
+  background-color: rgba(255, 255, 255, 0.04);
+  color: #73737D; }
+
+.entry-content {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.75; }
+
+.widget .cat-links a:hover {
+  color: #fff; }
+
+.cat-links a:hover:before {
+  background-color: #fff; }
+
+.top-header-bar.mb-light-top-bar {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: #73737D; }
+
+.top-header-bar.mb-light-top-bar .top-header-container {
+  background-color: transparent; }
+
+.top-header-bar.mb-light-top-bar .mb-latest-posts .mb-latest-posts-label {
+  color: #73737D; }
+
+body.theme-dark-skin .top-header-bar.mb-light-top-bar .mb-latest-posts a {
+  color: #73737D; }
+  body.theme-dark-skin .top-header-bar.mb-light-top-bar .mb-latest-posts a:hover {
+    color: #fff; }
+
+.top-header-bar.mb-light-top-bar .mb-social-links ul li a {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #73737D; }
+
+.entry-content blockquote {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06); }
+
+.entry-content blockquote:before {
+  color: rgba(255, 255, 255, 0.1); }
+
+.theme-wp_pagenavi .wp-pagenavi a, .theme-wp_pagenavi .wp-pagenavi span {
+  border: 1px solid rgba(255, 255, 255, 0.1); }
+
+.theme-wp_pagenavi .wp-pagenavi {
+  color: #73737D; }

@@ -1,0 +1,194 @@
+/*
+ * Theme Name: TextWP RTL CSS
+ * Description: Adds support for languages written in a Right To Left (RTL) direction.
+ */
+
+body{direction:rtl;unicode-bidi:embed;}
+
+/* Typography & Elements
+-------------------------------------------------------------- */
+blockquote{text-align:right;}
+blockquote cite{text-align:right;}
+ul,ol{margin:0 2em 1.5em 0;}
+li > ul,li > ol{margin-left:0;margin-right:1em;}
+dd{margin:0 1.5em 1.5em;}
+th,td,caption{padding:4px 5px 4px 10px;}
+
+/* Forms
+-------------------------------------------------------------- */
+textarea{padding-right:3px;}
+
+/* Layout
+-------------------------------------------------------------- */
+
+/* Social Icons ----------------------------------------------- */
+.textwp-header-social-icons a:last-child{margin-right:3px;}
+
+/* Header
+-------------------------------------------------------------- */
+.textwp-header-full-width .textwp-logo{text-align:right;}
+.textwp-header-full-width .textwp-header-social{text-align:right;}
+.textwp-header-full-width .textwp-header-social-icons{text-align:right;}
+@media only screen and (max-width: 1112px) {
+.textwp-logo{text-align:right;}
+.textwp-header-social{text-align:right;}
+.textwp-header-social-icons{text-align:right !important;}
+}
+.textwp-header-image-info{text-align:right;}
+
+/* Menu
+-------------------------------------------------------------- */
+.textwp-primary-nav-menu li{text-align:right;float:right;}
+.textwp-primary-nav-menu .sub-menu,.textwp-primary-nav-menu .children{left:0;right:-9999px;}
+.textwp-primary-nav-menu .sub-menu .sub-menu,.textwp-primary-nav-menu .children .children{margin:-47px 189px 0 0;}
+.textwp-primary-nav-menu li:hover > .sub-menu,.textwp-primary-nav-menu li:hover > .children,.textwp-primary-nav-menu li.textwp-focus > .sub-menu,.textwp-primary-nav-menu li.textwp-focus > .children{right:auto;}
+.textwp-primary-responsive-menu-icon{text-align:right;}
+.textwp-primary-responsive-menu-icon::before{margin:0 0 0 6px;}
+@media only screen and (min-width: 1113px) {
+.textwp-primary-nav-menu > li.menu-item-has-children > a:after{margin-left:0;margin-right:8px;}
+.textwp-primary-nav-menu .sub-menu li.menu-item-has-children > a:after,.textwp-primary-nav-menu .children li.menu-item-has-children > a:after{margin-left:0;margin-right:8px;right:auto;left:8px;}
+}
+@media only screen and (max-width: 1112px) {
+.textwp-primary-mobile-menu-active .textwp-primary-nav-menu li{float:none}
+.textwp-primary-mobile-menu-active .textwp-primary-nav-menu.textwp-primary-responsive-menu .menu-item-has-children > a,.textwp-primary-mobile-menu-active .textwp-primary-nav-menu.textwp-primary-responsive-menu .page_item_has_children > a{margin-right:0;margin-left:50px;}
+.textwp-primary-mobile-menu-active .textwp-primary-nav-menu.textwp-primary-responsive-menu > .menu-item-has-children:before,.textwp-primary-mobile-menu-active .textwp-primary-nav-menu.textwp-primary-responsive-menu > .page_item_has_children:before{float:left;right:auto;left:0;text-align:left;}
+.textwp-primary-mobile-menu-active .textwp-primary-nav-menu.textwp-primary-responsive-menu > li > .sub-menu,.textwp-primary-mobile-menu-active .textwp-primary-nav-menu.textwp-primary-responsive-menu > li > .children{margin:0;padding:0;left:0;right:-9999px;}
+.textwp-primary-mobile-menu-active .textwp-primary-nav-menu.textwp-primary-responsive-menu > li.textwp-focus > .sub-menu,.textwp-primary-mobile-menu-active .textwp-primary-nav-menu.textwp-primary-responsive-menu > li.textwp-focus > .children{right:auto;}
+.textwp-primary-mobile-menu-active .textwp-primary-nav-menu.textwp-primary-responsive-menu > li > .sub-menu.textwp-submenu-toggle,.textwp-primary-mobile-menu-active .textwp-primary-nav-menu.textwp-primary-responsive-menu > li > .children.textwp-submenu-toggle{right:auto;}
+.textwp-primary-mobile-menu-active .textwp-primary-nav-menu.textwp-primary-responsive-menu .sub-menu,.textwp-primary-mobile-menu-active .textwp-primary-nav-menu.textwp-primary-responsive-menu .children{right:auto;margin:0;}
+.textwp-primary-mobile-menu-active .textwp-primary-nav-menu.textwp-primary-responsive-menu .sub-menu .sub-menu,.textwp-primary-mobile-menu-active .textwp-primary-nav-menu.textwp-primary-responsive-menu .children .children{margin:0;padding-left:0;padding-right:15px;}
+}
+
+/* Posts & Pages
+-------------------------------------------------------------- */
+.textwp-posts .textwp-posts-heading{text-align:right;}
+.textwp-posts .textwp-posts-heading i{right:0;left:5px;}
+.textwp-page-header{text-align:right;}
+.taxonomy-description{text-align:right;}
+.textwp-entry-meta-single{text-align:right;}
+.textwp-entry-meta-single-cats{margin:0 0 0 10px;}
+.textwp-entry-meta-single-author{margin:0 0 0 10px;}
+.textwp-entry-meta-single-date{margin:0 0 0 10px;}
+.textwp-entry-meta-single-comments{margin:0 0 0 10px;}
+.entry-title{text-align:right;}
+.textwp-table-css-active table tr th{border-right-width:0 !important;border-left-width:1px !important;border-left-style:solid !important;}
+.textwp-table-css-active table tr th:last-child{border-left-width:0px !important;}
+.textwp-table-css-active table tr td{border-right-width:0 !important;border-left-width:1px !important;border-left-style:solid !important;}
+.textwp-table-css-active table tr td:last-child{border-left-width:0px !important;}
+
+/* =Page Links
+----------------------------------------------- */
+.page-links > span,.page-links > a{float:right;border-left:0px solid #dadada !important;border-right:1px solid #dadada !important;}
+.page-links span.page-links-title{border-right:0 !important;}
+
+/* Posts/Post Navigation
+-------------------------------------------------------------- */
+.navigation.posts-navigation .nav-links .nav-previous a:after{margin-left:0;margin-right:6px;}
+.navigation.posts-navigation .nav-links .nav-next a:before{margin-right:0;margin-left:6px;}
+
+.nav-previous{float:left;text-align:left;}
+.nav-next{float:right;text-align:right;}
+
+.navigation.post-navigation .nav-previous{float:left;text-align:left;}
+.navigation.post-navigation .nav-next{float:right;text-align:right;}
+@media only screen and (max-width: 767px) {
+.navigation.post-navigation .nav-previous{float:none;text-align:center;}
+.navigation.post-navigation .nav-next{float:none;text-align:center;}
+}
+
+.navigation.pagination{text-align:right;}
+.navigation.pagination .page-numbers{margin:0 0 5px 1px;}
+
+/* WP-PageNavi
+-------------------------------------------------------------- */
+.wp-pagenavi{text-align:right;}
+
+/* Tag Cloud Widget
+-------------------------------------------------------------- */
+.widget_tag_cloud a{margin:0 0 5px 5px;}
+
+/* Calendar
+-------------------------------------------------------------- */
+#wp-calendar caption{text-align:left;padding:10px 0 0 10px;}
+#wp-calendar tbody td{text-align:right;}
+#wp-calendar tfoot #next{text-align:left;}
+#wp-calendar thead th{padding-bottom:10px;text-align:right;}
+
+/* Alignments
+-------------------------------------------------------------- */
+.alignleft{float:right;margin:0 0 10px 10px;}
+.alignright{float:left;margin:0 10px 10px 0;}
+
+/* Captions
+-------------------------------------------------------------- */
+.wp-caption{text-align:right;}
+
+/* Comments
+-------------------------------------------------------------- */
+.comment-respond #cancel-comment-reply-link{margin-left:0;margin-right:1em;}
+.comment-form label{padding-right:0;padding-left:1em;}
+.comments-area .textwp-box-inside > ol{margin:0;}
+.comment .edit-link,.pingback .edit-link{float:left;}
+.comment .comment-meta .comment-author .avatar{float:right;margin-right:0;margin-left:1em;}
+#respond input[type=text],textarea{padding:3px 3px 3px 0;margin:5px 0 3px 1px;}
+#respond input[type=text]:focus,#respond input[type=text]:active,#respond input[type=email]:focus,#respond input[type=email]:active,#respond input[type=url]:focus,#respond input[type=url]:active,textarea:focus,textarea:active{margin:5px 0 3px 1px;}
+.comment-form-cookies-consent label{padding-left:0;padding-right:10px;}
+
+/* Sidebar
+-------------------------------------------------------------- */
+.textwp-sidebar-widget-areas .widget .textwp-widget-title{text-align:right;}
+.textwp-sidebar-widget-areas .widget ol{padding:0 1.2em 0 0;}
+.textwp-sidebar-widget-areas .widget li{padding:6px 0px 6px 0px;}
+.textwp-sidebar-widget-areas .widget li li{padding:6px 10px 6px 0;}
+
+/* Footer
+-------------------------------------------------------------- */
+#textwp-footer-blocks .widget ol{padding:0 1.2em 0 0;}
+#textwp-footer-blocks .widget li{padding:6px 0 6px 0;}
+#textwp-footer-blocks .widget li li{padding:8px 10px 8px 0;}
+
+/* Copyright
+-------------------------------------------------------------- */
+#textwp-footer .textwp-foot-wrap p.textwp-copyright{text-align:right;padding:8px;}
+#textwp-footer .textwp-foot-wrap p.textwp-credit{text-align:right;padding:8px;}
+
+/* Search Widget
+-------------------------------------------------------------- */
+.textwp-search-overlay-content{text-align:right;}
+.textwp-search-overlay .textwp-search-closebtn{right:auto;left:45px;}
+.textwp-search-overlay input[type=text]{float:right;}
+
+input.textwp-search-submit{right:auto;left:0;}
+
+/* Featured Posts Area Widgets
+-------------------------------------------------------------- */
+.textwp-featured-posts-area .widget .textwp-widget-title{text-align:right;}
+.textwp-featured-posts-area .widget ol{padding:0 1.2em 0 0;}
+.textwp-featured-posts-area .widget li{padding:6px 0px 6px 0px;}
+.textwp-featured-posts-area .widget li li{padding:6px 10px 6px 0;}
+
+/* Featured Posts: Compact Posts
+-------------------------------------------------------------- */
+.textwp-compact-post .textwp-compact-post-thumbnail{float:right;margin:0 0 1px 10px;}
+.textwp-compact-post-read-more a:after{margin-left:0;margin-right:5px;}
+
+/* Author Bio Box
+-------------------------------------------------------------- */
+.textwp-author-bio-gravatar{float:right;margin:0 0 5px 12px;}
+.textwp-author-bio .textwp-author-bio-social{text-align:right;}
+.textwp-author-bio .textwp-author-bio-social a{margin:0 0 3px 6px;}
+.textwp-author-bio .textwp-author-bio-social a i{margin-right:0;margin-left:1px;}
+
+/* Authors Page
+-------------------------------------------------------------- */
+.textwp-author-item .textwp-author-gravatar{float:right;margin:0 0 0 15px;}
+.textwp-author-item .textwp-author-social a{margin:0 0 3px 6px;}
+.textwp-author-item .textwp-author-social a i{margin-right:0;margin-left:1px;}
+
+/* Scroll to Top Button
+-------------------------------------------------------------- */
+.textwp-scroll-top{right:auto;left:20px;}
+
+.textwp-text-center{text-align:right;}
+.textwp-featured-posts-ajax-page-numbers{right:auto;left:0;}
+.textwp-featured-posts-widget.widget .textwp-widget-header .textwp-widget-title a.textwp-featured-posts-viewall{float:left;}

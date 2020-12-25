@@ -1,0 +1,712 @@
+# Copyright (C) 2020 OdieThemes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: MagazineBook 1.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/magazinebook\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-05-31T12:25:15+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.3.0\n"
+"X-Domain: magazinebook\n"
+
+#. Theme Name of the theme
+#: inc/admin/class-magazinebook-admin-dashboard.php:102
+#: inc/footer-functions.php:26
+#: inc/footer-functions.php:54
+msgid "MagazineBook"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://odiethemes.com/themes/magazinebook"
+msgstr ""
+
+#. Description of the theme
+msgid "MagazineBook is a modern and elegant magazine WordPress theme. It is a perfect responsive magazine style WordPress theme that is easy to setup & easy to use. It is a search engine friendly theme that can help you get good SEO results. It is a lightweight theme, optimized for the speed and loads very fast. This theme has unique widgets that are designed especially for magazine websites. MagazineBook is excellently suitable for a magazine, news, publishing, and any sites. Check the live demo at https://magazinebook.odiethemes.com/"
+msgstr ""
+
+#. Author of the theme
+msgid "OdieThemes"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://odiethemes.com"
+msgstr ""
+
+#: 404.php:20
+msgid "404"
+msgstr ""
+
+#: 404.php:21
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:25
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:54
+msgid "Primary"
+msgstr ""
+
+#: header.php:29
+msgid "Skip to content"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:69
+msgid "About MagazineBook"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:107
+msgid "Welcome to MagazineBook!"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:109
+msgid "Following are some important links to get you started with MagazineBook."
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:114
+msgid "Get Started"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:117
+msgid "Read Documentation"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:121
+msgid "Important Links"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:125
+msgid "https://magazinebook.odiethemes.com/"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:125
+msgid "View Live Demo"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:129
+msgid "https://wordpress.org/support/theme/magazinebook/"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:129
+msgid "Support Forum"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:133
+msgid "https://odiethemes.com/contact/"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:133
+msgid "Contact Us"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:138
+msgid "Customize Settings"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:142
+msgid "Start Customizing"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:146
+msgid "Frontpage Banner Slider Settings"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:150
+msgid "Header Settings"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:156
+msgid "We hope you are happy with everything that the theme has to offer. If you can spare a minute, please help us by leaving a 5-star review on WordPress.org.  By spreading the love, we can continue to develop new amazing features in the future, for free!"
+msgstr ""
+
+#: inc/admin/class-magazinebook-admin-dashboard.php:159
+msgid "Sure"
+msgstr ""
+
+#: inc/customizer.php:44
+msgid "Background color setting works only for Boxed Layout."
+msgstr ""
+
+#: inc/customizer/design-options.php:13
+msgid "Change the Design Settings"
+msgstr ""
+
+#: inc/customizer/design-options.php:15
+msgid "Design Options"
+msgstr ""
+
+#: inc/customizer/design-options.php:23
+msgid "Site Layout"
+msgstr ""
+
+#: inc/customizer/design-options.php:40
+msgid "Site Layout:"
+msgstr ""
+
+#: inc/customizer/design-options.php:44
+msgid "Wide Layout"
+msgstr ""
+
+#: inc/customizer/design-options.php:45
+msgid "Boxed Layout"
+msgstr ""
+
+#: inc/customizer/design-options.php:54
+msgid "Sidebar Positions"
+msgstr ""
+
+#: inc/customizer/design-options.php:71
+msgid "Frontpage Sidebar Position:"
+msgstr ""
+
+#: inc/customizer/design-options.php:75
+#: inc/customizer/design-options.php:98
+#: inc/customizer/design-options.php:121
+#: inc/customizer/design-options.php:145
+msgid "Sidebar on Right"
+msgstr ""
+
+#: inc/customizer/design-options.php:76
+#: inc/customizer/design-options.php:99
+#: inc/customizer/design-options.php:122
+#: inc/customizer/design-options.php:146
+msgid "Sidebar on Left"
+msgstr ""
+
+#: inc/customizer/design-options.php:77
+#: inc/customizer/design-options.php:100
+#: inc/customizer/design-options.php:123
+#: inc/customizer/design-options.php:147
+msgid "Hide Sidebar"
+msgstr ""
+
+#: inc/customizer/design-options.php:94
+msgid "Single Post Sidebar Position:"
+msgstr ""
+
+#: inc/customizer/design-options.php:117
+msgid "Page Sidebar Position:"
+msgstr ""
+
+#: inc/customizer/design-options.php:140
+msgid "Archive Sidebar Position:"
+msgstr ""
+
+#: inc/customizer/design-options.php:141
+msgid "Sidebar position for archive pages like category archives, author archives, tag archives, etc."
+msgstr ""
+
+#: inc/customizer/design-options.php:156
+msgid "Color Options"
+msgstr ""
+
+#: inc/customizer/design-options.php:175
+msgid "Select Primary Color:"
+msgstr ""
+
+#: inc/customizer/design-options.php:176
+msgid "This will reflect in links, buttons and many other places. Choose a color to match your site."
+msgstr ""
+
+#: inc/customizer/design-options.php:195
+msgid "Base Color Skin:"
+msgstr ""
+
+#: inc/customizer/design-options.php:199
+#: inc/customizer/header-options.php:96
+msgid "Light"
+msgstr ""
+
+#: inc/customizer/design-options.php:200
+#: inc/customizer/header-options.php:95
+msgid "Dark"
+msgstr ""
+
+#: inc/customizer/footer-options.php:13
+msgid "Change the Footer Settings"
+msgstr ""
+
+#: inc/customizer/footer-options.php:15
+msgid "Footer Options"
+msgstr ""
+
+#: inc/customizer/footer-options.php:23
+msgid "Main Footer Area Options"
+msgstr ""
+
+#: inc/customizer/footer-options.php:40
+msgid "Main Footer Design:"
+msgstr ""
+
+#: inc/customizer/footer-options.php:44
+#: inc/customizer/header-options.php:44
+msgid "Type 1"
+msgstr ""
+
+#: inc/customizer/footer-options.php:45
+#: inc/customizer/header-options.php:45
+msgid "Type 2"
+msgstr ""
+
+#: inc/customizer/footer-options.php:62
+msgid "Footer Right Side:"
+msgstr ""
+
+#: inc/customizer/footer-options.php:72
+#: inc/customizer/header-options.php:186
+msgid "Social Media Links"
+msgstr ""
+
+#: inc/customizer/footer-options.php:73
+msgid "Text"
+msgstr ""
+
+#: inc/customizer/footer-options.php:89
+msgid "Footer Right Text:"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:13
+msgid "Change the Frontpage Settings"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:15
+msgid "Frontpage Options"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:23
+msgid "General Options"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:40
+msgid "Check to hide blog posts/static page on front page"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:58
+msgid "Check to show Banner Section on front page"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:68
+msgid "Banner Slider"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:87
+msgid "Slider Posts Category"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:88
+msgid "Select the category that the slider will show posts from. If no category is selected, the slider will show latest 5 posts."
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:97
+msgid "Banner Featured Posts"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:116
+msgid "Featured Posts Category"
+msgstr ""
+
+#: inc/customizer/frontpage-options.php:117
+msgid "Select the category that the section will show posts from. If no category is selected, the latest 4 posts will be shown."
+msgstr ""
+
+#: inc/customizer/header-options.php:13
+msgid "Change the Header Settings"
+msgstr ""
+
+#: inc/customizer/header-options.php:15
+msgid "Header Options"
+msgstr ""
+
+#: inc/customizer/header-options.php:23
+msgid "Main Header Area Options"
+msgstr ""
+
+#: inc/customizer/header-options.php:40
+msgid "Main Header Design:"
+msgstr ""
+
+#: inc/customizer/header-options.php:54
+msgid "Header Top Bar"
+msgstr ""
+
+#: inc/customizer/header-options.php:72
+msgid "Check to show the top bar in header"
+msgstr ""
+
+#: inc/customizer/header-options.php:90
+msgid "Theme for Header Top Bar:"
+msgstr ""
+
+#: inc/customizer/header-options.php:105
+msgid "Show Date"
+msgstr ""
+
+#: inc/customizer/header-options.php:124
+msgid "Check to show the date top header bar"
+msgstr ""
+
+#: inc/customizer/header-options.php:142
+msgid "Format for Date in the Header:"
+msgstr ""
+
+#: inc/customizer/header-options.php:147
+msgid "Theme Date Settings"
+msgstr ""
+
+#: inc/customizer/header-options.php:148
+msgid "WordPress Date Settings"
+msgstr ""
+
+#: inc/customizer/header-options.php:157
+msgid "Show Latest News"
+msgstr ""
+
+#: inc/customizer/header-options.php:176
+msgid "Check to show latest news top header bar"
+msgstr ""
+
+#: inc/customizer/header-options.php:205
+msgid "Check to show social media links in header top bar"
+msgstr ""
+
+#: inc/customizer/header-options.php:214
+msgid "Facebook Link"
+msgstr ""
+
+#: inc/customizer/header-options.php:219
+msgid "Twitter Link"
+msgstr ""
+
+#: inc/customizer/header-options.php:224
+msgid "Instagram Link"
+msgstr ""
+
+#: inc/customizer/header-options.php:229
+msgid "LinkedIn Link"
+msgstr ""
+
+#: inc/customizer/header-options.php:234
+msgid "YouTube Link"
+msgstr ""
+
+#: inc/customizer/header-options.php:239
+msgid "Google-Plus Link"
+msgstr ""
+
+#: inc/customizer/header-options.php:244
+msgid "Pinterest Link"
+msgstr ""
+
+#: inc/customizer/header-options.php:282
+msgid "Display Header Media On:"
+msgstr ""
+
+#: inc/customizer/header-options.php:286
+msgid "Home Page Only"
+msgstr ""
+
+#: inc/customizer/header-options.php:287
+msgid "All Pages"
+msgstr ""
+
+#: inc/customizer/header-options.php:304
+msgid "Header Media Position:"
+msgstr ""
+
+#: inc/customizer/header-options.php:308
+msgid "Above Header Top Bar"
+msgstr ""
+
+#: inc/customizer/header-options.php:309
+msgid "Below Header Top Bar"
+msgstr ""
+
+#: inc/customizer/header-options.php:310
+msgid "After Main Header"
+msgstr ""
+
+#: inc/customizer/header-options.php:319
+msgid "Sticky Menu"
+msgstr ""
+
+#: inc/customizer/header-options.php:336
+msgid "Check to enable the sticky behavior of the primary menu."
+msgstr ""
+
+#: inc/customizer/other-functions.php:88
+msgid "Check to show Breadcrumbs (On all pages except front page)."
+msgstr ""
+
+#: inc/footer-functions.php:20
+#: inc/footer-functions.php:48
+msgid "Powered By: "
+msgstr ""
+
+#: inc/footer-functions.php:21
+#: inc/footer-functions.php:49
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: inc/footer-functions.php:21
+#: inc/footer-functions.php:49
+msgid "WordPress"
+msgstr ""
+
+#: inc/footer-functions.php:25
+#: inc/footer-functions.php:53
+msgid "Theme: "
+msgstr ""
+
+#: inc/footer-functions.php:26
+#: inc/footer-functions.php:54
+msgid "https://odiethemes.com/themes/magazinebook/"
+msgstr ""
+
+#: inc/footer-functions.php:27
+#: inc/footer-functions.php:55
+msgid " By OdieThemes"
+msgstr ""
+
+#: inc/header-functions.php:77
+msgid "Latest: "
+msgstr ""
+
+#: inc/header-functions.php:190
+#: inc/header-functions.php:248
+msgid "Menu"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:71
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:74
+msgid "Posted in %1$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:78
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:81
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:91
+#: inc/template-tags.php:216
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:108
+#: template-parts/content-page.php:41
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/widgets.php:16
+msgid "Sidebar"
+msgstr ""
+
+#: inc/widgets.php:18
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/widgets.php:28
+msgid "Header Right"
+msgstr ""
+
+#: inc/widgets.php:30
+msgid "Add widget here to display in header."
+msgstr ""
+
+#: inc/widgets.php:40
+msgid "Front Page: Content Top Section"
+msgstr ""
+
+#: inc/widgets.php:42
+msgid "Add widgets here to display posts just below the banner section. (This is a full width section without any sidebar.)"
+msgstr ""
+
+#: inc/widgets.php:52
+msgid "Front Page: Content Middle Section"
+msgstr ""
+
+#: inc/widgets.php:54
+msgid "Add widgets here to display them along with sidebar."
+msgstr ""
+
+#: inc/widgets/class-magazinebook-728x90-advertisement-widget.php:21
+msgid "Displays an advertisement with image & a link."
+msgstr ""
+
+#: inc/widgets/class-magazinebook-728x90-advertisement-widget.php:24
+msgid "MB: 728x90 Advertisement"
+msgstr ""
+
+#: inc/widgets/class-magazinebook-728x90-advertisement-widget.php:52
+#: inc/widgets/class-magazinebook-featured-posts-style-1-widget.php:44
+#: inc/widgets/class-magazinebook-featured-posts-style-2-widget.php:44
+#: inc/widgets/class-magazinebook-recent-posts-style-1-widget.php:44
+#: inc/widgets/class-magazinebook-simple-featured-posts-widget.php:44
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/class-magazinebook-728x90-advertisement-widget.php:55
+msgid "Add your Advertisement 728x90 Images Here"
+msgstr ""
+
+#: inc/widgets/class-magazinebook-728x90-advertisement-widget.php:57
+msgid "Advertisement Image Link: "
+msgstr ""
+
+#: inc/widgets/class-magazinebook-728x90-advertisement-widget.php:61
+msgid "Advertisement Image: "
+msgstr ""
+
+#: inc/widgets/class-magazinebook-728x90-advertisement-widget.php:69
+msgid "Choose an image"
+msgstr ""
+
+#: inc/widgets/class-magazinebook-728x90-advertisement-widget.php:69
+msgid "Use image"
+msgstr ""
+
+#: inc/widgets/class-magazinebook-728x90-advertisement-widget.php:69
+msgid "Select an Image"
+msgstr ""
+
+#: inc/widgets/class-magazinebook-featured-posts-style-1-widget.php:21
+#: inc/widgets/class-magazinebook-featured-posts-style-2-widget.php:21
+msgid "Displays latest posts or posts of specific category. Suitable for content middle area."
+msgstr ""
+
+#: inc/widgets/class-magazinebook-featured-posts-style-1-widget.php:24
+msgid "MB: Featured Posts Style 1"
+msgstr ""
+
+#: inc/widgets/class-magazinebook-featured-posts-style-1-widget.php:34
+#: inc/widgets/class-magazinebook-featured-posts-style-2-widget.php:34
+#: inc/widgets/class-magazinebook-simple-featured-posts-widget.php:34
+msgid "Featured Posts"
+msgstr ""
+
+#: inc/widgets/class-magazinebook-featured-posts-style-1-widget.php:49
+#: inc/widgets/class-magazinebook-featured-posts-style-2-widget.php:49
+#: inc/widgets/class-magazinebook-recent-posts-style-1-widget.php:49
+#: inc/widgets/class-magazinebook-simple-featured-posts-widget.php:49
+msgid "Number of Posts to Display:"
+msgstr ""
+
+#: inc/widgets/class-magazinebook-featured-posts-style-1-widget.php:53
+#: inc/widgets/class-magazinebook-featured-posts-style-2-widget.php:53
+#: inc/widgets/class-magazinebook-recent-posts-style-1-widget.php:53
+#: inc/widgets/class-magazinebook-simple-featured-posts-widget.php:53
+msgid "If no category is selected from below dropdown, latest posts will be displayed."
+msgstr ""
+
+#: inc/widgets/class-magazinebook-featured-posts-style-1-widget.php:56
+#: inc/widgets/class-magazinebook-featured-posts-style-2-widget.php:56
+#: inc/widgets/class-magazinebook-recent-posts-style-1-widget.php:56
+#: inc/widgets/class-magazinebook-simple-featured-posts-widget.php:56
+msgid "Select Category: "
+msgstr ""
+
+#: inc/widgets/class-magazinebook-featured-posts-style-1-widget.php:60
+#: inc/widgets/class-magazinebook-featured-posts-style-2-widget.php:60
+#: inc/widgets/class-magazinebook-recent-posts-style-1-widget.php:60
+#: inc/widgets/class-magazinebook-simple-featured-posts-widget.php:60
+msgid "Select Category"
+msgstr ""
+
+#: inc/widgets/class-magazinebook-featured-posts-style-2-widget.php:24
+msgid "MB: Featured Posts Style 2"
+msgstr ""
+
+#: inc/widgets/class-magazinebook-recent-posts-style-1-widget.php:21
+msgid "Displays latest posts or posts of specific category. Suitable for sidebars."
+msgstr ""
+
+#: inc/widgets/class-magazinebook-recent-posts-style-1-widget.php:24
+msgid "MB: Recent Posts Style 1"
+msgstr ""
+
+#: inc/widgets/class-magazinebook-recent-posts-style-1-widget.php:34
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/widgets/class-magazinebook-simple-featured-posts-widget.php:21
+msgid "Displays latest posts or posts of specific category. Suitable for content top area."
+msgstr ""
+
+#: inc/widgets/class-magazinebook-simple-featured-posts-widget.php:24
+msgid "MB: Simple Featured Posts"
+msgstr ""
+
+#. translators: %s: search query.
+#: search.php:31
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:11
+msgid "Search"
+msgstr ""
+
+#: template-parts/content-first.php:38
+msgid "Read more"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:27
+#: template-parts/content-single.php:52
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-single.php:39
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""

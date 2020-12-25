@@ -1,0 +1,100 @@
+# Copyright (C) 2019 Strategy11
+# This file is distributed under the same license as the Formidable Digital Signatures plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Formidable Digital Signatures 2.03\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/formidable-signature\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-09-24T18:19:37+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.1.0\n"
+"X-Domain: frmsig\n"
+
+#. Plugin Name of the plugin
+msgid "Formidable Digital Signatures"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://formidableforms.com"
+msgstr ""
+
+#. Description of the plugin
+msgid "Collect e-signatures in your Formidable forms"
+msgstr ""
+
+#. Author of the plugin
+msgid "Strategy11"
+msgstr ""
+
+#: models/FrmSigField.php:33
+#: controllers/FrmSigAppController.php:613
+msgid "Draw It"
+msgstr ""
+
+#: models/FrmSigField.php:34
+#: controllers/FrmSigAppController.php:614
+msgid "Type It"
+msgstr ""
+
+#: models/FrmSigField.php:35
+#: controllers/FrmSigAppController.php:615
+msgid "Clear"
+msgstr ""
+
+#: controllers/FrmSigAppController.php:55
+msgid "You are running an outdated version of Formidable. This plugin will not work correctly if you do not update Formidable."
+msgstr ""
+
+#: controllers/FrmSigAppController.php:154
+msgid "Signature"
+msgstr ""
+
+#: controllers/FrmSigAppController.php:410
+msgid "Drawn signatures"
+msgstr ""
+
+#: views/update_formidable.php:4
+msgid "Formidable Digital Signatures requires that Formidable Forms version 3.0 or greater be installed. Until then, keep Formidable Digital Signatures activated only to continue enjoying this insightful message."
+msgstr ""
+
+#. translators: %1$s: html line break
+#: views/admin_field.php:5
+msgid "This is a placeholder for your signature field. %1$sView your form to see it in action."
+msgstr ""
+
+#: views/options_form.php:3
+msgid "Field Size"
+msgstr ""
+
+#: views/options_form.php:7
+msgid "pixels wide"
+msgstr ""
+
+#: views/options_form.php:10
+msgid "pixels high"
+msgstr ""
+
+#: views/options_form.php:16
+msgid "Signature Options"
+msgstr ""
+
+#: views/options_form.php:21
+msgid "Draw It Label"
+msgstr ""
+
+#: views/options_form.php:28
+msgid "Type It Label"
+msgstr ""
+
+#: views/options_form.php:35
+msgid "Clear Label"
+msgstr ""
+
+#: views/options_form.php:44
+msgid "Hide Draw It and Type It tabs"
+msgstr ""

@@ -1,0 +1,39 @@
+/*------- Typography ----------*/
+.mb-60{
+    margin-bottom: 60px;
+}
+.typo-section {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.content ul,
+.content li{
+    list-style-type: inherit;
+    list-style-position: inside;
+    list-style-image: inherit;
+    margin: 10px 0;
+    padding: 0
+}
+.content ol{
+    margin: 10px 0;
+    padding: 0
+}
+.content ul ul,
+.content ol ol{
+   padding-left:30px
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #333;
+}
+dl {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.content dt {
+    font-weight: bold;
+}
+.content dd {
+    margin: 0 1.5em 1.5em;
+}

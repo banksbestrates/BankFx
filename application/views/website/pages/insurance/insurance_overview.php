@@ -20,7 +20,7 @@
 
   <div class="container  card_row pb-4">    
         <div class="pt-5 col-md-12  row card_view">
-            <div class="col-md col-sm-4">
+            <div class="col-md col-sm-4 mb-3">
                 <div class="card pb-3">
                 <div style="width:100%; text-align:center">
                   <img src="<?php echo base_url();?>assets/images/website/insurance/card_icon/Home-Insurance.png" style="width:100px; height:100px;">
@@ -30,7 +30,7 @@
                   <!-- </a> -->
                 </div>
             </div>
-            <div class="col-md col-sm-4">
+            <div class="col-md col-sm-4 mb-3">
             <div class="card pb-3">
               <div style="width:100%; text-align:center">
                   <img src="<?php echo base_url();?>assets/images/website/insurance/card_icon/Auto-Insurance.png" style="width:100px; height:100px;">
@@ -40,7 +40,7 @@
                   <!-- </a> -->
                 </div>
             </div>
-            <div class="col-md col-sm-4">
+            <div class="col-md col-sm-4 mb-3">
               <div class="card pb-3">
               <div style="width:100%; text-align:center">
                   <img src="<?php echo base_url();?>assets/images/website/insurance/card_icon/Life-Insurance.png" style="width:100px; height:100px;">
@@ -50,7 +50,7 @@
               <!-- </a> -->
                 </div>
             </div>
-            <div class="col-md col-sm-4">
+            <div class="col-md col-sm-4 mb-3">
               <div class="card pb-3">
               <div style="width:100%; text-align:center">
                   <img src="<?php echo base_url();?>assets/images/website/insurance/card_icon/Health-Insurance.png" style="width:100px; height:100px;">
@@ -84,20 +84,20 @@
 <!-- Content Related to Loans -->
 <div class="container py-5">
         <div class="row">
-          <div class="col-md-10 pr-0">
+          <div class="col-md-9">
             <div class="">
             <a href="https://track.flexlinkspro.com/a.ashx?foid=1188831.142317341.I4976662&foc=16&fot=9999&fos=1" rel="nofollow" target="_blank" alt="Leaderboard" title="SuperMoney - Home Improvement Loans" ><img border="0" src="https://content.flexlinks.com/sharedimages/products/142317341/4976662.jpg" style="max-width: 100%;" /></a><img src="https://track.flexlinkspro.com/i.ashx?foid=1188831.142317341&fot=9999&foc=16&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
             </div>
-            <h3 class="border_bottom_golden pt-5 mb-0">LATEST FROM BANKS BEST RATES</h3>
-            <div id="related_articles">
-            </div> 
           </div>
-          <div class="col-md-2 pr-0">
-          <a href="https://track.flexlinkspro.com/a.ashx?foid=1188831.143797742.I5704793&foc=16&fot=9999&fos=1" rel="nofollow" target="_blank" alt="null" title="Logo, Description, CTA, Interface 300x300" ><img border="0" src="https://content.flexlinks.com/sharedimages/products/143797742/5704793.png" style="max-width: 100%;" /></a><img src="https://track.flexlinkspro.com/i.ashx?foid=1188831.143797742&fot=9999&foc=16&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
+          <div class="col-md-3">
+          <a href="https://track.flexlinkspro.com/a.ashx?foid=1188831.143797742.I5704793&foc=16&fot=9999&fos=1" rel="nofollow" target="_blank" alt="null" title="Logo, Description, CTA, Interface 300x300" ><img border="0" src="https://content.flexlinks.com/sharedimages/products/143797742/5704793.png" style="max-width:300px" /></a><img src="https://track.flexlinkspro.com/i.ashx?foid=1188831.143797742&fot=9999&foc=16&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
           </div>       
         </div>   
   </div> 
 
+  
+  <div class="container" id="related_articles">
+  </div>
 
 
 <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>

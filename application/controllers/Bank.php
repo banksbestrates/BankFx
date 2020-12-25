@@ -60,20 +60,65 @@ class Bank extends CI_Controller {
 		$this->load->view('website/layout/footer');
 		}
 	}
-	public function bank_full_review()
+	public function bank_full_review($bank_name)
 	{
-		$this->load->view('website/layout/header');
-		$this->load->view('website/pages/bank/bank_review');
-		$this->load->view('website/layout/footer');
+		$bank_name = str_replace('%20', ' ', $bank_name);
+		$bank_review = $this->validator->get_bank_review($bank_name);
+		if($bank_review['RowCount'] > 0)
+		{
+			$this->load->view('website/layout/header');
+			$this->load->view('website/pages/bank/bank_review',array("bank_data"=>$bank_review['Returned']));
+			$this->load->view('website/layout/footer');
+		}
+
 	}
-	
+	public function best_large_banks()
+	{
+		$bank_data = $this->validator->best_large_banks();
+		if($bank_data['RowCount'] > 0)
+		{
+			$this->load->view('website/layout/header');
+			$this->load->view('website/pages/bank/best_large_banks',array("data"=>$bank_data));
+			$this->load->view('website/layout/footer');
+		}
+	}
+	public function best_online_banks()
+	{
+		$bank_data = $this->validator->best_online_banks();
+		if($bank_data['RowCount'] > 0)
+		{
+			$this->load->view('website/layout/header');
+			$this->load->view('website/pages/bank/best_online_banks',array("data"=>$bank_data));
+			$this->load->view('website/layout/footer');
+		}
+	}
+	public function best_credit_unions()
+	{
+		$bank_data = $this->validator->best_credit_unions();
+		if($bank_data['RowCount'] > 0)
+		{
+			$this->load->view('website/layout/header');
+			$this->load->view('website/pages/bank/best_credit_unions',array("data"=>$bank_data));
+			$this->load->view('website/layout/footer');
+		}
+	}
+	public function best_regional_banks()
+	{
+		$bank_data = $this->validator->best_regional_banks();
+		if($bank_data['RowCount'] > 0)
+		{
+			$this->load->view('website/layout/header');
+			$this->load->view('website/pages/bank/best_regionl_banks',array("data"=>$bank_data));
+			$this->load->view('website/layout/footer');
+		}
+	}
 	public function branch_locator()
 	{
 		$all_states = $this->validator->get_all_states();
 		if($all_states['Returning'])
 		{		
 			$top_banks = $this->validator->get_best_banks('50');
-			if($top_banks['RowCount'] > 0 )
+			if($top_banks['RowCount'] > 0)
 			{
 				$this->load->view('website/layout/header');
 				$this->load->view('website/pages/bank/branch_locator',array("data"=>$top_banks,"all_states"=>$all_states));
@@ -85,20 +130,19 @@ class Bank extends CI_Controller {
 		// 	$this->load->view('website/pages/page_not_found');
 		// }
 	
-    }
+	}
 	public function bank_state()
 	{
 		$this->load->view('website/layout/header');
 		$this->load->view('website/pages/bank/bank_state');
 		$this->load->view('website/layout/footer');
-  }
-	
+  	}	
 	public function best_money_market()
 	{
 		$this->load->view('website/layout/header');
 		$this->load->view('website/pages/bank/best_money_market');
 		$this->load->view('website/layout/footer');
-  }
+  	}
 	public function bank_details()
 	{
 		$this->load->view('website/layout/header');
@@ -154,11 +198,54 @@ class Bank extends CI_Controller {
 			$this->load->view('website/pages/page_not_found');
 		}
   	}
-
+	public function credit_unions($state_code,$city)
+	{
+		$city_name = str_replace('%20', ' ', $city);
+		$data = $this->validator->get_credit_unions($state_code,$city_name);
+		if($data)
+		{
+			$this->load->view('website/layout/header');
+			$this->load->view('website/pages/bank/credit_unions',array("data"=>$data,
+			"city_name"=>$city_name,"state_code"=>$state_code));
+			$this->load->view('website/layout/footer');
+		}
+		
+		else{
+			$this->load->view('website/pages/page_not_found');
+		}
+	  }
+	  
+	public function best_cd_rates()
+	{
+		$non_jumbo_rates = $this->validator->get_best_cd_rates('Jumbo Deposits');
+		if($non_jumbo_rates)
+		{
+			$jumbo_rates = $this->validator->get_best_cd_rates('Non-Jumbo Deposits');
+			 if($jumbo_rates)
+			 {
+				$this->load->view('website/layout/header');
+				$this->load->view('website/pages/bank/best_cd_rates',
+				array("non_jumbo_rates"=>$non_jumbo_rates,"jumbo_rates"=>$jumbo_rates,"non_jumbo_rates"));
+				$this->load->view('website/layout/footer');
+			 }
+		} 
+	} 
 	public function top_100_banks()
 	{
 		$this->load->view('website/layout/header');
 		$this->load->view('website/pages/bank/top-100-banks');
+		$this->load->view('website/layout/footer');
+  	}
+	public function calculator()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/bank/calculators');
+		$this->load->view('website/layout/footer');
+  	}
+	public function calculator_detail($page)
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/bank/calculator_detail',array("page"=>$page));
 		$this->load->view('website/layout/footer');
   	}
 	

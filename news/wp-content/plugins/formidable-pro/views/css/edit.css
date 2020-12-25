@@ -1,0 +1,25 @@
+.post-type-frm_display #frm_adv_info.frm-remove-lock {
+	width: auto;
+	height: auto;
+}
+
+.post-type-frm_display #frm_adv_info.frm-remove-lock {
+	position: relative !important;
+}
+
+#frm_lock_simple path,
+#frm_unlock_simple path {
+	fill: var(--dark-grey) !important;
+	fill-opacity: .8;
+}
+
+#frm_lock_simple:hover path,
+#frm_unlock_simple:hover path {
+	fill-opacity: 1;
+}
+
+.post-type-frm_display .handle-actions .frmsvg {
+	width: 16px;
+	height: 16px;
+	transform: translateY(-3px);
+}

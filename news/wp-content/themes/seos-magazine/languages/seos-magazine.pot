@@ -1,0 +1,921 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Seos Magazine\n"
+"POT-Creation-Date: 2017-05-09 19:20+0300\n"
+"PO-Revision-Date: 2017-05-09 19:20+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:32
+msgid "Most Used Categories"
+msgstr ""
+
+#: 404.php:50
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:40 comments.php:61
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:43 comments.php:64
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:44 comments.php:65
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:78
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:18
+msgid "All rights reserved"
+msgstr ""
+
+#: footer.php:19
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: footer.php:19
+#, php-format
+msgid "Powered by %s"
+msgstr ""
+
+#: footer.php:20
+msgid "Seos free wordpress themes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+#: footer.php:20
+msgid "http://seosthemes.com/"
+msgstr ""
+
+#: footer.php:20
+msgid "Theme by SEOS"
+msgstr ""
+
+#: functions.php:26
+msgid "Primary"
+msgstr ""
+
+#: functions.php:71
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:125
+msgid "Search"
+msgstr ""
+
+#: functions.php:126
+msgctxt ""
+msgid "Search ..."
+msgstr ""
+
+#: functions.php:127
+msgid "GO"
+msgstr ""
+
+#: functions.php:176
+msgid "Seos Magazine Demo"
+msgstr ""
+
+#: functions.php:177 functions.php:206
+msgid "Premium Demo"
+msgstr ""
+
+#: functions.php:207
+msgid "\tLearn more about Seos Magazine Premium. "
+msgstr ""
+
+#: functions.php:217
+msgid "Buy Premium"
+msgstr ""
+
+#: header.php:32
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:59
+msgid "Menu"
+msgstr ""
+
+#: inc/customize-demo.php:9
+msgid "Seos Magazine Slider 🔒"
+msgstr ""
+
+#: inc/customize-demo.php:10 inc/customize-demo.php:37
+#: inc/customize-demo.php:61 inc/customize-demo.php:84
+#: inc/customize-demo.php:107 inc/customize-demo.php:128
+msgid ""
+"<a target=\"_blank\" href=\"https://seosthemes.com/seos-magazine/\">Buy Pro "
+"€29.99</a>"
+msgstr ""
+
+#: inc/customize-demo.php:21
+msgid "Seos Magazine Slider"
+msgstr ""
+
+#: inc/customize-demo.php:36
+msgid "Custom Main Container 🔒"
+msgstr ""
+
+#: inc/customize-demo.php:48
+msgid "Custom Main Container"
+msgstr ""
+
+#: inc/customize-demo.php:60
+msgid "Contacts 🔒"
+msgstr ""
+
+#: inc/customize-demo.php:72
+msgid "Contacts"
+msgstr ""
+
+#: inc/customize-demo.php:83
+msgid "Social Media 🔒"
+msgstr ""
+
+#: inc/customize-demo.php:95
+msgid "Social Media"
+msgstr ""
+
+#: inc/customize-demo.php:106
+msgid "Footer Options 🔒"
+msgstr ""
+
+#: inc/customize-demo.php:118
+msgid "Footer Options"
+msgstr ""
+
+#: inc/customize-demo.php:127
+msgid "Back to Top 🔒"
+msgstr ""
+
+#: inc/customize-demo.php:139
+msgid "Back to Top"
+msgstr ""
+
+#: inc/customize-kirki.php:15
+msgid "Free Options"
+msgstr ""
+
+#: inc/customize-kirki.php:16
+msgid "Free Kirki Options"
+msgstr ""
+
+#: inc/customize-kirki.php:24
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/customize-kirki.php:25
+msgid "Add custom CSS here"
+msgstr ""
+
+#: inc/customize-kirki.php:39
+msgid "Code Control"
+msgstr ""
+
+#: inc/customize-kirki.php:56
+msgid "Disable All Comments"
+msgstr ""
+
+#: inc/customize-kirki.php:70
+msgid "Hide All Comments"
+msgstr ""
+
+#: inc/customize-kirki.php:75 inc/customize-kirki.php:93
+#: inc/customize-kirki.php:110 inc/customize-kirki.php:263
+msgid "on"
+msgstr ""
+
+#: inc/customize-kirki.php:76 inc/customize-kirki.php:94
+#: inc/customize-kirki.php:111 inc/customize-kirki.php:264
+msgid "off"
+msgstr ""
+
+#: inc/customize-kirki.php:88
+msgid "Hide existing comments"
+msgstr ""
+
+#: inc/customize-kirki.php:105
+msgid "Remove comments page from the menu"
+msgstr ""
+
+#: inc/customize-kirki.php:120
+msgid "All Google Fonts"
+msgstr ""
+
+#: inc/customize-kirki.php:121
+msgid "Copy and Paste the Font Name"
+msgstr ""
+
+#: inc/customize-kirki.php:135
+msgid "Site Title"
+msgstr ""
+
+#: inc/customize-kirki.php:148
+msgid "H1 Element"
+msgstr ""
+
+#: inc/customize-kirki.php:160
+msgid "H2 Element"
+msgstr ""
+
+#: inc/customize-kirki.php:172
+msgid "H3 Element"
+msgstr ""
+
+#: inc/customize-kirki.php:184
+msgid "H4 Element"
+msgstr ""
+
+#: inc/customize-kirki.php:196
+msgid "H5 Element"
+msgstr ""
+
+#: inc/customize-kirki.php:208
+msgid "H6 Element"
+msgstr ""
+
+#: inc/customize-kirki.php:218
+msgid "Mobile Call Now"
+msgstr ""
+
+#: inc/customize-kirki.php:219
+msgid ""
+"Mobile Call Now option places a Call Now button to the bottom of the screen "
+"which is only visible for your mobile visitors."
+msgstr ""
+
+#: inc/customize-kirki.php:233
+msgid "Phone Number"
+msgstr ""
+
+#: inc/customize-kirki.php:244
+msgid "Read More Button"
+msgstr ""
+
+#: inc/customize-kirki.php:258
+msgid "Activate Read more Button"
+msgstr ""
+
+#: inc/customize-kirki.php:275
+msgid "Read More Text"
+msgstr ""
+
+#: inc/customize-kirki.php:277
+msgid "Read More"
+msgstr ""
+
+#: inc/customize-kirki.php:289
+msgid "Read More Length"
+msgstr ""
+
+#: inc/customizer.php:32
+msgid "Recent News"
+msgstr ""
+
+#: inc/customizer.php:33
+msgid "Select IMG and Recent News will be activated in your home page."
+msgstr ""
+
+#: inc/customizer.php:46
+msgid "Recent News IMG:"
+msgstr ""
+
+#: inc/customizer.php:47
+msgid "Load IMG from your media:"
+msgstr ""
+
+#: inc/customizer.php:57
+msgid "Recent News Title:"
+msgstr ""
+
+#: inc/customizer.php:59
+msgid "The title of your Recent News. Will be activated in your home page:"
+msgstr ""
+
+#: inc/customizer.php:69
+msgid "Recent News Text:"
+msgstr ""
+
+#: inc/customizer.php:71
+msgid "Content of your Recent News. Will be activated in your home page:"
+msgstr ""
+
+#: inc/customizer.php:82
+msgid "Recent News URL:"
+msgstr ""
+
+#: inc/customizer.php:84
+msgid "Copy and paste the URL from your media:"
+msgstr ""
+
+#: inc/customizer.php:94
+msgid "Header Logo"
+msgstr ""
+
+#: inc/customizer.php:95
+msgid "Your theme recommends a header logo size of 250 x 90 pixels."
+msgstr ""
+
+#: inc/customizer.php:108
+msgid "Header Logo:"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:104
+msgid "Background Color"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:105
+msgid "Background Image"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:106
+msgid "No Repeat"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:107
+msgid "Repeat All"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:108
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:109
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:110
+msgid "Inherit"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:111
+msgid "Background Repeat"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:112
+msgid "Cover"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:113
+msgid "Contain"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:114
+msgid "Background Size"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:115
+msgid "Fixed"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:116
+msgid "Scroll"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:117
+msgid "Background Attachment"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:118
+msgid "Left Top"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:119
+msgid "Left Center"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:120
+msgid "Left Bottom"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:121
+msgid "Right Top"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:122
+msgid "Right Center"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:123
+msgid "Right Bottom"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:124
+msgid "Center Top"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:125
+msgid "Center Center"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:126
+msgid "Center Bottom"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:127
+msgid "Background Position"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:128
+msgid "Background Opacity"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:129
+msgid "ON"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:130
+msgid "OFF"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:131
+msgid "All"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:132
+msgid "Cyrillic"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:133
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:134
+msgid "Devanagari"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:135
+msgid "Greek"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:136
+msgid "Greek Extended"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:137
+msgid "Khmer"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:138
+msgid "Latin"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:139
+msgid "Latin Extended"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:140
+msgid "Vietnamese"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:141
+msgid "Hebrew"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:142
+msgid "Arabic"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:143
+msgid "Bengali"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:144
+msgid "Gujarati"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:145
+msgid "Tamil"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:146
+msgid "Telugu"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:147
+msgid "Thai"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:148
+msgctxt "font style"
+msgid "Serif"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:149
+msgctxt "font style"
+msgid "Sans Serif"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:150
+msgctxt "font style"
+msgid "Monospace"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:151
+msgid "Font Family"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:152
+msgid "Font Size"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:153
+msgid "Font Weight"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:154
+msgid "Line Height"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:155
+msgid "Font Style"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:156
+msgid "Letter Spacing"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:157
+msgid "Top"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:158
+msgid "Bottom"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:159
+msgid "Left"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:160
+msgid "Right"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:161
+msgid "Center"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:162
+msgid "Justify"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:163
+msgid "Color"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:164
+msgid "Add Image"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:165
+msgid "Change Image"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:166
+msgid "No Image Selected"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:167
+msgid "Add File"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:168
+msgid "Change File"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:169
+msgid "No File Selected"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:170
+msgid "Remove"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:171
+msgid "Select a font-family"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:172
+msgid "Variant"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:173
+msgid "Subset"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:174
+msgid "Size"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:175
+msgid "Height"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:176
+msgid "Spacing"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:177
+msgid "Ultra-Light 100"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:178
+msgid "Ultra-Light 100 Italic"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:179
+msgid "Light 200"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:180
+msgid "Light 200 Italic"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:181
+msgid "Book 300"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:182
+msgid "Book 300 Italic"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:183
+msgid "Normal 400"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:184
+msgid "Normal 400 Italic"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:185
+msgid "Medium 500"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:186
+msgid "Medium 500 Italic"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:187
+msgid "Semi-Bold 600"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:188
+msgid "Semi-Bold 600 Italic"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:189
+msgid "Bold 700"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:190
+msgid "Bold 700 Italic"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:191
+msgid "Extra-Bold 800"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:192
+msgid "Extra-Bold 800 Italic"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:193
+msgid "Ultra-Bold 900"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:194
+msgid "Ultra-Bold 900 Italic"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:195
+msgid "Invalid Value"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:196
+msgid "Add new"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:197
+msgid "row"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:198
+#, php-format
+msgid "Limit: %s rows"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:199
+#: inc/kirki/includes/sections/class-kirki-sections-hover-section.php:40
+msgid "Press return or enter to open this section"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:200
+#: inc/kirki/includes/sections/class-kirki-sections-hover-section.php:46
+msgid "Back"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:201
+#, php-format
+msgid "%s Reset"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:202
+msgid "Text Align"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:203
+msgid "Text Transform"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:204
+msgid "None"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:205
+msgid "Capitalize"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:206
+msgid "Uppercase"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:207
+msgid "Lowercase"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:208
+msgid "Initial"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:209
+msgid "Select a Page"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:210
+msgid "Open Editor"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:211
+msgid "Close Editor"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:212
+msgid "Switch Editor"
+msgstr ""
+
+#: inc/kirki/includes/class-kirki-l10n.php:213
+msgid "Hex Value"
+msgstr ""
+
+#: inc/premium-options.php:29
+msgid "Buy"
+msgstr ""
+
+#: inc/premium-options.php:29
+msgid " Now"
+msgstr ""
+
+#: inc/template-tags.php:28
+#, php-format
+msgctxt "post date"
+msgid "On: %s "
+msgstr ""
+
+#: inc/template-tags.php:33
+#, php-format
+msgctxt "post author"
+msgid " By: %s "
+msgstr ""
+
+#: inc/template-tags.php:50 inc/template-tags.php:56
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:52
+#, php-format
+msgid " Category: %1$s"
+msgstr ""
+
+#: inc/template-tags.php:58
+#, php-format
+msgid " Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:64
+msgid " Leave a comment/"
+msgstr ""
+
+#: inc/template-tags.php:64
+msgid " 1 Comment/"
+msgstr ""
+
+#: inc/template-tags.php:64
+msgid " % Comments/"
+msgstr ""
+
+#: inc/template-tags.php:71 template-parts/content-page.php:33
+#, php-format
+msgid " Edit %s"
+msgstr ""
+
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:21
+msgid " <span class=\"meta-nav\">&larr;</span>previous"
+msgstr ""
+
+#: single.php:22
+msgid "next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:22 template-parts/content.php:45
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content.php:40
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Seos Magazine"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://seosthemes.com/seos-magazine/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Seos Magazine is a modern responsive WordPress theme. The Seos Magazine "
+"theme is excellent for a news, newspaper, magazine, publishing or other "
+"editorial websites.To learn more about the theme please go to the theme uri "
+"and read the documentation."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "SEOS"
+msgstr ""

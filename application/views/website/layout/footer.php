@@ -87,7 +87,7 @@
   <!-- Template Main Javascript File -->
   <script src="<?php echo base_url()?>/assets/js/main.js"></script>
   <script src="<?php echo base_url()?>assets/libs/common.js"></script>
-  <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
+  <!-- <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script> -->
   <script src="<?php echo base_url()?>assets/libs/footerProcess.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171441107-1"></script>
   <script>

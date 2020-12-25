@@ -48,13 +48,13 @@ function get_box_posts() {
             for(var i=0;i<3;i++)
             {
                 post_list=  post_list+ 
-                '<div class="col-md-4">'+
+                '<div class="col-md-4 mb-3">'+
                 '<div class="card" style="height:180px">  '+
                 '  <div class="card-body text-left" style="overflow:hidden">'+
                 '   <a href="'+baseUrl+'news/'+pageData[i].slug+'" >'+
-                '       <h6 class="color-dark" style="color:#000000 ">'+pageData[i].title.rendered+'</h6>  '+
+                '       <h6 class="color-dark" style="color:#000000">'+pageData[i].title.rendered+'</h6>  '+
                 '   </a>'+
-                '    <small style="color:#D79F01">'+pageData[i].excerpt.rendered+'</small>'+
+                '    <small style="">'+pageData[i].excerpt.rendered+'</small>'+
                 '  </div>'+
                 '</div>'+
                 '</div>'

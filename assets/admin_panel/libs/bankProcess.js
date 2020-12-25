@@ -289,6 +289,7 @@ function editAdviceHeading(id)
 //bank full review 
 function search_bank_review()
 {
+    $("#web_link").html('');
     $("#what_to_like").html('');
     $("#what_to_caution").html('');
     $("#full_review").html('');
@@ -308,6 +309,7 @@ function search_bank_review()
             }
             bankFullData = obj.data;
             $("#bank_full_detail").css('display','block');		
+            $("#web_link").html('<a href="WEB LINK: '+baseUrl+'bank_full_review/'+bank_name+'">'+baseUrl+'bank_full_review/'+bank_name+'</a>');	
             $("#what_to_like").html(bankFullData['what_to_like']);	
             $("#what_to_caution").html(bankFullData['what_to_caution']);	
             $("#full_review").html(bankFullData['full_review']);

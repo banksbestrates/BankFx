@@ -1,0 +1,113 @@
+/*
+Theme Name: CBusiness Investment
+Theme URI: https://www.themescave.com/themes/wordpress-theme-finance-free-cbusiness-investment/
+Author: Themescave
+Author URI: http://www.themescave.com/
+Description: CBusiness Investment WordPress theme is used for all type of corporate business. That Multipurpose Theme covers many Business includes various market areas like corporate business, Marketing, Finance, Stock Market, Investment business, IT infrastructure, Consultant, Manufacture plant, Services, Retailer, Wholesaler, Online business, Insurance, SIP, Mutual Fund, Services, Marketing, Finance, Stock Market, Nifty, Store business, IT Firm, Retailers, Education, Shopping, E-commerce, Gift Service market, Beauty, Fashion, Blogger, News, Portfolio, and all types of business. Demo link: https://www.themescave.com/demo/cbusiness-investment-pro/, Support link : https://www.themescave.com/forums/forum/cbusiness-investment-pro/, Documentation link: https://www.themescave.com/documentation/cbusiness-investment-pro/, Product URL: https://www.themescave.com/themes/wordpress-cbusiness-investment-pro-business/
+Version: 0.4
+Requires at least: 4.0
+Tested up to: 5.5
+Requires PHP: 5.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: cbusiness-investment
+Tags: custom-menu,one-column,right-sidebar,theme-options,threaded-comments,translation-ready,blog,custom-background,custom-colors,custom-header,featured-images,full-width-template,two-columns,portfolio,sticky-post,news
+
+CBusiness Investment WordPress Theme, Copyright 2020 themescave(themescave.com)
+CBusiness Investment is distributed under the terms of the GNU GPL
+*/
+/*------------------------------------------------------------------
+
+[Table of contents]
+
+1. Main Tags
+2. Accessibility
+
+-------------------------------------------------------------------*/
+/* Main Tags */
+*{ margin:0; padding:0; outline:none;}
+body{ margin:0; padding:0;line-height:20px; font-size:13px; color:#5c5c5c; font-family:'PT Sans', Helvetica, sans-serif;}
+ol,ul{ margin:0; padding:0;}
+ul li ul, ul li ul li ul, ol li ol, ol li ol li ol{ margin-left:10px;}
+h1,h2,h3,h4,h5,h6{ color:#484f5e; font-family:'raleway', sans-serif; margin:0 0 20px; padding:0; line-height:1.1; font-weight:400; }
+h1{ font-size:32px;}
+h2{ font-size:28px;}
+h3{ font-size:23px;}
+h4{ font-size:20px;}
+h5{ font-size:18px;}
+h6{ font-size:16px;}
+img{ border:none; margin:0; padding:0; height:auto}
+html,body {  font-size: 13px; }
+p{ margin:0; padding:0;}
+a{ text-decoration:none; color:#5c5c5c;}
+a:hover{ color:#333;}
+pre {     white-space: pre-wrap;     word-break: break-word;}
+
+.video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+.video-container iframe, .video-container object, .video-container embed, .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* Accessibility */
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  right: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+.sitenav ul li a:focus {    color: #97C7DD;border-bottom: 1px solid #97C7DD;}
+a[href]:focus{    background-color: rgba(0,0,0,0.8);    color:#ffffff;    }
+.headercommon li a.fa:focus{ color: #ffffff;background-color: rgba(0,0,0,0.8); padding:5px;  }
+#sidebar ul li a:focus{ color:#ffffff; background-color: rgba(0,0,0,0.8);}
+.header_top .logo a:focus{background: #f8f8f8;
+background:
+rgba(75%, 75%, 75%, .25);
+border-bottom-width: 3px;
+margin-bottom: -2px;}
+
+.comment-author-link a[href]:focus, #sidebar ul li.recentcomments a.url:focus{
+  background-color: rgba(0,0,0,0.8); color: #ffffff;padding: 5px !important;
+}
+#header_bottom{ background-color: #ffffff; padding: 10px 0;}
+.header_bottom_left{ float: left; width: 30%;}
+.header_bottom_right{ float: right; width: 65%;}
+
+
+.post-date{display:none;}
+.post-comment{ display: none; }
+.postmeta{ padding: 0; }
+.postmeta .post-categories{ display: none; }

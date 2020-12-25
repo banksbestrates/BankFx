@@ -24,7 +24,8 @@
                 foreach($page_data as $d){
                   if($d->div_type=="div_1")
                   {?>
-                    <div class="carousel-item <?php echo $d->default_class?>" style="background-image: url('<?php echo base_url() . $d->image?>')">
+                    <!-- <div class="carousel-item <?php echo $d->default_class?>" style="background-image: url('<?php echo base_url() . $d->image?>')"> -->
+                    <div class="carousel-item <?php echo $d->default_class?>" style="background-color:#7baec7;background-image:url('<?php echo base_url() . $d->image?>')">
                       <!-- <img src="<?php echo base_url() . $d->image?>" style="height:auto; width:100%" /> -->
                       <!-- <div class="carousel-item <?php echo $d->default_class?>" style="background-image: url('<?php echo base_url() . $d->image?>');"> -->
                         <div class="carousel-container">
@@ -55,9 +56,9 @@
 
 <main id="main">
   <!-- center boxes view -->
-     <div class="container homecard_top_margin">
+      <div class="container homecard_top_margin">
         <div class="col-md-12 px-0 row card_view">
-              <div class="col-md col-sm-4">
+              <div class="col-md col-sm-4 mb-3">
                 <a href="<?php echo base_url()?>mortgage_overview">
                   <div class="card">
                       <div style="width:100%; text-align:center">
@@ -67,7 +68,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-md col-sm-4">
+              <div class="col-md col-sm-4 mb-3">
                 <a href="<?php echo base_url()?>bank_overview">
                   <div class="card">
                     <div style="width:100%; text-align:center">
@@ -77,7 +78,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-md col-sm-4">
+              <div class="col-md col-sm-4 mb-3">
                 <a href="<?php echo base_url()?>best_banks">
                   <div class="card">
                     <div style="width:100%; text-align:center">
@@ -87,7 +88,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-md col-sm-4">
+              <div class="col-md col-sm-4 mb-3">
                 <a href="<?php echo base_url()?>branch_locator">
                   <div class="card">
                     <div style="width:100%; text-align:center">
@@ -97,7 +98,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-md col-sm-4">
+              <div class="col-md col-sm-4 mb-3">
                 <a href="<?php echo base_url()?>credit_overview">
                   <div class="card">
                     <div style="width:100%; text-align:center">
@@ -107,7 +108,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-md col-sm-4">
+              <div class="col-md col-sm-4 mb-3">
                 <a href="<?php echo base_url()?>loan_overview">
                   <div class="card">
                     <div style="width:100%; text-align:center">

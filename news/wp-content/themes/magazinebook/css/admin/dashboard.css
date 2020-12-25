@@ -1,0 +1,113 @@
+.magazinebook-header small {
+  font-size: 16px;
+  margin-left: 10px;
+  color: #72777c; }
+
+.magazinebook-about-wrap .link-icons {
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.magazinebook-about-wrap .notice {
+  display: none; }
+
+.magazinebook-about-wrap .mb-demo-screenshot {
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: 10px; }
+
+.magazinebook-about-wrap .mb-simple-link {
+  text-decoration: none; }
+
+.magazinebook-about-wrap .mb-d-block {
+  display: block; }
+
+.magazinebook-about-wrap .mb-second-panel {
+  margin-top: 50px; }
+  .magazinebook-about-wrap .mb-second-panel h2 {
+    font-size: 20px; }
+  .magazinebook-about-wrap .mb-second-panel .welcome-panel-column {
+    width: 33%; }
+  .magazinebook-about-wrap .mb-second-panel .welcome-panel-column:first-child {
+    width: 33%; }
+
+.magazinebook-clearfix {
+  clear: both; }
+
+div.magazinebook-rate-us {
+  max-width: 899px;
+  clear: both;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.04);
+  margin-bottom: 23px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  float: left;
+  margin-right: 40px; }
+  div.magazinebook-rate-us h3 {
+    margin-top: 0; }
+  div.magazinebook-rate-us .dashicons-thumbs-up {
+    font-size: 15px;
+    vertical-align: middle; }
+
+.magazinebook-notice {
+  position: relative; }
+  .magazinebook-notice .magazinebook-message-close {
+    text-decoration: none; }
+    .magazinebook-notice .magazinebook-message-close:before {
+      float: right;
+      margin-left: 5px; }
+  .magazinebook-notice .magazinebook-notice-content-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px 10px; }
+  .magazinebook-notice .magazinebook-notice-image img {
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+  .magazinebook-notice .magazinebook-notice-header {
+    padding: 5px 10px; }
+    .magazinebook-notice .magazinebook-notice-header h3 {
+      font-size: 21px;
+      font-weight: 400;
+      margin-bottom: 0; }
+    .magazinebook-notice .magazinebook-notice-header .notice-desc {
+      color: #72777c;
+      font-size: 16px;
+      margin-top: 4px; }
+    .magazinebook-notice .magazinebook-notice-header hr {
+      margin: 15px -22px;
+      margin-bottom: 0; }
+  .magazinebook-notice .magazinebook-notice-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 40px;
+    width: 60%; }
+    .magazinebook-notice .magazinebook-notice-content h3 {
+      margin-top: 0px;
+      font-size: 16px; }
+      .magazinebook-notice .magazinebook-notice-content h3 span {
+        margin-right: 3px; }
+    .magazinebook-notice .magazinebook-notice-content .mb-notice-content-col {
+      -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      min-width: 0;
+      max-width: 100%; }
+      .magazinebook-notice .magazinebook-notice-content .mb-notice-content-col p {
+        color: #72777c; }
+      .magazinebook-notice .magazinebook-notice-content .mb-notice-content-col .button {
+        margin-top: 15px; }
+
+.magazinebook-notice.theme-review-notice {
+  padding: 5px 15px 15px; }
+  .magazinebook-notice.theme-review-notice .btn {
+    line-height: 30px;
+    margin-right: 15px; }
+    .magazinebook-notice.theme-review-notice .btn span {
+      line-height: 30px; }

@@ -1,0 +1,10 @@
+<wpml-config>
+	<admin-texts>
+		<key name="theme_mods_timesnews">
+			<key name="search_text" />
+			<key name="excerpt_text" />
+			<key name="footer-edit-options" />
+			<key name="sticky_text" />
+		</key>
+	</admin-texts>
+</wpml-config>

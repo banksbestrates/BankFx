@@ -1,0 +1,32 @@
+.customize-control-description {
+  font-size: 95%;
+  opacity: 0.8;
+}
+
+li.customize-control {
+  margin-bottom: 15px;
+}
+
+.newsdot-divider-heading {
+  background-color: #fff;
+  margin: 0 -12px;
+  color: #007cba;
+  padding: 8px 12px;
+  border-width: 1px 0;
+  border-color: #dddddd;
+  border-style: solid;
+}
+.newsdot-divider-heading .customize-control-title {
+  margin-bottom: 0;
+  cursor: default;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+li.customize-control-divider-heading {
+  margin-top: 25px;
+}
+.accordion-section-content.open li.customize-control-divider-heading:nth-child(2), .accordion-section-content.open li.customize-control-divider-heading:nth-child(3) {
+  margin-top: 0;
+}

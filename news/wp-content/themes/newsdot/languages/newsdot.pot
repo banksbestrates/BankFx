@@ -1,0 +1,515 @@
+# Copyright (C) 2020 TwoPoints
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: NewsDot 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/newsdot\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-06-23T17:45:46+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.3.0\n"
+"X-Domain: newsdot\n"
+
+#. Theme Name of the theme
+#: footer.php:23
+msgid "NewsDot"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://wp-points.com/themes/newsdot"
+msgstr ""
+
+#. Description of the theme
+msgid "A perfect theme for creating your next News website."
+msgstr ""
+
+#. Author of the theme
+msgid "TwoPoints"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://wp-points.com"
+msgstr ""
+
+#: 404.php:28
+msgid "404"
+msgstr ""
+
+#: 404.php:29
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:30
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: 404.php:44
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:64
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: archive.php:58
+#: index.php:61
+#: search.php:59
+msgid "Back"
+msgstr ""
+
+#: archive.php:59
+#: index.php:62
+#: search.php:60
+msgid "Next"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:31
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:37
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:19
+msgid "Copyright &copy; "
+msgstr ""
+
+#: footer.php:21
+msgid "Proudly powered by: "
+msgstr ""
+
+#: footer.php:21
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: footer.php:21
+msgid "WordPress"
+msgstr ""
+
+#: footer.php:23
+msgid "Theme: "
+msgstr ""
+
+#: footer.php:23
+msgid "https://wp-points.com/themes/newsdot"
+msgstr ""
+
+#: functions.php:32
+msgid "Primary"
+msgstr ""
+
+#: functions.php:104
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:106
+msgid "Add widgets here for sidebar."
+msgstr ""
+
+#: functions.php:116
+msgid "Header Right"
+msgstr ""
+
+#: functions.php:118
+msgid "Add widgets here to display in main header."
+msgstr ""
+
+#: header.php:20
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:65
+msgid "Menu"
+msgstr ""
+
+#: inc/customizer/dropdown-category.php:24
+msgid "All Categories"
+msgstr ""
+
+#: inc/customizer/theme-options.php:9
+msgid "Enter logo height (in px)"
+msgstr ""
+
+#: inc/customizer/theme-options.php:18
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer/theme-options.php:27
+msgid "General Settings"
+msgstr ""
+
+#: inc/customizer/theme-options.php:36
+msgid "Design"
+msgstr ""
+
+#: inc/customizer/theme-options.php:48
+msgid "Select Primary Color"
+msgstr ""
+
+#: inc/customizer/theme-options.php:54
+msgid "Default (Red)"
+msgstr ""
+
+#: inc/customizer/theme-options.php:55
+msgid "Indigo"
+msgstr ""
+
+#: inc/customizer/theme-options.php:56
+msgid "Teal"
+msgstr ""
+
+#: inc/customizer/theme-options.php:57
+msgid "Pink"
+msgstr ""
+
+#: inc/customizer/theme-options.php:66
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer/theme-options.php:78
+msgid "Select Font Family"
+msgstr ""
+
+#: inc/customizer/theme-options.php:84
+msgid "Default System Fonts"
+msgstr ""
+
+#: inc/customizer/theme-options.php:85
+msgid "Roboto"
+msgstr ""
+
+#: inc/customizer/theme-options.php:86
+msgid "Jost"
+msgstr ""
+
+#: inc/customizer/theme-options.php:87
+msgid "Overpass"
+msgstr ""
+
+#: inc/customizer/theme-options.php:88
+msgid "Lato"
+msgstr ""
+
+#: inc/customizer/theme-options.php:98
+msgid "Do not tranform titles to Uppercase"
+msgstr ""
+
+#: inc/customizer/theme-options.php:110
+msgid "Reduce the boldness of titles"
+msgstr ""
+
+#: inc/customizer/theme-options.php:121
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer/theme-options.php:132
+msgid "Select Site Layout"
+msgstr ""
+
+#: inc/customizer/theme-options.php:137
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/customizer/theme-options.php:138
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/customizer/theme-options.php:139
+msgid "No Sidebar"
+msgstr ""
+
+#: inc/customizer/theme-options.php:140
+msgid "No Sidebar (Full Width)"
+msgstr ""
+
+#: inc/customizer/theme-options.php:149
+msgid "Header Top Bar"
+msgstr ""
+
+#: inc/customizer/theme-options.php:159
+msgid "Show Top Bar Above Main Header"
+msgstr ""
+
+#: inc/customizer/theme-options.php:170
+msgid "Date & Search"
+msgstr ""
+
+#: inc/customizer/theme-options.php:182
+msgid "Show Date in the Top Bar"
+msgstr ""
+
+#: inc/customizer/theme-options.php:195
+msgid "Show Search Box in the Top Bar"
+msgstr ""
+
+#: inc/customizer/theme-options.php:207
+#: inc/template-functions.php:117
+msgid "Top Stories"
+msgstr ""
+
+#: inc/customizer/theme-options.php:219
+msgid "Show Top Stories in the Top Bar"
+msgstr ""
+
+#: inc/customizer/theme-options.php:232
+msgid "Select Category for Top Stories"
+msgstr ""
+
+#: inc/customizer/theme-options.php:240
+msgid "Top Stories:"
+msgstr ""
+
+#: inc/customizer/theme-options.php:244
+msgid "Label for Top Stories"
+msgstr ""
+
+#: inc/customizer/theme-options.php:256
+msgid "Social Media Links"
+msgstr ""
+
+#: inc/customizer/theme-options.php:268
+msgid "Show Social Media Links in Top Bar"
+msgstr ""
+
+#: inc/customizer/theme-options.php:280
+msgid "Social Media Links (Comma Separated)"
+msgstr ""
+
+#: inc/customizer/theme-options.php:281
+msgid "Add the full link to your Social Profiles. Seperate with comma ,"
+msgstr ""
+
+#: inc/customizer/theme-options.php:293
+msgid "Primary Header"
+msgstr ""
+
+#: inc/customizer/theme-options.php:303
+#: inc/customizer/theme-options.php:343
+msgid "Select Primary Header Background"
+msgstr ""
+
+#: inc/customizer/theme-options.php:308
+msgid "Light"
+msgstr ""
+
+#: inc/customizer/theme-options.php:309
+msgid "Dark"
+msgstr ""
+
+#: inc/customizer/theme-options.php:310
+msgid "Image"
+msgstr ""
+
+#: inc/customizer/theme-options.php:319
+msgid "Background Image"
+msgstr ""
+
+#: inc/customizer/theme-options.php:331
+msgid "Header Background Image"
+msgstr ""
+
+#: inc/customizer/theme-options.php:350
+msgid "Light Overlay"
+msgstr ""
+
+#: inc/customizer/theme-options.php:351
+msgid "Dark Overlay"
+msgstr ""
+
+#: inc/customizer/theme-options.php:352
+msgid "No Overlay"
+msgstr ""
+
+#: inc/customizer/theme-options.php:360
+msgid "Banner Section"
+msgstr ""
+
+#: inc/customizer/theme-options.php:370
+msgid "Show Banner Section"
+msgstr ""
+
+#: inc/customizer/theme-options.php:381
+msgid "Part 1 (Banner Slider)"
+msgstr ""
+
+#: inc/customizer/theme-options.php:393
+msgid "Select Category for Banner Part 1"
+msgstr ""
+
+#: inc/customizer/theme-options.php:405
+msgid "Label for Banner Slider"
+msgstr ""
+
+#: inc/customizer/theme-options.php:417
+msgid "Part 2 (Second Column)"
+msgstr ""
+
+#: inc/customizer/theme-options.php:429
+#: inc/customizer/theme-options.php:465
+msgid "Select Category for Banner Part 2"
+msgstr ""
+
+#: inc/customizer/theme-options.php:441
+#: inc/customizer/theme-options.php:477
+msgid "Label for Banner Part 2"
+msgstr ""
+
+#: inc/customizer/theme-options.php:453
+msgid "Part 3 (Third Column)"
+msgstr ""
+
+#: inc/customizer/theme-options.php:488
+msgid "Content Settings"
+msgstr ""
+
+#: inc/customizer/theme-options.php:498
+msgid "Show Post Author"
+msgstr ""
+
+#: inc/customizer/theme-options.php:510
+msgid "Show Post Date"
+msgstr ""
+
+#: inc/customizer/theme-options.php:522
+msgid "Show Post Comments Link"
+msgstr ""
+
+#: inc/customizer/theme-options.php:533
+msgid "Single Post"
+msgstr ""
+
+#: inc/customizer/theme-options.php:544
+msgid "Show Last Updated Date on Single Post"
+msgstr ""
+
+#: inc/customizer/theme-options.php:557
+msgid "Show Post Thumbnail on Single Post"
+msgstr ""
+
+#: inc/customizer/theme-options.php:569
+msgid "Show Summary Box on the Left Side"
+msgstr ""
+
+#: inc/customizer/theme-options.php:581
+msgid "Show 'More On' Box on the Left Side"
+msgstr ""
+
+#: inc/customizer/theme-options.php:582
+msgid "Similar posts will be fetched using post's tags."
+msgstr ""
+
+#: inc/customizer/theme-options.php:590
+#: template-parts/content-single.php:40
+msgid "Summary"
+msgstr ""
+
+#: inc/customizer/theme-options.php:594
+msgid "Label for Summary Box"
+msgstr ""
+
+#: inc/customizer/theme-options.php:603
+#: template-parts/content-single.php:75
+msgid "More On"
+msgstr ""
+
+#: inc/customizer/theme-options.php:607
+msgid "Label for 'More On' Box"
+msgstr ""
+
+#: inc/template-functions.php:40
+msgctxt "copyright date format; check date() on php.net"
+msgid "Y"
+msgstr ""
+
+#: inc/template-functions.php:64
+msgctxt "copyright date format; check date() on php.net"
+msgid "Y-m-d\\TH:i:sP"
+msgstr ""
+
+#: inc/template-functions.php:64
+msgctxt "copyright date format; check date() on php.net"
+msgid "D, M j, Y"
+msgstr ""
+
+#: inc/template-functions.php:117
+msgid ": "
+msgstr ""
+
+#: inc/template-tags.php:89
+msgid "Published On: "
+msgstr ""
+
+#: inc/template-tags.php:92
+msgid "Last Updated On: "
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:114
+#: inc/template-tags.php:140
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:157
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/woocommerce.php:184
+msgid "View your shopping cart"
+msgstr ""
+
+#. translators: number of items in the mini cart.
+#: inc/woocommerce.php:188
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: search query.
+#: search.php:32
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:25
+#: template-parts/content-single.php:133
+#: template-parts/content.php:59
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-single.php:120
+#: template-parts/content.php:46
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""

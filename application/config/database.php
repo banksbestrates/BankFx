@@ -68,7 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | make active.  By default there is only one group (the 'default' group).
 |
 | The $query_builder variables lets you determine whether or not to load
-| the query builder class.
+| the query buildelocalhosts.
 */
 $active_group = 'default';
 $query_builder = TRUE;
@@ -77,8 +77,8 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',
-	'password' => '',
-	'database' => 'banksbestrates',
+	'password' => 'root',
+	'database' => 'bank_fx',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

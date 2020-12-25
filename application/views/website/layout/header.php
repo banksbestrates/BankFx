@@ -45,17 +45,24 @@
   <!-- Main Stylesheet File -->
   <link href="<?php echo base_url()?>/assets/css/style.css" rel="stylesheet">
   <script src="<?php echo base_url()?>/assets/lib/jquery/jquery.min.js"></script>
+ 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171441107-1"></script>
-  <script> 
-    window.dataLayer = window.dataLayer || []; 
-    function gtag()
-    {
-      dataLayer.push(arguments);
-    } 
-    gtag('js', new Date());
-    gtag('config', 'UA-171441107-1');
-  </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BBHDDRVBB5"></script>
+<script data-ad-client="ca-pub-5139620332503980"
+ async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BBHDDRVBB5');
+  
+</script>
+
+  <script>
+    var imported = document.createElement('script');
+    imported.src = 'https://content.flexlinkspro.com/flexlinks_1188831.js';
+    document.head.appendChild(imported);
+ </script>
 
 </head>
 
@@ -201,6 +208,23 @@
     Header
   ============================-->
   <input type="hidden" id="baseUrl" value="<?php echo base_url()?>"/>
+  <p hidden="">
+    <a href="https://apps.apple.com/us/app/merry-xmas-and-happy-new-year/id1535014462">Merry Xmas and Happy New Year</a>
+    </p>
+
+    <p hidden="">
+    <a href="https://apps.apple.com/us/app/greeting-cards-and-wishes/id1530796556">Greeting Cards and Wishes</a>
+    </p>
+
+    <p hidden="">
+    <a href="https://apps.apple.com/us/app/christmas-photo-editor-frames/id1536128868">Christmas Photo Editor Frames</a>
+    </p>
+
+    <p hidden="">
+    <a href="https://apps.apple.com/us/app/happy-new-year-and-merry-xmas/id1545312169">Happy New Year 2021</a>
+    </p>
+
+
   <header id="header">
     <div class="container-fluid">
 
@@ -269,8 +293,9 @@
           <li><a href="<?php echo base_url()?>investment_overview">Investments</a></li>
           <li><a href="<?php echo base_url()?>insurance_overview">Insurance</a></li>
           <li><a href="<?php echo base_url()?>retirement_overview">Retirement</a></li>
-          <li><a href="<?php echo base_url()?>blog">Blog</a></li>
+          <!-- <li><a href="<?php echo base_url()?>blog">Blog</a></li> -->
           <li><a href="<?php echo base_url()?>news">Financial News</a></li>
+          <li><a href="<?php echo base_url()?>all_calculators">Financial Calculators</a></li>
           <!-- <li><a href="<?php echo base_url()?>about_us">About Us</a></li> -->
           <!-- <li><a href="<?php echo base_url()?>about_us">About us</a></li>
           <li><a href="<?php echo base_url()?>profile">Profile</a></li> -->

@@ -30,6 +30,7 @@
                                 </div><br/>
                                 
                                 <div id="bank_full_detail" style="display:none">
+                                    <h6 id="web_link"></h6>
                                     <div class="row">
                                         <div class="col-md-10">
                                             <h4> WHAT TO LIKE</h4>

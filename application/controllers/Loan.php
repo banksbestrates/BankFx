@@ -142,7 +142,27 @@ class Loan extends CI_Controller {
 		$this->load->view('website/layout/header');
 		$this->load->view('website/pages/loan/loan_calculator', array("page_data"=>$loan_data));
 		$this->load->view('website/layout/footer');
-    }
+	}
+	public function amortization_schedule_calculator()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/loan/amortization_schedule_calculator');
+		$this->load->view('website/layout/footer');
+	}
+	public function saving_goal_calculator()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/loan/saving_goal_calculator');
+		$this->load->view('website/layout/footer');
+	}
+	public function simple_savings_calculator()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/loan/simple_savings_calculator');
+		$this->load->view('website/layout/footer');
+	}
+	
+
 	public function debt_consolidation()
 	{
 		$this->load->view('website/layout/header');

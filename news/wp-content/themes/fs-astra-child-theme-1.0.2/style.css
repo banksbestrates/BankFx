@@ -1,0 +1,412 @@
+/* 
+Theme Name:		 Banks Best Rates
+Theme URI:		https://bank.demobee.com/
+Description:	 This is a child theme for FS Core parent theme.
+Author:			 Fantastech Solutions
+Author URI:		 https://fantastech.co
+Template:		 astra
+Version:		 1.0.2
+*/
+
+/* CSS of all screens */
+
+/**********************
+* Global
+***********************/
+
+
+	a#ast-scroll-top {
+		width: 44px;
+		height: 44px;
+		text-align: center;
+		right: 15px;
+		bottom: 15px;
+		padding: 5px;
+	}
+/**********************
+* Header
+***********************/
+	.main-header-bar {
+		border-bottom-color: #000 !important;
+	}
+	.side_nav_item i, i.fas.fa-university {
+		font-size: 20px;
+		padding-right: 20px;
+	}
+	.ast-masthead-custom-menu-items.widget-custom-menu-item {
+		position: absolute;
+		top: 15px;
+	}
+	 .sidenav .closebtn {
+		position: absolute;
+		top: 20px;
+		font-size: 36px;
+		padding: 0px 0px 30px 0px;
+	} 
+	.sidenav {
+		overflow: scroll;
+		background-color: white;
+		height: 100%;
+		position: fixed;
+		z-index: 800;
+		top: 0;
+		left: 0;
+		overflow-x: hidden;
+		padding-top: 37px;
+		background: rgba(236, 238, 242, 0.96);
+		box-shadow: 0px 10px 10px black;
+	}
+	.sidenav ul li {
+		border: 1px solid;
+	}
+	.sidenav a {
+		font-size: 13px;
+		text-transform: uppercase;
+		overflow: hidden;
+		padding: 10px 22px 10px 15px;
+		position: relative;
+		text-decoration: none;
+		width: 100%;
+		display: block;
+		outline: none;
+		font-weight: 700;
+		color: #818181 !important;
+	}
+	.sidenav a:hover{
+		color: #000 !important;
+	}
+	.sidenav .list-unstyled.components {
+		padding: 25px 25px 10px;
+	}
+	hr{
+		margin: 15px 0;
+		background-color: rgba(0, 0, 0, 0.1) !important;
+		height: 0.5px !important;
+	}
+	.closebtn img {
+		margin-top: -25px;
+		padding: 0 30px 0 13px;
+	}
+/**********************
+* Footer
+***********************/
+
+	.footer-adv-widget-1 img{
+		max-width:200px !important;
+	}
+	.footer-adv-widget-1{
+		padding-right:5px !important;
+	}
+	.footer-adv-widget-1 .widget {
+		margin-bottom: 15px;
+	}
+	.footer-adv-widget-3 .widget{
+		margin-bottom: 28px;
+	}
+	.footer-adv-widget {
+		padding-right: 10px;
+	}
+	.footer-adv p {
+		margin-bottom: 0;
+		line-height: 24px;
+	}
+	.widget_nav_menu ul li:first-child {
+		padding-top: 0;
+	}
+	.widget_nav_menu ul li {
+		padding: 8px 0 8px 8px;
+		border-bottom: 1px solid black;
+	}
+	.footer-adv-widget .widget-title {
+		border-bottom: 1px solid #D79F01;
+		padding-bottom: 10px;
+		margin-bottom: 18px;
+	}
+	.social-links a {
+		font-size: 18px;
+		width: 36px;
+		height: 36px;
+		background-color: #333;
+		color: #eee !important;
+		border-radius: 50%;
+		padding: 1px 10px;
+		text-align: center;
+		margin-right: 1px;
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.social-links a:hover{
+			background: #D79F01;
+		color: #000 !important;
+	}
+	.footer-adv-widget-3 .textwidget .text-white {
+		color: #fff !important;
+	}
+	.footer-adv-widget-3 .textwidget p {
+		line-height: 26px !important;
+	}
+/**********************
+* Sidebar
+***********************/
+	.sidebar-main .widget-title {
+		background-color: #0374A1;
+		color: #fff;
+		padding: 13px;
+		text-align: center;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.sidebar-main .widget {
+		border: 1px solid rgba(112, 112, 112,0.3);
+		 padding: 0 20px;
+		font-size: 18px !important;
+		line-height: 24px;
+	}
+	.sidebar-main blockquote {
+		margin: 0;
+	}
+	.sidebar-main .widget-title a {
+		color: #fff;
+	}
+	.ast-right-sidebar #primary {
+		padding-right: 0;
+		border-right: none !important;
+	}
+	.ast-right-sidebar #secondary{
+		border-left: none;
+		padding-left: 45px;
+	}
+	.sidebar-main blockquote p, .sidebar-main blockquote a {
+		font-size: 14px;
+	}
+/**********************
+* Custom-Layout
+***********************/
+	.top-page-header {
+		background-color: #e5f1f5;
+		padding: 0;
+		border: 1px solid rgba(112,112,112,0.3);
+		background-size: cover;
+		width: 100%;
+		height: 270px;
+		position: relative;
+		float: left;
+		background-position: center;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+	}
+	.top-page-header .wp-block-group__inner-container {
+		margin: 0 auto;
+		padding: 0px 20px;
+		width: 100%;
+		max-width: 1140px;
+		position: relative;
+	}
+	
+	.ast-pagination .next.page-numbers, .ast-pagination .page-numbers{
+		color: #0374A1;
+	}
+	
+	.page-header-text-p {
+		max-width: 900px;
+		font-size: 16px;
+		line-height: 1.4;
+		margin-bottom: 20px !important;
+	}
+.wp-block-group__inner-container h1{
+	font-size: 56px;
+	font-weight: 800;
+	margin-bottom: 15px;
+}
+
+
+/**********************
+* Blog page
+***********************/
+	.blog-layout-3 .post-content {
+
+	}
+	.post-content .entry-title {
+		padding-bottom: 10px;
+		border-bottom: 2px solid #CB9D24;
+		font-size: 20px;
+	}
+	.post-content .entry-content p {
+		margin-bottom: 5px !important;
+		line-height: 26px;
+		font-size: 16px;
+	}
+	.post-content .entry-content p.read-more {
+		display: none;
+	}
+	.blog-layout-3 {
+		padding-bottom: 10px !important;
+		border-bottom: none !important;
+	}
+	.ast-article-post {
+		margin-bottom: 10px !important;
+		padding-bottom: 50px;
+	}
+	.post-content .entry-meta {
+		padding-top: 10px;
+	}
+	.post-content .read-more a {
+		color: #D79F01 !important;
+	}
+	.ast-single-post-order span.author-name {
+		font-weight: 700;
+	}
+	.ast-single-post-order .cat-links {
+		font-size: 13px;
+		letter-spacing: 0.34px;
+	}
+	.ast-single-post-order .cat-links a{
+		color: #000 !important;
+	}
+	.blog-layout-3 .post-thumb img{
+		max-width: 100%;
+		width: 100%;
+		max-height: 220px;
+		object-fit: cover;
+
+	}
+	.ast-article-single {
+		border: 1px solid rgba(112,112,112,0.3);
+		padding: 25px 30px;
+	}
+	.post-meta {
+		display: inline-flex;
+		padding-top: 40px;
+		font-size: 15px;
+	}
+	.author-single {
+		padding: 0 8px;
+		font-weight: 700;
+	}
+	.date::before {
+		content: "";
+		background-color: #d69c02;
+		border-radius: 8px;
+		height: 8px;
+		width: 8px;
+		display: inline-block;
+		margin-right: 4px;
+		vertical-align: middle;
+	}
+	span.post-meta-icon {
+		padding-right: 5px;
+	}
+	span.post-meta-icon i {
+		color: #D79F01;
+	}
+
+	span.published {
+		padding-right: 20px;
+	}
+	.single .entry-header {
+		margin-bottom: 10px;
+	}
+	.single .entry-header .post-thumb img {
+		margin-top: 10px !important;
+		width: 800px;
+	}
+	.article-blog-title h2 {
+		font-weight: 700;
+		padding-bottom: 20px;
+	}
+	.form-submit input#submit {
+		background-color: #0374A1;
+		color: #fff;
+	}
+/**********************
+* Ticker
+***********************/
+
+	.wptu-ticker.wptu-ticker-main {
+		border: 1px solid rgba(112,112,112,0.3) !important;
+		margin-bottom: 50px;
+		height: 50px !important;
+	}
+	#wptu-ticker-1 > .wptu-ticker-title > span {
+		display: none;
+	}
+	#wptu-ticker-1 > .wptu-ticker-title .wptu-ticker-head{
+		font-weight: 700;
+		font-size: 15px;
+	}
+	#wptu-ticker-1 > .wptu-ticker-block > ul > li > a {
+		color: #6C6C6C !important;
+		font-size: 16px;
+		padding-top: 3px;
+		vertical-align: middle;
+	}
+
+
+
+/* CSS for screens below 992px (tablet screens) */
+@media only screen and (max-width: 992px){
+	.ast-right-sidebar #secondary {
+		padding-left: 0 !important;
+	}
+	.main-header-bar .ast-container, #masthead .ast-container{
+		padding-left: 0px !important;
+	}
+
+}
+
+/* CSS for screens below 767px (mobile screens) */
+@media only screen and (max-width: 767px){
+	.top-page-header {
+		padding: 30px 0px;
+	}
+	.post-content .entry-title a, 
+	.ast-single-post .entry-title {
+		font-size: 25px !important;
+	}
+	.ast-right-sidebar #secondary {
+		padding-left: 0px !important;
+	}
+	blockquote {
+		margin: 0;
+		padding: 0;
+	}
+	blockquote p{
+		font-size: 20px !important;
+	}
+	.main-header-bar .ast-container {
+		padding: 0 10px !important;
+	}
+	.ast-button-wrap .menu-toggle .menu-toggle-icon {
+		font-size: 24px;
+		font-weight: 700;
+	}
+	.wptu-ticker .wptu-ticker-main {
+		margin-bottom: 20px;
+	}
+	.post-meta {
+		padding-top: 20px;
+		font-size: 14px;
+	}
+	.wp-block-group__inner-container h1{
+		font-size: 50px;
+	}
+	.page-header-text-p {
+		font-size: 18px;
+	}
+	.article-blog-title, .wptu-ticker {
+		margin-left: 0 !important;
+	}
+	.ast-article-post {
+		padding: 0 20px !important;
+	}
+	.blog-layout-3 .post-content{
+		margin-left: 0 !important;
+	}
+	.ast-article-single {
+    	padding: 20px;
+	}
+}
+

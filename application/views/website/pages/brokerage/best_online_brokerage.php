@@ -2,33 +2,34 @@
   <!--==========================
     over view banner
   ============================-->
-  <div class="overview_banner">
-    <div class="banner_heading w-75">
-        <?php if(count($page_data)>=1){
-              foreach($page_data as $d){
-                if($d->div_type == "overview_heading"){?>
-                  <h1><?php echo $d->heading ?></h1>
-                  <p><?php echo $d->content ?></p>
-          <?php } 
-          }
-        }?>
-    </div>
-  </div>
+  <?php if(count($page_data)>=1){
+            foreach($page_data as $d){
+              if($d->div_type == "overview_heading"){?>
+                  <!-- <div class="overview_banner" style="background-image:linear-gradient(to left, rgba(245, 246, 252, 0.02), rgba(13, 13, 13, 0.73)),url('<?php echo base_url().$d->image ?>"> -->
+                  <div class="overview_banner" style="background-image:url('<?php echo base_url().$d->image ?>')">
+                  <div class="banner_heading">
+                    <h1 class="display-4"><?php echo $d->heading ?></h1>
+                    <div id="heading_content_text"><?php echo $d->content?></div>
+                  </div>
+                </div>
+        <?php } 
+        }
+    }?>
 
-<div class="container pb-3"> 
+<div class="container"> 
     <div class="col-md-12 row px-0">
-        <div class="col-md-10">
-            <!-- <span>Bank Reviews ></span> <span class="text_yellow">Aliiant Bank</span> -->
+        <!-- <div class="col-md-10">  
             <h2 class="font-weight-900 pt-4 mb-2">The Best Online Brokers for <?php echo date("Y"); ?> </h2>
-            <span>Published on <?php echo date("M d"); ?> . Do you want to get more information ?</span>
         </div> 
-        <div class="col-md-2">
-            
-        </div> 
+        <div class="col-md-2">     
+        </div>  -->
     </div>
 </div>
 
-<?php if(count($page_data)>=1){
+<div id="brokerage_posts">
+</div>
+
+<!-- <?php if(count($page_data)>=1){
       foreach($page_data as $d){
       if($d->div_type == "normal_content"){?>
         <div class="container pt-5 ">
@@ -37,10 +38,10 @@
         </div>
       <?php }
       }
-}?>
+}?> -->
 
 
-<div class="container py-4">
+<!-- <div class="container py-4">
     <h4 class="border_bottom_golden font-weight-900">Best Online Brokers</h4>
     <table class="table text-center text-secondary font-weight-bold">
         <thead>
@@ -128,11 +129,13 @@
             This line can be used as a disclaimer for when the information was pulled last. 
             Thus way the end user might feel more confident with up-to-date numbers.
     </small>
-</div>
- 
+</div> -->
+
 <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
 <script src="<?php echo base_url()?>assets/libs/common.js"></script>
-<script src="<?php echo base_url()?>assets/libs/investingProcess.js"></script>
+<script src="<?php echo base_url()?>assets/libs/brokerageProcess.js"></script>
 <script>
-    get_best_online_brokerage_posts();
+  get_best_brokerage_posts();
 </script>
+ 
+

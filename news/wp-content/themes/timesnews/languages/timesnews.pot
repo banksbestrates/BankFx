@@ -1,0 +1,1177 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TimesNews\n"
+"POT-Creation-Date: 2019-09-11 15:06+0545\n"
+"PO-Revision-Date: 2015-08-07 08:36+0545\n"
+"Last-Translator: \n"
+"Language-Team: Theme Spiral <themespiral@hotmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr__;esc_attr_e;_x;_n;esc_html__;"
+"esc_html_e;_nx\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:22
+msgid "404 Not Found"
+msgstr ""
+
+#: 404.php:23
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:41
+#, php-format
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:38
+msgid "Footer Menu"
+msgstr ""
+
+#: footer.php:71
+msgid "Go Top"
+msgstr ""
+
+#: functions.php:55
+msgid "Primary"
+msgstr ""
+
+#: functions.php:56
+msgid "Social Links"
+msgstr ""
+
+#: functions.php:57
+msgid "Secondary"
+msgstr ""
+
+#: functions.php:58
+msgid "Footer"
+msgstr ""
+
+#: header.php:30
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:64 header.php:138 inc/about-theme/about-theme.php:141
+msgid "Primary Menu"
+msgstr ""
+
+#: header.php:73 header.php:149
+msgid "Search for:"
+msgstr ""
+
+#: header.php:180
+msgid "l, F d, Y"
+msgstr ""
+
+#: image.php:52 template-parts/content-page.php:28
+#: template-parts/content.php:119
+msgid "Pages:"
+msgstr ""
+
+#: image.php:56
+msgid "Page"
+msgstr ""
+
+#: image.php:70
+msgid "Full size"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:14
+msgid "About Theme"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:31 inc/information.php:23
+#, php-format
+msgid "Welcome to %s"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:32
+msgid "Version:"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:34
+msgid ""
+"TimesNews Magazine theme is an amazing modern WordPress theme. You can choose "
+"to build professional websites. It is easy to customize for all kinds of "
+"news, newspaper, magazine, publishing, blog or review sites. It also include "
+"all major aspects like responsive, performance, cross-browser compatible, SEO "
+"ready and supports RTL. It is ready to promotion with social media icons to "
+"reach maximum target audience. Responsive slider impress your customers with "
+"lively eye-catching images right on your banner section."
+msgstr ""
+
+#: inc/about-theme/about-theme.php:38
+#, php-format
+msgid ""
+"%s theme is designed with passion. Please click the below button to display "
+"how your site looks like"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:41
+msgid "Visit Free Demo"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:41
+msgid "Visit Pro Demo"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:45
+msgid "Getting Started?"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:48 inc/about-theme/about-theme.php:75
+msgid "Demo Importer"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:51
+msgid "Support"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:54
+msgid "Setup Section"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:57
+msgid "Pro Features"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:60
+msgid "About Documentation"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:61
+msgid ""
+"Documentation is the information that describes the product to its users. Our "
+"documentation covers only related to Free Themes and Pro Extension Plugins. "
+"It will guide your to develop your Website as we displayed in demo site "
+"without any others help."
+msgstr ""
+
+#: inc/about-theme/about-theme.php:63
+#, php-format
+msgid "%s Documentation"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:65
+msgid "Theme Customizer"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:66
+#, php-format
+msgid ""
+"%s supports the Theme Customizer for all theme settings. Click \"Customize\" "
+"to personalize your site."
+msgstr ""
+
+#: inc/about-theme/about-theme.php:67
+msgid "Start Customizing"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:69
+msgid "F.A.Q (Frequently Asked Questions)"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:70
+msgid "Want to know more about Themes and Plugins developed by Theme Spiral? "
+msgstr ""
+
+#: inc/about-theme/about-theme.php:70
+msgid "F.A.Q"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:77
+msgid ""
+"If your site have your own content then do not use this plugins to import "
+"dummy content. It will mess your site with dummy content. Is your site fresh? "
+"Install the Demo importer plugins and activate it."
+msgstr ""
+
+#: inc/about-theme/about-theme.php:78
+msgid "Do you want to install One Click Demo Import Plugin? "
+msgstr ""
+
+#: inc/about-theme/about-theme.php:81 inc/about-theme/about-theme.php:85
+msgid "Install Demo Plugin"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:89
+msgid "How to install Dummy Content ?"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:91
+msgid ""
+" Please install One Click Demo Import plugins. You can install it after "
+"activating timesnews theme. It is listed in recommended Plugins"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:93
+msgid ""
+"After plugin is activated, it asks you to upload  XML, WIE and  DAT dummy file"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:94
+msgid "Download it from Here "
+msgstr ""
+
+#: inc/about-theme/about-theme.php:95
+msgid ""
+"Unzip timesnews-dummy-content.zip file. You can find all XML, WIE and  DAT "
+"dummy file"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:96
+msgid "Navigate to Appearance > Import Demo Data"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:97
+msgid "Upload"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:98
+msgid "Upload manually and Click on Import demo data."
+msgstr ""
+
+#: inc/about-theme/about-theme.php:99 inc/about-theme/about-theme.php:101
+msgid ""
+"Now all your files and settings has been imported. Now you just need to setup "
+"your menu and front page."
+msgstr ""
+
+#: inc/about-theme/about-theme.php:102
+msgid "Setup Menu:"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:105
+msgid "In the Blog Dashboard, select Appearance > Menus."
+msgstr ""
+
+#: inc/about-theme/about-theme.php:106
+msgid ""
+"Under the Menu Settings, located at the bottom of your screen, select "
+"Primary/ Secondary menu"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:107
+msgid "Click save menu"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:109
+msgid "Setup Home Page:"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:111
+msgid ""
+"Navigate to Dashboard > Reading > Click on ( A static page ) from Your "
+"homepage displays"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:113
+msgid "Select Homepage as Home and Postpage as Blog"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:118
+msgid "About Support"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:119
+msgid ""
+"Need Help? Use our Forums if you have any Themes and Plugins related "
+"questions. Support will be provided only related to our Themes and Plugins"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:120
+msgid "Forums"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:122
+msgid "Sales Questions"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:123
+msgid ""
+"Do you have discussion relating to billing, your account or have pre-sales "
+"questions? Get touch with us!"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:124
+msgid "Contact us"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:130
+msgid "Setup Sections"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:131
+msgid "Setup Site Identity"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:132
+msgid "Site Identity"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:134
+msgid "Setup Main Banner"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:135 inc/customizer/customizer.php:66
+msgid "Main Banner"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:137
+msgid "Setup Social Icons"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:138
+msgid "Social Icons"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:140
+msgid "Setup Primary Menu"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:143 inc/about-theme/about-theme.php:144
+msgid "Setup Header"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:148 inc/about-theme/about-theme.php:149
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:149
+msgid ""
+"Want additional features? Pro extension plugin adds additinal features for "
+"free themes. "
+msgstr ""
+
+#: inc/about-theme/about-theme.php:150
+msgid "Pro Features Extension"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:153
+msgid "Site Layout"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:154
+msgid "Single Sidebar Layout"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:155
+msgid "Flexible Content Width"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:156
+msgid "Sidebar Content Width"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:157
+msgid "Custom Design"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:158
+msgid "Default Text Edit"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:159
+msgid "Choose Main Banner"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:160
+msgid "Category highlight settings"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:161
+msgid "Excerpt Text edit"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:162
+msgid "Footer Layout"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:163
+msgid "Instagram Compatible"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:164
+msgid "Unlimited Color"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:165
+msgid "Font Color"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:166
+msgid "Color Schemes"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:167
+msgid "Background Color"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:168
+msgid "Font Size"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:169
+msgid "Font Family"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:170
+msgid "Footer Column 1/2/3/4"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:171
+msgid "More Social Icons"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:172
+msgid "Change Featured Text in Sticky Post"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:173
+msgid "Standard Section"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:174
+msgid "Standard Section Column 3/4/5"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:182
+msgid "Powerful Pro Extension Features"
+msgstr ""
+
+#: inc/about-theme/about-theme.php:183
+msgid ""
+"Get unlimited features using Pro extension. Purchase TimesNews Pro extension "
+"and get additional features and advanced customization options to make your "
+"website look awesome in different styles. "
+msgstr ""
+
+#: inc/about-theme/about-theme.php:185
+msgid "Free vs Pro"
+msgstr ""
+
+#: inc/common-functions.php:10 inc/theme-functions.php:113
+#: inc/widgets/blog-category-post.php:87 template-parts/content.php:45
+msgid "Read More"
+msgstr ""
+
+#: inc/common-functions.php:39
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: inc/common-functions.php:42
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: inc/common-functions.php:48
+#, php-format
+msgid "Theme: %1$s By %2$s."
+msgstr ""
+
+#: inc/customizer/all-theme-options.php:25
+msgid "Front/ Home page posts categories"
+msgstr ""
+
+#: inc/customizer/all-theme-options.php:26
+msgid ""
+"Selected category display on front/ home page. If not selected, all post will "
+"be displayed"
+msgstr ""
+
+#: inc/customizer/all-theme-options.php:41
+msgid "Blog/ Single Options"
+msgstr ""
+
+#: inc/customizer/all-theme-options.php:53
+msgid "Hide Author"
+msgstr ""
+
+#: inc/customizer/all-theme-options.php:64
+msgid "Hide Date"
+msgstr ""
+
+#: inc/customizer/all-theme-options.php:75
+msgid "Hide Category"
+msgstr ""
+
+#: inc/customizer/all-theme-options.php:86
+msgid "Hide Comments"
+msgstr ""
+
+#: inc/customizer/all-theme-options.php:98
+msgid "Select Sidebar Layout"
+msgstr ""
+
+#: inc/customizer/all-theme-options.php:102
+msgid "Default Right Sidebar"
+msgstr ""
+
+#: inc/customizer/all-theme-options.php:103
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/customizer/all-theme-options.php:113
+msgid "Enable Sticky Menu"
+msgstr ""
+
+#: inc/customizer/all-theme-options.php:124
+msgid "Post Pagination"
+msgstr ""
+
+#: inc/customizer/all-theme-options.php:128
+msgid "Default"
+msgstr ""
+
+#: inc/customizer/all-theme-options.php:129
+msgid "Numeric"
+msgstr ""
+
+#: inc/customizer/cat-color.php:17
+msgid "Category Lists"
+msgstr ""
+
+#: inc/customizer/cat-color.php:18
+msgid "Change default Category Color to any"
+msgstr ""
+
+#: inc/customizer/customizer.php:43
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer/customizer.php:52
+msgid "All theme Options"
+msgstr ""
+
+#: inc/customizer/customizer.php:59 inc/customizer/flash-news.php:15
+#: inc/customizer/flash-news.php:31 inc/theme-functions.php:200
+msgid "Flash News"
+msgstr ""
+
+#: inc/customizer/customizer.php:73
+msgid "Highlighted Category"
+msgstr ""
+
+#: inc/customizer/excerpt-display.php:17
+msgid "Excerpt Settings"
+msgstr ""
+
+#: inc/customizer/excerpt-display.php:27
+msgid "Post Excerpt Content"
+msgstr ""
+
+#: inc/customizer/excerpt-display.php:31
+msgid "Full Content"
+msgstr ""
+
+#: inc/customizer/excerpt-display.php:32
+msgid "Excerpt Content"
+msgstr ""
+
+#: inc/customizer/flash-news.php:20
+msgid "Title"
+msgstr ""
+
+#: inc/customizer/flash-news.php:32
+msgid "Select Category from Dropdown "
+msgstr ""
+
+#: inc/customizer/main-banner.php:19
+msgid "Select Main Banner"
+msgstr ""
+
+#: inc/customizer/upgrade-to-pro.php:16
+msgid "TimesNews Pro"
+msgstr ""
+
+#: inc/customizer/upgrade-to-pro.php:18
+msgid "Upgrade To Pro"
+msgstr ""
+
+#: inc/information.php:26
+#, php-format
+msgid ""
+"Thank you for choosing %1$s! To fully take advantage of our best theme, make "
+"sure you visit Welcome page"
+msgstr ""
+
+#: inc/information.php:30
+#, php-format
+msgid "Get started with %s"
+msgstr ""
+
+#: inc/style-scripts.php:72 inc/style-scripts.php:77
+msgid "on"
+msgstr ""
+
+#: inc/template-functions.php:79
+msgid "--Select--"
+msgstr ""
+
+#: inc/template-tags.php:57
+#, php-format
+msgid "Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:74 template-parts/content-page.php:41
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:330
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:386
+#: inc/tgm/class-tgm-plugin-activation.php:827
+#: inc/tgm/class-tgm-plugin-activation.php:2533
+#: inc/tgm/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:387
+#: inc/tgm/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:388
+#: inc/tgm/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. Please "
+"update the plugin."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug and "
+"renaming did not work."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:934
+#: inc/tgm/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2342
+#, php-format
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2388
+#, php-format
+msgid "All <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2392
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2396
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2400
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2482
+msgid "unknown"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3509
+#: inc/tgm/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3509
+#: inc/tgm/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/tgm/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm/tgm.php:40
+msgid "One Click Demo Import"
+msgstr ""
+
+#: inc/theme-functions.php:12 inc/theme-functions.php:31
+msgid "Menu"
+msgstr ""
+
+#: inc/theme-functions.php:29
+msgid "Secondary Navigation"
+msgstr ""
+
+#: inc/theme-functions.php:48 inc/theme-functions.php:51
+msgid "Search"
+msgstr ""
+
+#: inc/theme-functions.php:62
+msgid "Social Navigation"
+msgstr ""
+
+#: inc/widgets/blog-category-post.php:16
+msgid "Display single blog column in home page"
+msgstr ""
+
+#: inc/widgets/blog-category-post.php:18
+msgid "T-Spiral: Blog Category Posts"
+msgstr ""
+
+#: inc/widgets/blog-category-post.php:35 inc/widgets/list-category-post.php:38
+#: inc/widgets/post-widgets.php:35
+msgid "Number of posts:"
+msgstr ""
+
+#: inc/widgets/blog-category-post.php:40 inc/widgets/cat-slide.php:41
+#: inc/widgets/list-category-post.php:45 inc/widgets/list-category-post.php:60
+#: inc/widgets/post-widgets.php:40
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/blog-category-post.php:43 inc/widgets/cat-slide.php:48
+#: inc/widgets/list-category-post.php:48 inc/widgets/list-category-post.php:63
+#: inc/widgets/post-widgets.php:43
+msgid "Latest Posts"
+msgstr ""
+
+#: inc/widgets/blog-category-post.php:45 inc/widgets/cat-slide.php:50
+#: inc/widgets/list-category-post.php:50 inc/widgets/list-category-post.php:65
+#: inc/widgets/post-widgets.php:45
+msgid "Show Category posts"
+msgstr ""
+
+#: inc/widgets/blog-category-post.php:48 inc/widgets/cat-slide.php:53
+#: inc/widgets/post-widgets.php:48
+msgid "Select category"
+msgstr ""
+
+#: inc/widgets/blog-category-post.php:49 inc/widgets/cat-slide.php:54
+#: inc/widgets/list-category-post.php:54 inc/widgets/list-category-post.php:69
+#: inc/widgets/post-widgets.php:49
+msgid "-- Select -- "
+msgstr ""
+
+#: inc/widgets/cat-slide.php:16
+msgid "Display  Slider in home page"
+msgstr ""
+
+#: inc/widgets/cat-slide.php:18
+msgid "T-Spiral: Category Slide"
+msgstr ""
+
+#: inc/widgets/cat-slide.php:36
+msgid "Number of Slider:"
+msgstr ""
+
+#: inc/widgets/cat-slide.php:44
+msgid "Multiple Slide"
+msgstr ""
+
+#: inc/widgets/cat-slide.php:46
+msgid "Single Slide"
+msgstr ""
+
+#: inc/widgets/list-category-post.php:16
+msgid ""
+"Display Latest Posts/ Category. It display Two Column widgets with first "
+"image big and the rest are small."
+msgstr ""
+
+#: inc/widgets/list-category-post.php:18
+msgid "T-Spiral: List Category Posts"
+msgstr ""
+
+#: inc/widgets/list-category-post.php:53 inc/widgets/list-category-post.php:68
+msgid "Select Category"
+msgstr ""
+
+#: inc/widgets/post-widgets.php:16
+msgid ""
+"Display Latest Posts/ Category with small image and title. Suitable for Right "
+"and Left TimesNews Sidebar Section"
+msgstr ""
+
+#: inc/widgets/post-widgets.php:18
+msgid "T-Spiral: Latest Posts"
+msgstr ""
+
+#: inc/widgets/sidebars.php:10
+msgid "Sidebar"
+msgstr ""
+
+#: inc/widgets/sidebars.php:12
+msgid ""
+"Add widgets here to appear in your sidebar on blog posts and archive pages."
+msgstr ""
+
+#: inc/widgets/sidebars.php:20
+msgid "Side Header Banner"
+msgstr ""
+
+#: inc/widgets/sidebars.php:22
+msgid "This section will appear at right side of Site Title"
+msgstr ""
+
+#: inc/widgets/sidebars.php:30
+msgid "Advertise Area"
+msgstr ""
+
+#: inc/widgets/sidebars.php:32
+msgid "This section will appear above the Header Section"
+msgstr ""
+
+#: inc/widgets/sidebars.php:40
+msgid "TimesNews Template Main Section"
+msgstr ""
+
+#: inc/widgets/sidebars.php:42
+msgid ""
+"This section will appear when TimesNews Template is selected at Main Section"
+msgstr ""
+
+#: inc/widgets/sidebars.php:50
+msgid "TimesNews Template Primary Section"
+msgstr ""
+
+#: inc/widgets/sidebars.php:52
+msgid ""
+"This section will appear when TimesNews Template is selected at Primary "
+"Section"
+msgstr ""
+
+#: inc/widgets/sidebars.php:60
+msgid "TimesNews Template Secondary Section"
+msgstr ""
+
+#: inc/widgets/sidebars.php:62
+msgid ""
+"This section will appear when TimesNews Template is selected at Secondary "
+"Section"
+msgstr ""
+
+#: search.php:23
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:25
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:43
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching "
+"can help."
+msgstr ""
+
+#: template-parts/content.php:18
+msgid "Featured"
+msgstr ""
+
+#: template/timesnews-template.php:40
+msgid "Template Left"
+msgstr ""
+
+#: template/timesnews-template.php:51
+msgid "Template Right"
+msgstr ""

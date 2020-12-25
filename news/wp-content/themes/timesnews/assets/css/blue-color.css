@@ -1,0 +1,159 @@
+
+/*Timesnews Second Design*/
+
+.header-brand {
+	background-color: #1675E8;
+}
+
+.site-title, 
+.site-title a,
+.site-description {
+	color: #fff;
+}
+
+.az-date {
+	background-color: #E81675;
+}
+
+.right-widget-area .widget-title:before, 
+#secondary .widget-title:before,
+.left-widget-area .widget-title:before {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 10px;
+	margin: auto;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 7px 7px 0;
+	border-color: #1675E8 transparent transparent transparent;
+}
+
+.right-widget-area .widget-title, 
+#secondary .widget-title,
+.left-widget-area .widget-title {
+	background-color: #1675E8;
+	margin: 0 0 20px;
+	padding: 5px 15px 6px;
+	display: inline-block;
+	font-size: 14px;
+}
+
+.left-widget-area .widget-title {
+	border-bottom: none;
+	color: #fff;
+	margin: 0 0 20px;
+}
+
+.main-content-area .widget-title:after {
+	height: 3px;
+	bottom: -7px;
+}
+
+.widget_big_small_category_posts .widget-title:after {
+	bottom: -11px;
+}
+
+.cat-links a {
+	border-width: 2px;
+}
+
+/* Blue Color for TimesNews */
+a,
+.posts-navigation .nav-links .nav-previous,
+.posts-navigation .nav-links .nav-previous a,
+.posts-navigation .nav-links .nav-next,
+.posts-navigation .nav-links .nav-next a,
+.post-navigation .nav-links .nav-previous,
+.post-navigation .nav-links .nav-previous a,
+.post-navigation .nav-links .nav-next,
+.post-navigation .nav-links .nav-next a,
+.pagination .nav-links .page-numbers.current,
+.pagination .nav-links .page-numbers:hover,
+.menu-social-links-container ul > li a:before,
+blockquote:before {
+	color: #1675E8;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.main-navigation ul.sub-menu,
+.main-navigation ul.children,
+.search-container .search-submit,
+.social-links-menu li a:hover,
+.menu-social-links-container ul > li a:hover,
+.flash-news-header,
+.az-post-meta .cat-links a,
+.main-content-area .widget-title:after,
+.right-widget-area .widget-title,
+#secondary .widget-title,
+.sticky-name,
+.entry-header .entry-meta .posted-on:before,
+.entry-footer .entry-meta span:before,
+.entry-footer .entry-meta .tag-links a:before,
+#colophon .widget-title:after,
+.standard-header,
+.back-to-top,
+#bbpress-forums #bbp-search-form #bbp_search_submit {
+	background-color: #1675E8;
+}
+
+@media only screen and (max-width: 1024px) {
+	.right-widget-area .widget-title,
+	.left-widget-area .widget-title {
+		display: table;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.main-header > .navigation-top:before,
+    .main-navigation ul>li:hover > .dropdown-toggle,
+    .main-navigation ul>li.current-menu-item .dropdown-toggle,
+    .main-navigation ul>li.current-menu-ancestor .dropdown-toggle {
+        background-color: #1675E8;
+    }
+
+    .main-navigation ul li:hover > a,
+	.main-navigation ul li.current-menu-item > a,
+	.main-navigation ul li.current_page_item > a,
+	.main-navigation ul li.current-menu-ancestor > a  {
+		color: #1675E8;
+	}
+
+	.main-navigation ul.sub-menu, 
+	.main-navigation ul.children {
+		background-color: transparent;
+	}
+}
+
+.widget_search .search-submit,
+.post-page-search .search-submit {
+	background-color: #1675E8;
+	border-color: #1675E8;
+}
+
+/* Woocommerce ________________________ */
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt,
+.woocommerce span.onsale {
+	background-color: #1675E8;
+}
+
+.woocommerce div.product p.price, 
+.woocommerce div.product span.price,
+.woocommerce ul.products li.product .price {
+	color: #1675E8;
+}
+
+.widget_big_small_category_posts .widget-title:after {
+	background-color: rgba(255,255,255,0.5);
+}

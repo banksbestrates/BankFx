@@ -18,7 +18,7 @@
 
   <div class="container card_row pb-4">    
         <div class="pt-5 col-md-12 row card_view">
-            <div class="col-md col-sm-4">
+            <div class="col-md col-sm-4 mb-3">
                 <div class="card pb-2">
                   <div style="width:100%; text-align:center">
                     <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/personal_loan.png" style="width:100px; height:100px;">
@@ -29,7 +29,7 @@
                   </a>
                 </div>
             </div>
-            <div class="col-md col-sm-4">
+            <div class="col-md col-sm-4 mb-3">
             <div class="card pb-2">
                   <div style="width:100%; text-align:center">
                     <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/home_equity.png" style="width:100px; height:100px;">
@@ -40,7 +40,7 @@
                 <!-- </a> -->
                 </div>
             </div>
-            <div class="col-md col-sm-4">
+            <div class="col-md col-sm-4 mb-3">
               <div class="card pb-2">
                   <div style="width:100%; text-align:center">
                     <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/auto_loan.png" style="width:100px; height:100px;">
@@ -51,7 +51,7 @@
             </a>
                 </div>
             </div>
-            <div class="col-md col-sm-4">
+            <div class="col-md col-sm-4 mb-3">
                 <div class="card pb-2">
                   <div style="width:100%; text-align:center">
                     <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/student_loan.png" style="width:100px; height:100px;">
@@ -61,7 +61,7 @@
                   </a>
                 </div>
             </div>
-            <div class="col-md col-sm-4">
+            <div class="col-md col-sm-4 mb-3">
                 <div class="card pb-2">
                   <div style="width:100%; text-align:center">
                     <img src="<?php echo base_url();?>assets/images/website/loan/card_icon/lender_review.png" style="width:100px; height:100px;">
@@ -96,19 +96,19 @@
  <!-- Content Related to Loans -->
  <div class="container py-5">
         <div class="row">
-          <div class="col-md-10 pr-0">
+          <div class="col-md-9">
             <div class="">
             <a href="https://track.flexlinkspro.com/a.ashx?foid=1188831.139606676.I3558593&foc=16&fot=9999&fos=1" rel="nofollow" target="_blank" alt="600x120" title="Blue Trust Loans (Seasonal Temp) 600X120" ><img border="0" src="https://content.flexlinks.com/sharedimages/products/139606676/3558593.jpg" style="max-width: 100%;" /></a><img src="https://track.flexlinkspro.com/i.ashx?foid=1188831.139606676&fot=9999&foc=16&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
-            </div>
-            <h3 class="border_bottom_golden pt-5 mb-0">LATEST FROM BANKS BEST RATES</h3>
-            <div id="related_articles">
             </div> 
           </div>
-          <div class="col-md-2 px-0">
-          <a href="https://track.flexlinkspro.com/a.ashx?foid=1188831.142317341.I4976660&foc=16&fot=9999&fos=1" rel="nofollow" target="_blank" alt="Medium Rectangle" title="SuperMoney - Home Improvement Loans" ><img border="0" src="https://content.flexlinks.com/sharedimages/products/142317341/4976660.jpg" style="max-width: 100%;" /></a><img src="https://track.flexlinkspro.com/i.ashx?foid=1188831.142317341&fot=9999&foc=16&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
+          <div class="col-md-3">
+          <a href="https://track.flexlinkspro.com/a.ashx?foid=1188831.142317341.I4976660&foc=16&fot=9999&fos=1" rel="nofollow" target="_blank" alt="Medium Rectangle" title="SuperMoney - Home Improvement Loans" ><img border="0" src="https://content.flexlinks.com/sharedimages/products/142317341/4976660.jpg" style="max-width:300px;" /></a><img src="https://track.flexlinkspro.com/i.ashx?foid=1188831.142317341&fot=9999&foc=16&fos=1" border="0" width="0" height="0" style="opacity: 0;"/>
           </div>       
         </div>   
   </div> 
+
+  <div class="container" id="related_articles">
+  </div>
 
 
 <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>

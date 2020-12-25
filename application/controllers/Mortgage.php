@@ -77,6 +77,44 @@ class Mortgage extends CI_Controller {
 		$this->load->view('website/pages/mortgage/mortgage_calculator',array("page_data"=>$data));
 		$this->load->view('website/layout/footer');
 	}
+  	public function mortgage_refinance_calculator()
+	{
+	
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/mortgage/mortgage_refinance_calculator');
+		$this->load->view('website/layout/footer');
+	}
+  	public function mortgage_downpayment_calculator()
+	{
+	
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/mortgage/mortgage_downpayment_calculator');
+		$this->load->view('website/layout/footer');
+	}
+  	public function mortgage_income_calculator()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/mortgage/mortgage_income_calculator');
+		$this->load->view('website/layout/footer');
+	}
+  	public function mortgage_payoff_calculator()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/mortgage/mortgage_payoff_calculator');
+		$this->load->view('website/layout/footer');
+	}
+  	public function roth_ira_calculator()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/mortgage/roth_ira_calculator');
+		$this->load->view('website/layout/footer');
+	}
+  	public function mortgage_borrow_calculator()
+	{
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/mortgage/mortgage_borrow_calculator');
+		$this->load->view('website/layout/footer');
+	}
 	
   	public function mortgage_amortization()
 	{

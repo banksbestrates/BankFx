@@ -8,57 +8,59 @@
             <h2 class="font-weight-900 pt-2 mb-2 text-uppercase">BANKS IN <?php echo $data['City']['FullList'][0]?>, <?php echo $data['State']['FullList'][0]?></h2>
             <!-- <span>Published by <?php echo date('M Y')?> Do we need to have this information?</span> -->
         </div>
-        <div class="col-md-4 text-right pt-4">
-            <!-- <button class="btn button_blue btn-sm">DOWNLOAD OUR APP</button> -->
-        </div>
+        <!-- <div class="col-md-4 text-right pt-4">
+           
+        </div> -->
     </div>
 </div>
 
 <!-- zip box view -->
 <div class="container py-5">  
-    <div class="row">
-            <div class="col-md-10 box_round_border">
-                <div class="row">
-                    <div class="col-md-5 px-0 location_div" style="max-height:530px;overflow:auto">   
-                        <div class="zip_code py-2 px-4">
-                            <div class="input-group" style="border:none">
-                                <input class="form-control py-2 border-right-0 border" type="text" value=""  placeholder="ZIP CODE" id="zipcode">
-                                <span class="input-group-append border">
-                                    <div class="input-group-text bg-transparent" style="border:none;cursor:pointer" onclick="search_by_zip()">
-                                    <i class="fa fa-search pt-1" style="font-size:25px"></i></div>
-                                </span>
+    <div class="col-md-12">
+        <div class="row">
+                <div class="col-md-10 box_round_border">
+                    <div class="row">
+                        <div class="col-md-5 px-0 location_div" id="bank_search_result_scroll">   
+                            <div class="zip_code py-2 px-4">
+                                <div class="input-group" style="border:none">
+                                    <input class="form-control py-2 border-right-0 border" type="text" value=""  placeholder="ZIP CODE" id="zipcode">
+                                    <span class="input-group-append border">
+                                        <div class="input-group-text bg-transparent" style="border:none;cursor:pointer" onclick="search_by_zip()">
+                                        <i class="fa fa-search pt-1" style="font-size:25px"></i></div>
+                                    </span>
+                                </div>
+                            </div>    
+                            <div class="" id="bank_data">
+                                <!-- <?php  for($i=0 ;$i<count($data['Returned']);$i++)
+                                {
+                                    foreach($data['Returned'][$i] as $key=>$value)
+                                    {  
+                                        foreach($value as $bank)
+                                        {?>
+                                            <div class=" py-4 px-4" style="border-top:2px solid">
+                                                <h6 class="mb-2"><?php echo $bank['bankName']?></h6>
+                                                <span><?php echo $bank['address']?>,<br>
+                                                        <?php echo $bank['stateAbbr']?> <?php echo $bank['postalCode']?></span><br/><br/>
+                                                <span class="mt-4">Phone:(123) 456 - 789</span><br>
+                                                <span>www.branchwebsite.com</span><span style="float:right"><i class="fa fa-map-marker" aria-hidden="true" style="font-size:60px"></i><br>0.82 mi</span><br>
+                                                <br><span>HOURS</span>
+                                            </div>  
+                                    <?php   }
+                                    }
+                                }?> -->
                             </div>
-                        </div>    
-                        <div class="" id="bank_data">
-                            <!-- <?php  for($i=0 ;$i<count($data['Returned']);$i++)
-                            {
-                                foreach($data['Returned'][$i] as $key=>$value)
-                                {  
-                                    foreach($value as $bank)
-                                    {?>
-                                        <div class=" py-4 px-4" style="border-top:2px solid">
-                                            <h6 class="mb-2"><?php echo $bank['bankName']?></h6>
-                                            <span><?php echo $bank['address']?>,<br>
-                                                    <?php echo $bank['stateAbbr']?> <?php echo $bank['postalCode']?></span><br/><br/>
-                                            <span class="mt-4">Phone:(123) 456 - 789</span><br>
-                                            <span>www.branchwebsite.com</span><span style="float:right"><i class="fa fa-map-marker" aria-hidden="true" style="font-size:60px"></i><br>0.82 mi</span><br>
-                                            <br><span>HOURS</span>
-                                        </div>  
-                                <?php   }
-                                }
-                            }?> -->
+                            <div class="" id="search_bank_data" style="display:none">
+                            </div>
                         </div>
-                        <div class="" id="search_bank_data" style="display:none">
+                        <div class="col-md-7 px-0 image_div"> 
+                            <div id="map"></div> 
                         </div>
-                    </div>
-                    <div class="col-md-7 px-0 image_div"> 
-                        <div id="map"></div> 
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-3">   
-            </div>
+                <div class="col-md-3">   
+                </div>
+        </div>
     </div>
 </div>
 

@@ -1,0 +1,697 @@
+# Copyright (C) 2020 Strategy11
+# This file is distributed under the same license as the Formidable Views plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Formidable Views 4.0.03\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/formidable-views\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-12-07T19:38:04+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.1.0\n"
+"X-Domain: formidable-views\n"
+
+#. Plugin Name of the plugin
+msgid "Formidable Views"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://formidableforms.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Add the power of views to your Formidable Forms to display your form submissions in listings, tables, calendars, and more."
+msgstr ""
+
+#. Author of the plugin
+msgid "Strategy11"
+msgstr ""
+
+#: classes/models/FrmViewsDisplay.php:349
+msgid "Single Post"
+msgstr ""
+
+#: classes/models/FrmViewsDisplay.php:357
+msgid "Used for the single post page"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:19
+#: classes/controllers/FrmViewsDisplaysController.php:40
+#: classes/controllers/FrmViewsDisplaysController.php:55
+#: classes/controllers/FrmViewsDisplaysController.php:130
+#: classes/controllers/FrmViewsDisplaysController.php:191
+#: classes/controllers/FrmViewsAppController.php:84
+msgid "Views"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:41
+#: classes/controllers/FrmViewsDisplaysController.php:42
+#: classes/controllers/FrmViewsDisplaysController.php:2980
+#: classes/views/displays/submitbox_actions.php:9
+msgid "View"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:43
+msgid "Edit"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:44
+msgid "Search Views"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:45
+msgid "No Views Found."
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:46
+msgid "Add New View"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:47
+msgid "Edit View"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:74
+msgid "View all forms"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:160
+msgid "Submit for Review"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:165
+msgid "Schedule"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:167
+msgid "Publish"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:171
+msgid "Update"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:176
+msgid "Preview"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:195
+msgid "Add New"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:203
+msgid "Duplicate"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:224
+msgid "View Title"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:226
+#: classes/controllers/FrmViewsDisplaysController.php:371
+msgid "Description"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:227
+msgid "Form"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:228
+msgid "Entry"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:229
+#: classes/controllers/FrmViewsDisplaysController.php:370
+#: classes/views/displays/mb_dyncontent.php:50
+msgid "Content"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:230
+#: classes/views/displays/mb_dyncontent.php:81
+msgid "Dynamic Content"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:231
+msgid "Date"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:232
+#: classes/views/displays/mb_advanced.php:117
+msgid "Key"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:233
+msgid "Former ID"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:234
+msgid "Shortcode"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:277
+msgid "N/A"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:369
+msgid "Basic Settings"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:372
+msgid "Advanced Settings"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:373
+msgid "Customization"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:866
+msgid "day"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:866
+msgid "days"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:866
+msgid "daily"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:866
+msgid "week"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:866
+msgid "weeks"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:866
+msgid "weekly"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:866
+msgid "month"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:866
+msgid "months"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:866
+msgid "monthly"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:866
+msgid "year"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:866
+msgid "years"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:866
+msgid "yearly"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:1009
+msgid "There are no views with that ID"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:2927
+msgid "Select a view:"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:2939
+msgid "Filter shortcodes within the view content"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:2943
+#: classes/views/displays/mb_advanced.php:12
+msgid "Limit"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:2948
+msgid "Page size"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:2953
+msgid "Entry order"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:2956
+msgid "Default"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:2957
+#: classes/views/displays/order_row.php:32
+msgid "Ascending"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:2958
+#: classes/views/displays/order_row.php:35
+msgid "Descending"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:2963
+msgid "Include draft entries"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:2966
+msgid "No draft entries"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:2967
+msgid "Only draft entries"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:2968
+msgid "All entries"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:2981
+msgid "Insert a View"
+msgstr ""
+
+#: classes/controllers/FrmViewsDisplaysController.php:3013
+msgid "Use Settings from View"
+msgstr ""
+
+#: classes/controllers/FrmViewsAppController.php:73
+msgid "%s View"
+msgstr ""
+
+#: classes/views/calendars/_calendar_options.php:6
+msgid "Event Date"
+msgstr ""
+
+#: classes/views/calendars/_calendar_options.php:9
+#: classes/views/calendars/_calendar_options.php:26
+#: classes/views/displays/where_row.php:10
+#: classes/views/displays/order_row.php:15
+msgid "Entry creation date"
+msgstr ""
+
+#: classes/views/calendars/_calendar_options.php:12
+#: classes/views/calendars/_calendar_options.php:29
+#: classes/views/displays/order_row.php:18
+msgid "Entry update date"
+msgstr ""
+
+#: classes/views/calendars/_calendar_options.php:22
+msgid "End Date or Day Count"
+msgstr ""
+
+#: classes/views/calendars/_calendar_options.php:24
+msgid "No multi-day events"
+msgstr ""
+
+#: classes/views/calendars/_calendar_options.php:40
+msgid "Repeat"
+msgstr ""
+
+#: classes/views/calendars/_calendar_options.php:41
+msgid "Select a field from your form that contains values like 1 week, 2 weeks, 1 year, etc. This will set the repeat period for each event."
+msgstr ""
+
+#: classes/views/calendars/_calendar_options.php:44
+msgid "No repeating events"
+msgstr ""
+
+#: classes/views/calendars/_calendar_options.php:53
+msgid "End Repeat"
+msgstr ""
+
+#: classes/views/calendars/_calendar_options.php:55
+msgid "Never"
+msgstr ""
+
+#: classes/views/displays/mb_form_disp_type.php:9
+msgid "Use Entries from Form"
+msgstr ""
+
+#: classes/views/displays/mb_form_disp_type.php:18
+msgid "View Format"
+msgstr ""
+
+#: classes/views/displays/mb_form_disp_type.php:26
+msgid "All Entries &mdash; list all entries in the specified form"
+msgstr ""
+
+#: classes/views/displays/mb_form_disp_type.php:31
+msgid "Single Entry &mdash; display one entry"
+msgstr ""
+
+#: classes/views/displays/mb_form_disp_type.php:36
+msgid "Both (Dynamic) &mdash; list the entries that will link to a single entry page"
+msgstr ""
+
+#: classes/views/displays/mb_form_disp_type.php:42
+msgid "Calendar &mdash; insert entries into a calendar"
+msgstr ""
+
+#: classes/views/displays/where_options.php:24
+msgid "Draft or complete entry"
+msgstr ""
+
+#: classes/views/displays/where_options.php:27
+msgid "Draft"
+msgstr ""
+
+#: classes/views/displays/where_options.php:30
+msgid "Complete entry"
+msgstr ""
+
+#: classes/views/displays/where_options.php:36
+msgid "Date options: 'NOW' or a date in yyyy-mm-dd format."
+msgstr ""
+
+#: classes/views/displays/where_row.php:8
+#: classes/views/actions/post_options.php:9
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: classes/views/displays/where_row.php:13
+msgid "Entry updated date"
+msgstr ""
+
+#: classes/views/displays/where_row.php:16
+#: classes/views/displays/order_row.php:9
+msgid "Entry ID"
+msgstr ""
+
+#: classes/views/displays/where_row.php:19
+msgid "Entry key"
+msgstr ""
+
+#: classes/views/displays/where_row.php:22
+msgid "Post ID"
+msgstr ""
+
+#: classes/views/displays/where_row.php:25
+msgid "Parent entry ID"
+msgstr ""
+
+#: classes/views/displays/where_row.php:28
+msgid "Entry status"
+msgstr ""
+
+#: classes/views/displays/where_row.php:36
+msgid "IP"
+msgstr ""
+
+#: classes/views/displays/where_row.php:39
+msgid "is"
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:13
+msgid "If you don’t want all your entries displayed, you can insert the number limit here. Leave blank if you’d like all entries shown."
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:21
+msgid "Page Size"
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:22
+msgid "The number of entries to show per page. Leave blank to not use pagination."
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:31
+msgid "Sort & Filter"
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:36
+msgid "Order"
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:40
+#: classes/views/displays/mb_advanced.php:63
+msgid "Add"
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:57
+msgid "Filter Entries"
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:58
+msgid "Narrow down which entries will be used. The Unique options uses SQL GROUP BY to make sure only one entry is shown for each value in the selected field(s)."
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:79
+msgid "No Entries Message"
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:87
+msgid "Advanced"
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:92
+msgid "View Key"
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:101
+msgid "Detail Page Slug"
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:102
+msgid "Example: If parameter name is 'contact', the url would be like %1$s/selected-page?contact=2. If this entry is linked to a post, the post permalink will be used instead."
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:109
+msgid "Parameter Value"
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:114
+msgid "ID"
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:129
+msgid "Copy this View to other sites when Formidable Forms is activated. (Use only field keys in the content box(es) above.)"
+msgstr ""
+
+#: classes/views/displays/mb_dyncontent.php:10
+#: classes/views/displays/mb_dyncontent.php:13
+#: classes/views/displays/mb_dyncontent.php:22
+msgid "Detail Page"
+msgstr ""
+
+#: classes/views/displays/mb_dyncontent.php:10
+#: classes/views/displays/mb_dyncontent.php:15
+msgid "Listing Page"
+msgstr ""
+
+#: classes/views/displays/mb_dyncontent.php:27
+msgid "This page lists multiple entries. Link to a single entry/detail page using [detaillink]"
+msgstr ""
+
+#: classes/views/displays/mb_dyncontent.php:30
+msgid "This is the detail page for a single entry in this form"
+msgstr ""
+
+#: classes/views/displays/mb_dyncontent.php:43
+msgid "Before Content"
+msgstr ""
+
+#: classes/views/displays/mb_dyncontent.php:44
+msgid "This content will not be repeated. This would be a good place to put any HTML table tags."
+msgstr ""
+
+#: classes/views/displays/mb_dyncontent.php:44
+#: classes/views/displays/mb_dyncontent.php:72
+msgid "optional"
+msgstr ""
+
+#: classes/views/displays/mb_dyncontent.php:51
+msgid "The HTML for your page. If 'All Entries' is selected above, this content will be repeated for each entry. The field ID and Key work synonymously, although there are times one choice may be better. If you are panning to copy your view settings to other blogs, use the Key since they will be copied and the ids may differ from blog to blog."
+msgstr ""
+
+#: classes/views/displays/mb_dyncontent.php:58
+msgid "Disable visual editor for this view"
+msgstr ""
+
+#: classes/views/displays/mb_dyncontent.php:60
+msgid "It is recommended to check this box if you include a <table> tag in the Before Content box. If you are editing a view and notice the visual tab is selected and your table HTML is missing, you can switch to the HTML tab, go up to your url in your browser and hit enter to reload the page. As long as the settings have not been saved, your old HTML will be back to way it was before loading it in the visual tab."
+msgstr ""
+
+#: classes/views/displays/mb_dyncontent.php:70
+msgid "After Content"
+msgstr ""
+
+#: classes/views/displays/mb_dyncontent.php:71
+msgid "This content will not be repeated. This would be a good place to close any HTML tags from the Before Content field."
+msgstr ""
+
+#: classes/views/displays/mb_dyncontent.php:82
+msgid "The HTML for the entry on the dynamic page. This content will NOT be repeated, and will only show when the %1$s is clicked."
+msgstr ""
+
+#: classes/views/displays/order_row.php:12
+msgid "Entry Key"
+msgstr ""
+
+#: classes/views/displays/order_row.php:21
+msgid "Random"
+msgstr ""
+
+#: classes/views/displays/mb_excerpt.php:7
+msgid "This is not displayed anywhere, but is just for your reference. (optional)"
+msgstr ""
+
+#. translators: accessibility text
+#: classes/views/displays/publish-box.php:18
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: classes/views/displays/submitbox_actions.php:10
+msgid "Shortcodes"
+msgstr ""
+
+#: classes/views/displays/submitbox_actions.php:13
+msgid "Show"
+msgstr ""
+
+#: classes/views/displays/submitbox_actions.php:16
+msgid "Save to get ID"
+msgstr ""
+
+#: classes/views/displays/submitbox_actions.php:22
+msgid "Insert with PHP"
+msgstr ""
+
+#: classes/views/displays/submitbox_actions.php:29
+msgid "Hide"
+msgstr ""
+
+#: classes/views/actions/post_options.php:7
+msgid "Select View"
+msgstr ""
+
+#: classes/views/actions/post_options.php:10
+msgid "Create new view"
+msgstr ""
+
+#: classes/views/actions/post_options.php:26
+msgid "Customize Content"
+msgstr ""
+
+#: classes/views/actions/post_options.php:27
+msgid "The content shown on your single post page. If nothing is entered here, the regular post content will be used."
+msgstr ""
+
+#: classes/views/actions/post_options.php:38
+msgid "Add text, HTML, and fields from your form to build your post content."
+msgstr ""
+
+#: classes/views/actions/post_options.php:45
+msgid "Editing this box will update your existing view or create a new one."
+msgstr ""
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:91
+msgid "No Entries Found"
+msgstr ""
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:127
+msgid "equal to"
+msgstr ""
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:128
+msgid "NOT equal to"
+msgstr ""
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:129
+msgid "greater than"
+msgstr ""
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:130
+msgid "less than"
+msgstr ""
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:131
+msgid "greater than or equal to"
+msgstr ""
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:132
+msgid "less than or equal to"
+msgstr ""
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:133
+msgid "like"
+msgstr ""
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:134
+msgid "NOT like"
+msgstr ""
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:135
+msgid "starts with"
+msgstr ""
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:136
+msgid "ends with"
+msgstr ""
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:137
+msgid "unique (get oldest entries)"
+msgstr ""
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:138
+msgid "unique (get newest entries)"
+msgstr ""
+
+#: classes/helpers/FrmViewsAppHelper.php:60
+msgid "Previous Page"
+msgstr ""
+
+#: classes/helpers/FrmViewsAppHelper.php:64
+msgid "Next Page"
+msgstr ""
+
+#: classes/widgets/FrmListEntries.php:12
+msgid "Display a list of Formidable entries"
+msgstr ""
+
+#: classes/widgets/FrmListEntries.php:13
+msgid "Formidable Entries List"
+msgstr ""
+
+#: classes/widgets/FrmListEntries.php:52
+msgid "Title"
+msgstr ""
+
+#: classes/widgets/FrmListEntries.php:57
+msgid "Views with a \"Both (Dynamic)\" format will show here."
+msgstr ""
+
+#: classes/widgets/FrmListEntries.php:59
+msgid "Page"
+msgstr ""
+
+#: classes/widgets/FrmListEntries.php:70
+msgid "Title Field"
+msgstr ""
+
+#: classes/widgets/FrmListEntries.php:88
+msgid "List Entries by Category"
+msgstr ""
+
+#: classes/widgets/FrmListEntries.php:92
+msgid "Category Field"
+msgstr ""
+
+#: classes/widgets/FrmListEntries.php:109
+msgid "Show Entry Counts"
+msgstr ""
+
+#: classes/widgets/FrmListEntries.php:114
+msgid "Show Only Category Name"
+msgstr ""
+
+#: classes/widgets/FrmListEntries.php:119
+msgid "Show Entries Beneath Categories"
+msgstr ""
+
+#: classes/widgets/FrmListEntries.php:126
+msgid "Entry Limit (leave blank to list all)"
+msgstr ""

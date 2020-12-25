@@ -312,4 +312,11 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
+
+// if ($this->conn_id === FALSE)
+// {
+//     $this->initialize();
+// }
+// $str = mysqli_real_escape_string($this->conn_id, $str);
+
 require_once BASEPATH.'core/CodeIgniter.php';

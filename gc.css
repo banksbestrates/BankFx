@@ -1,0 +1,45 @@
+.helpImage {
+   /* top: -24px; */
+  /* left: calc(100% - 24px); */
+  z-index: 999;
+  position: absolute;
+  background-size: auto 96px;
+  background-image: url("help.gif");
+  background-repeat: no-repeat;
+  
+  min-width: 96px;
+  max-width: 96px;
+  min-height: 96px;
+  max-height: 96px;
+}
+
+.helpHeader { 
+  /* top: -15px; */
+   /* left: calc(100% - 24px); */
+   display: none;
+   z-index: 999;
+   position: absolute;
+   
+   background-size: 374px 297px;
+   background-image: url("helpDetail.png");
+   background-repeat: no-repeat;
+   
+   min-width: 400px;
+   max-width: 400px;
+   min-height: 297px;
+   max-height: 297px;
+ }
+
+.helpDetail { 
+  top: 7px;
+   left: 7px;
+   padding: 5px;
+   position: absolute;
+   overflow: auto;
+   min-width: 270px;
+   max-width: 270px;
+   min-height: 190px;
+   max-height: 190px;
+   font-size: 20px;
+   font-family: "Walter Turncoat", cursive;
+ }

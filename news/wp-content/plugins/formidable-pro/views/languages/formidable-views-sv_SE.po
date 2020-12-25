@@ -1,0 +1,631 @@
+# Translation of Formidable Forms in Swedish
+# This file is distributed under the same license as the Formidable Forms package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-10-27 17:05+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Language: sv_SE\n"
+"Project-Id-Version: Formidable Forms\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-26T16:56:43+01:00\n"
+"Last-Translator: \n"
+"Language-Team: Swedish\n"
+"X-Loco-Version: 2.4.4; wp-5.5.1"
+
+#. Description of the plugin
+msgid "Add the power of views to your Formidable Forms."
+msgstr ""
+
+#: classes/controllers/FrmViewsAppController.php:73
+#: classes/controllers/FrmViewsDisplaysController.php:19
+#: classes/controllers/FrmViewsDisplaysController.php:40
+#: classes/controllers/FrmViewsDisplaysController.php:55
+#: classes/controllers/FrmViewsDisplaysController.php:111
+#: classes/controllers/FrmViewsDisplaysController.php:172
+msgid "Views"
+msgstr "Vyer"
+
+#: classes/controllers/FrmViewsDisplaysController.php:41
+#: classes/controllers/FrmViewsDisplaysController.php:42
+#: classes/controllers/FrmViewsDisplaysController.php:2941
+#: classes/views/displays/submitbox_actions.php:9
+msgid "View"
+msgstr "Visa"
+
+#: classes/controllers/FrmViewsDisplaysController.php:43
+msgid "Edit"
+msgstr "Redigera"
+
+#: classes/controllers/FrmViewsDisplaysController.php:44
+msgid "Search Views"
+msgstr "Sök vyer"
+
+#: classes/controllers/FrmViewsDisplaysController.php:45
+msgid "No Views Found."
+msgstr "Inga vyer funna."
+
+#: classes/controllers/FrmViewsDisplaysController.php:46
+msgid "Add New View"
+msgstr "Lägg till ny vy"
+
+#: classes/controllers/FrmViewsDisplaysController.php:47
+msgid "Edit View"
+msgstr "Redigera vy"
+
+#: classes/controllers/FrmViewsDisplaysController.php:74
+msgid "View all forms"
+msgstr "Visa alla formulär"
+
+#: classes/controllers/FrmViewsDisplaysController.php:184
+msgid "Duplicate"
+msgstr "Kopiera"
+
+#: classes/controllers/FrmViewsDisplaysController.php:205
+msgid "View Title"
+msgstr "Vytitel"
+
+#: classes/controllers/FrmViewsDisplaysController.php:208
+msgid "Form"
+msgstr "Formulär"
+
+#: classes/controllers/FrmViewsDisplaysController.php:209
+msgid "Entry"
+msgstr "Post"
+
+#: classes/controllers/FrmViewsDisplaysController.php:210
+#: classes/controllers/FrmViewsDisplaysController.php:351
+#: classes/views/displays/mb_dyncontent.php:50
+msgid "Content"
+msgstr "Innehåll"
+
+#: classes/controllers/FrmViewsDisplaysController.php:211
+#: classes/views/displays/mb_dyncontent.php:81
+msgid "Dynamic Content"
+msgstr "Dynamiskt innehåll"
+
+#: classes/controllers/FrmViewsDisplaysController.php:212
+msgid "Date"
+msgstr "Datum"
+
+#: classes/controllers/FrmViewsDisplaysController.php:213
+#: classes/views/displays/mb_advanced.php:117
+msgid "Key"
+msgstr "Nyckel"
+
+#: classes/controllers/FrmViewsDisplaysController.php:214
+msgid "Former ID"
+msgstr "Före detta ID"
+
+#: classes/controllers/FrmViewsDisplaysController.php:215
+msgid "Shortcode"
+msgstr "Kortkod"
+
+#: classes/controllers/FrmViewsDisplaysController.php:258
+msgid "N/A"
+msgstr "Ej tillgängligt"
+
+#: classes/controllers/FrmViewsDisplaysController.php:350
+msgid "Basic Settings"
+msgstr "Grundinställningar"
+
+#: classes/controllers/FrmViewsDisplaysController.php:353
+msgid "Advanced Settings"
+msgstr "Avancerade Inställningar"
+
+#: classes/controllers/FrmViewsDisplaysController.php:354
+msgid "Customization"
+msgstr "Apassning"
+
+#: classes/controllers/FrmViewsDisplaysController.php:847
+msgid "day"
+msgstr "dag"
+
+#: classes/controllers/FrmViewsDisplaysController.php:847
+msgid "days"
+msgstr "dagar"
+
+#: classes/controllers/FrmViewsDisplaysController.php:847
+msgid "daily"
+msgstr "dagligen"
+
+#: classes/controllers/FrmViewsDisplaysController.php:847
+msgid "week"
+msgstr "vecka"
+
+#: classes/controllers/FrmViewsDisplaysController.php:847
+msgid "weeks"
+msgstr "veckor"
+
+#: classes/controllers/FrmViewsDisplaysController.php:847
+msgid "weekly"
+msgstr "veckovis"
+
+#: classes/controllers/FrmViewsDisplaysController.php:847
+msgid "month"
+msgstr "månad"
+
+#: classes/controllers/FrmViewsDisplaysController.php:847
+msgid "months"
+msgstr "månader"
+
+#: classes/controllers/FrmViewsDisplaysController.php:847
+msgid "monthly"
+msgstr "månadsvis"
+
+#: classes/controllers/FrmViewsDisplaysController.php:847
+msgid "year"
+msgstr "år"
+
+#: classes/controllers/FrmViewsDisplaysController.php:847
+msgid "years"
+msgstr "år"
+
+#: classes/controllers/FrmViewsDisplaysController.php:847
+msgid "yearly"
+msgstr "årsvis"
+
+#: classes/controllers/FrmViewsDisplaysController.php:990
+msgid "There are no views with that ID"
+msgstr "Det finns inga vyer med detta ID"
+
+#: classes/controllers/FrmViewsDisplaysController.php:2888
+msgid "Select a view:"
+msgstr "Välj en vy:"
+
+#: classes/controllers/FrmViewsDisplaysController.php:2900
+msgid "Filter shortcodes within the view content"
+msgstr "Filtrera snabbkoder inom vyinnehåll"
+
+#: classes/controllers/FrmViewsDisplaysController.php:2904
+#: classes/views/displays/mb_advanced.php:12
+msgid "Limit"
+msgstr "Gräns"
+
+#: classes/controllers/FrmViewsDisplaysController.php:2909
+msgid "Page size"
+msgstr "Sidstorlek"
+
+#: classes/controllers/FrmViewsDisplaysController.php:2914
+msgid "Entry order"
+msgstr "Postordning"
+
+#: classes/controllers/FrmViewsDisplaysController.php:2917
+msgid "Default"
+msgstr "Standard"
+
+#: classes/controllers/FrmViewsDisplaysController.php:2918
+#: classes/views/displays/order_row.php:32
+msgid "Ascending"
+msgstr "Stigande"
+
+#: classes/controllers/FrmViewsDisplaysController.php:2919
+#: classes/views/displays/order_row.php:35
+msgid "Descending"
+msgstr "Fallande"
+
+#: classes/controllers/FrmViewsDisplaysController.php:2924
+msgid "Include draft entries"
+msgstr "Inkludera postutkast"
+
+#: classes/controllers/FrmViewsDisplaysController.php:2927
+msgid "No draft entries"
+msgstr "Inga utkast"
+
+#: classes/controllers/FrmViewsDisplaysController.php:2928
+msgid "Only draft entries"
+msgstr "Endast utkast"
+
+#: classes/controllers/FrmViewsDisplaysController.php:2929
+msgid "All entries"
+msgstr "Alla inlägg"
+
+#: classes/controllers/FrmViewsDisplaysController.php:2942
+msgid "Insert a View"
+msgstr "Infoga en vy"
+
+#: classes/controllers/FrmViewsDisplaysController.php:2974
+msgid "Use Settings from View"
+msgstr "Använd inställningar från vy"
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:88
+msgid "No Entries Found"
+msgstr "Inga poster funna"
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:124
+msgid "equal to"
+msgstr "lika med"
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:125
+msgid "NOT equal to"
+msgstr "INTE lika med"
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:126
+msgid "greater than"
+msgstr "större än"
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:127
+msgid "less than"
+msgstr "mindre än"
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:128
+msgid "greater than or equal to"
+msgstr "större än eller lika med"
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:129
+msgid "less than or equal to"
+msgstr "mindre än eller lika med"
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:130
+msgid "like"
+msgstr "som"
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:131
+msgid "NOT like"
+msgstr "INTE som"
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:132
+msgid "starts with"
+msgstr "börjar med"
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:133
+msgid "ends with"
+msgstr "slutar med"
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:134
+msgid "unique (get oldest entries)"
+msgstr ""
+
+#: classes/helpers/FrmViewsDisplaysHelper.php:135
+msgid "unique (get newest entries)"
+msgstr ""
+
+#: classes/models/FrmViewsDisplay.php:337
+msgid "Single Post"
+msgstr "Enskilt inlägg"
+
+#: classes/models/FrmViewsDisplay.php:345
+msgid "Used for the single post page"
+msgstr "Används för enskilda postsida"
+
+#: classes/views/displays/mb_advanced.php:13
+msgid ""
+"If you don’t want all your entries displayed, you can insert the number "
+"limit here. Leave blank if you’d like all entries shown."
+msgstr ""
+"Om du inte vill att alla dina poster visas kan du ange en gräns i antal här. "
+"Lämna tomt om du vill att alla poster ska visas."
+
+#: classes/views/displays/mb_advanced.php:21
+msgid "Page Size"
+msgstr "Sidstorlek"
+
+#: classes/views/displays/mb_advanced.php:22
+msgid ""
+"The number of entries to show per page. Leave blank to not use pagination."
+msgstr ""
+"Antalet poster att visa per sida. Lämna tomt för att inte använda "
+"sidindelning."
+
+#: classes/views/displays/mb_advanced.php:31
+msgid "Sort & Filter"
+msgstr "Sortera och filtrera"
+
+#: classes/views/displays/mb_advanced.php:36
+msgid "Order"
+msgstr "Ordning"
+
+#: classes/views/displays/mb_advanced.php:40
+#: classes/views/displays/mb_advanced.php:63
+msgid "Add"
+msgstr "Lägg till"
+
+#: classes/views/displays/mb_advanced.php:57
+msgid "Filter Entries"
+msgstr "Filtrera poster"
+
+#: classes/views/displays/mb_advanced.php:58
+msgid ""
+"Narrow down which entries will be used. The Unique options uses SQL GROUP BY "
+"to make sure only one entry is shown for each value in the selected field(s)."
+msgstr ""
+"Specificera vilka poster som kommer att visas. Alternativet unik använder "
+"SQL GROUP BY för se till att endast en post visas för vardera värde i "
+"rullgardinsmenyerna."
+
+#: classes/views/displays/mb_advanced.php:79
+msgid "No Entries Message"
+msgstr "Meddelande för tomt postindex"
+
+#: classes/views/displays/mb_advanced.php:87
+msgid "Advanced"
+msgstr "Avancerat"
+
+#: classes/views/displays/mb_advanced.php:92
+msgid "View Key"
+msgstr ""
+
+#: classes/views/displays/mb_advanced.php:101
+msgid "Detail Page Slug"
+msgstr "Permalänk för enskild sida"
+
+#: classes/views/displays/mb_advanced.php:102
+msgid ""
+"Example: If parameter name is 'contact', the url would be like %1$s/selected-"
+"page?contact=2. If this entry is linked to a post, the post permalink will "
+"be used instead."
+msgstr ""
+"Exempel: Om parameternamnet är \"kontakt\" så skulle urlen bli %1$s/selected-"
+"page?contact=2. Om denna post är länkad till ett inlägg så kommer "
+"inläggspermalänken användas istället."
+
+#: classes/views/displays/mb_advanced.php:109
+msgid "Parameter Value"
+msgstr "Parametervärde"
+
+#: classes/views/displays/mb_advanced.php:114
+msgid "ID"
+msgstr "ID"
+
+#: classes/views/displays/mb_advanced.php:129
+msgid ""
+"Copy this View to other sites when Formidable Forms is activated. (Use only "
+"field keys in the content box(es) above.)"
+msgstr ""
+
+#: classes/views/displays/mb_dyncontent.php:10
+#: classes/views/displays/mb_dyncontent.php:13
+#: classes/views/displays/mb_dyncontent.php:22
+msgid "Detail Page"
+msgstr "Enskild sida"
+
+#: classes/views/displays/mb_dyncontent.php:10
+#: classes/views/displays/mb_dyncontent.php:15
+msgid "Listing Page"
+msgstr "Indexsida"
+
+#: classes/views/displays/mb_dyncontent.php:27
+msgid ""
+"This page lists multiple entries. Link to a single entry/detail page using "
+"[detaillink]"
+msgstr ""
+"Denna sida listar flera poster. Länka till en enskild post/detaljsida med "
+"[detaillink]"
+
+#: classes/views/displays/mb_dyncontent.php:30
+msgid "This is the detail page for a single entry in this form"
+msgstr "Detta är den detaljerade sidan för en enskild post i detta formulär"
+
+#: classes/views/displays/mb_dyncontent.php:43
+msgid "Before Content"
+msgstr "Innan innehåll"
+
+#: classes/views/displays/mb_dyncontent.php:44
+msgid ""
+"This content will not be repeated. This would be a good place to put any "
+"HTML table tags."
+msgstr ""
+"Detta innehåll kommer inte att upprepas. Detta skulle vara ett bra ställe "
+"att ange tabelltaggar i HTML."
+
+#: classes/views/displays/mb_dyncontent.php:44
+#: classes/views/displays/mb_dyncontent.php:72
+msgid "optional"
+msgstr "valfritt"
+
+#: classes/views/displays/mb_dyncontent.php:51
+msgid ""
+"The HTML for your page. If 'All Entries' is selected above, this content "
+"will be repeated for each entry. The field ID and Key work synonymously, "
+"although there are times one choice may be better. If you are panning to "
+"copy your view settings to other blogs, use the Key since they will be "
+"copied and the ids may differ from blog to blog."
+msgstr ""
+"HTML för din sida. Om \"alla poster\" valts ovan, kommer detta innehåll "
+"upprepas för varje post. Fält-ID och nyckel fungerar synonymt, men det finns "
+"tillfällen ett val kan vara bättre. Om du planerar att kopiera dina "
+"visningsinställningar till andra bloggar, använd nyckeln eftersom de kommer "
+"att kopieras och ids kan skilja sig från blogg till blogg."
+
+#: classes/views/displays/mb_dyncontent.php:58
+msgid "Disable visual editor for this view"
+msgstr "Stäng av den visuella redigeraren för denna vy"
+
+#: classes/views/displays/mb_dyncontent.php:60
+msgid ""
+"It is recommended to check this box if you include a <table> tag in the "
+"Before Content box. If you are editing a view and notice the visual tab is "
+"selected and your table HTML is missing, you can switch to the HTML tab, go "
+"up to your url in your browser and hit enter to reload the page. As long as "
+"the settings have not been saved, your old HTML will be back to way it was "
+"before loading it in the visual tab."
+msgstr ""
+"Det rekommenderas att markera den här rutan om du inkluderar en <table>-tagg "
+"i innan innehållsfältet. Om du redigerar en vy och märker att fliken "
+"visuella är markerad och din HTML för tabeller saknas så kan du växla till "
+"fliken HTML, ladda sedan om sidan. Så länge inställningarna inte har sparats,"
+" kommer din tidigare HTML vara tillbaka som det var innan du laddade "
+"innehållet i den visuella fliken."
+
+#: classes/views/displays/mb_dyncontent.php:70
+msgid "After Content"
+msgstr "Efter innehåll"
+
+#: classes/views/displays/mb_dyncontent.php:71
+msgid ""
+"This content will not be repeated. This would be a good place to close any "
+"HTML tags from the Before Content field."
+msgstr ""
+"Detta innehåll kommer inte att upprepas. Detta skulle vara ett bra ställe "
+"att stänga alla HTML-taggar från innan innehållsfältet."
+
+#: classes/views/displays/mb_dyncontent.php:82
+msgid ""
+"The HTML for the entry on the dynamic page. This content will NOT be "
+"repeated, and will only show when the %1$s is clicked."
+msgstr ""
+"HTML för posten på den dynamiska sidan. Detta innehåll kommer inte att "
+"upprepas, och visas bara när%1$s klickas."
+
+#: classes/views/displays/mb_excerpt.php:7
+msgid ""
+"This is not displayed anywhere, but is just for your reference. (optional)"
+msgstr ""
+"Detta visas inte någonstans, men kan vara användbart som egen referens. "
+"(valfritt)"
+
+#: classes/views/displays/mb_form_disp_type.php:9
+msgid "Use Entries from Form"
+msgstr "Använd poster från formuläret"
+
+#: classes/views/displays/mb_form_disp_type.php:18
+msgid "View Format"
+msgstr "Format för vy"
+
+#: classes/views/displays/mb_form_disp_type.php:26
+msgid "All Entries &mdash; list all entries in the specified form"
+msgstr "Alla poster &mdash; lista alla poster i specificerat formulär"
+
+#: classes/views/displays/mb_form_disp_type.php:31
+msgid "Single Entry &mdash; display one entry"
+msgstr "Enskild post &mdash; visa endast en post"
+
+#: classes/views/displays/mb_form_disp_type.php:36
+msgid ""
+"Both (Dynamic) &mdash; list the entries that will link to a single entry page"
+msgstr ""
+"Både och (dynamiskt) &mdash; en indexsida med poster som kommer att länka "
+"till en enskilda poster"
+
+#: classes/views/displays/mb_form_disp_type.php:42
+msgid "Calendar &mdash; insert entries into a calendar"
+msgstr "Kalender &mdash; infoga poster i en kalender"
+
+#: classes/views/displays/order_row.php:9
+#: classes/views/displays/where_row.php:16
+msgid "Entry ID"
+msgstr "Post-ID"
+
+#: classes/views/displays/order_row.php:12
+msgid "Entry Key"
+msgstr "Postnyckel"
+
+#: classes/views/displays/order_row.php:15
+#: classes/views/displays/where_row.php:10
+#: classes/views/displays/_calendar_options.php:9
+#: classes/views/displays/_calendar_options.php:26
+msgid "Entry creation date"
+msgstr "Datum för skapande av post"
+
+#: classes/views/displays/order_row.php:18
+#: classes/views/displays/_calendar_options.php:12
+#: classes/views/displays/_calendar_options.php:29
+msgid "Entry update date"
+msgstr "Datum för uppdatering av post"
+
+#: classes/views/displays/order_row.php:21
+msgid "Random"
+msgstr "Slumpvis"
+
+#: classes/views/displays/submitbox_actions.php:10
+msgid "Shortcodes"
+msgstr "Snabbkoder"
+
+#: classes/views/displays/submitbox_actions.php:13
+msgid "Show"
+msgstr "Visa"
+
+#: classes/views/displays/submitbox_actions.php:16
+msgid "Save to get ID"
+msgstr "Spara för att få ID"
+
+#: classes/views/displays/submitbox_actions.php:22
+msgid "Insert with PHP"
+msgstr "Infoga med PHP"
+
+#: classes/views/displays/submitbox_actions.php:29
+msgid "Hide"
+msgstr "Dölj"
+
+#: classes/views/displays/where_options.php:24
+msgid "Draft or complete entry"
+msgstr "Utkast eller färdig post"
+
+#: classes/views/displays/where_options.php:27
+msgid "Draft"
+msgstr "Utkast"
+
+#: classes/views/displays/where_options.php:30
+msgid "Complete entry"
+msgstr "Färdig post"
+
+#: classes/views/displays/where_options.php:36
+msgid "Date options: 'NOW' or a date in yyyy-mm-dd format."
+msgstr "Datumalternativ: \"NU\" eller ett datum i formatet åååå-mm-dd."
+
+#: classes/views/displays/where_row.php:13
+msgid "Entry updated date"
+msgstr "Datum för uppdatering av post"
+
+#: classes/views/displays/where_row.php:19
+msgid "Entry key"
+msgstr "Postnyckel"
+
+#: classes/views/displays/where_row.php:22
+msgid "Post ID"
+msgstr "Inläggs-ID"
+
+#: classes/views/displays/where_row.php:25
+msgid "Parent entry ID"
+msgstr "Överordnad post ID"
+
+#: classes/views/displays/where_row.php:28
+msgid "Entry status"
+msgstr "Post status"
+
+#: classes/views/displays/where_row.php:36
+msgid "IP"
+msgstr "IP"
+
+#: classes/views/displays/where_row.php:39
+msgid "is"
+msgstr "är"
+
+#: classes/views/displays/_calendar_options.php:6
+msgid "Event Date"
+msgstr "Händelsedatum"
+
+#: classes/views/displays/_calendar_options.php:22
+msgid "End Date or Day Count"
+msgstr "Slutdatum eller antal dagar"
+
+#: classes/views/displays/_calendar_options.php:24
+msgid "No multi-day events"
+msgstr "Inga flerdagarshändelser"
+
+#: classes/views/displays/_calendar_options.php:40
+msgid "Repeat"
+msgstr "Upprepa"
+
+#: classes/views/displays/_calendar_options.php:41
+msgid ""
+"Select a field from your form that contains values like 1 week, 2 weeks, 1 "
+"year, etc. This will set the repeat period for each event."
+msgstr ""
+"Välj ett fält från formuläret som innehåller värden som 1 vecka, 2 veckor, 1 "
+"år, etc. Detta kommer att ställa in upprepningsperiod för varje händelse."
+
+#: classes/views/displays/_calendar_options.php:44
+msgid "No repeating events"
+msgstr "Inga upprepade händelser"
+
+#: classes/views/displays/_calendar_options.php:53
+msgid "End Repeat"
+msgstr "Avsluta repetition"
+
+#: classes/views/displays/_calendar_options.php:55
+msgid "Never"
+msgstr "Aldrig"

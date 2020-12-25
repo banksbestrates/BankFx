@@ -24,7 +24,7 @@
         }?>
     </div>
     <div class="container pb-4" >
-        <iframe  id="Ifrmae" style="height:150vh;width:100%;border:2px solid #d79f01" src="https://widgets.icanbuy.com/c/standard/us/en/personalloan/tables/q/PersonalLoans.aspx?siteid=9e42fea46ee9090e&perpage=1000&disable_paging=1&&listingbtnbgcolor=D79F01&searchbtnbgcolor=000000""></iframe>
+        <iframe  id="Ifrmae" style="height:150vh;width:100%;border:2px solid #d79f01" src="https://widgets.icanbuy.com/c/standard/us/en/personalloan/tables/q/PersonalLoans.aspx?siteid=9e42fea46ee9090e"></iframe>
     </div>
     <div class="container pb-5">
         <?php if(count($page_data)>=1){

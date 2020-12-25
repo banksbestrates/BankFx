@@ -64,19 +64,19 @@
             <div class="pb-4">
                 <a target="_blank" href="https://shareasale.com/r.cfm?b=1464706&amp;u=2564107&amp;m=43951&amp;urllink=&amp;afftrack="><img src="https://static.shareasale.com/image/43951/xmas-2019-728x90-60.png" border="0" alt="SEO-powersuite-anti-crisis-sale-2020-60%" /></a>
             </div>
-            <h3 class="border_bottom_golden pt-5 mb-0">LATEST FROM BANKS BEST RATES</h3>
-            <div id="related_articles">
-            </div> 
           </div>
           <div class="col-md-2 px-0 pl-1">
           <a target="_blank" href="https://shareasale.com/r.cfm?b=717955&amp;u=2564107&amp;m=52235&amp;urllink=&amp;afftrack="><img src="https://static.shareasale.com/image/52235/300x2501.jpg" border="0" alt="Get the Deal of the Week at RefurBees.com"  style="max-width:130%"/></a>
           </div>       
         </div>   
   </div>
+  
+  <div class="container" id="related_articles">
+  </div>
 
 <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
 <script src="<?php echo base_url()?>assets/libs/common.js"></script>
 <script src="<?php echo base_url()?>assets/libs/loanProcess.js"></script>
 <script>
-  get_loan_overview_posts();
+  get_auto_loan_posts();
 </script>

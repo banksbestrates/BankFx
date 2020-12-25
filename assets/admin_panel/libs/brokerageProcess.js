@@ -41,10 +41,11 @@ function get_brokerage_overview() {
                 {
                     overview_data = '<div class="col-md-10">'+
                     '<h1>'+brokerageData[i].heading+'</h1>'+
+                    '<img src="'+baseUrl+brokerageData[i].image+'" style="height:100px"/>'+
                     '<p>'+brokerageData[i].content+'</p>'+
                     '</div>'+
                     '<div class="col-md-2">'+
-                    '   <button class="btn btn-primary btn-sm" onclick="contentModel('+i+')">Edit </button>'+
+                    '   <button class="btn btn-primary btn-sm" onclick=editOverviewModel('+i+')>Edit </button>'+
                     '</div>'
                 } 
              }
@@ -203,38 +204,20 @@ function get_broker_data(type)
                     '    <span style="float:right"><button class="btn btn-sm btn-primary" onclick=brokerContentModel('+i+',"'+type+'")>EDIT</button></span>  '+
                     '  <p>'+brokerageData[i].content+'</p>'+
                     '</div><hr/>'
-                   }
-                   else if(brokerageData[i].div_type=="related_article")
-                   {
-                        related_list = related_list+ 
-                        '   <div class="col-md-12">'+
-                        '       <div class="row">'+
-                        '           <div class="col-md-5">'+
-                        '             <img src="'+baseUrl+brokerageData[i].image+'" alt="" width="100%" >'+
-                        '           </div>'+
-                        '           <div class="col-md-5 py-4">'+
-                        '               <h3 class="text-dark">'+brokerageData[i].heading+'</h3>'+
-                        '               <p>'+brokerageData[i].content+'</p>'+
-                        '           </div>'+
-                        '           <div class="col-md-2">'+
-                        '               <button class="btn btn-sm btn-primary" onclick=editOverviewModel('+i+',"'+type+'")>Edit</button>'+
-                        '           </div>'+
-                        '       </div>'+
-                        '   </div>'
-                   } 
+                   }        
                    else if(brokerageData[i].div_type=="overview_heading")
                    {
                     overview_data = '<div class="col-md-10">'+
                     '<h1>'+brokerageData[i].heading+'</h1>'+
+                    '<img src="'+baseUrl+brokerageData[i].image+'" style="height:100px"/>'+
                     '<p>'+brokerageData[i].content+'</p>'+
                     '</div>'+
                     '<div class="col-md-2">'+
-                    '   <button class="btn btn-primary btn-sm" onclick=brokerContentModel('+i+',"'+type+'")>Edit </button>'+
+                    '   <button class="btn btn-primary btn-sm" onclick=editOverviewModel('+i+',"'+type+'")>Edit </button>'+
                     '</div>'
                    } 
              }
             $("#normal_articles").html(normal_list);	
-            $("#related_articles").html(related_list);	
             $("#top_banner_text").html(overview_data);	
 
         }

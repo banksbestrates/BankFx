@@ -51,6 +51,41 @@ class Investment extends CI_Controller {
 		$this->load->view('website/pages/investing/article_detail',array("article_data"=>$article_data));
 		$this->load->view('website/layout/footer');
     }
+	public function debt_income_ratio_calculator()
+	{
+
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/investing/debt_income_ratio_calculator');
+		$this->load->view('website/layout/footer');
+    }
+	public function income_earned_calculator()
+	{
+
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/investing/income_earned_calculator');
+		$this->load->view('website/layout/footer');
+    }
+	public function interest_paid_life_calculator()
+	{
+
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/investing/interest_paid_life_calculator');
+		$this->load->view('website/layout/footer');
+    }
+	public function college_savings_calculator()
+	{
+
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/investing/college_savings_calculator');
+		$this->load->view('website/layout/footer');
+    }
+	public function compare_saving_rates()
+	{
+
+		$this->load->view('website/layout/header');
+		$this->load->view('website/pages/investing/compare_saving_rates');
+		$this->load->view('website/layout/footer');
+    }
 
     
     

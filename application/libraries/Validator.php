@@ -519,8 +519,6 @@ public function get_banks_in_city($state_code,$city_name)
             return $json;
 }
 
-
-
 public function get_best_banks($limit)
 {
     $curlRef = curl_init();
@@ -543,6 +541,170 @@ public function get_best_banks($limit)
             curl_close($curlRef);
 
             return $json;
+}
+
+//========get bank detail=============//
+public function get_bank_review($bank_name)
+{
+    $curlRef = curl_init();
+    $curlConfig = array(
+                  CURLOPT_URL            => 'http://nemo-soft.com/bbr/Rating_API.php',
+                  CURLOPT_POST           => true,
+                  CURLOPT_RETURNTRANSFER => true,
+                  CURLOPT_POSTFIELDS     => array(
+                     'UserName'      => 'schmid@banksbestrates.com',
+                     'Password'      => '12345678',
+                     'BankGroup'     => $bank_name
+                  )
+            );
+            curl_setopt_array($curlRef, $curlConfig);
+            $returned_JSON = curl_exec($curlRef);
+            $json = preg_replace('/[[:cntrl:]]/', '', $returned_JSON);
+            $json = json_decode($json, true);          
+            curl_close($curlRef);
+
+            return $json;
+}
+public function get_credit_unions($state,$city)
+{
+    $curlRef = curl_init();
+    $curlConfig = array(
+                  CURLOPT_URL            => 'http://nemo-soft.com/bbr/Rating_API.php',
+                  CURLOPT_POST           => true,
+                  CURLOPT_RETURNTRANSFER => true,
+                  CURLOPT_POSTFIELDS     => array(
+                    'UserName'           => 'schmid@banksbestrates.com',
+                     'Password'          => '12345678',
+                     'City'              => trim($city),
+                     'State'             => $state,
+                     'LessClass'         => 'NC,SM,NM,OI,SA,SB'
+                  )
+            );
+            curl_setopt_array($curlRef, $curlConfig);
+            $returned_JSON = curl_exec($curlRef);
+            $json = preg_replace('/[[:cntrl:]]/', '', $returned_JSON);
+            $json = json_decode($json, true);          
+            curl_close($curlRef);
+
+            return $json;
+}
+public function get_best_cd_rates($rates)
+{
+    $curlRef = curl_init();
+    $curlConfig = array(
+                  CURLOPT_URL            => 'http://nemo-soft.com/bbr/CD_API.php',
+                  CURLOPT_POST           => true,
+                  CURLOPT_RETURNTRANSFER => true,
+                  CURLOPT_POSTFIELDS     => array(
+                      'UserName'      => 'schmid@banksbestrates.com'
+                     ,'Password'      => '12345678'
+                     ,'Excluding'     => $rates
+                  )
+    );
+    curl_setopt_array($curlRef, $curlConfig);
+    $returned_JSON = curl_exec($curlRef);
+    $json = preg_replace('/[[:cntrl:]]/', '', $returned_JSON);
+    $json = json_decode($json, true);          
+    curl_close($curlRef);
+
+    return $json;
+}
+public function best_large_banks()
+{
+    $curlRef = curl_init();
+    $curlConfig = array(
+                  CURLOPT_URL            => 'http://nemo-soft.com/bbr/Rating_API.php',
+                  CURLOPT_POST           => true,
+                  CURLOPT_RETURNTRANSFER => true,
+                  CURLOPT_POSTFIELDS     => array(
+                    'UserName'           => 'schmid@banksbestrates.com',
+                    'Password'          => '12345678',
+                    'Returning'         => '100',
+                    'LessClass'         => 'NC,SM,NM,OI,SA,SB',
+                    'LessTypes'         => '21,25,26,23,24,27,22,29,28,30,99'
+                  )
+    );
+    curl_setopt_array($curlRef, $curlConfig);
+    $returned_JSON = curl_exec($curlRef);
+    $json = preg_replace('/[[:cntrl:]]/', '', $returned_JSON);
+    $json = json_decode($json, true);          
+    curl_close($curlRef);
+
+    return $json;
+}
+public function best_online_banks()
+{
+    $curlRef = curl_init();
+    $curlConfig = array(
+                  CURLOPT_URL            => 'http://nemo-soft.com/bbr/Rating_API.php',
+                  CURLOPT_POST           => true,
+                  CURLOPT_RETURNTRANSFER => true,
+                  CURLOPT_POSTFIELDS     => array(
+                    'UserName'           => 'schmid@banksbestrates.com',
+                    'Password'          => '12345678',
+                    'Returning'         => '100',
+                    'RequireURL'    => 'Y',
+                    'LessClass'      => 'CU'
+                  )
+    );
+
+    
+    curl_setopt_array($curlRef, $curlConfig);
+    $returned_JSON = curl_exec($curlRef);
+    $json = preg_replace('/[[:cntrl:]]/', '', $returned_JSON);
+    $json = json_decode($json, true);          
+    curl_close($curlRef);
+
+    return $json;
+}
+public function best_credit_unions()
+{
+    $curlRef = curl_init();
+    $curlConfig = array(
+                  CURLOPT_URL            => 'http://nemo-soft.com/bbr/Rating_API.php',
+                  CURLOPT_POST           => true,
+                  CURLOPT_RETURNTRANSFER => true,
+                  CURLOPT_POSTFIELDS     => array(
+                    'UserName'           => 'schmid@banksbestrates.com',
+                    'Password'           => '12345678',
+                    'Returning'          => '100',
+                    'LessClass'          => 'NC,SM,NM,OI,SA,SB'
+                  )
+    );
+
+    
+    curl_setopt_array($curlRef, $curlConfig);
+    $returned_JSON = curl_exec($curlRef);
+    $json = preg_replace('/[[:cntrl:]]/', '', $returned_JSON);
+    $json = json_decode($json, true);          
+    curl_close($curlRef);
+
+    return $json;
+}
+public function best_regional_banks()
+{
+    $curlRef = curl_init();
+    $curlConfig = array(
+                  CURLOPT_URL            => 'http://nemo-soft.com/bbr/Rating_API.php',
+                  CURLOPT_POST           => true,
+                  CURLOPT_RETURNTRANSFER => true,
+                  CURLOPT_POSTFIELDS     => array(
+                    'UserName'           => 'schmid@banksbestrates.com',
+                    'Password'           => '12345678',
+                    'Returning'          => '100',
+                    'State'              => 'AK,WA,OR,CA',
+                    'LessClass'          => 'CU'
+                  )
+    );
+
+    
+    curl_setopt_array($curlRef, $curlConfig);
+    $returned_JSON = curl_exec($curlRef);
+    $json = preg_replace('/[[:cntrl:]]/', '', $returned_JSON);
+    $json = json_decode($json, true);          
+    curl_close($curlRef);
+
+    return $json;
 }
 
 

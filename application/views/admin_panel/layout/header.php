@@ -5,11 +5,8 @@
 	<title>BanksBestRates- Admin</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="<?php echo base_url();?>assets/admin_panel/im" />
-
 	<!-- Fonts and icons -->
 	<script src="<?php echo base_url();?>assets/admin_panel/js/plugin/webfont/webfont.min.js"></script>
-
-
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="<?php echo base_url();?>assets/admin_panel/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>assets/admin_panel/css/atlantis.css">
@@ -22,10 +19,9 @@
 		<input type="hidden" id="baseUrl" value="<?php echo base_url()?>"/>
 		<div class="main-header">
 			<!-- Logo Header -->
-			<div class="logo-header" data-background-color="blue">
-				
-				<a href="index.html" class="logo">
-					<!-- <img src="<?php echo base_url();?>assets/img/logo.svg" alt="navbar brand" class="navbar-brand"> -->
+			<div class="logo-header" >
+				<a href="<?php echo base_url()?>admin/dashboard" class="logo">
+					<img src="<?php echo base_url();?>assets/img/logo/main_logo.png"  alt="navbar brand" class="navbar-brand w-100">
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
@@ -42,21 +38,9 @@
 			<!-- End Logo Header -->
 
 			<!-- Navbar Header -->
-			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
-				
+			<nav class="navbar navbar-header navbar-expand-lg" style="background-color:#0374a1">	
 				<div class="container-fluid">
-					<div class="collapse" id="search-nav">
-						<form class="navbar-left navbar-form nav-search mr-md-3">
-							<div class="input-group">
-								<div class="input-group-prepend">
-									<button type="submit" class="btn btn-search pr-1">
-										<i class="fa fa-search search-icon"></i>
-									</button>
-								</div>
-								<input type="text" placeholder="Search ..." class="form-control">
-							</div>
-						</form>
-					</div>
+					
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
 						<li class="nav-item toggle-nav-search hidden-caret">
 							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
@@ -420,16 +404,16 @@
 								<p>Google Analytics</p>
 							</a>
 						</li> -->
-						<li class="nav-item " id="blog_overview">
+						<!-- <li class="nav-item " id="blog_overview">
 							<a href="<?php echo base_url();?>admin/blog_overview">
 								<i class="flaticon-settings"></i>
 								<p>Blog</p>
 							</a>
-						</li>
-						<li class="nav-item " id="blog_overview">
-							<a href="<?php echo base_url();?>admin/bank_full_review">
+						</li> -->
+						<li class="nav-item " id="calculator_overview">
+							<a href="<?php echo base_url();?>admin/calculator_overview">
 								<i class="flaticon-settings"></i>
-								<p>Bank Full Review</p>
+								<p>Calculator</p>
 							</a>
 						</li>
 					</ul>

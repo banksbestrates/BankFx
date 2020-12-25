@@ -1,0 +1,207 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Ticker Ultimate\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-14 05:51+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.4.2"
+
+#: includes/admin/metabox/wptu-post-sett-metabox.php:30
+msgid ""
+"Add custom link for the ticker post. eg : http://www.wponlinesupport.com"
+msgstr ""
+
+#: includes/wptu-post-types.php:78
+msgid "Add New Category"
+msgstr ""
+
+#: includes/wptu-post-types.php:26
+msgid "Add New Ticker"
+msgstr ""
+
+#: includes/wptu-post-types.php:25
+msgid "Add Ticker"
+msgstr ""
+
+#: includes/wptu-post-types.php:73
+msgid "All Category"
+msgstr ""
+
+#: includes/wptu-post-types.php:70 includes/wptu-post-types.php:71
+msgid "Category"
+msgstr ""
+
+#: includes/wptu-post-types.php:114
+msgid "Custom field deleted."
+msgstr ""
+
+#: includes/wptu-post-types.php:113
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/wptu-post-types.php:76
+msgid "Edit Category"
+msgstr ""
+
+#: includes/wptu-post-types.php:27
+msgid "Edit Ticker"
+msgstr ""
+
+#: includes/admin/settings/hire-us.php:18
+msgid "Highlight of Hiring:"
+msgstr ""
+
+#: includes/admin/class-wptu-admin.php:42
+msgid "Hire Us"
+msgstr ""
+
+#: includes/admin/settings/hire-us.php:15
+msgid "Hire Us - Get unlimited expert WordPress Support and Development"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.wponlinesupport.com/"
+msgstr ""
+
+#: wp-ticker.php:112
+#, php-format
+msgid ""
+"It looks like you had PRO version %s of this plugin activated. To avoid "
+"conflicts the extra version has been deactivated and we recommend you delete "
+"it."
+msgstr ""
+
+#: includes/shortcode/wptu-ticker-shortcode.php:19
+msgid "Latest News"
+msgstr ""
+
+#: includes/wptu-post-types.php:79
+msgid "New Category Name"
+msgstr ""
+
+#: includes/wptu-post-types.php:28
+msgid "New Ticker"
+msgstr ""
+
+#: includes/wptu-post-types.php:31
+msgid "No Tickers found"
+msgstr ""
+
+#: includes/wptu-post-types.php:32
+msgid "No Tickers found in Trash"
+msgstr ""
+
+#: includes/wptu-post-types.php:74
+msgid "Parent Category"
+msgstr ""
+
+#: includes/wptu-post-types.php:75
+msgid "Parent Category:"
+msgstr ""
+
+#. Name of the plugin
+msgid "Post Ticker Ultimate"
+msgstr ""
+
+#: includes/admin/metabox/wptu-post-sett-metabox.php:26
+msgid "Read More Link"
+msgstr ""
+
+#: includes/wptu-post-types.php:72
+msgid "Search Category"
+msgstr ""
+
+#: includes/wptu-post-types.php:30
+msgid "Search Ticker"
+msgstr ""
+
+#: wp-ticker.php:111
+#, php-format
+msgid "Thank you for activating %s"
+msgstr ""
+
+#: includes/wptu-post-types.php:23 includes/wptu-post-types.php:24
+msgid "Ticker"
+msgstr ""
+
+#: includes/wptu-post-types.php:80
+msgid "Ticker Category"
+msgstr ""
+
+#: includes/wptu-post-types.php:122
+msgid "Ticker draft updated."
+msgstr ""
+
+#: includes/wptu-post-types.php:117
+msgid "Ticker published."
+msgstr ""
+
+#: includes/wptu-post-types.php:116
+#, php-format
+msgid "Ticker restored to revision from %s"
+msgstr ""
+
+#: includes/wptu-post-types.php:118
+msgid "Ticker saved."
+msgstr ""
+
+#: includes/wptu-post-types.php:120
+#, php-format
+msgid "Ticker scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: includes/admin/class-wptu-admin.php:72
+msgid "Ticker Settings - Settings"
+msgstr ""
+
+#: includes/wptu-post-types.php:119
+msgid "Ticker submitted."
+msgstr ""
+
+#: includes/admin/settings/premium.php:15
+msgid "Ticker Ultimate - Features"
+msgstr ""
+
+#: includes/wptu-post-types.php:112 includes/wptu-post-types.php:115
+msgid "Ticker updated."
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Ultimate Post Ticker Plugin : Add and display horizontal or vertical ticker "
+"on your website that work with WordPress posts and Custom Post Type with the "
+"help of shortcode. Also work with Gutenberg shortcode block."
+msgstr ""
+
+#: includes/wptu-post-types.php:77
+msgid "Update Category"
+msgstr ""
+
+#: includes/admin/class-wptu-admin.php:39
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: includes/admin/class-wptu-admin.php:39
+msgid "Upgrade to PRO - Ticker Ultimate"
+msgstr ""
+
+#: includes/wptu-post-types.php:29
+msgid "View Ticker"
+msgstr ""
+
+#. Author of the plugin
+msgid "WP OnlineSupport"
+msgstr ""
+
+#: includes/wptu-post-types.php:34
+msgid "WP Ticker"
+msgstr ""

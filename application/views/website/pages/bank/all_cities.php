@@ -2,30 +2,63 @@
 a{
     color:black;
 }
+.btn-outline-primary {
+  color: #2888ae;
+  background-color: transparent;
+  background-image: none;
+  border-color: #2888ae;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #2888ae;
+  border-color: #2888ae;
+}
+
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+  color: #2888ae;
+  background-color: transparent;
+}
+
 </style>
 <!-- Bank locator -->
 
      <?php foreach($city_data['Returning'][0] as $key=>$value)
-     {
-        foreach($value as $index=>$bank){
-        $StateFullName = $bank['stateName'];
+        {
+            foreach($value as $index=>$bank){
+            $StateFullName = $bank['stateName'];
 
-     } }?>  
+        }
+     }?>  
 
 <div class="container pt-5">
     <div class="row">
         <div class="col-md-8">
             <span><a href="<?php echo base_url()?>bank_overview">Banking Overview </a> ><a href="<?php echo base_url()?>branch_locator"> Bank Branch Locator </a> ></span> <span class="text_yellow"><?php echo $StateFullName?> Banks</span>
-            <h2 class="font-weight-900 pt-3 mb-2 text-uppercase">BANKS IN <?php echo $StateFullName?></h2>
-            <!-- <span>Published on <?php echo date('M Y')?>. Do you want to get more information ?</span> -->
+            <h2 class="font-weight-900 pt-3 mb-2 text-uppercase" id="bank_heading">BANKS IN <?php echo $StateFullName?></h2>
+            <h2 class="font-weight-900 pt-3 mb-2 text-uppercase" style="display:none" id="credit_heading" >CREDIT UNIONS IN <?php echo $StateFullName?></h2>
         </div>
         <div class="col-md-4 text-right pt-4">
-            <!-- <button class="btn button_blue">DOWNLOAD OUR APP</button> -->
+        </div>
+    </div>
+</div>
+<div class="container" id="content_div">
+    
+</div>
+<div class="container pt-3">
+    <div class="col-md-10 py-4" style="border:1px solid #CEA036">
+        <div class="row">
+        <div class="col-md-6 my-3"><button class="btn btn-block btn-outline-primary" id="bank_button" onclick="get_bank_type('bank')">BANKS</button></div>
+        <div class="col-md-6 my-3"><button class="btn btn-block btn-outline-primary" id="credit_union_button" onclick="get_bank_type('credit_union')">CREDIT UNIONS</button></div>
         </div>
     </div>
 </div>
 
-<div class="container mt-5" style="border:2px solid gray">
+<!-- <div class="container mt-5" style="border:2px solid gray">
     <div class="row">
             <div class="col-md-6 pt-4" >   
                 <img src="<?php echo base_url()?>assets/images/website/state_maps/<?php echo $state_code ?>.png" class="w-100"/>                                                              
@@ -39,7 +72,7 @@ a{
                 </div>
             </div>
     </div>
-</div>
+</div> -->
 
 
 <!-- top banks of california -->
@@ -57,9 +90,13 @@ a{
                         $d = explode(",",$key);
                         ?>     
                             <li>
-                                <div class="dbox ">
+                                <div class="dbox banks_list">
                                     <span class="ab blu"><?php echo $d[0]?></span>
                                     <a href="<?php echo base_url()?>bank_city/<?php echo $d[0]?>/<?php echo $d[1]?>" title="<?php echo $d[1]?>" class="litem"><?php echo $d[1]?></a>
+                                </div>
+                                <div class="dbox credit_union_list" style="display:none">
+                                    <span class="ab blu"><?php echo $d[0]?></span>
+                                    <a href="<?php echo base_url()?>credit_unions/<?php echo $d[0]?>/<?php echo $d[1]?>" title="<?php echo $d[1]?>" class="litem"><?php echo $d[1]?></a>
                                 </div>
                                 <div class="total_cities"><small><?php echo $bank['bankingGroups']?> Banks - <?php echo $bank['branchLocations']?> Offices</small></div>
                             </li>
@@ -95,7 +132,8 @@ a{
         <h3 class="border_bottom_golden">LATEST FROM BANKS BEST RATES</h3>
         <div id="related_articles">
         </div>     
-</div> 
+  </div> 
+
 
 <script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
 <script src="<?php echo base_url()?>assets/libs/common.js"></script>
@@ -103,6 +141,27 @@ a{
 <script>
   get_fun_fact();
   get_best_bank_posts();
+    var bank_selected =""
+  function get_bank_type(bank_type)
+  {
+    if(bank_type=="bank")
+    { 
+        $(".credit_union_list").css("display","none");
+        $(".banks_list").css("display","block");
+        $("#bank_heading").css("display","block");
+        $("#credit_heading").css("display","none");
+        // $("#bank_button").css("background-color","#2888ae");
+        // $("#credit_button").css("background-color","#ffffff");
+    }
+    else if(bank_type=="credit_union"){
+        $(".credit_union_list").css("display","block");
+        $(".banks_list").css("display","none");
+        $("#bank_heading").css("display","none");
+        $("#credit_heading").css("display","block");
+        // $("#bank_button").css("background","#ffffff");
+        // $("#credit_button").css("background","#2888ae");
+    }
+  }
 </script>
 
 

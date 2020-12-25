@@ -1,0 +1,46 @@
+.control-section-wptrt-button .accordion-section-title:focus,
+.control-section-wptrt-button .accordion-section-title:hover {
+    background-color: #fff
+}
+
+.control-section-wptrt-button .accordion-section-title .button {
+    margin-top: -4px;
+    margin-left: 8px;
+    font-weight: 400
+}
+
+.rtl .control-section-wptrt-button .accordion-section-title .button {
+    margin-left: 0;
+    margin-right: 8px
+}
+
+.wp-core-ui .btn-upgrade {
+	color: #fff;
+	border-color: #EE4930;
+	background: #EE4930;
+	box-shadow: none;
+	vertical-align: middle;
+}
+
+
+
+
+#customize-outer-theme-controls .accordion-section-title, 
+#customize-theme-controls .accordion-section-title {
+	color: #555d66;
+	background-color: #e6e6e6;
+	border-bottom: 1px solid #fff;
+	border-left: 8px solid #999;
+}
+
+#customize-outer-theme-controls .accordion-section-content, 
+#customize-theme-controls .accordion-section-content {
+	color: #555d66;
+	background: #fff;
+}
+
+#customize-control-highlighted_categories_left {
+	border-bottom: 4px double #ccc;
+	padding-bottom: 40px;
+	margin-bottom: 30px;
+}

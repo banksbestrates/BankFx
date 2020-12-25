@@ -2,98 +2,55 @@
   <!--==========================
     over view banner
   ============================-->
-  <div class="overview_banner mb-5">
-    <div class="banner_heading">
-    <h1 class="display-4">Best Investments of 2020</h1>
-    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem hic<br/>
-    Its just a dummy text to show the design only  dummy textx dummy</h6>
-    </div>
-  </div>
+  <?php if(count($page_data)>=1){
+            foreach($page_data as $d){
+              if($d->div_type == "overview_heading"){?>
+                  <!-- <div class="overview_banner" style="background-image:linear-gradient(to left, rgba(245, 246, 252, 0.02), rgba(13, 13, 13, 0.73)),url('<?php echo base_url().$d->image ?>"> -->
+                  <div class="overview_banner" style="background-image:url('<?php echo base_url().$d->image ?>')">
+                  <div class="banner_heading">
+                    <h1 class="display-4"><?php echo $d->heading ?></h1>
+                    <div id="heading_content_text"><?php echo $d->content?></div>
+                  </div>
+                </div>
+        <?php } 
+        }
+    }?>
 
 <!--==========================
     Top 10 ivestment list
   ============================-->
 
-  <div class="col-md-10 mx-auto">    
+  <div class="container mt-4">    
     <div class="col-md-12">
             <div class="row box_round_border my-5">
                 <div class="col-md-8 text-left px-5 py-3" style="min-height: 320px;">
-                                <h6>Top 10 Investments you can go for </h6>
-                                <ol class="px-4 mb-1  text-secondary">
-                                    <?php if(count($page_data)>=1){
-                                    foreach($page_data as $d){
-                                        if($d->div_type == "normal_content"){?>
-                                              <li><a class=" text-secondary" href="#item<?php echo $d->id?>"><?php echo $d->heading?></a></li> 
-                                        <?php }
-                                        }
-                                    }?>
-                                    <!-- <li><a class=" text-secondary" href="#item1">High-yield Savings Accounts</a></li> 
-                                    <li><a class=" text-secondary" href="#item2">Certificates of Deposit</a></li>
-                                    <li><a class=" text-secondary" href="#item3">Money Market Accounts</a></li>
-                                    <li>Other Investments</li>
-                                    <li>Other Investments</li>
-                                    <li>Other Investments</li>
-                                    <li>Other Investments</li>
-                                    <li>Other Investments</li>
-                                    <li>Other Investments</li>
-                                    <li>Other Investments</li> -->
-                                </ol>
+                    <h6>Top 10 Investments you can go for </h6>
+                        <ol class="px-4 mb-1  text-secondary" id="top_10_list">             
+                        </ol>
                 </div>
                 <div class="col-md-4 p-0">
-                                <div class="best_investment_image"></div>
+                    <div class="best_investment_image"></div>
                 </div>
             </div>
         </div>
     </div>
   </div>
 
-  <!-- Content Related to Loans -->
-  <?php if(count($page_data)>=1){
-    foreach($page_data as $d){
-        if($d->div_type == "normal_content"){?>       
-            <div class="col-md-10 mx-auto pt-4 " id="item<?php echo $d->id?>">
-                <h4 class="border_bottom_golden font-weight-900"><?php echo $d->id ?>. <?php echo $d->heading ?></h4>
-                <p>
-                <?php echo $d->content?>
-                </p>
-            </div>
-        <?php }
-        }
-    }?><br/>
+    <!-- Content Related to Loans -->
+    <div class="container">
+        <div id="related_articles">
+        </div>    
+    </div> 
 
- <!-- <div class="col-md-10 mx-auto pt-4" id="item2">
-       <h4 class="border_bottom_golden font-weight-900">2. Certificates of Deposit</h4>
-       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus dictum nisl ac ultricies.
-        Proin viverra velit rhoncus dignissim luctus. Sed mattis, velit non elementum malesuada, 
-        urna turpis mattis libero, semper semper leo tortor vel ex. Vestibulum gravida faucibus vulputate. 
-        Suspendisse placerat mi eget ipsum egestas, vitae consectetur ipsum tincidunt. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Sed luctus dictum nisl ac ultricies. Proin viverra velit rhoncus dignissim 
-        luctus. Sed mattis, velit non elementum malesuada, urna turpis mattis libero, semper semper leo tortor vel
-         ex. Vestibulum gravida faucibus vulputate.
-        Suspendisse placerat mi eget ipsum egestas, vitae consectetur ipsum tincidunt.
-        <ul class="w-75">
-            <li><span class="font-weight-bold">Risk:</span> Bulleted list of something should we feel the need for a bulleted list when talking about types of investments.</li>
-            <li><span class="font-weight-bold">Liquidity    :</span> Bulleted list of something should we feel the need for a bulleted list when talking about types of investments.</li></li>
-        </ul>
-       </p>
-</div>
- 
- <div class="col-md-10 mx-auto pt-4" id="item3">
-       <h4 class="border_bottom_golden font-weight-900">3 Money Market Accounts</h4>
-       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus dictum nisl ac ultricies.
-        Proin viverra velit rhoncus dignissim luctus. Sed mattis, velit non elementum malesuada, 
-        urna turpis mattis libero, semper semper leo tortor vel ex. Vestibulum gravida faucibus vulputate. 
-        Suspendisse placerat mi eget ipsum egestas, vitae consectetur ipsum tincidunt. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Sed luctus dictum nisl ac ultricies. Proin viverra velit rhoncus dignissim 
-        luctus. Sed mattis, velit non elementum malesuada, urna turpis mattis libero, semper semper leo tortor vel
-         ex. Vestibulum gravida faucibus vulputate.
-        Suspendisse placerat mi eget ipsum egestas, vitae consectetur ipsum tincidunt.
-        <ul class="w-75">
-            <li><span class="font-weight-bold">Risk:</span> Bulleted list of something should we feel the need for a bulleted list when talking about types of investments.</li>
-        </ul>
-       </p>
-</div> -->
- 
+
+<script src="<?php echo base_url()?>assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="<?php echo base_url()?>assets/libs/common.js"></script>
+<script src="<?php echo base_url()?>assets/libs/investingProcess.js"></script>
+<script>
+  get_best_investing_posts();
+</script>
+
+<br/>
+
+
  
